@@ -4,7 +4,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 const posts: Record<string, { titulo: string; descricao: string; categoria: string; dataCriacao: string; dataModificacao: string }> = {
   'melhores-aspiradores-po-2026': {
     titulo: 'Os 7 Melhores Aspiradores de Pó de 2026',
-    descricao: 'Testamos os modelos mais vendidos do mercado para descobrir qual realmente vale o preço. Confira nosso ranking completo com robôs, verticais e tradicionais.',
+    descricao: 'Testamos os modelos mais vendidos da Amazon para descobrir qual realmente vale o preço. Confira nosso ranking com robôs, verticais e tradicionais.',
     categoria: 'Review',
     dataCriacao: '2026-01-10',
     dataModificacao: '2026-05-26',
@@ -134,28 +134,39 @@ const isAspiradores = slug === 'melhores-aspiradores-po-2026';
       <div>
 
         <!-- Introdução -->
-        <div class="bg-orange-50 border border-orange-100 rounded-2xl p-6 mb-10">
+        <div class="bg-orange-50 border border-orange-100 rounded-2xl p-6 mb-8">
           <p class="text-slate-700 leading-relaxed mb-3">
             Já usei vários modelos ao longo dos anos e posso dizer com certeza: a escolha certa do aspirador muda completamente a sua rotina. Tenho um aspirador vertical que uso para limpezas rápidas, mas foi o robô aspirador que realmente transformou o meu dia a dia. Enquanto cuido da louça ou faço outra tarefa, ele vai pelo chão aspirando e ainda passa pano. Uma liberdade que não tem preço.
           </p>
           <p class="text-slate-700 leading-relaxed">
-            Nesta lista, reuni os 7 modelos que mais se destacam em 2026, levando em conta potência, durabilidade, custo-benefício e facilidade de uso no dia a dia real, não só em testes de laboratório.
+            Nesta lista, reuni os 7 modelos mais vendidos e mais bem avaliados na Amazon Brasil em 2026, levando em conta potência, durabilidade, custo-benefício e facilidade de uso no dia a dia real.
+          </p>
+        </div>
+
+        <!-- Curiosidade piso de madeira -->
+        <div class="bg-blue-50 border border-blue-200 rounded-2xl p-6 mb-10">
+          <p class="text-blue-800 font-bold text-base mb-2">Sabia disso? A curiosidade que pouca gente conhece antes de comprar</p>
+          <p class="text-slate-700 leading-relaxed mb-3">
+            Alguns modelos de robô aspirador especificam na embalagem a compatibilidade com dois tipos de piso de madeira: <strong>Madeira projetada</strong> (também chamada de laminado ou vinílico, um piso sintético com aparência de madeira) e <strong>Madeira de engenharia</strong> (assoalho com camadas reais de madeira, mais sensível à umidade).
+          </p>
+          <p class="text-slate-700 leading-relaxed">
+            A diferença importa porque o módulo de passa-pano, quando muito úmido, pode danificar o piso de madeira de engenharia com o tempo. Se a sua casa tem esse tipo de piso, verifique se o modelo escolhido permite controlar o nível de umidade da mopa ou desativar o umedecimento.
           </p>
         </div>
 
         <!-- Produto 1 -->
         <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
           <div class="bg-orange-500 px-6 py-4">
-            <p class="text-white font-black text-xl">1º lugar - Xiaomi Robot Vacuum X20+</p>
-            <p class="text-orange-100 text-sm mt-1">O robô que faz tudo por você, incluindo esvaziar sozinho e lavar as mopas</p>
+            <p class="text-white font-black text-xl">1º lugar - Xiaomi Robot Vacuum S40 Pro</p>
+            <p class="text-orange-100 text-sm mt-1">O mais vendido da Amazon em 2026: mapeamento preciso, passa pano e controle total pelo app</p>
           </div>
           <div class="p-6 flex flex-col md:flex-row gap-8">
-            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-slate-50 rounded-xl p-4">
+            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-slate-50 rounded-xl p-4 min-h-32">
               <div class="text-center">
                 <div class="w-20 h-20 rounded-full bg-slate-200 mx-auto mb-2 flex items-center justify-center">
-                  <svg class="w-10 h-10 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M12 8v8"/></svg>
+                  <svg class="w-10 h-10 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke-width="2"/><path stroke-linecap="round" stroke-width="2" d="M8 12h8"/></svg>
                 </div>
-                <span class="text-xs text-slate-400">Xiaomi X20+</span>
+                <span class="text-xs text-slate-400">Xiaomi S40 Pro</span>
               </div>
             </div>
             <div class="flex-1">
@@ -165,33 +176,30 @@ const isAspiradores = slug === 'melhores-aspiradores-po-2026';
               <a href="#" class="block w-full bg-orange-400 hover:bg-orange-500 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">
                 Conferir preço no Mercado Livre
               </a>
-
               <h3 class="font-bold text-slate-800 mb-3">Ficha Técnica</h3>
               <ul class="text-sm text-slate-600 space-y-1 mb-6">
-                <li><strong>Potência de sucção:</strong> 7.000 Pa</li>
+                <li><strong>Potência de sucção:</strong> 6.500 Pa</li>
                 <li><strong>Duração da bateria:</strong> até 180 minutos</li>
-                <li><strong>Área de cobertura:</strong> até 250 m²</li>
-                <li><strong>Wi-Fi e app:</strong> Sim</li>
-                <li><strong>Esvaziamento automático:</strong> Sim</li>
-                <li><strong>Passa pano:</strong> Sim, com lavagem automática das mopas</li>
-                <li><strong>Navegação:</strong> Laser LDS com mapeamento inteligente</li>
+                <li><strong>Wi-Fi e app:</strong> Sim (Mi Home)</li>
+                <li><strong>Passa pano:</strong> Sim, com controle de umidade</li>
+                <li><strong>Navegação:</strong> Laser LDS com mapeamento em múltiplos andares</li>
+                <li><strong>Compatibilidade de piso:</strong> Madeira projetada, madeira de engenharia, porcelanato, tapete</li>
               </ul>
-
               <div class="grid md:grid-cols-2 gap-4">
                 <div>
                   <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
                   <ul class="text-sm text-slate-600 space-y-1">
-                    <li>Esvaziamento automático da lixeira</li>
-                    <li>Lava e seca as mopas sozinho</li>
                     <li>Mapeamento por laser muito preciso</li>
-                    <li>Excelente para quem tem pets</li>
+                    <li>Controle de umidade da mopa pelo app</li>
+                    <li>Funciona bem em tapetes e pisos mistos</li>
+                    <li>Agendamento automático por cômodo</li>
                   </ul>
                 </div>
                 <div>
                   <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
                   <ul class="text-sm text-slate-600 space-y-1">
                     <li>Preço mais elevado</li>
-                    <li>Base de esvaziamento ocupa espaço</li>
+                    <li>Não esvazia a lixeira sozinho</li>
                   </ul>
                 </div>
               </div>
@@ -202,14 +210,14 @@ const isAspiradores = slug === 'melhores-aspiradores-po-2026';
         <!-- Produto 2 -->
         <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
           <div class="bg-slate-800 px-6 py-4">
-            <p class="text-white font-black text-xl">2º lugar - Dreame D10 Plus</p>
-            <p class="text-slate-300 text-sm mt-1">Melhor custo-benefício entre os robôs com esvaziamento automático</p>
+            <p class="text-white font-black text-xl">2º lugar - Dreame D10 Plus Gen 2</p>
+            <p class="text-slate-300 text-sm mt-1">Esvaziamento automático por até 90 dias e sucção de 6.000 Pa</p>
           </div>
           <div class="p-6 flex flex-col md:flex-row gap-8">
-            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-slate-50 rounded-xl p-4">
+            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-slate-50 rounded-xl p-4 min-h-32">
               <div class="text-center">
                 <div class="w-20 h-20 rounded-full bg-slate-200 mx-auto mb-2 flex items-center justify-center">
-                  <svg class="w-10 h-10 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M12 8v8"/></svg>
+                  <svg class="w-10 h-10 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke-width="2"/><path stroke-linecap="round" stroke-width="2" d="M8 12h8"/></svg>
                 </div>
                 <span class="text-xs text-slate-400">Dreame D10 Plus</span>
               </div>
@@ -221,33 +229,30 @@ const isAspiradores = slug === 'melhores-aspiradores-po-2026';
               <a href="#" class="block w-full bg-orange-400 hover:bg-orange-500 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">
                 Conferir preço no Mercado Livre
               </a>
-
               <h3 class="font-bold text-slate-800 mb-3">Ficha Técnica</h3>
               <ul class="text-sm text-slate-600 space-y-1 mb-6">
-                <li><strong>Potência de sucção:</strong> 4.000 Pa</li>
-                <li><strong>Duração da bateria:</strong> até 150 minutos</li>
-                <li><strong>Área de cobertura:</strong> até 200 m²</li>
+                <li><strong>Potência de sucção:</strong> 6.000 Pa</li>
+                <li><strong>Duração da bateria:</strong> até 110 minutos</li>
+                <li><strong>Esvaziamento automático:</strong> Sim, base coleta por até 90 dias</li>
                 <li><strong>Wi-Fi e app:</strong> Sim</li>
-                <li><strong>Esvaziamento automático:</strong> Sim</li>
                 <li><strong>Passa pano:</strong> Sim</li>
-                <li><strong>Navegação:</strong> Laser com criação de mapa</li>
+                <li><strong>Navegação:</strong> Laser com criação de mapa detalhado</li>
               </ul>
-
               <div class="grid md:grid-cols-2 gap-4">
                 <div>
                   <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
                   <ul class="text-sm text-slate-600 space-y-1">
-                    <li>Esvaziamento automático com preço acessível</li>
-                    <li>Navegação por laser precisa</li>
-                    <li>App completo com agendamento</li>
+                    <li>Base esvazia sozinha por 90 dias sem precisar esvaziar</li>
+                    <li>Sucção potente para pelos de animais</li>
+                    <li>App completo com zonas de limpeza</li>
                     <li>Silencioso no modo eco</li>
                   </ul>
                 </div>
                 <div>
                   <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
                   <ul class="text-sm text-slate-600 space-y-1">
-                    <li>Sucção inferior ao Xiaomi X20+</li>
-                    <li>Não lava as mopas automaticamente</li>
+                    <li>Base ocupa espaço no ambiente</li>
+                    <li>Autonomia menor que o Xiaomi S40 Pro</li>
                   </ul>
                 </div>
               </div>
@@ -258,16 +263,16 @@ const isAspiradores = slug === 'melhores-aspiradores-po-2026';
         <!-- Produto 3 -->
         <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
           <div class="bg-slate-800 px-6 py-4">
-            <p class="text-white font-black text-xl">3º lugar - Robô Aspirador Positivo Smart Clean</p>
-            <p class="text-slate-300 text-sm mt-1">A opção mais em conta para quem quer entrar no mundo dos robôs</p>
+            <p class="text-white font-black text-xl">3º lugar - Xiaomi Robot Vacuum S10</p>
+            <p class="text-slate-300 text-sm mt-1">O melhor custo-benefício entre os robôs com mapeamento a laser</p>
           </div>
           <div class="p-6 flex flex-col md:flex-row gap-8">
-            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-slate-50 rounded-xl p-4">
+            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-slate-50 rounded-xl p-4 min-h-32">
               <div class="text-center">
                 <div class="w-20 h-20 rounded-full bg-slate-200 mx-auto mb-2 flex items-center justify-center">
-                  <svg class="w-10 h-10 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M12 8v8"/></svg>
+                  <svg class="w-10 h-10 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke-width="2"/><path stroke-linecap="round" stroke-width="2" d="M8 12h8"/></svg>
                 </div>
-                <span class="text-xs text-slate-400">Positivo Smart Clean</span>
+                <span class="text-xs text-slate-400">Xiaomi S10</span>
               </div>
             </div>
             <div class="flex-1">
@@ -277,34 +282,30 @@ const isAspiradores = slug === 'melhores-aspiradores-po-2026';
               <a href="#" class="block w-full bg-orange-400 hover:bg-orange-500 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">
                 Conferir preço no Mercado Livre
               </a>
-
               <h3 class="font-bold text-slate-800 mb-3">Ficha Técnica</h3>
               <ul class="text-sm text-slate-600 space-y-1 mb-6">
-                <li><strong>Potência de sucção:</strong> 2.000 Pa</li>
-                <li><strong>Duração da bateria:</strong> até 100 minutos</li>
-                <li><strong>Área de cobertura:</strong> até 80 m²</li>
-                <li><strong>Wi-Fi e app:</strong> Não</li>
-                <li><strong>Esvaziamento automático:</strong> Não</li>
-                <li><strong>Passa pano:</strong> Sim (reservatório simples)</li>
-                <li><strong>Navegação:</strong> Aleatória com sensores anticolisão</li>
+                <li><strong>Potência de sucção:</strong> 4.000 Pa</li>
+                <li><strong>Duração da bateria:</strong> até 130 minutos</li>
+                <li><strong>Wi-Fi e app:</strong> Sim (Mi Home)</li>
+                <li><strong>Passa pano:</strong> Sim</li>
+                <li><strong>Navegação:</strong> Laser LDS</li>
+                <li><strong>Compatibilidade:</strong> Madeira projetada, porcelanato, cerâmica</li>
               </ul>
-
               <div class="grid md:grid-cols-2 gap-4">
                 <div>
                   <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
                   <ul class="text-sm text-slate-600 space-y-1">
-                    <li>Preço muito acessível</li>
-                    <li>Fácil de usar, sem configuração</li>
-                    <li>Bom para apartamentos pequenos</li>
-                    <li>Silencioso</li>
+                    <li>Melhor custo-benefício com mapeamento laser</li>
+                    <li>Remove pelos de animais com eficiência</li>
+                    <li>App com agendamento e zonas restritas</li>
+                    <li>Preço mais acessível que os irmãos da linha</li>
                   </ul>
                 </div>
                 <div>
                   <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
                   <ul class="text-sm text-slate-600 space-y-1">
-                    <li>Sem mapeamento inteligente</li>
-                    <li>Não tem controle por app</li>
-                    <li>Sucção limitada</li>
+                    <li>Sem esvaziamento automático</li>
+                    <li>Sucção menor que o S40 Pro</li>
                   </ul>
                 </div>
               </div>
@@ -315,16 +316,16 @@ const isAspiradores = slug === 'melhores-aspiradores-po-2026';
         <!-- Produto 4 -->
         <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
           <div class="bg-slate-800 px-6 py-4">
-            <p class="text-white font-black text-xl">4º lugar - Electrolux Ergorapido Sem Fio</p>
-            <p class="text-slate-300 text-sm mt-1">Leve, prático e ideal para limpezas rápidas no dia a dia</p>
+            <p class="text-white font-black text-xl">4º lugar - WAP W90</p>
+            <p class="text-slate-300 text-sm mt-1">O robô mais barato da Amazon com boa entrega para apartamentos</p>
           </div>
           <div class="p-6 flex flex-col md:flex-row gap-8">
-            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-slate-50 rounded-xl p-4">
+            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-slate-50 rounded-xl p-4 min-h-32">
               <div class="text-center">
-                <div class="w-20 h-20 rounded-xl bg-slate-200 mx-auto mb-2 flex items-center justify-center">
-                  <svg class="w-10 h-10 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg>
+                <div class="w-20 h-20 rounded-full bg-slate-200 mx-auto mb-2 flex items-center justify-center">
+                  <svg class="w-10 h-10 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke-width="2"/><path stroke-linecap="round" stroke-width="2" d="M8 12h8"/></svg>
                 </div>
-                <span class="text-xs text-slate-400">Ergorapido</span>
+                <span class="text-xs text-slate-400">WAP W90</span>
               </div>
             </div>
             <div class="flex-1">
@@ -334,33 +335,31 @@ const isAspiradores = slug === 'melhores-aspiradores-po-2026';
               <a href="#" class="block w-full bg-orange-400 hover:bg-orange-500 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">
                 Conferir preço no Mercado Livre
               </a>
-
               <h3 class="font-bold text-slate-800 mb-3">Ficha Técnica</h3>
               <ul class="text-sm text-slate-600 space-y-1 mb-6">
-                <li><strong>Tipo:</strong> Vertical sem fio</li>
-                <li><strong>Tensão:</strong> 21.6V</li>
-                <li><strong>Autonomia:</strong> até 45 minutos</li>
-                <li><strong>Peso:</strong> aproximadamente 1.5 kg</li>
-                <li><strong>Filtro HEPA:</strong> Sim</li>
-                <li><strong>2 em 1:</strong> Sim (remove o cabo e vira portátil)</li>
+                <li><strong>Potência de sucção:</strong> 2.000 Pa</li>
+                <li><strong>Duração da bateria:</strong> até 100 minutos</li>
+                <li><strong>Wi-Fi e app:</strong> Não</li>
+                <li><strong>Passa pano:</strong> Sim (reservatório simples)</li>
+                <li><strong>Navegação:</strong> Aleatória com sensores anticolisão e antiborda</li>
+                <li><strong>Modos de limpeza:</strong> 3 (automático, espiral, borda)</li>
               </ul>
-
               <div class="grid md:grid-cols-2 gap-4">
                 <div>
                   <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
                   <ul class="text-sm text-slate-600 space-y-1">
-                    <li>Muito leve e fácil de manusear</li>
-                    <li>Sem fio, sem enrolação de cabo</li>
-                    <li>Converte em aspirador de mão</li>
-                    <li>Bom para escadas e sofás</li>
+                    <li>Preço muito acessível</li>
+                    <li>Fácil de usar, sem configuração</li>
+                    <li>Ideal para apartamentos pequenos</li>
+                    <li>Silencioso</li>
                   </ul>
                 </div>
                 <div>
                   <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
                   <ul class="text-sm text-slate-600 space-y-1">
-                    <li>Autonomia limitada (45 min)</li>
-                    <li>Reservatório pequeno</li>
-                    <li>Não substitui aspirador completo para sujeiras pesadas</li>
+                    <li>Sem mapeamento, limpeza aleatória</li>
+                    <li>Não tem controle por app</li>
+                    <li>Não recomendado para casas grandes</li>
                   </ul>
                 </div>
               </div>
@@ -371,16 +370,16 @@ const isAspiradores = slug === 'melhores-aspiradores-po-2026';
         <!-- Produto 5 -->
         <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
           <div class="bg-slate-800 px-6 py-4">
-            <p class="text-white font-black text-xl">5º lugar - WAP Silence FW</p>
-            <p class="text-slate-300 text-sm mt-1">O aspirador tradicional mais silencioso da categoria</p>
+            <p class="text-white font-black text-xl">5º lugar - Electrolux STK15</p>
+            <p class="text-slate-300 text-sm mt-1">O aspirador vertical mais equilibrado do mercado brasileiro em 2026</p>
           </div>
           <div class="p-6 flex flex-col md:flex-row gap-8">
-            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-slate-50 rounded-xl p-4">
+            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-slate-50 rounded-xl p-4 min-h-32">
               <div class="text-center">
                 <div class="w-20 h-20 rounded-xl bg-slate-200 mx-auto mb-2 flex items-center justify-center">
-                  <svg class="w-10 h-10 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg>
+                  <svg class="w-10 h-10 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v18M5 10l7-7 7 7"/></svg>
                 </div>
-                <span class="text-xs text-slate-400">WAP Silence</span>
+                <span class="text-xs text-slate-400">Electrolux STK15</span>
               </div>
             </div>
             <div class="flex-1">
@@ -390,32 +389,30 @@ const isAspiradores = slug === 'melhores-aspiradores-po-2026';
               <a href="#" class="block w-full bg-orange-400 hover:bg-orange-500 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">
                 Conferir preço no Mercado Livre
               </a>
-
               <h3 class="font-bold text-slate-800 mb-3">Ficha Técnica</h3>
               <ul class="text-sm text-slate-600 space-y-1 mb-6">
-                <li><strong>Potência:</strong> 1.400W</li>
-                <li><strong>Capacidade do reservatório:</strong> 2.5 litros</li>
-                <li><strong>Filtro HEPA:</strong> Sim</li>
-                <li><strong>Nível de ruído:</strong> baixo (tecnologia silence)</li>
-                <li><strong>Tipo:</strong> Tradicional com cabo e rodas</li>
-                <li><strong>Ideal para:</strong> carpetes, tapetes e pelos de animais</li>
+                <li><strong>Potência:</strong> 1.450W</li>
+                <li><strong>Tipo:</strong> Vertical com fio</li>
+                <li><strong>Aprovação em sucção:</strong> 93%</li>
+                <li><strong>Filtro:</strong> lavável</li>
+                <li><strong>Ideal para:</strong> piso, tapete e sofá</li>
+                <li><strong>Acessórios inclusos:</strong> bico para frestas, escova para estofado</li>
               </ul>
-
               <div class="grid md:grid-cols-2 gap-4">
                 <div>
                   <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
                   <ul class="text-sm text-slate-600 space-y-1">
-                    <li>Muito silencioso, não incomoda bebês ou pets</li>
-                    <li>Grande capacidade de reservatório</li>
-                    <li>Filtragem HEPA eficiente</li>
-                    <li>Durável e resistente</li>
+                    <li>Melhor sucção entre os verticais testados</li>
+                    <li>Leve e fácil de manobrar</li>
+                    <li>Filtro lavável, sem custo extra</li>
+                    <li>Boa para quem tem pets</li>
                   </ul>
                 </div>
                 <div>
                   <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
                   <ul class="text-sm text-slate-600 space-y-1">
-                    <li>Mais pesado que os verticais</li>
-                    <li>Cabo pode atrapalhar em espaços menores</li>
+                    <li>Cabo pode ser curto para casas grandes</li>
+                    <li>Reservatório pequeno</li>
                   </ul>
                 </div>
               </div>
@@ -426,16 +423,16 @@ const isAspiradores = slug === 'melhores-aspiradores-po-2026';
         <!-- Produto 6 -->
         <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
           <div class="bg-slate-800 px-6 py-4">
-            <p class="text-white font-black text-xl">6º lugar - Britânia Aspirador Vertical BAV1000</p>
-            <p class="text-slate-300 text-sm mt-1">Vertical com fio, potente e com ótimo custo-benefício</p>
+            <p class="text-white font-black text-xl">6º lugar - WAP Power Speed</p>
+            <p class="text-slate-300 text-sm mt-1">O vertical mais potente da categoria com 2.000W de motor</p>
           </div>
           <div class="p-6 flex flex-col md:flex-row gap-8">
-            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-slate-50 rounded-xl p-4">
+            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-slate-50 rounded-xl p-4 min-h-32">
               <div class="text-center">
                 <div class="w-20 h-20 rounded-xl bg-slate-200 mx-auto mb-2 flex items-center justify-center">
-                  <svg class="w-10 h-10 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg>
+                  <svg class="w-10 h-10 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v18M5 10l7-7 7 7"/></svg>
                 </div>
-                <span class="text-xs text-slate-400">Britânia BAV1000</span>
+                <span class="text-xs text-slate-400">WAP Power Speed</span>
               </div>
             </div>
             <div class="flex-1">
@@ -445,32 +442,28 @@ const isAspiradores = slug === 'melhores-aspiradores-po-2026';
               <a href="#" class="block w-full bg-orange-400 hover:bg-orange-500 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">
                 Conferir preço no Mercado Livre
               </a>
-
               <h3 class="font-bold text-slate-800 mb-3">Ficha Técnica</h3>
               <ul class="text-sm text-slate-600 space-y-1 mb-6">
-                <li><strong>Potência:</strong> 1.000W</li>
+                <li><strong>Potência:</strong> 2.000W</li>
+                <li><strong>Vácuo de sucção:</strong> 133 mbar</li>
                 <li><strong>Tipo:</strong> Vertical com fio</li>
-                <li><strong>Filtro:</strong> Lavável</li>
-                <li><strong>Comprimento do cabo:</strong> 5 metros</li>
-                <li><strong>Peso:</strong> aproximadamente 2 kg</li>
-                <li><strong>Ideal para:</strong> pisos lisos e tapetes finos</li>
+                <li><strong>Filtro:</strong> lavável</li>
+                <li><strong>Ideal para:</strong> casas maiores, sujeiras pesadas, tapetes grossos</li>
               </ul>
-
               <div class="grid md:grid-cols-2 gap-4">
                 <div>
                   <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
                   <ul class="text-sm text-slate-600 space-y-1">
-                    <li>Preço acessível</li>
-                    <li>Filtro lavável, sem custo extra de manutenção</li>
-                    <li>Leve e fácil de guardar</li>
-                    <li>Boa potência para o preço</li>
+                    <li>Potência de motor muito alta para vertical</li>
+                    <li>Excelente para tapetes e carpetes</li>
+                    <li>Boa relação potência e preço</li>
                   </ul>
                 </div>
                 <div>
                   <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
                   <ul class="text-sm text-slate-600 space-y-1">
-                    <li>Cabo pode ser curto para casas grandes</li>
-                    <li>Não ideal para carpetes grossos</li>
+                    <li>Mais pesado que outros verticais</li>
+                    <li>Barulhoso na potência máxima</li>
                   </ul>
                 </div>
               </div>
@@ -481,16 +474,16 @@ const isAspiradores = slug === 'melhores-aspiradores-po-2026';
         <!-- Produto 7 -->
         <div class="border border-slate-200 rounded-2xl overflow-hidden mb-10 shadow-sm">
           <div class="bg-slate-800 px-6 py-4">
-            <p class="text-white font-black text-xl">7º lugar - Black+Decker Dustbuster 20V</p>
-            <p class="text-slate-300 text-sm mt-1">O portátil que resolve aquela sujeira rápida sem trabalho</p>
+            <p class="text-white font-black text-xl">7º lugar - WAP GTW 10</p>
+            <p class="text-slate-300 text-sm mt-1">O melhor custo-benefício para quem precisa aspirar seco e molhado</p>
           </div>
           <div class="p-6 flex flex-col md:flex-row gap-8">
-            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-slate-50 rounded-xl p-4">
+            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-slate-50 rounded-xl p-4 min-h-32">
               <div class="text-center">
                 <div class="w-20 h-20 rounded-xl bg-slate-200 mx-auto mb-2 flex items-center justify-center">
                   <svg class="w-10 h-10 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg>
                 </div>
-                <span class="text-xs text-slate-400">Dustbuster 20V</span>
+                <span class="text-xs text-slate-400">WAP GTW 10</span>
               </div>
             </div>
             <div class="flex-1">
@@ -500,32 +493,29 @@ const isAspiradores = slug === 'melhores-aspiradores-po-2026';
               <a href="#" class="block w-full bg-orange-400 hover:bg-orange-500 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">
                 Conferir preço no Mercado Livre
               </a>
-
               <h3 class="font-bold text-slate-800 mb-3">Ficha Técnica</h3>
               <ul class="text-sm text-slate-600 space-y-1 mb-6">
-                <li><strong>Tipo:</strong> Portátil sem fio</li>
-                <li><strong>Tensão:</strong> 20V</li>
-                <li><strong>Autonomia:</strong> até 18 minutos</li>
-                <li><strong>Capacidade:</strong> 0.5 litros</li>
-                <li><strong>Peso:</strong> menos de 1 kg</li>
-                <li><strong>Ideal para:</strong> carro, sofá, migalhas na mesa</li>
+                <li><strong>Tipo:</strong> Pó e água (seco e molhado)</li>
+                <li><strong>Capacidade:</strong> 10 litros (7L sólidos + 3,4L líquidos)</li>
+                <li><strong>Sucção:</strong> a mais alta entre os modelos testados da categoria</li>
+                <li><strong>Filtro HEPA:</strong> Sim</li>
+                <li><strong>Ideal para:</strong> oficinas, garagens, cozinhas, quintal</li>
               </ul>
-
               <div class="grid md:grid-cols-2 gap-4">
                 <div>
                   <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
                   <ul class="text-sm text-slate-600 space-y-1">
-                    <li>Muito compacto e leve</li>
-                    <li>Perfeito para o carro</li>
-                    <li>Ligou e já está aspirando</li>
-                    <li>Fácil de guardar em qualquer lugar</li>
+                    <li>Aspira líquidos e sólidos com igual eficiência</li>
+                    <li>Grande capacidade de reservatório</li>
+                    <li>Sucção potente, um dos mais fortes da categoria</li>
+                    <li>Muito bem avaliado na Amazon</li>
                   </ul>
                 </div>
                 <div>
                   <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
                   <ul class="text-sm text-slate-600 space-y-1">
-                    <li>Autonomia curta (18 min)</li>
-                    <li>Não substitui um aspirador completo</li>
+                    <li>Mais volumoso, não é compacto</li>
+                    <li>Mais pesado para uso no dia a dia</li>
                   </ul>
                 </div>
               </div>
@@ -537,10 +527,10 @@ const isAspiradores = slug === 'melhores-aspiradores-po-2026';
         <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 mb-8">
           <h2 class="text-xl font-black text-slate-900 mb-3">Qual aspirador escolher?</h2>
           <p class="text-slate-600 leading-relaxed mb-3">
-            Se você quer praticidade máxima e tem espaço para a base, o <strong>Xiaomi X20+</strong> é o melhor investimento. Ele aspira, passa pano e ainda se esvazia sozinho. Para quem busca um bom robô com preço mais acessível, o <strong>Dreame D10 Plus</strong> entrega muito bem.
+            Se você quer o melhor robô com mapeamento inteligente e praticidade total, o <strong>Xiaomi S40 Pro</strong> lidera com folga. Para quem quer esvaziamento automático e não abrir mão da potência, o <strong>Dreame D10 Plus Gen 2</strong> é a escolha certa. Com orçamento menor, o <strong>WAP W90</strong> entrega bem para apartamentos.
           </p>
           <p class="text-slate-600 leading-relaxed">
-            Para limpezas rápidas no dia a dia, o <strong>Electrolux Ergorapido</strong> é difícil de bater. E se você mora em uma casa maior e precisa de potência, o <strong>WAP Silence</strong> resolve com eficiência e sem barulho excessivo.
+            Entre os verticais, o <strong>Electrolux STK15</strong> se destaca pelo equilíbrio de sucção e peso. E se a sua necessidade é aspirar líquidos também, o <strong>WAP GTW 10</strong> não tem concorrente nessa faixa de preço.
           </p>
         </div>
 
