@@ -2,74 +2,74 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 
 const posts: Record<string, { titulo: string; descricao: string; categoria: string; dataCriacao: string; dataModificacao: string }> = {
-  'melhores-aspiradores-po-2025': {
-    titulo: 'Os 7 Melhores Aspiradores de Pó de 2025',
-    descricao: 'Testamos os modelos mais vendidos do mercado para descobrir qual realmente vale o preço. Confira nosso ranking completo.',
+  'melhores-aspiradores-po-2026': {
+    titulo: 'Os 7 Melhores Aspiradores de Pó de 2026',
+    descricao: 'Testamos os modelos mais vendidos do mercado para descobrir qual realmente vale o preço. Confira nosso ranking completo com robôs, verticais e tradicionais.',
     categoria: 'Review',
-    dataCriacao: '2025-01-10',
-    dataModificacao: '2025-05-20',
+    dataCriacao: '2026-01-10',
+    dataModificacao: '2026-05-26',
   },
   'airfryer-philips-vs-mondial': {
-    titulo: 'Airfryer Philips vs Mondial: Qual Comprar em 2025?',
+    titulo: 'Airfryer Philips vs Mondial: Qual Comprar em 2026?',
     descricao: 'Comparamos consumo de energia, capacidade, facilidade de limpeza e resultado final. A resposta vai te surpreender.',
     categoria: 'Comparativo',
-    dataCriacao: '2025-02-05',
-    dataModificacao: '2025-05-15',
+    dataCriacao: '2026-02-05',
+    dataModificacao: '2026-05-15',
   },
   'organizadores-armario-barato': {
     titulo: '10 Organizadores de Armário Baratos que Valem Cada Centavo',
     descricao: 'Encontramos os melhores organizadores por menos de R$ 50 que transformam qualquer armário bagunçado.',
     categoria: 'Oferta',
-    dataCriacao: '2025-02-20',
-    dataModificacao: '2025-05-10',
+    dataCriacao: '2026-02-20',
+    dataModificacao: '2026-05-10',
   },
   'robos-aspirador-custo-beneficio': {
     titulo: 'Robôs Aspiradores: Os 5 Melhores Custo-Benefício',
     descricao: 'Você realmente precisa gastar mais de R$ 1.000? Testamos opções de R$ 300 a R$ 2.000.',
     categoria: 'Comparativo',
-    dataCriacao: '2025-03-01',
-    dataModificacao: '2025-05-18',
+    dataCriacao: '2026-03-01',
+    dataModificacao: '2026-05-18',
   },
   'panela-pressao-eletrica-review': {
     titulo: 'Panela de Pressão Elétrica: Review Completo após 6 Meses de Uso',
     descricao: 'Usamos por 6 meses e contamos tudo: pontos fortes, limitações e se realmente economiza tempo na cozinha.',
     categoria: 'Review',
-    dataCriacao: '2025-03-15',
-    dataModificacao: '2025-05-12',
+    dataCriacao: '2026-03-15',
+    dataModificacao: '2026-05-12',
   },
   'itens-casa-30-reais-amazon': {
     titulo: '15 Itens Incríveis para Casa por até R$ 30 na Amazon',
     descricao: 'Garimpos que valem muito mais do que custam. Atualizamos essa lista toda semana com os melhores achados.',
     categoria: 'Oferta',
-    dataCriacao: '2025-04-01',
-    dataModificacao: '2025-05-25',
+    dataCriacao: '2026-04-01',
+    dataModificacao: '2026-05-25',
   },
   'como-escolher-frigideira': {
     titulo: 'Como Escolher a Frigideira Certa para Cada Tipo de Fogão',
     descricao: 'Indução, gás ou elétrico? Antiaderente ou inox? Este guia resolve de uma vez por todas essa dúvida.',
     categoria: 'Guia',
-    dataCriacao: '2025-04-10',
-    dataModificacao: '2025-05-10',
+    dataCriacao: '2026-04-10',
+    dataModificacao: '2026-05-10',
   },
   'purificador-agua-vale-pena': {
     titulo: 'Purificador de Água Realmente Vale a Pena? Testamos 4 Modelos',
     descricao: 'Fizemos testes de qualidade da água e calculamos o custo por litro de cada modelo. Os resultados são reveladores.',
     categoria: 'Review',
-    dataCriacao: '2025-04-20',
-    dataModificacao: '2025-05-20',
+    dataCriacao: '2026-04-20',
+    dataModificacao: '2026-05-20',
   },
   'kit-organizacao-cozinha': {
     titulo: 'Kit Organização de Cozinha: Monte o seu por R$ 150',
     descricao: 'Selecionamos os melhores produtos para organizar sua cozinha do zero sem gastar muito.',
     categoria: 'Guia',
-    dataCriacao: '2025-05-01',
-    dataModificacao: '2025-05-22',
+    dataCriacao: '2026-05-01',
+    dataModificacao: '2026-05-22',
   },
 };
 
 export function getStaticPaths() {
   return Object.keys({
-    'melhores-aspiradores-po-2025': {},
+    'melhores-aspiradores-po-2026': {},
     'airfryer-philips-vs-mondial': {},
     'organizadores-armario-barato': {},
     'robos-aspirador-custo-beneficio': {},
@@ -93,12 +93,12 @@ const blogPostingSchema = {
   dateModified: post.dataModificacao,
   author: {
     '@type': 'Person',
-    name: 'UtilCasa',
+    name: 'Casa em Alta',
     url: Astro.site?.href,
   },
   publisher: {
     '@type': 'Organization',
-    name: 'UtilCasa',
+    name: 'Casa em Alta',
     url: Astro.site?.href,
   },
   url: new URL(`/posts/${slug}`, Astro.site).href,
@@ -107,15 +107,17 @@ const blogPostingSchema = {
     '@id': new URL(`/posts/${slug}`, Astro.site).href,
   },
 };
+
+const isAspiradores = slug === 'melhores-aspiradores-po-2026';
 ---
 
 <BaseLayout
-  title={`${post.titulo} - UtilCasa`}
+  title={`${post.titulo} - Casa em Alta`}
   description={post.descricao}
   type="article"
   schema={blogPostingSchema}
 >
-  <div class="max-w-3xl mx-auto px-4 py-16">
+  <div class="max-w-4xl mx-auto px-4 py-12">
     <a href="/" class="inline-flex items-center gap-2 text-sm text-slate-500 hover:text-orange-500 transition-colors mb-8">
       <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
@@ -124,11 +126,431 @@ const blogPostingSchema = {
     </a>
 
     <span class="text-xs font-semibold text-orange-500 uppercase tracking-widest">{post.categoria}</span>
-    <h1 class="text-3xl md:text-4xl font-black text-slate-900 mt-2 mb-4">{post.titulo}</h1>
-    <p class="text-slate-500 text-lg mb-8">{post.descricao}</p>
+    <h1 class="text-3xl md:text-4xl font-black text-slate-900 mt-2 mb-3">{post.titulo}</h1>
+    <p class="text-slate-500 text-base mb-2">Por <strong class="text-slate-700">Casa em Alta</strong> &bull; Atualizado em 26/05/2026</p>
+    <p class="text-slate-600 text-lg mb-10 leading-relaxed">{post.descricao}</p>
 
-    <div class="bg-orange-50 border border-orange-100 rounded-2xl p-6 text-center text-slate-600">
-      Conteúdo completo em breve. Este artigo está sendo preparado com muito cuidado.
-    </div>
+    {isAspiradores && (
+      <div>
+
+        <!-- Introdução -->
+        <div class="bg-orange-50 border border-orange-100 rounded-2xl p-6 mb-10">
+          <p class="text-slate-700 leading-relaxed mb-3">
+            Já usei vários modelos ao longo dos anos e posso dizer com certeza: a escolha certa do aspirador muda completamente a sua rotina. Tenho um aspirador vertical que uso para limpezas rápidas, mas foi o robô aspirador que realmente transformou o meu dia a dia. Enquanto cuido da louça ou faço outra tarefa, ele vai pelo chão aspirando e ainda passa pano. Uma liberdade que não tem preço.
+          </p>
+          <p class="text-slate-700 leading-relaxed">
+            Nesta lista, reuni os 7 modelos que mais se destacam em 2026, levando em conta potência, durabilidade, custo-benefício e facilidade de uso no dia a dia real, não só em testes de laboratório.
+          </p>
+        </div>
+
+        <!-- Produto 1 -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-orange-500 px-6 py-4">
+            <p class="text-white font-black text-xl">1º lugar - Xiaomi Robot Vacuum X20+</p>
+            <p class="text-orange-100 text-sm mt-1">O robô que faz tudo por você, incluindo esvaziar sozinho e lavar as mopas</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-slate-50 rounded-xl p-4">
+              <div class="text-center">
+                <div class="w-20 h-20 rounded-full bg-slate-200 mx-auto mb-2 flex items-center justify-center">
+                  <svg class="w-10 h-10 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M12 8v8"/></svg>
+                </div>
+                <span class="text-xs text-slate-400">Xiaomi X20+</span>
+              </div>
+            </div>
+            <div class="flex-1">
+              <a href="#" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-3 transition-colors">
+                Conferir preço na Amazon
+              </a>
+              <a href="#" class="block w-full bg-orange-400 hover:bg-orange-500 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">
+                Conferir preço no Mercado Livre
+              </a>
+
+              <h3 class="font-bold text-slate-800 mb-3">Ficha Técnica</h3>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Potência de sucção:</strong> 7.000 Pa</li>
+                <li><strong>Duração da bateria:</strong> até 180 minutos</li>
+                <li><strong>Área de cobertura:</strong> até 250 m²</li>
+                <li><strong>Wi-Fi e app:</strong> Sim</li>
+                <li><strong>Esvaziamento automático:</strong> Sim</li>
+                <li><strong>Passa pano:</strong> Sim, com lavagem automática das mopas</li>
+                <li><strong>Navegação:</strong> Laser LDS com mapeamento inteligente</li>
+              </ul>
+
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Esvaziamento automático da lixeira</li>
+                    <li>Lava e seca as mopas sozinho</li>
+                    <li>Mapeamento por laser muito preciso</li>
+                    <li>Excelente para quem tem pets</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Preço mais elevado</li>
+                    <li>Base de esvaziamento ocupa espaço</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 2 -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-slate-800 px-6 py-4">
+            <p class="text-white font-black text-xl">2º lugar - Dreame D10 Plus</p>
+            <p class="text-slate-300 text-sm mt-1">Melhor custo-benefício entre os robôs com esvaziamento automático</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-slate-50 rounded-xl p-4">
+              <div class="text-center">
+                <div class="w-20 h-20 rounded-full bg-slate-200 mx-auto mb-2 flex items-center justify-center">
+                  <svg class="w-10 h-10 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M12 8v8"/></svg>
+                </div>
+                <span class="text-xs text-slate-400">Dreame D10 Plus</span>
+              </div>
+            </div>
+            <div class="flex-1">
+              <a href="#" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-3 transition-colors">
+                Conferir preço na Amazon
+              </a>
+              <a href="#" class="block w-full bg-orange-400 hover:bg-orange-500 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">
+                Conferir preço no Mercado Livre
+              </a>
+
+              <h3 class="font-bold text-slate-800 mb-3">Ficha Técnica</h3>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Potência de sucção:</strong> 4.000 Pa</li>
+                <li><strong>Duração da bateria:</strong> até 150 minutos</li>
+                <li><strong>Área de cobertura:</strong> até 200 m²</li>
+                <li><strong>Wi-Fi e app:</strong> Sim</li>
+                <li><strong>Esvaziamento automático:</strong> Sim</li>
+                <li><strong>Passa pano:</strong> Sim</li>
+                <li><strong>Navegação:</strong> Laser com criação de mapa</li>
+              </ul>
+
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Esvaziamento automático com preço acessível</li>
+                    <li>Navegação por laser precisa</li>
+                    <li>App completo com agendamento</li>
+                    <li>Silencioso no modo eco</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Sucção inferior ao Xiaomi X20+</li>
+                    <li>Não lava as mopas automaticamente</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 3 -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-slate-800 px-6 py-4">
+            <p class="text-white font-black text-xl">3º lugar - Robô Aspirador Positivo Smart Clean</p>
+            <p class="text-slate-300 text-sm mt-1">A opção mais em conta para quem quer entrar no mundo dos robôs</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-slate-50 rounded-xl p-4">
+              <div class="text-center">
+                <div class="w-20 h-20 rounded-full bg-slate-200 mx-auto mb-2 flex items-center justify-center">
+                  <svg class="w-10 h-10 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M12 8v8"/></svg>
+                </div>
+                <span class="text-xs text-slate-400">Positivo Smart Clean</span>
+              </div>
+            </div>
+            <div class="flex-1">
+              <a href="#" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-3 transition-colors">
+                Conferir preço na Amazon
+              </a>
+              <a href="#" class="block w-full bg-orange-400 hover:bg-orange-500 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">
+                Conferir preço no Mercado Livre
+              </a>
+
+              <h3 class="font-bold text-slate-800 mb-3">Ficha Técnica</h3>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Potência de sucção:</strong> 2.000 Pa</li>
+                <li><strong>Duração da bateria:</strong> até 100 minutos</li>
+                <li><strong>Área de cobertura:</strong> até 80 m²</li>
+                <li><strong>Wi-Fi e app:</strong> Não</li>
+                <li><strong>Esvaziamento automático:</strong> Não</li>
+                <li><strong>Passa pano:</strong> Sim (reservatório simples)</li>
+                <li><strong>Navegação:</strong> Aleatória com sensores anticolisão</li>
+              </ul>
+
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Preço muito acessível</li>
+                    <li>Fácil de usar, sem configuração</li>
+                    <li>Bom para apartamentos pequenos</li>
+                    <li>Silencioso</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Sem mapeamento inteligente</li>
+                    <li>Não tem controle por app</li>
+                    <li>Sucção limitada</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 4 -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-slate-800 px-6 py-4">
+            <p class="text-white font-black text-xl">4º lugar - Electrolux Ergorapido Sem Fio</p>
+            <p class="text-slate-300 text-sm mt-1">Leve, prático e ideal para limpezas rápidas no dia a dia</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-slate-50 rounded-xl p-4">
+              <div class="text-center">
+                <div class="w-20 h-20 rounded-xl bg-slate-200 mx-auto mb-2 flex items-center justify-center">
+                  <svg class="w-10 h-10 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg>
+                </div>
+                <span class="text-xs text-slate-400">Ergorapido</span>
+              </div>
+            </div>
+            <div class="flex-1">
+              <a href="#" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-3 transition-colors">
+                Conferir preço na Amazon
+              </a>
+              <a href="#" class="block w-full bg-orange-400 hover:bg-orange-500 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">
+                Conferir preço no Mercado Livre
+              </a>
+
+              <h3 class="font-bold text-slate-800 mb-3">Ficha Técnica</h3>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Tipo:</strong> Vertical sem fio</li>
+                <li><strong>Tensão:</strong> 21.6V</li>
+                <li><strong>Autonomia:</strong> até 45 minutos</li>
+                <li><strong>Peso:</strong> aproximadamente 1.5 kg</li>
+                <li><strong>Filtro HEPA:</strong> Sim</li>
+                <li><strong>2 em 1:</strong> Sim (remove o cabo e vira portátil)</li>
+              </ul>
+
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Muito leve e fácil de manusear</li>
+                    <li>Sem fio, sem enrolação de cabo</li>
+                    <li>Converte em aspirador de mão</li>
+                    <li>Bom para escadas e sofás</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Autonomia limitada (45 min)</li>
+                    <li>Reservatório pequeno</li>
+                    <li>Não substitui aspirador completo para sujeiras pesadas</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 5 -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-slate-800 px-6 py-4">
+            <p class="text-white font-black text-xl">5º lugar - WAP Silence FW</p>
+            <p class="text-slate-300 text-sm mt-1">O aspirador tradicional mais silencioso da categoria</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-slate-50 rounded-xl p-4">
+              <div class="text-center">
+                <div class="w-20 h-20 rounded-xl bg-slate-200 mx-auto mb-2 flex items-center justify-center">
+                  <svg class="w-10 h-10 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg>
+                </div>
+                <span class="text-xs text-slate-400">WAP Silence</span>
+              </div>
+            </div>
+            <div class="flex-1">
+              <a href="#" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-3 transition-colors">
+                Conferir preço na Amazon
+              </a>
+              <a href="#" class="block w-full bg-orange-400 hover:bg-orange-500 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">
+                Conferir preço no Mercado Livre
+              </a>
+
+              <h3 class="font-bold text-slate-800 mb-3">Ficha Técnica</h3>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Potência:</strong> 1.400W</li>
+                <li><strong>Capacidade do reservatório:</strong> 2.5 litros</li>
+                <li><strong>Filtro HEPA:</strong> Sim</li>
+                <li><strong>Nível de ruído:</strong> baixo (tecnologia silence)</li>
+                <li><strong>Tipo:</strong> Tradicional com cabo e rodas</li>
+                <li><strong>Ideal para:</strong> carpetes, tapetes e pelos de animais</li>
+              </ul>
+
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Muito silencioso, não incomoda bebês ou pets</li>
+                    <li>Grande capacidade de reservatório</li>
+                    <li>Filtragem HEPA eficiente</li>
+                    <li>Durável e resistente</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Mais pesado que os verticais</li>
+                    <li>Cabo pode atrapalhar em espaços menores</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 6 -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-slate-800 px-6 py-4">
+            <p class="text-white font-black text-xl">6º lugar - Britânia Aspirador Vertical BAV1000</p>
+            <p class="text-slate-300 text-sm mt-1">Vertical com fio, potente e com ótimo custo-benefício</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-slate-50 rounded-xl p-4">
+              <div class="text-center">
+                <div class="w-20 h-20 rounded-xl bg-slate-200 mx-auto mb-2 flex items-center justify-center">
+                  <svg class="w-10 h-10 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg>
+                </div>
+                <span class="text-xs text-slate-400">Britânia BAV1000</span>
+              </div>
+            </div>
+            <div class="flex-1">
+              <a href="#" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-3 transition-colors">
+                Conferir preço na Amazon
+              </a>
+              <a href="#" class="block w-full bg-orange-400 hover:bg-orange-500 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">
+                Conferir preço no Mercado Livre
+              </a>
+
+              <h3 class="font-bold text-slate-800 mb-3">Ficha Técnica</h3>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Potência:</strong> 1.000W</li>
+                <li><strong>Tipo:</strong> Vertical com fio</li>
+                <li><strong>Filtro:</strong> Lavável</li>
+                <li><strong>Comprimento do cabo:</strong> 5 metros</li>
+                <li><strong>Peso:</strong> aproximadamente 2 kg</li>
+                <li><strong>Ideal para:</strong> pisos lisos e tapetes finos</li>
+              </ul>
+
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Preço acessível</li>
+                    <li>Filtro lavável, sem custo extra de manutenção</li>
+                    <li>Leve e fácil de guardar</li>
+                    <li>Boa potência para o preço</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Cabo pode ser curto para casas grandes</li>
+                    <li>Não ideal para carpetes grossos</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 7 -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-10 shadow-sm">
+          <div class="bg-slate-800 px-6 py-4">
+            <p class="text-white font-black text-xl">7º lugar - Black+Decker Dustbuster 20V</p>
+            <p class="text-slate-300 text-sm mt-1">O portátil que resolve aquela sujeira rápida sem trabalho</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-slate-50 rounded-xl p-4">
+              <div class="text-center">
+                <div class="w-20 h-20 rounded-xl bg-slate-200 mx-auto mb-2 flex items-center justify-center">
+                  <svg class="w-10 h-10 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg>
+                </div>
+                <span class="text-xs text-slate-400">Dustbuster 20V</span>
+              </div>
+            </div>
+            <div class="flex-1">
+              <a href="#" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-3 transition-colors">
+                Conferir preço na Amazon
+              </a>
+              <a href="#" class="block w-full bg-orange-400 hover:bg-orange-500 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">
+                Conferir preço no Mercado Livre
+              </a>
+
+              <h3 class="font-bold text-slate-800 mb-3">Ficha Técnica</h3>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Tipo:</strong> Portátil sem fio</li>
+                <li><strong>Tensão:</strong> 20V</li>
+                <li><strong>Autonomia:</strong> até 18 minutos</li>
+                <li><strong>Capacidade:</strong> 0.5 litros</li>
+                <li><strong>Peso:</strong> menos de 1 kg</li>
+                <li><strong>Ideal para:</strong> carro, sofá, migalhas na mesa</li>
+              </ul>
+
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Muito compacto e leve</li>
+                    <li>Perfeito para o carro</li>
+                    <li>Ligou e já está aspirando</li>
+                    <li>Fácil de guardar em qualquer lugar</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Autonomia curta (18 min)</li>
+                    <li>Não substitui um aspirador completo</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Conclusão -->
+        <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 mb-8">
+          <h2 class="text-xl font-black text-slate-900 mb-3">Qual aspirador escolher?</h2>
+          <p class="text-slate-600 leading-relaxed mb-3">
+            Se você quer praticidade máxima e tem espaço para a base, o <strong>Xiaomi X20+</strong> é o melhor investimento. Ele aspira, passa pano e ainda se esvazia sozinho. Para quem busca um bom robô com preço mais acessível, o <strong>Dreame D10 Plus</strong> entrega muito bem.
+          </p>
+          <p class="text-slate-600 leading-relaxed">
+            Para limpezas rápidas no dia a dia, o <strong>Electrolux Ergorapido</strong> é difícil de bater. E se você mora em uma casa maior e precisa de potência, o <strong>WAP Silence</strong> resolve com eficiência e sem barulho excessivo.
+          </p>
+        </div>
+
+      </div>
+    )}
+
+    {!isAspiradores && (
+      <div class="bg-orange-50 border border-orange-100 rounded-2xl p-6 text-center text-slate-600">
+        Conteúdo completo em breve. Este artigo está sendo preparado com muito cuidado.
+      </div>
+    )}
   </div>
 </BaseLayout>
