@@ -9,7 +9,7 @@ interface Props {
 }
 
 const {
-  title = 'UtilCasa - Reviews, Comparativos e Ofertas de Utilidades Domésticas',
+  title = 'Casa em Alta - Reviews, Comparativos e Ofertas de Utilidades Domésticas',
   description = 'Encontre as melhores utilidades domésticas com reviews honestos, comparativos detalhados e as melhores ofertas do mercado.',
   image = '/images/og-default.png',
   type = 'website',
@@ -22,7 +22,7 @@ const imageURL = new URL(image, Astro.site).href;
 const websiteSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
-  name: 'UtilCasa',
+  name: 'Casa em Alta',
   url: Astro.site?.href,
   description,
   potentialAction: {
@@ -53,7 +53,7 @@ const websiteSchema = {
     <meta property="og:image" content={imageURL} />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:site_name" content="UtilCasa" />
+    <meta property="og:site_name" content="Casa em Alta" />
     <meta property="og:locale" content="pt_BR" />
 
     <!-- Twitter Card -->
@@ -84,8 +84,15 @@ const websiteSchema = {
   <body class="bg-white font-sans text-slate-900 antialiased">
     <header class="sticky top-0 z-50 bg-white border-b border-slate-100 shadow-sm">
       <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-        <a href="/" class="flex items-center gap-2" aria-label="UtilCasa - Página inicial">
-          <span class="text-2xl font-black text-orange-500">Util</span><span class="text-2xl font-black text-slate-800">Casa</span>
+        <a href="/" class="flex items-center gap-2.5" aria-label="Casa em Alta - Página inicial">
+          <svg viewBox="0 0 36 36" class="w-9 h-9" xmlns="http://www.w3.org/2000/svg">
+            <rect width="36" height="36" rx="8" fill="#f97316"/>
+            <polygon points="18,6 30,17 6,17" fill="white"/>
+            <rect x="8" y="16" width="20" height="14" fill="white"/>
+            <rect x="14" y="22" width="8" height="8" rx="1.5" fill="#f97316"/>
+            <rect x="21" y="19" width="5" height="5" rx="1" fill="#fed7aa"/>
+          </svg>
+          <span class="text-xl font-black text-orange-500">Casa</span><span class="text-xl font-black text-slate-800">&nbsp;em Alta</span>
         </a>
         <nav aria-label="Menu principal" class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
           <a href="#posts" class="hover:text-orange-500 transition-colors">Melhores Posts</a>
@@ -104,7 +111,7 @@ const websiteSchema = {
 
     <footer class="bg-slate-900 text-slate-400 py-10">
       <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
-        <p>© 2025 <span class="text-white font-semibold">UtilCasa</span>. Todos os direitos reservados.</p>
+        <p>© 2025 <span class="text-white font-semibold">Casa em Alta</span>. Todos os direitos reservados.</p>
         <p>Este site contém links de afiliados. Ao comprar, posso ganhar uma comissão sem custo extra para você.</p>
       </div>
     </footer>
