@@ -1,0 +1,154 @@
+---
+const posts = [
+  {
+    slug: 'melhores-aspiradores-po-2025',
+    categoria: 'Review',
+    categoriaColor: 'bg-orange-100 text-orange-700',
+    titulo: 'Os 7 Melhores Aspiradores de Pó de 2025',
+    resumo: 'Testamos os modelos mais vendidos do mercado para descobrir qual realmente vale o preço. Confira nosso ranking.',
+    tempo: '8 min de leitura',
+    destaque: true,
+  },
+  {
+    slug: 'airfryer-philips-vs-mondial',
+    categoria: 'Comparativo',
+    categoriaColor: 'bg-blue-100 text-blue-700',
+    titulo: 'Airfryer Philips vs Mondial: Qual Comprar em 2025?',
+    resumo: 'Comparamos consumo de energia, capacidade, facilidade de limpeza e resultado final. A resposta vai te surpreender.',
+    tempo: '6 min de leitura',
+    destaque: false,
+  },
+  {
+    slug: 'organizadores-armario-barato',
+    categoria: 'Oferta',
+    categoriaColor: 'bg-green-100 text-green-700',
+    titulo: '10 Organizadores de Armário Baratos que Valem Cada Centavo',
+    resumo: 'Encontramos os melhores organizadores por menos de R$ 50 que transformam qualquer armário bagunçado.',
+    tempo: '5 min de leitura',
+    destaque: false,
+  },
+  {
+    slug: 'robos-aspirador-custo-beneficio',
+    categoria: 'Comparativo',
+    categoriaColor: 'bg-blue-100 text-blue-700',
+    titulo: 'Robôs Aspiradores: Os 5 Melhores Custo-Benefício',
+    resumo: 'Você realmente precisa gastar mais de R$ 1.000? Testamos opções de R$ 300 a R$ 2.000 para descobrir.',
+    tempo: '10 min de leitura',
+    destaque: false,
+  },
+  {
+    slug: 'panela-pressao-eletrica-review',
+    categoria: 'Review',
+    categoriaColor: 'bg-orange-100 text-orange-700',
+    titulo: 'Panela de Pressão Elétrica: Review Completo após 6 Meses de Uso',
+    resumo: 'Usamos por 6 meses e contamos tudo: pontos fortes, limitações e se realmente economiza tempo na cozinha.',
+    tempo: '7 min de leitura',
+    destaque: false,
+  },
+  {
+    slug: 'itens-casa-30-reais-amazon',
+    categoria: 'Oferta',
+    categoriaColor: 'bg-green-100 text-green-700',
+    titulo: '15 Itens Incríveis para Casa por até R$ 30 na Amazon',
+    resumo: 'Garimpos que valem muito mais do que custam. Atualizamos essa lista toda semana com os melhores achados.',
+    tempo: '4 min de leitura',
+    destaque: false,
+  },
+  {
+    slug: 'como-escolher-frigideira',
+    categoria: 'Guia',
+    categoriaColor: 'bg-purple-100 text-purple-700',
+    titulo: 'Como Escolher a Frigideira Certa para Cada Tipo de Fogão',
+    resumo: 'Indução, gás ou elétrico? Antiaderente ou inox? Este guia resolve de uma vez por todas essa dúvida.',
+    tempo: '6 min de leitura',
+    destaque: false,
+  },
+  {
+    slug: 'purificador-agua-vale-pena',
+    categoria: 'Review',
+    categoriaColor: 'bg-orange-100 text-orange-700',
+    titulo: 'Purificador de Água Realmente Vale a Pena? Testamos 4 Modelos',
+    resumo: 'Fizemos testes de qualidade da água e calculamos o custo por litro de cada modelo. Os resultados são reveladores.',
+    tempo: '9 min de leitura',
+    destaque: false,
+  },
+  {
+    slug: 'kit-organizacao-cozinha',
+    categoria: 'Guia',
+    categoriaColor: 'bg-purple-100 text-purple-700',
+    titulo: 'Kit Organização de Cozinha: Monte o seu por R$ 150',
+    resumo: 'Selecionamos os melhores produtos para organizar sua cozinha do zero sem gastar muito. Com links diretos.',
+    tempo: '5 min de leitura',
+    destaque: false,
+  },
+];
+---
+
+<section id="posts" class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-4">
+    <!-- Título da seção -->
+    <div class="text-center mb-12">
+      <span class="text-orange-500 font-semibold text-sm uppercase tracking-widest">Conteúdo em destaque</span>
+      <h2 class="text-3xl md:text-4xl font-black text-slate-900 mt-2">Os Melhores Posts</h2>
+      <p class="text-slate-500 mt-3 max-w-xl mx-auto">Reviews, comparativos e guias de compra para você tomar a melhor decisão.</p>
+    </div>
+
+    <!-- Grid 3x3 -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {posts.map((post) => (
+        <article class="group bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-all hover:-translate-y-1 overflow-hidden flex flex-col">
+          <!-- Imagem placeholder -->
+          <div class="w-full h-48 bg-gradient-to-br from-slate-100 to-slate-200 flex items-center justify-center" role="img" aria-label={`Imagem de capa: ${post.titulo}`}>
+            <div class="text-center">
+              <div class="w-12 h-12 rounded-xl bg-orange-100 flex items-center justify-center mx-auto mb-2">
+                <svg class="w-6 h-6 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <span class="text-xs text-slate-400">Imagem do post</span>
+            </div>
+          </div>
+
+          <div class="p-5 flex flex-col flex-1 gap-3">
+            <!-- Categoria e tempo -->
+            <div class="flex items-center justify-between">
+              <span class={`text-xs font-semibold px-2.5 py-1 rounded-full ${post.categoriaColor}`}>
+                {post.categoria}
+              </span>
+              <span class="text-xs text-slate-400">{post.tempo}</span>
+            </div>
+
+            <!-- Título -->
+            <h3 class="font-bold text-slate-900 text-base leading-snug group-hover:text-orange-500 transition-colors">
+              <a href={`/posts/${post.slug}`}>{post.titulo}</a>
+            </h3>
+
+            <!-- Resumo -->
+            <p class="text-sm text-slate-500 leading-relaxed flex-1">{post.resumo}</p>
+
+            <!-- Link -->
+            <a
+              href={`/posts/${post.slug}`}
+              class="text-sm font-semibold text-orange-500 hover:text-orange-600 flex items-center gap-1 mt-auto transition-colors"
+            >
+              Ler artigo completo
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </article>
+      ))}
+    </div>
+
+    <!-- Botão ver todos -->
+    <div class="text-center mt-12">
+      <a href="/posts" class="inline-flex items-center gap-2 border-2 border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white font-bold px-8 py-3 rounded-full transition-all">
+        Ver todos os artigos
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>

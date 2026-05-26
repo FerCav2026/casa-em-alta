@@ -1,0 +1,25 @@
+---
+const lojas = [
+  { nome: 'Amazon', cor: 'text-[#FF9900]', bg: 'bg-[#FF9900]/10' },
+  { nome: 'Mercado Livre', cor: 'text-[#FFE600]', bg: 'bg-[#FFE600]/10' },
+  { nome: 'Americanas', cor: 'text-[#e60014]', bg: 'bg-[#e60014]/10' },
+  { nome: 'Magazine Luiza', cor: 'text-[#0086FF]', bg: 'bg-[#0086FF]/10' },
+  { nome: 'Casas Bahia', cor: 'text-[#E8000D]', bg: 'bg-[#E8000D]/10' },
+  { nome: 'Shopee', cor: 'text-[#EE4D2D]', bg: 'bg-[#EE4D2D]/10' },
+];
+---
+
+<section class="bg-slate-50 border-y border-slate-100 py-12">
+  <div class="max-w-6xl mx-auto px-4">
+    <p class="text-center text-sm font-semibold text-slate-400 uppercase tracking-widest mb-8">
+      Produtos comparados nas principais lojas
+    </p>
+    <div class="flex flex-wrap justify-center items-center gap-4 md:gap-6">
+      {lojas.map((loja) => (
+        <div class={`flex items-center justify-center px-6 py-3 rounded-xl ${loja.bg} border border-slate-200 min-w-[140px]`}>
+          <span class={`text-lg font-black ${loja.cor}`}>{loja.nome}</span>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,74 @@
+---
+---
+
+<section id="contato" class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="max-w-2xl mx-auto text-center mb-12">
+      <span class="text-orange-500 font-semibold text-sm uppercase tracking-widest">Fale comigo</span>
+      <h2 class="text-3xl md:text-4xl font-black text-slate-900 mt-2">Entre em Contato</h2>
+      <p class="text-slate-500 mt-3">
+        Tem uma dúvida, sugestão de produto para eu testar ou quer fazer uma parceria? Me manda uma mensagem!
+      </p>
+    </div>
+
+    <div class="max-w-xl mx-auto bg-slate-50 rounded-3xl p-8 border border-slate-100 shadow-sm">
+      <form class="flex flex-col gap-5" name="contato" method="POST">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div class="flex flex-col gap-1.5">
+            <label for="nome" class="text-sm font-semibold text-slate-700">Nome</label>
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              placeholder="Seu nome"
+              class="w-full bg-white border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-orange-400 focus:border-transparent transition"
+            />
+          </div>
+          <div class="flex flex-col gap-1.5">
+            <label for="email" class="text-sm font-semibold text-slate-700">E-mail</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="seu@email.com"
+              class="w-full bg-white border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-orange-400 focus:border-transparent transition"
+            />
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-1.5">
+          <label for="assunto" class="text-sm font-semibold text-slate-700">Assunto</label>
+          <select
+            id="assunto"
+            name="assunto"
+            class="w-full bg-white border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-orange-400 focus:border-transparent transition"
+          >
+            <option value="">Selecione um assunto</option>
+            <option value="sugestao">Sugestão de produto para testar</option>
+            <option value="parceria">Parceria ou colaboração</option>
+            <option value="duvida">Dúvida sobre produto</option>
+            <option value="outro">Outro</option>
+          </select>
+        </div>
+
+        <div class="flex flex-col gap-1.5">
+          <label for="mensagem" class="text-sm font-semibold text-slate-700">Mensagem</label>
+          <textarea
+            id="mensagem"
+            name="mensagem"
+            rows="4"
+            placeholder="Conta mais sobre o que você precisa..."
+            class="w-full bg-white border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-orange-400 focus:border-transparent transition resize-none"
+          ></textarea>
+        </div>
+
+        <button
+          type="submit"
+          class="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 rounded-xl text-base transition-all shadow-lg shadow-orange-500/20 hover:shadow-orange-500/40 hover:-translate-y-0.5"
+        >
+          Enviar Mensagem
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
