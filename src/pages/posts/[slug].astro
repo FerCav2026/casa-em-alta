@@ -113,6 +113,7 @@ const isAirfryer = slug === 'airfryer-philips-vs-mondial';
 
 const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
   : isAirfryer ? '/images/airfryer/capa-airfryer.png'
+  : slug === 'organizadores-armario-barato' ? '/images/organizadores/capa-organizadores.png'
   : undefined;
 const isOrganizadores = slug === 'organizadores-armario-barato';
 const isRobos = slug === 'robos-aspirador-custo-beneficio';
@@ -1096,6 +1097,15 @@ const isKitCozinha = slug === 'kit-organizacao-cozinha';
 
     {isOrganizadores && (
       <div>
+        <div class="w-full rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <img
+            src="/images/organizadores/capa-organizadores.png"
+            alt="10 Organizadores de Armário Baratos"
+            class="w-full h-64 md:h-80 object-cover"
+            loading="eager"
+          />
+        </div>
+
         <div class="bg-orange-50 border border-orange-100 rounded-2xl p-6 mb-8">
           <p class="text-slate-700 leading-relaxed mb-3">
             Já perdi a conta de quantas vezes comprei um organizador de armário que não coube na prateleira. O erro é sempre o mesmo: olhar a foto, gostar do produto e comprar sem medir nada. Depois de muita tentativa e erro, aprendi o que realmente funciona para transformar um armário bagunçado sem gastar muito.
