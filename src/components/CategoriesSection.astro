@@ -1,0 +1,39 @@
+---
+import { categorias, getPostsByCategoria } from '../data/posts';
+---
+
+<section class="py-16 bg-slate-50">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="text-center mb-10">
+      <span class="text-orange-500 font-semibold text-sm uppercase tracking-widest">Navegue por tema</span>
+      <h2 class="text-3xl md:text-4xl font-black text-slate-900 mt-2">Categorias</h2>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      {categorias.map((cat) => {
+        const total = getPostsByCategoria(cat.slug).length;
+        return (
+          <a
+            href={`/categorias/${cat.slug}`}
+            class="group flex flex-col gap-3 bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all p-6"
+          >
+            <span class={`text-2xl font-black ${cat.color}`}>{cat.icon}</span>
+            <div>
+              <span class={`text-xs font-bold px-2.5 py-1 rounded-full ${cat.bgColor} ${cat.color}`}>
+                {cat.label}
+              </span>
+            </div>
+            <p class="text-sm text-slate-500 leading-relaxed flex-1">{cat.descricao}</p>
+            <p class="text-xs text-slate-400 font-medium">{total} {total === 1 ? 'artigo' : 'artigos'}</p>
+            <span class="text-sm font-semibold text-orange-500 group-hover:text-orange-600 flex items-center gap-1 transition-colors">
+              Ver artigos
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </span>
+          </a>
+        );
+      })}
+    </div>
+  </div>
+</section>

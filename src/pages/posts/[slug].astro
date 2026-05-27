@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getPostBySlug } from '../../data/posts';
 
 const posts: Record<string, { titulo: string; descricao: string; categoria: string; dataCriacao: string; dataModificacao: string }> = {
   'melhores-aspiradores-po-2026': {
@@ -83,6 +84,7 @@ export function getStaticPaths() {
 
 const { slug } = Astro.params;
 const post = posts[slug as string];
+const postData = getPostBySlug(slug as string);
 
 const blogPostingSchema = {
   '@context': 'https://schema.org',
@@ -132,14 +134,22 @@ const isKitCozinha = slug === 'kit-organizacao-cozinha';
   schema={blogPostingSchema}
 >
   <div class="max-w-4xl mx-auto px-4 py-12">
-    <a href="/" class="inline-flex items-center gap-2 text-sm text-slate-500 hover:text-orange-500 transition-colors mb-8">
-      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-      </svg>
-      Voltar para o início
-    </a>
+    <!-- Breadcrumb -->
+    <nav class="flex items-center gap-2 text-sm text-slate-500 mb-8">
+      <a href="/" class="hover:text-orange-500 transition-colors">Início</a>
+      <span>/</span>
+      {postData && (
+        <>
+          <a href={`/categorias/${postData.categoria}`} class="hover:text-orange-500 transition-colors">{postData.categoriaLabel}</a>
+          <span>/</span>
+        </>
+      )}
+      <span class="text-slate-800 font-medium truncate max-w-xs">{post.titulo}</span>
+    </nav>
 
-    <span class="text-xs font-semibold text-orange-500 uppercase tracking-widest">{post.categoria}</span>
+    <span class={`text-xs font-semibold px-2.5 py-1 rounded-full ${postData?.categoriaColor ?? 'bg-orange-100 text-orange-700'}`}>
+      {postData?.categoriaLabel ?? post.categoria}
+    </span>
     <h1 class="text-3xl md:text-4xl font-black text-slate-900 mt-2 mb-3">{post.titulo}</h1>
     <p class="text-slate-500 text-base mb-2">Por <strong class="text-slate-700">Casa em Alta</strong> &bull; Atualizado em 26/05/2026</p>
     <p class="text-slate-600 text-lg mb-10 leading-relaxed">{post.descricao}</p>

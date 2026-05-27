@@ -1,21 +1,43 @@
 ---
-import { posts } from '../data/posts';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { categorias, getPostsByCategoria, getCategoriaBySlug } from '../../data/posts';
+
+export function getStaticPaths() {
+  return categorias.map((cat) => ({ params: { categoria: cat.slug } }));
+}
+
+const { categoria: categoriaSlug } = Astro.params;
+const categoria = getCategoriaBySlug(categoriaSlug as string)!;
+const postsDaCategoria = getPostsByCategoria(categoriaSlug as string);
 ---
 
-<section id="posts" class="py-20 bg-white">
-  <div class="max-w-6xl mx-auto px-4">
-    <!-- Título da seção -->
-    <div class="text-center mb-12">
-      <span class="text-orange-500 font-semibold text-sm uppercase tracking-widest">Conteúdo em destaque</span>
-      <h2 class="text-3xl md:text-4xl font-black text-slate-900 mt-2">Os Melhores Posts</h2>
-      <p class="text-slate-500 mt-3 max-w-xl mx-auto">Reviews, comparativos e guias de compra para você tomar a melhor decisão.</p>
+<BaseLayout
+  title={`${categoria.label} - Casa em Alta`}
+  description={categoria.descricao}
+>
+  <div class="max-w-6xl mx-auto px-4 py-12">
+
+    <!-- Breadcrumb -->
+    <nav class="flex items-center gap-2 text-sm text-slate-500 mb-8">
+      <a href="/" class="hover:text-orange-500 transition-colors">Início</a>
+      <span>/</span>
+      <span class="text-slate-800 font-medium">{categoria.label}</span>
+    </nav>
+
+    <!-- Header da categoria -->
+    <div class="mb-12">
+      <span class={`text-xs font-bold px-3 py-1.5 rounded-full ${categoria.bgColor} ${categoria.color} uppercase tracking-widest`}>
+        {categoria.label}
+      </span>
+      <h1 class="text-4xl md:text-5xl font-black text-slate-900 mt-4 mb-3">{categoria.label}</h1>
+      <p class="text-slate-500 text-lg max-w-2xl">{categoria.descricao}</p>
+      <p class="text-sm text-slate-400 mt-2">{postsDaCategoria.length} {postsDaCategoria.length === 1 ? 'artigo' : 'artigos'}</p>
     </div>
 
-    <!-- Grid 3x3 -->
+    <!-- Grid de posts -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      {posts.map((post) => (
+      {postsDaCategoria.map((post) => (
         <article class="group bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-all hover:-translate-y-1 overflow-hidden flex flex-col">
-          <!-- Imagem de capa -->
           <div class="w-full h-48 overflow-hidden bg-gradient-to-br from-slate-100 to-slate-200 flex items-center justify-center">
             {post.imagem ? (
               <img
@@ -37,26 +59,19 @@ import { posts } from '../data/posts';
           </div>
 
           <div class="p-5 flex flex-col flex-1 gap-3">
-            <!-- Categoria e tempo -->
             <div class="flex items-center justify-between">
-              <a
-                href={`/categorias/${post.categoria}`}
-                class={`text-xs font-semibold px-2.5 py-1 rounded-full ${post.categoriaColor} hover:opacity-80 transition-opacity`}
-              >
+              <span class={`text-xs font-semibold px-2.5 py-1 rounded-full ${post.categoriaColor}`}>
                 {post.categoriaLabel}
-              </a>
+              </span>
               <span class="text-xs text-slate-400">{post.tempo}</span>
             </div>
 
-            <!-- Título -->
-            <h3 class="font-bold text-slate-900 text-base leading-snug group-hover:text-orange-500 transition-colors">
+            <h2 class="font-bold text-slate-900 text-base leading-snug group-hover:text-orange-500 transition-colors">
               <a href={`/posts/${post.slug}`}>{post.titulo}</a>
-            </h3>
+            </h2>
 
-            <!-- Resumo -->
             <p class="text-sm text-slate-500 leading-relaxed flex-1">{post.resumo}</p>
 
-            <!-- Link -->
             <a
               href={`/posts/${post.slug}`}
               class="text-sm font-semibold text-orange-500 hover:text-orange-600 flex items-center gap-1 mt-auto transition-colors"
@@ -71,14 +86,12 @@ import { posts } from '../data/posts';
       ))}
     </div>
 
-    <!-- Botão ver todos -->
+    <!-- Voltar -->
     <div class="text-center mt-12">
-      <a href="/posts" class="inline-flex items-center gap-2 border-2 border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white font-bold px-8 py-3 rounded-full transition-all">
+      <a href="/" class="inline-flex items-center gap-2 border-2 border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white font-bold px-8 py-3 rounded-full transition-all">
         Ver todos os artigos
-        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-        </svg>
       </a>
     </div>
+
   </div>
-</section>
+</BaseLayout>
