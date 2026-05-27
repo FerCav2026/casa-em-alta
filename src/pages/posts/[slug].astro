@@ -110,6 +110,8 @@ const blogPostingSchema = {
 
 const isAspiradores = slug === 'melhores-aspiradores-po-2026';
 const isAirfryer = slug === 'airfryer-philips-vs-mondial';
+
+const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png' : undefined;
 const isOrganizadores = slug === 'organizadores-armario-barato';
 const isRobos = slug === 'robos-aspirador-custo-beneficio';
 const isPanela = slug === 'panela-pressao-eletrica-review';
@@ -122,6 +124,7 @@ const isKitCozinha = slug === 'kit-organizacao-cozinha';
 <BaseLayout
   title={`${post.titulo} - Casa em Alta`}
   description={post.descricao}
+  image={coverImage}
   type="article"
   schema={blogPostingSchema}
 >
@@ -140,6 +143,16 @@ const isKitCozinha = slug === 'kit-organizacao-cozinha';
 
     {isAspiradores && (
       <div>
+
+        <!-- Capa do artigo -->
+        <div class="rounded-2xl overflow-hidden mb-8 shadow-md">
+          <img
+            src="/images/aspiradores/capa-aspiradores.png"
+            alt="Os melhores aspiradores de pó de 2026: robôs, verticais e portáteis"
+            class="w-full h-auto object-cover"
+            loading="eager"
+          />
+        </div>
 
         <!-- Introdução -->
         <div class="bg-orange-50 border border-orange-100 rounded-2xl p-6 mb-8">
