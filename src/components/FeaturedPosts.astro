@@ -8,15 +8,17 @@ const posts = [
     resumo: 'Testamos os modelos mais vendidos do mercado para descobrir qual realmente vale o preço. Confira nosso ranking.',
     tempo: '8 min de leitura',
     destaque: true,
+    imagem: '/images/aspiradores/capa-aspiradores.png',
   },
   {
     slug: 'airfryer-philips-vs-mondial',
     categoria: 'Comparativo',
     categoriaColor: 'bg-blue-100 text-blue-700',
-    titulo: 'Airfryer Philips vs Mondial: Qual Comprar em 2025?',
+    titulo: 'Airfryer Philips vs Mondial: Qual Comprar em 2026?',
     resumo: 'Comparamos consumo de energia, capacidade, facilidade de limpeza e resultado final. A resposta vai te surpreender.',
     tempo: '6 min de leitura',
     destaque: false,
+    imagem: '/images/airfryer/capa-airfryer.png',
   },
   {
     slug: 'organizadores-armario-barato',
@@ -26,6 +28,7 @@ const posts = [
     resumo: 'Encontramos os melhores organizadores por menos de R$ 50 que transformam qualquer armário bagunçado.',
     tempo: '5 min de leitura',
     destaque: false,
+    imagem: null,
   },
   {
     slug: 'robos-aspirador-custo-beneficio',
@@ -35,6 +38,7 @@ const posts = [
     resumo: 'Você realmente precisa gastar mais de R$ 1.000? Testamos opções de R$ 300 a R$ 2.000 para descobrir.',
     tempo: '10 min de leitura',
     destaque: false,
+    imagem: null,
   },
   {
     slug: 'panela-pressao-eletrica-review',
@@ -44,6 +48,7 @@ const posts = [
     resumo: 'Usamos por 6 meses e contamos tudo: pontos fortes, limitações e se realmente economiza tempo na cozinha.',
     tempo: '7 min de leitura',
     destaque: false,
+    imagem: null,
   },
   {
     slug: 'itens-casa-30-reais-amazon',
@@ -53,6 +58,7 @@ const posts = [
     resumo: 'Garimpos que valem muito mais do que custam. Atualizamos essa lista toda semana com os melhores achados.',
     tempo: '4 min de leitura',
     destaque: false,
+    imagem: null,
   },
   {
     slug: 'como-escolher-frigideira',
@@ -62,6 +68,7 @@ const posts = [
     resumo: 'Indução, gás ou elétrico? Antiaderente ou inox? Este guia resolve de uma vez por todas essa dúvida.',
     tempo: '6 min de leitura',
     destaque: false,
+    imagem: null,
   },
   {
     slug: 'purificador-agua-vale-pena',
@@ -71,6 +78,7 @@ const posts = [
     resumo: 'Fizemos testes de qualidade da água e calculamos o custo por litro de cada modelo. Os resultados são reveladores.',
     tempo: '9 min de leitura',
     destaque: false,
+    imagem: null,
   },
   {
     slug: 'kit-organizacao-cozinha',
@@ -80,6 +88,7 @@ const posts = [
     resumo: 'Selecionamos os melhores produtos para organizar sua cozinha do zero sem gastar muito. Com links diretos.',
     tempo: '5 min de leitura',
     destaque: false,
+    imagem: null,
   },
 ];
 ---
@@ -97,16 +106,25 @@ const posts = [
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {posts.map((post) => (
         <article class="group bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-all hover:-translate-y-1 overflow-hidden flex flex-col">
-          <!-- Imagem placeholder -->
-          <div class="w-full h-48 bg-gradient-to-br from-slate-100 to-slate-200 flex items-center justify-center" role="img" aria-label={`Imagem de capa: ${post.titulo}`}>
-            <div class="text-center">
-              <div class="w-12 h-12 rounded-xl bg-orange-100 flex items-center justify-center mx-auto mb-2">
-                <svg class="w-6 h-6 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                </svg>
+          <!-- Imagem de capa -->
+          <div class="w-full h-48 overflow-hidden bg-gradient-to-br from-slate-100 to-slate-200 flex items-center justify-center">
+            {post.imagem ? (
+              <img
+                src={post.imagem}
+                alt={`Capa: ${post.titulo}`}
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+              />
+            ) : (
+              <div class="text-center">
+                <div class="w-12 h-12 rounded-xl bg-orange-100 flex items-center justify-center mx-auto mb-2">
+                  <svg class="w-6 h-6 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <span class="text-xs text-slate-400">Em breve</span>
               </div>
-              <span class="text-xs text-slate-400">Imagem do post</span>
-            </div>
+            )}
           </div>
 
           <div class="p-5 flex flex-col flex-1 gap-3">
