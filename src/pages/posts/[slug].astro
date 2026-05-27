@@ -111,7 +111,9 @@ const blogPostingSchema = {
 const isAspiradores = slug === 'melhores-aspiradores-po-2026';
 const isAirfryer = slug === 'airfryer-philips-vs-mondial';
 
-const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png' : undefined;
+const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
+  : isAirfryer ? '/images/airfryer/capa-airfryer.png'
+  : undefined;
 const isOrganizadores = slug === 'organizadores-armario-barato';
 const isRobos = slug === 'robos-aspirador-custo-beneficio';
 const isPanela = slug === 'panela-pressao-eletrica-review';
@@ -696,6 +698,17 @@ const isKitCozinha = slug === 'kit-organizacao-cozinha';
 
     {isAirfryer && (
       <div>
+
+        <!-- Capa do artigo -->
+        <div class="rounded-2xl overflow-hidden mb-8 shadow-md">
+          <img
+            src="/images/airfryer/capa-airfryer.png"
+            alt="Airfryer Philips vs Mondial: qual comprar em 2026"
+            class="w-full h-auto object-cover"
+            loading="eager"
+          />
+        </div>
+
         <div class="bg-orange-50 border border-orange-100 rounded-2xl p-6 mb-8">
           <p class="text-slate-700 leading-relaxed mb-3">
             Essa é a dúvida de quase todo mundo na hora de comprar a primeira airfryer: Philips ou Mondial? As duas são as mais vendidas do Brasil, mas têm diferenças reais que vão afetar sua experiência nos próximos anos. Testei modelos das duas marcas e vou te contar o que ninguém coloca na descrição do produto.
@@ -722,12 +735,7 @@ const isKitCozinha = slug === 'kit-organizacao-cozinha';
           </div>
           <div class="p-6 flex flex-col md:flex-row gap-8">
             <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-slate-200 rounded-xl p-4 min-h-32">
-              <div class="text-center">
-                <div class="w-20 h-20 rounded-xl bg-slate-200 mx-auto mb-2 flex items-center justify-center">
-                  <svg class="w-10 h-10 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg>
-                </div>
-                <span class="text-xs text-slate-400">Philips HD9252</span>
-              </div>
+              <img src="/images/airfryer/philips-hd9252.jpg" alt="Philips Walita HD9252/90 Airfryer" class="w-full h-auto object-contain rounded-lg" />
             </div>
             <div class="flex-1">
               <a href="#" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-3 transition-colors">Conferir preço na Amazon</a>
@@ -770,12 +778,7 @@ const isKitCozinha = slug === 'kit-organizacao-cozinha';
           </div>
           <div class="p-6 flex flex-col md:flex-row gap-8">
             <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-slate-200 rounded-xl p-4 min-h-32">
-              <div class="text-center">
-                <div class="w-20 h-20 rounded-xl bg-slate-200 mx-auto mb-2 flex items-center justify-center">
-                  <svg class="w-10 h-10 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg>
-                </div>
-                <span class="text-xs text-slate-400">Mondial AF-30</span>
-              </div>
+              <img src="/images/airfryer/mondial-af30.jpg" alt="Mondial Air Fryer Plus AF-30" class="w-full h-auto object-contain rounded-lg" />
             </div>
             <div class="flex-1">
               <a href="#" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-3 transition-colors">Conferir preço na Amazon</a>
@@ -818,12 +821,7 @@ const isKitCozinha = slug === 'kit-organizacao-cozinha';
           </div>
           <div class="p-6 flex flex-col md:flex-row gap-8">
             <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-slate-200 rounded-xl p-4 min-h-32">
-              <div class="text-center">
-                <div class="w-20 h-20 rounded-xl bg-slate-200 mx-auto mb-2 flex items-center justify-center">
-                  <svg class="w-10 h-10 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg>
-                </div>
-                <span class="text-xs text-slate-400">Philips HD9216</span>
-              </div>
+              <img src="/images/airfryer/philips-hd9216.jpg" alt="Philips Walita HD9216/90 Airfryer Compacta" class="w-full h-auto object-contain rounded-lg" />
             </div>
             <div class="flex-1">
               <a href="#" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-3 transition-colors">Conferir preço na Amazon</a>
@@ -865,12 +863,7 @@ const isKitCozinha = slug === 'kit-organizacao-cozinha';
           </div>
           <div class="p-6 flex flex-col md:flex-row gap-8">
             <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-slate-200 rounded-xl p-4 min-h-32">
-              <div class="text-center">
-                <div class="w-20 h-20 rounded-xl bg-slate-200 mx-auto mb-2 flex items-center justify-center">
-                  <svg class="w-10 h-10 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg>
-                </div>
-                <span class="text-xs text-slate-400">Mondial AF-14</span>
-              </div>
+              <img src="/images/airfryer/mondial-af14.jpg" alt="Mondial Air Fryer Essential AF-14" class="w-full h-auto object-contain rounded-lg" />
             </div>
             <div class="flex-1">
               <a href="#" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-3 transition-colors">Conferir preço na Amazon</a>
@@ -912,12 +905,7 @@ const isKitCozinha = slug === 'kit-organizacao-cozinha';
           </div>
           <div class="p-6 flex flex-col md:flex-row gap-8">
             <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-slate-200 rounded-xl p-4 min-h-32">
-              <div class="text-center">
-                <div class="w-20 h-20 rounded-xl bg-slate-200 mx-auto mb-2 flex items-center justify-center">
-                  <svg class="w-10 h-10 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg>
-                </div>
-                <span class="text-xs text-slate-400">Tefal Easy Fry</span>
-              </div>
+              <img src="/images/airfryer/tefal-easy-fry.jpg" alt="Tefal Easy Fry Precision" class="w-full h-auto object-contain rounded-lg" />
             </div>
             <div class="flex-1">
               <a href="#" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-3 transition-colors">Conferir preço na Amazon</a>
