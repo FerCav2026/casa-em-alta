@@ -89,7 +89,7 @@ export const posts: Post[] = [
     titulo: 'Robôs Aspiradores: Os 5 Melhores Custo-Benefício',
     resumo: 'Você realmente precisa gastar mais de R$ 1.000? Testamos opções de R$ 300 a R$ 2.000 para descobrir.',
     tempo: '10 min de leitura',
-    imagem: null,
+    imagem: '/images/robos/capa-robos.png',
     categoria: 'comparativos',
     categoriaLabel: 'Comparativo',
     categoriaColor: 'bg-blue-100 text-blue-700',

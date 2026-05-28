@@ -116,6 +116,7 @@ const isAirfryer = slug === 'airfryer-philips-vs-mondial';
 const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
   : isAirfryer ? '/images/airfryer/capa-airfryer.png'
   : slug === 'organizadores-armario-barato' ? '/images/organizadores/capa-organizadores.png'
+  : isRobos ? '/images/robos/capa-robos.png'
   : undefined;
 const isOrganizadores = slug === 'organizadores-armario-barato';
 const isRobos = slug === 'robos-aspirador-custo-beneficio';
@@ -1287,6 +1288,15 @@ const isKitCozinha = slug === 'kit-organizacao-cozinha';
 
     {isRobos && (
       <div>
+        <div class="w-full rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <img
+            src="/images/robos/capa-robos.png"
+            alt="Robôs Aspiradores: Os 5 Melhores Custo-Benefício"
+            class="w-full h-64 md:h-80 object-cover"
+            loading="eager"
+          />
+        </div>
+
         <div class="bg-orange-50 border border-orange-100 rounded-2xl p-6 mb-8">
           <p class="text-slate-700 leading-relaxed mb-3">
             Robô aspirador é o tipo de compra que muda a rotina de verdade. Quando comecei a usar, percebi que o chão fica limpo todo dia sem que eu precise fazer nada. Mas tem muita opção no mercado e a diferença de preço entre o modelo mais barato e o mais caro pode ser de mais de R$ 1.500. Será que precisa pagar caro?
