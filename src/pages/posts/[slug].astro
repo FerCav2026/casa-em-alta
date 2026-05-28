@@ -112,12 +112,6 @@ const blogPostingSchema = {
 
 const isAspiradores = slug === 'melhores-aspiradores-po-2026';
 const isAirfryer = slug === 'airfryer-philips-vs-mondial';
-
-const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
-  : isAirfryer ? '/images/airfryer/capa-airfryer.png'
-  : slug === 'organizadores-armario-barato' ? '/images/organizadores/capa-organizadores.png'
-  : isRobos ? '/images/robos/capa-robos.png'
-  : undefined;
 const isOrganizadores = slug === 'organizadores-armario-barato';
 const isRobos = slug === 'robos-aspirador-custo-beneficio';
 const isPanela = slug === 'panela-pressao-eletrica-review';
@@ -125,6 +119,13 @@ const isItens30 = slug === 'itens-casa-30-reais-amazon';
 const isFrigideira = slug === 'como-escolher-frigideira';
 const isPurificador = slug === 'purificador-agua-vale-pena';
 const isKitCozinha = slug === 'kit-organizacao-cozinha';
+
+const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
+  : isAirfryer ? '/images/airfryer/capa-airfryer.png'
+  : isOrganizadores ? '/images/organizadores/capa-organizadores.png'
+  : isRobos ? '/images/robos/capa-robos.png'
+  : isPanela ? '/images/panela/capa-panela.png'
+  : undefined;
 ---
 
 <BaseLayout
@@ -1653,6 +1654,15 @@ const isKitCozinha = slug === 'kit-organizacao-cozinha';
 
     {isPanela && (
       <div>
+        <div class="w-full rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <img
+            src="/images/panela/capa-panela.png"
+            alt="Panela de Pressão Elétrica: Review após 6 meses de uso"
+            class="w-full h-64 md:h-80 object-cover"
+            loading="eager"
+          />
+        </div>
+
         <div class="bg-orange-50 border border-orange-100 rounded-2xl p-6 mb-8">
           <p class="text-slate-700 leading-relaxed mb-3">
             Comprei minha primeira panela de pressão elétrica há dois anos e não fico mais sem ela. Feijão que levava 1 hora na panela convencional fica pronto em 25 minutos. Mas depois de usar bastante, aprendi algumas coisas que precisaria ter sabido antes de comprar, e é isso que vou compartilhar aqui.
@@ -1674,17 +1684,12 @@ const isKitCozinha = slug === 'kit-organizacao-cozinha';
 
         <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
           <div class="bg-orange-500 px-6 py-4">
-            <p class="text-white font-black text-xl">1º lugar - Mondial PE-38 Pratic Cook</p>
+            <p class="text-white font-black text-xl">1º lugar - Mondial Master Cooker PE-38</p>
             <p class="text-orange-100 text-sm mt-1">A mais vendida do Brasil: 5 litros, 1.000W e 12 funções pré-programadas</p>
           </div>
           <div class="p-6 flex flex-col md:flex-row gap-8">
-            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-slate-200 rounded-xl p-4 min-h-32">
-              <div class="text-center">
-                <div class="w-20 h-20 rounded-xl bg-slate-200 mx-auto mb-2 flex items-center justify-center">
-                  <svg class="w-10 h-10 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg>
-                </div>
-                <span class="text-xs text-slate-400">Mondial PE-38</span>
-              </div>
+            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-slate-100 rounded-xl p-3 min-h-32">
+              <img src="/images/panela/mondial-pe38.jpg" alt="Mondial Master Cooker PE-38" class="w-full h-auto object-contain rounded-lg" loading="lazy" />
             </div>
             <div class="flex-1">
               <a href="#" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-3 transition-colors">Conferir preço na Amazon</a>
@@ -1722,17 +1727,12 @@ const isKitCozinha = slug === 'kit-organizacao-cozinha';
 
         <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
           <div class="bg-slate-800 px-6 py-4">
-            <p class="text-white font-black text-xl">2º lugar - Electrolux PE-1</p>
+            <p class="text-white font-black text-xl">2º lugar - Electrolux PCE10</p>
             <p class="text-slate-300 text-sm mt-1">Acabamento superior e assistência Electrolux: para quem quer durabilidade garantida</p>
           </div>
           <div class="p-6 flex flex-col md:flex-row gap-8">
-            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-slate-200 rounded-xl p-4 min-h-32">
-              <div class="text-center">
-                <div class="w-20 h-20 rounded-xl bg-slate-200 mx-auto mb-2 flex items-center justify-center">
-                  <svg class="w-10 h-10 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg>
-                </div>
-                <span class="text-xs text-slate-400">Electrolux PE-1</span>
-              </div>
+            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-slate-100 rounded-xl p-3 min-h-32">
+              <img src="/images/panela/electrolux-pce10.jpg" alt="Electrolux PCE10" class="w-full h-auto object-contain rounded-lg" loading="lazy" />
             </div>
             <div class="flex-1">
               <a href="#" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-3 transition-colors">Conferir preço na Amazon</a>
@@ -1772,13 +1772,8 @@ const isKitCozinha = slug === 'kit-organizacao-cozinha';
             <p class="text-slate-300 text-sm mt-1">Bowl antiaderente interno e design diferenciado: boa opção na faixa intermediária</p>
           </div>
           <div class="p-6 flex flex-col md:flex-row gap-8">
-            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-slate-200 rounded-xl p-4 min-h-32">
-              <div class="text-center">
-                <div class="w-20 h-20 rounded-xl bg-slate-200 mx-auto mb-2 flex items-center justify-center">
-                  <svg class="w-10 h-10 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg>
-                </div>
-                <span class="text-xs text-slate-400">Cadence PAN900</span>
-              </div>
+            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-slate-100 rounded-xl p-3 min-h-32">
+              <img src="/images/panela/cadence-pan900.jpg" alt="Cadence Gourmet PAN900" class="w-full h-auto object-contain rounded-lg" loading="lazy" />
             </div>
             <div class="flex-1">
               <a href="#" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-3 transition-colors">Conferir preço na Amazon</a>
@@ -1812,17 +1807,12 @@ const isKitCozinha = slug === 'kit-organizacao-cozinha';
 
         <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
           <div class="bg-slate-800 px-6 py-4">
-            <p class="text-white font-black text-xl">4º lugar - Midea Liva MKPC50</p>
+            <p class="text-white font-black text-xl">4º lugar - Midea Liva</p>
             <p class="text-slate-300 text-sm mt-1">Opção de custo-benefício da marca chinesa com boa penetração no Brasil</p>
           </div>
           <div class="p-6 flex flex-col md:flex-row gap-8">
-            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-slate-200 rounded-xl p-4 min-h-32">
-              <div class="text-center">
-                <div class="w-20 h-20 rounded-xl bg-slate-200 mx-auto mb-2 flex items-center justify-center">
-                  <svg class="w-10 h-10 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg>
-                </div>
-                <span class="text-xs text-slate-400">Midea Liva</span>
-              </div>
+            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-slate-100 rounded-xl p-3 min-h-32">
+              <img src="/images/panela/midea-liva.jpg" alt="Midea Liva" class="w-full h-auto object-contain rounded-lg" loading="lazy" />
             </div>
             <div class="flex-1">
               <a href="#" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-3 transition-colors">Conferir preço na Amazon</a>
@@ -1864,6 +1854,39 @@ const isKitCozinha = slug === 'kit-organizacao-cozinha';
             O que definitivamente vale lembrar: a panela de pressão elétrica não substitui 100% a convencional para todas as receitas. Para ensopados que precisam refogar antes ou pratos que exigem redução de molho, a convencional ainda tem vantagem.
           </p>
         </div>
+
+        <h2 class="text-2xl font-black text-slate-900 mb-4">O que testar nos primeiros 30 dias de uso</h2>
+        <p class="text-slate-700 leading-relaxed mb-4">
+          Nos primeiros usos, faça sempre receitas com bastante líquido para garantir que a panela atinge a pressão corretamente. Feijão e arroz são os melhores testes iniciais porque qualquer problema com a vedação fica evidente: o feijão não amolece no tempo esperado ou o arroz fica cru no centro. Se isso acontecer, verifique o anel de silicone antes de concluir que o produto tem defeito.
+        </p>
+        <p class="text-slate-700 leading-relaxed mb-4">
+          Outro teste importante no começo: experimente a função de manter aquecido. Ela é muito útil, mas em modelos de entrada pode deixar a comida superaquecida se ficar ligada por mais de 2 horas. Teste com um prato de feijão e verifique a temperatura após 1 hora e após 2 horas para entender o comportamento do seu modelo específico.
+        </p>
+        <p class="text-slate-700 leading-relaxed mb-10">
+          Após cada uso, lave o anel de silicone separado da tampa. Resíduos de comida acumulados na ranhura onde o anel encaixa são a principal causa de perda de vedação. Esse hábito simples, feito desde o primeiro dia, pode dobrar a vida útil do anel.
+        </p>
+
+        <h2 class="text-2xl font-black text-slate-900 mb-4">Receitas que ficam melhores na panela elétrica</h2>
+        <p class="text-slate-700 leading-relaxed mb-4">
+          Feijão e lentilha são as grandes vantagens: ficam cremosos sem virar papa, no tempo certo, toda vez. Carne de segunda (patinho, acém, coxão duro) que levaria 2 horas no fogão fica macia em 35 a 40 minutos. Frango desfia com facilidade após 20 minutos, perfeito para rechear esfiha, coxinha ou torta.
+        </p>
+        <p class="text-slate-700 leading-relaxed mb-4">
+          O que surpreende muita gente: mingau de aveia e creme de milho ficam prontos em 5 minutos, com textura muito melhor do que no fogão porque o calor penetra de forma uniforme. Arroz branco, desde que na proporção certa (1 xícara de arroz para 1,5 de água), fica soltinho e no ponto.
+        </p>
+        <p class="text-slate-700 leading-relaxed mb-10">
+          O que não funciona tão bem: frituras, receitas que precisam de refogar antes de tampar, molhos que precisam reduzir e massas com muito amido (macarrão gruda no fundo e pode entupir a válvula). Para esse tipo de preparo, a panela convencional ainda tem vantagem clara.
+        </p>
+
+        <h2 class="text-2xl font-black text-slate-900 mb-4">Como limpar e prolongar a vida útil</h2>
+        <p class="text-slate-700 leading-relaxed mb-4">
+          A vedação de longa duração começa na limpeza correta. Nunca mergulhe a base elétrica em água. O bowl interno (a panela interna) vai na pia normalmente, mas a base com o sistema elétrico só pode ser limpa com pano úmido. Esse é o erro mais comum que danifica o produto em menos de um ano.
+        </p>
+        <p class="text-slate-700 leading-relaxed mb-4">
+          Retire e lave o anel de silicone separadamente após cada uso. Com o tempo, o silicone absorve o odor de temperos fortes como alho e gengibre. Para eliminar o cheiro, mergulhe o anel em água com vinagre branco por 30 minutos uma vez por mês.
+        </p>
+        <p class="text-slate-700 leading-relaxed mb-10">
+          A válvula de pressão precisa de atenção especial: limpe-a sob água corrente após cada uso e verifique se não há resíduos obstruindo o orifício. Uma válvula parcialmente entupida faz a panela demorar mais para atingir a pressão e pode forçar o sistema de segurança a acionar com mais frequência, o que desgasta as peças mais rápido.
+        </p>
 
         <h2 class="text-2xl font-black text-slate-900 mb-6">Perguntas que todo mundo faz</h2>
         <div class="space-y-3 mb-10">
@@ -1912,8 +1935,26 @@ const isKitCozinha = slug === 'kit-organizacao-cozinha';
               A elétrica é mais prática: você programa e deixa, ela desliga sozinha e mantém quente. A convencional de fogão esquenta mais rápido e permite refogar antes de tampar. Para uso cotidiano e praticidade, a elétrica ganha. Para receitas mais elaboradas com refogar e reduzir, a convencional ainda leva vantagem.
             </div>
           </details>
+          <details class="border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+              Qual o tamanho ideal de panela elétrica para minha família?
+              <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </summary>
+            <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+              Para 1 ou 2 pessoas, uma panela de 3 litros já resolve. Para famílias de 3 a 5 pessoas, o modelo de 5 litros é o mais vendido e o mais prático. Acima de 5 pessoas ou quem cozinha para a semana toda de uma vez, vale considerar os modelos de 6 ou 7 litros. Lembre que a capacidade útil é sempre menor que a capacidade total indicada na embalagem: uma panela de 5 litros aceita no máximo 3,5 litros de comida.
+            </div>
+          </details>
+          <details class="border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+              Panela de pressão elétrica pode explodir?
+              <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </summary>
+            <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+              Na prática, é muito mais segura que a convencional de fogão. Tem múltiplos sistemas de segurança: trava automática da tampa, válvula de alívio de pressão e sensor de superaquecimento. A maioria dos acidentes com panelas elétricas acontece por mau uso: tentar abrir a tampa à força enquanto ainda há pressão interna ou usar com anel de silicone desgastado. Seguindo as instruções do manual, o risco é praticamente zero.
+            </div>
+          </details>
         </div>
-        <script type="application/ld+json" set:html={JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Por que a panela de pressão elétrica não está pegando pressão?","acceptedAnswer":{"@type":"Answer","text":"Causas mais comuns: anel de silicone gasto ou mal encaixado, válvula obstruída, tampa mal travada ou pouco líquido na panela. Comece verificando o anel e a válvula."}},{"@type":"Question","name":"Com que frequência trocar o anel de silicone?","acceptedAnswer":{"@type":"Answer","text":"Com uso de 4 a 5 vezes por semana, o anel dura entre 8 e 10 meses. O anel novo custa entre R$ 15 e R$ 30."}},{"@type":"Question","name":"Panela de pressão elétrica é segura?","acceptedAnswer":{"@type":"Answer","text":"Sim, é mais segura que a convencional. Tem sistemas de segurança que travam a tampa enquanto há pressão e válvulas de alívio automático."}},{"@type":"Question","name":"Dá para fazer arroz na panela de pressão elétrica?","acceptedAnswer":{"@type":"Answer","text":"Sim. A proporção é 1 xícara de arroz para 1,5 de água. Configure por 8 minutos e deixe a pressão sair naturalmente antes de abrir."}}]})} />
+        <script type="application/ld+json" set:html={JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Por que a panela de pressão elétrica não está pegando pressão?","acceptedAnswer":{"@type":"Answer","text":"Causas mais comuns: anel de silicone gasto ou mal encaixado, válvula obstruída por resíduos, tampa mal travada ou pouco líquido na panela (precisa de pelo menos 1 xícara de água). Comece verificando o anel e a válvula."}},{"@type":"Question","name":"Com que frequência trocar o anel de silicone?","acceptedAnswer":{"@type":"Answer","text":"Com uso de 4 a 5 vezes por semana, o anel dura entre 8 e 10 meses. Você vai perceber que é hora de trocar quando a panela demora mais para atingir a pressão ou começa a soltar vapor pelas laterais da tampa. O anel novo custa entre R$ 15 e R$ 30."}},{"@type":"Question","name":"Panela de pressão elétrica é segura?","acceptedAnswer":{"@type":"Answer","text":"Sim, é mais segura que a convencional de fogão. Tem sistemas de segurança que travam a tampa enquanto há pressão e válvulas de alívio automático. Nunca tente abrir a tampa à força antes de liberar toda a pressão pelo botão de alívio."}},{"@type":"Question","name":"Dá para fazer arroz na panela de pressão elétrica?","acceptedAnswer":{"@type":"Answer","text":"Sim, e fica muito bom. A proporção é 1 xícara de arroz para 1,5 de água. Use a função arroz pré-programada se disponível, ou configure por 8 minutos. Deixe a pressão sair naturalmente por 10 minutos antes de abrir."}},{"@type":"Question","name":"Qual a diferença entre panela elétrica e a convencional de fogão?","acceptedAnswer":{"@type":"Answer","text":"A elétrica é mais prática: você programa e deixa, ela desliga sozinha e mantém quente. A convencional esquenta mais rápido e permite refogar antes de tampar. Para uso cotidiano, a elétrica ganha. Para receitas com refogar e reduzir molho, a convencional leva vantagem."}},{"@type":"Question","name":"Qual o tamanho ideal de panela elétrica para minha família?","acceptedAnswer":{"@type":"Answer","text":"Para 1 ou 2 pessoas, 3 litros resolve. Para famílias de 3 a 5 pessoas, o modelo de 5 litros é o mais prático. Atenção: a capacidade útil é sempre menor que a total. Uma panela de 5 litros aceita no máximo 3,5 litros de comida."}},{"@type":"Question","name":"Panela de pressão elétrica pode explodir?","acceptedAnswer":{"@type":"Answer","text":"Na prática é muito mais segura que a convencional. Tem trava automática da tampa, válvula de alívio e sensor de superaquecimento. A maioria dos acidentes acontece por mau uso: abrir a tampa à força com pressão interna ou usar com anel desgastado. Seguindo as instruções, o risco é praticamente zero."}}]})} />
       </div>
     )}
 

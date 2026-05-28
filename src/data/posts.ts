@@ -99,7 +99,7 @@ export const posts: Post[] = [
     titulo: 'Panela de Pressão Elétrica: Review Completo após 6 Meses de Uso',
     resumo: 'Usamos por 6 meses e contamos tudo: pontos fortes, limitações e se realmente economiza tempo na cozinha.',
     tempo: '7 min de leitura',
-    imagem: null,
+    imagem: '/images/panela/capa-panela.png',
     categoria: 'reviews',
     categoriaLabel: 'Review',
     categoriaColor: 'bg-orange-100 text-orange-700',
