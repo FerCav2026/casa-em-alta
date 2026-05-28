@@ -109,7 +109,7 @@ export const posts: Post[] = [
     titulo: '15 Itens Incríveis para Casa por até R$ 30 na Amazon',
     resumo: 'Garimpos que valem muito mais do que custam. Atualizamos essa lista toda semana com os melhores achados.',
     tempo: '4 min de leitura',
-    imagem: null,
+    imagem: '/images/itens30/capa-itens30.png',
     categoria: 'rankings-e-listas',
     categoriaLabel: 'Rankings e Listas',
     categoriaColor: 'bg-green-100 text-green-700',

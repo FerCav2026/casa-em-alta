@@ -125,6 +125,7 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
   : isOrganizadores ? '/images/organizadores/capa-organizadores.png'
   : isRobos ? '/images/robos/capa-robos.png'
   : isPanela ? '/images/panela/capa-panela.png'
+  : isItens30 ? '/images/itens30/capa-itens30.png'
   : undefined;
 ---
 
@@ -1960,6 +1961,17 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
 
     {isItens30 && (
       <div>
+
+        <!-- Capa do artigo -->
+        <div class="rounded-2xl overflow-hidden mb-8 shadow-md">
+          <img
+            src="/images/itens30/capa-itens30.png"
+            alt="15 itens incríveis para casa por até R$ 30 na Amazon"
+            class="w-full h-auto object-cover"
+            loading="eager"
+          />
+        </div>
+
         <div class="bg-orange-50 border border-orange-100 rounded-2xl p-6 mb-8">
           <p class="text-slate-700 leading-relaxed mb-3">
             Todo mundo tem aquele momento em que fica navegando na Amazon e acaba descobrindo um produto que resolve um problema que você nem sabia que tinha. Esta lista é exatamente isso: 15 itens incríveis por até R$ 30 que já comprei, usei e recomendo sem hesitação.
@@ -2026,6 +2038,41 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
           </p>
         </div>
 
+        <div class="mb-10">
+          <h2 class="text-2xl font-black text-slate-900 mb-6">O que olhar antes de clicar em comprar</h2>
+          <p class="text-slate-700 leading-relaxed mb-4">
+            Comprar produtos baratos na Amazon com segurança requer atenção a alguns detalhes que fazem diferença entre um achado e um prejuízo. O primeiro ponto é olhar para quem está vendendo: sempre prefira produtos "Vendido e enviado pela Amazon" ou por vendedores com mais de 95% de avaliações positivas e pelo menos 500 vendas. Vendedores novos com poucas avaliações oferecem mais risco, mesmo que o preço seja tentador.
+          </p>
+          <p class="text-slate-700 leading-relaxed mb-4">
+            O segundo ponto é ler as avaliações negativas, não as positivas. Qualquer produto com mais de 4 estrelas costuma ter comentários elogiosos demais para ser útil. São as avaliações de 1 e 2 estrelas que revelam os problemas reais: se muita gente reclama do mesmo defeito (anel que quebra em 2 semanas, silicone que descola, timer que trava), é sinal de problema de fabricação e não de azar isolado.
+          </p>
+          <p class="text-slate-700 leading-relaxed mb-4">
+            O terceiro ponto: verifique a política de devolução antes de finalizar. Na Amazon, a maioria dos produtos permite devolução gratuita em até 30 dias se o produto chegar com defeito ou diferente do anunciado. Mas produtos vendidos por terceiros (não pela Amazon diretamente) têm políticas diferentes. Essa informação fica na página do produto, na aba "Devoluções".
+          </p>
+          <p class="text-slate-700 leading-relaxed">
+            Por último, desconfie de preços muito abaixo do mercado. Um rolo removedor de fiapos que custa R$ 5 quando todos os concorrentes cobram R$ 15 geralmente tem um motivo: qualidade inferior, sem refil disponível ou dimensões diferentes do que aparece na foto. Para itens desta lista, o preço indicado já representa o custo-benefício real, sem armadilhas.
+          </p>
+        </div>
+
+        <div class="mb-10">
+          <h2 class="text-2xl font-black text-slate-900 mb-6">Os 5 que mais surpreendem na prática</h2>
+          <p class="text-slate-700 leading-relaxed mb-4">
+            Depois de comprar e usar todos os itens desta lista, cinco deles se destacam pela diferença que fazem no dia a dia sem que você espere muito de um produto tão barato.
+          </p>
+          <p class="text-slate-700 leading-relaxed mb-4">
+            O termômetro digital de carne é o que mais surpreende quem nunca usou. Você nunca mais vai cortar a carne para ver se está no ponto, nunca mais vai deixar o frango mal cozido por medo ou super cozido por excesso. A leitura em 3 segundos transforma a forma como você cozinha qualquer proteína. Quem experimenta não abre mão.
+          </p>
+          <p class="text-slate-700 leading-relaxed mb-4">
+            As tampas de silicone universal parecem bobagem até você perceber que nunca mais vai precisar lembrar onde está a tampa de cada pote. Elas adaptam em qualquer tamanho e vedam muito melhor que as tampas plásticas originais que ficam soltas com o tempo.
+          </p>
+          <p class="text-slate-700 leading-relaxed mb-4">
+            Os sacos a vácuo para roupas resolvem de uma vez o problema de cobertores de inverno que ocupam metade do armário. Você conecta o aspirador, o cobertor comprime para um terço do tamanho e cabe numa prateleira que antes era impossível. O resultado é tão satisfatório que você vai querer colocar tudo dentro.
+          </p>
+          <p class="text-slate-700 leading-relaxed">
+            O timer magnético de cozinha e a esponja de melamina completam a lista. O timer porque o celular é inimigo da concentração na cozinha: você vai ver a notificação, responde uma mensagem e o macarrão passa do ponto. Um timer físico na geladeira elimina esse problema. Já a esponja de melamina funciona em manchas que resistem a qualquer produto de limpeza: batom na parede, sola de tênis amarelada, calcário em torneira. Você umedece, esfrega e some a mancha. Parece milagre mas é química.
+          </p>
+        </div>
+
         <h2 class="text-2xl font-black text-slate-900 mb-6">Dúvidas frequentes</h2>
         <div class="space-y-3 mb-10">
           <details class="border border-slate-200 rounded-xl overflow-hidden">
@@ -2064,8 +2111,35 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
               Sim, desde que a superfície seja lisa, limpa e seca na hora de colar. Ganchos de qualidade suportam entre 3 e 5 kg. O truque para colar certo: limpe bem a superfície com álcool 70%, cole o gancho com pressão firme por 30 segundos e espere 24 horas antes de colocar peso. Superfícies porosas como concreto aparente ou parede sem tinta não funcionam.
             </div>
           </details>
+          <details class="border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+              Produto chegou diferente do anunciado. O que fazer?
+              <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </summary>
+            <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+              Na Amazon, abra uma solicitação de devolução na aba "Devoluções e pedidos" dentro de 30 dias após o recebimento. Selecione o motivo "Produto diferente do descrito" ou "Com defeito". Para produtos vendidos e enviados pela Amazon, a devolução é gratuita e o reembolso chega em 3 a 5 dias úteis. Para produtos de vendedores terceiros, o processo pode demorar mais, mas a Amazon intervém se o vendedor não resolver.
+            </div>
+          </details>
+          <details class="border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+              Vale a pena assinar o Amazon Prime para comprar itens baratos?
+              <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </summary>
+            <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+              Depende da frequência de compra. Se você compra na Amazon pelo menos 2 vezes por mês, o Prime já se paga só em frete. Além do frete grátis, o Prime inclui Prime Video, Prime Music e acesso antecipado a promoções do Prime Day. Para quem compra esporadicamente, não vale. Para quem usa regularmente, o custo mensal do plano é facilmente compensado pelo que você economizaria em frete.
+            </div>
+          </details>
+          <details class="border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+              Esponja de melamina é segura para usar na cozinha?
+              <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </summary>
+            <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+              Sim, mas com ressalvas. A esponja de melamina é segura para superfícies duras como azulejo, torneira, parede e tênis. Não use em superfícies antiaderentes (risca o revestimento), em madeira tratada (remove o verniz) ou em superfícies pintadas com brilho (opacifica). Para limpar utensílios de cozinha ou panelas antiaderentes, prefira esponja comum. A melamina é ideal para manchas em paredes, rejunte, plástico e superfícies inox.
+            </div>
+          </details>
         </div>
-        <script type="application/ld+json" set:html={JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Produtos baratos da Amazon são de qualidade?","acceptedAnswer":{"@type":"Answer","text":"Para utensílios simples como clipes, raspadores e ganchos, o preço baixo não compromete a função. Os itens desta lista foram escolhidos porque a função não exige material sofisticado."}},{"@type":"Question","name":"Vale mais comprar na Shopee ou na Amazon para itens baratos?","acceptedAnswer":{"@type":"Answer","text":"Para itens sem urgência, a Shopee costuma ser mais barata. Para quem tem Amazon Prime, a velocidade e o atendimento pós-venda tornam a Amazon mais vantajosa."}},{"@type":"Question","name":"Como conseguir frete grátis na Amazon?","acceptedAnswer":{"@type":"Answer","text":"Compras acima de R$ 79 em produtos elegíveis têm frete grátis mesmo sem Amazon Prime. A melhor estratégia é agrupar vários itens em um único pedido."}},{"@type":"Question","name":"Gancho adesivo aguenta peso?","acceptedAnswer":{"@type":"Answer","text":"Sim. Limpe com álcool 70%, cole com pressão firme por 30 segundos e espere 24 horas antes de colocar peso. Suporta entre 3 e 5 kg em superfícies lisas."}}]})} />
+        <script type="application/ld+json" set:html={JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Produtos baratos da Amazon são de qualidade?","acceptedAnswer":{"@type":"Answer","text":"Para utensílios simples como clipes, raspadores e ganchos, o preço baixo não compromete a função. Os itens desta lista foram escolhidos porque a função não exige material sofisticado."}},{"@type":"Question","name":"Vale mais comprar na Shopee ou na Amazon para itens baratos?","acceptedAnswer":{"@type":"Answer","text":"Para itens sem urgência, a Shopee costuma ser mais barata. Para quem tem Amazon Prime, a velocidade e o atendimento pós-venda tornam a Amazon mais vantajosa."}},{"@type":"Question","name":"Como conseguir frete grátis na Amazon?","acceptedAnswer":{"@type":"Answer","text":"Compras acima de R$ 79 em produtos elegíveis têm frete grátis mesmo sem Amazon Prime. A melhor estratégia é agrupar vários itens em um único pedido."}},{"@type":"Question","name":"Gancho adesivo aguenta peso?","acceptedAnswer":{"@type":"Answer","text":"Sim. Limpe com álcool 70%, cole com pressão firme por 30 segundos e espere 24 horas antes de colocar peso. Suporta entre 3 e 5 kg em superfícies lisas."}},{"@type":"Question","name":"Produto chegou diferente do anunciado. O que fazer?","acceptedAnswer":{"@type":"Answer","text":"Abra uma solicitação de devolução na Amazon dentro de 30 dias. Selecione o motivo correto e, para produtos vendidos e enviados pela Amazon, o reembolso chega em 3 a 5 dias úteis."}},{"@type":"Question","name":"Vale a pena assinar o Amazon Prime para comprar itens baratos?","acceptedAnswer":{"@type":"Answer","text":"Se você compra na Amazon pelo menos 2 vezes por mês, o Prime já se paga só no frete. Além do frete grátis, inclui Prime Video, Prime Music e acesso a promoções do Prime Day."}},{"@type":"Question","name":"Esponja de melamina é segura para usar na cozinha?","acceptedAnswer":{"@type":"Answer","text":"Sim, mas não use em superfícies antiaderentes (risca o revestimento), em madeira tratada ou superfícies pintadas com brilho. É ideal para paredes, azulejo, rejunte, plástico e inox."}}]})} />
       </div>
     )}
 
