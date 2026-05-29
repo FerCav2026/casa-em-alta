@@ -129,7 +129,7 @@ export const posts: Post[] = [
     titulo: 'Purificador de Água Realmente Vale a Pena? Testamos 4 Modelos',
     resumo: 'Fizemos testes de qualidade da água e calculamos o custo por litro de cada modelo. Os resultados são reveladores.',
     tempo: '9 min de leitura',
-    imagem: null,
+    imagem: '/images/purificador/capa-purificador.png',
     categoria: 'reviews',
     categoriaLabel: 'Review',
     categoriaColor: 'bg-orange-100 text-orange-700',

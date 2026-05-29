@@ -127,6 +127,7 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
   : isPanela ? '/images/panela/capa-panela.png'
   : isItens30 ? '/images/itens30/capa-itens30.png'
   : isFrigideira ? '/images/frigideira/capa-frigideira.png'
+  : isPurificador ? '/images/purificador/capa-purificador.png'
   : undefined;
 ---
 
@@ -3434,6 +3435,16 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
 
     {isPurificador && (
       <div>
+
+        <!-- Capa do artigo -->
+        <div class="rounded-2xl overflow-hidden mb-8 shadow-md">
+          <img
+            src="/images/purificador/capa-purificador.png"
+            alt="Purificador de água realmente vale a pena? Testamos 4 modelos"
+            class="w-full h-auto object-cover"
+            loading="eager"
+          />
+        </div>
 
         <!-- DISCLOSURE AFILIADO -->
         <p class="text-sm text-slate-500 italic mb-6">Este artigo pode conter links de afiliados. Se você comprar por um desses links, posso receber uma comissão sem custo adicional para você.</p>
