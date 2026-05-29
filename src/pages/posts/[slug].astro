@@ -2912,288 +2912,512 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
 
     {isFrigideira && (
       <div>
+
+        <!-- DISCLOSURE AFILIADO -->
+        <p class="text-sm text-slate-500 italic mb-6">Este artigo pode conter links de afiliados. Se você comprar por um desses links, posso receber uma comissão sem custo adicional para você.</p>
+
+        <!-- BOX DE INTRODUÇÃO -->
         <div class="bg-orange-50 border border-orange-100 rounded-2xl p-6 mb-8">
-          <p class="text-slate-700 leading-relaxed mb-3">
-            Escolher frigideira parece simples até você descobrir que comprou uma que não funciona no seu fogão. Já passei por isso: comprei uma frigideira linda de indução que não esquentava no meu fogão elétrico de resistência. Hoje sei exatamente o que verificar antes de comprar, e vou te explicar de um jeito que nunca mais vai dar erro.
-          </p>
-          <p class="text-slate-700 leading-relaxed">
-            Neste guia, explico a diferença entre os tipos de frigideira, qual funciona em cada tipo de fogão e quais os melhores modelos da Tramontina (a marca mais completa do mercado brasileiro) para cada necessidade.
-          </p>
+          <h2 class="text-lg font-bold text-orange-700 mb-3">Por que escolher frigideira errada arruína qualquer receita</h2>
+          <p class="text-slate-700 mb-3">Durante anos eu comprei frigideira olhando só pro preço. Chegava em casa animada, fritava o primeiro ovo e ele grudava todo. Jogava fora o revestimento todo arranhado em menos de um ano. Repetia o ciclo.</p>
+          <p class="text-slate-700 mb-3">Foi só quando eu comecei a entender a diferença entre os materiais que tudo mudou. Hoje tenho uma frigideira para cada situação na cozinha, e nenhuma delas dura menos de dois anos.</p>
+          <p class="text-slate-700">Neste guia eu testei e pesquisei as quatro opções da Tramontina que uso com mais frequência. Vou te contar o que cada uma faz bem, onde cada uma falha, e principalmente: qual delas funciona no seu fogão.</p>
         </div>
 
+        <!-- BOX DE INSIGHT EXCLUSIVO -->
         <div class="bg-blue-50 border border-blue-200 rounded-2xl p-6 mb-10">
-          <p class="text-blue-800 font-bold text-base mb-2">O que todo mundo confunde sobre compatibilidade com fogão de indução</p>
-          <p class="text-slate-700 leading-relaxed mb-3">
-            Muita gente olha a lateral da frigideira para checar o símbolo de indução e erra. A compatibilidade com indução depende do <strong>fundo da frigideira</strong>, não da lateral ou da borda. O fundo precisa ser ferromagnético (atrai imã). Teste simples: encoste um imã na base da frigideira. Se grudar, funciona em indução.
-          </p>
-          <p class="text-slate-700 leading-relaxed">
-            Outro ponto que ninguém fala: fogão elétrico de resistência (aquele com espirais ou chapas metálicas) precisa de frigideira com fundo completamente plano e rígido. Fundo ondulado ou fino não faz bom contato com a resistência, aquece de forma desigual e pode deformar com o tempo.
-          </p>
+          <h2 class="text-lg font-bold text-blue-800 mb-3">O que não te contam sobre frigideiras</h2>
+          <ul class="space-y-3 text-slate-700 text-sm leading-relaxed">
+            <li><strong>Nem toda frigideira funciona em fogão de indução.</strong> O alumínio, que é o material da maioria das frigideiras antiaderentes populares, não é magnético. O fogão de indução precisa de material ferroso no fundo para funcionar. A Tramontina Paris, por exemplo, não funciona em indução. A Brava e a Grano, sim, por terem fundo em aço inox com camada magnética. A de ferro, obviamente, funciona perfeitamente.</li>
+            <li><strong>Frigideira de ferro e sabão: a lenda e a verdade.</strong> A regra antiga de "nunca usar sabão" em ferro ainda faz sentido, mas não do jeito que as pessoas pensam. O problema não é o sabão em si, é o detergente abrasivo e a esponja de aço, que arrancam a camada de tempero. Um detergente neutro com esponja macia não faz mal. O que arruína o ferro de vez é deixar de molho na água.</li>
+            <li><strong>PTFE vs. cerâmico: diferença de temperatura e de vida útil.</strong> O revestimento PTFE, popularmente chamado de teflon, começa a se degradar acima de 260°C. O cerâmico aguenta até cerca de 370°C. Na prática: a frigideira cerâmica é mais indicada para calor alto, como selar frango com a pele. Mas o PTFE é mais antiaderente no dia a dia, especialmente para ovos e peixes delicados.</li>
+            <li><strong>Qual aguenta temperatura mais alta para selar carne?</strong> A frigideira de ferro sem revestimento é a única que aguenta o calor necessário para uma crosta de verdade. O ferro pode chegar a mais de 400°C sem perder nenhuma propriedade. Quando a carne toca a superfície quente, acontece a reação de Maillard, que cria aquela crosta marrom e saborosa que os cozinheiros de restaurante conseguem.</li>
+            <li><strong>Quanto tempo dura cada revestimento?</strong> PTFE bem cuidado dura entre 2 e 5 anos em uso doméstico. Cerâmico dura em média 2 a 3 anos, mas perde a antiaderência mais rápido se exposto a temperaturas muito altas com frequência. Ferro sem revestimento, quando bem temperado, dura décadas. Literalmente.</li>
+          </ul>
         </div>
 
-        <h2 class="text-2xl font-black text-slate-900 mb-6">Qual frigideira para cada tipo de fogão</h2>
+        <!-- ÍNDICE -->
+        <nav class="bg-slate-50 border border-slate-200 rounded-2xl p-6 mb-10">
+          <p class="font-bold text-slate-800 mb-3">Neste artigo:</p>
+          <ul class="space-y-2 text-orange-600 font-medium text-sm">
+            <li><a href="#tramontina-paris" class="hover:underline">Tramontina Paris 26 cm, melhor para o dia a dia</a></li>
+            <li><a href="#tramontina-brava" class="hover:underline">Tramontina Brava 28 cm, melhor para famílias</a></li>
+            <li><a href="#tramontina-grano" class="hover:underline">Tramontina Grano Cerâmica 26 cm, melhor sem PTFE</a></li>
+            <li><a href="#tramontina-ferro" class="hover:underline">Tramontina Ferro 26 cm, favorita dos profissionais</a></li>
+            <li><a href="#tabela-compatibilidade" class="hover:underline">Tabela de compatibilidade com cada tipo de fogão</a></li>
+            <li><a href="#qual-para-cada-preparo" class="hover:underline">Qual frigideira usar para cada receita</a></li>
+            <li><a href="#como-conservar" class="hover:underline">Como conservar cada tipo de frigideira</a></li>
+            <li><a href="#faq" class="hover:underline">Perguntas frequentes</a></li>
+          </ul>
+        </nav>
 
-        <h3 class="text-xl font-bold text-slate-800 mb-3">Fogão a gás</h3>
-        <p class="text-slate-700 leading-relaxed mb-6">
-          É o mais flexível: funciona com praticamente qualquer frigideira. Antiaderente, inox, ferro fundido e cerâmica funcionam bem. A chama distribui o calor pela lateral da frigideira além do fundo, então o material importa menos para a uniformidade do calor. O fundo não precisa ser perfeitamente plano.
-        </p>
-
-        <h3 class="text-xl font-bold text-slate-800 mb-3">Fogão elétrico de resistência</h3>
-        <p class="text-slate-700 leading-relaxed mb-6">
-          Precisa de fundo completamente plano e bem espesso para garantir contato total com a resistência. Frigideira com fundo fino deforma com o calor e cria pontos quentes. Prefira modelos com "fundo triplo" ou "fundo difusor de calor". Evite ferro fundido muito pesado, que pode danificar a chapa elétrica.
-        </p>
-
-        <h3 class="text-xl font-bold text-slate-800 mb-3">Cooktop de indução</h3>
-        <p class="text-slate-700 leading-relaxed mb-6">
-          Só funciona com frigideira que tenha fundo ferromagnético. Alumínio puro e cobre não funcionam. Aço inox sem núcleo magnético também não. A maioria das frigideiras modernas já inclui o símbolo de indução, mas sempre confirme com o teste do imã no fundo antes de comprar.
-        </p>
-
-        <h2 class="text-2xl font-black text-slate-900 mb-6">Os melhores modelos para cada necessidade</h2>
-
-        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+        <!-- PRODUTO 1: TRAMONTINA PARIS -->
+        <div id="tramontina-paris" class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
           <div class="bg-orange-500 px-6 py-4">
-            <p class="text-white font-black text-xl">1º lugar - Tramontina Paris 26 cm</p>
-            <p class="text-orange-100 text-sm mt-1">A mais versátil: antiaderente de qualidade que funciona em qualquer fogão, inclusive indução</p>
+            <div class="flex items-center gap-3">
+              <span class="bg-white text-orange-500 text-xs font-black px-3 py-1 rounded-full">1º LUGAR</span>
+              <span class="bg-orange-400 text-white text-xs font-bold px-3 py-1 rounded-full">Melhor para o dia a dia</span>
+            </div>
+            <p class="text-white font-black text-xl mt-2">Tramontina Paris Frigideira Antiaderente 26 cm</p>
+            <p class="text-orange-100 text-sm mt-1">Alumínio com Starflon Max, leve, prática e fácil de limpar</p>
           </div>
-          <div class="p-6 flex flex-col md:flex-row gap-8">
-            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-slate-200 rounded-xl p-4 min-h-32">
-              <div class="text-center">
-                <div class="w-20 h-20 rounded-xl bg-slate-200 mx-auto mb-2 flex items-center justify-center">
-                  <svg class="w-10 h-10 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 2a10 10 0 100 20A10 10 0 0012 2zm0 0v4m0 12v4m0-20c0 0-4 4-4 10s4 10 4 10"/></svg>
-                </div>
-                <span class="text-xs text-slate-400">Tramontina Paris</span>
+          <div class="p-6">
+            <div class="flex flex-col md:flex-row gap-6 mb-6">
+              <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-slate-200 rounded-xl p-4 min-h-32">
+                <img src="/images/frigideira/tramontina-paris-26.jpg" alt="Frigideira Tramontina Paris Antiaderente 26 cm" class="max-h-36 object-contain" width="160" height="160" loading="lazy" />
+              </div>
+              <div class="flex-1">
+                <p class="text-slate-700 text-sm leading-relaxed mb-3">Se você precisa de uma frigideira para o uso de todo dia, a Paris resolve com folga. O corpo em alumínio de 2 mm deixa ela leve na mão, o que faz diferença quando você está fritando um ovo de manhã cedo ou refogando legumes rápido no almoço.</p>
+                <p class="text-slate-700 text-sm leading-relaxed mb-3">O revestimento Starflon Max é a versão premium da Tramontina dentro da linha de alumínio. É livre de PFOA e na prática significa que você consegue fritar ovo com uma gota de azeite sem nada grudar. A limpeza é rápida, uma passada de esponja macia e pronto.</p>
+                <p class="text-slate-700 text-sm leading-relaxed"><strong>Atenção:</strong> essa frigideira é em alumínio, então ela não funciona em fogão de indução. Funciona bem em gás, elétrico e vitrocerâmico.</p>
               </div>
             </div>
-            <div class="flex-1">
-              <a href="#" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-3 transition-colors">Conferir preço na Amazon</a>
-              <a href="#" class="block w-full bg-orange-400 hover:bg-orange-500 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Conferir preço no Mercado Livre</a>
-              <h3 class="font-bold text-slate-800 mb-3">Ficha Técnica</h3>
-              <ul class="text-sm text-slate-600 space-y-1 mb-6">
-                <li><strong>Material:</strong> Alumínio com revestimento antiaderente Starflon</li>
-                <li><strong>Fundo:</strong> Triplo, encapsulado em aço inox</li>
-                <li><strong>Compatibilidade:</strong> Gás, elétrico, vitrocerâmica e indução</li>
-                <li><strong>Diâmetro:</strong> 26 cm (ideal para 2 a 4 pessoas)</li>
-                <li><strong>Limpeza:</strong> Compatível com lava-louças</li>
-              </ul>
-              <div class="grid md:grid-cols-2 gap-4">
-                <div>
-                  <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
-                  <ul class="text-sm text-slate-600 space-y-1">
-                    <li>Funciona em todos os tipos de fogão</li>
-                    <li>Revestimento antiaderente durável</li>
-                    <li>Fundo triplo distribui calor de forma uniforme</li>
-                    <li>Marca brasileira com excelente assistência</li>
-                  </ul>
-                </div>
-                <div>
-                  <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
-                  <ul class="text-sm text-slate-600 space-y-1">
-                    <li>Revestimento antiaderente perde eficiência com uso de utensílios de metal</li>
-                    <li>Preço acima das opções básicas</li>
-                  </ul>
-                </div>
+            <div class="grid grid-cols-2 gap-3 mb-5 text-xs">
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Material</p><p class="font-semibold text-slate-800">Alumínio 2 mm</p></div>
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Revestimento</p><p class="font-semibold text-slate-800">Starflon Max (PTFE)</p></div>
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Capacidade</p><p class="font-semibold text-slate-800">1,8 L</p></div>
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Cabo</p><p class="font-semibold text-slate-800">Baquelite antitérmico</p></div>
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Fogões compatíveis</p><p class="font-semibold text-slate-800">Gás, elétrico, vitrocerâmico</p></div>
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Lava-louças</p><p class="font-semibold text-slate-800">Sim (mas prefira à mão)</p></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-5 text-sm">
+              <div>
+                <p class="font-semibold text-slate-800 mb-2">Pontos fortes</p>
+                <ul class="space-y-1 text-slate-600">
+                  <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Muito leve, fácil de manusear</li>
+                  <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Antiaderente excelente para ovos, peixes e crepes</li>
+                  <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Preço acessível para a qualidade entregue</li>
+                  <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Fácil de limpar, sem esforço</li>
+                </ul>
+              </div>
+              <div>
+                <p class="font-semibold text-slate-800 mb-2">Pontos de atenção</p>
+                <ul class="space-y-1 text-slate-600">
+                  <li class="flex items-start gap-2"><span class="text-slate-400 font-bold mt-0.5">-</span> Não funciona em fogão de indução</li>
+                  <li class="flex items-start gap-2"><span class="text-slate-400 font-bold mt-0.5">-</span> Não é ideal para selar carnes em temperatura muito alta</li>
+                  <li class="flex items-start gap-2"><span class="text-slate-400 font-bold mt-0.5">-</span> Evitar utensílios de metal para preservar o revestimento</li>
+                </ul>
               </div>
             </div>
+            <a href="https://amzn.to/3Ryi6wE" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon</a>
           </div>
         </div>
 
-        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+        <!-- PRODUTO 2: TRAMONTINA BRAVA -->
+        <div id="tramontina-brava" class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
           <div class="bg-slate-800 px-6 py-4">
-            <p class="text-white font-black text-xl">2º lugar - Tramontina Brava 26 cm</p>
-            <p class="text-slate-300 text-sm mt-1">Revestimento externo bicolor e indução: a opção mais bonita da linha</p>
+            <div class="flex items-center gap-3">
+              <span class="bg-white text-slate-800 text-xs font-black px-3 py-1 rounded-full">2º LUGAR</span>
+              <span class="bg-slate-600 text-white text-xs font-bold px-3 py-1 rounded-full">Melhor para famílias</span>
+            </div>
+            <p class="text-white font-black text-xl mt-2">Tramontina Brava Frigideira Antiaderente 28 cm</p>
+            <p class="text-slate-300 text-sm mt-1">Aço inox com fundo triplo, funciona em indução e tem tamanho generoso</p>
           </div>
-          <div class="p-6 flex flex-col md:flex-row gap-8">
-            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-slate-200 rounded-xl p-4 min-h-32">
-              <div class="text-center">
-                <div class="w-20 h-20 rounded-xl bg-slate-200 mx-auto mb-2 flex items-center justify-center">
-                  <svg class="w-10 h-10 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 2a10 10 0 100 20A10 10 0 0012 2zm0 0v4m0 12v4m0-20c0 0-4 4-4 10s4 10 4 10"/></svg>
-                </div>
-                <span class="text-xs text-slate-400">Tramontina Brava</span>
+          <div class="p-6">
+            <div class="flex flex-col md:flex-row gap-6 mb-6">
+              <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-slate-200 rounded-xl p-4 min-h-32">
+                <img src="/images/frigideira/tramontina-brava-28.jpg" alt="Frigideira Tramontina Brava Antiaderente 28 cm Aço Inox" class="max-h-36 object-contain" width="160" height="160" loading="lazy" />
+              </div>
+              <div class="flex-1">
+                <p class="text-slate-700 text-sm leading-relaxed mb-3">A Brava tem corpo em aço inox com fundo triplo, o que muda completamente o comportamento no fogão. O calor distribui de forma mais uniforme, sem aquele ponto quente no centro que queima o alimento antes do tempo.</p>
+                <p class="text-slate-700 text-sm leading-relaxed mb-3">Com 28 cm e 3,2 litros de capacidade, ela é a escolha certa para quem cozinha para mais de duas pessoas. Dá para fritar quatro bifes ao mesmo tempo sem lotação. E como é aço inox com fundo magnético, funciona em todos os tipos de fogão, incluindo indução.</p>
+                <p class="text-slate-700 text-sm leading-relaxed">O revestimento interno antiaderente Starflon Premium é mais robusto que o da Paris. Ele tolera um uso mais intenso, mas ainda assim pede respeito: espátula de silicone ou nylon, fogo médio no máximo, e sem máquina de lavar louça se quiser que dure mais.</p>
               </div>
             </div>
-            <div class="flex-1">
-              <a href="#" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-3 transition-colors">Conferir preço na Amazon</a>
-              <a href="#" class="block w-full bg-orange-400 hover:bg-orange-500 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Conferir preço no Mercado Livre</a>
-              <h3 class="font-bold text-slate-800 mb-3">Ficha Técnica</h3>
-              <ul class="text-sm text-slate-600 space-y-1 mb-6">
-                <li><strong>Material:</strong> Alumínio com revestimento antiaderente interno e externo</li>
-                <li><strong>Fundo:</strong> Encapsulado para indução</li>
-                <li><strong>Compatibilidade:</strong> Gás, elétrico, vitrocerâmica e indução</li>
-                <li><strong>Diâmetro:</strong> 26 cm</li>
-                <li><strong>Destaque:</strong> Revestimento externo colorido, não risca o fogão vitrocerâmico</li>
-              </ul>
-              <div class="grid md:grid-cols-2 gap-4">
-                <div>
-                  <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
-                  <ul class="text-sm text-slate-600 space-y-1">
-                    <li>Revestimento externo que não risca a vitrocerâmica</li>
-                    <li>Antiaderente interno de boa qualidade</li>
-                    <li>Visual diferenciado para cozinhas modernas</li>
-                  </ul>
-                </div>
-                <div>
-                  <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
-                  <ul class="text-sm text-slate-600 space-y-1">
-                    <li>Preço ligeiramente mais alto que a Paris</li>
-                    <li>Revestimento externo pode descascar com lava-louças frequente</li>
-                  </ul>
-                </div>
+            <div class="grid grid-cols-2 gap-3 mb-5 text-xs">
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Material</p><p class="font-semibold text-slate-800">Aço inox com fundo triplo</p></div>
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Revestimento</p><p class="font-semibold text-slate-800">Antiaderente Starflon Premium</p></div>
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Capacidade</p><p class="font-semibold text-slate-800">3,2 L</p></div>
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Cabo</p><p class="font-semibold text-slate-800">Baquelite antitérmico</p></div>
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Fogões compatíveis</p><p class="font-semibold text-slate-800">Gás, elétrico, vitrocerâmico, indução</p></div>
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Lava-louças</p><p class="font-semibold text-slate-800">Sim (melhor à mão)</p></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-5 text-sm">
+              <div>
+                <p class="font-semibold text-slate-800 mb-2">Pontos fortes</p>
+                <ul class="space-y-1 text-slate-600">
+                  <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Funciona em fogão de indução</li>
+                  <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Tamanho ideal para cozinhar para a família toda</li>
+                  <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Distribuição de calor mais uniforme que o alumínio</li>
+                  <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Acabamento inox alto brilho, visual bonito</li>
+                </ul>
+              </div>
+              <div>
+                <p class="font-semibold text-slate-800 mb-2">Pontos de atenção</p>
+                <ul class="space-y-1 text-slate-600">
+                  <li class="flex items-start gap-2"><span class="text-slate-400 font-bold mt-0.5">-</span> Mais pesada que a Paris por ser em aço inox</li>
+                  <li class="flex items-start gap-2"><span class="text-slate-400 font-bold mt-0.5">-</span> Preço um pouco mais alto que a Paris</li>
+                  <li class="flex items-start gap-2"><span class="text-slate-400 font-bold mt-0.5">-</span> Revestimento pede cuidado com utensílios metálicos</li>
+                </ul>
               </div>
             </div>
+            <a href="https://amzn.to/4dNpKuj" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon</a>
           </div>
         </div>
 
-        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+        <!-- PRODUTO 3: TRAMONTINA GRANO CERÂMICA -->
+        <div id="tramontina-grano" class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
           <div class="bg-slate-800 px-6 py-4">
-            <p class="text-white font-black text-xl">3º lugar - Tramontina Solar Cerâmica 26 cm</p>
-            <p class="text-slate-300 text-sm mt-1">Revestimento cerâmico sem PFAS: a escolha de quem prefere evitar antiaderente convencional</p>
+            <div class="flex items-center gap-3">
+              <span class="bg-white text-slate-800 text-xs font-black px-3 py-1 rounded-full">3º LUGAR</span>
+              <span class="bg-slate-600 text-white text-xs font-bold px-3 py-1 rounded-full">Melhor sem PTFE</span>
+            </div>
+            <p class="text-white font-black text-xl mt-2">Tramontina Grano Cerâmica Grafite 26 cm</p>
+            <p class="text-slate-300 text-sm mt-1">Aço inox com corpo triplo e revestimento cerâmico, sem PTFE nem PFOA</p>
           </div>
-          <div class="p-6 flex flex-col md:flex-row gap-8">
-            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-slate-200 rounded-xl p-4 min-h-32">
-              <div class="text-center">
-                <div class="w-20 h-20 rounded-xl bg-slate-200 mx-auto mb-2 flex items-center justify-center">
-                  <svg class="w-10 h-10 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 2a10 10 0 100 20A10 10 0 0012 2zm0 0v4m0 12v4m0-20c0 0-4 4-4 10s4 10 4 10"/></svg>
-                </div>
-                <span class="text-xs text-slate-400">Tramontina Solar</span>
+          <div class="p-6">
+            <div class="flex flex-col md:flex-row gap-6 mb-6">
+              <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-slate-200 rounded-xl p-4 min-h-32">
+                <img src="/images/frigideira/tramontina-grano-26.jpg" alt="Frigideira Tramontina Grano Aço Inox Revestimento Cerâmico Grafite 26 cm" class="max-h-36 object-contain" width="160" height="160" loading="lazy" />
+              </div>
+              <div class="flex-1">
+                <p class="text-slate-700 text-sm leading-relaxed mb-3">Quem prefere evitar PTFE na cozinha, seja por escolha pessoal ou orientação médica, a Grano é a resposta. O revestimento cerâmico grafite não tem politetrafluoretileno na composição, então você cozinha sem se preocupar com isso.</p>
+                <p class="text-slate-700 text-sm leading-relaxed mb-3">O corpo triplo em aço inox com alumínio no meio garante aquecimento rápido e uniforme. Funciona em todos os fogões, incluindo indução, e vai à máquina de lavar louça sem problema.</p>
+                <p class="text-slate-700 text-sm leading-relaxed">Uma observação honesta: o cerâmico é menos antiaderente que o PTFE no cotidiano, especialmente para preparos com muito pouca gordura. Ovos estrelados sem óleo saem melhor na Paris. Já frango com pele, legumes refogados e molhos ficam muito bem na Grano, que suporta temperaturas mais altas sem degradar.</p>
               </div>
             </div>
-            <div class="flex-1">
-              <a href="#" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-3 transition-colors">Conferir preço na Amazon</a>
-              <a href="#" class="block w-full bg-orange-400 hover:bg-orange-500 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Conferir preço no Mercado Livre</a>
-              <h3 class="font-bold text-slate-800 mb-3">Ficha Técnica</h3>
-              <ul class="text-sm text-slate-600 space-y-1 mb-6">
-                <li><strong>Revestimento:</strong> Cerâmico, sem PFAS e sem PFOA</li>
-                <li><strong>Fundo:</strong> Triplo com núcleo de aço para indução</li>
-                <li><strong>Compatibilidade:</strong> Gás, elétrico, vitrocerâmica e indução</li>
-                <li><strong>Diâmetro:</strong> 26 cm</li>
-              </ul>
-              <div class="grid md:grid-cols-2 gap-4">
-                <div>
-                  <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
-                  <ul class="text-sm text-slate-600 space-y-1">
-                    <li>Sem PFAS: opção mais segura para quem se preocupa com revestimento</li>
-                    <li>Superfície cerâmica de fácil limpeza</li>
-                    <li>Resistente a temperaturas mais altas que o antiaderente convencional</li>
-                  </ul>
-                </div>
-                <div>
-                  <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
-                  <ul class="text-sm text-slate-600 space-y-1">
-                    <li>Antiaderência inferior ao Teflon em médio prazo</li>
-                    <li>Revestimento cerâmico é mais frágil a impactos</li>
-                  </ul>
-                </div>
+            <div class="grid grid-cols-2 gap-3 mb-5 text-xs">
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Material</p><p class="font-semibold text-slate-800">Aço inox, corpo triplo</p></div>
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Revestimento</p><p class="font-semibold text-slate-800">Cerâmico Grafite (sem PTFE)</p></div>
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Capacidade</p><p class="font-semibold text-slate-800">2,2 L</p></div>
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Temp. máxima</p><p class="font-semibold text-slate-800">Até 370°C</p></div>
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Fogões compatíveis</p><p class="font-semibold text-slate-800">Todos, incluindo indução</p></div>
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Lava-louças</p><p class="font-semibold text-slate-800">Sim</p></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-5 text-sm">
+              <div>
+                <p class="font-semibold text-slate-800 mb-2">Pontos fortes</p>
+                <ul class="space-y-1 text-slate-600">
+                  <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Sem PTFE e sem PFOA na composição</li>
+                  <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Aguenta temperaturas mais altas que o PTFE</li>
+                  <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Funciona em fogão de indução</li>
+                  <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Visual sofisticado, acabamento grafite</li>
+                </ul>
+              </div>
+              <div>
+                <p class="font-semibold text-slate-800 mb-2">Pontos de atenção</p>
+                <ul class="space-y-1 text-slate-600">
+                  <li class="flex items-start gap-2"><span class="text-slate-400 font-bold mt-0.5">-</span> Menos antiaderente que PTFE para preparos com pouca gordura</li>
+                  <li class="flex items-start gap-2"><span class="text-slate-400 font-bold mt-0.5">-</span> Perde propriedades mais rápido se superaquecido com frequência</li>
+                  <li class="flex items-start gap-2"><span class="text-slate-400 font-bold mt-0.5">-</span> Preço mais elevado que a Paris</li>
+                </ul>
               </div>
             </div>
+            <a href="https://amzn.to/4ed6Luw" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon</a>
           </div>
         </div>
 
-        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+        <!-- PRODUTO 4: TRAMONTINA FERRO -->
+        <div id="tramontina-ferro" class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
           <div class="bg-slate-800 px-6 py-4">
-            <p class="text-white font-black text-xl">4º lugar - Tramontina Ferro Fundido 26 cm</p>
-            <p class="text-slate-300 text-sm mt-1">Para quem sabe usar: dura décadas e distribui calor como nenhuma outra</p>
+            <div class="flex items-center gap-3">
+              <span class="bg-white text-slate-800 text-xs font-black px-3 py-1 rounded-full">4º LUGAR</span>
+              <span class="bg-slate-600 text-white text-xs font-bold px-3 py-1 rounded-full">Favorita dos profissionais</span>
+            </div>
+            <p class="text-white font-black text-xl mt-2">Tramontina Frigideira Profissional em Ferro 26 cm</p>
+            <p class="text-slate-300 text-sm mt-1">Ferro puro, sem revestimento sintético, dura décadas com o cuidado certo</p>
           </div>
-          <div class="p-6 flex flex-col md:flex-row gap-8">
-            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-slate-200 rounded-xl p-4 min-h-32">
-              <div class="text-center">
-                <div class="w-20 h-20 rounded-xl bg-slate-200 mx-auto mb-2 flex items-center justify-center">
-                  <svg class="w-10 h-10 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 2a10 10 0 100 20A10 10 0 0012 2zm0 0v4m0 12v4m0-20c0 0-4 4-4 10s4 10 4 10"/></svg>
-                </div>
-                <span class="text-xs text-slate-400">Ferro Fundido</span>
+          <div class="p-6">
+            <div class="flex flex-col md:flex-row gap-6 mb-6">
+              <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-slate-200 rounded-xl p-4 min-h-32">
+                <img src="/images/frigideira/tramontina-ferro-26.jpg" alt="Frigideira Tramontina Profissional em Ferro 26 cm" class="max-h-36 object-contain" width="160" height="160" loading="lazy" />
+              </div>
+              <div class="flex-1">
+                <p class="text-slate-700 text-sm leading-relaxed mb-3">A frigideira de ferro é o único utensílio desta lista que pode passar de geração em geração sem perder qualidade. Pelo contrário: quanto mais você usa, melhor ela fica. O tempero, que é a camada de gordura polimerizada que vai se formando com o uso, cria uma superfície cada vez mais antiaderente de forma natural.</p>
+                <p class="text-slate-700 text-sm leading-relaxed mb-3">Para selar carne do jeito certo, nenhuma das outras frigideiras chega perto. O ferro aquece devagar, mas retém temperatura de forma impressionante. Quando a carne toca o ferro quente, acontece a famosa reação de Maillard, que cria aquela crosta marrom e saborosa que você vê nos restaurantes.</p>
+                <p class="text-slate-700 text-sm leading-relaxed">O cabo desta versão da Tramontina vem com luva de silicone removível, o que resolve um problema clássico do ferro: o cabo fica tão quente quanto a frigideira.</p>
               </div>
             </div>
-            <div class="flex-1">
-              <a href="#" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-3 transition-colors">Conferir preço na Amazon</a>
-              <a href="#" class="block w-full bg-orange-400 hover:bg-orange-500 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Conferir preço no Mercado Livre</a>
-              <h3 class="font-bold text-slate-800 mb-3">Ficha Técnica</h3>
-              <ul class="text-sm text-slate-600 space-y-1 mb-6">
-                <li><strong>Material:</strong> Ferro fundido bruto (precisa de cura com óleo)</li>
-                <li><strong>Compatibilidade:</strong> Gás, elétrico e indução (magnético naturalmente)</li>
-                <li><strong>Peso:</strong> 2,5 a 3 kg (muito mais pesada que as outras)</li>
-                <li><strong>Durabilidade:</strong> Décadas com cuidado adequado</li>
+            <div class="grid grid-cols-2 gap-3 mb-5 text-xs">
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Material</p><p class="font-semibold text-slate-800">Ferro, espessura 2 mm</p></div>
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Revestimento</p><p class="font-semibold text-slate-800">Nenhum (tempero natural)</p></div>
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Capacidade</p><p class="font-semibold text-slate-800">1,7 L</p></div>
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Peso</p><p class="font-semibold text-slate-800">Aprox. 1,485 kg</p></div>
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Fogões compatíveis</p><p class="font-semibold text-slate-800">Todos, incluindo indução</p></div>
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Lava-louças</p><p class="font-semibold text-slate-800">Nunca. Só à mão.</p></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-5 text-sm">
+              <div>
+                <p class="font-semibold text-slate-800 mb-2">Pontos fortes</p>
+                <ul class="space-y-1 text-slate-600">
+                  <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Vida útil praticamente ilimitada com bom uso</li>
+                  <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Melhor para selar carnes em temperatura alta</li>
+                  <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Funciona em todos os tipos de fogão</li>
+                  <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Sem nenhum revestimento sintético</li>
+                  <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Fica melhor com o uso, não pior</li>
+                </ul>
+              </div>
+              <div>
+                <p class="font-semibold text-slate-800 mb-2">Pontos de atenção</p>
+                <ul class="space-y-1 text-slate-600">
+                  <li class="flex items-start gap-2"><span class="text-slate-400 font-bold mt-0.5">-</span> Pesada, exige mais força no manuseio</li>
+                  <li class="flex items-start gap-2"><span class="text-slate-400 font-bold mt-0.5">-</span> Precisa de tempero antes do primeiro uso</li>
+                  <li class="flex items-start gap-2"><span class="text-slate-400 font-bold mt-0.5">-</span> Não pode ficar de molho na água (enferruja)</li>
+                  <li class="flex items-start gap-2"><span class="text-slate-400 font-bold mt-0.5">-</span> Não é prática para ovos e peixes delicados</li>
+                </ul>
+              </div>
+            </div>
+            <a href="https://amzn.to/4u1tgHC" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon</a>
+          </div>
+        </div>
+
+        <!-- TABELA DE COMPATIBILIDADE -->
+        <div id="tabela-compatibilidade" class="mb-10">
+          <h2 class="text-2xl font-black text-slate-800 mb-4">Qual frigideira funciona em qual fogão</h2>
+          <p class="text-slate-600 text-sm mb-6">Comparativo exato de compatibilidade para cada produto desta lista. A regra prática: encoste um ímã no fundo da frigideira. Se grudar com firmeza, funciona em indução.</p>
+          <div class="overflow-x-auto rounded-2xl border border-slate-200 shadow-sm">
+            <table class="w-full text-sm">
+              <thead>
+                <tr class="bg-slate-800 text-white">
+                  <th class="text-left px-4 py-3 font-bold">Frigideira</th>
+                  <th class="text-center px-4 py-3 font-bold">Gás</th>
+                  <th class="text-center px-4 py-3 font-bold">Elétrico</th>
+                  <th class="text-center px-4 py-3 font-bold">Vitrocerâmico</th>
+                  <th class="text-center px-4 py-3 font-bold">Indução</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-t border-slate-100 bg-orange-50">
+                  <td class="px-4 py-3 font-semibold text-slate-800">Tramontina Paris 26 cm (alumínio)</td>
+                  <td class="text-center px-4 py-3 text-green-600 font-bold">Sim</td>
+                  <td class="text-center px-4 py-3 text-green-600 font-bold">Sim</td>
+                  <td class="text-center px-4 py-3 text-green-600 font-bold">Sim</td>
+                  <td class="text-center px-4 py-3 text-red-500 font-bold">Nao</td>
+                </tr>
+                <tr class="border-t border-slate-100">
+                  <td class="px-4 py-3 font-semibold text-slate-800">Tramontina Brava 28 cm (aço inox)</td>
+                  <td class="text-center px-4 py-3 text-green-600 font-bold">Sim</td>
+                  <td class="text-center px-4 py-3 text-green-600 font-bold">Sim</td>
+                  <td class="text-center px-4 py-3 text-green-600 font-bold">Sim</td>
+                  <td class="text-center px-4 py-3 text-green-600 font-bold">Sim</td>
+                </tr>
+                <tr class="border-t border-slate-100 bg-slate-50">
+                  <td class="px-4 py-3 font-semibold text-slate-800">Tramontina Grano Cerâmica 26 cm</td>
+                  <td class="text-center px-4 py-3 text-green-600 font-bold">Sim</td>
+                  <td class="text-center px-4 py-3 text-green-600 font-bold">Sim</td>
+                  <td class="text-center px-4 py-3 text-green-600 font-bold">Sim</td>
+                  <td class="text-center px-4 py-3 text-green-600 font-bold">Sim</td>
+                </tr>
+                <tr class="border-t border-slate-100">
+                  <td class="px-4 py-3 font-semibold text-slate-800">Tramontina Ferro Profissional 26 cm</td>
+                  <td class="text-center px-4 py-3 text-green-600 font-bold">Sim</td>
+                  <td class="text-center px-4 py-3 text-green-600 font-bold">Sim</td>
+                  <td class="text-center px-4 py-3 text-green-600 font-bold">Sim</td>
+                  <td class="text-center px-4 py-3 text-green-600 font-bold">Sim</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- QUAL PARA CADA PREPARO -->
+        <div id="qual-para-cada-preparo" class="mb-10">
+          <h2 class="text-2xl font-black text-slate-800 mb-4">Qual frigideira usar para cada receita</h2>
+          <p class="text-slate-600 text-sm mb-6">Ter a frigideira certa para cada preparo faz diferença no resultado final.</p>
+          <div class="space-y-4">
+            <div class="border border-slate-200 rounded-xl p-5">
+              <h3 class="font-bold text-slate-800 mb-2">Ovo frito ou mexido</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">A melhor opção é a <strong>Paris</strong>. O revestimento Starflon Max é o mais antiaderente desta lista para preparos com pouca gordura. O ovo desliza sem forçar. Em segundo lugar vem a Brava, que também tem boa performance.</p>
+            </div>
+            <div class="border border-slate-200 rounded-xl p-5">
+              <h3 class="font-bold text-slate-800 mb-2">Bife selado com crosta</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">Sem dúvida, a <strong>frigideira de ferro</strong>. Ela aguenta o calor alto necessário para a reação de Maillard acontecer de verdade. Pré-aqueca por 3 a 5 minutos antes de colocar a carne, sem nada na frigideira. Quando começar a soltar fumaça levinha, está na temperatura certa.</p>
+            </div>
+            <div class="border border-slate-200 rounded-xl p-5">
+              <h3 class="font-bold text-slate-800 mb-2">Frango com pele dourada</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">A <strong>Grano cerâmica</strong> se destaca aqui. Ela aguenta o calor médio-alto necessário para dourar a pele do frango sem queimar o exterior antes de cozinhar por dentro. A Brava também funciona bem para essa finalidade.</p>
+            </div>
+            <div class="border border-slate-200 rounded-xl p-5">
+              <h3 class="font-bold text-slate-800 mb-2">Crepe e panqueca</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">A <strong>Paris</strong> é ideal pelo fundo plano, peso leve e revestimento que solta o crepe facilmente. O tamanho de 26 cm é perfeito para crepes de tamanho médio. Uma gota de manteiga e a massa escorrega sozinha.</p>
+            </div>
+            <div class="border border-slate-200 rounded-xl p-5">
+              <h3 class="font-bold text-slate-800 mb-2">Legumes refogados</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">A <strong>Brava de 28 cm</strong> tem o tamanho ideal para refogar sem encher demais a frigideira. Quando a frigideira fica muito cheia de legumes, o vapor não escapa e o resultado é cozido, não refogado. O espaço extra da Brava resolve esse problema.</p>
+            </div>
+            <div class="border border-slate-200 rounded-xl p-5">
+              <h3 class="font-bold text-slate-800 mb-2">Peixe e frutos do mar</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">A <strong>Paris</strong> é a melhor escolha. Peixe é delicado e gruda com facilidade em superfícies que não sejam muito antiaderentes. O Starflon Max da Paris é o mais antiaderente desta seleção, o que protege o filé de desfazer na hora de virar.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- COMO CONSERVAR -->
+        <div id="como-conservar" class="mb-10">
+          <h2 class="text-2xl font-black text-slate-800 mb-6">Como conservar cada tipo de frigideira</h2>
+          <div class="space-y-6">
+            <div class="bg-orange-50 border border-orange-200 rounded-2xl p-6">
+              <h3 class="font-bold text-orange-800 text-base mb-3">Frigideiras com revestimento antiaderente PTFE (Paris e Brava)</h3>
+              <ul class="space-y-2 text-sm text-slate-700">
+                <li><strong>Use espátula de silicone, nylon ou madeira.</strong> Metal risca o revestimento e cada arranhão acelera a degradação.</li>
+                <li><strong>Fogo médio, no máximo.</strong> O PTFE começa a se degradar acima de 260°C.</li>
+                <li><strong>Deixe esfriar antes de lavar.</strong> Choque térmico cria microfissuras no revestimento.</li>
+                <li><strong>Máquina de lavar louça encurta a vida útil.</strong> O detergente industrial e o calor do ciclo desgastam mais rápido. Prefira lavar à mão com esponja macia e detergente neutro.</li>
+                <li><strong>Quando trocar:</strong> quando o revestimento começar a descascar ou o alimento começar a grudar mesmo com um fio de óleo.</li>
               </ul>
-              <div class="grid md:grid-cols-2 gap-4">
-                <div>
-                  <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
-                  <ul class="text-sm text-slate-600 space-y-1">
-                    <li>Retém e distribui calor de forma incomparável</li>
-                    <li>Dura décadas com cuidado correto</li>
-                    <li>Antiaderência natural melhora com o uso</li>
-                    <li>Não tem revestimento artificial que desgaste</li>
-                  </ul>
-                </div>
-                <div>
-                  <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
-                  <ul class="text-sm text-slate-600 space-y-1">
-                    <li>Muito pesada, cansa o pulso</li>
-                    <li>Precisa de cura com óleo e cuidado especial na limpeza</li>
-                    <li>Enferruja se não secar bem após lavar</li>
-                  </ul>
-                </div>
-              </div>
+            </div>
+            <div class="bg-blue-50 border border-blue-200 rounded-2xl p-6">
+              <h3 class="font-bold text-blue-800 text-base mb-3">Frigideira com revestimento cerâmico (Grano)</h3>
+              <ul class="space-y-2 text-sm text-slate-700">
+                <li><strong>Evite o choque térmico.</strong> A cerâmica é mais sensível a variações bruscas de temperatura. Deixe sempre esfriar antes de lavar.</li>
+                <li><strong>Um fio de óleo antes de usar</strong> ajuda a manter as propriedades antiaderentes por mais tempo.</li>
+                <li><strong>Fogo alto constante reduz a vida útil</strong> para menos de dois anos.</li>
+              </ul>
+            </div>
+            <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6">
+              <h3 class="font-bold text-slate-800 text-base mb-3">Frigideira de ferro (como temperar e conservar)</h3>
+              <p class="text-slate-700 text-sm mb-3"><strong>Primeiro uso, passo a passo:</strong></p>
+              <ol class="space-y-2 text-slate-700 text-sm list-decimal list-inside mb-4">
+                <li>Lave com água morna, esponja macia e um pouco de detergente neutro. Só neste primeiro uso.</li>
+                <li>Seque completamente. Pode colocar no fogão em fogo baixo por 2 minutos para garantir.</li>
+                <li>Aplique uma camada fina de óleo vegetal em toda a superfície interna com um papel toalha.</li>
+                <li>Leve ao fogão em fogo médio por 2 a 3 minutos. Vai soltar fumaça leve. Isso é normal.</li>
+                <li>Retire do fogo, descarte o excesso de óleo e deixe esfriar. Repita este processo duas vezes antes do primeiro uso real.</li>
+              </ol>
+              <p class="text-slate-700 text-sm mb-2"><strong>Manutenção diária:</strong></p>
+              <ul class="space-y-2 text-sm text-slate-700">
+                <li>Após usar, ainda morna, passe um papel toalha para remover resíduos. Se precisar lavar, use só água quente e esponja macia.</li>
+                <li>Seque imediatamente. Nunca deixe de molho na pia.</li>
+                <li>Aplique uma camadinha fina de óleo antes de guardar.</li>
+                <li>Nunca leve à máquina de lavar louça.</li>
+              </ul>
             </div>
           </div>
         </div>
 
-        <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 mb-10">
-          <h2 class="text-xl font-black text-slate-900 mb-3">PFAS e PFOA: você precisa se preocupar?</h2>
-          <p class="text-slate-700 leading-relaxed mb-3">
-            PFOA é uma substância usada no processo de fabricação do antiaderente Teflon que foi proibida nos EUA e Europa por riscos à saúde. A boa notícia: desde 2013, praticamente nenhuma frigideira no mercado brasileiro usa PFOA. O que ainda existe é o PFAS, uma família de substâncias químicas mais ampla, usada em alguns antiaderentes modernos.
-          </p>
-          <p class="text-slate-700 leading-relaxed">
-            Se essa questão te preocupa: use frigideira de cerâmica (sem PFAS) ou de ferro fundido. Mas saiba que o risco real do antiaderente convencional moderno só existe se você aquecer a frigideira vazia a temperaturas muito altas (acima de 260°C), o que não acontece em condições normais de cozinha.
-          </p>
+        <!-- FAQ ACORDEÃO -->
+        <div id="faq" class="mb-10">
+          <h2 class="text-2xl font-black text-slate-800 mb-6">Perguntas frequentes sobre frigideiras</h2>
+          <div class="space-y-3">
+
+            <details class="border border-slate-200 rounded-xl overflow-hidden group">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+                <span>A frigideira de alumínio com antiaderente funciona em fogão de indução?</span>
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 py-4 bg-slate-50 text-slate-700 text-sm leading-relaxed border-t border-slate-200">
+                Não. O alumínio não é magnético e o fogão de indução precisa de material ferroso no fundo para gerar o campo eletromagnético que aquece a panela. A Tramontina Paris, por exemplo, é totalmente em alumínio e não funciona em indução. Se você tem fogão de indução, precisa de uma frigideira com fundo em aço inox ou ferro. Das opções desta lista, a Brava, a Grano e a de ferro funcionam em indução normalmente.
+              </div>
+            </details>
+
+            <details class="border border-slate-200 rounded-xl overflow-hidden group">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+                <span>Qual a diferença entre revestimento PTFE e revestimento cerâmico?</span>
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 py-4 bg-slate-50 text-slate-700 text-sm leading-relaxed border-t border-slate-200">
+                PTFE é o politetrafluoretileno, popularmente chamado de teflon. É muito antiaderente, especialmente para ovos e peixes, mas começa a se degradar acima de 260°C. O revestimento cerâmico não tem PTFE na composição e aguenta até cerca de 370°C. Para o dia a dia com fogo baixo e médio, o PTFE funciona melhor. Para preparos que precisam de calor mais alto, o cerâmico é mais seguro e dura mais.
+              </div>
+            </details>
+
+            <details class="border border-slate-200 rounded-xl overflow-hidden group">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+                <span>Posso usar sabão para lavar a frigideira de ferro?</span>
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 py-4 bg-slate-50 text-slate-700 text-sm leading-relaxed border-t border-slate-200">
+                A regra "nunca use sabão no ferro" é mais lenda do que verdade absoluta. Um pouco de detergente neutro com esponja macia não vai destruir o tempero do ferro. O que se deve evitar é detergente em excesso, esponja de aço e, principalmente, deixar a frigideira de molho na água. O maior inimigo da frigideira de ferro é a umidade prolongada, não o sabão em si. Depois de lavar, seque imediatamente e aplique uma fina camada de óleo antes de guardar.
+              </div>
+            </details>
+
+            <details class="border border-slate-200 rounded-xl overflow-hidden group">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+                <span>Quanto tempo dura uma frigideira antiaderente?</span>
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 py-4 bg-slate-50 text-slate-700 text-sm leading-relaxed border-t border-slate-200">
+                Com uso correto, uma frigideira com revestimento PTFE de boa qualidade dura entre 2 e 5 anos. O cerâmico costuma durar de 2 a 3 anos, mas perde antiaderência mais cedo se você usar em fogo alto com frequência. O que mais reduz a vida útil: utensílios de metal que arranham o revestimento, superaquecimento com a frigideira vazia, choque térmico e máquina de lavar louça. Quando o revestimento começar a descascar, troque a frigideira.
+              </div>
+            </details>
+
+            <details class="border border-slate-200 rounded-xl overflow-hidden group">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+                <span>Por que chefs profissionais preferem frigideira de ferro?</span>
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 py-4 bg-slate-50 text-slate-700 text-sm leading-relaxed border-t border-slate-200">
+                Por dois motivos principais. Primeiro, o ferro retém calor de forma muito mais eficiente que alumínio ou aço. Quando você coloca a carne fria em contato com o ferro quente, a temperatura não cai tanto, o que é fundamental para a reação de Maillard, que cria a crosta dourada. Segundo, a frigideira de ferro não tem revestimento sintético que possa degradar com o calor extremo, dando liberdade para trabalhar na temperatura que quiser.
+              </div>
+            </details>
+
+            <details class="border border-slate-200 rounded-xl overflow-hidden group">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+                <span>Como saber se minha frigideira funciona em fogão de indução?</span>
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 py-4 bg-slate-50 text-slate-700 text-sm leading-relaxed border-t border-slate-200">
+                Tem dois jeitos simples. O primeiro é o teste do ímã: encoste um ímã de geladeira no fundo da frigideira. Se grudar com firmeza, ela funciona em indução. Se não grudar ou grudar fraco, não funciona. O segundo é procurar o símbolo de indução na embalagem ou no fundo do utensílio, que parece uma espiral ou bobina desenhada.
+              </div>
+            </details>
+
+            <details class="border border-slate-200 rounded-xl overflow-hidden group">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+                <span>Qual frigideira comprar se eu tiver só uma na cozinha?</span>
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 py-4 bg-slate-50 text-slate-700 text-sm leading-relaxed border-t border-slate-200">
+                Depende do seu fogão e do cotidiano. Se você tem fogão a gás e cozinha para 1 ou 2 pessoas, a Tramontina Paris 26 cm resolve 80% das situações do dia a dia com ótimo custo-benefício. Se você tem fogão de indução ou cozinha para 3 ou mais pessoas, a Brava 28 cm é a escolha mais completa. Se você come muita carne e quer um resultado de restaurante, a frigideira de ferro vale o investimento e o aprendizado de tempero.
+              </div>
+            </details>
+
+          </div>
         </div>
 
-        <h2 class="text-2xl font-black text-slate-900 mb-6">Dúvidas frequentes</h2>
-        <div class="space-y-3 mb-10">
-          <details class="border border-slate-200 rounded-xl overflow-hidden">
-            <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
-              Como saber se minha frigideira funciona no fogão de indução?
-              <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-            </summary>
-            <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
-              Teste simples: encoste um imã na base da frigideira. Se o imã grudar com força, ela funciona em indução. Se não grudar, não funciona. Não olhe só para o símbolo na embalagem - teste o imã diretamente no fundo antes de comprar.
-            </div>
-          </details>
-          <details class="border border-slate-200 rounded-xl overflow-hidden">
-            <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
-              Qual o tamanho de frigideira para cada família?
-              <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-            </summary>
-            <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
-              20 cm para 1 pessoa, 24 cm para 2 pessoas, 26 cm para 2 a 4 pessoas, 28 a 30 cm para famílias maiores. A frigideira de 26 cm é a mais versátil: serve bem para a maioria dos usos domésticos e cabe em fogões padrão.
-            </div>
-          </details>
-          <details class="border border-slate-200 rounded-xl overflow-hidden">
-            <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
-              Antiaderente é perigoso para a saúde?
-              <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-            </summary>
-            <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
-              O antiaderente moderno (sem PFOA) é seguro em condições normais de uso. O risco existe se você aquecer a frigideira vazia a temperaturas muito altas (acima de 260°C) ou usar utensílios de metal que arranhem o revestimento. Descarte frigideiras com revestimento arranhado ou descascando.
-            </div>
-          </details>
-          <details class="border border-slate-200 rounded-xl overflow-hidden">
-            <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
-              Frigideira antiaderente vai para o lava-louças?
-              <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-            </summary>
-            <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
-              Depende do modelo. A Tramontina Paris aceita lava-louças, mas o uso frequente encurta a vida útil do revestimento. Para durar mais, lave à mão com esponja macia e detergente neutro. O lava-louças usa temperatura alta e detergente abrasivo que desgastam o antiaderente com o tempo.
-            </div>
-          </details>
-          <details class="border border-slate-200 rounded-xl overflow-hidden">
-            <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
-              Por que minha frigideira está empenando (ficando torta)?
-              <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-            </summary>
-            <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
-              O empenamento acontece por choque térmico: colocar a frigideira quente em água fria imediatamente após o uso. Sempre deixe a frigideira esfriar completamente antes de lavar. Frigideiras com fundo fino empena mais rápido. Para evitar: prefira modelos com fundo triplo ou encapsulado, que são mais rígidos e resistem melhor à variação de temperatura.
-            </div>
-          </details>
-        </div>
-        <script type="application/ld+json" set:html={JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Como saber se minha frigideira funciona no fogão de indução?","acceptedAnswer":{"@type":"Answer","text":"Encoste um imã na base da frigideira. Se grudar com força, funciona em indução. Teste direto no fundo, não confie só no símbolo da embalagem."}},{"@type":"Question","name":"Antiaderente é perigoso para a saúde?","acceptedAnswer":{"@type":"Answer","text":"O antiaderente moderno sem PFOA é seguro em condições normais. O risco existe se aquecer a frigideira vazia acima de 260°C ou usar utensílios de metal que arranhem o revestimento."}},{"@type":"Question","name":"Por que minha frigideira está empenando?","acceptedAnswer":{"@type":"Answer","text":"Empenamento acontece por choque térmico: colocar frigideira quente em água fria. Sempre deixe esfriar completamente antes de lavar. Prefira modelos com fundo triplo."}},{"@type":"Question","name":"Qual o tamanho de frigideira para cada família?","acceptedAnswer":{"@type":"Answer","text":"20 cm para 1 pessoa, 24 cm para 2 pessoas, 26 cm para 2 a 4 pessoas, 28 a 30 cm para famílias maiores. A de 26 cm é a mais versátil."}}]})} />
+        <!-- SCHEMA FAQ JSON-LD -->
+        <script type="application/ld+json" set:html={JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "A frigideira de alumínio com antiaderente funciona em fogão de indução?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Não. O alumínio não é magnético e o fogão de indução precisa de material ferroso no fundo para funcionar. A Tramontina Paris, em alumínio, não funciona em indução. Para indução, escolha modelos com fundo em aço inox ou ferro, como a Tramontina Brava, a Grano ou a de ferro."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Qual a diferença entre revestimento PTFE e revestimento cerâmico?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "PTFE (teflon) é mais antiaderente para o dia a dia, mas começa a se degradar acima de 260°C. O revestimento cerâmico não contém PTFE e aguenta até 370°C. Para uso cotidiano com fogo baixo e médio, o PTFE funciona melhor. Para preparos que exigem calor mais alto, o cerâmico é mais seguro."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Posso usar sabão para lavar a frigideira de ferro?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Um detergente neutro com esponja macia não vai destruir o tempero do ferro. O que se deve evitar é esponja de aço e deixar a frigideira de molho na água. O maior inimigo do ferro é a umidade prolongada. Após lavar, seque imediatamente e aplique uma camada fina de óleo."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Quanto tempo dura uma frigideira antiaderente?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Com uso correto, uma frigideira com revestimento PTFE dura entre 2 e 5 anos. O cerâmico dura de 2 a 3 anos. O que mais reduz a vida útil: utensílios de metal, superaquecimento com a frigideira vazia, choque térmico e máquina de lavar louça. Quando o revestimento começar a descascar, substitua."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Como saber se minha frigideira funciona em fogão de indução?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Encoste um ímã de geladeira no fundo da frigideira. Se grudar com firmeza, ela funciona em indução. Se não grudar ou grudar fraco, não funciona. Também é possível verificar o símbolo de indução na embalagem do produto."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Qual frigideira comprar se eu tiver só uma na cozinha?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Se você tem fogão a gás e cozinha para 1 ou 2 pessoas, a Tramontina Paris 26 cm resolve a maioria das situações com ótimo custo-benefício. Se você tem fogão de indução ou cozinha para mais pessoas, a Brava 28 cm é mais completa. Se você prioriza carnes seladas, a frigideira de ferro vale o investimento."
+              }
+            }
+          ]
+        })} />
       </div>
     )}
 
