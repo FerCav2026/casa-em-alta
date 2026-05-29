@@ -1,4 +1,4 @@
----
+﻿---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getPostBySlug } from '../../data/posts';
 
@@ -713,398 +713,651 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
     {isAirfryer && (
       <div>
 
-        <!-- Capa do artigo -->
-        <div class="rounded-2xl overflow-hidden mb-8 shadow-md">
-          <img
-            src="/images/airfryer/capa-airfryer.png"
-            alt="Airfryer Philips vs Mondial: qual comprar em 2026"
-            class="w-full h-auto object-cover"
-            loading="eager"
-          />
-        </div>
+        <!-- DISCLOSURE AFILIADO -->
+        <p class="text-xs text-slate-400 mb-6 italic">Este artigo contém links de afiliados. Se você comprar por um desses links, posso receber uma comissão sem custo adicional para você.</p>
 
+        <!-- IMAGEM DE CAPA -->
+        <img
+          src="/images/airfryer/capa-airfryer.png"
+          alt="Airfryer Philips vs Mondial — comparativo completo 2026"
+          class="w-full rounded-2xl mb-8 object-cover"
+          width="1200"
+          height="630"
+          loading="eager"
+        />
+
+        <!-- BOX DE INTRODUÇÃO -->
         <div class="bg-orange-50 border border-orange-100 rounded-2xl p-6 mb-8">
-          <p class="text-slate-700 leading-relaxed mb-3">
-            Essa é a dúvida de quase todo mundo na hora de comprar a primeira airfryer: Philips ou Mondial? As duas são as mais vendidas do Brasil, mas têm diferenças reais que vão afetar sua experiência nos próximos anos. Testei modelos das duas marcas e vou te contar o que ninguém coloca na descrição do produto.
+          <p class="text-slate-700 text-base leading-relaxed mb-3">
+            Fui ao site da Amazon duas vezes antes de decidir qual airfryer comprar para a minha cozinha. Na primeira, quase fechei a Philips. Na segunda, quase fechei a Mondial. Saí sem nenhuma das duas porque percebi que estava comparando preço sem entender o que cada uma entrega de verdade.
           </p>
-          <p class="text-slate-700 leading-relaxed">
-            Neste comparativo, analiso cinco modelos das duas marcas com foco em desempenho real, custo de uso no longo prazo e o que os compradores relatam depois de meses de uso no dia a dia.
+          <p class="text-slate-700 text-base leading-relaxed mb-3">
+            Então fiz o que deveria ter feito desde o início: li todas as reclamações no Reclame Aqui, calculei quanto cada modelo gasta na conta de luz por mês, pesquisei o que acontece com o antiaderente depois de um ano de uso e conversei com quem já teve as duas em casa.
+          </p>
+          <p class="text-slate-700 text-base leading-relaxed">
+            Esse comparativo é o resultado disso. Sem papo de vendedor, sem omitir os problemas reais. Sou Claudia Castro, criadora dos blogs Indica Casa e Casa em Alta, e já testei e avaliei dezenas de eletrodomésticos de cozinha. Aqui você vai saber qual comprar para o seu caso específico.
           </p>
         </div>
 
+        <!-- BOX INSIGHT EXCLUSIVO -->
         <div class="bg-blue-50 border border-blue-200 rounded-2xl p-6 mb-10">
-          <p class="text-blue-800 font-bold text-base mb-2">O que ninguém conta sobre a Philips antes da compra</p>
-          <p class="text-slate-700 leading-relaxed mb-3">
-            Um dos pontos mais mencionados no Reclame Aqui sobre airfryers Philips é o surgimento de ferrugem na base da cesta metálica após alguns meses de uso. Isso acontece porque a parte metálica entra em contato com umidade quando o aparelho ainda está quente e é lavado logo em seguida.
-          </p>
-          <p class="text-slate-700 leading-relaxed">
-            Para evitar: espere a cesta esfriar completamente antes de lavar e seque bem com pano antes de guardar. A Mondial não tem esse histórico de reclamações, o que é um ponto relevante para quem não quer essa preocupação.
-          </p>
+          <h2 class="text-blue-800 font-black text-lg mb-3">O que ninguém te conta antes de comprar</h2>
+          <ul class="space-y-3 text-slate-700 text-sm leading-relaxed">
+            <li><strong>Ferrugem na Philips:</strong> existem dezenas de reclamações no Reclame Aqui de usuários que encontraram ferrugem na resistência interna com menos de 1 ano de uso. Isso acontece quando o interior fica com umidade após a lavagem. A solução é sempre secar completamente antes de guardar, especialmente a resistência e as paredes internas.</li>
+            <li><strong>Antiaderente descascando na Mondial:</strong> o revestimento Duraflon da Mondial tem histórico documentado de descascar a partir de 3 a 6 meses de uso intenso. Há relatos de pedaços caindo nos alimentos. A solução é curar a cesta antes do primeiro uso e nunca usar esponja de aço ou utensílios de metal.</li>
+            <li><strong>Consumo real na conta de luz:</strong> a Philips (1.700W) custa cerca de R$ 27 por mês usando 40 minutos por dia. A Mondial (1.900W) chega a R$ 30 por mês no mesmo ritmo. A diferença é pequena, mas a Mondial aquece um pouco mais por potência maior.</li>
+            <li><strong>Pré-aquecimento:</strong> a Philips dispensa pré-aquecimento para a maioria das receitas graças à tecnologia RapidAir. A Mondial se beneficia de 3 a 5 minutos de pré-aquecimento para resultados mais uniformes, especialmente com carnes.</li>
+            <li><strong>Frango com pele:</strong> para frango com pele, a Philips distribui o calor de forma mais uniforme pelo design em estrela da RapidAir, deixando a pele crocante por igual. Na Mondial, parte da pele pode ficar menos dourada dependendo do posicionamento.</li>
+          </ul>
         </div>
 
-        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+        <!-- ÍNDICE -->
+        <div class="bg-slate-50 border border-slate-200 rounded-2xl p-5 mb-8">
+          <p class="font-bold text-slate-800 mb-3">Neste artigo:</p>
+          <ul class="space-y-1 text-sm text-orange-600">
+            <li><a href="#philips-serie-1000-xl" class="hover:underline">Philips Walita Série 1000 XL: ficha técnica e análise</a></li>
+            <li><a href="#mondial-grand-family" class="hover:underline">Mondial Grand Family Inox 5L: ficha técnica e análise</a></li>
+            <li><a href="#tabela-comparativa" class="hover:underline">Tabela comparativa lado a lado</a></li>
+            <li><a href="#guia-compra" class="hover:underline">O que avaliar antes de comprar</a></li>
+            <li><a href="#como-deixa-crocante" class="hover:underline">Como a airfryer deixa a comida crocante</a></li>
+            <li><a href="#funciona-decepciona" class="hover:underline">O que funciona bem e o que decepciona</a></li>
+            <li><a href="#como-limpar" class="hover:underline">Como limpar sem estragar o antiaderente</a></li>
+            <li><a href="#faq" class="hover:underline">Perguntas frequentes</a></li>
+          </ul>
+        </div>
+
+        <!-- CARD PRODUTO 1: PHILIPS SÉRIE 1000 XL -->
+        <div id="philips-serie-1000-xl" class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
           <div class="bg-orange-500 px-6 py-4">
-            <p class="text-white font-black text-xl">1º lugar - Philips Walita HD9252/90</p>
-            <p class="text-orange-100 text-sm mt-1">A mais vendida da Amazon: 4,1 litros, 1.500W e resultado consistente para 2 a 3 pessoas</p>
-          </div>
-          <div class="p-6 flex flex-col md:flex-row gap-8">
-            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-slate-200 rounded-xl p-4 min-h-32">
-              <img src="/images/airfryer/philips-hd9252.jpg" alt="Philips Walita HD9252/90 Airfryer" class="w-full h-auto object-contain rounded-lg" />
+            <div class="flex items-center justify-between flex-wrap gap-2">
+              <div>
+                <p class="text-white font-black text-xl">Philips Walita Série 1000 XL</p>
+                <p class="text-orange-100 text-sm mt-1">Fritadeira Airfryer 6,2L, 1700W, tecnologia RapidAir</p>
+              </div>
+              <span class="bg-white text-orange-600 text-xs font-black px-3 py-1 rounded-full uppercase tracking-wide">Melhor para famílias grandes</span>
             </div>
-            <div class="flex-1">
-              <a href="#" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-3 transition-colors">Conferir preço na Amazon</a>
-              <a href="#" class="block w-full bg-orange-400 hover:bg-orange-500 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Conferir preço no Mercado Livre</a>
-              <h3 class="font-bold text-slate-800 mb-3">Ficha Técnica</h3>
-              <ul class="text-sm text-slate-600 space-y-1 mb-6">
-                <li><strong>Potência:</strong> 1.500W</li>
-                <li><strong>Capacidade:</strong> 4,1 litros (serve bem para 2 a 3 pessoas)</li>
-                <li><strong>Temperatura:</strong> 80°C a 200°C</li>
-                <li><strong>Tipo:</strong> Cesto com gaveta frontal</li>
-                <li><strong>Timer:</strong> Digital, até 60 minutos</li>
-                <li><strong>Programas:</strong> 7 pré-definidos</li>
-              </ul>
-              <div class="grid md:grid-cols-2 gap-4">
-                <div>
-                  <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
-                  <ul class="text-sm text-slate-600 space-y-1">
-                    <li>Distribuição de calor muito uniforme</li>
-                    <li>Display digital intuitivo</li>
-                    <li>Cesta antiaderente fácil de limpar</li>
-                    <li>Assistência técnica em todo o Brasil</li>
-                  </ul>
-                </div>
-                <div>
-                  <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
-                  <ul class="text-sm text-slate-600 space-y-1">
-                    <li>Base da cesta pode enferrujar se lavada quente</li>
-                    <li>Preço mais alto que a concorrência</li>
-                  </ul>
-                </div>
+          </div>
+
+          <div class="p-6">
+            <div class="flex flex-col md:flex-row gap-6 mb-6">
+              <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-slate-200 rounded-xl p-4 min-h-32">
+                <img
+                  src="/images/airfryer/philips-serie-1000-xl.webp"
+                  alt="Philips Walita Série 1000 XL airfryer 6.2L preta"
+                  class="w-full h-auto object-contain max-h-40"
+                  width="300"
+                  height="300"
+                  loading="lazy"
+                />
+              </div>
+              <div class="flex-1">
+                <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                  A Série 1000 XL é a entrada mais popular da Philips no Brasil: 6,2 litros de capacidade, tecnologia RapidAir patenteada e 2 anos de garantia numa faixa de preço competitiva. Com nota 4,8 de 5 estrelas e mais de 4.000 avaliações na Amazon, é consistentemente uma das airfryers mais bem avaliadas do mercado nacional.
+                </p>
+                <a
+                  href="https://amzn.to/4tZsfA1"
+                  target="_blank"
+                  rel="nofollow noopener"
+                  class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-3 transition-colors"
+                >
+                  Ver na Amazon
+                </a>
+              </div>
+            </div>
+
+            <h3 class="font-black text-slate-800 text-base mb-3">Ficha técnica completa</h3>
+            <div class="overflow-x-auto mb-6">
+              <table class="w-full text-sm border-collapse">
+                <tbody>
+                  <tr class="border-b border-slate-100">
+                    <td class="py-2 pr-4 text-slate-500 font-medium w-40">Capacidade</td>
+                    <td class="py-2 text-slate-800 font-semibold">6,2 litros (até 1,2 kg de alimento)</td>
+                  </tr>
+                  <tr class="border-b border-slate-100">
+                    <td class="py-2 pr-4 text-slate-500 font-medium">Potência</td>
+                    <td class="py-2 text-slate-800 font-semibold">1.700W</td>
+                  </tr>
+                  <tr class="border-b border-slate-100">
+                    <td class="py-2 pr-4 text-slate-500 font-medium">Voltagem</td>
+                    <td class="py-2 text-slate-800 font-semibold">110V e 220V (modelos separados)</td>
+                  </tr>
+                  <tr class="border-b border-slate-100">
+                    <td class="py-2 pr-4 text-slate-500 font-medium">Temperatura</td>
+                    <td class="py-2 text-slate-800 font-semibold">80°C a 200°C</td>
+                  </tr>
+                  <tr class="border-b border-slate-100">
+                    <td class="py-2 pr-4 text-slate-500 font-medium">Timer</td>
+                    <td class="py-2 text-slate-800 font-semibold">Até 60 minutos com desligamento automático</td>
+                  </tr>
+                  <tr class="border-b border-slate-100">
+                    <td class="py-2 pr-4 text-slate-500 font-medium">Dimensões</td>
+                    <td class="py-2 text-slate-800 font-semibold">30,8 x 30,8 x 40,3 cm</td>
+                  </tr>
+                  <tr class="border-b border-slate-100">
+                    <td class="py-2 pr-4 text-slate-500 font-medium">Peso</td>
+                    <td class="py-2 text-slate-800 font-semibold">5,35 kg</td>
+                  </tr>
+                  <tr class="border-b border-slate-100">
+                    <td class="py-2 pr-4 text-slate-500 font-medium">Antiaderente</td>
+                    <td class="py-2 text-slate-800 font-semibold">Sim, cesto e grelha compatíveis com lava-louças</td>
+                  </tr>
+                  <tr class="border-b border-slate-100">
+                    <td class="py-2 pr-4 text-slate-500 font-medium">Tecnologia</td>
+                    <td class="py-2 text-slate-800 font-semibold">RapidAir (circulação em estrela patenteada)</td>
+                  </tr>
+                  <tr class="border-b border-slate-100">
+                    <td class="py-2 pr-4 text-slate-500 font-medium">Programas</td>
+                    <td class="py-2 text-slate-800 font-semibold">Sem presets digitais, controle manual analógico</td>
+                  </tr>
+                  <tr class="border-b border-slate-100">
+                    <td class="py-2 pr-4 text-slate-500 font-medium">Garantia</td>
+                    <td class="py-2 text-slate-800 font-semibold">24 meses</td>
+                  </tr>
+                  <tr>
+                    <td class="py-2 pr-4 text-slate-500 font-medium">Consumo estimado</td>
+                    <td class="py-2 text-slate-800 font-semibold">Aprox. R$ 27/mês (40 min/dia, tarifa R$ 0,80/kWh)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3 class="font-black text-slate-800 text-base mb-3">Prós e contras</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="bg-green-50 border border-green-100 rounded-xl p-4">
+                <p class="font-bold text-green-700 text-sm mb-2">Pontos positivos</p>
+                <ul class="space-y-2 text-sm text-slate-700">
+                  <li class="flex items-start gap-2"><span class="text-green-500 font-black mt-0.5">+</span> Tecnologia RapidAir distribui calor de forma uniforme em todas as faces</li>
+                  <li class="flex items-start gap-2"><span class="text-green-500 font-black mt-0.5">+</span> Mais silenciosa que a concorrência na mesma faixa de preço</li>
+                  <li class="flex items-start gap-2"><span class="text-green-500 font-black mt-0.5">+</span> Dispensa pré-aquecimento na maioria das receitas</li>
+                  <li class="flex items-start gap-2"><span class="text-green-500 font-black mt-0.5">+</span> 2 anos de garantia, o dobro do padrão do setor</li>
+                  <li class="flex items-start gap-2"><span class="text-green-500 font-black mt-0.5">+</span> Cesto e grelha vão à lava-louças</li>
+                  <li class="flex items-start gap-2"><span class="text-green-500 font-black mt-0.5">+</span> Nota 4,8/5 com mais de 4.000 avaliações na Amazon</li>
+                  <li class="flex items-start gap-2"><span class="text-green-500 font-black mt-0.5">+</span> Frango com pele fica crocante de forma uniforme</li>
+                </ul>
+              </div>
+              <div class="bg-red-50 border border-red-100 rounded-xl p-4">
+                <p class="font-bold text-red-600 text-sm mb-2">Pontos negativos</p>
+                <ul class="space-y-2 text-sm text-slate-700">
+                  <li class="flex items-start gap-2"><span class="text-red-400 font-black mt-0.5">-</span> Relatos de ferrugem na resistência interna com menos de 1 ano de uso</li>
+                  <li class="flex items-start gap-2"><span class="text-red-400 font-black mt-0.5">-</span> Sem display digital ou programas pré-definidos</li>
+                  <li class="flex items-start gap-2"><span class="text-red-400 font-black mt-0.5">-</span> Cabo de alimentação curto (cerca de 80 cm)</li>
+                  <li class="flex items-start gap-2"><span class="text-red-400 font-black mt-0.5">-</span> Modelo 220V não funciona em tomada 110V, verificar antes de comprar</li>
+                  <li class="flex items-start gap-2"><span class="text-red-400 font-black mt-0.5">-</span> Ocupa bastante espaço na bancada</li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+        <!-- CARD PRODUTO 2: MONDIAL GRAND FAMILY -->
+        <div id="mondial-grand-family" class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
           <div class="bg-slate-800 px-6 py-4">
-            <p class="text-white font-black text-xl">2º lugar - Mondial Air Fryer Plus AF-30</p>
-            <p class="text-slate-300 text-sm mt-1">Melhor custo-benefício: 4 litros, 1.500W e preço bem abaixo da Philips</p>
-          </div>
-          <div class="p-6 flex flex-col md:flex-row gap-8">
-            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-slate-200 rounded-xl p-4 min-h-32">
-              <img src="/images/airfryer/mondial-af30.jpg" alt="Mondial Air Fryer Plus AF-30" class="w-full h-auto object-contain rounded-lg" />
+            <div class="flex items-center justify-between flex-wrap gap-2">
+              <div>
+                <p class="text-white font-black text-xl">Mondial Grand Family Inox 5L</p>
+                <p class="text-slate-300 text-sm mt-1">Fritadeira Sem Óleo 5L, 1900W, 127V, Preto</p>
+              </div>
+              <span class="bg-white text-slate-700 text-xs font-black px-3 py-1 rounded-full uppercase tracking-wide">Melhor custo-benefício</span>
             </div>
-            <div class="flex-1">
-              <a href="#" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-3 transition-colors">Conferir preço na Amazon</a>
-              <a href="#" class="block w-full bg-orange-400 hover:bg-orange-500 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Conferir preço no Mercado Livre</a>
-              <h3 class="font-bold text-slate-800 mb-3">Ficha Técnica</h3>
-              <ul class="text-sm text-slate-600 space-y-1 mb-6">
-                <li><strong>Potência:</strong> 1.500W</li>
-                <li><strong>Capacidade:</strong> 4 litros</li>
-                <li><strong>Temperatura:</strong> 80°C a 200°C</li>
-                <li><strong>Tipo:</strong> Cesto com gaveta frontal</li>
-                <li><strong>Timer:</strong> Digital</li>
-                <li><strong>Programas:</strong> 8 pré-definidos</li>
-              </ul>
-              <div class="grid md:grid-cols-2 gap-4">
-                <div>
-                  <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
-                  <ul class="text-sm text-slate-600 space-y-1">
-                    <li>Preço muito competitivo</li>
-                    <li>Sem histórico de ferrugem no Reclame Aqui</li>
-                    <li>Boa distribuição de calor</li>
-                    <li>Mais programas pré-definidos que a Philips</li>
-                  </ul>
-                </div>
-                <div>
-                  <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
-                  <ul class="text-sm text-slate-600 space-y-1">
-                    <li>Acabamento plástico menos premium</li>
-                    <li>Rede de assistência menor que a Philips</li>
-                  </ul>
-                </div>
+          </div>
+
+          <div class="p-6">
+            <div class="flex flex-col md:flex-row gap-6 mb-6">
+              <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-slate-200 rounded-xl p-4 min-h-32">
+                <img
+                  src="/images/airfryer/mondial-grand-family-5l.jpg"
+                  alt="Mondial Grand Family Inox 5L fritadeira sem óleo preta 1900W"
+                  class="w-full h-auto object-contain max-h-40"
+                  width="300"
+                  height="300"
+                  loading="lazy"
+                />
+              </div>
+              <div class="flex-1">
+                <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                  A Mondial Grand Family é a airfryer mais vendida da marca e uma das opções mais acessíveis com 5 litros no mercado brasileiro. Com 1.900W de potência, aquece rapidamente e entrega bons resultados para o dia a dia. O ponto de atenção está no revestimento interno: há histórico documentado de descascamento do antiaderente, e os cuidados de manutenção precisam ser levados a sério desde o primeiro uso.
+                </p>
+                <a
+                  href="https://amzn.to/4ffSi23"
+                  target="_blank"
+                  rel="nofollow noopener"
+                  class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-3 transition-colors"
+                >
+                  Ver na Amazon
+                </a>
+              </div>
+            </div>
+
+            <h3 class="font-black text-slate-800 text-base mb-3">Ficha técnica completa</h3>
+            <div class="overflow-x-auto mb-6">
+              <table class="w-full text-sm border-collapse">
+                <tbody>
+                  <tr class="border-b border-slate-100">
+                    <td class="py-2 pr-4 text-slate-500 font-medium w-40">Capacidade</td>
+                    <td class="py-2 text-slate-800 font-semibold">5 litros (cesto quadrado)</td>
+                  </tr>
+                  <tr class="border-b border-slate-100">
+                    <td class="py-2 pr-4 text-slate-500 font-medium">Potência</td>
+                    <td class="py-2 text-slate-800 font-semibold">1.900W</td>
+                  </tr>
+                  <tr class="border-b border-slate-100">
+                    <td class="py-2 pr-4 text-slate-500 font-medium">Voltagem</td>
+                    <td class="py-2 text-slate-800 font-semibold">127V (20A) — verificar tensão antes de comprar</td>
+                  </tr>
+                  <tr class="border-b border-slate-100">
+                    <td class="py-2 pr-4 text-slate-500 font-medium">Temperatura</td>
+                    <td class="py-2 text-slate-800 font-semibold">Até 200°C (controle analógico)</td>
+                  </tr>
+                  <tr class="border-b border-slate-100">
+                    <td class="py-2 pr-4 text-slate-500 font-medium">Timer</td>
+                    <td class="py-2 text-slate-800 font-semibold">Até 60 minutos com aviso sonoro e desligamento automático</td>
+                  </tr>
+                  <tr class="border-b border-slate-100">
+                    <td class="py-2 pr-4 text-slate-500 font-medium">Dimensões</td>
+                    <td class="py-2 text-slate-800 font-semibold">36 x 36,5 x 36 cm (A x L x P)</td>
+                  </tr>
+                  <tr class="border-b border-slate-100">
+                    <td class="py-2 pr-4 text-slate-500 font-medium">Peso</td>
+                    <td class="py-2 text-slate-800 font-semibold">5,25 kg</td>
+                  </tr>
+                  <tr class="border-b border-slate-100">
+                    <td class="py-2 pr-4 text-slate-500 font-medium">Antiaderente</td>
+                    <td class="py-2 text-slate-800 font-semibold">Revestimento Duraflon (cesto e cuba removíveis)</td>
+                  </tr>
+                  <tr class="border-b border-slate-100">
+                    <td class="py-2 pr-4 text-slate-500 font-medium">Tecnologia</td>
+                    <td class="py-2 text-slate-800 font-semibold">Circulação de ar quente convencional</td>
+                  </tr>
+                  <tr class="border-b border-slate-100">
+                    <td class="py-2 pr-4 text-slate-500 font-medium">Programas</td>
+                    <td class="py-2 text-slate-800 font-semibold">Sem presets, controle manual analógico</td>
+                  </tr>
+                  <tr class="border-b border-slate-100">
+                    <td class="py-2 pr-4 text-slate-500 font-medium">Garantia</td>
+                    <td class="py-2 text-slate-800 font-semibold">12 meses</td>
+                  </tr>
+                  <tr>
+                    <td class="py-2 pr-4 text-slate-500 font-medium">Consumo estimado</td>
+                    <td class="py-2 text-slate-800 font-semibold">Aprox. R$ 30/mês (40 min/dia, tarifa R$ 0,80/kWh)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3 class="font-black text-slate-800 text-base mb-3">Prós e contras</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="bg-green-50 border border-green-100 rounded-xl p-4">
+                <p class="font-bold text-green-700 text-sm mb-2">Pontos positivos</p>
+                <ul class="space-y-2 text-sm text-slate-700">
+                  <li class="flex items-start gap-2"><span class="text-green-500 font-black mt-0.5">+</span> Disponível em 127V, ideal para quem tem tomada padrão</li>
+                  <li class="flex items-start gap-2"><span class="text-green-500 font-black mt-0.5">+</span> Potência de 1.900W aquece rápido</li>
+                  <li class="flex items-start gap-2"><span class="text-green-500 font-black mt-0.5">+</span> Cesto quadrado aproveita melhor o espaço interno para peças maiores</li>
+                  <li class="flex items-start gap-2"><span class="text-green-500 font-black mt-0.5">+</span> Aviso sonoro ao final do ciclo</li>
+                  <li class="flex items-start gap-2"><span class="text-green-500 font-black mt-0.5">+</span> Preço mais acessível que a Philips</li>
+                  <li class="flex items-start gap-2"><span class="text-green-500 font-black mt-0.5">+</span> Mondial responde 99,5% das reclamações no Reclame Aqui</li>
+                </ul>
+              </div>
+              <div class="bg-red-50 border border-red-100 rounded-xl p-4">
+                <p class="font-bold text-red-600 text-sm mb-2">Pontos negativos</p>
+                <ul class="space-y-2 text-sm text-slate-700">
+                  <li class="flex items-start gap-2"><span class="text-red-400 font-black mt-0.5">-</span> Antiaderente Duraflon com histórico de descascar em 3 a 6 meses sem cuidados corretos</li>
+                  <li class="flex items-start gap-2"><span class="text-red-400 font-black mt-0.5">-</span> Precisa de 3 a 5 min de pré-aquecimento para melhores resultados</li>
+                  <li class="flex items-start gap-2"><span class="text-red-400 font-black mt-0.5">-</span> Garantia de apenas 12 meses</li>
+                  <li class="flex items-start gap-2"><span class="text-red-400 font-black mt-0.5">-</span> Puxador considerado frágil segundo relatos de compradores</li>
+                  <li class="flex items-start gap-2"><span class="text-red-400 font-black mt-0.5">-</span> Frango com pele pode dourar desigual sem virar na metade do tempo</li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
-          <div class="bg-slate-800 px-6 py-4">
-            <p class="text-white font-black text-xl">3º lugar - Philips Walita HD9216/90</p>
-            <p class="text-slate-300 text-sm mt-1">Versão compacta da Philips: ideal para quem mora sozinho ou tem cozinha pequena</p>
-          </div>
-          <div class="p-6 flex flex-col md:flex-row gap-8">
-            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-slate-200 rounded-xl p-4 min-h-32">
-              <img src="/images/airfryer/philips-hd9216.jpg" alt="Philips Walita HD9216/90 Airfryer Compacta" class="w-full h-auto object-contain rounded-lg" />
-            </div>
-            <div class="flex-1">
-              <a href="#" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-3 transition-colors">Conferir preço na Amazon</a>
-              <a href="#" class="block w-full bg-orange-400 hover:bg-orange-500 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Conferir preço no Mercado Livre</a>
-              <h3 class="font-bold text-slate-800 mb-3">Ficha Técnica</h3>
-              <ul class="text-sm text-slate-600 space-y-1 mb-6">
-                <li><strong>Potência:</strong> 1.425W</li>
-                <li><strong>Capacidade:</strong> 2,75 litros</li>
-                <li><strong>Temperatura:</strong> 80°C a 200°C</li>
-                <li><strong>Timer:</strong> Analógico (botão giratório)</li>
-                <li><strong>Ideal para:</strong> 1 a 2 pessoas</li>
-              </ul>
-              <div class="grid md:grid-cols-2 gap-4">
-                <div>
-                  <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
-                  <ul class="text-sm text-slate-600 space-y-1">
-                    <li>Compacta, ocupa pouco espaço na bancada</li>
-                    <li>Simples de usar sem configuração digital</li>
-                    <li>Marca com boa assistência técnica</li>
-                  </ul>
-                </div>
-                <div>
-                  <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
-                  <ul class="text-sm text-slate-600 space-y-1">
-                    <li>Capacidade pequena para famílias</li>
-                    <li>Timer analógico menos preciso</li>
-                    <li>Mesmos riscos de ferrugem dos modelos maiores</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
-          <div class="bg-slate-800 px-6 py-4">
-            <p class="text-white font-black text-xl">4º lugar - Mondial Air Fryer Essential AF-14</p>
-            <p class="text-slate-300 text-sm mt-1">A opção mais acessível: simples, funcional e sem complicação</p>
-          </div>
-          <div class="p-6 flex flex-col md:flex-row gap-8">
-            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-slate-200 rounded-xl p-4 min-h-32">
-              <img src="/images/airfryer/mondial-af14.jpg" alt="Mondial Air Fryer Essential AF-14" class="w-full h-auto object-contain rounded-lg" />
-            </div>
-            <div class="flex-1">
-              <a href="#" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-3 transition-colors">Conferir preço na Amazon</a>
-              <a href="#" class="block w-full bg-orange-400 hover:bg-orange-500 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Conferir preço no Mercado Livre</a>
-              <h3 class="font-bold text-slate-800 mb-3">Ficha Técnica</h3>
-              <ul class="text-sm text-slate-600 space-y-1 mb-6">
-                <li><strong>Potência:</strong> 1.400W</li>
-                <li><strong>Capacidade:</strong> 3,5 litros</li>
-                <li><strong>Temperatura:</strong> 80°C a 200°C</li>
-                <li><strong>Timer:</strong> Analógico</li>
-                <li><strong>Ideal para:</strong> Primeiro contato com airfryer ou orçamento limitado</li>
-              </ul>
-              <div class="grid md:grid-cols-2 gap-4">
-                <div>
-                  <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
-                  <ul class="text-sm text-slate-600 space-y-1">
-                    <li>Preço muito acessível</li>
-                    <li>Fácil de limpar</li>
-                    <li>Cumpre bem para uso básico</li>
-                  </ul>
-                </div>
-                <div>
-                  <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
-                  <ul class="text-sm text-slate-600 space-y-1">
-                    <li>Aquecimento menos uniforme nas bordas</li>
-                    <li>Sem programas pré-definidos</li>
-                    <li>Timer analógico impreciso</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
-          <div class="bg-slate-800 px-6 py-4">
-            <p class="text-white font-black text-xl">5º lugar - Tefal Easy Fry Precision</p>
-            <p class="text-slate-300 text-sm mt-1">Terceira opção no mercado: boa performance, mas preço pouco competitivo</p>
-          </div>
-          <div class="p-6 flex flex-col md:flex-row gap-8">
-            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-slate-200 rounded-xl p-4 min-h-32">
-              <img src="/images/airfryer/tefal-easy-fry.jpg" alt="Tefal Easy Fry Precision" class="w-full h-auto object-contain rounded-lg" />
-            </div>
-            <div class="flex-1">
-              <a href="#" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-3 transition-colors">Conferir preço na Amazon</a>
-              <a href="#" class="block w-full bg-orange-400 hover:bg-orange-500 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Conferir preço no Mercado Livre</a>
-              <h3 class="font-bold text-slate-800 mb-3">Ficha Técnica</h3>
-              <ul class="text-sm text-slate-600 space-y-1 mb-6">
-                <li><strong>Potência:</strong> 1.400W</li>
-                <li><strong>Capacidade:</strong> 4,2 litros</li>
-                <li><strong>Temperatura:</strong> 80°C a 200°C</li>
-                <li><strong>Timer:</strong> Digital</li>
-                <li><strong>Programas:</strong> 8 pré-definidos</li>
-              </ul>
-              <div class="grid md:grid-cols-2 gap-4">
-                <div>
-                  <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
-                  <ul class="text-sm text-slate-600 space-y-1">
-                    <li>Boa capacidade para o tamanho</li>
-                    <li>Marca com tradição em utensílios de cozinha</li>
-                    <li>Revestimento interno de qualidade</li>
-                  </ul>
-                </div>
-                <div>
-                  <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
-                  <ul class="text-sm text-slate-600 space-y-1">
-                    <li>Preço mais alto sem vantagem clara sobre as concorrentes</li>
-                    <li>Assistência menos presente no interior do Brasil</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
+        <!-- BOX VEREDICTO -->
         <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 mb-10">
-          <h2 class="text-xl font-black text-slate-900 mb-3">Veredicto: Philips ou Mondial?</h2>
-          <p class="text-slate-700 leading-relaxed mb-3">
-            Se o orçamento permite, a Philips HD9252 entrega consistência e acabamento que justificam o preço. Mas se você quer economizar sem abrir mão de qualidade real, a Mondial AF-30 é hoje a melhor escolha do mercado: mesma potência, mais programas e sem histórico de ferrugem. Não existe resposta errada nesse comparativo.
-          </p>
-          <p class="text-slate-700 leading-relaxed">
-            O que não recomendo: pagar mais de R$ 600 em airfryer de marca desconhecida. Nessa categoria, marca importa porque em algum momento você vai precisar de peça ou assistência.
-          </p>
-        </div>
-
-        <h2 class="text-2xl font-black text-slate-900 mb-6">O que avaliar antes de comprar</h2>
-
-        <h3 class="text-xl font-bold text-slate-800 mb-3">Cesto ou tipo forno: qual é o certo para você?</h3>
-        <p class="text-slate-700 leading-relaxed mb-6">
-          Airfryer de cesto tem gaveta frontal e é o melhor para fritar batata, nugget, salgado e bife. O modelo tipo forno abre como um mini-forno com prateleiras e permite assar bolos e pizzas com mais facilidade. Se você usa principalmente para fritar, cesto é a escolha certa. Se quer substituir o forno convencional, o tipo forno vale o preço extra.
-        </p>
-
-        <h3 class="text-xl font-bold text-slate-800 mb-3">Quantos litros você precisa?</h3>
-        <p class="text-slate-700 leading-relaxed mb-6">
-          Para 1 pessoa: 2 a 3 litros. Para 2 a 3 pessoas: 4 litros. Para famílias de 4 ou mais: 5 litros ou mais. Cuidado com comprar grande "para o futuro" - airfryer grande consome mais energia mesmo quando você prepara pouca comida, porque precisa aquecer uma câmara maior.
-        </p>
-
-        <h3 class="text-xl font-bold text-slate-800 mb-3">Quanto gasta de energia por mês?</h3>
-        <p class="text-slate-700 leading-relaxed mb-6">
-          Uma airfryer de 1.500W usada 30 minutos por dia consome cerca de 22 kWh por mês. Com a tarifa média de R$ 0,67/kWh, isso representa cerca de R$ 15 na conta de luz. Em comparação com o forno elétrico convencional, a airfryer é mais econômica porque aquece um volume de ar muito menor.
-        </p>
-
-        <h2 class="text-2xl font-black text-slate-900 mb-6">Como a airfryer deixa a comida crocante</h2>
-        <p class="text-slate-700 leading-relaxed mb-4">
-          A airfryer não frita de verdade. Ela assa com ar quente em alta velocidade. O ventilador interno circula o calor em todas as direções ao mesmo tempo, criando o mesmo efeito do óleo quente: uma crosta dourada por fora e textura macia por dentro. A diferença é que você usa até 80% menos óleo para chegar no mesmo resultado.
-        </p>
-        <p class="text-slate-700 leading-relaxed mb-6">
-          Alimentos com gordura própria, como frango com pele e costelinha, ficam ainda melhores porque a gordura natural é liberada durante o preparo e contribui para a crocância. Já alimentos muito secos, como pão sem nenhuma gordura, precisam de um fio de azeite para não ressecar por completo. Entender essa lógica evita frustrações e melhora muito o resultado desde a primeira semana de uso.
-        </p>
-
-        <h2 class="text-2xl font-black text-slate-900 mb-4">Como limpar sem estragar o antiaderente</h2>
-        <p class="text-slate-700 leading-relaxed mb-3">
-          A cesta antiaderente é a parte mais importante e a mais delicada da airfryer. Para ela durar anos, siga estas regras sem exceção:
-        </p>
-        <ul class="list-disc list-inside text-slate-700 space-y-2 mb-4 pl-2">
-          <li>Espere esfriar completamente antes de lavar. Esse ponto é especialmente importante nos modelos Philips, onde lavar a cesta quente é a principal causa da ferrugem relatada no Reclame Aqui.</li>
-          <li>Use esponja macia com detergente neutro. Nunca use palha de aço ou esponja dupla face abrasiva.</li>
-          <li>Seque bem com pano antes de guardar. Deixar úmido acelera o desgaste do antiaderente.</li>
-          <li>Evite a máquina de lavar louça mesmo que o fabricante indique que é seguro. O detergente de máquina é mais concentrado e corrosivo, e vai degradar o revestimento com o tempo.</li>
-        </ul>
-        <p class="text-slate-700 leading-relaxed mb-6">
-          A parte externa do aparelho pode ser limpa com pano úmido. O interior onde fica a resistência pode acumular gordura com o tempo: limpe com pano levemente úmido quando o aparelho estiver completamente frio e desligado da tomada.
-        </p>
-
-        <h2 class="text-2xl font-black text-slate-900 mb-4">O que funciona bem e o que decepciona</h2>
-        <div class="grid md:grid-cols-2 gap-6 mb-6">
-          <div class="bg-green-50 border border-green-200 rounded-2xl p-5">
-            <p class="text-green-700 font-bold mb-3">Funciona muito bem</p>
-            <ul class="text-slate-700 text-sm space-y-1.5">
-              <li>Nuggets, frango empanado e salgados congelados</li>
-              <li>Batata frita com uma colher de azeite</li>
-              <li>Costelinha, sobrecoxa e frango com pele</li>
-              <li>Legumes assados (abobrinha, cenoura, brócolis)</li>
-              <li>Pão de queijo congelado e calzone</li>
-              <li>Bife e hamburguer</li>
-            </ul>
-          </div>
-          <div class="bg-red-50 border border-red-200 rounded-2xl p-5">
-            <p class="text-red-600 font-bold mb-3">Funciona mal ou não funciona</p>
-            <ul class="text-slate-700 text-sm space-y-1.5">
-              <li>Massas líquidas sem forma própria (emporcalha tudo)</li>
-              <li>Alimentos com muito molho ou caldo</li>
-              <li>Peças grandes de carne que precisam de mais de 1 hora</li>
-              <li>Macarrão e arroz (precisam de água, não de ar quente)</li>
-              <li>Frituras em óleo abundante (não é para isso)</li>
-            </ul>
+          <h2 class="text-slate-800 font-black text-xl mb-4">Qual comprar? O veredicto honesto</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="bg-orange-50 border border-orange-200 rounded-xl p-4">
+              <p class="font-black text-orange-700 text-sm mb-2">Compre a Philips Série 1000 XL se...</p>
+              <ul class="space-y-2 text-sm text-slate-700">
+                <li class="flex items-start gap-2"><span class="text-orange-500 font-black mt-0.5">→</span> Você cozinha para 3 ou mais pessoas com frequência</li>
+                <li class="flex items-start gap-2"><span class="text-orange-500 font-black mt-0.5">→</span> Quer frango com pele crocante por igual, sem precisar virar</li>
+                <li class="flex items-start gap-2"><span class="text-orange-500 font-black mt-0.5">→</span> Prefere praticidade sem pré-aquecimento</li>
+                <li class="flex items-start gap-2"><span class="text-orange-500 font-black mt-0.5">→</span> Quer 2 anos de garantia e marca com assistência nacional</li>
+                <li class="flex items-start gap-2"><span class="text-orange-500 font-black mt-0.5">→</span> Valoriza silenciosidade na cozinha</li>
+              </ul>
+              <a href="https://amzn.to/4tZsfA1" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-2.5 rounded-xl mt-4 transition-colors text-sm">Ver Philips na Amazon</a>
+            </div>
+            <div class="bg-slate-100 border border-slate-200 rounded-xl p-4">
+              <p class="font-black text-slate-700 text-sm mb-2">Compre a Mondial Grand Family se...</p>
+              <ul class="space-y-2 text-sm text-slate-700">
+                <li class="flex items-start gap-2"><span class="text-slate-500 font-black mt-0.5">→</span> O orçamento está apertado e você quer uma airfryer funcional agora</li>
+                <li class="flex items-start gap-2"><span class="text-slate-500 font-black mt-0.5">→</span> Sua tomada é 127V e quer evitar complicações com voltagem</li>
+                <li class="flex items-start gap-2"><span class="text-slate-500 font-black mt-0.5">→</span> Vai usar principalmente para nuggets, batata frita e empanados</li>
+                <li class="flex items-start gap-2"><span class="text-slate-500 font-black mt-0.5">→</span> Está disposto a seguir o protocolo de cuidado do antiaderente desde o início</li>
+                <li class="flex items-start gap-2"><span class="text-slate-500 font-black mt-0.5">→</span> Prefere o cesto quadrado, que cabe melhor pedaços maiores de carne</li>
+              </ul>
+              <a href="https://amzn.to/4ffSi23" target="_blank" rel="nofollow noopener" class="block w-full bg-slate-700 hover:bg-slate-800 text-white text-center font-bold py-2.5 rounded-xl mt-4 transition-colors text-sm">Ver Mondial na Amazon</a>
+            </div>
           </div>
         </div>
-        <p class="text-slate-700 leading-relaxed mb-6">
-          Conhecer esse limite antes de comprar evita a frustração de esperar que o aparelho substitua tudo. A airfryer não substitui o fogão nem o micro-ondas. Ela complementa os dois, e faz muito bem o que ela se propõe a fazer.
-        </p>
 
-        <h2 class="text-2xl font-black text-slate-900 mb-4">Garantia e assistência técnica</h2>
-        <p class="text-slate-700 leading-relaxed mb-3">
-          As duas marcas oferecem 1 ano de garantia contra defeitos de fabricação. A diferença está na rede de assistência: a Philips tem centros autorizados em todas as capitais e em cidades médias de todo o Brasil. A Mondial tem assistência nas capitais e nas cidades maiores, mas é menos presente no interior.
-        </p>
-        <p class="text-slate-700 leading-relaxed mb-6">
-          Se você mora em cidade pequena e precisar acionar a garantia, a Philips é mais segura por ter rede maior. Em qualquer caso, guarde sempre a nota fiscal. Sem ela, nenhuma marca honra a garantia, mesmo que o produto seja claramente defeituoso.
-        </p>
-
-        <h2 class="text-2xl font-black text-slate-900 mb-6">Dúvidas frequentes</h2>
-        <div class="space-y-3 mb-10">
-          <details class="border border-slate-200 rounded-xl overflow-hidden">
-            <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
-              Airfryer Philips enferruja mesmo?
-              <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-            </summary>
-            <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
-              Sim, é um relato frequente no Reclame Aqui. A ferrugem aparece na base metálica da cesta quando ela é lavada ainda quente. Para evitar: deixe esfriar completamente antes de lavar e seque bem com pano antes de guardar. A Mondial não tem esse histórico.
-            </div>
-          </details>
-          <details class="border border-slate-200 rounded-xl overflow-hidden">
-            <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
-              Precisa colocar óleo na airfryer?
-              <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-            </summary>
-            <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
-              Depende do alimento. Batata frita fica muito mais crocante com uma colher de azeite antes de entrar na cesta. Nuggets e salgados processados não precisam. Carnes naturais ficam mais suculentas com uma pincelada de óleo. O mito de "sem óleo" vale só para alimentos já processados.
-            </div>
-          </details>
-          <details class="border border-slate-200 rounded-xl overflow-hidden">
-            <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
-              Airfryer gasta muita energia?
-              <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-            </summary>
-            <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
-              Menos do que parece. Uma airfryer de 1.500W usada 30 minutos por dia custa cerca de R$ 15 por mês na conta de luz. Isso é menos do que um forno elétrico convencional para o mesmo tempo de uso, porque a airfryer aquece um espaço muito menor.
-            </div>
-          </details>
-          <details class="border border-slate-200 rounded-xl overflow-hidden">
-            <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
-              Qual a diferença entre airfryer de cesto e de forno?
-              <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-            </summary>
-            <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
-              Cesto tem gaveta frontal, ideal para fritar nuggets, batata e carnes. Tipo forno abre com porta e tem prateleiras, ideal para assar bolos e pizzas. Para uso focado em fritar, cesto é mais eficiente. Para substituir o forno da cozinha, o tipo forno faz mais sentido.
-            </div>
-          </details>
-          <details class="border border-slate-200 rounded-xl overflow-hidden">
-            <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
-              Airfryer Mondial é boa mesmo?
-              <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-            </summary>
-            <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
-              Sim. A Mondial entrega resultado muito bom para o preço, especialmente os modelos AF-30 e AF-14. O acabamento é mais simples que o da Philips, mas o resultado na comida é muito próximo. Para custo-benefício real, é hoje a melhor escolha do mercado brasileiro.
-            </div>
-          </details>
-          <details class="border border-slate-200 rounded-xl overflow-hidden">
-            <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
-              Posso colocar papel manteiga ou forma de silicone dentro da airfryer?
-              <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-            </summary>
-            <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
-              Pode, com cuidado. Papel manteiga só funciona com o alimento em cima. Se colocar vazio, o ventilador joga o papel na resistência e pode pegar fogo. Forma de silicone própria para airfryer é a melhor opção para assar ovos e bolos pequenos. Evite papel alumínio tampando toda a cesta, isso bloqueia a circulação de ar e piora o resultado.
-            </div>
-          </details>
-          <details class="border border-slate-200 rounded-xl overflow-hidden">
-            <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
-              Airfryer substitui o micro-ondas?
-              <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-            </summary>
-            <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
-              Não completamente. O micro-ondas esquenta mais rápido e é ideal para sopas, líquidos e pratos com molho. A airfryer é melhor para aquecer alimentos que precisam manter a crocância: pizza, salgado frito, frango, batata. Os dois se complementam. A airfryer não substitui o micro-ondas, mas reduz muito o uso do forno e da fritura no fogão.
-            </div>
-          </details>
+        <!-- TABELA COMPARATIVA -->
+        <div id="tabela-comparativa" class="mb-10">
+          <h2 class="text-slate-800 font-black text-xl mb-4">Comparativo lado a lado</h2>
+          <div class="overflow-x-auto">
+            <table class="w-full text-sm border-collapse rounded-xl overflow-hidden">
+              <thead>
+                <tr class="bg-slate-800 text-white">
+                  <th class="py-3 px-4 text-left font-bold">Característica</th>
+                  <th class="py-3 px-4 text-center font-bold">Philips Série 1000 XL</th>
+                  <th class="py-3 px-4 text-center font-bold">Mondial Grand Family 5L</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-slate-100 bg-white">
+                  <td class="py-3 px-4 text-slate-600 font-medium">Capacidade</td>
+                  <td class="py-3 px-4 text-center font-semibold text-slate-800">6,2 litros</td>
+                  <td class="py-3 px-4 text-center font-semibold text-slate-800">5 litros</td>
+                </tr>
+                <tr class="border-b border-slate-100 bg-slate-50">
+                  <td class="py-3 px-4 text-slate-600 font-medium">Potência</td>
+                  <td class="py-3 px-4 text-center font-semibold text-slate-800">1.700W</td>
+                  <td class="py-3 px-4 text-center font-semibold text-slate-800">1.900W</td>
+                </tr>
+                <tr class="border-b border-slate-100 bg-white">
+                  <td class="py-3 px-4 text-slate-600 font-medium">Consumo/mês (40 min/dia)</td>
+                  <td class="py-3 px-4 text-center font-semibold text-orange-600">R$ 27</td>
+                  <td class="py-3 px-4 text-center font-semibold text-slate-800">R$ 30</td>
+                </tr>
+                <tr class="border-b border-slate-100 bg-slate-50">
+                  <td class="py-3 px-4 text-slate-600 font-medium">Voltagem padrão</td>
+                  <td class="py-3 px-4 text-center font-semibold text-slate-800">110V ou 220V</td>
+                  <td class="py-3 px-4 text-center font-semibold text-slate-800">127V ou 220V</td>
+                </tr>
+                <tr class="border-b border-slate-100 bg-white">
+                  <td class="py-3 px-4 text-slate-600 font-medium">Pré-aquecimento</td>
+                  <td class="py-3 px-4 text-center font-semibold text-orange-600">Dispensa na maioria</td>
+                  <td class="py-3 px-4 text-center font-semibold text-slate-800">3 a 5 minutos</td>
+                </tr>
+                <tr class="border-b border-slate-100 bg-slate-50">
+                  <td class="py-3 px-4 text-slate-600 font-medium">Tecnologia de ar</td>
+                  <td class="py-3 px-4 text-center font-semibold text-orange-600">RapidAir (patenteada)</td>
+                  <td class="py-3 px-4 text-center text-slate-500">Circulação convencional</td>
+                </tr>
+                <tr class="border-b border-slate-100 bg-white">
+                  <td class="py-3 px-4 text-slate-600 font-medium">Forma do cesto</td>
+                  <td class="py-3 px-4 text-center text-slate-800">Redondo</td>
+                  <td class="py-3 px-4 text-center font-semibold text-orange-600">Quadrado</td>
+                </tr>
+                <tr class="border-b border-slate-100 bg-slate-50">
+                  <td class="py-3 px-4 text-slate-600 font-medium">Peso</td>
+                  <td class="py-3 px-4 text-center text-slate-800">5,35 kg</td>
+                  <td class="py-3 px-4 text-center text-slate-800">5,25 kg</td>
+                </tr>
+                <tr class="border-b border-slate-100 bg-white">
+                  <td class="py-3 px-4 text-slate-600 font-medium">Garantia</td>
+                  <td class="py-3 px-4 text-center font-semibold text-orange-600">24 meses</td>
+                  <td class="py-3 px-4 text-center text-slate-800">12 meses</td>
+                </tr>
+                <tr class="bg-slate-50">
+                  <td class="py-3 px-4 text-slate-600 font-medium">Reclame Aqui (solução)</td>
+                  <td class="py-3 px-4 text-center text-slate-800">92%</td>
+                  <td class="py-3 px-4 text-center font-semibold text-orange-600">99,5%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="text-xs text-slate-400 mt-2">Consumo estimado com base em 40 minutos de uso diário e tarifa de R$ 0,80/kWh (fórmula ANEEL). Preços conferidos em maio de 2026.</p>
         </div>
-        <script type="application/ld+json" set:html={JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Airfryer Philips enferruja mesmo?","acceptedAnswer":{"@type":"Answer","text":"Sim. A ferrugem aparece na base metálica da cesta quando lavada ainda quente. Para evitar: deixe esfriar completamente antes de lavar e seque bem antes de guardar."}},{"@type":"Question","name":"Precisa colocar óleo na airfryer?","acceptedAnswer":{"@type":"Answer","text":"Depende do alimento. Batata frita fica mais crocante com uma colher de azeite. Nuggets não precisam. O mito de sem óleo vale só para alimentos processados."}},{"@type":"Question","name":"Airfryer gasta muita energia?","acceptedAnswer":{"@type":"Answer","text":"Não. Uma airfryer de 1.500W usada 30 minutos por dia custa cerca de R$ 15 por mês na conta de luz."}},{"@type":"Question","name":"Airfryer Mondial é boa?","acceptedAnswer":{"@type":"Answer","text":"Sim. A Mondial entrega resultado muito bom para o preço, sem histórico de ferrugem. Para custo-benefício, é hoje a melhor escolha do mercado."}},{"@type":"Question","name":"Posso colocar papel manteiga dentro da airfryer?","acceptedAnswer":{"@type":"Answer","text":"Pode, mas somente com alimento em cima. Papel manteiga vazio voa com o ventilador e pode encostar na resistência. Forma de silicone própria para airfryer é a opção mais segura."}},{"@type":"Question","name":"Airfryer substitui o micro-ondas?","acceptedAnswer":{"@type":"Answer","text":"Não completamente. O micro-ondas é melhor para sopas e líquidos. A airfryer é melhor para aquecer alimentos crocantes. Os dois se complementam."}}]})} />
+
+        <!-- GUIA O QUE AVALIAR ANTES DE COMPRAR -->
+        <div id="guia-compra" class="mb-10">
+          <h2 class="text-slate-800 font-black text-xl mb-6">O que avaliar antes de comprar a sua airfryer</h2>
+
+          <div class="space-y-5">
+            <div class="border border-slate-200 rounded-xl p-5">
+              <h3 class="font-black text-slate-800 text-base mb-2">Quantos litros você precisa de verdade?</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Para 1 ou 2 pessoas, 4 litros resolvem. Para 3 a 4 pessoas, você quer pelo menos 5 litros para não precisar fazer duas rodadas. Para 5 pessoas ou mais, a capacidade de 6,2 litros da Philips faz diferença real. A Mondial com 5 litros e cesto quadrado consegue acomodar bem uma coxa de frango inteira com sobra, o que é uma vantagem do formato quadrado sobre o redondo.
+              </p>
+            </div>
+
+            <div class="border border-slate-200 rounded-xl p-5">
+              <h3 class="font-black text-slate-800 text-base mb-2">Quanto vai custar na conta de luz?</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Usando a fórmula da ANEEL (potência em kW x horas de uso x dias x tarifa), com 40 minutos diários e tarifa de R$ 0,80/kWh: a Philips de 1.700W gasta cerca de R$ 27 por mês. A Mondial de 1.900W chega a R$ 30 por mês. Se sua tarifa estiver na média nacional de 2025 (próxima de R$ 0,98/kWh), os valores sobem para R$ 33 e R$ 37 respectivamente.
+              </p>
+            </div>
+
+            <div class="border border-slate-200 rounded-xl p-5">
+              <h3 class="font-black text-slate-800 text-base mb-2">Cesto redondo ou quadrado: qual faz mais sentido?</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                O cesto redondo da Philips é mais fundo, o que é melhor para batata frita e alimentos menores. O cesto quadrado da Mondial aproveita melhor a largura e encaixa pedaços maiores de carne sem precisar cortar. Se você faz muito frango com osso ou peixe em posta, o formato quadrado ganha. Para o dia a dia de frituras em geral, os dois funcionam bem.
+              </p>
+            </div>
+
+            <div class="border border-slate-200 rounded-xl p-5">
+              <h3 class="font-black text-slate-800 text-base mb-2">Limpeza e manutenção do antiaderente</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                O cesto da Philips vai à lava-louças, o que facilita muito. O da Mondial deve ser lavado à mão com esponja macia e detergente neutro. Nos dois casos, nunca use esponja de aço, lixa ou utensílios de metal dentro do cesto. O antiaderente de qualquer airfryer dura mais com esses cuidados simples.
+              </p>
+            </div>
+
+            <div class="border border-slate-200 rounded-xl p-5">
+              <h3 class="font-black text-slate-800 text-base mb-2">Assistência técnica e garantia</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                A Philips tem rede de assistência técnica autorizada em todo o Brasil e 2 anos de garantia. A Mondial tem suporte com índice de solução de 99,5% no Reclame Aqui e 12 meses de garantia. A garantia estendida da Philips faz diferença se aparecer algum problema no segundo ano. As duas marcas têm suporte confiável, mas a rede da Philips é mais capilarizada no interior do país.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- COMO A AIRFRYER DEIXA A COMIDA CROCANTE -->
+        <div id="como-deixa-crocante" class="bg-slate-50 border border-slate-100 rounded-2xl p-6 mb-10">
+          <h2 class="text-slate-800 font-black text-xl mb-4">Como a airfryer deixa a comida crocante</h2>
+          <p class="text-slate-600 text-sm leading-relaxed mb-3">
+            A airfryer não frita. Ela assa com ar quente em altíssima velocidade. A resistência aquece o ar interno e um ventilador potente faz esse ar circular ao redor do alimento em todas as direções. O resultado é parecido com a fritura convencional porque o calor seco e intenso desidrata a superfície do alimento rapidamente, criando aquela textura crocante por fora sem precisar de óleo.
+          </p>
+          <p class="text-slate-600 text-sm leading-relaxed mb-3">
+            A diferença entre a Philips e a Mondial está exatamente nesse passo: a tecnologia RapidAir da Philips usa um design interno em formato de estrela que direciona o fluxo de ar quente em espiral ao redor do alimento, garantindo crocância uniforme em todas as faces. Na Mondial, a circulação de ar é convencional de cima para baixo, o que funciona bem mas pode deixar a parte de baixo menos crocante dependendo do alimento.
+          </p>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Para carnes sem pele, as duas entregam resultado equivalente. Para frango com pele ou peixe empanado, a distribuição em espiral da Philips faz diferença visível. Um truque que funciona nas duas: virar o alimento na metade do tempo, especialmente para carnes mais grossas acima de 2 cm de espessura.
+          </p>
+        </div>
+
+        <!-- O QUE FUNCIONA BEM E O QUE DECEPCIONA -->
+        <div id="funciona-decepciona" class="mb-10">
+          <h2 class="text-slate-800 font-black text-xl mb-4">O que funciona bem e o que decepciona nas duas</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="bg-green-50 border border-green-100 rounded-xl p-5">
+              <p class="font-black text-green-700 text-base mb-3">O que funciona muito bem</p>
+              <ul class="space-y-3 text-sm text-slate-700">
+                <li class="flex items-start gap-2"><span class="text-green-500 font-black mt-0.5 flex-shrink-0">+</span><span><strong>Nuggets e empanados congelados:</strong> resultado excelente nas duas. Ficam crocantes em 10 a 12 minutos sem nenhum óleo.</span></li>
+                <li class="flex items-start gap-2"><span class="text-green-500 font-black mt-0.5 flex-shrink-0">+</span><span><strong>Batata frita caseira:</strong> com um fio de azeite, fica próxima da versão fritada. A Philips mantém consistência melhor entre as rodadas.</span></li>
+                <li class="flex items-start gap-2"><span class="text-green-500 font-black mt-0.5 flex-shrink-0">+</span><span><strong>Frango sem pele:</strong> cozinha bem por dentro e dora por fora nas duas marcas em cerca de 20 minutos a 200°C.</span></li>
+                <li class="flex items-start gap-2"><span class="text-green-500 font-black mt-0.5 flex-shrink-0">+</span><span><strong>Pão de queijo e salgadinhos:</strong> ficam prontos em 8 a 10 minutos e saem uniformes nas duas.</span></li>
+                <li class="flex items-start gap-2"><span class="text-green-500 font-black mt-0.5 flex-shrink-0">+</span><span><strong>Reaquecimento de pizza:</strong> recupera a crocância da massa em 3 a 4 minutos, muito superior ao micro-ondas.</span></li>
+              </ul>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-xl p-5">
+              <p class="font-black text-red-600 text-base mb-3">O que decepciona (nos dois modelos)</p>
+              <ul class="space-y-3 text-sm text-slate-700">
+                <li class="flex items-start gap-2"><span class="text-red-400 font-black mt-0.5 flex-shrink-0">-</span><span><strong>Alimentos úmidos:</strong> batata doce cozida, legumes com molho ou alimentos com massa muito grossa saem menos uniformes.</span></li>
+                <li class="flex items-start gap-2"><span class="text-red-400 font-black mt-0.5 flex-shrink-0">-</span><span><strong>Cesto muito cheio:</strong> encher acima de 70% da capacidade faz o calor não circular bem e o resultado fica irregular.</span></li>
+                <li class="flex items-start gap-2"><span class="text-red-400 font-black mt-0.5 flex-shrink-0">-</span><span><strong>Queijo derretido solto:</strong> vira bagunça no cesto se não usar papel manteiga ou forma pequena de silicone.</span></li>
+                <li class="flex items-start gap-2"><span class="text-red-400 font-black mt-0.5 flex-shrink-0">-</span><span><strong>Frango com pele (Mondial):</strong> a pele pode ficar menos crocante na parte de baixo sem viragem no meio do tempo.</span></li>
+                <li class="flex items-start gap-2"><span class="text-red-400 font-black mt-0.5 flex-shrink-0">-</span><span><strong>Antiaderente a longo prazo:</strong> sem os cuidados certos, os dois modelos apresentam desgaste. A Mondial tem mais histórico de descascamento precoce.</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- COMO LIMPAR SEM ESTRAGAR O ANTIADERENTE -->
+        <div id="como-limpar" class="mb-10">
+          <h2 class="text-slate-800 font-black text-xl mb-5">Como limpar sem estragar o antiaderente</h2>
+
+          <p class="text-slate-600 text-sm leading-relaxed mb-5">
+            O antiaderente é o ponto mais sensível das duas. Quando ele descasca, pedaços microscópicos podem ir para o alimento. E quando começa a grudar, o cozimento perde qualidade. Seguindo essas orientações, você prolonga muito a vida útil do revestimento.
+          </p>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <div class="border border-orange-200 rounded-xl p-5">
+              <p class="font-black text-orange-700 text-sm mb-3">Para a Philips Série 1000 XL</p>
+              <ul class="space-y-2 text-sm text-slate-700">
+                <li class="flex items-start gap-2"><span class="text-orange-400 font-black mt-0.5">1.</span> Espere esfriar antes de lavar, jamais coloque água fria no cesto quente.</li>
+                <li class="flex items-start gap-2"><span class="text-orange-400 font-black mt-0.5">2.</span> O cesto vai à lava-louças, mas à mão com esponja macia dura mais tempo.</li>
+                <li class="flex items-start gap-2"><span class="text-orange-400 font-black mt-0.5">3.</span> Seque bem o interior e a resistência antes de guardar. Umidade acumulada causa ferrugem.</li>
+                <li class="flex items-start gap-2"><span class="text-orange-400 font-black mt-0.5">4.</span> Nunca use utensílios de metal ou espátula com ponta dentro do cesto.</li>
+                <li class="flex items-start gap-2"><span class="text-orange-400 font-black mt-0.5">5.</span> A parte externa deve ser limpa apenas com pano úmido. Nunca molhe o compartimento elétrico.</li>
+              </ul>
+            </div>
+            <div class="border border-slate-200 rounded-xl p-5">
+              <p class="font-black text-slate-700 text-sm mb-3">Para a Mondial Grand Family</p>
+              <ul class="space-y-2 text-sm text-slate-700">
+                <li class="flex items-start gap-2"><span class="text-slate-500 font-black mt-0.5">1.</span> Antes do primeiro uso, faça a cura do antiaderente: lave o cesto, seque bem, passe um fio de óleo em todo o interior e ligue a 180°C por 5 minutos.</li>
+                <li class="flex items-start gap-2"><span class="text-slate-500 font-black mt-0.5">2.</span> Lave sempre à mão com esponja macia e detergente neutro. Evite lava-louças.</li>
+                <li class="flex items-start gap-2"><span class="text-slate-500 font-black mt-0.5">3.</span> Repita o processo de cura a cada 3 meses para prolongar a vida do Duraflon.</li>
+                <li class="flex items-start gap-2"><span class="text-slate-500 font-black mt-0.5">4.</span> Se aparecerem pontos onde o revestimento descascou, a Mondial troca o cesto dentro da garantia. Guarde a nota fiscal.</li>
+                <li class="flex items-start gap-2"><span class="text-slate-500 font-black mt-0.5">5.</span> Para alimentos que grudam muito, use papel manteiga cortado no fundo do cesto, mas nunca cubra completamente as laterais, pois isso bloqueia a circulação de ar.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ ACORDEÃO -->
+        <div id="faq" class="mb-10">
+          <h2 class="text-slate-800 font-black text-xl mb-5">Perguntas frequentes</h2>
+
+          <div class="space-y-2">
+
+            <details class="border border-slate-200 rounded-xl overflow-hidden group">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+                <span>Qual airfryer é melhor, Philips ou Mondial?</span>
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 py-4 bg-slate-50 text-sm text-slate-600 leading-relaxed border-t border-slate-100">
+                Depende do que você vai usar. A Philips Série 1000 XL tem capacidade maior (6,2L vs 5L), tecnologia RapidAir patenteada para cozimento mais uniforme e garantia de 2 anos. A Mondial Grand Family custa menos, tem 1.900W de potência e está disponível em 127V. Para famílias maiores ou quem quer o melhor resultado com frango com pele, a Philips ganha. Para custo-benefício e receitas do dia a dia, a Mondial resolve bem.
+              </div>
+            </details>
+
+            <details class="border border-slate-200 rounded-xl overflow-hidden group">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+                <span>A Philips Série 1000 XL funciona em 110V?</span>
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 py-4 bg-slate-50 text-sm text-slate-600 leading-relaxed border-t border-slate-100">
+                Sim, existe o modelo em 110V (127V). É importante verificar a voltagem antes de comprar porque a Amazon vende os dois modelos: 110V e 220V. O modelo de 220V não funciona em tomada de 110V. Sempre confira a especificação na página do produto antes de finalizar a compra.
+              </div>
+            </details>
+
+            <details class="border border-slate-200 rounded-xl overflow-hidden group">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+                <span>O antiaderente da Mondial realmente descasca?</span>
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 py-4 bg-slate-50 text-sm text-slate-600 leading-relaxed border-t border-slate-100">
+                Há histórico documentado no Reclame Aqui de descascamento do revestimento Duraflon em 3 a 6 meses de uso, em alguns casos a partir do terceiro uso. Isso acontece principalmente quando o cesto é lavado com esponja de aço, colocado na lava-louças ou exposto a temperatura muito alta sem o processo de cura inicial. Se você fizer a cura antes do primeiro uso e lavar sempre à mão com esponja macia, o risco diminui bastante. Dentro da garantia de 12 meses, a Mondial troca o cesto danificado.
+              </div>
+            </details>
+
+            <details class="border border-slate-200 rounded-xl overflow-hidden group">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+                <span>A Philips Walita airfryer enferruja?</span>
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 py-4 bg-slate-50 text-sm text-slate-600 leading-relaxed border-t border-slate-100">
+                Existem relatos no Reclame Aqui de ferrugem na resistência interna com menos de 1 ano de uso. O problema principal é guardar a airfryer com umidade dentro, especialmente na resistência e nas paredes internas. A solução é secar completamente o interior antes de guardar, inclusive passando um pano seco na resistência depois de lavar. Nunca guarde a airfryer fechada ainda úmida.
+              </div>
+            </details>
+
+            <details class="border border-slate-200 rounded-xl overflow-hidden group">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+                <span>Qual gasta mais energia, Philips 1700W ou Mondial 1900W?</span>
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 py-4 bg-slate-50 text-sm text-slate-600 leading-relaxed border-t border-slate-100">
+                Usando a fórmula da ANEEL e 40 minutos de uso diário com tarifa de R$ 0,80/kWh: a Philips (1.700W) consome cerca de R$ 27 por mês e a Mondial (1.900W) chega a R$ 30. A diferença é de R$ 3 mensais, ou seja, R$ 36 por ano. Não é um fator decisivo na escolha, mas é bom saber. Com a tarifa média nacional de 2025 (R$ 0,98/kWh), os valores sobem para aproximadamente R$ 33 e R$ 37 respectivamente.
+              </div>
+            </details>
+
+            <details class="border border-slate-200 rounded-xl overflow-hidden group">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+                <span>Precisa pré-aquecer a airfryer antes de usar?</span>
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 py-4 bg-slate-50 text-sm text-slate-600 leading-relaxed border-t border-slate-100">
+                A Philips Série 1000 XL dispensa pré-aquecimento para a maioria das receitas graças à tecnologia RapidAir, que atinge a temperatura de trabalho muito rápido. A Mondial Grand Family se beneficia de 3 a 5 minutos de pré-aquecimento, principalmente para carnes mais grossas e frango com osso. Para empanados, nuggets e batata frita, as duas funcionam bem sem pré-aquecimento.
+              </div>
+            </details>
+
+            <details class="border border-slate-200 rounded-xl overflow-hidden group">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+                <span>5 litros de airfryer é suficiente para uma família de 4 pessoas?</span>
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 py-4 bg-slate-50 text-sm text-slate-600 leading-relaxed border-t border-slate-100">
+                Para 4 pessoas, 5 litros funciona para a maioria das receitas, mas você vai precisar fazer 2 rodadas para batata frita ou frango em quantidade suficiente para servir todo mundo ao mesmo tempo. Se você tem o hábito de preparar tudo de uma vez, a Philips de 6,2 litros entrega mais praticidade. O cesto quadrado da Mondial de 5L aproveita bem o espaço e consegue acomodar mais do que parece pelo número.
+              </div>
+            </details>
+
+          </div>
+        </div>
+
+        <!-- SCHEMA FAQ JSON-LD -->
+        <script type="application/ld+json" set:html={JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Qual airfryer é melhor, Philips ou Mondial?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depende do uso. A Philips Série 1000 XL tem capacidade de 6,2L, tecnologia RapidAir patenteada e 2 anos de garantia. A Mondial Grand Family 5L custa menos e tem 1.900W de potência. Para famílias maiores ou melhor resultado com frango com pele, a Philips é a escolha certa. Para custo-benefício e receitas do dia a dia, a Mondial resolve bem."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "A Philips Série 1000 XL funciona em 110V?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sim, existe o modelo em 110V (127V). Verifique a voltagem antes de comprar pois a Amazon vende os dois modelos: 110V e 220V. O modelo de 220V não funciona em tomada de 110V."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "O antiaderente da Mondial realmente descasca?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Há histórico documentado de descascamento do revestimento Duraflon em 3 a 6 meses quando o cesto é lavado com esponja de aço ou na lava-louças. Fazer a cura do antiaderente antes do primeiro uso e lavar sempre à mão com esponja macia reduz bastante esse risco."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "A Philips Walita airfryer enferruja?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Existem relatos no Reclame Aqui de ferrugem na resistência interna com menos de 1 ano de uso. O problema ocorre ao guardar a airfryer com umidade dentro. A solução é secar completamente o interior, inclusive a resistência, antes de guardar."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Qual airfryer gasta mais energia, a Philips 1700W ou a Mondial 1900W?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Com 40 minutos de uso diário e tarifa de R$ 0,80/kWh, a Philips de 1.700W custa cerca de R$ 27 por mês e a Mondial de 1.900W chega a R$ 30. A diferença é de R$ 3 mensais, usando a fórmula de cálculo da ANEEL."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Precisa pré-aquecer a airfryer antes de usar?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A Philips Série 1000 XL dispensa pré-aquecimento na maioria das receitas graças à tecnologia RapidAir. A Mondial Grand Family se beneficia de 3 a 5 minutos de pré-aquecimento para carnes mais grossas e frango com osso."
+              }
+            }
+          ]
+        })} />
       </div>
     )}
 
