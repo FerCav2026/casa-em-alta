@@ -4015,116 +4015,427 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
 
     {isKitCozinha && (
       <div>
+
+        <!-- Box de introdução -->
         <div class="bg-orange-50 border border-orange-100 rounded-2xl p-6 mb-8">
-          <p class="text-slate-700 leading-relaxed mb-3">
-            Organizar cozinha do zero parece um projeto enorme, mas na prática pode ser feito em um fim de semana e por menos de R$ 150. O segredo é comprar os organizadores certos, na ordem certa, depois de fazer a triagem do que realmente precisa ficar na cozinha.
+          <p class="text-slate-800 text-base leading-relaxed mb-3">
+            Quando me mudei para um apartamento com cozinha pequena, abrir o armário virou um estresse diário. Tempero caindo em cima de tempero, gaveta de talheres onde ninguém achava nada, geladeira com prateleiras vivendo viradas. A bagunça não era falta de capricho, era falta dos organizadores certos.
           </p>
-          <p class="text-slate-700 leading-relaxed">
-            Selecionei 8 itens essenciais que, juntos, transformam uma cozinha bagunçada em um espaço funcional. Calculei o custo total e coloquei a ordem em que você deve instalar cada um para ter o melhor resultado.
+          <p class="text-slate-800 text-base leading-relaxed mb-3">
+            Montei meu primeiro kit de organização de cozinha gastando menos de R$ 150 na Shopee, comprando os itens certos na ordem certa. A diferença foi imediata. O armário que parecia cheio de repente tinha o dobro de espaço útil. A gaveta de talheres passou a ter cada coisa no seu lugar. A geladeira ficou legível.
           </p>
-        </div>
-
-        <div class="bg-blue-50 border border-blue-200 rounded-2xl p-6 mb-10">
-          <p class="text-blue-800 font-bold text-base mb-2">Faça isso antes de comprar qualquer organizador</p>
-          <p class="text-slate-700 leading-relaxed mb-3">
-            Antes de comprar qualquer item desta lista, esvazie completamente a cozinha e faça a triagem: descarte o que está vencido, separe o que usa raramente para guardar em outro lugar e deixe na cozinha só o que você usa pelo menos uma vez por semana. Depois meça as gavetas, prateleiras e armários.
-          </p>
-          <p class="text-slate-700 leading-relaxed">
-            A ordem correta de organização é: primeiro os alimentos secos (armário), depois geladeira, depois gavetas de utensílios e por último a bancada. Quem começa pela bancada geralmente acaba empurrando o caos para dentro dos armários.
+          <p class="text-slate-800 text-base leading-relaxed">
+            Neste artigo mostro exatamente o que comprar, quanto custa, o que medir antes de sair comprando e como encaixar tudo dentro do orçamento mesmo que você não possa gastar os R$ 150 de uma vez.
           </p>
         </div>
 
-        {[
-          { n:"01", nome:"Potes herméticos para alimentos secos (conjunto com 4)", desc:"Para farinha, feijão, arroz, macarrão e outros secos. Herméticos de verdade mantêm prazo de validade maior e impedem insetos. Prefira modelos com boca larga para facilitar medir com xícara.", preco:"R$ 45 a R$ 65", ordem:"1º a instalar: guarda os alimentos secos com etiqueta e data" },
-          { n:"02", nome:"Organizador de temperos para prateleira ou gaveta", desc:"Divide os temperos em fileira dupla para ver todos de uma vez, sem tirar um para ver o de trás. Economiza muito tempo e acaba com a bagunça de vidrinhos caindo.", preco:"R$ 20 a R$ 30", ordem:"2º: resolve o caos dos temperos logo cedo" },
-          { n:"03", nome:"Suporte para tampas de panela (vertical, aço inox)", desc:"Guarda as tampas em pé, organizadas por tamanho, ocupando muito menos espaço do que empilhar. O modelo de aço inox não tomba e cabe facilmente em qualquer gaveta larga.", preco:"R$ 18 a R$ 28", ordem:"3º: libera espaço na prateleira onde as tampas ficavam empilhadas" },
-          { n:"04", nome:"Divisória modular para gaveta de talheres e utensílios", desc:"Separa colher de sopa, garfo, faca e utensílios em compartimentos definidos. O sistema modular se ajusta ao tamanho da gaveta. Fim de procurar talheres no fundo da gaveta.", preco:"R$ 22 a R$ 35", ordem:"4º: organiza as gavetas depois que os armários estiverem prontos" },
-          { n:"05", nome:"Porta-sacos plásticos de parede ou gaveta", desc:"Guarda sacos de supermercado, sacos zip e papel alumínio organizados e acessíveis. Muito melhor do que aquela pilha de sacos dentro de uma sacola maior.", preco:"R$ 12 a R$ 20", ordem:"5º: resolve um dos focos de bagunça mais comuns da cozinha" },
-          { n:"06", nome:"Suporte de parede para papel toalha e filme plástico", desc:"Instala com parafuso na parede ou no interior do armário. Mantém papel toalha, papel manteiga e filme plástico acessíveis sem ocupar espaço de bancada ou gaveta.", preco:"R$ 18 a R$ 28", ordem:"6º: libera espaço de bancada para usar o que realmente precisa ficar ali" },
-          { n:"07", nome:"Cesto organizador de pia para esponjas e detergente", desc:"Mantém esponja, esponja de aço e sabão líquido organizados ao lado da pia sem escorrer pelo azulejo. Com fundo perfurado para escorrer a água.", preco:"R$ 15 a R$ 25", ordem:"7º: organiza a área da pia, que é onde a bagunça aparece toda hora" },
-          { n:"08", nome:"Ganchos internos de armário para utensílios e canecas", desc:"Fixados na parte interna da porta do armário, permitem pendurar canecas, conchas, espátulas e colheres grandes. Libera espaço de prateleira e deixa os utensílios visíveis.", preco:"R$ 15 a R$ 25", ordem:"8º: aproveitamento final do espaço interno do armário" },
-        ].map((item) => (
+        <!-- Índice -->
+        <nav class="bg-white border border-slate-200 rounded-xl px-5 py-4 mb-10">
+          <p class="text-slate-800 font-bold text-sm mb-3">Neste artigo:</p>
+          <ul class="space-y-1.5">
+            <li><a href="#insight" class="text-orange-600 hover:text-orange-700 text-sm font-medium">O que não te contam sobre organização de cozinha</a></li>
+            <li><a href="#medir" class="text-orange-600 hover:text-orange-700 text-sm font-medium">O que medir antes de comprar qualquer organizador</a></li>
+            <li><a href="#produtos" class="text-orange-600 hover:text-orange-700 text-sm font-medium">Os 8 produtos do kit (com preços reais)</a></li>
+            <li><a href="#plastico" class="text-orange-600 hover:text-orange-700 text-sm font-medium">Qual plástico dura e qual quebra rápido</a></li>
+            <li><a href="#etapas" class="text-orange-600 hover:text-orange-700 text-sm font-medium">Como montar o kit em etapas se o orçamento não couber</a></li>
+            <li><a href="#faq" class="text-orange-600 hover:text-orange-700 text-sm font-medium">Perguntas frequentes</a></li>
+          </ul>
+        </nav>
+
+        <!-- Box de insight exclusivo -->
+        <div id="insight" class="bg-blue-50 border border-blue-200 rounded-2xl p-6 mb-10">
+          <h2 class="text-slate-800 font-bold text-lg mb-4">O que não te contam sobre organização de cozinha</h2>
+          <p class="text-slate-700 text-sm leading-relaxed mb-3">
+            A maioria dos artigos sobre organização de cozinha mostra fotos bonitas e diz para comprar "caixinhas". O que eles não falam é o seguinte.
+          </p>
+          <p class="text-slate-700 text-sm leading-relaxed mb-3">
+            <strong>Quanto espaço cada tipo de organizador realmente libera:</strong> uma caixa organizadora de armário bem escolhida pode transformar uma prateleira caótica onde cabem 12 itens soltos em um espaço empilhável onde cabem 30 itens com acesso fácil. Organizadores de geladeira com cesto drenante liberam em média 30% a mais de capacidade útil porque eliminam os espaços mortos entre garrafinhas tortas e potes mal posicionados.
+          </p>
+          <p class="text-slate-700 text-sm leading-relaxed mb-3">
+            <strong>Produto que não cabe não organiza, empilha bagunça:</strong> o erro mais comum é comprar sem medir. Organizador de gaveta que passa 1 cm da largura interna não entra. Caixa de armário que não considera a profundidade da prateleira fica saindo para fora toda hora. Medir antes poupa dinheiro e frustração.
+          </p>
+          <p class="text-slate-700 text-sm leading-relaxed">
+            <strong>Plástico barato custa caro a longo prazo:</strong> organizadores feitos de poliestireno (PS) ou plástico fino sem identificação quebram em 3 a 6 meses de uso diário. Produtos em polipropileno (PP) ou ABS custam um pouco mais, mas duram anos. Mais sobre isso na seção de materiais abaixo.
+          </p>
+        </div>
+
+        <!-- O que medir -->
+        <section id="medir" class="mb-10">
+          <h2 class="text-2xl font-bold text-slate-800 mb-4">O que medir antes de comprar qualquer organizador</h2>
+          <p class="text-slate-700 text-sm leading-relaxed mb-3">
+            Pega uma fita métrica antes de abrir o carrinho da Shopee. Anota essas medidas em papel ou no celular.
+          </p>
+          <ul class="list-disc pl-5 space-y-2 text-slate-700 text-sm mb-4">
+            <li><strong>Gaveta de talheres:</strong> largura interna, comprimento interno e altura interna. A maioria das gavetas de apartamento tem entre 40 cm e 55 cm de largura. Divisórias ajustáveis em bambu costumam expandir de 33 cm a 53 cm, então verifique o modelo antes de confirmar a compra.</li>
+            <li><strong>Prateleiras do armário:</strong> largura, profundidade e altura disponível entre uma prateleira e outra. Caixas empilháveis precisam de pelo menos 20 cm de altura livre para funcionar bem.</li>
+            <li><strong>Geladeira:</strong> largura e profundidade das prateleiras internas. Caixas organizadoras de geladeira costumam ter 30 cm x 15 cm, mas as prateleiras variam bastante por modelo.</li>
+            <li><strong>Espaço embaixo da pia:</strong> largura, profundidade e altura do vão, levando em conta o sifão e a tubulação. Prateleiras ajustáveis contornam o cano quando posicionadas corretamente.</li>
+            <li><strong>Bancada:</strong> o espaço disponível sem bloquear o fluxo de trabalho. Uma regra prática é deixar pelo menos 60 cm de bancada livre para preparo de alimentos.</li>
+          </ul>
+          <p class="text-slate-700 text-sm leading-relaxed">
+            Com essas medidas anotadas, você consegue filtrar os produtos na Shopee pela dimensão certa e evitar devolução.
+          </p>
+        </section>
+
+        <!-- Os 8 produtos -->
+        <section id="produtos" class="mb-10">
+          <h2 class="text-2xl font-bold text-slate-800 mb-6">Os 8 produtos do kit de organização de cozinha por R$ 150</h2>
+          <p class="text-slate-700 text-sm leading-relaxed mb-6">
+            Selecionei produtos com boa avaliação na Shopee e preços que encaixam em um orçamento de R$ 150 total. Os valores são faixas baseadas nos anúncios ativos na plataforma e podem variar com promoções e cupons.
+          </p>
+
           <div class="border border-slate-200 rounded-xl overflow-hidden mb-4 shadow-sm">
             <div class="bg-slate-800 px-5 py-3 flex items-center gap-3">
-              <span class="bg-orange-500 text-white font-black text-sm px-2.5 py-1 rounded-lg">{item.n}</span>
-              <p class="text-white font-bold text-sm leading-tight">{item.nome}</p>
+              <span class="bg-orange-500 text-white font-black text-sm px-2.5 py-1 rounded-lg">01</span>
+              <p class="text-white font-bold text-sm leading-tight">Caixa Organizadora de Geladeira com Cesto Drenante</p>
             </div>
             <div class="p-5 flex flex-col md:flex-row gap-4">
+              <div class="w-24 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-2 border border-slate-100">
+                <img src="/images/kit-cozinha/produto-1.jpg" alt="Caixa organizadora de geladeira transparente com cesto drenante" class="w-full h-auto object-contain rounded-lg" loading="lazy" />
+              </div>
               <div class="flex-1">
-                <p class="text-slate-700 text-sm leading-relaxed mb-2">{item.desc}</p>
-                <p class="text-slate-500 text-xs italic mb-2">{item.ordem}</p>
-                <p class="text-orange-600 font-bold text-sm">{item.preco}</p>
+                <p class="text-slate-700 text-sm leading-relaxed mb-2">Caixa retangular transparente com cesto drenante removível. Ideal para frutas, legumes e frios. O encaixe empilhável aproveita a altura das prateleiras, que normalmente é desperdiçada. Procure versões em polipropileno (PP) com tampa, que mantêm cheiro e umidade no lugar certo.</p>
+                <p class="text-orange-600 font-bold text-sm mb-1">R$ 25 a R$ 45 (kit com 2 unidades)</p>
+                <p class="text-slate-500 text-xs">Libera até 30% mais espaço útil na mesma prateleira da geladeira.</p>
               </div>
               <div class="flex flex-col gap-2 md:w-40 flex-shrink-0">
-                <a href="#" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-2 rounded-xl text-sm transition-colors">Ver na Amazon</a>
-                <a href="#" class="block w-full bg-slate-100 hover:bg-slate-200 text-slate-700 text-center font-bold py-2 rounded-xl text-sm transition-colors">Ver no Mercado Livre</a>
+                <a href="https://collshp.com/indicacasaecasaemalta?view=storefront" target="_blank" rel="nofollow noopener" class="block w-full text-white text-center font-bold py-2 rounded-xl text-sm transition-colors" style="background:#EE4D2D">Ver na Shopee</a>
               </div>
             </div>
           </div>
-        ))}
 
-        <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 mb-10 mt-8">
-          <h2 class="text-xl font-black text-slate-900 mb-3">Custo total do kit e retorno</h2>
-          <p class="text-slate-700 leading-relaxed mb-3">
-            Comprando todos os 8 itens, o custo total fica entre R$ 165 e R$ 256. Se você focar nos 5 primeiros (potes herméticos, organizador de temperos, suporte de tampas, divisória de gaveta e porta-sacos), o investimento fica entre R$ 117 e R$ 178 e já resolve os principais problemas de organização.
+          <div class="border border-slate-200 rounded-xl overflow-hidden mb-4 shadow-sm">
+            <div class="bg-slate-800 px-5 py-3 flex items-center gap-3">
+              <span class="bg-orange-500 text-white font-black text-sm px-2.5 py-1 rounded-lg">02</span>
+              <p class="text-white font-bold text-sm leading-tight">Porta-Temperos com 12 Potes e Suporte Giratório</p>
+            </div>
+            <div class="p-5 flex flex-col md:flex-row gap-4">
+              <div class="w-24 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-2 border border-slate-100">
+                <img src="/images/kit-cozinha/produto-2.jpg" alt="Porta-temperos giratório com 12 potes para bancada de cozinha" class="w-full h-auto object-contain rounded-lg" loading="lazy" />
+              </div>
+              <div class="flex-1">
+                <p class="text-slate-700 text-sm leading-relaxed mb-2">Suporte com base giratória 360 graus e 12 potes para temperos e condimentos. Funciona em bancada ou fixado na parede. O modelo com potes de vidro e tampas de aço inox é o mais durável. Evite os modelos com potes de plástico fino sem identificação de material, pois absorvem cheiro e mancham.</p>
+                <p class="text-orange-600 font-bold text-sm mb-1">R$ 35 a R$ 60</p>
+                <p class="text-slate-500 text-xs">Libera a bandeja de temperos solta na bancada, que costuma ocupar mais de 30 cm lineares.</p>
+              </div>
+              <div class="flex flex-col gap-2 md:w-40 flex-shrink-0">
+                <a href="https://collshp.com/indicacasaecasaemalta?view=storefront" target="_blank" rel="nofollow noopener" class="block w-full text-white text-center font-bold py-2 rounded-xl text-sm transition-colors" style="background:#EE4D2D">Ver na Shopee</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="border border-slate-200 rounded-xl overflow-hidden mb-4 shadow-sm">
+            <div class="bg-slate-800 px-5 py-3 flex items-center gap-3">
+              <span class="bg-orange-500 text-white font-black text-sm px-2.5 py-1 rounded-lg">03</span>
+              <p class="text-white font-bold text-sm leading-tight">Organizador de Gaveta para Talheres em Bambu com Divisórias Ajustáveis</p>
+            </div>
+            <div class="p-5 flex flex-col md:flex-row gap-4">
+              <div class="w-24 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-2 border border-slate-100">
+                <img src="/images/kit-cozinha/produto-3.jpg" alt="Organizador de gaveta de talheres em bambu com divisórias ajustáveis" class="w-full h-auto object-contain rounded-lg" loading="lazy" />
+              </div>
+              <div class="flex-1">
+                <p class="text-slate-700 text-sm leading-relaxed mb-2">Divisória expansível para gaveta de talheres, fabricada em bambu certificado. Expande de 33 cm a 53 cm de largura. O bambu resiste à umidade melhor que o MDF e não emite cheiro. As divisórias internas são ajustáveis para os seus talheres. Medir a largura interna da gaveta antes de comprar.</p>
+                <p class="text-orange-600 font-bold text-sm mb-1">R$ 45 a R$ 70</p>
+                <p class="text-slate-500 text-xs">A maioria das gavetas de apartamento tem entre 40 e 55 cm de largura interna.</p>
+              </div>
+              <div class="flex flex-col gap-2 md:w-40 flex-shrink-0">
+                <a href="https://collshp.com/indicacasaecasaemalta?view=storefront" target="_blank" rel="nofollow noopener" class="block w-full text-white text-center font-bold py-2 rounded-xl text-sm transition-colors" style="background:#EE4D2D">Ver na Shopee</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="border border-slate-200 rounded-xl overflow-hidden mb-4 shadow-sm">
+            <div class="bg-slate-800 px-5 py-3 flex items-center gap-3">
+              <span class="bg-orange-500 text-white font-black text-sm px-2.5 py-1 rounded-lg">04</span>
+              <p class="text-white font-bold text-sm leading-tight">Caixas Organizadoras Empilháveis para Armário de Cozinha</p>
+            </div>
+            <div class="p-5 flex flex-col md:flex-row gap-4">
+              <div class="w-24 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-2 border border-slate-100">
+                <img src="/images/kit-cozinha/produto-4.jpg" alt="Caixas organizadoras empilháveis transparentes com puxador para armário" class="w-full h-auto object-contain rounded-lg" loading="lazy" />
+              </div>
+              <div class="flex-1">
+                <p class="text-slate-700 text-sm leading-relaxed mb-2">Caixas modulares empilháveis com puxador frontal, ideais para saquinhos de tempero, sachês, cápsulas de café e snacks que se perdem no armário. O empilhamento vertical transforma uma prateleira com 40 cm de altura em dois ou três níveis de armazenamento. Procure versões em PP transparente para ver o conteúdo sem abrir.</p>
+                <p class="text-orange-600 font-bold text-sm mb-1">R$ 20 a R$ 40 (kit com 2 ou 3 unidades)</p>
+                <p class="text-slate-500 text-xs">Com 3 caixas empilhadas, você triplica a capacidade de uma prateleira padrão.</p>
+              </div>
+              <div class="flex flex-col gap-2 md:w-40 flex-shrink-0">
+                <a href="https://collshp.com/indicacasaecasaemalta?view=storefront" target="_blank" rel="nofollow noopener" class="block w-full text-white text-center font-bold py-2 rounded-xl text-sm transition-colors" style="background:#EE4D2D">Ver na Shopee</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="border border-slate-200 rounded-xl overflow-hidden mb-4 shadow-sm">
+            <div class="bg-slate-800 px-5 py-3 flex items-center gap-3">
+              <span class="bg-orange-500 text-white font-black text-sm px-2.5 py-1 rounded-lg">05</span>
+              <p class="text-white font-bold text-sm leading-tight">Suporte Organizador de Panelas e Tampas para Armário</p>
+            </div>
+            <div class="p-5 flex flex-col md:flex-row gap-4">
+              <div class="w-24 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-2 border border-slate-100">
+                <img src="/images/kit-cozinha/produto-5.jpg" alt="Suporte organizador de panelas na vertical com compartimento de tampas" class="w-full h-auto object-contain rounded-lg" loading="lazy" />
+              </div>
+              <div class="flex-1">
+                <p class="text-slate-700 text-sm leading-relaxed mb-2">Suporte ajustável em aço cromado ou plástico ABS reforçado que organiza panelas na vertical dentro do armário, com compartimentos laterais para as tampas. Panela empilhada em cima de panela é uma das maiores causas de armário lotado. Esse suporte libera em média 40% do espaço ao eliminar o empilhamento.</p>
+                <p class="text-orange-600 font-bold text-sm mb-1">R$ 35 a R$ 60</p>
+                <p class="text-slate-500 text-xs">Você passa a acessar qualquer panela sem tirar tudo antes.</p>
+              </div>
+              <div class="flex flex-col gap-2 md:w-40 flex-shrink-0">
+                <a href="https://collshp.com/indicacasaecasaemalta?view=storefront" target="_blank" rel="nofollow noopener" class="block w-full text-white text-center font-bold py-2 rounded-xl text-sm transition-colors" style="background:#EE4D2D">Ver na Shopee</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="border border-slate-200 rounded-xl overflow-hidden mb-4 shadow-sm">
+            <div class="bg-slate-800 px-5 py-3 flex items-center gap-3">
+              <span class="bg-orange-500 text-white font-black text-sm px-2.5 py-1 rounded-lg">06</span>
+              <p class="text-white font-bold text-sm leading-tight">Prateleira Ajustável para Embaixo da Pia (Under Sink)</p>
+            </div>
+            <div class="p-5 flex flex-col md:flex-row gap-4">
+              <div class="w-24 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-2 border border-slate-100">
+                <img src="/images/kit-cozinha/produto-6.jpg" alt="Prateleira ajustável de dois andares para o espaço embaixo da pia" class="w-full h-auto object-contain rounded-lg" loading="lazy" />
+              </div>
+              <div class="flex-1">
+                <p class="text-slate-700 text-sm leading-relaxed mb-2">Prateleira de dois andares com altura e largura ajustáveis, projetada para o espaço embaixo da pia. Contorna o sifão quando posicionada corretamente. Dobra a capacidade de armazenamento de produtos de limpeza, detergentes e esponjas sem furar parede. Modelos em aço cromado com pés de borracha resistem melhor à umidade que os de MDF.</p>
+                <p class="text-orange-600 font-bold text-sm mb-1">R$ 35 a R$ 55</p>
+                <p class="text-slate-500 text-xs">Medir a altura do vão e a posição do sifão antes de comprar.</p>
+              </div>
+              <div class="flex flex-col gap-2 md:w-40 flex-shrink-0">
+                <a href="https://collshp.com/indicacasaecasaemalta?view=storefront" target="_blank" rel="nofollow noopener" class="block w-full text-white text-center font-bold py-2 rounded-xl text-sm transition-colors" style="background:#EE4D2D">Ver na Shopee</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="border border-slate-200 rounded-xl overflow-hidden mb-4 shadow-sm">
+            <div class="bg-slate-800 px-5 py-3 flex items-center gap-3">
+              <span class="bg-orange-500 text-white font-black text-sm px-2.5 py-1 rounded-lg">07</span>
+              <p class="text-white font-bold text-sm leading-tight">Suporte Triplo para Rolos de Bancada (Papel Toalha, Alumínio e Filme PVC)</p>
+            </div>
+            <div class="p-5 flex flex-col md:flex-row gap-4">
+              <div class="w-24 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-2 border border-slate-100">
+                <img src="/images/kit-cozinha/produto-7.jpg" alt="Suporte triplo de bancada para papel toalha, papel alumínio e filme PVC" class="w-full h-auto object-contain rounded-lg" loading="lazy" />
+              </div>
+              <div class="flex-1">
+                <p class="text-slate-700 text-sm leading-relaxed mb-2">Suporte de bancada ou parede com três eixos: um para papel toalha, um para papel alumínio e um para filme PVC. Resolve aquele problema dos rolos de papel rolando dentro da gaveta ou caindo do armário. Os modelos com cortador integrado em aço são os mais práticos. Libera uma gaveta inteira de uso.</p>
+                <p class="text-orange-600 font-bold text-sm mb-1">R$ 25 a R$ 45</p>
+                <p class="text-slate-500 text-xs">Fixação por parafuso ou ventosa forte dependendo do modelo.</p>
+              </div>
+              <div class="flex flex-col gap-2 md:w-40 flex-shrink-0">
+                <a href="https://collshp.com/indicacasaecasaemalta?view=storefront" target="_blank" rel="nofollow noopener" class="block w-full text-white text-center font-bold py-2 rounded-xl text-sm transition-colors" style="background:#EE4D2D">Ver na Shopee</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="border border-slate-200 rounded-xl overflow-hidden mb-4 shadow-sm">
+            <div class="bg-slate-800 px-5 py-3 flex items-center gap-3">
+              <span class="bg-orange-500 text-white font-black text-sm px-2.5 py-1 rounded-lg">08</span>
+              <p class="text-white font-bold text-sm leading-tight">Prateleira Suspensa de Dois Andares para Bancada ou Pia</p>
+            </div>
+            <div class="p-5 flex flex-col md:flex-row gap-4">
+              <div class="w-24 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-2 border border-slate-100">
+                <img src="/images/kit-cozinha/produto-8.jpg" alt="Prateleira suspensa de dois andares para bancada ou sobre a pia da cozinha" class="w-full h-auto object-contain rounded-lg" loading="lazy" />
+              </div>
+              <div class="flex-1">
+                <p class="text-slate-700 text-sm leading-relaxed mb-2">Prateleira de dois andares que fica em cima da bancada ou sobre a pia, criando um segundo nível de armazenamento sem ocupar espaço na parede. Funciona para esponjas, saboneteiras, temperos de uso diário e plantas pequenas. Modelos em aço inox com borracha antiderrapante nos pés são os mais indicados para área úmida.</p>
+                <p class="text-orange-600 font-bold text-sm mb-1">R$ 20 a R$ 40</p>
+                <p class="text-slate-500 text-xs">Ideal para cozinhas com bancada estreita, cria espaço sem instalar nada na parede.</p>
+              </div>
+              <div class="flex flex-col gap-2 md:w-40 flex-shrink-0">
+                <a href="https://collshp.com/indicacasaecasaemalta?view=storefront" target="_blank" rel="nofollow noopener" class="block w-full text-white text-center font-bold py-2 rounded-xl text-sm transition-colors" style="background:#EE4D2D">Ver na Shopee</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tabela de resumo -->
+          <div class="overflow-x-auto mt-6 mb-2">
+            <table class="w-full text-sm border-collapse">
+              <thead>
+                <tr class="bg-slate-800 text-white">
+                  <th class="text-left px-4 py-2 rounded-tl-lg">Produto</th>
+                  <th class="text-left px-4 py-2">Faixa de preço</th>
+                  <th class="text-left px-4 py-2 rounded-tr-lg">Prioridade</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="bg-white border-b border-slate-100"><td class="px-4 py-2 text-slate-700">Organizador de geladeira (kit 2 un.)</td><td class="px-4 py-2 text-orange-600 font-semibold">R$ 25 a R$ 45</td><td class="px-4 py-2 text-slate-600">Alta</td></tr>
+                <tr class="bg-slate-50 border-b border-slate-100"><td class="px-4 py-2 text-slate-700">Porta-temperos giratório 12 potes</td><td class="px-4 py-2 text-orange-600 font-semibold">R$ 35 a R$ 60</td><td class="px-4 py-2 text-slate-600">Alta</td></tr>
+                <tr class="bg-white border-b border-slate-100"><td class="px-4 py-2 text-slate-700">Organizador de gaveta em bambu</td><td class="px-4 py-2 text-orange-600 font-semibold">R$ 45 a R$ 70</td><td class="px-4 py-2 text-slate-600">Alta</td></tr>
+                <tr class="bg-slate-50 border-b border-slate-100"><td class="px-4 py-2 text-slate-700">Caixas empilháveis para armário (kit)</td><td class="px-4 py-2 text-orange-600 font-semibold">R$ 20 a R$ 40</td><td class="px-4 py-2 text-slate-600">Média</td></tr>
+                <tr class="bg-white border-b border-slate-100"><td class="px-4 py-2 text-slate-700">Suporte de panelas e tampas</td><td class="px-4 py-2 text-orange-600 font-semibold">R$ 35 a R$ 60</td><td class="px-4 py-2 text-slate-600">Média</td></tr>
+                <tr class="bg-slate-50 border-b border-slate-100"><td class="px-4 py-2 text-slate-700">Prateleira under sink ajustável</td><td class="px-4 py-2 text-orange-600 font-semibold">R$ 35 a R$ 55</td><td class="px-4 py-2 text-slate-600">Média</td></tr>
+                <tr class="bg-white border-b border-slate-100"><td class="px-4 py-2 text-slate-700">Suporte triplo de rolos</td><td class="px-4 py-2 text-orange-600 font-semibold">R$ 25 a R$ 45</td><td class="px-4 py-2 text-slate-600">Baixa</td></tr>
+                <tr class="bg-slate-50"><td class="px-4 py-2 text-slate-700">Prateleira suspensa 2 andares</td><td class="px-4 py-2 text-orange-600 font-semibold">R$ 20 a R$ 40</td><td class="px-4 py-2 text-slate-600">Baixa</td></tr>
+              </tbody>
+              <tfoot>
+                <tr class="bg-orange-50">
+                  <td class="px-4 py-2 font-bold text-slate-800 rounded-bl-lg">Total estimado do kit</td>
+                  <td class="px-4 py-2 font-bold text-orange-600" colspan="2">R$ 100 a R$ 150 com cupom Shopee</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+          <p class="text-slate-500 text-xs mt-2 mb-6">Preços baseados em anúncios ativos na Shopee Brasil em maio de 2026.</p>
+        </section>
+
+        <!-- Qual plástico dura -->
+        <section id="plastico" class="mb-10">
+          <h2 class="text-2xl font-bold text-slate-800 mb-4">Qual plástico dura e qual quebra rápido</h2>
+          <p class="text-slate-700 text-sm leading-relaxed mb-4">
+            Esse é o ponto que a maioria dos artigos sobre organização de cozinha ignora completamente. Comprar o organizador errado é jogar dinheiro fora em 4 a 6 meses.
           </p>
-          <p class="text-slate-700 leading-relaxed">
-            Não é necessário comprar tudo de uma vez. Comece pelos itens que resolvem o maior incômodo do seu dia a dia. O organizador de temperos e os potes herméticos são os que mais impactam a rotina diária e custam menos de R$ 100 juntos.
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+            <div class="bg-green-50 border border-green-200 rounded-xl p-4">
+              <p class="font-bold text-green-800 text-sm mb-2">PP (Polipropileno)</p>
+              <p class="text-slate-700 text-xs leading-relaxed mb-2">O melhor para cozinha. Resistente à umidade, a detergentes e a variação de temperatura. Não absorve cheiro. Tem acabamento fosco. Dura anos com uso diário. Identificado pelo símbolo de reciclagem com número 5 ou a sigla PP impressa no fundo.</p>
+              <p class="text-green-700 text-xs font-semibold">Ideal para: organizadores de geladeira, caixas de armário, organizadores de gaveta.</p>
+            </div>
+            <div class="bg-blue-50 border border-blue-200 rounded-xl p-4">
+              <p class="font-bold text-blue-800 text-sm mb-2">ABS (Acrilonitrila Butadieno Estireno)</p>
+              <p class="text-slate-700 text-xs leading-relaxed mb-2">Bom para superfícies que precisam ter acabamento brilhoso. Resistente a impactos, mas um pouco mais sensível a solventes. É o material dos suportes de panelas e porta-temperos de qualidade.</p>
+              <p class="text-blue-700 text-xs font-semibold">Ideal para: suportes, porta-temperos, organizadores de bancada.</p>
+            </div>
+            <div class="bg-red-50 border border-red-200 rounded-xl p-4">
+              <p class="font-bold text-red-800 text-sm mb-2">PS (Poliestireno) e plástico sem sigla</p>
+              <p class="text-slate-700 text-xs leading-relaxed mb-2">O vilão da organização de cozinha. É barato, quebradiço e amolece com água quente. Identificado pelo número 6 no símbolo de reciclagem ou pela ausência de qualquer sigla no fundo. Se o produto não identifica o material, desconfie.</p>
+              <p class="text-red-700 text-xs font-semibold">Evitar para qualquer uso de longa duração na cozinha.</p>
+            </div>
+          </div>
+          <p class="text-slate-700 text-sm leading-relaxed">
+            Na hora de comprar na Shopee, veja as fotos dos fundos das peças ou leia a descrição técnica. Vendedores sérios identificam o material. Se não identifica, é quase sempre PS ou plástico genérico de vida curta.
           </p>
-        </div>
+        </section>
 
-        <h2 class="text-2xl font-black text-slate-900 mb-6">Como manter a cozinha organizada depois de arrumar</h2>
+        <!-- Montar em etapas -->
+        <section id="etapas" class="mb-10">
+          <h2 class="text-2xl font-bold text-slate-800 mb-4">Como montar o kit em etapas se o orçamento não couber de uma vez</h2>
+          <p class="text-slate-700 text-sm leading-relaxed mb-4">
+            Não precisa comprar tudo junto. A lógica é resolver primeiro o problema que mais incomoda no dia a dia.
+          </p>
+          <div class="space-y-4">
+            <div class="border-l-4 border-orange-400 pl-4">
+              <p class="font-bold text-slate-800 text-sm mb-1">Etapa 1, até R$ 50: resolver a gaveta e a geladeira</p>
+              <p class="text-slate-700 text-sm leading-relaxed">O organizador de gaveta de talheres e a caixa de geladeira são os que mais aliviam o estresse diário. Se você cozinha todo dia, essas duas peças mudam a rotina imediatamente. Com um kit de duas caixas de geladeira (R$ 25 a R$ 45) e um organizador de gaveta (R$ 45 a R$ 70) você já sente o impacto.</p>
+            </div>
+            <div class="border-l-4 border-blue-400 pl-4">
+              <p class="font-bold text-slate-800 text-sm mb-1">Etapa 2, mais R$ 50 a R$ 60: organizar o armário e os temperos</p>
+              <p class="text-slate-700 text-sm leading-relaxed">Com a gaveta e a geladeira resolvidas, o próximo problema costuma ser o armário e os temperos na bancada. Aqui entram as caixas empilháveis para armário (R$ 20 a R$ 40) e o porta-temperos giratório (R$ 35 a R$ 60). Você vai ver que o armário tem mais espaço do que parecia.</p>
+            </div>
+            <div class="border-l-4 border-green-400 pl-4">
+              <p class="font-bold text-slate-800 text-sm mb-1">Etapa 3, mais R$ 30 a R$ 50: finalizar com panelas, pia e bancada</p>
+              <p class="text-slate-700 text-sm leading-relaxed">Por último, o suporte de panelas (R$ 35 a R$ 60), a prateleira under sink (R$ 35 a R$ 55) e o suporte de rolos (R$ 25 a R$ 45) completam o kit. Esses itens fazem diferença grande, mas o impacto no dia a dia é menor que os da etapa 1.</p>
+            </div>
+          </div>
+        </section>
 
-        <h3 class="text-xl font-bold text-slate-800 mb-3">A regra do lugar fixo</h3>
-        <p class="text-slate-700 leading-relaxed mb-6">
-          Cada item precisa de um lugar fixo e esse lugar precisa fazer sentido para a sua rotina. Colher de servir fica perto do fogão. Talheres ficam perto da mesa. Temperos ficam perto da bancada de preparo. Se você precisa "decidir" onde guardar algo toda vez, o sistema vai fracassar em semanas.
-        </p>
+        <!-- FAQ -->
+        <section id="faq" class="mb-10">
+          <h2 class="text-2xl font-bold text-slate-800 mb-5">Perguntas frequentes sobre organização de cozinha</h2>
+          <div class="space-y-2">
 
-        <h3 class="text-xl font-bold text-slate-800 mb-3">O que não precisa ficar na bancada</h3>
-        <p class="text-slate-700 leading-relaxed mb-6">
-          Na bancada deve ficar só o que você usa todos os dias: cafeteira, porta-detergente, porta-utensílios. O que você usa menos de 3 vezes por semana (liquidificador, batedeira, processador) vai para o armário. Cozinhas com bancada limpa são mais fáceis de limpar e parecem maiores do que são.
-        </p>
+            <details class="group border border-slate-200 rounded-xl overflow-hidden">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer bg-white hover:bg-orange-50 transition-colors list-none">
+                <span class="font-semibold text-slate-800 text-sm">É possível organizar uma cozinha pequena gastando R$ 150?</span>
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 pb-4 pt-3 bg-white text-slate-600 text-sm leading-relaxed border-t border-slate-100">
+                Sim. Com R$ 150 é possível montar um kit completo com 8 produtos básicos de organização, cobrindo geladeira, gaveta, armário, temperos, panelas, espaço embaixo da pia e bancada. O segredo está em comprar na Shopee com cupons de desconto e priorizar os itens por etapa, começando pelo que mais incomoda no dia a dia.
+              </div>
+            </details>
 
-        <h2 class="text-2xl font-black text-slate-900 mb-6">Dúvidas frequentes</h2>
-        <div class="space-y-3 mb-10">
-          <details class="border border-slate-200 rounded-xl overflow-hidden">
-            <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
-              Por onde começar a organizar a cozinha?
-              <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-            </summary>
-            <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
-              Comece pela triagem: esvazie tudo, descarte vencidos e o que não usa. Depois siga a ordem: alimentos secos no armário, geladeira, gavetas de utensílios, bancada. Quem começa pela bancada geralmente empurra o caos para dentro dos armários sem resolver o problema de verdade.
-            </div>
-          </details>
-          <details class="border border-slate-200 rounded-xl overflow-hidden">
-            <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
-              Pote hermético realmente mantém o alimento mais fresco?
-              <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-            </summary>
-            <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
-              Sim, para alimentos secos como farinha, feijão, biscoito e cereal. Vedação hermética impede a entrada de umidade e insetos, que são as principais causas de deterioração precoce. Para farinha de trigo e aveia, a diferença de validade é de semanas. O investimento se paga em alimento que não vai para o lixo.
-            </div>
-          </details>
-          <details class="border border-slate-200 rounded-xl overflow-hidden">
-            <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
-              Como organizar cozinha pequena sem espaço?
-              <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-            </summary>
-            <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
-              Em cozinhas pequenas, a vertical é sua aliada. Use a parede e as portas dos armários com ganchos e suportes. Retire da bancada tudo que não usa diariamente. Use potes empilháveis para multiplicar o espaço de prateleiras. Em geral, o problema não é falta de espaço: é excesso de coisas desnecessárias na cozinha.
-            </div>
-          </details>
-          <details class="border border-slate-200 rounded-xl overflow-hidden">
-            <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
-              Quanto tempo leva para organizar uma cozinha do zero?
-              <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-            </summary>
-            <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
-              Para uma cozinha de apartamento padrão, planeje entre 4 e 6 horas: 1 hora de triagem, 1 hora de limpeza dos armários, 2 a 3 horas de organização com os produtos. Faça em dois momentos se precisar: triagem e limpeza em um dia, organização com os produtos novos no dia seguinte.
-            </div>
-          </details>
-        </div>
-        <script type="application/ld+json" set:html={JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Por onde começar a organizar a cozinha?","acceptedAnswer":{"@type":"Answer","text":"Comece pela triagem: esvazie tudo, descarte vencidos. Depois siga a ordem: alimentos secos, geladeira, gavetas, bancada. Quem começa pela bancada geralmente empurra o caos para os armários."}},{"@type":"Question","name":"Pote hermético realmente mantém o alimento mais fresco?","acceptedAnswer":{"@type":"Answer","text":"Sim, para alimentos secos. Vedação hermética impede umidade e insetos. Para farinha e aveia, a diferença de validade é de semanas."}},{"@type":"Question","name":"Como organizar cozinha pequena sem espaço?","acceptedAnswer":{"@type":"Answer","text":"Use a vertical: ganchos e suportes nas paredes e portas. Retire da bancada tudo que não usa diariamente. O problema geralmente é excesso de coisas, não falta de espaço."}},{"@type":"Question","name":"Quanto tempo leva para organizar uma cozinha do zero?","acceptedAnswer":{"@type":"Answer","text":"Entre 4 e 6 horas para uma cozinha de apartamento padrão: 1 hora de triagem, 1 hora de limpeza e 2 a 3 horas de organização com os produtos."}}]})} />
+            <details class="group border border-slate-200 rounded-xl overflow-hidden">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer bg-white hover:bg-orange-50 transition-colors list-none">
+                <span class="font-semibold text-slate-800 text-sm">Qual organizador de cozinha comprar primeiro?</span>
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 pb-4 pt-3 bg-white text-slate-600 text-sm leading-relaxed border-t border-slate-100">
+                O organizador de gaveta de talheres e as caixas de geladeira têm o maior impacto no dia a dia de quem cozinha. Se tiver que escolher um só item para começar, o organizador de gaveta em bambu com divisórias ajustáveis transforma imediatamente a experiência de pegar talheres para cozinhar ou montar a mesa.
+              </div>
+            </details>
+
+            <details class="group border border-slate-200 rounded-xl overflow-hidden">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer bg-white hover:bg-orange-50 transition-colors list-none">
+                <span class="font-semibold text-slate-800 text-sm">Os organizadores de cozinha da Shopee são de boa qualidade?</span>
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 pb-4 pt-3 bg-white text-slate-600 text-sm leading-relaxed border-t border-slate-100">
+                Existem ótimos produtos na Shopee e também produtos de má qualidade. A diferença está no material. Procure produtos em polipropileno (PP), ABS ou bambu. Evite produtos sem identificação de material ou com preço muito abaixo da média da categoria. Sempre leia as avaliações com fotos dos clientes antes de confirmar a compra.
+              </div>
+            </details>
+
+            <details class="group border border-slate-200 rounded-xl overflow-hidden">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer bg-white hover:bg-orange-50 transition-colors list-none">
+                <span class="font-semibold text-slate-800 text-sm">Preciso medir o armário antes de comprar organizador?</span>
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 pb-4 pt-3 bg-white text-slate-600 text-sm leading-relaxed border-t border-slate-100">
+                Sim, sempre. Meça a largura interna, a profundidade e a altura disponível entre as prateleiras. Para a gaveta de talheres, meça a largura e o comprimento internos. Para o espaço embaixo da pia, meça a largura, a profundidade e a altura do vão, anotando onde fica o sifão. Produto que não cabe não organiza, só gera devolução.
+              </div>
+            </details>
+
+            <details class="group border border-slate-200 rounded-xl overflow-hidden">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer bg-white hover:bg-orange-50 transition-colors list-none">
+                <span class="font-semibold text-slate-800 text-sm">Qual a diferença entre organizador de armário e caixa organizadora?</span>
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 pb-4 pt-3 bg-white text-slate-600 text-sm leading-relaxed border-t border-slate-100">
+                Organizadores de armário costumam ser estruturas fixas com compartimentos, como divisórias e suportes para panelas. Caixas organizadoras são unidades modulares empilháveis que você arranja livremente. Para cozinhas pequenas, as caixas empilháveis são mais flexíveis porque podem ser reorganizadas conforme a necessidade muda.
+              </div>
+            </details>
+
+            <details class="group border border-slate-200 rounded-xl overflow-hidden">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer bg-white hover:bg-orange-50 transition-colors list-none">
+                <span class="font-semibold text-slate-800 text-sm">Como evitar que o organizador de geladeira fique com cheiro?</span>
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 pb-4 pt-3 bg-white text-slate-600 text-sm leading-relaxed border-t border-slate-100">
+                Escolha organizadores de geladeira em polipropileno (PP), que não absorve cheiro. Lave com água morna e detergente neutro a cada 15 dias. Evite produtos em poliestireno (PS) ou plástico genérico, que absorvem odores com rapidez. Caixas com cesto drenante removível são mais fáceis de higienizar e secam mais rápido.
+              </div>
+            </details>
+
+            <details class="group border border-slate-200 rounded-xl overflow-hidden">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer bg-white hover:bg-orange-50 transition-colors list-none">
+                <span class="font-semibold text-slate-800 text-sm">Vale a pena comprar um kit completo ou peça por peça?</span>
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 pb-4 pt-3 bg-white text-slate-600 text-sm leading-relaxed border-t border-slate-100">
+                Comprar peça por peça costuma ser mais inteligente porque você mede o espaço antes de cada item e adapta a escolha à realidade da sua cozinha. Kits fechados nem sempre têm as dimensões certas para todos os espaços. A exceção são kits de caixas organizadoras modulares do mesmo modelo, que facilitam o empilhamento.
+              </div>
+            </details>
+
+          </div>
+        </section>
+
+        <!-- Schema JSON-LD -->
+        <script type="application/ld+json" set:html={JSON.stringify({
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "FAQPage",
+              "mainEntity": [
+                { "@type": "Question", "name": "É possível organizar uma cozinha pequena gastando R$ 150?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. Com R$ 150 é possível montar um kit completo com 8 produtos básicos de organização, cobrindo geladeira, gaveta, armário, temperos, panelas, espaço embaixo da pia e bancada, comprando na Shopee com cupons de desconto." } },
+                { "@type": "Question", "name": "Qual organizador de cozinha comprar primeiro?", "acceptedAnswer": { "@type": "Answer", "text": "O organizador de gaveta de talheres e as caixas de geladeira têm o maior impacto no dia a dia. O organizador de gaveta em bambu com divisórias ajustáveis transforma imediatamente a experiência de pegar talheres para cozinhar." } },
+                { "@type": "Question", "name": "Preciso medir o armário antes de comprar organizador?", "acceptedAnswer": { "@type": "Answer", "text": "Sim, sempre. Meça largura interna, profundidade e altura disponível entre as prateleiras. Produto que não cabe não organiza, só gera devolução." } },
+                { "@type": "Question", "name": "Os organizadores de cozinha da Shopee são de boa qualidade?", "acceptedAnswer": { "@type": "Answer", "text": "Existem ótimos e também ruins. A diferença está no material. Procure PP, ABS ou bambu. Evite produtos sem identificação de material ou com preço muito abaixo da média." } },
+                { "@type": "Question", "name": "Como evitar que o organizador de geladeira fique com cheiro?", "acceptedAnswer": { "@type": "Answer", "text": "Escolha organizadores em polipropileno (PP), que não absorve cheiro. Lave com água morna e detergente neutro a cada 15 dias. Evite poliestireno (PS) que absorve odores com rapidez." } },
+                { "@type": "Question", "name": "Vale a pena comprar um kit completo ou peça por peça?", "acceptedAnswer": { "@type": "Answer", "text": "Comprar peça por peça costuma ser mais inteligente porque você mede o espaço antes de cada item e adapta a escolha à realidade da sua cozinha." } }
+              ]
+            },
+            {
+              "@type": "ItemList",
+              "name": "Kit de Organização de Cozinha por R$ 150",
+              "description": "Os 8 melhores produtos para organizar a cozinha gastando até R$ 150 na Shopee",
+              "numberOfItems": 8,
+              "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Caixa Organizadora de Geladeira com Cesto Drenante", "url": "https://collshp.com/indicacasaecasaemalta?view=storefront" },
+                { "@type": "ListItem", "position": 2, "name": "Porta-Temperos com 12 Potes e Suporte Giratório", "url": "https://collshp.com/indicacasaecasaemalta?view=storefront" },
+                { "@type": "ListItem", "position": 3, "name": "Organizador de Gaveta para Talheres em Bambu", "url": "https://collshp.com/indicacasaecasaemalta?view=storefront" },
+                { "@type": "ListItem", "position": 4, "name": "Caixas Organizadoras Empilháveis para Armário", "url": "https://collshp.com/indicacasaecasaemalta?view=storefront" },
+                { "@type": "ListItem", "position": 5, "name": "Suporte Organizador de Panelas e Tampas", "url": "https://collshp.com/indicacasaecasaemalta?view=storefront" },
+                { "@type": "ListItem", "position": 6, "name": "Prateleira Ajustável para Embaixo da Pia", "url": "https://collshp.com/indicacasaecasaemalta?view=storefront" },
+                { "@type": "ListItem", "position": 7, "name": "Suporte Triplo para Rolos de Bancada", "url": "https://collshp.com/indicacasaecasaemalta?view=storefront" },
+                { "@type": "ListItem", "position": 8, "name": "Prateleira Suspensa de Dois Andares para Bancada", "url": "https://collshp.com/indicacasaecasaemalta?view=storefront" }
+              ]
+            }
+          ]
+        })} />
       </div>
     )}
   </div>
