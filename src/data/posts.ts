@@ -139,7 +139,7 @@ export const posts: Post[] = [
     titulo: 'Kit Organização de Cozinha: Monte o seu por R$ 150',
     resumo: 'Selecionamos os melhores produtos para organizar sua cozinha do zero sem gastar muito. Com links diretos.',
     tempo: '5 min de leitura',
-    imagem: null,
+    imagem: '/images/kit-cozinha/capa-kit-cozinha.png',
     categoria: 'guias-de-compra',
     categoriaLabel: 'Guia de Compra',
     categoriaColor: 'bg-purple-100 text-purple-700',
