@@ -1543,366 +1543,595 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
 
     {isRobos && (
       <div>
-        <div class="w-full rounded-2xl overflow-hidden mb-8 shadow-sm">
-          <img
-            src="/images/robos/capa-robos.png"
-            alt="Robôs Aspiradores: Os 5 Melhores Custo-Benefício"
-            class="w-full h-64 md:h-80 object-cover"
-            loading="eager"
-          />
-        </div>
 
+        <!-- CAPA -->
+        <img
+          src="/images/robos/capa-robos.png"
+          alt="Os 5 melhores robôs aspiradores custo-benefício em 2026"
+          class="w-full rounded-2xl mb-8 object-cover"
+          width="1200"
+          height="630"
+        />
+
+        <!-- INTRODUÇÃO -->
         <div class="bg-orange-50 border border-orange-100 rounded-2xl p-6 mb-8">
-          <p class="text-slate-700 leading-relaxed mb-3">
-            Robô aspirador é o tipo de compra que muda a rotina de verdade. Quando comecei a usar, percebi que o chão fica limpo todo dia sem que eu precise fazer nada. Mas tem muita opção no mercado e a diferença de preço entre o modelo mais barato e o mais caro pode ser de mais de R$ 1.500. Será que precisa pagar caro?
-          </p>
-          <p class="text-slate-700 leading-relaxed">
-            Neste comparativo, analisei cinco modelos de R$ 300 a R$ 2.000 levando em conta não só o preço de compra, mas o custo real de uso no primeiro ano: peças de reposição, filtros, escova principal e onde você vai consertar se quebrar.
-          </p>
+          <p class="text-slate-800 text-base leading-relaxed">Quando o meu apartamento tinha 72 m² e dois gatos, passei um bom tempo varrendo pelos todo dia antes de dormir. Foi minha cunhada que me convenceu a testar um robô aspirador, e confesso que fui cética. Achei que ia bater em tudo, travar embaixo do sofá e me dar mais trabalho do que solução. Não foi bem assim. Hoje esses aparelhos são um dos tópicos que mais recebo perguntas aqui no blog, e testei vários modelos ao longo dos últimos anos para entender o que realmente funciona no dia a dia brasileiro. Antes de ver a lista, tem uma coisa que quase ninguém te conta sobre esses robôs, e ela fica logo abaixo.</p>
         </div>
 
+        <!-- INSIGHT EXCLUSIVO -->
         <div class="bg-blue-50 border border-blue-200 rounded-2xl p-6 mb-10">
-          <p class="text-blue-800 font-bold text-base mb-2">O custo que ninguém calcula antes de comprar um robô aspirador</p>
-          <p class="text-slate-700 leading-relaxed mb-3">
-            O preço do produto na etiqueta é só o começo. No primeiro ano de uso, considere também: filtro HEPA (troca a cada 2 a 3 meses, R$ 20 a R$ 50 cada), escova lateral (troca a cada 6 meses, R$ 15 a R$ 30 o par) e escova principal (troca anual, R$ 60 a R$ 120). Em modelos de entrada, o custo de manutenção no ano 1 pode superar R$ 200.
-          </p>
-          <p class="text-slate-700 leading-relaxed">
-            Outro ponto ignorado: o nível de ruído. Robôs de entrada operam entre 65 e 70 dB, o equivalente a uma conversa normal. Modelos premium ficam entre 55 e 60 dB, que é significativamente mais silencioso no dia a dia.
-          </p>
+          <h2 class="text-blue-800 font-bold text-lg mb-3">O que ninguém te conta antes de comprar</h2>
+          <p class="text-slate-700 text-sm leading-relaxed mb-3"><strong>Custo real no primeiro ano:</strong> o preço do robô é só o começo. Filtros precisam ser trocados a cada 3 a 6 meses (mais rápido se você tem pet ou muito pó), e escovas laterais duram em média 6 meses. Um kit completo de reposição para modelos de entrada custa entre R$ 40 e R$ 80. Para os modelos premium como o Roborock, os kits originais ficam entre R$ 80 e R$ 150. Em um ano, você pode gastar de R$ 80 a R$ 300 só em peças, dependendo do modelo e da frequência de uso.</p>
+          <p class="text-slate-700 text-sm leading-relaxed mb-3"><strong>Ruído em dB:</strong> a maioria dos fabricantes não divulga esse dado. O WAP W90 opera a cerca de 70 dB, equivalente a uma conversa normal. O Xiaomi S40C fica em torno de 65 dB. Quanto menos decibéis, mais confortável é ter o robô rodando enquanto você trabalha em casa ou assiste TV.</p>
+          <p class="text-slate-700 text-sm leading-relaxed mb-3"><strong>Mapeamento laser vs. aleatório:</strong> robôs com LiDAR criam um mapa real do seu apartamento, definem rotas eficientes e terminam a limpeza mais rápido, sem repetir áreas. Robôs aleatórios saem batendo em móveis e mudando de direção, o que funciona, mas demora mais e pode deixar cantos sem limpar. Para apartamentos maiores que 60 m², o mapeamento faz diferença real.</p>
+          <p class="text-slate-700 text-sm leading-relaxed"><strong>Piso de madeira de engenharia vs. laminado:</strong> os dois aceitam robô aspirador, mas com cuidados diferentes. No laminado, evite a função mop no nível máximo de água, porque o excesso de umidade pode causar inchamento. Na madeira de engenharia, a preocupação maior é com areia ou pedrinhas presas nas rodas, que agem como lixa e arranham a superfície. Use o mop sempre no nível mais baixo de água e limpe as rodas pelo menos uma vez por semana.</p>
         </div>
 
-        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+        <!-- ÍNDICE -->
+        <nav class="bg-slate-50 border border-slate-200 rounded-2xl p-6 mb-10">
+          <p class="font-bold text-slate-800 mb-3">Neste artigo:</p>
+          <ul class="space-y-2 text-sm text-orange-600">
+            <li><a href="#roborock-q7-l5" class="hover:underline">1. Roborock Q7 L5 - Melhor robô com base de autolimpeza</a></li>
+            <li><a href="#xiaomi-s40c" class="hover:underline">2. Xiaomi Robot Vacuum S40C - Melhor custo-benefício intermediário</a></li>
+            <li><a href="#electrolux-erb40" class="hover:underline">3. Electrolux ERB40 - Melhor autonomia de bateria</a></li>
+            <li><a href="#philco-pas23" class="hover:underline">4. Philco PAS23 - Boa opção nacional acessível</a></li>
+            <li><a href="#wap-w90" class="hover:underline">5. WAP Robot W90 - Melhor custo-benefício básico</a></li>
+            <li><a href="#qual-escolher" class="hover:underline">Qual escolher para o seu caso</a></li>
+            <li><a href="#o-que-avaliar" class="hover:underline">O que avaliar antes de comprar</a></li>
+            <li><a href="#custo-real" class="hover:underline">Custo real no primeiro ano</a></li>
+            <li><a href="#faq" class="hover:underline">Perguntas frequentes</a></li>
+          </ul>
+        </nav>
+
+        <!-- PRODUTO 1: ROBOROCK Q7 L5 -->
+        <div id="roborock-q7-l5" class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
           <div class="bg-orange-500 px-6 py-4">
-            <p class="text-white font-black text-xl">1º lugar - Roborock Q5 Pro</p>
-            <p class="text-orange-100 text-sm mt-1">O melhor custo-benefício com mapeamento laser: 5.500 Pa, 180 min de bateria e app completo</p>
-          </div>
-          <div class="p-6 flex flex-col md:flex-row gap-8">
-            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-slate-100 rounded-xl p-3 min-h-32">
-              <img src="/images/robos/roborock-q5.jpg" alt="Roborock Q5 Pro" class="w-full h-auto object-contain rounded-lg" loading="lazy" />
+            <div class="flex items-center gap-3 flex-wrap">
+              <span class="bg-white text-orange-500 text-xs font-black px-3 py-1 rounded-full uppercase tracking-wide">1º lugar</span>
+              <span class="bg-orange-400 text-white text-xs font-bold px-3 py-1 rounded-full">Melhor robô com base de autolimpeza</span>
             </div>
-            <div class="flex-1">
-              <a href="#" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-3 transition-colors">Conferir preço na Amazon</a>
-              <a href="#" class="block w-full bg-orange-400 hover:bg-orange-500 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Conferir preço no Mercado Livre</a>
-              <h3 class="font-bold text-slate-800 mb-3">Ficha Técnica</h3>
-              <ul class="text-sm text-slate-600 space-y-1 mb-6">
-                <li><strong>Potência de sucção:</strong> 5.500 Pa</li>
-                <li><strong>Bateria:</strong> até 180 minutos</li>
-                <li><strong>Navegação:</strong> Laser LDS com mapeamento por andar</li>
-                <li><strong>Passa pano:</strong> Sim (reservatório de água)</li>
-                <li><strong>Nível de ruído:</strong> 58 dB no modo silencioso</li>
-                <li><strong>App:</strong> Roborock (Android e iOS)</li>
-              </ul>
-              <div class="grid md:grid-cols-2 gap-4">
-                <div>
-                  <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
-                  <ul class="text-sm text-slate-600 space-y-1">
-                    <li>Mapeamento laser muito preciso</li>
-                    <li>App com zonas restritas e agendamento</li>
-                    <li>Silencioso no modo eco</li>
-                    <li>Peças de reposição fáceis de encontrar</li>
-                  </ul>
-                </div>
-                <div>
-                  <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
-                  <ul class="text-sm text-slate-600 space-y-1">
-                    <li>Preço mais elevado que os modelos de entrada</li>
-                    <li>Sem esvaziamento automático</li>
-                  </ul>
-                </div>
+            <p class="text-white font-black text-xl mt-2">Roborock Q7 L5</p>
+            <p class="text-orange-100 text-sm mt-1">Robô aspirador e esfregão com sucção de 8.000 Pa e mapeamento LiDAR</p>
+          </div>
+          <div class="p-6">
+            <div class="flex flex-col md:flex-row gap-6 mb-5">
+              <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-slate-200 rounded-xl p-4 min-h-32">
+                <img src="/images/robos/roborock-q7-l5.jpg" alt="Roborock Q7 L5 robô aspirador" class="w-full h-auto object-contain max-h-40" width="160" height="160" loading="lazy" />
+              </div>
+              <div class="flex-1">
+                <p class="text-slate-700 text-sm leading-relaxed mb-3">O Roborock Q7 L5 é o modelo mais completo desta lista e o que eu indicaria sem hesitar para quem tem apartamento médio ou grande, pets ou simplesmente não quer pensar na limpeza por semanas. A sucção de <strong>8.000 Pa com tecnologia HyperForce</strong> é de longe a mais potente aqui, e as escovas duplas antiemaranhamento fazem diferença real para quem convive com pelos de gato e cachorro.</p>
+                <p class="text-slate-700 text-sm leading-relaxed mb-3">O diferencial mais importante é a <strong>base de autolimpeza RockDock Plus</strong>, que aspira automaticamente o lixo do compartimento do robô e armazena por até 7 semanas sem que você precise esvaziar. A navegação LiDAR com mapeamento 3D cria um mapa preciso do apartamento desde a primeira limpeza, com zonas de restrição configuráveis pelo app.</p>
+                <p class="text-slate-700 text-sm leading-relaxed">A bateria de <strong>3.200 mAh garante até 150 minutos de autonomia</strong>, suficiente para cobrir até 170 m². Se acabar antes de terminar, ele retorna para carregar e continua de onde parou. Funciona com Alexa e Google Home.</p>
+                <a href="https://amzn.to/4e9lIOi" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mt-4 mb-2 transition-colors">Ver na Amazon</a>
+              </div>
+            </div>
+            <div class="bg-slate-50 rounded-xl p-4 mb-5">
+              <p class="font-bold text-slate-800 text-sm mb-3">Ficha técnica</p>
+              <div class="grid grid-cols-2 gap-x-6 gap-y-1 text-sm text-slate-700">
+                <span><strong>Sucção:</strong> 8.000 Pa (HyperForce)</span>
+                <span><strong>Bateria:</strong> 3.200 mAh</span>
+                <span><strong>Autonomia:</strong> até 150 min</span>
+                <span><strong>Cobertura:</strong> até 170 m²</span>
+                <span><strong>Navegação:</strong> LiDAR (mapeamento 3D)</span>
+                <span><strong>App:</strong> Roborock (iOS e Android)</span>
+                <span><strong>Base de autolimpeza:</strong> sim (7 semanas)</span>
+                <span><strong>Mop:</strong> sim (3 níveis de água)</span>
+                <span><strong>Alexa/Google Home:</strong> sim</span>
+                <span><strong>Garantia:</strong> 1 ano</span>
+              </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <p class="font-bold text-green-700 text-sm mb-2">Pontos fortes</p>
+                <ul class="text-sm text-slate-700 space-y-1">
+                  <li>+ Sucção mais potente da lista (8.000 Pa)</li>
+                  <li>+ Base de autolimpeza por até 7 semanas</li>
+                  <li>+ Mapeamento preciso desde o primeiro uso</li>
+                  <li>+ Excelente para pets (escovas antiemaranhamento)</li>
+                  <li>+ Retorna e continua a limpeza sozinho</li>
+                </ul>
+              </div>
+              <div>
+                <p class="font-bold text-red-600 text-sm mb-2">Pontos de atenção</p>
+                <ul class="text-sm text-slate-700 space-y-1">
+                  <li>- Preço mais alto da lista</li>
+                  <li>- Saco da base precisa ser trocado periodicamente</li>
+                  <li>- Ocupa mais espaço pela base de autolimpeza</li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+        <!-- PRODUTO 2: XIAOMI S40C -->
+        <div id="xiaomi-s40c" class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
           <div class="bg-slate-800 px-6 py-4">
-            <p class="text-white font-black text-xl">2º lugar - Xiaomi Robot Vacuum S40C</p>
-            <p class="text-slate-300 text-sm mt-1">App completo, sucção de 5.000 Pa e ótimo custo-benefício na faixa intermediária</p>
-          </div>
-          <div class="p-6 flex flex-col md:flex-row gap-8">
-            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-slate-100 rounded-xl p-3 min-h-32">
-              <img src="/images/robos/xiaomi-s40c.jpg" alt="Xiaomi Robot Vacuum S40C" class="w-full h-auto object-contain rounded-lg" loading="lazy" />
+            <div class="flex items-center gap-3 flex-wrap">
+              <span class="bg-white text-slate-800 text-xs font-black px-3 py-1 rounded-full uppercase tracking-wide">2º lugar</span>
+              <span class="bg-slate-600 text-white text-xs font-bold px-3 py-1 rounded-full">Melhor custo-benefício intermediário</span>
             </div>
-            <div class="flex-1">
-              <a href="#" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-3 transition-colors">Conferir preço na Amazon</a>
-              <a href="#" class="block w-full bg-orange-400 hover:bg-orange-500 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Conferir preço no Mercado Livre</a>
-              <h3 class="font-bold text-slate-800 mb-3">Ficha Técnica</h3>
-              <ul class="text-sm text-slate-600 space-y-1 mb-6">
-                <li><strong>Potência de sucção:</strong> 4.000 Pa</li>
-                <li><strong>Bateria:</strong> até 130 minutos</li>
-                <li><strong>Navegação:</strong> Laser LDS</li>
-                <li><strong>Passa pano:</strong> Sim</li>
-                <li><strong>App:</strong> Mi Home (Android e iOS)</li>
-              </ul>
-              <div class="grid md:grid-cols-2 gap-4">
-                <div>
-                  <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
-                  <ul class="text-sm text-slate-600 space-y-1">
-                    <li>Ecossistema Mi Home muito completo</li>
-                    <li>Peças de reposição baratas e fáceis de encontrar</li>
-                    <li>Mapeamento rápido e preciso</li>
-                  </ul>
-                </div>
-                <div>
-                  <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
-                  <ul class="text-sm text-slate-600 space-y-1">
-                    <li>Sucção menor que o Roborock Q5</li>
-                    <li>Assistência técnica limitada no interior</li>
-                  </ul>
-                </div>
+            <p class="text-white font-black text-xl mt-2">Xiaomi Robot Vacuum S40C</p>
+            <p class="text-slate-300 text-sm mt-1">Robô com mapeamento LDS, sucção de 5.000 Pa e controle por app</p>
+          </div>
+          <div class="p-6">
+            <div class="flex flex-col md:flex-row gap-6 mb-5">
+              <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-slate-200 rounded-xl p-4 min-h-32">
+                <img src="/images/robos/xiaomi-s40c.jpg" alt="Xiaomi Robot Vacuum S40C" class="w-full h-auto object-contain max-h-40" width="160" height="160" loading="lazy" />
+              </div>
+              <div class="flex-1">
+                <p class="text-slate-700 text-sm leading-relaxed mb-3">O Xiaomi S40C é o modelo que eu recomendo para quem quer mapeamento inteligente sem gastar o que o Roborock custa. A <strong>sucção de 5.000 Pa com mapeamento LDS por laser</strong> já é suficiente para a maioria dos apartamentos brasileiros: pelos, poeira, farelos e areia trazida de fora.</p>
+                <p class="text-slate-700 text-sm leading-relaxed mb-3">O que surpreende positivamente é o nível de ruído: cerca de <strong>65 dB</strong>, o que na prática significa que você consegue ter uma conversa normal enquanto ele roda. Para quem trabalha em home office, isso importa muito. A <strong>bateria de 2.600 mAh entrega até 100 minutos de autonomia</strong>, suficiente para apartamentos de até 80 m².</p>
+                <p class="text-slate-700 text-sm leading-relaxed">O reservatório de pó tem <strong>520 ml</strong>, um dos maiores nessa faixa de preço, o que significa esvaziar com menos frequência. O mop funciona bem em nível mínimo de água para piso laminado.</p>
+                <a href="https://amzn.to/49vkLNI" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mt-4 mb-2 transition-colors">Ver na Amazon</a>
+              </div>
+            </div>
+            <div class="bg-slate-50 rounded-xl p-4 mb-5">
+              <p class="font-bold text-slate-800 text-sm mb-3">Ficha técnica</p>
+              <div class="grid grid-cols-2 gap-x-6 gap-y-1 text-sm text-slate-700">
+                <span><strong>Sucção:</strong> 5.000 Pa</span>
+                <span><strong>Bateria:</strong> 2.600 mAh</span>
+                <span><strong>Autonomia:</strong> até 100 min</span>
+                <span><strong>Reservatório de pó:</strong> 520 ml</span>
+                <span><strong>Reservatório de água:</strong> 260 ml</span>
+                <span><strong>Navegação:</strong> LDS laser</span>
+                <span><strong>Ruído:</strong> ~65 dB</span>
+                <span><strong>Mop:</strong> sim</span>
+                <span><strong>App:</strong> Mi Home (iOS e Android)</span>
+                <span><strong>Voltagem:</strong> bivolt</span>
+              </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <p class="font-bold text-green-700 text-sm mb-2">Pontos fortes</p>
+                <ul class="text-sm text-slate-700 space-y-1">
+                  <li>+ Mapeamento laser preciso</li>
+                  <li>+ Um dos mais silenciosos da lista (~65 dB)</li>
+                  <li>+ Reservatório de pó grande (520 ml)</li>
+                  <li>+ Controle completo pelo app Mi Home</li>
+                  <li>+ Ótimo custo-benefício na faixa intermediária</li>
+                </ul>
+              </div>
+              <div>
+                <p class="font-bold text-red-600 text-sm mb-2">Pontos de atenção</p>
+                <ul class="text-sm text-slate-700 space-y-1">
+                  <li>- 100 min de autonomia pode não cobrir casas acima de 80 m²</li>
+                  <li>- Sem base de autolimpeza</li>
+                  <li>- Mop sem controle de zona por tapete</li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+        <!-- PRODUTO 3: ELECTROLUX ERB40 -->
+        <div id="electrolux-erb40" class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
           <div class="bg-slate-800 px-6 py-4">
-            <p class="text-white font-black text-xl">3º lugar - Electrolux ERB30</p>
-            <p class="text-slate-300 text-sm mt-1">Marca com assistência em todo o Brasil e bom desempenho para apartamentos</p>
-          </div>
-          <div class="p-6 flex flex-col md:flex-row gap-8">
-            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-slate-100 rounded-xl p-3 min-h-32">
-              <img src="/images/robos/electrolux-erb30.jpg" alt="Electrolux ERB30" class="w-full h-auto object-contain rounded-lg" loading="lazy" />
+            <div class="flex items-center gap-3 flex-wrap">
+              <span class="bg-white text-slate-800 text-xs font-black px-3 py-1 rounded-full uppercase tracking-wide">3º lugar</span>
+              <span class="bg-slate-600 text-white text-xs font-bold px-3 py-1 rounded-full">Melhor autonomia de bateria</span>
             </div>
-            <div class="flex-1">
-              <a href="#" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-3 transition-colors">Conferir preço na Amazon</a>
-              <a href="#" class="block w-full bg-orange-400 hover:bg-orange-500 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Conferir preço no Mercado Livre</a>
-              <h3 class="font-bold text-slate-800 mb-3">Ficha Técnica</h3>
-              <ul class="text-sm text-slate-600 space-y-1 mb-6">
-                <li><strong>Potência de sucção:</strong> 3.000 Pa</li>
-                <li><strong>Bateria:</strong> até 120 minutos</li>
-                <li><strong>Navegação:</strong> Sensor infravermelho</li>
-                <li><strong>Passa pano:</strong> Sim</li>
-                <li><strong>App:</strong> Electrolux Home</li>
-              </ul>
-              <div class="grid md:grid-cols-2 gap-4">
-                <div>
-                  <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
-                  <ul class="text-sm text-slate-600 space-y-1">
-                    <li>Assistência técnica Electrolux em todo o Brasil</li>
-                    <li>Garantia confiável com suporte local</li>
-                    <li>Fácil de encontrar peças de reposição</li>
-                  </ul>
-                </div>
-                <div>
-                  <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
-                  <ul class="text-sm text-slate-600 space-y-1">
-                    <li>Sucção menor que os concorrentes asiáticos</li>
-                    <li>Mapeamento menos preciso que laser</li>
-                  </ul>
-                </div>
+            <p class="text-white font-black text-xl mt-2">Electrolux ERB40</p>
+            <p class="text-slate-300 text-sm mt-1">Robô 4 em 1 com bateria de 2h20 e filtro HEPA Allergy Protect</p>
+          </div>
+          <div class="p-6">
+            <div class="flex flex-col md:flex-row gap-6 mb-5">
+              <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-slate-200 rounded-xl p-4 min-h-32">
+                <img src="/images/robos/electrolux-erb40.jpg" alt="Electrolux ERB40 robô aspirador" class="w-full h-auto object-contain max-h-40" width="160" height="160" loading="lazy" />
+              </div>
+              <div class="flex-1">
+                <p class="text-slate-700 text-sm leading-relaxed mb-3">O ERB40 entra nesta lista por dois motivos específicos: a <strong>autonomia de 2 horas e 20 minutos</strong>, que é a maior entre os modelos desta seleção, e o <strong>filtro HEPA Allergy Protect</strong>, que filtra até 99,9% das impurezas do ar. Para famílias com alergias ou rinite, esse filtro faz diferença real.</p>
+                <p class="text-slate-700 text-sm leading-relaxed mb-3">A navegação é por sensores (sem laser nem câmera), o que significa que ele trabalha de forma mais aleatória do que o Roborock e o Xiaomi. Funciona bem em apartamentos de planta simples até 80 m². O controle remoto incluso permite direcionar o robô para áreas específicas sem precisar de app.</p>
+                <p class="text-slate-700 text-sm leading-relaxed">O retorno automático à base para recarregar está presente, o que resolve o problema de autonomia em casas maiores com limpeza programada.</p>
+                <a href="https://amzn.to/4tZAjAN" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mt-4 mb-2 transition-colors">Ver na Amazon</a>
+              </div>
+            </div>
+            <div class="bg-slate-50 rounded-xl p-4 mb-5">
+              <p class="font-bold text-slate-800 text-sm mb-3">Ficha técnica</p>
+              <div class="grid grid-cols-2 gap-x-6 gap-y-1 text-sm text-slate-700">
+                <span><strong>Potência:</strong> 40W</span>
+                <span><strong>Autonomia:</strong> até 2h20 min</span>
+                <span><strong>Ruído:</strong> ~72 dB</span>
+                <span><strong>Reservatório:</strong> 320 ml</span>
+                <span><strong>Peso:</strong> 2,2 kg</span>
+                <span><strong>Dimensões:</strong> 32 x 32 x 8 cm</span>
+                <span><strong>Filtro:</strong> HEPA Allergy Protect</span>
+                <span><strong>Navegação:</strong> sensores (aleatória)</span>
+                <span><strong>Controle remoto:</strong> incluso</span>
+                <span><strong>Base de carregamento:</strong> sim (retorno automático)</span>
+              </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <p class="font-bold text-green-700 text-sm mb-2">Pontos fortes</p>
+                <ul class="text-sm text-slate-700 space-y-1">
+                  <li>+ Maior autonomia da lista (2h20)</li>
+                  <li>+ Filtro HEPA para alérgicos e pessoas com rinite</li>
+                  <li>+ Controle remoto incluso</li>
+                  <li>+ Marca com suporte estabelecido no Brasil</li>
+                  <li>+ Retorno automático para a base</li>
+                </ul>
+              </div>
+              <div>
+                <p class="font-bold text-red-600 text-sm mb-2">Pontos de atenção</p>
+                <ul class="text-sm text-slate-700 space-y-1">
+                  <li>- Sem mapeamento (navegação aleatória)</li>
+                  <li>- Reservatório menor que os concorrentes (320 ml)</li>
+                  <li>- Sem app ou conectividade Wi-Fi</li>
+                  <li>- Ruído um pouco acima do Xiaomi S40C</li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+        <!-- PRODUTO 4: PHILCO PAS23 -->
+        <div id="philco-pas23" class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
           <div class="bg-slate-800 px-6 py-4">
-            <p class="text-white font-black text-xl">4º lugar - Philco PAS23</p>
-            <p class="text-slate-300 text-sm mt-1">Opção nacional acessível: sem mapeamento laser, mas funciona bem para ambientes pequenos</p>
-          </div>
-          <div class="p-6 flex flex-col md:flex-row gap-8">
-            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-slate-100 rounded-xl p-3 min-h-32">
-              <img src="/images/robos/philco-pas23.jpg" alt="Philco PAS23" class="w-full h-auto object-contain rounded-lg" loading="lazy" />
+            <div class="flex items-center gap-3 flex-wrap">
+              <span class="bg-white text-slate-800 text-xs font-black px-3 py-1 rounded-full uppercase tracking-wide">4º lugar</span>
+              <span class="bg-slate-600 text-white text-xs font-bold px-3 py-1 rounded-full">Boa opção nacional acessível</span>
             </div>
-            <div class="flex-1">
-              <a href="#" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-3 transition-colors">Conferir preço na Amazon</a>
-              <a href="#" class="block w-full bg-orange-400 hover:bg-orange-500 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Conferir preço no Mercado Livre</a>
-              <h3 class="font-bold text-slate-800 mb-3">Ficha Técnica</h3>
-              <ul class="text-sm text-slate-600 space-y-1 mb-6">
-                <li><strong>Potência de sucção:</strong> 2.200 Pa</li>
-                <li><strong>Bateria:</strong> até 100 minutos</li>
-                <li><strong>Navegação:</strong> Aleatória com sensores anticolisão</li>
-                <li><strong>Passa pano:</strong> Sim (reservatório simples)</li>
-                <li><strong>Modos:</strong> Automático, borda, espiral</li>
-                <li><strong>Assistência:</strong> Rede Philco em todo o Brasil</li>
-              </ul>
-              <div class="grid md:grid-cols-2 gap-4">
-                <div>
-                  <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
-                  <ul class="text-sm text-slate-600 space-y-1">
-                    <li>Preço acessível para quem quer experimentar</li>
-                    <li>Simples de configurar, sem app obrigatório</li>
-                    <li>Funciona bem em apartamentos até 60 m²</li>
-                    <li>Peças de reposição disponíveis em lojas nacionais</li>
-                  </ul>
-                </div>
-                <div>
-                  <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
-                  <ul class="text-sm text-slate-600 space-y-1">
-                    <li>Navegação aleatória, não faz mapa do ambiente</li>
-                    <li>Sucção limitada para pelos de animais</li>
-                  </ul>
-                </div>
+            <p class="text-white font-black text-xl mt-2">Philco PAS23</p>
+            <p class="text-slate-300 text-sm mt-1">Robô 3 em 1 com 90 minutos de autonomia e sensor antiqueda</p>
+          </div>
+          <div class="p-6">
+            <div class="flex flex-col md:flex-row gap-6 mb-5">
+              <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-slate-200 rounded-xl p-4 min-h-32">
+                <img src="/images/robos/philco-pas23.jpg" alt="Philco PAS23 robô aspirador" class="w-full h-auto object-contain max-h-40" width="160" height="160" loading="lazy" />
+              </div>
+              <div class="flex-1">
+                <p class="text-slate-700 text-sm leading-relaxed mb-3">O PAS23 é a opção para quem quer um robô de marca brasileira com suporte no Brasil e peças fáceis de encontrar, por um preço que fica frequentemente abaixo de R$ 400 em promoções. É um modelo 3 em 1 (varre, aspira e passa pano seco), com <strong>90 minutos de autonomia</strong> e sensor antiqueda, adequado para apartamentos de um ou dois quartos sem desnível de piso.</p>
+                <p class="text-slate-700 text-sm leading-relaxed mb-3">A sucção de <strong>500 Pa</strong> é a mais baixa desta lista, o que na prática significa que ele lida bem com poeira do dia a dia, areia fina e pelos curtos, mas pode ter dificuldade com sujeiras mais pesadas ou pelos muito longos presos no tapete.</p>
+                <p class="text-slate-700 text-sm leading-relaxed">O maior elogio dos compradores é a simplicidade de uso: liga, roda, apaga. Sem app, sem configuração. Para quem não quer tecnologia e só precisa que o piso fique limpo entre as faxinas semanais, é uma escolha honesta.</p>
+                <a href="https://amzn.to/4nX0AOI" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mt-4 mb-2 transition-colors">Ver na Amazon</a>
+              </div>
+            </div>
+            <div class="bg-slate-50 rounded-xl p-4 mb-5">
+              <p class="font-bold text-slate-800 text-sm mb-3">Ficha técnica</p>
+              <div class="grid grid-cols-2 gap-x-6 gap-y-1 text-sm text-slate-700">
+                <span><strong>Sucção:</strong> 500 Pa (35W)</span>
+                <span><strong>Bateria:</strong> lítio</span>
+                <span><strong>Autonomia:</strong> até 90 min</span>
+                <span><strong>Reservatório:</strong> 400 ml</span>
+                <span><strong>Peso:</strong> aprox. 2,0 kg</span>
+                <span><strong>Dimensões:</strong> 28,6 x 28,6 x 7,5 cm</span>
+                <span><strong>Navegação:</strong> aleatória (3 modos)</span>
+                <span><strong>Sensor antiqueda:</strong> sim</span>
+                <span><strong>App:</strong> não</span>
+                <span><strong>Voltagem:</strong> bivolt</span>
+              </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <p class="font-bold text-green-700 text-sm mb-2">Pontos fortes</p>
+                <ul class="text-sm text-slate-700 space-y-1">
+                  <li>+ Preço acessível (frequentemente abaixo de R$ 400)</li>
+                  <li>+ Marca brasileira com suporte local</li>
+                  <li>+ Simples de usar, sem app necessário</li>
+                  <li>+ Reservatório de 400 ml</li>
+                  <li>+ Peças de reposição fáceis de encontrar</li>
+                </ul>
+              </div>
+              <div>
+                <p class="font-bold text-red-600 text-sm mb-2">Pontos de atenção</p>
+                <ul class="text-sm text-slate-700 space-y-1">
+                  <li>- Sucção mais baixa da lista (500 Pa)</li>
+                  <li>- Navegação aleatória</li>
+                  <li>- Sem mop úmido (apenas pano seco)</li>
+                  <li>- 90 min mal cobre apartamentos acima de 60 m²</li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+        <!-- PRODUTO 5: WAP W90 -->
+        <div id="wap-w90" class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
           <div class="bg-slate-800 px-6 py-4">
-            <p class="text-white font-black text-xl">5º lugar - WAP Robot W90</p>
-            <p class="text-slate-300 text-sm mt-1">O mais barato da lista: para quem quer testar robô aspirador sem gastar muito</p>
-          </div>
-          <div class="p-6 flex flex-col md:flex-row gap-8">
-            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-slate-100 rounded-xl p-3 min-h-32">
-              <img src="/images/robos/wap-w90.jpg" alt="WAP Robot W90" class="w-full h-auto object-contain rounded-lg" loading="lazy" />
+            <div class="flex items-center gap-3 flex-wrap">
+              <span class="bg-white text-slate-800 text-xs font-black px-3 py-1 rounded-full uppercase tracking-wide">5º lugar</span>
+              <span class="bg-slate-600 text-white text-xs font-bold px-3 py-1 rounded-full">Melhor custo-benefício básico</span>
             </div>
-            <div class="flex-1">
-              <a href="#" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-3 transition-colors">Conferir preço na Amazon</a>
-              <a href="#" class="block w-full bg-orange-400 hover:bg-orange-500 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Conferir preço no Mercado Livre</a>
-              <h3 class="font-bold text-slate-800 mb-3">Ficha Técnica</h3>
-              <ul class="text-sm text-slate-600 space-y-1 mb-6">
-                <li><strong>Potência de sucção:</strong> 2.000 Pa</li>
-                <li><strong>Bateria:</strong> até 100 minutos</li>
-                <li><strong>Navegação:</strong> Aleatória com 3 modos</li>
-                <li><strong>Wi-Fi e app:</strong> Não</li>
-                <li><strong>Passa pano:</strong> Sim (reservatório simples)</li>
-              </ul>
-              <div class="grid md:grid-cols-2 gap-4">
-                <div>
-                  <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
-                  <ul class="text-sm text-slate-600 space-y-1">
-                    <li>Preço muito acessível</li>
-                    <li>Fácil de usar, sem configuração</li>
-                    <li>Ideal para apartamentos pequenos</li>
-                  </ul>
-                </div>
-                <div>
-                  <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
-                  <ul class="text-sm text-slate-600 space-y-1">
-                    <li>Sem mapeamento, limpa de forma aleatória</li>
-                    <li>Não tem controle por app ou Wi-Fi</li>
-                    <li>Sucção insuficiente para pelos de animais</li>
-                  </ul>
-                </div>
+            <p class="text-white font-black text-xl mt-2">WAP Robot W90</p>
+            <p class="text-slate-300 text-sm mt-1">Robô 3 em 1 compacto com 100 minutos de autonomia por ~R$ 350</p>
+          </div>
+          <div class="p-6">
+            <div class="flex flex-col md:flex-row gap-6 mb-5">
+              <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-slate-200 rounded-xl p-4 min-h-32">
+                <img src="/images/robos/wap-w90.jpg" alt="WAP Robot W90 robô aspirador" class="w-full h-auto object-contain max-h-40" width="160" height="160" loading="lazy" />
+              </div>
+              <div class="flex-1">
+                <p class="text-slate-700 text-sm leading-relaxed mb-3">O WAP W90 é o robô que eu recomendo para quem ainda não sabe se vai gostar de ter um robô em casa, ou para quem tem um studio ou apartamento de um quarto. Com mais de 11 mil avaliações na Amazon com nota 4,3 de 5, ele claramente entrega o que promete para o preço pedido.</p>
+                <p class="text-slate-700 text-sm leading-relaxed mb-3">A <strong>autonomia de até 100 minutos</strong> com bateria de 2.600 mAh cobre bem apartamentos de até 60 m². A navegação é aleatória: ele bate nos móveis, muda de direção e vai limpando por tentativa. No final de um ciclo, cobre a maior parte do piso, mas não com a eficiência de um robô com laser.</p>
+                <p class="text-slate-700 text-sm leading-relaxed">O peso de <strong>1,4 kg</strong> e a altura de 8 cm permitem que ele passe embaixo da maioria dos sofás e camas. Não tem base de retorno automático para carregar, então quando acabar a bateria ele fica parado onde estiver.</p>
+                <a href="https://amzn.to/4nZw9r8" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mt-4 mb-2 transition-colors">Ver na Amazon</a>
+              </div>
+            </div>
+            <div class="bg-slate-50 rounded-xl p-4 mb-5">
+              <p class="font-bold text-slate-800 text-sm mb-3">Ficha técnica</p>
+              <div class="grid grid-cols-2 gap-x-6 gap-y-1 text-sm text-slate-700">
+                <span><strong>Potência:</strong> 30W</span>
+                <span><strong>Bateria:</strong> 2.600 mAh (Li-Ion)</span>
+                <span><strong>Autonomia:</strong> até 100 min</span>
+                <span><strong>Ruído:</strong> ~70 dB</span>
+                <span><strong>Reservatório:</strong> 250 ml</span>
+                <span><strong>Peso:</strong> 1,4 kg</span>
+                <span><strong>Dimensões:</strong> 27 x 28,5 x 8 cm</span>
+                <span><strong>Navegação:</strong> aleatória (3 modos)</span>
+                <span><strong>Base de retorno:</strong> não</span>
+                <span><strong>App:</strong> não</span>
+              </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <p class="font-bold text-green-700 text-sm mb-2">Pontos fortes</p>
+                <ul class="text-sm text-slate-700 space-y-1">
+                  <li>+ Melhor preço da lista (~R$ 350)</li>
+                  <li>+ Mais de 11.000 avaliações positivas na Amazon</li>
+                  <li>+ Leve e compacto (cabe embaixo de sofás)</li>
+                  <li>+ Ótimo para pisos duros e pelos curtos</li>
+                  <li>+ Simples, sem necessidade de app</li>
+                </ul>
+              </div>
+              <div>
+                <p class="font-bold text-red-600 text-sm mb-2">Pontos de atenção</p>
+                <ul class="text-sm text-slate-700 space-y-1">
+                  <li>- Sem base de retorno automático</li>
+                  <li>- Reservatório pequeno (250 ml)</li>
+                  <li>- Sem mapeamento</li>
+                  <li>- Não indicado para casas acima de 60 m²</li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 mb-10">
-          <h2 class="text-xl font-black text-slate-900 mb-3">Vale gastar mais de R$ 1.000?</h2>
-          <p class="text-slate-700 leading-relaxed mb-3">
-            Para apartamentos até 60 m² sem animais, um modelo de entrada resolve bem. Para casas maiores, com tapetes e animais, o mapeamento a laser faz diferença real: o robô não fica perdido, cobre todo o ambiente e não passa duas vezes no mesmo lugar. Nesse caso, vale o investimento nos modelos intermediários (Xiaomi S40C ou Roborock Q5).
-          </p>
-          <p class="text-slate-700 leading-relaxed">
-            Antes de comprar, verifique a disponibilidade de assistência técnica na sua cidade. Para marcas como Xiaomi e Roborock, a assistência no interior do Brasil ainda é limitada. Se isso é uma preocupação, a Electrolux é a escolha mais segura.
-          </p>
+        <!-- QUAL ESCOLHER -->
+        <div id="qual-escolher" class="mb-10">
+          <h2 class="text-2xl font-black text-slate-800 mb-6">Qual robô aspirador escolher para o seu caso</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="bg-orange-50 border border-orange-200 rounded-2xl p-5">
+              <p class="font-bold text-orange-700 mb-2">Tem pets ou muito pelo</p>
+              <p class="text-slate-700 text-sm leading-relaxed">O <strong>Roborock Q7 L5</strong> é a melhor escolha. As escovas duplas antiemaranhamento reduzem a manutenção manual e a sucção de 8.000 Pa garante que nenhum pelo fique para trás. A base de autolimpeza evita que você precise esvaziar o robô toda vez.</p>
+            </div>
+            <div class="bg-blue-50 border border-blue-200 rounded-2xl p-5">
+              <p class="font-bold text-blue-700 mb-2">Apartamento de 50 a 80 m², quer tecnologia sem gastar muito</p>
+              <p class="text-slate-700 text-sm leading-relaxed">O <strong>Xiaomi S40C</strong> entrega mapeamento laser e controle por app na faixa de R$ 1.200. É o ponto de equilíbrio entre tecnologia real e preço acessível. Cobre bem esse tamanho de apartamento em um único ciclo.</p>
+            </div>
+            <div class="bg-green-50 border border-green-200 rounded-2xl p-5">
+              <p class="font-bold text-green-700 mb-2">Tem alergia, rinite ou asma</p>
+              <p class="text-slate-700 text-sm leading-relaxed">O <strong>Electrolux ERB40</strong> é o único desta lista com filtro HEPA Allergy Protect certificado, que retém 99,9% das impurezas e evita que alérgenos voltem para o ar. A autonomia de 2h20 também cobre bem casas maiores.</p>
+            </div>
+            <div class="bg-slate-50 border border-slate-200 rounded-2xl p-5">
+              <p class="font-bold text-slate-700 mb-2">Quer praticidade sem tecnologia</p>
+              <p class="text-slate-700 text-sm leading-relaxed">O <strong>Philco PAS23</strong> é para quem não quer app, não quer configurar Wi-Fi e só precisa que o robô rode e aspire. Liga, roda, apaga. Marca brasileira com peças fáceis de encontrar.</p>
+            </div>
+            <div class="bg-yellow-50 border border-yellow-200 rounded-2xl p-5 md:col-span-2">
+              <p class="font-bold text-yellow-700 mb-2">Studio ou apartamento pequeno, primeiro robô aspirador</p>
+              <p class="text-slate-700 text-sm leading-relaxed">O <strong>WAP W90</strong> resolve bem para apartamentos até 60 m² e é a melhor porta de entrada para testar se a categoria faz sentido para você. Com mais de 11 mil avaliações na Amazon e frequentemente abaixo de R$ 400, é o menor risco financeiro da lista.</p>
+            </div>
+          </div>
         </div>
 
-        <h2 class="text-2xl font-black text-slate-900 mb-6">O que avaliar antes de comprar</h2>
-
-        <h3 class="text-xl font-bold text-slate-800 mb-3">Mapeamento laser vs navegação aleatória</h3>
-        <p class="text-slate-700 leading-relaxed mb-6">
-          Robôs com navegação aleatória se movem por padrões pré-definidos sem saber onde estão na planta do ambiente. Funcionam, mas podem deixar cantos sem limpar e ficam presos com mais facilidade. Robôs com laser criam um mapa preciso, traçam o caminho mais eficiente e permitem definir zonas proibidas pelo app. Para ambientes maiores que 50 m², o laser faz diferença real.
-        </p>
-
-        <h3 class="text-xl font-bold text-slate-800 mb-3">Quanto custa manter um robô aspirador no primeiro ano?</h3>
-        <p class="text-slate-700 leading-relaxed mb-6">
-          Filtro HEPA (troca a cada 2 a 3 meses): R$ 20 a R$ 50 cada. Escova lateral (troca a cada 6 meses): R$ 15 a R$ 30 o par. Escova principal (troca anual): R$ 60 a R$ 120. Soma no primeiro ano: R$ 150 a R$ 280, dependendo do modelo. Verifique antes de comprar se as peças do modelo escolhido têm boa disponibilidade e preço justo no Brasil.
-        </p>
-
-        <h2 class="text-2xl font-black text-slate-900 mb-4">Como preparar a casa antes de ligar o robô</h2>
-        <p class="text-slate-700 leading-relaxed mb-4">
-          O robô aspirador funciona melhor quando o ambiente está preparado para ele. Antes de soltar o robô pela primeira vez, recolha do chão tudo que pode virar obstáculo ou ser sugado: fios de carregador, meias soltas, brinquedos de animais e tapetes com franjas. Esses itens podem travar a escova principal, o que leva muita gente a achar que o robô é ruim quando na verdade o ambiente é que não estava pronto para recebê-lo.
-        </p>
-        <p class="text-slate-700 leading-relaxed mb-4">
-          Cadeiras com pés finos e espaços estreitos entre móveis são armadilhas comuns. O robô entra, mas não consegue sair. Muitos modelos têm sensor de atolamento, mas nenhum é infalível. Organizar o ambiente uma vez, com atenção para deixar espaços de no mínimo 30 cm entre os móveis, resolve boa parte desse problema.
-        </p>
-        <p class="text-slate-700 leading-relaxed mb-10">
-          Outro ponto importante: defina uma área de carregamento fixa. O robô precisa de espaço livre de pelo menos 50 cm na frente da base e 30 cm nas laterais para encaixar corretamente quando voltar para carregar. Base mal posicionada é uma das reclamações mais comuns em avaliações de consumidores.
-        </p>
-
-        <h2 class="text-2xl font-black text-slate-900 mb-4">Robô aspirador para quem tem pets: o que muda</h2>
-        <p class="text-slate-700 leading-relaxed mb-4">
-          Quem tem cachorro ou gato enfrenta um desafio extra: pelo de animal é diferente de poeira comum. Ele é mais longo, mais leve e tem tendência a se enrolar. Modelos com escova de cerdas acumulam pelo enrolado na escova principal com muito mais facilidade do que modelos com escova de borracha, como a DuoRoller do Roborock Q5 Pro.
-        </p>
-        <p class="text-slate-700 leading-relaxed mb-4">
-          Para lares com pets, prefira modelos com sucção acima de 3.000 Pa e com escova de borracha ou escova em V. O reservatório de sujeira também importa: modelos com menos de 300 ml enchem rápido em casas com animais e precisam ser esvaziados com mais frequência do que o fabricante indica no manual.
-        </p>
-        <p class="text-slate-700 leading-relaxed mb-10">
-          Um detalhe que pouca gente considera: o filtro HEPA retém as partículas de pelo e dander (caspa de animal) no interior do robô, impedindo que elas sejam devolvidas ao ar. Para famílias com pessoas alérgicas, verificar se o modelo tem certificação HEPA faz diferença real na qualidade do ar da casa.
-        </p>
-
-        <h2 class="text-2xl font-black text-slate-900 mb-4">Base de esvaziamento automático vale a pena?</h2>
-        <p class="text-slate-700 leading-relaxed mb-4">
-          Modelos premium como o Roborock Q5 Pro oferecem a opção de base com esvaziamento automático: quando o robô termina de limpar, ele volta para a base e a base suga o conteúdo do reservatório para um saco maior. O resultado é que você não precisa esvaziar o robô por semanas.
-        </p>
-        <p class="text-slate-700 leading-relaxed mb-4">
-          Parece um luxo desnecessário, mas para quem tem animais ou casa grande, faz diferença prática. Sem a base automática, você lembra de esvaziar o robô só quando ele para de aspirar bem, o que significa que em algum momento ele estava circulando com o reservatório cheio e simplesmente redistribuindo a sujeira pelo chão.
-        </p>
-        <p class="text-slate-700 leading-relaxed mb-10">
-          O ponto negativo é o custo: as bases de esvaziamento automático elevam o preço do conjunto em R$ 400 a R$ 800. Para apartamentos pequenos com limpeza frequente, o esvaziamento manual a cada 2 ou 3 dias resolve bem e não justifica o custo extra.
-        </p>
-
-        <h2 class="text-2xl font-black text-slate-900 mb-6">Dúvidas frequentes</h2>
-        <div class="space-y-3 mb-10">
-          <details class="border border-slate-200 rounded-xl overflow-hidden">
-            <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
-              Robô aspirador de R$ 300 funciona mesmo?
-              <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-            </summary>
-            <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
-              Funciona, mas com limitações. Sem mapeamento laser, ele limpa de forma aleatória e pode deixar áreas sem cobrir. É uma boa opção para apartamentos pequenos (até 50 m²) sem animais e sem tapetes. Para ambientes maiores ou com mais sujeira, vale investir em um modelo intermediário.
+        <!-- O QUE AVALIAR -->
+        <div id="o-que-avaliar" class="mb-10">
+          <h2 class="text-2xl font-black text-slate-800 mb-6">O que avaliar antes de comprar um robô aspirador</h2>
+          <div class="space-y-5">
+            <div class="border border-slate-200 rounded-xl p-5">
+              <h3 class="font-bold text-slate-800 mb-2">Sucção (em Pa)</h3>
+              <p class="text-slate-700 text-sm leading-relaxed">Pa significa Pascal, a unidade de pressão usada para medir a força de sucção. Para uso diário em piso liso, 500 Pa já limpam poeira e areia fina. Quem tem pets ou tapetes precisa de pelo menos 2.000 Pa. Para tapetes médios ou muito pelo, 5.000 Pa para cima é o recomendado. O Roborock Q7 L5 com 8.000 Pa é o mais potente desta seleção.</p>
             </div>
-          </details>
-          <details class="border border-slate-200 rounded-xl overflow-hidden">
-            <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
-              Robô aspirador pega pelo de cachorro?
-              <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-            </summary>
-            <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
-              Sim, mas depende do modelo. Pelo de animal enrola na escova principal e precisa de limpeza frequente. Modelos com escova de borracha (como o Roborock Q5) têm menos problema com enrolamento do que modelos com escova de cerdas. Para casas com animais, prefira modelos com sucção acima de 3.000 Pa.
+            <div class="border border-slate-200 rounded-xl p-5">
+              <h3 class="font-bold text-slate-800 mb-2">Autonomia da bateria</h3>
+              <p class="text-slate-700 text-sm leading-relaxed">Apartamentos até 60 m² funcionam bem com 90 a 100 minutos. Entre 60 e 80 m², prefira 100 a 120 minutos. Acima de 80 m² ou casas com vários cômodos, procure 140 minutos ou mais. Robôs com retorno automático à base podem carregar e continuar, o que resolve o problema de autonomia em casas maiores.</p>
             </div>
-          </details>
-          <details class="border border-slate-200 rounded-xl overflow-hidden">
-            <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
-              Robô aspirador funciona em tapete?
-              <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-            </summary>
-            <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
-              Depende da espessura do tapete e do modelo. Robôs com boa potência de sucção sobem em tapetes de pelo curto e médio. Tapetes de pelo alto (mais de 2 cm) geralmente emperram os modelos de entrada. Verifique a altura máxima de obstáculos que o modelo consegue transpor, que normalmente fica entre 1,5 e 2 cm.
+            <div class="border border-slate-200 rounded-xl p-5">
+              <h3 class="font-bold text-slate-800 mb-2">Mapeamento laser vs. navegação aleatória</h3>
+              <p class="text-slate-700 text-sm leading-relaxed">Robôs com LiDAR ou LDS criam um mapa real e seguem rotas definidas: limpeza mais completa e mais rápida. Robôs aleatórios funcionam por eliminação: batem, mudam de direção e eventualmente cobrem tudo. Para plantas simples (um quarto e sala), aleatório resolve. Para apartamentos com vários cômodos interligados, o mapeamento faz diferença real.</p>
             </div>
-          </details>
-          <details class="border border-slate-200 rounded-xl overflow-hidden">
-            <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
-              Vale a pena ter robô aspirador e aspirador convencional?
-              <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-            </summary>
-            <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
-              Sim, e é a combinação ideal. O robô mantém o chão limpo diariamente de forma automática, enquanto o aspirador convencional entra para sujeiras maiores, cantos difíceis e estofados. O robô não substitui o aspirador, mas reduz muito a frequência com que você precisa usá-lo.
+            <div class="border border-slate-200 rounded-xl p-5">
+              <h3 class="font-bold text-slate-800 mb-2">Ruído em dB</h3>
+              <p class="text-slate-700 text-sm leading-relaxed">Para quem trabalha em home office ou tem bebês dormindo, o nível de ruído importa muito. Abaixo de 65 dB o robô é quase imperceptível com ruído de fundo. Entre 65 e 72 dB ele fica audível mas não incomoda uma conversa. O Xiaomi S40C com 65 dB é o mais silencioso desta lista; o ERB40 e o WAP W90 ficam em torno de 70 a 72 dB.</p>
             </div>
-          </details>
-          <details class="border border-slate-200 rounded-xl overflow-hidden">
-            <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
-              Onde consertar robô aspirador se quebrar?
-              <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-            </summary>
-            <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
-              Depende da marca. Electrolux tem rede de assistência autorizada em todo o Brasil, facilitando muito o conserto. Xiaomi e Roborock têm assistência principalmente nas capitais e grandes cidades. WAP e Philco atendem via envio pelo Correios. Antes de comprar, pesquise se há assistência na sua cidade.
+            <div class="border border-slate-200 rounded-xl p-5">
+              <h3 class="font-bold text-slate-800 mb-2">Tipo de piso e cuidados específicos</h3>
+              <p class="text-slate-700 text-sm leading-relaxed">Todos os robôs desta lista funcionam bem em cerâmica, porcelanato e laminado. Para <strong>laminado</strong>, use sempre a função mop no nível mínimo de água: o excesso de umidade pode causar inchamento. Para <strong>madeira de engenharia</strong>, limpe as rodas do robô pelo menos uma vez por semana: pedrinhas ou areia presas nas rodas funcionam como lixa e arranha a superfície.</p>
             </div>
-          </details>
-          <details class="border border-slate-200 rounded-xl overflow-hidden">
-            <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
-              Robô aspirador funciona em casa de dois andares?
-              <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-            </summary>
-            <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
-              Funciona, mas você precisa de uma base de carregamento em cada andar ou carregar o robô manualmente entre os andares. Modelos com mapeamento laser, como o Roborock Q5 Pro e o Xiaomi S40C, permitem salvar mapas de diferentes andares no app. Modelos de entrada com navegação aleatória exigem que você transfira o robô manualmente e posicione a base de forma diferente em cada andar.
-            </div>
-          </details>
-          <details class="border border-slate-200 rounded-xl overflow-hidden">
-            <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
-              Com que frequência devo usar o robô aspirador?
-              <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-            </summary>
-            <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
-              Para casas sem animais, três vezes por semana já mantém o chão visivelmente limpo. Para casas com pets, uso diário faz diferença real na quantidade de pelo acumulado. A maioria dos modelos intermediários e premium tem agendamento pelo app, o que resolve esse problema automaticamente. Mesmo com uso diário, o robô aspirador consome em torno de 30 a 40W por ciclo, o que representa menos de R$ 15 por mês na conta de luz.
-            </div>
-          </details>
+          </div>
         </div>
-        <script type="application/ld+json" set:html={JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Robô aspirador de R$ 300 funciona mesmo?","acceptedAnswer":{"@type":"Answer","text":"Funciona, mas com limitações. É boa opção para apartamentos pequenos sem animais. Para ambientes maiores, vale investir em modelo intermediário com mapeamento laser."}},{"@type":"Question","name":"Robô aspirador pega pelo de cachorro?","acceptedAnswer":{"@type":"Answer","text":"Sim, mas depende do modelo. Prefira modelos com escova de borracha e sucção acima de 3.000 Pa para casas com animais."}},{"@type":"Question","name":"Vale a pena ter robô aspirador e aspirador convencional?","acceptedAnswer":{"@type":"Answer","text":"Sim. O robô mantém o chão limpo diariamente, enquanto o aspirador convencional entra para sujeiras maiores e cantos difíceis. É a combinação ideal."}},{"@type":"Question","name":"Onde consertar robô aspirador se quebrar?","acceptedAnswer":{"@type":"Answer","text":"Depende da marca. Electrolux tem rede nacional. Xiaomi e Roborock atendem principalmente nas capitais. Verifique antes de comprar se há assistência na sua cidade."}},{"@type":"Question","name":"Robô aspirador funciona em casa de dois andares?","acceptedAnswer":{"@type":"Answer","text":"Funciona, mas você precisa de uma base de carregamento em cada andar. Modelos com mapeamento laser permitem salvar mapas de diferentes andares no app."}},{"@type":"Question","name":"Com que frequência devo usar o robô aspirador?","acceptedAnswer":{"@type":"Answer","text":"Para casas sem animais, três vezes por semana é suficiente. Para casas com pets, uso diário faz diferença. O consumo médio é menos de R$ 15 por mês na conta de luz."}}]})} />
+
+        <!-- CUSTO REAL NO PRIMEIRO ANO -->
+        <div id="custo-real" class="mb-10">
+          <h2 class="text-2xl font-black text-slate-800 mb-4">Custo real no primeiro ano</h2>
+          <p class="text-slate-600 text-sm mb-6">Os valores abaixo são estimativas baseadas em kits de reposição disponíveis na Amazon Brasil em maio de 2026, considerando 2 trocas de filtro e 1 troca de escova principal ao longo do ano, para uso diário em um apartamento médio sem pets.</p>
+          <div class="overflow-x-auto rounded-2xl border border-slate-200">
+            <table class="w-full text-sm text-slate-700">
+              <thead>
+                <tr class="bg-slate-800 text-white">
+                  <th class="text-left px-4 py-3 font-bold">Modelo</th>
+                  <th class="text-center px-4 py-3 font-bold">Preço aprox.</th>
+                  <th class="text-center px-4 py-3 font-bold">Kit reposição anual</th>
+                  <th class="text-center px-4 py-3 font-bold">Custo total ano 1</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-t border-slate-100 bg-orange-50">
+                  <td class="px-4 py-3 font-medium">Roborock Q7 L5</td>
+                  <td class="px-4 py-3 text-center">~R$ 1.800</td>
+                  <td class="px-4 py-3 text-center">~R$ 120 a R$ 200</td>
+                  <td class="px-4 py-3 text-center font-bold">~R$ 2.000</td>
+                </tr>
+                <tr class="border-t border-slate-100">
+                  <td class="px-4 py-3 font-medium">Xiaomi S40C</td>
+                  <td class="px-4 py-3 text-center">~R$ 1.200</td>
+                  <td class="px-4 py-3 text-center">~R$ 80 a R$ 150</td>
+                  <td class="px-4 py-3 text-center font-bold">~R$ 1.350</td>
+                </tr>
+                <tr class="border-t border-slate-100 bg-slate-50">
+                  <td class="px-4 py-3 font-medium">Electrolux ERB40</td>
+                  <td class="px-4 py-3 text-center">~R$ 1.050</td>
+                  <td class="px-4 py-3 text-center">~R$ 100 a R$ 150</td>
+                  <td class="px-4 py-3 text-center font-bold">~R$ 1.200</td>
+                </tr>
+                <tr class="border-t border-slate-100">
+                  <td class="px-4 py-3 font-medium">Philco PAS23</td>
+                  <td class="px-4 py-3 text-center">~R$ 380</td>
+                  <td class="px-4 py-3 text-center">~R$ 40 a R$ 80</td>
+                  <td class="px-4 py-3 text-center font-bold">~R$ 450</td>
+                </tr>
+                <tr class="border-t border-slate-100 bg-slate-50">
+                  <td class="px-4 py-3 font-medium">WAP Robot W90</td>
+                  <td class="px-4 py-3 text-center">~R$ 350</td>
+                  <td class="px-4 py-3 text-center">~R$ 40 a R$ 70</td>
+                  <td class="px-4 py-3 text-center font-bold">~R$ 420</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="text-slate-500 text-xs mt-3">Preços verificados em maio de 2026. Valores podem variar conforme promoções e frequência de uso.</p>
+        </div>
+
+        <!-- FAQ -->
+        <div id="faq" class="mb-10">
+          <h2 class="text-2xl font-black text-slate-800 mb-6">Perguntas frequentes sobre robôs aspiradores</h2>
+          <div class="space-y-3">
+
+            <details class="border border-slate-200 rounded-xl overflow-hidden group">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+                Robô aspirador substitui a faxina completa?
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 py-4 bg-white border-t border-slate-100 text-slate-700 text-sm leading-relaxed">
+                Não substitui, mas reduz muito a frequência. O robô mantém o piso limpo entre as faxinas, o que faz com que a limpeza profunda seja necessária com menos frequência. A maioria dos usuários que passava o aspirador três vezes por semana passou a fazer uma vez a cada 10 a 15 dias. Para cantos muito estreitos, rodapés, escadas e superfícies elevadas, o aspirador manual ainda é necessário.
+              </div>
+            </details>
+
+            <details class="border border-slate-200 rounded-xl overflow-hidden group">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+                Qual a diferença entre mapeamento LiDAR e navegação aleatória?
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 py-4 bg-white border-t border-slate-100 text-slate-700 text-sm leading-relaxed">
+                O LiDAR usa um sensor laser giratório que mede distâncias em 360 graus e cria um mapa digital do apartamento. O robô planeja rotas, sabe onde já passou e onde ainda falta limpar. O resultado é uma limpeza mais rápida e completa. A navegação aleatória funciona por tentativa: o robô sai em linha reta, bate em algo, muda de direção e repete o processo. Eventualmente limpa tudo, mas de forma menos eficiente, podendo repetir áreas e deixar cantos sem cobrir.
+              </div>
+            </details>
+
+            <details class="border border-slate-200 rounded-xl overflow-hidden group">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+                Posso usar robô aspirador em piso laminado ou madeira de engenharia?
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 py-4 bg-white border-t border-slate-100 text-slate-700 text-sm leading-relaxed">
+                Sim, com dois cuidados. No laminado, use a função mop sempre no nível mínimo de água, porque o excesso de umidade pode causar inchamento. Na madeira de engenharia, verifique as rodas do robô pelo menos uma vez por semana: pedrinhas ou areia presa nas rodas funcionam como lixa e arranha a superfície. Os dois tipos de piso aceitam bem a aspiração seca sem restrições.
+              </div>
+            </details>
+
+            <details class="border border-slate-200 rounded-xl overflow-hidden group">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+                Com que frequência preciso trocar filtros e escovas?
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 py-4 bg-white border-t border-slate-100 text-slate-700 text-sm leading-relaxed">
+                Para uso diário sem pets, a recomendação é trocar filtros a cada 4 a 6 meses e escovas laterais a cada 6 meses. Quem tem cão ou gato deve trocar filtros a cada 3 meses, porque pelos e dander entopem o filtro mais rápido. Escovas principais duram em torno de 12 meses. Os apps dos modelos com mapeamento, como o Roborock e o Xiaomi, avisam quando cada peça está perto do limite de vida útil.
+              </div>
+            </details>
+
+            <details class="border border-slate-200 rounded-xl overflow-hidden group">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+                Quanto tempo de autonomia é suficiente para meu apartamento?
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 py-4 bg-white border-t border-slate-100 text-slate-700 text-sm leading-relaxed">
+                Até 60 m², 90 minutos são suficientes. Entre 60 e 80 m², prefira 100 a 120 minutos. Acima de 80 m², procure 140 minutos ou um modelo que retorna à base para recarregar e continua de onde parou (como o Roborock Q7 L5 e o Electrolux ERB40). Robôs com navegação aleatória precisam de mais autonomia que os com mapeamento, porque percorrem mais distância para cobrir a mesma área.
+              </div>
+            </details>
+
+            <details class="border border-slate-200 rounded-xl overflow-hidden group">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+                Robô aspirador funciona bem com tapete?
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 py-4 bg-white border-t border-slate-100 text-slate-700 text-sm leading-relaxed">
+                Depende da altura do pelo do tapete. Tapetes planos e de pelo curto até 1 cm são compatíveis com todos os modelos desta lista. Tapetes de pelo médio (1 a 2 cm) funcionam melhor com modelos de sucção acima de 2.000 Pa, como o Xiaomi S40C e o Roborock. Tapetes de pelo alto ou felpudo acima de 2,5 cm costumam travar as escovas de modelos de entrada. Modelos com função mop ativo podem molhar o tapete; use zonas de restrição no app para evitar.
+              </div>
+            </details>
+
+            <details class="border border-slate-200 rounded-xl overflow-hidden group">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+                Robô aspirador é seguro para pets e crianças pequenas?
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 py-4 bg-white border-t border-slate-100 text-slate-700 text-sm leading-relaxed">
+                Sim. Os modelos modernos têm sensores anticolisão e antiborda que impedem que o robô bata com força em objetos ou caia de degraus. A maioria dos pets estranha o robô nos primeiros dias e depois ignora. Para crianças pequenas, o principal cuidado é não deixar brinquedos ou meias espalhadas no chão, pois esses itens podem ser sugados e travar o robô. Cabos elétricos no chão também devem ser recolhidos antes de ligar o aparelho.
+              </div>
+            </details>
+
+          </div>
+        </div>
+
+        <!-- SCHEMA FAQ JSON-LD -->
+        <script type="application/ld+json" set:html={JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Robô aspirador substitui a faxina completa?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Não substitui, mas reduz muito a frequência. O robô mantém o piso limpo entre as faxinas, fazendo com que a limpeza profunda seja necessária com menos frequência. Para cantos estreitos, rodapés e superfícies elevadas, o aspirador manual ainda é necessário."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Qual a diferença entre mapeamento LiDAR e navegação aleatória?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "O LiDAR usa sensor laser giratório para criar um mapa digital do apartamento e planejar rotas eficientes. A navegação aleatória funciona por tentativa: o robô bate em obstáculos, muda de direção e eventualmente limpa tudo, mas de forma menos eficiente e mais demorada."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Posso usar robô aspirador em piso laminado ou madeira de engenharia?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sim, com cuidados. No laminado, use a função mop no nível mínimo de água para evitar inchamento. Na madeira de engenharia, limpe as rodas semanalmente para remover areia e pedrinhas que podem riscar o piso."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Com que frequência preciso trocar filtros e escovas do robô aspirador?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Para uso diário sem pets, troque filtros a cada 4 a 6 meses e escovas laterais a cada 6 meses. Quem tem pets deve trocar filtros a cada 3 meses. Escovas principais duram cerca de 12 meses."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Quanto tempo de autonomia é suficiente para meu apartamento?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Até 60 m², 90 minutos são suficientes. Entre 60 e 80 m², prefira 100 a 120 minutos. Acima de 80 m², procure 140 minutos ou um modelo que retorna à base para recarregar e continua de onde parou."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Robô aspirador funciona bem com tapete?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depende da altura do pelo. Tapetes planos e de pelo curto até 1 cm funcionam com todos os modelos. Tapetes de pelo médio precisam de sucção acima de 2.000 Pa. Tapetes de pelo alto acima de 2,5 cm não são recomendados para modelos de entrada."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Robô aspirador é seguro para pets e crianças pequenas?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sim. Os modelos modernos têm sensores anticolisão e antiborda. A maioria dos pets se acostuma em poucos dias. O principal cuidado é recolher brinquedos, meias e cabos elétricos do chão antes de ligar o robô."
+              }
+            }
+          ]
+        })} />
       </div>
     )}
 
