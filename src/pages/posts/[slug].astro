@@ -126,6 +126,7 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
   : isRobos ? '/images/robos/capa-robos.png'
   : isPanela ? '/images/panela/capa-panela.png'
   : isItens30 ? '/images/itens30/capa-itens30.png'
+  : isFrigideira ? '/images/frigideira/capa-frigideira.png'
   : undefined;
 ---
 
@@ -2912,6 +2913,16 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
 
     {isFrigideira && (
       <div>
+
+        <!-- Capa do artigo -->
+        <div class="rounded-2xl overflow-hidden mb-8 shadow-md">
+          <img
+            src="/images/frigideira/capa-frigideira.png"
+            alt="Como escolher a frigideira certa para cada tipo de fogão"
+            class="w-full h-auto object-cover"
+            loading="eager"
+          />
+        </div>
 
         <!-- DISCLOSURE AFILIADO -->
         <p class="text-sm text-slate-500 italic mb-6">Este artigo pode conter links de afiliados. Se você comprar por um desses links, posso receber uma comissão sem custo adicional para você.</p>
