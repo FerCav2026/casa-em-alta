@@ -106,8 +106,8 @@ export const posts: Post[] = [
   },
   {
     slug: 'itens-casa-30-reais-amazon',
-    titulo: '15 Itens Incríveis para Casa por até R$ 30 na Amazon',
-    resumo: 'Garimpos que valem muito mais do que custam. Atualizamos essa lista toda semana com os melhores achados.',
+    titulo: '14 Itens Incríveis para Casa por até R$ 30 na Amazon',
+    resumo: 'Garimpos que valem muito mais do que custam. Atualizamos essa lista com os melhores achados.',
     tempo: '4 min de leitura',
     imagem: '/images/itens30/capa-itens30.png',
     categoria: 'rankings-e-listas',
