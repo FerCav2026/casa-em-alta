@@ -119,7 +119,7 @@ export const posts: Post[] = [
     titulo: 'Como Escolher a Frigideira Certa para Cada Tipo de Fogão',
     resumo: 'Indução, gás ou elétrico? Antiaderente ou inox? Este guia resolve de uma vez por todas essa dúvida.',
     tempo: '6 min de leitura',
-    imagem: null,
+    imagem: '/images/frigideira/capa-frigideira.png',
     categoria: 'guias-de-compra',
     categoriaLabel: 'Guia de Compra',
     categoriaColor: 'bg-purple-100 text-purple-700',
