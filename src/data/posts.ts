@@ -144,6 +144,16 @@ export const posts: Post[] = [
     categoriaLabel: 'Guia de Compra',
     categoriaColor: 'bg-purple-100 text-purple-700',
   },
+  {
+    slug: 'melhor-multiprocessador-de-alimentos',
+    titulo: 'Melhor Multiprocessador de Alimentos 2026: Vale a Pena Ter um em Casa?',
+    resumo: 'Comparamos os modelos mais vendidos da Amazon: Philips Walita, Mondial, Britania e Arno. Qual realmente vale o preço?',
+    tempo: '7 min de leitura',
+    imagem: '/images/multiprocessador/capa-multiprocessador.jpg',
+    categoria: 'rankings-e-listas',
+    categoriaLabel: 'Rankings e Listas',
+    categoriaColor: 'bg-green-100 text-green-700',
+  },
 ];
 
 export function getPostsByCategoria(categoriaSlug: string): Post[] {

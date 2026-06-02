@@ -66,6 +66,13 @@ const posts: Record<string, { titulo: string; descricao: string; categoria: stri
     dataCriacao: '2026-05-01',
     dataModificacao: '2026-05-22',
   },
+  'melhor-multiprocessador-de-alimentos': {
+    titulo: 'Melhor Multiprocessador de Alimentos 2026: Vale a Pena Ter um em Casa?',
+    descricao: 'Comparamos Philips Walita, Mondial, Britania e Arno para descobrir qual multiprocessador realmente vale o preço em 2026.',
+    categoria: 'Ranking',
+    dataCriacao: '2026-06-02',
+    dataModificacao: '2026-06-02',
+  },
 };
 
 export function getStaticPaths() {
@@ -79,6 +86,7 @@ export function getStaticPaths() {
     'como-escolher-frigideira': {},
     'purificador-agua-vale-pena': {},
     'kit-organizacao-cozinha': {},
+    'melhor-multiprocessador-de-alimentos': {},
   }).map((slug) => ({ params: { slug } }));
 }
 
@@ -119,6 +127,7 @@ const isItens30 = slug === 'itens-casa-30-reais-amazon';
 const isFrigideira = slug === 'como-escolher-frigideira';
 const isPurificador = slug === 'purificador-agua-vale-pena';
 const isKitCozinha = slug === 'kit-organizacao-cozinha';
+const isMultiprocessador = slug === 'melhor-multiprocessador-de-alimentos';
 
 const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
   : isAirfryer ? '/images/airfryer/capa-airfryer.png'
@@ -129,6 +138,7 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
   : isFrigideira ? '/images/frigideira/capa-frigideira.png'
   : isPurificador ? '/images/purificador/capa-purificador.png'
   : isKitCozinha ? '/images/kit-cozinha/capa-kit-cozinha.png'
+  : isMultiprocessador ? '/images/multiprocessador/capa-multiprocessador.jpg'
   : undefined;
 ---
 
