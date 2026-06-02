@@ -73,6 +73,13 @@ const posts: Record<string, { titulo: string; descricao: string; categoria: stri
     dataCriacao: '2026-06-02',
     dataModificacao: '2026-06-02',
   },
+  'maquina-de-gelo-portatil': {
+    titulo: 'Máquina de Gelo Portátil: Vale a Pena Ter em Casa? Veja os Melhores Modelos de 2026',
+    descricao: 'Os 4 melhores modelos de máquina de gelo portátil de 2026. Vale a pena? Compare produção, tempo de gelo e preço.',
+    categoria: 'Ranking',
+    dataCriacao: '2026-06-08',
+    dataModificacao: '2026-06-08',
+  },
   'chaleira-eletrica-com-controle-de-temperatura': {
     titulo: 'Chaleira Elétrica com Controle de Temperatura: a Melhor para Café, Chá e Chimarrão em 2026',
     descricao: 'Qual chaleira com controle de temperatura comprar? Comparamos 4 modelos da Amazon para café coado, chá e chimarrão.',
@@ -101,6 +108,7 @@ export function getStaticPaths() {
     'purificador-agua-vale-pena': {},
     'kit-organizacao-cozinha': {},
     'melhor-multiprocessador-de-alimentos': {},
+    'maquina-de-gelo-portatil': {},
     'chaleira-eletrica-com-controle-de-temperatura': {},
     'vaporizador-de-roupas-portatil': {},
   }).map((slug) => ({ params: { slug } }));
@@ -145,6 +153,7 @@ const isFrigideira = slug === 'como-escolher-frigideira';
 const isPurificador = slug === 'purificador-agua-vale-pena';
 const isKitCozinha = slug === 'kit-organizacao-cozinha';
 const isMultiprocessador = slug === 'melhor-multiprocessador-de-alimentos';
+const isMaquinaGelo = slug === 'maquina-de-gelo-portatil';
 const isChaleira = slug === 'chaleira-eletrica-com-controle-de-temperatura';
 const isVaporizador = slug === 'vaporizador-de-roupas-portatil';
 
@@ -158,6 +167,7 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
   : isPurificador ? '/images/purificador/capa-purificador.png'
   : isKitCozinha ? '/images/kit-cozinha/capa-kit-cozinha.png'
   : isMultiprocessador ? '/images/multiprocessador/capa-multiprocessador.jpg'
+  : isMaquinaGelo ? '/images/maquina-gelo/capa-maquina-gelo.jpg'
   : isChaleira ? '/images/chaleira/capa-chaleira.jpg'
   : isVaporizador ? '/images/vaporizador/capa-vaporizador.jpg'
   : undefined;
@@ -5755,6 +5765,424 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
               "acceptedAnswer": {
                 "@type": "Answer",
                 "text": "O seletor mecânico é mais simples e durável. O painel digital mostra a temperatura atual em tempo real e oferece presets com botões. Para ver a temperatura exata antes de servir, prefira o painel digital."
+              }
+            }
+          ]
+        })}></script>
+
+
+      </div>
+    )}
+
+    {isMaquinaGelo && (
+      <div>
+
+        <!-- Capa do artigo -->
+        <div class="rounded-2xl overflow-hidden mb-8 shadow-md">
+          <img src="/images/maquina-gelo/capa-maquina-gelo.jpg" alt="Máquina de gelo portátil compacta sobre bancada de cozinha com cubos de gelo" class="w-full h-auto object-cover" loading="eager" />
+        </div>
+
+        <!-- Introdução -->
+        <div class="bg-orange-50 border border-orange-100 rounded-2xl p-6 mb-8">
+          <p class="text-slate-800 text-base leading-relaxed mb-3">Quem já ficou esperando a bandeja do freezer congelar sabe a frustração: você quer gelo agora, e o freezer leva mais de duas horas para entregar. A máquina de gelo portátil resolve esse problema em minutos. Sem precisar de encanamento, sem instalação: plugou, abasteceu com água e em 6 a 13 minutos os primeiros cubos ficam prontos.</p>
+          <p class="text-slate-800 text-base leading-relaxed mb-3">O mercado brasileiro tem mais opções do que nunca nessa categoria, com modelos de R$ 430 a R$ 650. Mas nem todos são iguais: a diferença de produção por dia, tempo para o primeiro gelo e facilidade de manutenção muda bastante entre os modelos.</p>
+          <p class="text-slate-800 text-base leading-relaxed">Testamos e comparamos os quatro melhores modelos disponíveis no Brasil em 2026. Abaixo estão as fichas técnicas completas, os pontos positivos e negativos de cada um, e um guia para você escolher o modelo certo para o seu caso.</p>
+        </div>
+
+        <!-- Índice -->
+        <nav class="bg-white border border-slate-200 rounded-xl px-5 py-4 mb-10">
+          <p class="text-slate-800 font-bold text-sm mb-3">Neste artigo:</p>
+          <ul class="space-y-1.5">
+            <li><a href="#como-funciona" class="text-orange-600 hover:text-orange-700 text-sm font-medium">Como funciona uma máquina de gelo portátil</a></li>
+            <li><a href="#melhores" class="text-orange-600 hover:text-orange-700 text-sm font-medium">Os melhores modelos de 2026</a></li>
+            <li><a href="#vale-a-pena" class="text-orange-600 hover:text-orange-700 text-sm font-medium">Vale a pena ter uma em casa?</a></li>
+            <li><a href="#considerar" class="text-orange-600 hover:text-orange-700 text-sm font-medium">O que considerar antes de comprar</a></li>
+            <li><a href="#faq" class="text-orange-600 hover:text-orange-700 text-sm font-medium">Perguntas frequentes</a></li>
+          </ul>
+        </nav>
+
+        <!-- Como funciona -->
+        <div id="como-funciona" class="mb-10">
+          <h2 class="text-2xl font-bold text-slate-800 mb-4">Como funciona uma máquina de gelo portátil?</h2>
+          <p class="text-slate-700 leading-relaxed mb-4">A máquina de gelo portátil usa um sistema de refrigeração por compressor. Quando você abastece o reservatório e liga o aparelho, uma bomba circula a água sobre pinos metálicos que ficam expostos a um elemento refrigerador. A água se congela progressivamente nesses pinos em camadas, formando cubos ocos por dentro, característicos das máquinas portáteis.</p>
+          <p class="text-slate-700 leading-relaxed mb-4">O processo todo leva entre 6 e 13 minutos dependendo do modelo e da temperatura ambiente. Quando os cubos atingem o tamanho configurado, eles caem no cesto coletor e o ciclo recomeça automaticamente. A máquina continua produzindo gelo até encher o cesto ou até esgotar a água do reservatório.</p>
+
+          <div class="bg-slate-50 border border-slate-200 rounded-xl p-5 mb-4">
+            <p class="font-bold text-slate-800 mb-2">Máquina portátil x freezer convencional: as diferenças</p>
+            <p class="text-slate-700 text-sm leading-relaxed">O freezer convencional leva de 2 a 4 horas para congelar uma bandeja de gelo e depende de temperatura ambiente estável. A máquina portátil produz os primeiros cubos em 6 a 13 minutos e funciona bem em ambientes com temperatura de até 35°C. O gelo da máquina portátil é oco (diferente do cubo sólido do freezer), o que faz com que derreta um pouco mais rápido, mas cumpre bem a função para bebidas no dia a dia.</p>
+          </div>
+
+          <p class="text-slate-700 leading-relaxed">O gelo não fica armazenado: o cesto não tem refrigeração. Se os cubos derreterem, a água retorna ao reservatório e pode ser recongelada. Isso significa que você precisa usar o gelo em sequência ou ter um recipiente isolado (isopor, cooler) para guardar os cubos produzidos.</p>
+        </div>
+
+        <!-- Título melhores -->
+        <div id="melhores" class="mb-4">
+          <h2 class="text-2xl font-bold text-slate-800 mb-6">Os melhores modelos de máquina de gelo portátil de 2026</h2>
+        </div>
+
+        <!-- Produto 1: Agratto MG-01 -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-orange-500 px-6 py-4">
+            <p class="text-white font-black text-xl">1° lugar - Agratto MG-01</p>
+            <p class="text-orange-100 text-sm mt-1">A entrada acessível: confiável, compacta e produz 9 kg de gelo por dia</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 min-h-32">
+              <img src="/images/maquina-gelo/agratto-mg01.jpg" alt="Máquina de gelo Agratto MG-01 branca" class="w-full h-auto object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <a href="https://amzn.to/4dH3vaM" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">
+                Conferir preço na Amazon
+              </a>
+              <h3 class="font-bold text-slate-800 mb-3">Ficha Técnica</h3>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Potência:</strong> 100 W</li>
+                <li><strong>Capacidade do reservatório:</strong> 2,2 L</li>
+                <li><strong>Produção de gelo:</strong> até 9 kg por dia</li>
+                <li><strong>Cubos por ciclo:</strong> 9</li>
+                <li><strong>Tempo para o primeiro gelo:</strong> 8 a 13 minutos</li>
+                <li><strong>Tamanhos de cubo:</strong> pequeno e grande</li>
+                <li><strong>Voltagem:</strong> 110V</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Menor consumo de energia da lista: apenas 100 W</li>
+                    <li>Reservatório de 2,2 L oferece mais autonomia entre abastecimentos</li>
+                    <li>Marca brasileira com boa assistência técnica no país</li>
+                    <li>Silenciosa para a categoria</li>
+                    <li>Preço mais acessível da lista</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Produção menor: 9 kg/dia vs 12 kg/dia dos concorrentes</li>
+                    <li>Tempo para o primeiro gelo um pouco maior (até 13 min)</li>
+                    <li>Apenas 110V (sem versão 220V bivolt)</li>
+                    <li>Sem painel digital ou autolimpeza</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 2: EOS Ice Compact EMG04T -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-slate-800 px-6 py-4">
+            <p class="text-white font-black text-xl">2° lugar - EOS Ice Compact EMG04T</p>
+            <p class="text-slate-300 text-sm mt-1">12 kg por dia, bivolt e preço justo: o melhor custo-benefício da lista</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 min-h-32">
+              <img src="/images/maquina-gelo/eos-ice-compact.jpg" alt="Máquina de gelo EOS Ice Compact EMG04T" class="w-full h-auto object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <a href="https://amzn.to/4dXBXwv" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">
+                Conferir preço na Amazon
+              </a>
+              <h3 class="font-bold text-slate-800 mb-3">Ficha Técnica</h3>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Potência:</strong> 180 W</li>
+                <li><strong>Capacidade do reservatório:</strong> 2 L</li>
+                <li><strong>Produção de gelo:</strong> até 12 kg por dia</li>
+                <li><strong>Tempo para o primeiro gelo:</strong> 6 a 13 minutos</li>
+                <li><strong>Tamanhos de cubo:</strong> pequeno, médio e grande</li>
+                <li><strong>Voltagem:</strong> Bivolt automático (110V/220V)</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Produção de 12 kg/dia, ideal para uso frequente</li>
+                    <li>Bivolt automático: funciona em 110V e 220V</li>
+                    <li>3 tamanhos de cubo para adaptar ao uso</li>
+                    <li>Melhor custo-benefício entre os modelos de 12 kg/dia</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Sem função de autolimpeza</li>
+                    <li>Sem painel digital com display</li>
+                    <li>Marca com menor presença no mercado que Mondial e Philco</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Leia também 1 -->
+        <div style="margin:32px 0;font-family:sans-serif;">
+          <p style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#1e5c2e;margin:0 0 12px;">Leia também:</p>
+          <a href="/posts/itens-casa-30-reais-amazon" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;min-width:200px;overflow:hidden;">
+              <img src="/images/itens30/capa-itens30.png" alt="14 itens incríveis para casa por até R$ 30 na Amazon" style="width:100%;height:100%;object-fit:cover;display:block;" />
+            </div>
+            <div style="padding:20px 22px;display:flex;align-items:center;">
+              <p style="margin:0;font-size:15px;font-weight:500;line-height:1.5;color:#1a1a1a;">14 Itens Incríveis para Casa por até R$ 30 na Amazon</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Produto 3: Mondial Turbo Ice MG-12-GI -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-slate-700 px-6 py-4">
+            <p class="text-white font-black text-xl">3° lugar - Mondial Turbo Ice Premium MG-12-GI</p>
+            <p class="text-slate-300 text-sm mt-1">Inox, bivolt e gelo em apenas 6 minutos: rápido e com acabamento premium</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 min-h-32">
+              <img src="/images/maquina-gelo/mondial-turbo-ice.jpg" alt="Máquina de gelo Mondial Turbo Ice Premium MG-12-GI inox" class="w-full h-auto object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <a href="https://amzn.to/436WfPp" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">
+                Conferir preço na Amazon
+              </a>
+              <h3 class="font-bold text-slate-800 mb-3">Ficha Técnica</h3>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Potência:</strong> 150 W</li>
+                <li><strong>Capacidade do reservatório:</strong> 2 L</li>
+                <li><strong>Produção de gelo:</strong> até 12 kg por dia</li>
+                <li><strong>Tempo para o primeiro gelo:</strong> 6 minutos</li>
+                <li><strong>Tamanhos de cubo:</strong> pequeno e grande</li>
+                <li><strong>Acabamento:</strong> Inox (premium)</li>
+                <li><strong>Voltagem:</strong> Bivolt automático (110V/220V)</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Gelo mais rápido da lista: primeiros cubos em 6 minutos</li>
+                    <li>Acabamento inox resistente e visualmente atrativo</li>
+                    <li>Bivolt automático</li>
+                    <li>Consumo de 150 W é baixo para produção de 12 kg/dia</li>
+                    <li>Marca com presença consolidada no Brasil</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Apenas 2 tamanhos de cubo (pequeno e grande)</li>
+                    <li>Sem função de autolimpeza</li>
+                    <li>Sem painel digital</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 4: Philco PMG12b -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-slate-600 px-6 py-4">
+            <p class="text-white font-black text-xl">4° lugar - Philco PMG12b</p>
+            <p class="text-slate-300 text-sm mt-1">O mais completo: painel digital, autolimpeza e 12 kg por dia</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 min-h-32">
+              <img src="/images/maquina-gelo/philco-pmg12b.jpg" alt="Máquina de gelo Philco PMG12b com painel digital" class="w-full h-auto object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <a href="https://amzn.to/4x0fxDT" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">
+                Conferir preço na Amazon
+              </a>
+              <h3 class="font-bold text-slate-800 mb-3">Ficha Técnica</h3>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Potência:</strong> 185 W</li>
+                <li><strong>Capacidade do reservatório:</strong> 2 L</li>
+                <li><strong>Produção de gelo:</strong> até 12 kg por dia</li>
+                <li><strong>Tempo para o primeiro gelo:</strong> 6 a 12 minutos</li>
+                <li><strong>Display:</strong> Painel digital com LED</li>
+                <li><strong>Autolimpeza:</strong> Sim</li>
+                <li><strong>Voltagem:</strong> Bivolt automático</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Único da lista com função de autolimpeza</li>
+                    <li>Painel digital facilita a operação</li>
+                    <li>Bivolt automático</li>
+                    <li>12 kg por dia de produção</li>
+                    <li>A manutenção é mais simples graças ao ciclo de autolimpeza</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Preço mais alto da lista (~R$ 650)</li>
+                    <li>Acabamento plástico (sem versão inox)</li>
+                    <li>Consume um pouco mais de energia (185 W)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Leia também 2 -->
+        <div style="margin:32px 0;font-family:sans-serif;">
+          <p style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#1e5c2e;margin:0 0 12px;">Leia também:</p>
+          <a href="/posts/kit-organizacao-cozinha" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;min-width:200px;overflow:hidden;">
+              <img src="/images/kit-cozinha/capa-kit-cozinha.png" alt="Kit de organização de cozinha" style="width:100%;height:100%;object-fit:cover;display:block;" />
+            </div>
+            <div style="padding:20px 22px;display:flex;align-items:center;">
+              <p style="margin:0;font-size:15px;font-weight:500;line-height:1.5;color:#1a1a1a;">Kit Organização de Cozinha: Monte o seu por R$ 150</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Vale a pena -->
+        <div id="vale-a-pena" class="mb-10">
+          <h2 class="text-2xl font-bold text-slate-800 mb-4">Máquina de gelo portátil vale a pena ter em casa?</h2>
+          <p class="text-slate-700 leading-relaxed mb-4">Depende muito do seu perfil de uso. A resposta é sim para quem costuma receber visitas, faz churrascos e eventos em casa, mora em cidade quente, ou simplesmente toma muita bebida gelada no dia a dia e fica irritado com a demora do freezer.</p>
+
+          <div class="space-y-3 mb-4">
+            <div class="bg-green-50 border border-green-200 rounded-xl p-4">
+              <p class="font-bold text-green-800 mb-1">Vale a pena se você...</p>
+              <ul class="text-slate-700 text-sm space-y-1">
+                <li>Recebe visitas com frequência e sempre falta gelo</li>
+                <li>Mora em cidade quente e consume gelo todo dia</li>
+                <li>Faz churrasco ou eventos em casa regularmente</li>
+                <li>Trabalha em home office e quer praticidade no dia a dia</li>
+                <li>Tem freezer pequeno sem espaço para bandeja de gelo</li>
+              </ul>
+            </div>
+            <div class="bg-red-50 border border-red-200 rounded-xl p-4">
+              <p class="font-bold text-red-800 mb-1">Pode não valer se você...</p>
+              <ul class="text-slate-700 text-sm space-y-1">
+                <li>Toma poucas bebidas geladas e o freezer supre a necessidade</li>
+                <li>Tem espaço limitado na bancada ou em casa</li>
+                <li>Precisa de gelo armazenado por horas (o cesto não refrigera)</li>
+                <li>Busca um aparelho totalmente silencioso para ambiente de trabalho</li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="text-slate-700 leading-relaxed">Para a maioria dos lares brasileiros que recebem visitas no verão, a máquina de gelo portátil se paga rapidamente em praticidade e na eliminação de bandejas espalhadas pelo freezer. O investimento inicial fica entre R$ 430 e R$ 650, e o consumo de energia é baixo (100 a 185 W).</p>
+        </div>
+
+        <!-- O que considerar -->
+        <div id="considerar" class="mb-10">
+          <h2 class="text-2xl font-bold text-slate-800 mb-4">O que considerar antes de comprar uma máquina de gelo portátil</h2>
+          <div class="space-y-4">
+            <div class="bg-white border border-slate-200 rounded-xl p-5">
+              <p class="font-bold text-slate-800 mb-2">Produção de gelo por dia (kg/dia): o principal critério</p>
+              <p class="text-slate-700 text-sm leading-relaxed">A produção em kg/dia diz quanto gelo o aparelho consegue produzir em 24 horas de funcionamento contínuo em condições ideais (temperatura ambiente de 20°C). Na prática, com temperatura ambiente mais alta (30°C+), a produção real fica um pouco abaixo do especificado. Para uso doméstico comum, 9 kg/dia é suficiente. Para uso frequente e receber visitas, prefira os modelos de 12 kg/dia.</p>
+            </div>
+            <div class="bg-white border border-slate-200 rounded-xl p-5">
+              <p class="font-bold text-slate-800 mb-2">Tempo para o primeiro gelo: de 6 a 13 minutos</p>
+              <p class="text-slate-700 text-sm leading-relaxed">O tempo para o primeiro gelo varia de 6 a 13 minutos entre os modelos desta lista. A diferença parece pequena, mas quando você precisa de gelo agora para uma bebida, esses 7 minutos fazem diferença. O Mondial MG-12-GI tem o ciclo mais rápido da lista com 6 minutos. Para uso no dia a dia sem urgência, qualquer modelo atende bem.</p>
+            </div>
+            <div class="bg-white border border-slate-200 rounded-xl p-5">
+              <p class="font-bold text-slate-800 mb-2">Capacidade do reservatório e autonomia entre reabastecimentos</p>
+              <p class="text-slate-700 text-sm leading-relaxed">Com um reservatório de 2 L, a máquina produz de 10 a 14 ciclos de gelo antes de precisar de mais água. O Agratto MG-01 tem o maior reservatório da lista (2,2 L), o que dá um pouco mais de autonomia. Para um churrasco de uma tarde, você vai reabastecer algumas vezes de qualquer forma, então a diferença de 200 ml não é determinante.</p>
+            </div>
+            <div class="bg-white border border-slate-200 rounded-xl p-5">
+              <p class="font-bold text-slate-800 mb-2">Autolimpeza e manutenção</p>
+              <p class="text-slate-700 text-sm leading-relaxed">Com o uso frequente, calcário e resíduos se acumulam no interior da máquina e afetam o sabor do gelo. A função de autolimpeza (disponível no Philco PMG12b) facilita muito a manutenção: você adiciona uma solução e o aparelho faz o ciclo de limpeza automaticamente. Sem essa função, a limpeza precisa ser manual periodicamente. Para uso intenso e frequente, a autolimpeza é um diferencial real de praticidade.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ -->
+        <div id="faq" class="mb-10">
+          <h2 class="text-2xl font-bold text-slate-800 mb-6">Perguntas frequentes sobre máquina de gelo portátil</h2>
+          <div class="space-y-4">
+
+            <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden">
+              <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 list-none">
+                Em quanto tempo a máquina de gelo produz os primeiros cubos?
+                <svg class="w-5 h-5 text-slate-400 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 pb-5 text-slate-600 text-sm leading-relaxed">
+                Depende do modelo e da temperatura ambiente. Os modelos desta lista produzem os primeiros cubos em 6 a 13 minutos. O Mondial MG-12-GI é o mais rápido (6 minutos). Com temperatura ambiente mais alta que 25°C, o tempo pode ser um pouco maior. É muito mais rápido que o freezer convencional, que leva 2 a 4 horas.
+              </div>
+            </details>
+
+            <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden">
+              <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 list-none">
+                O gelo da máquina portátil é igual ao do freezer?
+                <svg class="w-5 h-5 text-slate-400 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 pb-5 text-slate-600 text-sm leading-relaxed">
+                Não. O gelo das máquinas portáteis é oco por dentro, diferente do cubo sólido do freezer. Isso faz com que ele derreta um pouco mais rápido, especialmente em dias quentes. Para bebidas no dia a dia e para eventos, funciona perfeitamente. Se você precisa de gelo que dure horas em um cooler sem repor, o gelo sólido do freezer dura mais.
+              </div>
+            </details>
+
+            <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden">
+              <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 list-none">
+                A máquina de gelo portátil faz muito barulho?
+                <svg class="w-5 h-5 text-slate-400 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 pb-5 text-slate-600 text-sm leading-relaxed">
+                As máquinas portáteis produzem um ruído similar a um frigobar ou ar-condicionado de janela pequeno, entre 40 e 50 dB aproximadamente. Não é silenciosa, mas não é incômoda para uso na cozinha ou área de serviço. Para usar no quarto ou em ambiente de trabalho que exija silêncio, o barulho pode incomodar. Para uso em cozinha, sala ou área de churrasco, é completamente tolerável.
+              </div>
+            </details>
+
+            <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden">
+              <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 list-none">
+                Precisa de instalação especial ou encanamento?
+                <svg class="w-5 h-5 text-slate-400 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 pb-5 text-slate-600 text-sm leading-relaxed">
+                Não. A máquina de gelo portátil é totalmente autônoma. Você só precisa de uma tomada elétrica e de água para abastecer o reservatório manualmente. Sem necessidade de encanamento, sem instalação técnica, sem obras. Chegou, plugou e já funciona. É o principal diferencial em relação às máquinas de gelo de embutir, que exigem instalação hidráulica.
+              </div>
+            </details>
+
+            <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden">
+              <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 list-none">
+                Como limpar a máquina de gelo portátil?
+                <svg class="w-5 h-5 text-slate-400 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 pb-5 text-slate-600 text-sm leading-relaxed">
+                Para os modelos sem autolimpeza, o processo é simples: adicione uma mistura de água e vinagre branco em partes iguais no reservatório, ligue o aparelho e deixe produzir alguns ciclos de gelo com essa mistura (descarte esses cubos). Depois repita o processo com água limpa para remover o residual de vinagre. Faça isso uma vez por mês. O Philco PMG12b tem autolimpeza integrada, que automatiza esse processo.
+              </div>
+            </details>
+
+          </div>
+        </div>
+
+        <!-- Schema FAQ -->
+        <script type="application/ld+json" set:html={JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Em quanto tempo a máquina de gelo produz os primeiros cubos?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depende do modelo e da temperatura ambiente. Os modelos desta lista produzem os primeiros cubos em 6 a 13 minutos. O Mondial MG-12-GI é o mais rápido com 6 minutos. É muito mais rápido que o freezer convencional que leva 2 a 4 horas."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "O gelo da máquina portátil é igual ao do freezer?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Não. O gelo das máquinas portáteis é oco por dentro, o que faz com que derreta um pouco mais rápido. Para bebidas no dia a dia e eventos funciona perfeitamente. Para guardar horas em cooler, o gelo sólido do freezer dura mais."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "A máquina de gelo portátil precisa de instalação especial?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Não. É totalmente autônoma: basta uma tomada elétrica e água para abastecer o reservatório manualmente. Sem encanamento, sem instalação técnica, sem obras. Chegou, plugou e já funciona."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Como limpar a máquina de gelo portátil?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Para modelos sem autolimpeza: adicione água e vinagre branco em partes iguais no reservatório, faça alguns ciclos com essa mistura e descarte o gelo. Repita com água limpa. Faça isso mensalmente. O Philco PMG12b tem autolimpeza integrada que automatiza o processo."
               }
             }
           ]

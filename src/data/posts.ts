@@ -174,6 +174,16 @@ export const posts: Post[] = [
     categoriaLabel: 'Rankings e Listas',
     categoriaColor: 'bg-green-100 text-green-700',
   },
+  {
+    slug: 'maquina-de-gelo-portatil',
+    titulo: 'Máquina de Gelo Portátil: Vale a Pena Ter em Casa? Veja os Melhores Modelos de 2026',
+    resumo: 'Gelo em 6 minutos sem freezer. Comparamos os 4 melhores modelos portáteis de 2026 com fichas técnicas.',
+    tempo: '9 min de leitura',
+    imagem: '/images/maquina-gelo/capa-maquina-gelo.jpg',
+    categoria: 'rankings-e-listas',
+    categoriaLabel: 'Rankings e Listas',
+    categoriaColor: 'bg-green-100 text-green-700',
+  },
 ];
 
 export function getPostsByCategoria(categoriaSlug: string): Post[] {
