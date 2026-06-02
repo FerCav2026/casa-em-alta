@@ -154,6 +154,16 @@ export const posts: Post[] = [
     categoriaLabel: 'Rankings e Listas',
     categoriaColor: 'bg-green-100 text-green-700',
   },
+  {
+    slug: 'vaporizador-de-roupas-portatil',
+    titulo: 'Vaporizador de Roupas Portátil: os Melhores para Comprar em 2026',
+    resumo: 'Os 4 melhores vaporizadores de roupas portáteis de 2026 com fichas técnicas, prós e contras.',
+    tempo: '8 min de leitura',
+    imagem: '/images/vaporizador/capa-vaporizador.jpg',
+    categoria: 'rankings-e-listas',
+    categoriaLabel: 'Rankings e Listas',
+    categoriaColor: 'bg-green-100 text-green-700',
+  },
 ];
 
 export function getPostsByCategoria(categoriaSlug: string): Post[] {

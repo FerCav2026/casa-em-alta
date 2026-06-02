@@ -73,6 +73,13 @@ const posts: Record<string, { titulo: string; descricao: string; categoria: stri
     dataCriacao: '2026-06-02',
     dataModificacao: '2026-06-02',
   },
+  'vaporizador-de-roupas-portatil': {
+    titulo: 'Vaporizador de Roupas Portátil: os Melhores para Comprar em 2026',
+    descricao: 'Os 4 melhores vaporizadores de roupas portáteis de 2026. Fichas técnicas, prós, contras e comparativo para decidir qual comprar.',
+    categoria: 'Ranking',
+    dataCriacao: '2026-06-04',
+    dataModificacao: '2026-06-04',
+  },
 };
 
 export function getStaticPaths() {
@@ -87,6 +94,7 @@ export function getStaticPaths() {
     'purificador-agua-vale-pena': {},
     'kit-organizacao-cozinha': {},
     'melhor-multiprocessador-de-alimentos': {},
+    'vaporizador-de-roupas-portatil': {},
   }).map((slug) => ({ params: { slug } }));
 }
 
@@ -129,6 +137,7 @@ const isFrigideira = slug === 'como-escolher-frigideira';
 const isPurificador = slug === 'purificador-agua-vale-pena';
 const isKitCozinha = slug === 'kit-organizacao-cozinha';
 const isMultiprocessador = slug === 'melhor-multiprocessador-de-alimentos';
+const isVaporizador = slug === 'vaporizador-de-roupas-portatil';
 
 const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
   : isAirfryer ? '/images/airfryer/capa-airfryer.png'
@@ -140,6 +149,7 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
   : isPurificador ? '/images/purificador/capa-purificador.png'
   : isKitCozinha ? '/images/kit-cozinha/capa-kit-cozinha.png'
   : isMultiprocessador ? '/images/multiprocessador/capa-multiprocessador.jpg'
+  : isVaporizador ? '/images/vaporizador/capa-vaporizador.jpg'
   : undefined;
 ---
 
@@ -4854,6 +4864,458 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
             }
           ]
         })}></script>
+
+      </div>
+    )}
+
+    {isVaporizador && (
+      <div>
+
+        <!-- Capa do artigo -->
+        <div class="rounded-2xl overflow-hidden mb-8 shadow-md">
+          <img src="/images/vaporizador/capa-vaporizador.jpg" alt="Vaporizador de roupas portátil sobre superfície branca com roupas penduradas ao fundo" class="w-full h-auto object-cover" loading="eager" />
+        </div>
+
+        <!-- Introdução -->
+        <div class="bg-orange-50 border border-orange-100 rounded-2xl p-6 mb-8">
+          <p class="text-slate-800 text-base leading-relaxed mb-3">O vaporizador de roupas portátil é um daqueles produtos que, quando você experimenta, fica com raiva de não ter comprado antes. Nada de tábua de passar, nada de esperar o ferro aquecer. Você pendura a peça no cabide e passa o aparelho por cima. Pronto. Em dois minutos a roupa está pronta para usar.</p>
+          <p class="text-slate-800 text-base leading-relaxed mb-3">O problema é que o mercado está cheio de opções e boa parte delas decepciona na hora H. Alguns demoram demais para aquecer, outros têm reservatório tão pequeno que você precisa reabastecer no meio do serviço. E tem os que simplesmente não conseguem tirar um vinco decente de um tecido mais encorpado.</p>
+          <p class="text-slate-800 text-base leading-relaxed">Pesquisamos e testamos os modelos mais vendidos do Brasil para montar essa lista. Aqui você encontra os quatro melhores vaporizadores de roupas portáteis para comprar em 2026, com ficha técnica completa, prós, contras e uma comparação direta para facilitar sua decisão.</p>
+        </div>
+
+        <!-- Índice -->
+        <nav class="bg-white border border-slate-200 rounded-xl px-5 py-4 mb-10">
+          <p class="text-slate-800 font-bold text-sm mb-3">Neste artigo:</p>
+          <ul class="space-y-1.5">
+            <li><a href="#oque-e" class="text-orange-600 hover:text-orange-700 text-sm font-medium">O que é um vaporizador de roupas portátil e para que serve</a></li>
+            <li><a href="#melhores" class="text-orange-600 hover:text-orange-700 text-sm font-medium">Os melhores vaporizadores portáteis de 2026</a></li>
+            <li><a href="#comparativo" class="text-orange-600 hover:text-orange-700 text-sm font-medium">Comparativo rápido: qual comprar</a></li>
+            <li><a href="#considerar" class="text-orange-600 hover:text-orange-700 text-sm font-medium">O que considerar antes de comprar</a></li>
+            <li><a href="#faq" class="text-orange-600 hover:text-orange-700 text-sm font-medium">Perguntas frequentes</a></li>
+          </ul>
+        </nav>
+
+        <!-- O que é -->
+        <div id="oque-e" class="mb-10">
+          <h2 class="text-2xl font-bold text-slate-800 mb-4">O que é um vaporizador de roupas portátil e para que serve?</h2>
+          <p class="text-slate-700 leading-relaxed mb-4">Um vaporizador de roupas portátil é um aparelho elétrico que aquece água até gerar vapor e libera esse vapor diretamente sobre o tecido. O calor úmido relaxa as fibras da roupa e desfaz os vincos sem precisar de tábua nem de contato direto com uma superfície quente.</p>
+          <p class="text-slate-700 leading-relaxed mb-4">O funcionamento é simples. Você abastece o reservatório com água, espera o aparelho aquecer (entre 25 e 40 segundos na maioria dos modelos), e passa o bocal pela peça com movimentos de cima para baixo enquanto ela está pendurada no cabide. O vapor sai contínuo e vai relaxando o tecido conforme você avança.</p>
+          <p class="text-slate-700 leading-relaxed mb-4">Ele funciona muito bem para retoques rápidos em roupas amassadas, tecidos delicados como seda, viscose e linho que não toleram ferro quente, cortinas e capas de sofá, e até para eliminar odores do dia a dia sem precisar lavar a peça inteira.</p>
+
+          <div class="bg-slate-50 border border-slate-200 rounded-xl p-5 mb-4">
+            <p class="font-bold text-slate-800 mb-2">Vaporizador portátil x ferro de passar: qual a diferença?</p>
+            <p class="text-slate-700 text-sm leading-relaxed">O ferro convencional pressiona o tecido com superfície quente. Funciona muito bem para vincos fortes em algodão e linho, mas exige tábua e atenção para não queimar. O vaporizador usa apenas calor úmido, sem contato direto, o que o torna mais seguro para tecidos sensíveis e muito mais prático para retoques rápidos. Para quem passa roupas todo dia em quantidade, o ferro ainda é mais eficiente em vincos teimosos. Para uso diário esporádico e tecidos delicados, o vaporizador ganha fácil.</p>
+          </div>
+
+          <p class="text-slate-700 leading-relaxed">A principal limitação do vaporizador portátil é a capacidade do reservatório. Os portáteis têm entre 120 ml e 260 ml de água, o que dá de 10 a 20 minutos de uso contínuo dependendo do modelo. Para uma peça ou duas, é mais do que suficiente.</p>
+        </div>
+
+        <!-- Título melhores -->
+        <div id="melhores" class="mb-4">
+          <h2 class="text-2xl font-bold text-slate-800 mb-6">Os melhores vaporizadores de roupas portáteis de 2026</h2>
+        </div>
+
+        <!-- Produto 1: Black+Decker BDV3000 -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-orange-500 px-6 py-4">
+            <p class="text-white font-black text-xl">1° lugar - Black+Decker BDV3000</p>
+            <p class="text-orange-100 text-sm mt-1">O mais completo: vaporiza, passa a seco e a vapor em um único aparelho bivolt</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 min-h-32">
+              <img src="/images/vaporizador/black-decker-bdv3000.jpg" alt="Vaporizador Black+Decker BDV3000 3 em 1" class="w-full h-auto object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <a href="https://amzn.to/4e2YV5G" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">
+                Conferir preço na Amazon
+              </a>
+              <h3 class="font-bold text-slate-800 mb-3">Ficha Técnica</h3>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Potência:</strong> 900 W</li>
+                <li><strong>Capacidade do reservatório:</strong> 200 ml (removível)</li>
+                <li><strong>Voltagem:</strong> Bivolt automático (127V/220V)</li>
+                <li><strong>Vapor contínuo:</strong> 14 a 17 g/min</li>
+                <li><strong>Função:</strong> 3 em 1: vaporizar, passar a seco e a vapor</li>
+                <li><strong>Tempo de aquecimento:</strong> 40 segundos</li>
+                <li><strong>Acessórios:</strong> escova para pelos e escova para tecidos delicados</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Bivolt automático: funciona em qualquer tomada</li>
+                    <li>Único da lista com função de passar a seco</li>
+                    <li>Reservatório removível facilita o abastecimento</li>
+                    <li>Sistema antigotejamento evita manchas no tecido</li>
+                    <li>Vem com dois acessórios inclusos</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Preço um pouco acima dos concorrentes diretos</li>
+                    <li>Sem controle de intensidade de vapor</li>
+                    <li>Alguns usuários relatam gotejamento após longo período parado</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 2: Philips Walita STH3020 -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-slate-800 px-6 py-4">
+            <p class="text-white font-black text-xl">2° lugar - Philips Walita STH3020</p>
+            <p class="text-slate-300 text-sm mt-1">O mais potente: 1.000 W e 20 g/min de vapor para quem quer resultado rápido</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 min-h-32">
+              <img src="/images/vaporizador/philips-walita-sth3020.jpg" alt="Vaporizador Philips Walita STH3020 branco" class="w-full h-auto object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <a href="https://amzn.to/4uNUCT1" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">
+                Conferir preço na Amazon
+              </a>
+              <h3 class="font-bold text-slate-800 mb-3">Ficha Técnica</h3>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Potência:</strong> 1.000 W</li>
+                <li><strong>Capacidade do reservatório:</strong> 120 ml</li>
+                <li><strong>Voltagem:</strong> 110V ou 220V (versões separadas)</li>
+                <li><strong>Vapor contínuo:</strong> até 20 g/min</li>
+                <li><strong>Tempo de aquecimento:</strong> 30 segundos</li>
+                <li><strong>Peso:</strong> 0,85 kg</li>
+                <li><strong>Garantia:</strong> 2 anos</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Vapor mais intenso da lista: tira vincos com menos passadas</li>
+                    <li>Marca com histórico sólido de qualidade no Brasil</li>
+                    <li>2 anos de garantia, acima da média do mercado</li>
+                    <li>Leve e dobrável, ideal para levar na mala</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Reservatório menor da lista: 120 ml esgota rápido</li>
+                    <li>Não é bivolt: verificar voltagem antes de comprar</li>
+                    <li>Sem acessórios inclusos</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Leia também 1 -->
+        <div style="margin:32px 0;font-family:sans-serif;">
+          <p style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#1e5c2e;margin:0 0 12px;">Leia também:</p>
+          <a href="/posts/como-escolher-frigideira" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;min-width:200px;overflow:hidden;">
+              <img src="/images/frigideira/capa-frigideira.png" alt="Como escolher a frigideira certa para cada tipo de fogão" style="width:100%;height:100%;object-fit:cover;display:block;" />
+            </div>
+            <div style="padding:20px 22px;display:flex;align-items:center;">
+              <p style="margin:0;font-size:15px;font-weight:500;line-height:1.5;color:#1a1a1a;">Como Escolher a Frigideira Certa para Cada Tipo de Fogão</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Produto 3: Mallory Orion -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-slate-700 px-6 py-4">
+            <p class="text-white font-black text-xl">3° lugar - Mallory Orion</p>
+            <p class="text-slate-300 text-sm mt-1">Melhor custo-benefício: 1.200 W e reservatório de 220 ml por menos de R$ 170</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 min-h-32">
+              <img src="/images/vaporizador/mallory-orion.jpg" alt="Vaporizador Mallory Orion grafite" class="w-full h-auto object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <a href="https://amzn.to/4x3URKT" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">
+                Conferir preço na Amazon
+              </a>
+              <h3 class="font-bold text-slate-800 mb-3">Ficha Técnica</h3>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Potência:</strong> 1.200 W</li>
+                <li><strong>Capacidade do reservatório:</strong> 220 ml</li>
+                <li><strong>Voltagem:</strong> 127V ou 220V (versões separadas)</li>
+                <li><strong>Temperatura máxima:</strong> 140°C</li>
+                <li><strong>Peso:</strong> 0,66 kg</li>
+                <li><strong>Acessórios:</strong> escova para remoção de pelos incluída</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>1.200 W de potência por um preço acessível</li>
+                    <li>Reservatório de 220 ml é um dos maiores entre os portáteis</li>
+                    <li>O mais leve da lista: 0,66 kg</li>
+                    <li>Escova para pelos inclusa, útil para quem tem pet</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Não é bivolt: atenção à voltagem</li>
+                    <li>Marca com menos presença no mercado que Philips e Black+Decker</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 4: Mondial Fast Steam -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-slate-600 px-6 py-4">
+            <p class="text-white font-black text-xl">4° lugar - Mondial Fast Steam</p>
+            <p class="text-slate-300 text-sm mt-1">Porta de entrada perfeita: reservatório de 260 ml e cabo com giro de 360°</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 min-h-32">
+              <img src="/images/vaporizador/mondial-fast-steam.jpg" alt="Vaporizador Mondial Fast Steam branco e azul" class="w-full h-auto object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <a href="https://amzn.to/3S1Ta0B" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">
+                Conferir preço na Amazon
+              </a>
+              <h3 class="font-bold text-slate-800 mb-3">Ficha Técnica</h3>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Potência:</strong> 1.270 W (127V)</li>
+                <li><strong>Capacidade do reservatório:</strong> 260 ml (removível e transparente)</li>
+                <li><strong>Voltagem:</strong> 110V (verificar versão 220V)</li>
+                <li><strong>Tempo de aquecimento:</strong> 30 segundos</li>
+                <li><strong>Peso:</strong> 0,79 kg</li>
+                <li><strong>Cabo:</strong> com giro de 360°</li>
+                <li><strong>Bocal:</strong> aço inox</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Reservatório de 260 ml: o maior da lista</li>
+                    <li>Cabo com giro de 360° elimina o fio torcido</li>
+                    <li>Reservatório transparente para ver o nível da água</li>
+                    <li>Bocal em aço inox com grande área de saída</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Não é bivolt</li>
+                    <li>Sem função de passar a seco</li>
+                    <li>Design um pouco maior que os demais</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Leia também 2 -->
+        <div style="margin:32px 0;font-family:sans-serif;">
+          <p style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#1e5c2e;margin:0 0 12px;">Leia também:</p>
+          <a href="/posts/purificador-agua-vale-pena" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;min-width:200px;overflow:hidden;">
+              <img src="/images/purificador/capa-purificador.png" alt="Purificador de água: vale a pena?" style="width:100%;height:100%;object-fit:cover;display:block;" />
+            </div>
+            <div style="padding:20px 22px;display:flex;align-items:center;">
+              <p style="margin:0;font-size:15px;font-weight:500;line-height:1.5;color:#1a1a1a;">Purificador de Água Realmente Vale a Pena? Testamos 4 Modelos</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Comparativo -->
+        <div id="comparativo" class="mb-10">
+          <h2 class="text-2xl font-bold text-slate-800 mb-6">Qual vaporizador comprar: resumo para decidir rápido</h2>
+          <div class="space-y-4">
+            <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+              <p class="font-bold text-slate-800 mb-1">Quer o mais completo e viaja muito?</p>
+              <p class="text-slate-700 text-sm leading-relaxed">Black+Decker BDV3000. O bivolt automático e a função 3 em 1 fazem dele a melhor escolha para quem quer versatilidade. Funciona em qualquer tomada do Brasil, vaporiza, passa a seco e passa a vapor. Melhor escolha geral.</p>
+            </div>
+            <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+              <p class="font-bold text-slate-800 mb-1">Quer o vapor mais potente da lista?</p>
+              <p class="text-slate-700 text-sm leading-relaxed">Philips Walita STH3020. Com 20 g/min de vapor contínuo, ele tira vincos mais rápido que os demais. Marca confiável com 2 anos de garantia. O reservatório de 120 ml é menor, mas suficiente para duas a três peças por vez.</p>
+            </div>
+            <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+              <p class="font-bold text-slate-800 mb-1">Quer potência alta gastando menos e tem pet?</p>
+              <p class="text-slate-700 text-sm leading-relaxed">Mallory Orion. Por cerca de R$ 168, entrega 1.200 W, reservatório de 220 ml e escova para pelos. O mais leve da lista com 0,66 kg. Melhor custo-benefício para quem quer desempenho sem gastar muito.</p>
+            </div>
+            <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+              <p class="font-bold text-slate-800 mb-1">É o primeiro vaporizador e quer gastar menos?</p>
+              <p class="text-slate-700 text-sm leading-relaxed">Mondial Fast Steam. Menor preço da lista, maior reservatório (260 ml) e cabo com giro de 360°. Uma boa porta de entrada para quem ainda não sabe se vai usar o vaporizador com frequência.</p>
+            </div>
+          </div>
+
+          <div class="overflow-x-auto mt-6">
+            <table class="w-full text-sm text-left border border-slate-200 rounded-xl overflow-hidden">
+              <thead class="bg-slate-100 text-slate-700">
+                <tr>
+                  <th class="px-4 py-3 font-bold">Modelo</th>
+                  <th class="px-4 py-3 font-bold">Potência</th>
+                  <th class="px-4 py-3 font-bold">Reservatório</th>
+                  <th class="px-4 py-3 font-bold">Bivolt</th>
+                  <th class="px-4 py-3 font-bold">Preço</th>
+                </tr>
+              </thead>
+              <tbody class="text-slate-600">
+                <tr class="border-t border-slate-200 bg-white">
+                  <td class="px-4 py-3 font-medium">Black+Decker BDV3000</td>
+                  <td class="px-4 py-3">900 W</td>
+                  <td class="px-4 py-3">200 ml</td>
+                  <td class="px-4 py-3 text-green-600 font-semibold">Sim</td>
+                  <td class="px-4 py-3">~R$ 245</td>
+                </tr>
+                <tr class="border-t border-slate-200 bg-slate-50">
+                  <td class="px-4 py-3 font-medium">Philips Walita STH3020</td>
+                  <td class="px-4 py-3">1.000 W</td>
+                  <td class="px-4 py-3">120 ml</td>
+                  <td class="px-4 py-3 text-red-500 font-semibold">Não</td>
+                  <td class="px-4 py-3">~R$ 219</td>
+                </tr>
+                <tr class="border-t border-slate-200 bg-white">
+                  <td class="px-4 py-3 font-medium">Mallory Orion</td>
+                  <td class="px-4 py-3">1.200 W</td>
+                  <td class="px-4 py-3">220 ml</td>
+                  <td class="px-4 py-3 text-red-500 font-semibold">Não</td>
+                  <td class="px-4 py-3">~R$ 168</td>
+                </tr>
+                <tr class="border-t border-slate-200 bg-slate-50">
+                  <td class="px-4 py-3 font-medium">Mondial Fast Steam</td>
+                  <td class="px-4 py-3">1.270 W</td>
+                  <td class="px-4 py-3">260 ml</td>
+                  <td class="px-4 py-3 text-red-500 font-semibold">Não</td>
+                  <td class="px-4 py-3">~R$ 159</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- O que considerar -->
+        <div id="considerar" class="mb-10">
+          <h2 class="text-2xl font-bold text-slate-800 mb-4">O que considerar antes de comprar um vaporizador de roupas portátil</h2>
+          <div class="space-y-4">
+            <div class="bg-white border border-slate-200 rounded-xl p-5">
+              <p class="font-bold text-slate-800 mb-2">Potência (W): quanto mais, mais rápido</p>
+              <p class="text-slate-700 text-sm leading-relaxed">A potência determina a quantidade de vapor e a velocidade com que o aparelho aquece. Modelos com 1.000 W ou mais tiram vincos mais rápido e funcionam melhor em tecidos mais encorpados. Para tecidos delicados, mesmo 900 W é suficiente. Abaixo de 800 W o vapor costuma ser insuficiente para vincos profundos.</p>
+            </div>
+            <div class="bg-white border border-slate-200 rounded-xl p-5">
+              <p class="font-bold text-slate-800 mb-2">Capacidade do reservatório: pense em quantas peças você vai passar</p>
+              <p class="text-slate-700 text-sm leading-relaxed">Reservatórios de 120 ml a 200 ml duram de 10 a 15 minutos de uso contínuo, suficientes para duas a quatro peças. Acima de 200 ml você passa mais roupas sem interrupção. Se vai usar para retoques rápidos, 120 ml já resolve.</p>
+            </div>
+            <div class="bg-white border border-slate-200 rounded-xl p-5">
+              <p class="font-bold text-slate-800 mb-2">Bivolt ou não: verifique antes de comprar</p>
+              <p class="text-slate-700 text-sm leading-relaxed">Dos quatro modelos desta lista, apenas o Black+Decker BDV3000 é bivolt automático. Os demais vêm em versões separadas de 127V e 220V. Confirme a voltagem da sua casa antes de comprar. Para quem viaja muito entre estados ou mora em imóvel com instalação mista, o bivolt vale o preço a mais.</p>
+            </div>
+            <div class="bg-white border border-slate-200 rounded-xl p-5">
+              <p class="font-bold text-slate-800 mb-2">Manutenção: como fazer o vaporizador durar mais</p>
+              <p class="text-slate-700 text-sm leading-relaxed">Use água filtrada em vez de água direto da torneira. Esvazie o reservatório após cada uso sem deixar água parada. Uma vez por mês, faça a descalcificação com solução de água e vinagre em partes iguais: enche o reservatório com a mistura, liga o aparelho e deixa vaporizar até esgotar. Isso dissolve o calcário antes que ele entupa as saídas de vapor.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ -->
+        <div id="faq" class="mb-10">
+          <h2 class="text-2xl font-bold text-slate-800 mb-6">Perguntas frequentes sobre vaporizador de roupas portátil</h2>
+          <div class="space-y-4">
+
+            <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden">
+              <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 list-none">
+                O vaporizador portátil substitui o ferro de passar?
+                <svg class="w-5 h-5 text-slate-400 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 pb-5 text-slate-600 text-sm leading-relaxed">
+                Para a maioria das roupas do dia a dia, sim. O vaporizador tira vincos de camisas, blusas, vestidos e calças com praticidade e sem tábua. A exceção são peças que exigem dobras precisas e vincos definidos, como camisas sociais de algodão encorpado ou calças com vinco marcado, onde o ferro convencional ainda é mais eficiente.
+              </div>
+            </details>
+
+            <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden">
+              <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 list-none">
+                Pode usar o vaporizador em qualquer tecido?
+                <svg class="w-5 h-5 text-slate-400 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 pb-5 text-slate-600 text-sm leading-relaxed">
+                A grande maioria dos tecidos aceita vapor: algodão, linho, viscose, poliéster, modal, seda e musselina. A única restrição são tecidos com acabamento de couro ou alguns sintéticos com revestimento especial. Em caso de dúvida, teste em uma parte escondida da peça antes de passar no local visível.
+              </div>
+            </details>
+
+            <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden">
+              <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 list-none">
+                Qual água usar no vaporizador?
+                <svg class="w-5 h-5 text-slate-400 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 pb-5 text-slate-600 text-sm leading-relaxed">
+                Água filtrada é a melhor opção para uso diário. Água destilada é ainda melhor porque tem zero minerais e praticamente não forma calcário. Evite água direto da torneira sem filtrar e nunca use água com amaciante ou perfume no reservatório: isso danifica os componentes internos.
+              </div>
+            </details>
+
+            <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden">
+              <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 list-none">
+                O vaporizador realmente higieniza as roupas?
+                <svg class="w-5 h-5 text-slate-400 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 pb-5 text-slate-600 text-sm leading-relaxed">
+                Sim, parcialmente. O vapor a alta temperatura elimina bactérias e ácaros na superfície do tecido e reduz odores impregnados nas fibras. Não substitui a lavagem quando a roupa está realmente suja, mas funciona bem para refrescar peças usadas por poucas horas, como blazers e calças que raramente vão à máquina.
+              </div>
+            </details>
+
+            <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden">
+              <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 list-none">
+                Vale a pena levar o vaporizador em viagens?
+                <svg class="w-5 h-5 text-slate-400 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 pb-5 text-slate-600 text-sm leading-relaxed">
+                Vale muito, especialmente em viagens de trabalho. Os modelos portáteis pesam menos de 1 kg e cabem em malas de mão. Se o modelo for bivolt, funciona em qualquer lugar do Brasil sem adaptador. Esvazie sempre o reservatório completamente antes de guardar na mala para evitar vazamento durante o transporte.
+              </div>
+            </details>
+
+          </div>
+        </div>
+
+        <!-- Schema FAQ -->
+        <script type="application/ld+json" set:html={JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "O vaporizador portátil substitui o ferro de passar?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Para a maioria das roupas do dia a dia, sim. O vaporizador tira vincos de camisas, blusas e vestidos sem precisar de tábua. A exceção são peças com vincos definidos como camisas sociais de algodão encorpado, onde o ferro convencional ainda é mais eficiente."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Qual água usar no vaporizador de roupas?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Água filtrada é a melhor opção para uso diário. Água destilada é ainda melhor por ter zero minerais e praticamente não formar calcário. Nunca use água com amaciante ou perfume no reservatório."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Pode usar o vaporizador em qualquer tecido?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A grande maioria aceita vapor: algodão, linho, viscose, poliéster, modal, seda e musselina. A restrição são tecidos com acabamento de couro ou sintéticos com revestimento especial. Teste em parte escondida em caso de dúvida."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Vale a pena levar o vaporizador portátil em viagens?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Vale muito, especialmente em viagens de trabalho. Os portáteis pesam menos de 1 kg, cabem em malas de mão e o bivolt funciona em qualquer tomada. Esvazie o reservatório antes de guardar para evitar vazamento."
+              }
+            }
+          ]
+        })}></script>
+
 
       </div>
     )}
