@@ -164,6 +164,16 @@ export const posts: Post[] = [
     categoriaLabel: 'Rankings e Listas',
     categoriaColor: 'bg-green-100 text-green-700',
   },
+  {
+    slug: 'chaleira-eletrica-com-controle-de-temperatura',
+    titulo: 'Chaleira Elétrica com Controle de Temperatura: a Melhor para Café, Chá e Chimarrão em 2026',
+    resumo: 'Qual chaleira com controle de temperatura comprar? Comparamos 4 modelos para café, chá e chimarrão.',
+    tempo: '7 min de leitura',
+    imagem: '/images/chaleira/capa-chaleira.jpg',
+    categoria: 'rankings-e-listas',
+    categoriaLabel: 'Rankings e Listas',
+    categoriaColor: 'bg-green-100 text-green-700',
+  },
 ];
 
 export function getPostsByCategoria(categoriaSlug: string): Post[] {
