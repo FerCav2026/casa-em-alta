@@ -99,8 +99,9 @@ const blogPostingSchema = {
   '@type': 'BlogPosting',
   headline: post.titulo,
   description: post.descricao,
-  datePublished: post.dataCriacao,
-  dateModified: post.dataModificacao,
+  image: postData?.imagem ? new URL(postData.imagem, Astro.site).href : undefined,
+  datePublished: post.dataCriacao + 'T00:00:00-03:00',
+  dateModified: post.dataModificacao + 'T00:00:00-03:00',
   author: {
     '@type': 'Person',
     name: 'Casa em Alta',
