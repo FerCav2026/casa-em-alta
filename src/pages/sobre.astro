@@ -1,0 +1,61 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Sobre - Casa em Alta"
+  description="Conheça a Claudia Castro, criadora do Casa em Alta e do Indica Casa. Reviews honestos de utilidades domésticas para ajudar você a comprar melhor."
+>
+  <div class="max-w-6xl mx-auto px-4 py-20">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+      <!-- Foto -->
+      <div class="flex justify-center md:justify-end">
+        <div class="relative">
+          <div class="w-72 h-72 rounded-3xl overflow-hidden shadow-xl">
+            <img
+              src="/images/claudia-castro.png"
+              alt="Claudia Castro, criadora do Casa em Alta e do Indica Casa"
+              class="w-full h-full object-cover object-top"
+            />
+          </div>
+          <div class="absolute -bottom-4 -right-4 w-24 h-24 bg-orange-500 rounded-2xl opacity-20 -z-10"></div>
+          <div class="absolute -top-4 -left-4 w-16 h-16 bg-slate-300 rounded-2xl opacity-30 -z-10"></div>
+        </div>
+      </div>
+
+      <!-- Texto -->
+      <div class="flex flex-col gap-5">
+        <div>
+          <h1 class="text-3xl md:text-4xl font-black text-slate-900">Olá, eu sou a Claudia Castro</h1>
+        </div>
+
+        <p class="text-slate-600 leading-relaxed">
+          Sou a criadora de dois blogs sobre casa: o <a href="https://www.indicacasa.com.br" target="_blank" rel="noopener" class="text-orange-500 font-semibold hover:underline">Indica Casa</a>, voltado para quem mora em apartamento alugado e quer um lar bonito sem gastar muito, e o <strong class="text-slate-700">Casa em Alta</strong>, onde reuno reviews honestos de utilidades domésticas para ajudar você a comprar melhor.
+        </p>
+
+        <p class="text-slate-600 leading-relaxed">
+          Tudo começou de forma bem pessoal. Morava num apartamento pequenininho que parecia um depósito: sala apertada, coisas sem lugar, produtos que prometiam muito e entregavam pouco. Com o tempo, aprendi que morar bem não é privilégio de quem tem casa própria ou dinheiro sobrando. É uma questão de saber o que comprar, o que testar e, principalmente, o que evitar.
+        </p>
+
+        <p class="text-slate-600 leading-relaxed">
+          Depois de anos pesquisando, errando e aprendendo, passei a registrar tudo isso. Aqui no Casa em Alta, você encontra apenas o que foi realmente testado. Nada de copiar descrição de loja. Eu uso, avalio e conto o que achei de verdade.
+        </p>
+
+        <div class="flex flex-wrap gap-3 mt-2">
+          <span class="bg-orange-100 text-orange-700 text-sm font-medium px-4 py-2 rounded-full">Reviews honestos</span>
+          <span class="bg-orange-100 text-orange-700 text-sm font-medium px-4 py-2 rounded-full">Dois blogs, uma especialidade</span>
+          <span class="bg-orange-100 text-orange-700 text-sm font-medium px-4 py-2 rounded-full">Sem patrocínio oculto</span>
+        </div>
+
+        <a href="/posts" class="inline-flex items-center gap-2 text-orange-500 hover:text-orange-600 font-semibold transition-colors w-fit">
+          Ver todos os artigos
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</BaseLayout>
