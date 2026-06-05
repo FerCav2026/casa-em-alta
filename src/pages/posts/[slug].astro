@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getPostBySlug } from '../../data/posts';
+import AuthorBio from '../../components/AuthorBio.astro';
 
 const posts: Record<string, { titulo: string; descricao: string; categoria: string; dataCriacao: string; dataModificacao: string }> = {
   'melhores-aspiradores-po-2026': {
@@ -6192,5 +6193,6 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
       </div>
     )}
 
+    <AuthorBio />
   </div>
 </BaseLayout>
