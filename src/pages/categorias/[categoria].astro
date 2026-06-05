@@ -67,13 +67,13 @@ const postsDaCategoria = getPostsByCategoria(categoriaSlug as string);
             </div>
 
             <h2 class="font-bold text-slate-900 text-base leading-snug group-hover:text-orange-500 transition-colors">
-              <a href={`/posts/${post.slug}`}>{post.titulo}</a>
+              <a href={`/${post.slug}`}>{post.titulo}</a>
             </h2>
 
             <p class="text-sm text-slate-500 leading-relaxed flex-1">{post.resumo}</p>
 
             <a
-              href={`/posts/${post.slug}`}
+              href={`/${post.slug}`}
               class="text-sm font-semibold text-orange-500 hover:text-orange-600 flex items-center gap-1 mt-auto transition-colors"
             >
               Ler artigo completo

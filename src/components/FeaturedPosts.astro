@@ -50,7 +50,7 @@ import { posts } from '../data/posts';
 
             <!-- Título -->
             <h3 class="font-bold text-slate-900 text-base leading-snug group-hover:text-orange-500 transition-colors">
-              <a href={`/posts/${post.slug}`}>{post.titulo}</a>
+              <a href={`/${post.slug}`}>{post.titulo}</a>
             </h3>
 
             <!-- Resumo -->
@@ -58,7 +58,7 @@ import { posts } from '../data/posts';
 
             <!-- Link -->
             <a
-              href={`/posts/${post.slug}`}
+              href={`/${post.slug}`}
               class="text-sm font-semibold text-orange-500 hover:text-orange-600 flex items-center gap-1 mt-auto transition-colors"
             >
               Ler artigo completo

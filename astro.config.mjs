@@ -8,4 +8,7 @@ export default defineConfig({
     sitemap(),
   ],
   site: 'https://www.casaemalta.com.br',
+  redirects: {
+    '/posts/[slug]': '/[slug]',
+  },
 });

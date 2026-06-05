@@ -1,7 +1,7 @@
----
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import { getPostBySlug } from '../../data/posts';
-import AuthorBio from '../../components/AuthorBio.astro';
+﻿---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getPostBySlug } from '../data/posts';
+import AuthorBio from '../components/AuthorBio.astro';
 
 const posts: Record<string, { titulo: string; descricao: string; categoria: string; dataCriacao: string; dataModificacao: string }> = {
   'melhores-aspiradores-po-2026': {
@@ -137,10 +137,10 @@ const blogPostingSchema = {
     name: 'Casa em Alta',
     url: Astro.site?.href,
   },
-  url: new URL(`/posts/${slug}`, Astro.site).href,
+  url: new URL(`/\${slug}`, Astro.site).href,
   mainEntityOfPage: {
     '@type': 'WebPage',
-    '@id': new URL(`/posts/${slug}`, Astro.site).href,
+    '@id': new URL(`/\${slug}`, Astro.site).href,
   },
 };
 
@@ -4639,7 +4639,7 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
         <!-- Leia também 1 -->
         <div style="margin:32px 0;font-family:sans-serif;">
           <p style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#1e5c2e;margin:0 0 12px;">Leia também:</p>
-          <a href="/posts/panela-pressao-eletrica-review" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+          <a href="/panela-pressao-eletrica-review" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
             <div style="width:200px;min-width:200px;overflow:hidden;">
               <img src="/images/panela/capa-panela.png" alt="Panela de pressão elétrica: review completo" style="width:100%;height:100%;object-fit:cover;display:block;" />
             </div>
@@ -4739,7 +4739,7 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
         <!-- Leia também 2 -->
         <div style="margin:32px 0;font-family:sans-serif;">
           <p style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#1e5c2e;margin:0 0 12px;">Leia também:</p>
-          <a href="/posts/airfryer-philips-vs-mondial" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+          <a href="/airfryer-philips-vs-mondial" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
             <div style="width:200px;min-width:200px;overflow:hidden;">
               <img src="/images/airfryer/capa-airfryer.png" alt="Airfryer Philips vs Mondial: qual comprar?" style="width:100%;height:100%;object-fit:cover;display:block;" />
             </div>
@@ -5034,7 +5034,7 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
         <!-- Leia também 1 -->
         <div style="margin:32px 0;font-family:sans-serif;">
           <p style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#1e5c2e;margin:0 0 12px;">Leia também:</p>
-          <a href="/posts/como-escolher-frigideira" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+          <a href="/como-escolher-frigideira" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
             <div style="width:200px;min-width:200px;overflow:hidden;">
               <img src="/images/frigideira/capa-frigideira.png" alt="Como escolher a frigideira certa para cada tipo de fogão" style="width:100%;height:100%;object-fit:cover;display:block;" />
             </div>
@@ -5139,7 +5139,7 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
         <!-- Leia também 2 -->
         <div style="margin:32px 0;font-family:sans-serif;">
           <p style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#1e5c2e;margin:0 0 12px;">Leia também:</p>
-          <a href="/posts/purificador-agua-vale-pena" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+          <a href="/purificador-agua-vale-pena" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
             <div style="width:200px;min-width:200px;overflow:hidden;">
               <img src="/images/purificador/capa-purificador.png" alt="Purificador de água: vale a pena?" style="width:100%;height:100%;object-fit:cover;display:block;" />
             </div>
@@ -5517,7 +5517,7 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
         <!-- Leia também 1 -->
         <div style="margin:32px 0;font-family:sans-serif;">
           <p style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#1e5c2e;margin:0 0 12px;">Leia também:</p>
-          <a href="/posts/purificador-agua-vale-pena" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+          <a href="/purificador-agua-vale-pena" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
             <div style="width:200px;min-width:200px;overflow:hidden;">
               <img src="/images/purificador/capa-purificador.png" alt="Purificador de água: vale a pena?" style="width:100%;height:100%;object-fit:cover;display:block;" />
             </div>
@@ -5627,7 +5627,7 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
         <!-- Leia também 2 -->
         <div style="margin:32px 0;font-family:sans-serif;">
           <p style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#1e5c2e;margin:0 0 12px;">Leia também:</p>
-          <a href="/posts/panela-pressao-eletrica-review" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+          <a href="/panela-pressao-eletrica-review" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
             <div style="width:200px;min-width:200px;overflow:hidden;">
               <img src="/images/panela/capa-panela.png" alt="Panela de pressão elétrica review" style="width:100%;height:100%;object-fit:cover;display:block;" />
             </div>
@@ -5919,7 +5919,7 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
         <!-- Leia também 1 -->
         <div style="margin:32px 0;font-family:sans-serif;">
           <p style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#1e5c2e;margin:0 0 12px;">Leia também:</p>
-          <a href="/posts/itens-casa-30-reais-amazon" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+          <a href="/itens-casa-30-reais-amazon" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
             <div style="width:200px;min-width:200px;overflow:hidden;">
               <img src="/images/itens30/capa-itens30.png" alt="14 itens incríveis para casa por até R$ 30 na Amazon" style="width:100%;height:100%;object-fit:cover;display:block;" />
             </div>
@@ -6028,7 +6028,7 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
         <!-- Leia também 2 -->
         <div style="margin:32px 0;font-family:sans-serif;">
           <p style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#1e5c2e;margin:0 0 12px;">Leia também:</p>
-          <a href="/posts/kit-organizacao-cozinha" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+          <a href="/kit-organizacao-cozinha" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
             <div style="width:200px;min-width:200px;overflow:hidden;">
               <img src="/images/kit-cozinha/capa-kit-cozinha.png" alt="Kit de organização de cozinha" style="width:100%;height:100%;object-fit:cover;display:block;" />
             </div>
