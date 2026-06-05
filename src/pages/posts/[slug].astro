@@ -73,6 +73,20 @@ const posts: Record<string, { titulo: string; descricao: string; categoria: stri
     dataCriacao: '2026-06-02',
     dataModificacao: '2026-06-02',
   },
+  'maquina-de-gelo-portatil': {
+    titulo: 'Máquina de Gelo Portátil: Vale a Pena Ter em Casa? Veja os Melhores Modelos de 2026',
+    descricao: 'Os 4 melhores modelos de máquina de gelo portátil de 2026. Vale a pena? Compare produção, tempo de gelo e preço.',
+    categoria: 'Ranking',
+    dataCriacao: '2026-06-08',
+    dataModificacao: '2026-06-08',
+  },
+  'chaleira-eletrica-com-controle-de-temperatura': {
+    titulo: 'Chaleira Elétrica com Controle de Temperatura: a Melhor para Café, Chá e Chimarrão em 2026',
+    descricao: 'Qual chaleira com controle de temperatura comprar? Comparamos 4 modelos da Amazon para café coado, chá e chimarrão.',
+    categoria: 'Ranking',
+    dataCriacao: '2026-06-05',
+    dataModificacao: '2026-06-05',
+  },
   'vaporizador-de-roupas-portatil': {
     titulo: 'Vaporizador de Roupas Portátil: os Melhores para Comprar em 2026',
     descricao: 'Os 4 melhores vaporizadores de roupas portáteis de 2026. Fichas técnicas, prós, contras e comparativo para decidir qual comprar.',
@@ -94,6 +108,8 @@ export function getStaticPaths() {
     'purificador-agua-vale-pena': {},
     'kit-organizacao-cozinha': {},
     'melhor-multiprocessador-de-alimentos': {},
+    'maquina-de-gelo-portatil': {},
+    'chaleira-eletrica-com-controle-de-temperatura': {},
     'vaporizador-de-roupas-portatil': {},
   }).map((slug) => ({ params: { slug } }));
 }
@@ -137,6 +153,8 @@ const isFrigideira = slug === 'como-escolher-frigideira';
 const isPurificador = slug === 'purificador-agua-vale-pena';
 const isKitCozinha = slug === 'kit-organizacao-cozinha';
 const isMultiprocessador = slug === 'melhor-multiprocessador-de-alimentos';
+const isMaquinaGelo = slug === 'maquina-de-gelo-portatil';
+const isChaleira = slug === 'chaleira-eletrica-com-controle-de-temperatura';
 const isVaporizador = slug === 'vaporizador-de-roupas-portatil';
 
 const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
@@ -149,6 +167,8 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
   : isPurificador ? '/images/purificador/capa-purificador.png'
   : isKitCozinha ? '/images/kit-cozinha/capa-kit-cozinha.png'
   : isMultiprocessador ? '/images/multiprocessador/capa-multiprocessador.jpg'
+  : isMaquinaGelo ? '/images/maquina-gelo/capa-maquina-gelo.jpg'
+  : isChaleira ? '/images/chaleira/capa-chaleira.jpg'
   : isVaporizador ? '/images/vaporizador/capa-vaporizador.jpg'
   : undefined;
 ---
@@ -5311,6 +5331,858 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
               "acceptedAnswer": {
                 "@type": "Answer",
                 "text": "Vale muito, especialmente em viagens de trabalho. Os portáteis pesam menos de 1 kg, cabem em malas de mão e o bivolt funciona em qualquer tomada. Esvazie o reservatório antes de guardar para evitar vazamento."
+              }
+            }
+          ]
+        })}></script>
+
+
+      </div>
+    )}
+
+    {isChaleira && (
+      <div>
+
+        <!-- Capa do artigo -->
+        <div class="rounded-2xl overflow-hidden mb-8 shadow-md">
+          <img src="/images/chaleira/capa-chaleira.jpg" alt="Chaleira elétrica com controle de temperatura sobre bancada de cozinha moderna" class="w-full h-auto object-cover" loading="eager" />
+        </div>
+
+        <!-- Introdução -->
+        <div class="bg-orange-50 border border-orange-100 rounded-2xl p-6 mb-8">
+          <p class="text-slate-800 text-base leading-relaxed mb-3">Quem toma café, chá ou chimarrão todo dia já sabe: a temperatura da água faz toda a diferença no sabor. Água fervendo em contato com o pó de café queima os óleos essenciais e deixa a bebida amarga. A mesma coisa acontece com o chá verde e com o chimarrão, que ficam adstringentes quando a água está quente demais.</p>
+          <p class="text-slate-800 text-base leading-relaxed mb-3">A chaleira elétrica com controle de temperatura resolve esse problema de um jeito prático. Você escolhe a temperatura exata, espera atingir e serve. Sem termômetro, sem misturar água fria, sem adivinhar.</p>
+          <p class="text-slate-800 text-base leading-relaxed">Selecionamos os quatro melhores modelos do mercado brasileiro em 2026, com fichas técnicas completas, pontos positivos, negativos e um guia para você escolher o modelo certo para o seu tipo de bebida.</p>
+        </div>
+
+        <!-- Índice -->
+        <nav class="bg-white border border-slate-200 rounded-xl px-5 py-4 mb-10">
+          <p class="text-slate-800 font-bold text-sm mb-3">Neste artigo:</p>
+          <ul class="space-y-1.5">
+            <li><a href="#por-que" class="text-orange-600 hover:text-orange-700 text-sm font-medium">Por que a temperatura importa no café, chá e chimarrão</a></li>
+            <li><a href="#melhores" class="text-orange-600 hover:text-orange-700 text-sm font-medium">As melhores chaleiras com controle de temperatura de 2026</a></li>
+            <li><a href="#comparativo" class="text-orange-600 hover:text-orange-700 text-sm font-medium">Qual chaleira para cada bebida</a></li>
+            <li><a href="#considerar" class="text-orange-600 hover:text-orange-700 text-sm font-medium">O que considerar antes de comprar</a></li>
+            <li><a href="#faq" class="text-orange-600 hover:text-orange-700 text-sm font-medium">Perguntas frequentes</a></li>
+          </ul>
+        </nav>
+
+        <!-- Por que a temperatura importa -->
+        <div id="por-que" class="mb-10">
+          <h2 class="text-2xl font-bold text-slate-800 mb-4">Por que a temperatura da água faz diferença no café, chá e chimarrão?</h2>
+          <p class="text-slate-700 leading-relaxed mb-4">Cada bebida tem uma faixa de temperatura ideal. Usar água fora dessa faixa não é capricho de barista: é o que separa uma bebida gostosa de uma decepcionante.</p>
+
+          <div class="overflow-x-auto mb-6">
+            <table class="w-full text-sm text-left border border-slate-200 rounded-xl overflow-hidden">
+              <thead class="bg-slate-100 text-slate-700">
+                <tr>
+                  <th class="px-4 py-3 font-bold">Bebida</th>
+                  <th class="px-4 py-3 font-bold">Temperatura ideal</th>
+                  <th class="px-4 py-3 font-bold">Por que importa</th>
+                </tr>
+              </thead>
+              <tbody class="text-slate-600">
+                <tr class="border-t border-slate-200 bg-white">
+                  <td class="px-4 py-3 font-medium">Café coado / pour over</td>
+                  <td class="px-4 py-3">90°C a 95°C</td>
+                  <td class="px-4 py-3">Extrai os óleos sem amargar</td>
+                </tr>
+                <tr class="border-t border-slate-200 bg-slate-50">
+                  <td class="px-4 py-3 font-medium">Chá verde / branco</td>
+                  <td class="px-4 py-3">70°C a 80°C</td>
+                  <td class="px-4 py-3">Evita adstringência e amargor</td>
+                </tr>
+                <tr class="border-t border-slate-200 bg-white">
+                  <td class="px-4 py-3 font-medium">Chá preto / de ervas</td>
+                  <td class="px-4 py-3">95°C a 100°C</td>
+                  <td class="px-4 py-3">Extração completa dos compostos</td>
+                </tr>
+                <tr class="border-t border-slate-200 bg-slate-50">
+                  <td class="px-4 py-3 font-medium">Chimarrão</td>
+                  <td class="px-4 py-3">70°C a 75°C</td>
+                  <td class="px-4 py-3">Preserva sabor e não queima a erva</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p class="text-slate-700 leading-relaxed mb-4">Sem controle de temperatura, a única forma de acertar é usar um termômetro ou misturar água fria na fervente até atingir a temperatura certa. Trabalhoso e impreciso. A chaleira com controle faz isso automaticamente: você escolhe a temperatura, ela aquece e avisa quando está pronto.</p>
+          <p class="text-slate-700 leading-relaxed">Para chimarrão especificamente, usar água fervente estraga o sabor da erva-mate e pode queimar a cuia. A diferença de uma chaleira com controle é imediata para quem bebe chimarrão todo dia.</p>
+        </div>
+
+        <!-- Título melhores -->
+        <div id="melhores" class="mb-4">
+          <h2 class="text-2xl font-bold text-slate-800 mb-6">As melhores chaleiras elétricas com controle de temperatura de 2026</h2>
+        </div>
+
+        <!-- Produto 1: Cadence CEL850 -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-orange-500 px-6 py-4">
+            <p class="text-white font-black text-xl">1° lugar - Cadence CEL850 Inox</p>
+            <p class="text-orange-100 text-sm mt-1">A mais completa: 7 temperaturas preset, LCD, manter quente e 1,8 L de capacidade</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 min-h-32">
+              <img src="/images/chaleira/cadence-cel850.jpg" alt="Chaleira elétrica Cadence CEL850 inox com display LCD" class="w-full h-auto object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <a href="https://amzn.to/4xaIdds" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">
+                Conferir preço na Amazon
+              </a>
+              <h3 class="font-bold text-slate-800 mb-3">Ficha Técnica</h3>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Potência:</strong> 2.200 W</li>
+                <li><strong>Capacidade:</strong> 1,8 L</li>
+                <li><strong>Faixa de temperatura:</strong> 40°C a 100°C</li>
+                <li><strong>Temperaturas preset:</strong> 7 opções (40°C, 60°C, 70°C, 80°C, 85°C, 90°C, 100°C)</li>
+                <li><strong>Display:</strong> LCD com temperatura em tempo real</li>
+                <li><strong>Função manter quente:</strong> Sim, por até 30 minutos</li>
+                <li><strong>Material:</strong> Aço inox</li>
+                <li><strong>Voltagem:</strong> Bivolt automático</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>7 temperaturas preset cobrem todas as bebidas comuns</li>
+                    <li>Display LCD mostra temperatura em tempo real</li>
+                    <li>Função manter quente por até 30 minutos</li>
+                    <li>1,8 L de capacidade para família inteira</li>
+                    <li>Bivolt automático funciona em qualquer tomada</li>
+                    <li>Acabamento inox resistente e fácil de limpar</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Bico convencional (não gooseneck), menos preciso para pour over</li>
+                    <li>Preço um pouco acima da média da categoria</li>
+                    <li>Tamanho grande pode não caber em bancadas pequenas</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 2: Black+Decker K2200 -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-slate-800 px-6 py-4">
+            <p class="text-white font-black text-xl">2° lugar - Black+Decker K2200 Inox</p>
+            <p class="text-slate-300 text-sm mt-1">Seletor mecânico de 40°C a 100°C: simples, preciso e sem complicação</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 min-h-32">
+              <img src="/images/chaleira/black-decker-k2200.jpg" alt="Chaleira elétrica Black+Decker K2200 inox com seletor de temperatura" class="w-full h-auto object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <a href="https://amzn.to/4dY8Zwu" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">
+                Conferir preço na Amazon
+              </a>
+              <h3 class="font-bold text-slate-800 mb-3">Ficha Técnica</h3>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Potência:</strong> 1.500 W</li>
+                <li><strong>Capacidade:</strong> 1,7 L</li>
+                <li><strong>Faixa de temperatura:</strong> 40°C a 100°C (seletor mecânico)</li>
+                <li><strong>Controle:</strong> Seletor giratório (sem display digital)</li>
+                <li><strong>Material:</strong> Aço inox</li>
+                <li><strong>Voltagem:</strong> Bivolt automático</li>
+                <li><strong>Tampa:</strong> abre com botão para facilitar o abastecimento</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Controle de temperatura contínuo de 40°C a 100°C</li>
+                    <li>Marca reconhecida com boa rede de assistência</li>
+                    <li>Bivolt automático para uso em qualquer tomada</li>
+                    <li>Tampa de fácil abertura com botão</li>
+                    <li>Seletor mecânico mais durável que painéis digitais</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Sem display: não mostra a temperatura atingida em tempo real</li>
+                    <li>Potência menor (1.500 W) leva mais tempo para ferver</li>
+                    <li>Sem função manter quente</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Leia também 1 -->
+        <div style="margin:32px 0;font-family:sans-serif;">
+          <p style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#1e5c2e;margin:0 0 12px;">Leia também:</p>
+          <a href="/posts/purificador-agua-vale-pena" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;min-width:200px;overflow:hidden;">
+              <img src="/images/purificador/capa-purificador.png" alt="Purificador de água: vale a pena?" style="width:100%;height:100%;object-fit:cover;display:block;" />
+            </div>
+            <div style="padding:20px 22px;display:flex;align-items:center;">
+              <p style="margin:0;font-size:15px;font-weight:500;line-height:1.5;color:#1a1a1a;">Purificador de Água Realmente Vale a Pena? Testamos 4 Modelos</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Produto 3: Philco PCH18B -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-slate-700 px-6 py-4">
+            <p class="text-white font-black text-xl">3° lugar - Philco PCH18B</p>
+            <p class="text-slate-300 text-sm mt-1">Painel digital com 6 temperaturas preset: a opção tecnológica mais acessível da lista</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 min-h-32">
+              <img src="/images/chaleira/philco-pch18b.jpg" alt="Chaleira elétrica Philco PCH18B com painel digital" class="w-full h-auto object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <a href="https://amzn.to/4u4IrzL" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">
+                Conferir preço na Amazon
+              </a>
+              <h3 class="font-bold text-slate-800 mb-3">Ficha Técnica</h3>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Potência:</strong> 2.200 W</li>
+                <li><strong>Capacidade:</strong> 1,8 L</li>
+                <li><strong>Temperaturas preset:</strong> 6 opções</li>
+                <li><strong>Display:</strong> Painel digital com LED</li>
+                <li><strong>Material:</strong> Aço inox e plástico</li>
+                <li><strong>Voltagem:</strong> Bivolt automático</li>
+                <li><strong>Alça:</strong> ergonômica com proteção contra calor</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Painel digital com 6 temperaturas preset</li>
+                    <li>Potência de 2.200 W aquece rápido</li>
+                    <li>Bivolt automático</li>
+                    <li>Melhor custo-benefício digital da lista</li>
+                    <li>Alça ergonômica com proteção térmica</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Marca com menor tradição que Cadence e Black+Decker</li>
+                    <li>Não mostra temperatura em tempo real</li>
+                    <li>Acabamento misto inox/plástico menos premium</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 4: Timemore Gooseneck -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-slate-600 px-6 py-4">
+            <p class="text-white font-black text-xl">4° lugar - Timemore Gooseneck 600ml</p>
+            <p class="text-slate-300 text-sm mt-1">A escolha dos baristas: bico de ganso para pour over e café coado com precisão total</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 min-h-32">
+              <img src="/images/chaleira/timemore-gooseneck.jpg" alt="Chaleira Timemore Gooseneck bico de ganso 600ml" class="w-full h-auto object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <a href="https://amzn.to/4a6voXs" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">
+                Conferir preço na Amazon
+              </a>
+              <h3 class="font-bold text-slate-800 mb-3">Ficha Técnica</h3>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Potência:</strong> 1.000 W</li>
+                <li><strong>Capacidade:</strong> 600 ml</li>
+                <li><strong>Faixa de temperatura:</strong> 40°C a 100°C (controle por grau)</li>
+                <li><strong>Bico:</strong> Gooseneck (bico de ganso) para fluxo controlado</li>
+                <li><strong>Display:</strong> Digital com temperatura em tempo real</li>
+                <li><strong>Material:</strong> Aço inox premium</li>
+                <li><strong>Voltagem:</strong> Bivolt automático</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Bico de ganso para controle preciso do fluxo de água</li>
+                    <li>Controle de temperatura grau a grau</li>
+                    <li>Display mostra temperatura em tempo real</li>
+                    <li>Acabamento premium, bonito na bancada</li>
+                    <li>Ideal para café coado, pour over e V60</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Preço bem acima das demais opções da lista (~R$ 1.000)</li>
+                    <li>Capacidade menor: apenas 600 ml</li>
+                    <li>Potência mais baixa: aquece mais devagar</li>
+                    <li>Vale principalmente para quem faz café especial</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Leia também 2 -->
+        <div style="margin:32px 0;font-family:sans-serif;">
+          <p style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#1e5c2e;margin:0 0 12px;">Leia também:</p>
+          <a href="/posts/panela-pressao-eletrica-review" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;min-width:200px;overflow:hidden;">
+              <img src="/images/panela/capa-panela.png" alt="Panela de pressão elétrica review" style="width:100%;height:100%;object-fit:cover;display:block;" />
+            </div>
+            <div style="padding:20px 22px;display:flex;align-items:center;">
+              <p style="margin:0;font-size:15px;font-weight:500;line-height:1.5;color:#1a1a1a;">Panela de Pressão Elétrica: Review Completo após 6 Meses de Uso</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Comparativo -->
+        <div id="comparativo" class="mb-10">
+          <h2 class="text-2xl font-bold text-slate-800 mb-6">Qual chaleira escolher para cada bebida?</h2>
+          <div class="space-y-4">
+            <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+              <p class="font-bold text-slate-800 mb-1">Para chimarrão: precisa de temperatura baixa e precisa (70°C a 75°C)</p>
+              <p class="text-slate-700 text-sm leading-relaxed">Cadence CEL850 ou Black+Decker K2200. Os dois têm preset ou seletor para essa faixa. A Cadence tem o preset de 70°C; a K2200 permite ajustar para qualquer ponto entre 40°C e 100°C. O display da Cadence facilita confirmar a temperatura antes de servir.</p>
+            </div>
+            <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+              <p class="font-bold text-slate-800 mb-1">Para chá verde ou branco: temperatura entre 70°C e 80°C</p>
+              <p class="text-slate-700 text-sm leading-relaxed">Qualquer modelo da lista resolve. A Cadence tem preset de 70°C e 80°C, o que é ideal. O display em tempo real facilita servir no ponto certo antes que esfrie.</p>
+            </div>
+            <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+              <p class="font-bold text-slate-800 mb-1">Para café coado ou pour over: 90°C a 95°C e fluxo controlado</p>
+              <p class="text-slate-700 text-sm leading-relaxed">Timemore Gooseneck se você leva café a sério. O bico de ganso controla o fluxo de água de um jeito que nenhum bico convencional consegue igualar. Para quem faz V60, Hario ou Chemex todo dia, a diferença no sabor é real. Se quer temperatura precisa sem gastar mais de R$ 300, a Cadence CEL850 com preset de 90°C resolve bem.</p>
+            </div>
+            <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+              <p class="font-bold text-slate-800 mb-1">Para chá preto e uso geral da família: 100°C</p>
+              <p class="text-slate-700 text-sm leading-relaxed">Qualquer modelo funciona. Para uso familiar com capacidade generosa, a Cadence CEL850 e a Philco PCH18B têm 1,8 L, o que evita ter que reabastecer várias vezes ao longo do dia.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- O que considerar -->
+        <div id="considerar" class="mb-10">
+          <h2 class="text-2xl font-bold text-slate-800 mb-4">O que considerar antes de comprar uma chaleira com controle de temperatura</h2>
+          <div class="space-y-4">
+            <div class="bg-white border border-slate-200 rounded-xl p-5">
+              <p class="font-bold text-slate-800 mb-2">Precisão do controle de temperatura</p>
+              <p class="text-slate-700 text-sm leading-relaxed">Seletores mecânicos (como o da K2200) são confiáveis e duráveis, mas não mostram a temperatura exata. Modelos com display digital mostram a temperatura em tempo real, o que é útil especialmente para chimarrão e chá verde onde a diferença de 5°C muda o sabor. Se precisão importa, prefira modelos com display LCD.</p>
+            </div>
+            <div class="bg-white border border-slate-200 rounded-xl p-5">
+              <p class="font-bold text-slate-800 mb-2">Capacidade: família ou uso individual?</p>
+              <p class="text-slate-700 text-sm leading-relaxed">Para uso individual (uma ou duas xícaras por vez), 600 ml a 1 L é suficiente. Para família ou quem quer preparar várias xícaras sem reabastecer, modelos de 1,7 L a 1,8 L são mais práticos. A Timemore tem apenas 600 ml, o que pode ser limitante para uso familiar.</p>
+            </div>
+            <div class="bg-white border border-slate-200 rounded-xl p-5">
+              <p class="font-bold text-slate-800 mb-2">Tipo de bico: convencional ou gooseneck?</p>
+              <p class="text-slate-700 text-sm leading-relaxed">O bico convencional serve bem para chá, chimarrão e café de cápsula. Para café coado, pour over ou V60, o bico gooseneck (bico de ganso) faz diferença real: permite controlar o fluxo de água com precisão, o que impacta diretamente na qualidade da extração. Se você não faz café especial, o bico convencional resolve muito bem.</p>
+            </div>
+            <div class="bg-white border border-slate-200 rounded-xl p-5">
+              <p class="font-bold text-slate-800 mb-2">Função manter quente: útil ou desnecessária?</p>
+              <p class="text-slate-700 text-sm leading-relaxed">A função manter quente mantém a água na temperatura escolhida por um período (geralmente 20 a 30 minutos) após o aquecimento. Útil para quem faz várias xícaras seguidas ou esquece a chaleira ligada. Nem todos os modelos têm essa função: a Cadence CEL850 tem, a K2200 não.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ -->
+        <div id="faq" class="mb-10">
+          <h2 class="text-2xl font-bold text-slate-800 mb-6">Perguntas frequentes sobre chaleira elétrica com controle de temperatura</h2>
+          <div class="space-y-4">
+
+            <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden">
+              <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 list-none">
+                Qual a temperatura ideal para fazer chimarrão?
+                <svg class="w-5 h-5 text-slate-400 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 pb-5 text-slate-600 text-sm leading-relaxed">
+                A temperatura ideal para chimarrão está entre 70°C e 75°C. Água mais quente do que isso queima a erva-mate, deixando o sabor amargo e esfumaçado, além de poder danificar a cuia de madeira ao longo do tempo. Com a chaleira com controle de temperatura, você chega nessa faixa com precisão sem precisar de termômetro ou misturar água fria.
+              </div>
+            </details>
+
+            <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden">
+              <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 list-none">
+                Chaleira elétrica comum também funciona para café e chá?
+                <svg class="w-5 h-5 text-slate-400 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 pb-5 text-slate-600 text-sm leading-relaxed">
+                Funciona, mas sem o controle de temperatura você fica limitado a ferver a água e esperar esfriar naturalmente até a temperatura desejada, o que é impreciso e demorado. Para café coado e chá preto que precisam de 90°C ou mais, a diferença é pequena. Para chá verde (80°C) e chimarrão (70°C a 75°C), a chaleira com controle elimina o trabalho de adivinhar a temperatura.
+              </div>
+            </details>
+
+            <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden">
+              <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 list-none">
+                Vale a pena gastar R$ 1.000 em uma chaleira gooseneck?
+                <svg class="w-5 h-5 text-slate-400 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 pb-5 text-slate-600 text-sm leading-relaxed">
+                Depende do uso. Se você faz café coado, pour over, V60 ou Chemex e se importa com a qualidade da extração, o bico de ganso faz diferença real no sabor da bebida. O controle de fluxo é impossível de replicar com bicos convencionais. Para quem toma café de cápsula ou coado simples sem preocupação com técnica, os modelos de R$ 280 a R$ 320 desta lista resolvem muito bem sem o custo premium.
+              </div>
+            </details>
+
+            <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden">
+              <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 list-none">
+                Qual a diferença entre chaleira com seletor mecânico e painel digital?
+                <svg class="w-5 h-5 text-slate-400 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 pb-5 text-slate-600 text-sm leading-relaxed">
+                O seletor mecânico, como o da Black+Decker K2200, é mais simples e geralmente mais durável a longo prazo porque tem menos componentes eletrônicos que podem falhar. O painel digital mostra a temperatura atual em tempo real e geralmente oferece temperaturas preset com botões. Para uso cotidiano, os dois funcionam bem. Se você quer ver a temperatura em tempo real para confirmar o ponto certo, prefira o painel digital.
+              </div>
+            </details>
+
+          </div>
+        </div>
+
+        <!-- Schema FAQ -->
+        <script type="application/ld+json" set:html={JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Qual a temperatura ideal para fazer chimarrão?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A temperatura ideal para chimarrão está entre 70°C e 75°C. Água mais quente queima a erva-mate, deixando o sabor amargo, além de poder danificar a cuia de madeira."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Chaleira elétrica comum também funciona para café e chá?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Funciona, mas sem controle de temperatura você fica limitado a ferver e esperar esfriar naturalmente. Para chá verde (80°C) e chimarrão (70°C a 75°C), a chaleira com controle elimina o trabalho de adivinhar a temperatura certa."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Vale a pena gastar R$ 1.000 em uma chaleira gooseneck?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depende do uso. Para café coado, pour over, V60 ou Chemex, o bico de ganso faz diferença real na extração. Para uso cotidiano simples, os modelos de R$ 280 a R$ 320 desta lista resolvem muito bem."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Qual a diferença entre seletor mecânico e painel digital na chaleira?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "O seletor mecânico é mais simples e durável. O painel digital mostra a temperatura atual em tempo real e oferece presets com botões. Para ver a temperatura exata antes de servir, prefira o painel digital."
+              }
+            }
+          ]
+        })}></script>
+
+
+      </div>
+    )}
+
+    {isMaquinaGelo && (
+      <div>
+
+        <!-- Capa do artigo -->
+        <div class="rounded-2xl overflow-hidden mb-8 shadow-md">
+          <img src="/images/maquina-gelo/capa-maquina-gelo.jpg" alt="Máquina de gelo portátil compacta sobre bancada de cozinha com cubos de gelo" class="w-full h-auto object-cover" loading="eager" />
+        </div>
+
+        <!-- Introdução -->
+        <div class="bg-orange-50 border border-orange-100 rounded-2xl p-6 mb-8">
+          <p class="text-slate-800 text-base leading-relaxed mb-3">Quem já ficou esperando a bandeja do freezer congelar sabe a frustração: você quer gelo agora, e o freezer leva mais de duas horas para entregar. A máquina de gelo portátil resolve esse problema em minutos. Sem precisar de encanamento, sem instalação: plugou, abasteceu com água e em 6 a 13 minutos os primeiros cubos ficam prontos.</p>
+          <p class="text-slate-800 text-base leading-relaxed mb-3">O mercado brasileiro tem mais opções do que nunca nessa categoria, com modelos de R$ 430 a R$ 650. Mas nem todos são iguais: a diferença de produção por dia, tempo para o primeiro gelo e facilidade de manutenção muda bastante entre os modelos.</p>
+          <p class="text-slate-800 text-base leading-relaxed">Testamos e comparamos os quatro melhores modelos disponíveis no Brasil em 2026. Abaixo estão as fichas técnicas completas, os pontos positivos e negativos de cada um, e um guia para você escolher o modelo certo para o seu caso.</p>
+        </div>
+
+        <!-- Índice -->
+        <nav class="bg-white border border-slate-200 rounded-xl px-5 py-4 mb-10">
+          <p class="text-slate-800 font-bold text-sm mb-3">Neste artigo:</p>
+          <ul class="space-y-1.5">
+            <li><a href="#como-funciona" class="text-orange-600 hover:text-orange-700 text-sm font-medium">Como funciona uma máquina de gelo portátil</a></li>
+            <li><a href="#melhores" class="text-orange-600 hover:text-orange-700 text-sm font-medium">Os melhores modelos de 2026</a></li>
+            <li><a href="#vale-a-pena" class="text-orange-600 hover:text-orange-700 text-sm font-medium">Vale a pena ter uma em casa?</a></li>
+            <li><a href="#considerar" class="text-orange-600 hover:text-orange-700 text-sm font-medium">O que considerar antes de comprar</a></li>
+            <li><a href="#faq" class="text-orange-600 hover:text-orange-700 text-sm font-medium">Perguntas frequentes</a></li>
+          </ul>
+        </nav>
+
+        <!-- Como funciona -->
+        <div id="como-funciona" class="mb-10">
+          <h2 class="text-2xl font-bold text-slate-800 mb-4">Como funciona uma máquina de gelo portátil?</h2>
+          <p class="text-slate-700 leading-relaxed mb-4">A máquina de gelo portátil usa um sistema de refrigeração por compressor. Quando você abastece o reservatório e liga o aparelho, uma bomba circula a água sobre pinos metálicos que ficam expostos a um elemento refrigerador. A água se congela progressivamente nesses pinos em camadas, formando cubos ocos por dentro, característicos das máquinas portáteis.</p>
+          <p class="text-slate-700 leading-relaxed mb-4">O processo todo leva entre 6 e 13 minutos dependendo do modelo e da temperatura ambiente. Quando os cubos atingem o tamanho configurado, eles caem no cesto coletor e o ciclo recomeça automaticamente. A máquina continua produzindo gelo até encher o cesto ou até esgotar a água do reservatório.</p>
+
+          <div class="bg-slate-50 border border-slate-200 rounded-xl p-5 mb-4">
+            <p class="font-bold text-slate-800 mb-2">Máquina portátil x freezer convencional: as diferenças</p>
+            <p class="text-slate-700 text-sm leading-relaxed">O freezer convencional leva de 2 a 4 horas para congelar uma bandeja de gelo e depende de temperatura ambiente estável. A máquina portátil produz os primeiros cubos em 6 a 13 minutos e funciona bem em ambientes com temperatura de até 35°C. O gelo da máquina portátil é oco (diferente do cubo sólido do freezer), o que faz com que derreta um pouco mais rápido, mas cumpre bem a função para bebidas no dia a dia.</p>
+          </div>
+
+          <p class="text-slate-700 leading-relaxed">O gelo não fica armazenado: o cesto não tem refrigeração. Se os cubos derreterem, a água retorna ao reservatório e pode ser recongelada. Isso significa que você precisa usar o gelo em sequência ou ter um recipiente isolado (isopor, cooler) para guardar os cubos produzidos.</p>
+        </div>
+
+        <!-- Título melhores -->
+        <div id="melhores" class="mb-4">
+          <h2 class="text-2xl font-bold text-slate-800 mb-6">Os melhores modelos de máquina de gelo portátil de 2026</h2>
+        </div>
+
+        <!-- Produto 1: Agratto MG-01 -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-orange-500 px-6 py-4">
+            <p class="text-white font-black text-xl">1° lugar - Agratto MG-01</p>
+            <p class="text-orange-100 text-sm mt-1">A entrada acessível: confiável, compacta e produz 9 kg de gelo por dia</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 min-h-32">
+              <img src="/images/maquina-gelo/agratto-mg01.jpg" alt="Máquina de gelo Agratto MG-01 branca" class="w-full h-auto object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <a href="https://amzn.to/4dH3vaM" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">
+                Conferir preço na Amazon
+              </a>
+              <h3 class="font-bold text-slate-800 mb-3">Ficha Técnica</h3>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Potência:</strong> 100 W</li>
+                <li><strong>Capacidade do reservatório:</strong> 2,2 L</li>
+                <li><strong>Produção de gelo:</strong> até 9 kg por dia</li>
+                <li><strong>Cubos por ciclo:</strong> 9</li>
+                <li><strong>Tempo para o primeiro gelo:</strong> 8 a 13 minutos</li>
+                <li><strong>Tamanhos de cubo:</strong> pequeno e grande</li>
+                <li><strong>Voltagem:</strong> 110V</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Menor consumo de energia da lista: apenas 100 W</li>
+                    <li>Reservatório de 2,2 L oferece mais autonomia entre abastecimentos</li>
+                    <li>Marca brasileira com boa assistência técnica no país</li>
+                    <li>Silenciosa para a categoria</li>
+                    <li>Preço mais acessível da lista</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Produção menor: 9 kg/dia vs 12 kg/dia dos concorrentes</li>
+                    <li>Tempo para o primeiro gelo um pouco maior (até 13 min)</li>
+                    <li>Apenas 110V (sem versão 220V bivolt)</li>
+                    <li>Sem painel digital ou autolimpeza</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 2: EOS Ice Compact EMG04T -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-slate-800 px-6 py-4">
+            <p class="text-white font-black text-xl">2° lugar - EOS Ice Compact EMG04T</p>
+            <p class="text-slate-300 text-sm mt-1">12 kg por dia, bivolt e preço justo: o melhor custo-benefício da lista</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 min-h-32">
+              <img src="/images/maquina-gelo/eos-ice-compact.jpg" alt="Máquina de gelo EOS Ice Compact EMG04T" class="w-full h-auto object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <a href="https://amzn.to/4dXBXwv" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">
+                Conferir preço na Amazon
+              </a>
+              <h3 class="font-bold text-slate-800 mb-3">Ficha Técnica</h3>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Potência:</strong> 180 W</li>
+                <li><strong>Capacidade do reservatório:</strong> 2 L</li>
+                <li><strong>Produção de gelo:</strong> até 12 kg por dia</li>
+                <li><strong>Tempo para o primeiro gelo:</strong> 6 a 13 minutos</li>
+                <li><strong>Tamanhos de cubo:</strong> pequeno, médio e grande</li>
+                <li><strong>Voltagem:</strong> Bivolt automático (110V/220V)</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Produção de 12 kg/dia, ideal para uso frequente</li>
+                    <li>Bivolt automático: funciona em 110V e 220V</li>
+                    <li>3 tamanhos de cubo para adaptar ao uso</li>
+                    <li>Melhor custo-benefício entre os modelos de 12 kg/dia</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Sem função de autolimpeza</li>
+                    <li>Sem painel digital com display</li>
+                    <li>Marca com menor presença no mercado que Mondial e Philco</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Leia também 1 -->
+        <div style="margin:32px 0;font-family:sans-serif;">
+          <p style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#1e5c2e;margin:0 0 12px;">Leia também:</p>
+          <a href="/posts/itens-casa-30-reais-amazon" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;min-width:200px;overflow:hidden;">
+              <img src="/images/itens30/capa-itens30.png" alt="14 itens incríveis para casa por até R$ 30 na Amazon" style="width:100%;height:100%;object-fit:cover;display:block;" />
+            </div>
+            <div style="padding:20px 22px;display:flex;align-items:center;">
+              <p style="margin:0;font-size:15px;font-weight:500;line-height:1.5;color:#1a1a1a;">14 Itens Incríveis para Casa por até R$ 30 na Amazon</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Produto 3: Mondial Turbo Ice MG-12-GI -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-slate-700 px-6 py-4">
+            <p class="text-white font-black text-xl">3° lugar - Mondial Turbo Ice Premium MG-12-GI</p>
+            <p class="text-slate-300 text-sm mt-1">Inox, bivolt e gelo em apenas 6 minutos: rápido e com acabamento premium</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 min-h-32">
+              <img src="/images/maquina-gelo/mondial-turbo-ice.jpg" alt="Máquina de gelo Mondial Turbo Ice Premium MG-12-GI inox" class="w-full h-auto object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <a href="https://amzn.to/436WfPp" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">
+                Conferir preço na Amazon
+              </a>
+              <h3 class="font-bold text-slate-800 mb-3">Ficha Técnica</h3>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Potência:</strong> 150 W</li>
+                <li><strong>Capacidade do reservatório:</strong> 2 L</li>
+                <li><strong>Produção de gelo:</strong> até 12 kg por dia</li>
+                <li><strong>Tempo para o primeiro gelo:</strong> 6 minutos</li>
+                <li><strong>Tamanhos de cubo:</strong> pequeno e grande</li>
+                <li><strong>Acabamento:</strong> Inox (premium)</li>
+                <li><strong>Voltagem:</strong> Bivolt automático (110V/220V)</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Gelo mais rápido da lista: primeiros cubos em 6 minutos</li>
+                    <li>Acabamento inox resistente e visualmente atrativo</li>
+                    <li>Bivolt automático</li>
+                    <li>Consumo de 150 W é baixo para produção de 12 kg/dia</li>
+                    <li>Marca com presença consolidada no Brasil</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Apenas 2 tamanhos de cubo (pequeno e grande)</li>
+                    <li>Sem função de autolimpeza</li>
+                    <li>Sem painel digital</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 4: Philco PMG12b -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-slate-600 px-6 py-4">
+            <p class="text-white font-black text-xl">4° lugar - Philco PMG12b</p>
+            <p class="text-slate-300 text-sm mt-1">O mais completo: painel digital, autolimpeza e 12 kg por dia</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 min-h-32">
+              <img src="/images/maquina-gelo/philco-pmg12b.jpg" alt="Máquina de gelo Philco PMG12b com painel digital" class="w-full h-auto object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <a href="https://amzn.to/4x0fxDT" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">
+                Conferir preço na Amazon
+              </a>
+              <h3 class="font-bold text-slate-800 mb-3">Ficha Técnica</h3>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Potência:</strong> 185 W</li>
+                <li><strong>Capacidade do reservatório:</strong> 2 L</li>
+                <li><strong>Produção de gelo:</strong> até 12 kg por dia</li>
+                <li><strong>Tempo para o primeiro gelo:</strong> 6 a 12 minutos</li>
+                <li><strong>Display:</strong> Painel digital com LED</li>
+                <li><strong>Autolimpeza:</strong> Sim</li>
+                <li><strong>Voltagem:</strong> Bivolt automático</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Único da lista com função de autolimpeza</li>
+                    <li>Painel digital facilita a operação</li>
+                    <li>Bivolt automático</li>
+                    <li>12 kg por dia de produção</li>
+                    <li>A manutenção é mais simples graças ao ciclo de autolimpeza</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Preço mais alto da lista (~R$ 650)</li>
+                    <li>Acabamento plástico (sem versão inox)</li>
+                    <li>Consume um pouco mais de energia (185 W)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Leia também 2 -->
+        <div style="margin:32px 0;font-family:sans-serif;">
+          <p style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#1e5c2e;margin:0 0 12px;">Leia também:</p>
+          <a href="/posts/kit-organizacao-cozinha" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;min-width:200px;overflow:hidden;">
+              <img src="/images/kit-cozinha/capa-kit-cozinha.png" alt="Kit de organização de cozinha" style="width:100%;height:100%;object-fit:cover;display:block;" />
+            </div>
+            <div style="padding:20px 22px;display:flex;align-items:center;">
+              <p style="margin:0;font-size:15px;font-weight:500;line-height:1.5;color:#1a1a1a;">Kit Organização de Cozinha: Monte o seu por R$ 150</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Vale a pena -->
+        <div id="vale-a-pena" class="mb-10">
+          <h2 class="text-2xl font-bold text-slate-800 mb-4">Máquina de gelo portátil vale a pena ter em casa?</h2>
+          <p class="text-slate-700 leading-relaxed mb-4">Depende muito do seu perfil de uso. A resposta é sim para quem costuma receber visitas, faz churrascos e eventos em casa, mora em cidade quente, ou simplesmente toma muita bebida gelada no dia a dia e fica irritado com a demora do freezer.</p>
+
+          <div class="space-y-3 mb-4">
+            <div class="bg-green-50 border border-green-200 rounded-xl p-4">
+              <p class="font-bold text-green-800 mb-1">Vale a pena se você...</p>
+              <ul class="text-slate-700 text-sm space-y-1">
+                <li>Recebe visitas com frequência e sempre falta gelo</li>
+                <li>Mora em cidade quente e consume gelo todo dia</li>
+                <li>Faz churrasco ou eventos em casa regularmente</li>
+                <li>Trabalha em home office e quer praticidade no dia a dia</li>
+                <li>Tem freezer pequeno sem espaço para bandeja de gelo</li>
+              </ul>
+            </div>
+            <div class="bg-red-50 border border-red-200 rounded-xl p-4">
+              <p class="font-bold text-red-800 mb-1">Pode não valer se você...</p>
+              <ul class="text-slate-700 text-sm space-y-1">
+                <li>Toma poucas bebidas geladas e o freezer supre a necessidade</li>
+                <li>Tem espaço limitado na bancada ou em casa</li>
+                <li>Precisa de gelo armazenado por horas (o cesto não refrigera)</li>
+                <li>Busca um aparelho totalmente silencioso para ambiente de trabalho</li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="text-slate-700 leading-relaxed">Para a maioria dos lares brasileiros que recebem visitas no verão, a máquina de gelo portátil se paga rapidamente em praticidade e na eliminação de bandejas espalhadas pelo freezer. O investimento inicial fica entre R$ 430 e R$ 650, e o consumo de energia é baixo (100 a 185 W).</p>
+        </div>
+
+        <!-- O que considerar -->
+        <div id="considerar" class="mb-10">
+          <h2 class="text-2xl font-bold text-slate-800 mb-4">O que considerar antes de comprar uma máquina de gelo portátil</h2>
+          <div class="space-y-4">
+            <div class="bg-white border border-slate-200 rounded-xl p-5">
+              <p class="font-bold text-slate-800 mb-2">Produção de gelo por dia (kg/dia): o principal critério</p>
+              <p class="text-slate-700 text-sm leading-relaxed">A produção em kg/dia diz quanto gelo o aparelho consegue produzir em 24 horas de funcionamento contínuo em condições ideais (temperatura ambiente de 20°C). Na prática, com temperatura ambiente mais alta (30°C+), a produção real fica um pouco abaixo do especificado. Para uso doméstico comum, 9 kg/dia é suficiente. Para uso frequente e receber visitas, prefira os modelos de 12 kg/dia.</p>
+            </div>
+            <div class="bg-white border border-slate-200 rounded-xl p-5">
+              <p class="font-bold text-slate-800 mb-2">Tempo para o primeiro gelo: de 6 a 13 minutos</p>
+              <p class="text-slate-700 text-sm leading-relaxed">O tempo para o primeiro gelo varia de 6 a 13 minutos entre os modelos desta lista. A diferença parece pequena, mas quando você precisa de gelo agora para uma bebida, esses 7 minutos fazem diferença. O Mondial MG-12-GI tem o ciclo mais rápido da lista com 6 minutos. Para uso no dia a dia sem urgência, qualquer modelo atende bem.</p>
+            </div>
+            <div class="bg-white border border-slate-200 rounded-xl p-5">
+              <p class="font-bold text-slate-800 mb-2">Capacidade do reservatório e autonomia entre reabastecimentos</p>
+              <p class="text-slate-700 text-sm leading-relaxed">Com um reservatório de 2 L, a máquina produz de 10 a 14 ciclos de gelo antes de precisar de mais água. O Agratto MG-01 tem o maior reservatório da lista (2,2 L), o que dá um pouco mais de autonomia. Para um churrasco de uma tarde, você vai reabastecer algumas vezes de qualquer forma, então a diferença de 200 ml não é determinante.</p>
+            </div>
+            <div class="bg-white border border-slate-200 rounded-xl p-5">
+              <p class="font-bold text-slate-800 mb-2">Autolimpeza e manutenção</p>
+              <p class="text-slate-700 text-sm leading-relaxed">Com o uso frequente, calcário e resíduos se acumulam no interior da máquina e afetam o sabor do gelo. A função de autolimpeza (disponível no Philco PMG12b) facilita muito a manutenção: você adiciona uma solução e o aparelho faz o ciclo de limpeza automaticamente. Sem essa função, a limpeza precisa ser manual periodicamente. Para uso intenso e frequente, a autolimpeza é um diferencial real de praticidade.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ -->
+        <div id="faq" class="mb-10">
+          <h2 class="text-2xl font-bold text-slate-800 mb-6">Perguntas frequentes sobre máquina de gelo portátil</h2>
+          <div class="space-y-4">
+
+            <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden">
+              <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 list-none">
+                Em quanto tempo a máquina de gelo produz os primeiros cubos?
+                <svg class="w-5 h-5 text-slate-400 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 pb-5 text-slate-600 text-sm leading-relaxed">
+                Depende do modelo e da temperatura ambiente. Os modelos desta lista produzem os primeiros cubos em 6 a 13 minutos. O Mondial MG-12-GI é o mais rápido (6 minutos). Com temperatura ambiente mais alta que 25°C, o tempo pode ser um pouco maior. É muito mais rápido que o freezer convencional, que leva 2 a 4 horas.
+              </div>
+            </details>
+
+            <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden">
+              <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 list-none">
+                O gelo da máquina portátil é igual ao do freezer?
+                <svg class="w-5 h-5 text-slate-400 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 pb-5 text-slate-600 text-sm leading-relaxed">
+                Não. O gelo das máquinas portáteis é oco por dentro, diferente do cubo sólido do freezer. Isso faz com que ele derreta um pouco mais rápido, especialmente em dias quentes. Para bebidas no dia a dia e para eventos, funciona perfeitamente. Se você precisa de gelo que dure horas em um cooler sem repor, o gelo sólido do freezer dura mais.
+              </div>
+            </details>
+
+            <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden">
+              <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 list-none">
+                A máquina de gelo portátil faz muito barulho?
+                <svg class="w-5 h-5 text-slate-400 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 pb-5 text-slate-600 text-sm leading-relaxed">
+                As máquinas portáteis produzem um ruído similar a um frigobar ou ar-condicionado de janela pequeno, entre 40 e 50 dB aproximadamente. Não é silenciosa, mas não é incômoda para uso na cozinha ou área de serviço. Para usar no quarto ou em ambiente de trabalho que exija silêncio, o barulho pode incomodar. Para uso em cozinha, sala ou área de churrasco, é completamente tolerável.
+              </div>
+            </details>
+
+            <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden">
+              <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 list-none">
+                Precisa de instalação especial ou encanamento?
+                <svg class="w-5 h-5 text-slate-400 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 pb-5 text-slate-600 text-sm leading-relaxed">
+                Não. A máquina de gelo portátil é totalmente autônoma. Você só precisa de uma tomada elétrica e de água para abastecer o reservatório manualmente. Sem necessidade de encanamento, sem instalação técnica, sem obras. Chegou, plugou e já funciona. É o principal diferencial em relação às máquinas de gelo de embutir, que exigem instalação hidráulica.
+              </div>
+            </details>
+
+            <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden">
+              <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 list-none">
+                Como limpar a máquina de gelo portátil?
+                <svg class="w-5 h-5 text-slate-400 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 pb-5 text-slate-600 text-sm leading-relaxed">
+                Para os modelos sem autolimpeza, o processo é simples: adicione uma mistura de água e vinagre branco em partes iguais no reservatório, ligue o aparelho e deixe produzir alguns ciclos de gelo com essa mistura (descarte esses cubos). Depois repita o processo com água limpa para remover o residual de vinagre. Faça isso uma vez por mês. O Philco PMG12b tem autolimpeza integrada, que automatiza esse processo.
+              </div>
+            </details>
+
+          </div>
+        </div>
+
+        <!-- Schema FAQ -->
+        <script type="application/ld+json" set:html={JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Em quanto tempo a máquina de gelo produz os primeiros cubos?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depende do modelo e da temperatura ambiente. Os modelos desta lista produzem os primeiros cubos em 6 a 13 minutos. O Mondial MG-12-GI é o mais rápido com 6 minutos. É muito mais rápido que o freezer convencional que leva 2 a 4 horas."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "O gelo da máquina portátil é igual ao do freezer?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Não. O gelo das máquinas portáteis é oco por dentro, o que faz com que derreta um pouco mais rápido. Para bebidas no dia a dia e eventos funciona perfeitamente. Para guardar horas em cooler, o gelo sólido do freezer dura mais."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "A máquina de gelo portátil precisa de instalação especial?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Não. É totalmente autônoma: basta uma tomada elétrica e água para abastecer o reservatório manualmente. Sem encanamento, sem instalação técnica, sem obras. Chegou, plugou e já funciona."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Como limpar a máquina de gelo portátil?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Para modelos sem autolimpeza: adicione água e vinagre branco em partes iguais no reservatório, faça alguns ciclos com essa mistura e descarte o gelo. Repita com água limpa. Faça isso mensalmente. O Philco PMG12b tem autolimpeza integrada que automatiza o processo."
               }
             }
           ]
