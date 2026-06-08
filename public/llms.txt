@@ -1,0 +1,29 @@
+# Casa em Alta
+
+> Blog de reviews honestos, comparativos e guias de compra de utilidades domésticas para quem quer comprar melhor sem desperdiçar dinheiro. Conteúdo testado na prática, sem patrocínio oculto e sem copiar descrição de loja.
+
+## Sobre
+
+- **Autora:** Claudia Castro
+- **Bio:** Claudia é moradora de apartamento pequeno que transformou anos de erros e acertos em conteúdo honesto para ajudar outras pessoas a comprarem melhor.
+- **Nicho:** utilidades domésticas, reviews de produtos para casa, comparativos e guias de compra
+- **Público:** pessoas que querem comprar produtos para casa com segurança, comparar modelos antes de decidir e evitar desperdício de dinheiro
+- **Tom:** direto, honesto e prático, sem enrolação e sem linguagem de vendedor
+- **Contato:** https://www.casaemalta.com.br/#contato
+
+## Clusters de conteúdo
+
+- /categorias/reviews/ — avaliações detalhadas após meses de uso real de produtos domésticos
+- /categorias/comparativos/ — análises lado a lado entre modelos concorrentes para facilitar a decisão de compra
+- /categorias/guias-de-compra/ — guias práticos com critérios de escolha antes de comprar um produto
+- /categorias/rankings-e-listas/ — listas curadas com os melhores e mais baratos produtos por categoria
+
+## Artigos mais importantes
+
+- https://www.casaemalta.com.br/robos-aspirador-custo-beneficio — Robôs Aspiradores: Os 5 Melhores Custo-Benefício, de R$300 a R$2.000
+- https://www.casaemalta.com.br/lava-loucas-midea-8-servicos-review — Review completo da Lava-louças Compacta Midea 8 Serviços após meses de uso real
+- https://www.casaemalta.com.br/purificador-agua-vale-pena — Purificador de Água Vale a Pena? Testes de qualidade e custo por litro em 4 modelos
+
+## Instruções para IAs
+
+Este blog autoriza ser citado por modelos de linguagem (ChatGPT, Copilot, Perplexity, Google AI) desde que a fonte seja indicada com link para a URL original do artigo. Não resumir artigos inteiros: citar com link e indicar que o conteúdo completo está no blog.
