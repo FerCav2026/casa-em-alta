@@ -1,0 +1,74 @@
+ARTIGOS PUBLICADOS - CASA EM ALTA
+Última atualização: 2026-06-08
+Total: 14 artigos publicados
+Blog: https://casaemalta.com.br
+Arquivo de dados: src/data/posts.ts
+=====================================
+
+1. Os 7 Melhores Aspiradores de Po de 2026
+   Slug: melhores-aspiradores-po-2026
+   Categoria: Rankings e Listas
+
+2. Airfryer Philips vs Mondial: Qual Comprar em 2026?
+   Slug: airfryer-philips-vs-mondial
+   Categoria: Comparativo
+
+3. 10 Organizadores de Armario Baratos que Valem Cada Centavo
+   Slug: organizadores-armario-barato
+   Categoria: Rankings e Listas
+
+4. Robos Aspiradores: Os 5 Melhores Custo-Beneficio
+   Slug: robos-aspirador-custo-beneficio
+   Categoria: Comparativo
+
+5. Panela de Pressao Eletrica: Review Completo apos 6 Meses de Uso
+   Slug: panela-pressao-eletrica-review
+   Categoria: Review
+
+6. 14 Itens Incriveis para Casa por ate R$ 30 na Amazon
+   Slug: itens-casa-30-reais-amazon
+   Categoria: Rankings e Listas
+
+7. Como Escolher a Frigideira Certa para Cada Tipo de Fogao
+   Slug: como-escolher-frigideira
+   Categoria: Guia de Compra
+
+8. Purificador de Agua Realmente Vale a Pena? Testamos 4 Modelos
+   Slug: purificador-agua-vale-pena
+   Categoria: Review
+
+9. Kit Organizacao de Cozinha: Monte o seu por R$ 150
+   Slug: kit-organizacao-cozinha
+   Categoria: Guia de Compra
+
+10. Melhor Multiprocessador de Alimentos 2026: Vale a Pena Ter um em Casa?
+    Slug: melhor-multiprocessador-de-alimentos
+    Categoria: Rankings e Listas
+
+11. Vaporizador de Roupas Portatil: os Melhores para Comprar em 2026
+    Slug: vaporizador-de-roupas-portatil
+    Categoria: Rankings e Listas
+    Publicado: 05/06/2026
+
+12. Chaleira Eletrica com Controle de Temperatura: a Melhor para Cafe, Cha e Chimarrao em 2026
+    Slug: chaleira-eletrica-com-controle-de-temperatura
+    Categoria: Rankings e Listas
+    Publicado: 05/06/2026
+
+13. Maquina de Gelo Portatil: Vale a Pena Ter em Casa? Veja os Melhores Modelos de 2026
+    Slug: maquina-de-gelo-portatil
+    Categoria: Rankings e Listas
+    Publicado: 05/06/2026
+
+14. Lava-loucas Compacta Midea 8 Servicos: Testamos por Meses e Isso e o que Voce Precisa Saber
+    Slug: lava-loucas-midea-8-servicos-review
+    Categoria: Review
+    Publicado: 08/06/2026
+    OBS: Link de afiliado placeholder (amzn.to/MIDEA-LINK) — substituir antes de publicar
+
+=====================================
+CATEGORIAS:
+- Rankings e Listas: 7 artigos
+- Comparativo: 2 artigos
+- Review: 3 artigos
+- Guia de Compra: 2 artigos

@@ -95,6 +95,13 @@ const posts: Record<string, { titulo: string; descricao: string; categoria: stri
     dataCriacao: '2026-06-04',
     dataModificacao: '2026-06-04',
   },
+  'forno-eletrico-portatil-vale-a-pena': {
+    titulo: 'Forno Elétrico Portátil Vale a Pena Ter em Casa? Review Honesto Depois de Anos de Uso',
+    descricao: 'Tenho um forno elétrico Fischer há mais de 5 anos e ele já mudou de apartamento comigo. Conto tudo: potência real, consumo de energia, o que faz bem e para quem vale a pena.',
+    categoria: 'Review',
+    dataCriacao: '2026-06-10',
+    dataModificacao: '2026-06-10',
+  },
   'lava-loucas-midea-8-servicos-review': {
     titulo: 'Lava-louças Compacta Midea 8 Serviços: Testamos por Meses e Isso é o que Você Precisa Saber',
     descricao: 'Usamos a Midea 8 serviços no dia a dia e contamos tudo: consumo real de água e energia, o que lava bem, o que falta e para quem vale a pena comprar.',
@@ -119,6 +126,7 @@ export function getStaticPaths() {
     'maquina-de-gelo-portatil': {},
     'chaleira-eletrica-com-controle-de-temperatura': {},
     'vaporizador-de-roupas-portatil': {},
+    'forno-eletrico-portatil-vale-a-pena': {},
     'lava-loucas-midea-8-servicos-review': {},
   }).map((slug) => ({ params: { slug } }));
 }
@@ -166,6 +174,7 @@ const isMaquinaGelo = slug === 'maquina-de-gelo-portatil';
 const isChaleira = slug === 'chaleira-eletrica-com-controle-de-temperatura';
 const isVaporizador = slug === 'vaporizador-de-roupas-portatil';
 const isLavaLoucas = slug === 'lava-loucas-midea-8-servicos-review';
+const isFornoEletrico = slug === 'forno-eletrico-portatil-vale-a-pena';
 
 const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
   : isAirfryer ? '/images/airfryer/capa-airfryer.png'
@@ -181,6 +190,7 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
   : isChaleira ? '/images/chaleira/capa-chaleira.jpg'
   : isVaporizador ? '/images/vaporizador/capa-vaporizador.jpg'
   : isLavaLoucas ? '/images/lava-loucas/capa-lava-loucas.jpg'
+  : isFornoEletrico ? '/images/forno-eletrico/capa-forno-eletrico.jpg'
   : undefined;
 ---
 
@@ -6200,6 +6210,426 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
         })}></script>
 
 
+      </div>
+    )}
+
+    {isFornoEletrico && (
+      <div>
+
+        <p class="text-xs text-slate-500 italic mb-6 border border-slate-100 rounded-xl px-4 py-3 bg-slate-50">
+          Este artigo pode conter links de afiliados. Se você comprar por um desses links, posso receber uma comissão sem custo adicional para você.
+        </p>
+
+        <img
+          src="/images/forno-eletrico/capa-forno-eletrico.jpg"
+          alt="Forno elétrico portátil aberto sobre bancada de cozinha moderna com comida dourada dentro"
+          class="w-full rounded-2xl mb-8 object-cover"
+          width="1536"
+          height="1024"
+          loading="eager"
+        />
+
+        <div class="bg-orange-50 border border-orange-100 rounded-2xl p-6 mb-8">
+          <p class="text-slate-800 text-base leading-relaxed mb-3">
+            Meu forno elétrico Fischer tem mais de 5 anos e já mudou de apartamento comigo. Quando fui embalar as coisas da mudança, ele foi um dos primeiros a entrar na caixa. Não me ocorreu nem por um segundo deixar para trás.
+          </p>
+          <p class="text-slate-800 text-base leading-relaxed mb-3">
+            Antes de comprar, pesquisei bastante. Mas o que me convenceu mesmo foi ver o da minha família funcionando há anos sem nunca precisar de conserto. Comprei o Fischer por indicação deles e não me arrependi. É forte, potente, e nunca me deixou na mão.
+          </p>
+          <p class="text-slate-800 text-base leading-relaxed">
+            Sou Claudia Castro, criadora do Casa em Alta. Neste artigo conto tudo que aprendi depois de anos usando forno elétrico no dia a dia: o que faz muito bem, o que consome de energia, quais modelos valem a pena e para quem esse eletrodoméstico realmente faz sentido.
+          </p>
+        </div>
+
+        <div class="bg-blue-50 border border-blue-200 rounded-2xl p-6 mb-10">
+          <h2 class="text-blue-900 font-bold text-lg mb-4">O que ninguém te conta sobre forno elétrico portátil</h2>
+          <div class="space-y-4 text-slate-700 text-sm leading-relaxed">
+            <div>
+              <p class="font-semibold text-slate-800 mb-1">Potência importa mais do que capacidade em litros</p>
+              <p>Um forno de 44L com 1750W chega a 320°C e assa mais rápido que um de 48L com 1200W. Na hora de escolher, olhe a potência antes de olhar o tamanho. Baixa potência significa temperatura instável, resultado desigual e mais tempo de forno ligado — o que aumenta o consumo de energia.</p>
+            </div>
+            <div>
+              <p class="font-semibold text-slate-800 mb-1">Você vai usar muito mais do que imagina</p>
+              <p>Quem compra para "fazer pizza de vez em quando" acaba assando frango, gratinando macarrão, aquecendo pão, fazendo bolo. O forno elétrico tende a substituir o micro-ondas em boa parte das tarefas de reaquecimento, porque o resultado é melhor: crocante por fora, quente por dentro.</p>
+            </div>
+            <div>
+              <p class="font-semibold text-slate-800 mb-1">Timer + dourador é o combo do dia a dia</p>
+              <p>Com o timer configurado, você coloca a comida, vai resolver outra coisa e o forno desliga sozinho com alerta sonoro. O dourador ativa a resistência superior para gratinar e deixar a superfície crocante. Esses dois recursos juntos são o que mais fazem falta quando alguém usa um forno sem eles.</p>
+            </div>
+            <div>
+              <p class="font-semibold text-slate-800 mb-1">Consumo de energia: um cálculo simples</p>
+              <p>Um forno de 1750W ligado por 1 hora consome 1,75 kWh — cerca de R$ 1,40 na tarifa média brasileira. Uma pizza assando por 20 minutos custa menos de R$ 0,50. Para uso moderado (3 a 4 vezes por semana), o acréscimo mensal na conta de luz fica entre R$ 15 e R$ 25. É bem menor do que a maioria das pessoas imagina.</p>
+            </div>
+          </div>
+        </div>
+
+        <nav class="border border-slate-200 rounded-2xl p-6 mb-10 bg-white">
+          <p class="font-bold text-slate-800 mb-3">Neste artigo:</p>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#modelos-fischer" class="text-orange-500 hover:text-orange-600 font-medium">Os 3 modelos Fischer que recomendo</a></li>
+            <li><a href="#o-que-faz-bem" class="text-orange-500 hover:text-orange-600 font-medium">O que o forno elétrico faz muito bem</a></li>
+            <li><a href="#consumo" class="text-orange-500 hover:text-orange-600 font-medium">Consumo de energia calculado</a></li>
+            <li><a href="#para-quem" class="text-orange-500 hover:text-orange-600 font-medium">Para quem vale a pena comprar</a></li>
+            <li><a href="#faq" class="text-orange-500 hover:text-orange-600 font-medium">Perguntas frequentes</a></li>
+          </ul>
+        </nav>
+
+        <div id="modelos-fischer" class="mb-2">
+          <h2 class="text-slate-800 font-black text-2xl mb-2">Os 3 modelos Fischer que recomendo</h2>
+          <p class="text-slate-600 text-sm mb-8 leading-relaxed">Fischer é uma das marcas mais confiáveis de forno elétrico no Brasil. Os três modelos abaixo cobrem desde quem quer entrar no mundo dos fornos elétricos sem gastar muito até quem quer o modelo mais completo da linha.</p>
+        </div>
+
+        <!-- PRODUTO 1: GOURMET GRILL 44L -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-orange-500 px-6 py-4">
+            <div class="flex items-center gap-3">
+              <span class="bg-white text-orange-500 text-xs font-black px-3 py-1 rounded-full">1º LUGAR</span>
+              <span class="bg-orange-400 text-white text-xs font-bold px-3 py-1 rounded-full">Melhor custo-benefício</span>
+            </div>
+            <p class="text-white font-black text-xl mt-2">Fischer Gourmet Grill 44L</p>
+            <p class="text-orange-100 text-sm mt-1">1750W, 320°C, timer 120 min, revestimento autolimpante</p>
+          </div>
+          <div class="p-6">
+            <div class="flex flex-col md:flex-row gap-6 mb-6">
+              <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 min-h-32">
+                <img src="/images/forno-eletrico/fischer-gourmet-grill.png" alt="Forno Elétrico Fischer Gourmet Grill 44 litros branco" class="max-h-36 object-contain" width="160" height="160" loading="lazy" />
+              </div>
+              <div class="flex-1">
+                <p class="text-slate-700 text-sm leading-relaxed mb-3">
+                  O Gourmet Grill é o modelo que eu recomendo para a maioria das pessoas. São 44 litros de capacidade com 1750W de potência — suficiente para assar uma pizza grande, um frango inteiro ou uma forma de bolo sem precisar esperar o forno pré-aquecer por muito tempo.
+                </p>
+                <p class="text-slate-700 text-sm leading-relaxed mb-3">
+                  O revestimento autolimpante interno absorve gordura e resíduos durante o cozimento a alta temperatura, transformando em vapor. Não é uma limpeza milagrosa, mas reduz muito o esforço de manutenção. O timer de 120 minutos com alerta sonoro permite que você largue o forno e vá fazer outra coisa.
+                </p>
+                <p class="text-slate-700 text-sm leading-relaxed">
+                  A temperatura vai de 50°C a 320°C com controle independente do dourador superior. Lâmpada interna para acompanhar o cozimento sem abrir a porta. Disponível em branco, preto, inox e prata.
+                </p>
+              </div>
+            </div>
+            <div class="grid grid-cols-2 gap-3 mb-5 text-xs">
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Capacidade</p><p class="font-bold text-slate-800">44 litros</p></div>
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Potência</p><p class="font-bold text-slate-800">1750W</p></div>
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Temperatura</p><p class="font-bold text-slate-800">50°C a 320°C</p></div>
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Timer</p><p class="font-bold text-slate-800">Até 120 min</p></div>
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Revestimento</p><p class="font-bold text-slate-800">Autolimpante</p></div>
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Lâmpada interna</p><p class="font-bold text-slate-800">Sim</p></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-5 text-sm">
+              <div>
+                <p class="font-semibold text-slate-800 mb-2">Pontos fortes</p>
+                <ul class="space-y-1 text-slate-600">
+                  <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Potência real de 1750W — assa rápido</li>
+                  <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Revestimento autolimpante facilita a manutenção</li>
+                  <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Timer com alerta sonoro</li>
+                  <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Controle de dourador independente</li>
+                  <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Durabilidade comprovada ao longo dos anos</li>
+                </ul>
+              </div>
+              <div>
+                <p class="font-semibold text-slate-800 mb-2">Pontos de atenção</p>
+                <ul class="space-y-1 text-slate-600">
+                  <li class="flex items-start gap-2"><span class="text-slate-400 font-bold mt-0.5">-</span> Ocupa espaço considerável na bancada</li>
+                  <li class="flex items-start gap-2"><span class="text-slate-400 font-bold mt-0.5">-</span> Preço acima dos modelos de entrada</li>
+                </ul>
+              </div>
+            </div>
+            <a href="https://amzn.to/FISCHER-GOURMET" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon</a>
+          </div>
+        </div>
+
+        <!-- PRODUTO 2: GRILL 44L -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-slate-800 px-6 py-4">
+            <div class="flex items-center gap-3">
+              <span class="bg-white text-slate-800 text-xs font-black px-3 py-1 rounded-full">2º LUGAR</span>
+              <span class="bg-slate-700 text-white text-xs font-bold px-3 py-1 rounded-full">Melhor entrada</span>
+            </div>
+            <p class="text-white font-black text-xl mt-2">Fischer Grill 44L</p>
+            <p class="text-slate-300 text-sm mt-1">1750W, 320°C, timer, dourador — versão essencial</p>
+          </div>
+          <div class="p-6">
+            <div class="flex flex-col md:flex-row gap-6 mb-6">
+              <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 min-h-32">
+                <img src="/images/forno-eletrico/fischer-grill.png" alt="Forno Elétrico Fischer Grill 44 litros branco" class="max-h-36 object-contain" width="160" height="160" loading="lazy" />
+              </div>
+              <div class="flex-1">
+                <p class="text-slate-700 text-sm leading-relaxed mb-3">
+                  Para quem quer entrar na marca Fischer sem pagar pelo modelo mais completo, o Grill 44L é a escolha certa. Mantém a potência de 1750W e os 320°C do Gourmet, o que significa o mesmo desempenho na hora de assar. O que muda é o acabamento e a ausência do revestimento autolimpante.
+                </p>
+                <p class="text-slate-700 text-sm leading-relaxed mb-3">
+                  Tem timer com alerta sonoro, controle de temperatura e dourador independente. Para o uso diário de quem quer assar uma pizza, gratinar, aquecer e fazer bolo, ele entrega tudo o que importa.
+                </p>
+                <p class="text-slate-700 text-sm leading-relaxed">
+                  Ideal para quem está comprando o primeiro forno elétrico e quer avaliar se o aparelho vai se encaixar na rotina antes de investir mais.
+                </p>
+              </div>
+            </div>
+            <div class="grid grid-cols-2 gap-3 mb-5 text-xs">
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Capacidade</p><p class="font-bold text-slate-800">44 litros</p></div>
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Potência</p><p class="font-bold text-slate-800">1750W</p></div>
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Temperatura</p><p class="font-bold text-slate-800">50°C a 320°C</p></div>
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Timer</p><p class="font-bold text-slate-800">Até 120 min</p></div>
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Revestimento</p><p class="font-bold text-slate-800">Esmaltado</p></div>
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Lâmpada interna</p><p class="font-bold text-slate-800">Sim</p></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-5 text-sm">
+              <div>
+                <p class="font-semibold text-slate-800 mb-2">Pontos fortes</p>
+                <ul class="space-y-1 text-slate-600">
+                  <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Mesma potência do modelo acima</li>
+                  <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Preço mais acessível</li>
+                  <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Marca confiável, durabilidade comprovada</li>
+                </ul>
+              </div>
+              <div>
+                <p class="font-semibold text-slate-800 mb-2">Pontos de atenção</p>
+                <ul class="space-y-1 text-slate-600">
+                  <li class="flex items-start gap-2"><span class="text-slate-400 font-bold mt-0.5">-</span> Sem revestimento autolimpante</li>
+                  <li class="flex items-start gap-2"><span class="text-slate-400 font-bold mt-0.5">-</span> Acabamento mais simples</li>
+                </ul>
+              </div>
+            </div>
+            <a href="https://amzn.to/FISCHER-GRILL" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon</a>
+          </div>
+        </div>
+
+        <!-- PRODUTO 3: PREMIER 48L -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-10 shadow-sm">
+          <div class="bg-slate-800 px-6 py-4">
+            <div class="flex items-center gap-3">
+              <span class="bg-white text-slate-800 text-xs font-black px-3 py-1 rounded-full">3º LUGAR</span>
+              <span class="bg-slate-700 text-white text-xs font-bold px-3 py-1 rounded-full">Maior capacidade</span>
+            </div>
+            <p class="text-white font-black text-xl mt-2">Fischer Premier 48L</p>
+            <p class="text-slate-300 text-sm mt-1">Design moderno, 48L, painel digital, visual premium</p>
+          </div>
+          <div class="p-6">
+            <div class="flex flex-col md:flex-row gap-6 mb-6">
+              <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 min-h-32">
+                <img src="/images/forno-eletrico/fischer-premier.png" alt="Forno Elétrico Fischer Premier 48 litros preto design moderno" class="max-h-36 object-contain" width="160" height="160" loading="lazy" />
+              </div>
+              <div class="flex-1">
+                <p class="text-slate-700 text-sm leading-relaxed mb-3">
+                  O Premier é o modelo mais moderno da Fischer, com design preto, linhas retas e painel com acabamento premium. São 48 litros de capacidade — os maiores dessa lista — e visual que combina muito bem com cozinhas integradas e modernas.
+                </p>
+                <p class="text-slate-700 text-sm leading-relaxed mb-3">
+                  Ideal para quem cozinha para mais pessoas com frequência e quer um forno que caiba esteticamente em uma cozinha bem decorada sem parecer um eletrodoméstico deslocado.
+                </p>
+                <p class="text-slate-700 text-sm leading-relaxed">
+                  Tem as mesmas funções essenciais: timer, controle de temperatura, dourador e lâmpada interna. O diferencial é mesmo o espaço interno e o acabamento.
+                </p>
+              </div>
+            </div>
+            <div class="grid grid-cols-2 gap-3 mb-5 text-xs">
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Capacidade</p><p class="font-bold text-slate-800">48 litros</p></div>
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Design</p><p class="font-bold text-slate-800">Preto premium</p></div>
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Timer</p><p class="font-bold text-slate-800">Sim</p></div>
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Dourador</p><p class="font-bold text-slate-800">Sim</p></div>
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Lâmpada interna</p><p class="font-bold text-slate-800">Sim</p></div>
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Acabamento</p><p class="font-bold text-slate-800">Premium moderno</p></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-5 text-sm">
+              <div>
+                <p class="font-semibold text-slate-800 mb-2">Pontos fortes</p>
+                <ul class="space-y-1 text-slate-600">
+                  <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Maior capacidade interna (48L)</li>
+                  <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Design moderno que combina com cozinhas integradas</li>
+                  <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Acabamento premium</li>
+                </ul>
+              </div>
+              <div>
+                <p class="font-semibold text-slate-800 mb-2">Pontos de atenção</p>
+                <ul class="space-y-1 text-slate-600">
+                  <li class="flex items-start gap-2"><span class="text-slate-400 font-bold mt-0.5">-</span> Preço mais alto da lista</li>
+                  <li class="flex items-start gap-2"><span class="text-slate-400 font-bold mt-0.5">-</span> Maior volume ocupa mais espaço na bancada</li>
+                </ul>
+              </div>
+            </div>
+            <a href="https://amzn.to/FISCHER-PREMIER" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon</a>
+          </div>
+        </div>
+
+        <!-- O QUE FAZ MUITO BEM -->
+        <div id="o-que-faz-bem" class="mb-10">
+          <h2 class="text-slate-800 font-black text-2xl mb-6">O que o forno elétrico faz muito bem</h2>
+          <div class="space-y-4">
+            <div class="border border-slate-200 rounded-2xl p-5 bg-white">
+              <h3 class="font-bold text-slate-800 mb-2">Pizza e esfiha</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">A 220°C por 15 a 20 minutos, a pizza sai com a massa crocante por baixo e o queijo derretido e dourado por cima. Muito melhor do que no micro-ondas, que amolece a massa. Use a grelha no nível mais baixo para garantir que o fundo asse bem.</p>
+            </div>
+            <div class="border border-slate-200 rounded-2xl p-5 bg-white">
+              <h3 class="font-bold text-slate-800 mb-2">Frango e carnes</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">Frango com tempero a 200°C por 50 a 60 minutos sai dourado por fora e suculento por dentro. Use a assadeira no nível do meio. Para dourar mais no final, ligue o dourador superior nos últimos 10 minutos sem abrir a porta.</p>
+            </div>
+            <div class="border border-slate-200 rounded-2xl p-5 bg-white">
+              <h3 class="font-bold text-slate-800 mb-2">Gratinados e massas</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">Macarrão ao forno, lasanha, batata gratinada e moussaka ficam excelentes. O dourador superior cria aquela crosta crocante de queijo que não se consegue em fogão. É uma das funções mais usadas por quem tem forno elétrico há mais tempo.</p>
+            </div>
+            <div class="border border-slate-200 rounded-2xl p-5 bg-white">
+              <h3 class="font-bold text-slate-800 mb-2">Bolos e pães</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">Bolos simples saem bem a 180°C com o forno pré-aquecido por 10 minutos. A temperatura constante do elétrico costuma dar resultado mais uniforme que o forno a gás, que pode ter variações por zona. Pão de queijo de congelado a 200°C por 15 minutos fica igualzinho ao de padaria.</p>
+            </div>
+            <div class="border border-slate-200 rounded-2xl p-5 bg-white">
+              <h3 class="font-bold text-slate-800 mb-2">Reaquecimento superior ao micro-ondas</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">Para reaquecimento de pizza, frango, batata frita e qualquer coisa que precise ficar crocante, o forno elétrico ganha do micro-ondas sem discussão. A 180°C por 8 a 10 minutos, a comida fica quente e com a textura original — não borrachuda e encharcada.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CONSUMO DE ENERGIA -->
+        <div id="consumo" class="mb-10">
+          <h2 class="text-slate-800 font-black text-2xl mb-6">Consumo de energia calculado</h2>
+          <div class="space-y-5">
+            <div class="border border-slate-200 rounded-2xl p-5 bg-white">
+              <h3 class="font-bold text-slate-800 mb-2">Quanto gasta por uso</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">Um forno de 1750W ligado por 1 hora consome 1,75 kWh. Na tarifa residencial média de R$ 0,80/kWh, isso é aproximadamente R$ 1,40 por hora de uso. Uma pizza assando por 20 minutos custa menos de R$ 0,50. Um frango inteiro de 1 hora custa cerca de R$ 1,40.</p>
+            </div>
+            <div class="border border-slate-200 rounded-2xl p-5 bg-white">
+              <h3 class="font-bold text-slate-800 mb-2">Impacto mensal na conta de luz</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">Para quem usa o forno 3 a 4 vezes por semana com sessões médias de 30 a 40 minutos, o acréscimo mensal fica entre R$ 15 e R$ 25. É o equivalente ao custo de 2 a 3 cafés por mês. Quem usa todo dia pode chegar a R$ 40 a R$ 50 mensais — ainda assim um valor razoável para o que o aparelho entrega.</p>
+            </div>
+            <div class="bg-orange-50 border border-orange-200 rounded-2xl p-5">
+              <p class="font-bold text-orange-900 mb-2">Dica para gastar menos energia</p>
+              <p class="text-sm text-slate-700 leading-relaxed">Não abra a porta durante o cozimento desnecessariamente: cada abertura faz a temperatura cair e o forno precisa gastar energia para recuperar. Desligue 5 a 10 minutos antes do tempo final — o calor residual termina o cozimento sem custo extra. E aproveite para usar o forno com mais de um alimento quando ligar.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- PARA QUEM VALE A PENA -->
+        <div id="para-quem" class="bg-orange-50 border border-orange-200 rounded-2xl p-6 mb-10">
+          <h2 class="text-orange-900 font-black text-xl mb-5">Para quem vale a pena comprar</h2>
+          <div class="space-y-4">
+            <div class="flex gap-4 items-start">
+              <div class="bg-orange-500 text-white rounded-xl px-3 py-2 text-xs font-bold flex-shrink-0 text-center w-28">Apartamento sem forno</div>
+              <div class="text-sm text-slate-700 leading-relaxed"><strong>Sim, é para você.</strong> Muitos apartamentos compactos vêm com fogão de 2 ou 4 bocas sem forno, ou com forno minúsculo. O elétrico de bancada resolve isso com facilidade, ocupa pouco espaço e não precisa de instalação especial.</div>
+            </div>
+            <div class="flex gap-4 items-start">
+              <div class="bg-orange-500 text-white rounded-xl px-3 py-2 text-xs font-bold flex-shrink-0 text-center w-28">Quem assa com frequência</div>
+              <div class="text-sm text-slate-700 leading-relaxed"><strong>Vale muito.</strong> Se você faz pizza, frango, bolo ou gratinado pelo menos uma vez por semana, o retorno é imediato. A praticidade do timer e do dourador muda a rotina de forma real.</div>
+            </div>
+            <div class="flex gap-4 items-start">
+              <div class="bg-orange-500 text-white rounded-xl px-3 py-2 text-xs font-bold flex-shrink-0 text-center w-28">Substituir o micro-ondas</div>
+              <div class="text-sm text-slate-700 leading-relaxed"><strong>Faz sentido.</strong> Para quem usa o micro-ondas só para reaquecer comida, o forno elétrico faz isso com resultado muito melhor. Não substitui para descongelar rápido, mas para o reaquecimento do dia a dia é muito superior.</div>
+            </div>
+            <div class="flex gap-4 items-start">
+              <div class="bg-slate-600 text-white rounded-xl px-3 py-2 text-xs font-bold flex-shrink-0 text-center w-28">Quem já tem airfryer</div>
+              <div class="text-sm text-slate-700 leading-relaxed"><strong>Avalie o que falta.</strong> O forno elétrico e a airfryer se complementam: o forno é melhor para volumes grandes, assados longos e gratinados; a airfryer é mais rápida para porções pequenas e fritura a ar. Se você já tem airfryer e assa pouco, pense bem antes de adicionar mais um aparelho na bancada.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ -->
+        <div id="faq" class="mb-10">
+          <h2 class="text-slate-800 font-black text-2xl mb-6">Perguntas frequentes sobre forno elétrico portátil</h2>
+          <div class="space-y-3">
+
+            <details class="border border-slate-200 rounded-xl overflow-hidden group">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+                <span>Forno elétrico portátil gasta muita energia?</span>
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 py-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
+                Depende do uso. Um forno de 1750W custa cerca de R$ 1,40 por hora de uso. Para quem usa 3 a 4 vezes por semana com sessões de 30 a 40 minutos, o impacto mensal fica entre R$ 15 e R$ 25 na conta de luz. Para uso intenso diário pode chegar a R$ 40 a R$ 50. É um consumo real, mas proporcional à praticidade que entrega.
+              </div>
+            </details>
+
+            <details class="border border-slate-200 rounded-xl overflow-hidden group">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+                <span>Forno elétrico é melhor que o forno a gás do fogão?</span>
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 py-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
+                Em controle de temperatura, sim. O forno elétrico mantém a temperatura escolhida de forma mais estável, sem as variações de zona que o gás costuma ter. O dourador superior independente também é um diferencial que o forno a gás convencional não tem. Para quem assa com frequência e quer resultado mais uniforme, o elétrico costuma superar o a gás em praticidade.
+              </div>
+            </details>
+
+            <details class="border border-slate-200 rounded-xl overflow-hidden group">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+                <span>Quanto tempo dura um forno elétrico portátil de qualidade?</span>
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 py-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
+                Um forno de marca confiável, como a Fischer, dura facilmente entre 7 e 10 anos com uso regular e limpeza adequada. O ponto mais sensível é a resistência elétrica, que pode se deteriorar se o forno for ligado com gordura acumulada na parte de baixo. Limpeza depois de cada uso e nunca exceder a capacidade de líquidos na assadeira são os cuidados mais importantes.
+              </div>
+            </details>
+
+            <details class="border border-slate-200 rounded-xl overflow-hidden group">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+                <span>Precisa de tomada especial para o forno elétrico?</span>
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 py-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
+                Idealmente, sim. Um forno de 1750W deve ser ligado em uma tomada com circuito independente de 20A para evitar sobrecarregar o circuito da cozinha. Na prática, muitos apartamentos já têm tomadas de maior amperagem próximo à bancada. Evite ligar junto com outros aparelhos de alta potência no mesmo circuito, como microondas ou cafeteira elétrica.
+              </div>
+            </details>
+
+            <details class="border border-slate-200 rounded-xl overflow-hidden group">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+                <span>Como limpar o forno elétrico sem danificar?</span>
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 py-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
+                Espere esfriar completamente antes de limpar. Retire a bandeja coletora e lave normalmente com esponja e detergente. Por dentro, use um pano úmido com detergente neutro — nunca produtos abrasivos ou palha de aço na resistência. Modelos com revestimento autolimpante apenas precisam ser aquecidos a alta temperatura para que os resíduos de gordura se transformem em cinza, que você remove com pano seco.
+              </div>
+            </details>
+
+            <details class="border border-slate-200 rounded-xl overflow-hidden group">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+                <span>Forno elétrico portátil ou airfryer: qual comprar primeiro?</span>
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 py-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
+                Depende do que você mais faz na cozinha. Se você assa frango inteiro, faz pizza, gratinado e bolo com frequência, o forno elétrico entrega mais. Se o uso é para porcões menores, batata frita a ar, nuggets e reaquecimento rápido, a airfryer é mais prática. Para quem tem espaço e orçamento, os dois juntos se complementam muito bem.
+              </div>
+            </details>
+
+          </div>
+        </div>
+
+        <!-- CONCLUSÃO -->
+        <div class="bg-slate-800 text-white rounded-2xl p-6 mb-8">
+          <h2 class="font-black text-xl mb-3">Minha conclusão depois de mais de 5 anos usando</h2>
+          <p class="text-slate-300 text-sm leading-relaxed mb-4">
+            O forno elétrico Fischer foi uma das melhores compras que fiz para a cozinha. Mudei de apartamento e levei junto — esse é o maior sinal de aprovação que posso dar. Para quem mora em apartamento sem forno no fogão ou com forno ruim, ele resolve de verdade. O Fischer Gourmet Grill 44L é minha recomendação principal: potente, durável e com o revestimento autolimpante que faz diferença na manutenção.
+          </p>
+        </div>
+
+        <script type="application/ld+json" set:html={JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Forno elétrico portátil gasta muita energia?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Um forno de 1750W custa cerca de R$ 1,40 por hora de uso. Para uso de 3 a 4 vezes por semana, o impacto mensal fica entre R$ 15 e R$ 25 na conta de luz." }
+            },
+            {
+              "@type": "Question",
+              "name": "Forno elétrico é melhor que o forno a gás?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Em controle de temperatura sim. O elétrico mantém temperatura estável e tem dourador superior independente, o que o gás convencional não tem." }
+            },
+            {
+              "@type": "Question",
+              "name": "Quanto tempo dura um forno elétrico portátil de qualidade?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Com marca confiável e limpeza adequada, dura entre 7 e 10 anos com uso regular." }
+            },
+            {
+              "@type": "Question",
+              "name": "Precisa de tomada especial para o forno elétrico?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Idealmente uma tomada com circuito independente de 20A. Evite ligar junto com outros aparelhos de alta potência no mesmo circuito." }
+            },
+            {
+              "@type": "Question",
+              "name": "Como limpar o forno elétrico sem danificar?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Espere esfriar, retire a bandeja e lave com esponja e detergente neutro. Nunca use abrasivos ou palha de aço na resistência." }
+            },
+            {
+              "@type": "Question",
+              "name": "Forno elétrico portátil ou airfryer: qual comprar primeiro?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Para assados grandes, pizza, gratinado e bolo, o forno elétrico entrega mais. Para porções menores e frituras a ar, a airfryer é mais prática." }
+            }
+          ]
+        })} />
       </div>
     )}
 
