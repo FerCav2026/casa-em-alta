@@ -102,6 +102,13 @@ const posts: Record<string, { titulo: string; descricao: string; categoria: stri
     dataCriacao: '2026-06-08',
     dataModificacao: '2026-06-08',
   },
+  'lava-e-seca-ou-secadora-apartamento': {
+    titulo: 'Lava e Seca ou Secadora de Roupas: Qual Compensa Mais para Quem Mora em Apartamento?',
+    descricao: 'Tenho uma lava e seca Midea 11kg há 2 anos e moro em apartamento com filhos. Conto tudo sobre essa escolha e quando faz sentido considerar uma secadora separada.',
+    categoria: 'Comparativo',
+    dataCriacao: '2026-06-13',
+    dataModificacao: '2026-06-13',
+  },
 };
 
 export function getStaticPaths() {
@@ -120,6 +127,7 @@ export function getStaticPaths() {
     'chaleira-eletrica-com-controle-de-temperatura': {},
     'vaporizador-de-roupas-portatil': {},
     'lava-loucas-midea-8-servicos-review': {},
+    'lava-e-seca-ou-secadora-apartamento': {},
   }).map((slug) => ({ params: { slug } }));
 }
 
@@ -166,6 +174,7 @@ const isMaquinaGelo = slug === 'maquina-de-gelo-portatil';
 const isChaleira = slug === 'chaleira-eletrica-com-controle-de-temperatura';
 const isVaporizador = slug === 'vaporizador-de-roupas-portatil';
 const isLavaLoucas = slug === 'lava-loucas-midea-8-servicos-review';
+const isLavaSeca = slug === 'lava-e-seca-ou-secadora-apartamento';
 
 const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
   : isAirfryer ? '/images/airfryer/capa-airfryer.png'
@@ -181,6 +190,7 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
   : isChaleira ? '/images/chaleira/capa-chaleira.jpg'
   : isVaporizador ? '/images/vaporizador/capa-vaporizador.jpg'
   : isLavaLoucas ? '/images/lava-loucas/capa-lava-loucas.jpg'
+  : isLavaSeca ? '/images/lava-seca/capa-lava-seca.jpg'
   : undefined;
 ---
 
@@ -6615,6 +6625,424 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
                 "@type": "Answer",
                 "text": "Não. Precisa de detergente específico para máquina automática (pó, gel ou tablete). O detergente comum de lavar louça na mão forma espuma demais e pode vazar pela máquina."
               }
+            }
+          ]
+        })} />
+      </div>
+    )}
+
+    {isLavaSeca && (
+      <div>
+
+        <p class="text-xs text-slate-500 italic mb-6 border border-slate-100 rounded-xl px-4 py-3 bg-slate-50">
+          Este artigo pode conter links de afiliados. Se você comprar por um desses links, posso receber uma comissão sem custo adicional para você.
+        </p>
+
+        <img
+          src="/images/lava-seca/capa-lava-seca.jpg"
+          alt="Lava e seca compacta em lavanderia de apartamento moderno com roupas dobradas ao lado"
+          class="w-full rounded-2xl mb-8 object-cover"
+          width="1536"
+          height="1024"
+          loading="eager"
+        />
+
+        <div class="bg-orange-50 border border-orange-100 rounded-2xl p-6 mb-8">
+          <p class="text-slate-800 text-base leading-relaxed mb-3">
+            Tenho uma lava e seca Midea HealthGuard de 11kg há dois anos. Moro em apartamento, tenho filhos, e desde que comprei não precisei mais me preocupar com varal, chuva ou falta de espaço para secar roupa. Ela lava e já entrega seca. Para a minha rotina, foi uma das melhores compras que fiz para casa.
+          </p>
+          <p class="text-slate-800 text-base leading-relaxed">
+            A dúvida que muita gente tem é se vale mais um aparelho só ou dois separados. Fui pesquisar essa questão a fundo e conto aqui tudo que aprendi, incluindo quando a secadora separada realmente faz sentido, porque às vezes faz.
+          </p>
+        </div>
+
+        <div class="bg-blue-50 border border-blue-200 rounded-2xl p-6 mb-10">
+          <h2 class="text-blue-900 font-bold text-lg mb-4">O que ninguém te conta sobre essa escolha</h2>
+          <div class="space-y-4 text-slate-700 text-sm leading-relaxed">
+            <div>
+              <p class="font-semibold text-slate-800 mb-1">A lava e seca ocupa o espaço de uma lavadora normal</p>
+              <p>O tamanho externo de uma lava e seca 11kg é praticamente igual ao de uma lavadora 11kg convencional. Você ganha a função de secar sem ocupar nada a mais. Para apartamento com lavanderia pequena, essa é a grande vantagem.</p>
+            </div>
+            <div>
+              <p class="font-semibold text-slate-800 mb-1">A capacidade de secagem é menor do que a de lavagem</p>
+              <p>Uma lava e seca que lava 11kg seca em torno de 7kg por ciclo. Isso significa que para secar toda a roupa lavada, você precisa fazer dois ciclos de secagem ou carregar menos na lavagem. Quem tem família grande e lava muito pode sentir essa limitação.</p>
+            </div>
+            <div>
+              <p class="font-semibold text-slate-800 mb-1">Secadora separada seca mais rápido e em maior quantidade</p>
+              <p>Uma secadora de condensação 10kg seca 10kg de uma vez, em menos tempo do que a lava e seca faz no ciclo completo. Para quem lava com frequência diária e tem mais espaço disponível, dois aparelhos separados podem ser mais eficientes.</p>
+            </div>
+            <div>
+              <p class="font-semibold text-slate-800 mb-1">O custo total importa mais do que o preço unitário</p>
+              <p>Uma boa lava e seca custa entre R$ 3.000 e R$ 5.000. Uma lavadora boa mais uma secadora boa separadas chegam facilmente a R$ 5.000 a R$ 8.000. Além do dinheiro, dois aparelhos precisam de duas instalações e ocupam mais espaço.</p>
+            </div>
+          </div>
+        </div>
+
+        <nav class="border border-slate-200 rounded-2xl p-6 mb-10 bg-white">
+          <p class="font-bold text-slate-800 mb-3">Neste artigo:</p>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#diferenca" class="text-orange-500 hover:text-orange-600 font-medium">Qual a diferença real entre lava e seca e secadora?</a></li>
+            <li><a href="#lava-e-seca-modelos" class="text-orange-500 hover:text-orange-600 font-medium">Lava e seca: os 2 melhores modelos de 2026</a></li>
+            <li><a href="#secadora-modelos" class="text-orange-500 hover:text-orange-600 font-medium">Secadora separada: quando faz sentido e qual modelo</a></li>
+            <li><a href="#comparativo" class="text-orange-500 hover:text-orange-600 font-medium">Comparativo direto: lava e seca vs secadora</a></li>
+            <li><a href="#veredicto" class="text-orange-500 hover:text-orange-600 font-medium">Para quem é cada opção</a></li>
+            <li><a href="#faq" class="text-orange-500 hover:text-orange-600 font-medium">Perguntas frequentes</a></li>
+          </ul>
+        </nav>
+
+        <div id="diferenca" class="mb-10">
+          <h2 class="text-slate-800 font-black text-2xl mb-5">Qual a diferença real entre lava e seca e secadora separada?</h2>
+          <div class="space-y-4">
+            <div class="border border-slate-200 rounded-2xl p-5 bg-white">
+              <h3 class="font-bold text-slate-800 mb-2">Lava e seca: tudo em um aparelho</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">A lava e seca é uma máquina de lavar frontal que também tem função de secagem por condensação. Você coloca a roupa suja, programa o ciclo completo e retira a roupa seca. O aparelho ocupa o mesmo espaço de uma lavadora comum, ideal para quem tem pouco espaço na lavanderia.</p>
+            </div>
+            <div class="border border-slate-200 rounded-2xl p-5 bg-white">
+              <h3 class="font-bold text-slate-800 mb-2">Secadora separada: mais eficiência, mais espaço</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">A secadora é um aparelho dedicado exclusivamente a secar roupa. Você precisa de uma lavadora separada para completar o ciclo de lavagem. A vantagem é que seca em maior quantidade e mais rapidamente. A desvantagem é o custo duplicado e o espaço extra necessário.</p>
+            </div>
+            <div class="border border-slate-200 rounded-2xl p-5 bg-white">
+              <h3 class="font-bold text-slate-800 mb-2">O que é secagem por condensação?</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">A maioria das lava e secas vendidas no Brasil usa tecnologia de condensação: o calor evapora a água das roupas, esse vapor é condensado internamente e a água coletada vai para um reservatório ou pelo encanamento. Não precisa de duto de saída de ar para fora do cômodo, por isso funciona muito bem em apartamentos sem janela na lavanderia.</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="lava-e-seca-modelos" class="mb-2">
+          <h2 class="text-slate-800 font-black text-2xl mb-2">Lava e seca: os 2 melhores modelos de 2026</h2>
+          <p class="text-slate-600 text-sm mb-8 leading-relaxed">Para quem mora em apartamento, a lava e seca é quase sempre a escolha mais inteligente. Abaixo os dois modelos mais recomendados no Brasil hoje.</p>
+        </div>
+
+        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-orange-500 px-6 py-4">
+            <div class="flex items-center gap-3">
+              <span class="bg-white text-orange-500 text-xs font-black px-3 py-1 rounded-full">1º LUGAR</span>
+              <span class="bg-orange-400 text-white text-xs font-bold px-3 py-1 rounded-full">Minha escolha</span>
+            </div>
+            <p class="text-white font-black text-xl mt-2">Midea HealthGuard Slim 11kg</p>
+            <p class="text-orange-100 text-sm mt-1">Motor Inverter, Slim (57,5cm), Wi-Fi, HealthGuard antibacteriano</p>
+          </div>
+          <div class="p-6">
+            <div class="flex flex-col md:flex-row gap-6 mb-6">
+              <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 min-h-32">
+                <img src="/images/lava-seca/midea-healthguard-11kg.webp" alt="Lava e seca Midea HealthGuard Slim 11kg preta" class="max-h-36 object-contain" width="160" height="160" loading="lazy" />
+              </div>
+              <div class="flex-1">
+                <p class="text-slate-700 text-sm leading-relaxed mb-3">
+                  Esse é o modelo que tenho há dois anos. A Midea HealthGuard Slim tem 57,5cm de profundidade — 4,5cm a menos que os modelos convencionais — o que faz diferença real em lavanderias apertadas de apartamento. Lava 11kg e seca 7kg por ciclo, com motor Inverter que reduz o consumo de energia e o ruído.
+                </p>
+                <p class="text-slate-700 text-sm leading-relaxed mb-3">
+                  A tecnologia HealthGuard elimina até 99,9% de bactérias nas roupas durante a lavagem. Para quem tem filhos pequenos, esse detalhe importa no dia a dia. A conexão Wi-Fi permite programar ciclos pelo celular, uso bastante para deixar rodando durante a madrugada, quando a tarifa de energia é mais barata.
+                </p>
+                <p class="text-slate-700 text-sm leading-relaxed">
+                  Nunca tive problema em dois anos de uso intenso. Minha principal recomendação para quem mora em apartamento e quer resolver de uma vez o problema de secar roupa.
+                </p>
+              </div>
+            </div>
+            <div class="grid grid-cols-2 gap-3 mb-5 text-xs">
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Capacidade lavagem</p><p class="font-bold text-slate-800">11 kg</p></div>
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Capacidade secagem</p><p class="font-bold text-slate-800">7 kg</p></div>
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Profundidade Slim</p><p class="font-bold text-slate-800">57,5 cm</p></div>
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Motor</p><p class="font-bold text-slate-800">Inverter</p></div>
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Conectividade</p><p class="font-bold text-slate-800">Wi-Fi</p></div>
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Higienização</p><p class="font-bold text-slate-800">HealthGuard</p></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-5 text-sm">
+              <div>
+                <p class="font-semibold text-slate-800 mb-2">Pontos fortes</p>
+                <ul class="space-y-1 text-slate-600">
+                  <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Slim: cabe em lavanderias apertadas</li>
+                  <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Motor Inverter silencioso e econômico</li>
+                  <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Wi-Fi para programação pelo celular</li>
+                  <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> HealthGuard elimina bactérias</li>
+                  <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Durabilidade comprovada no uso diário com filhos</li>
+                </ul>
+              </div>
+              <div>
+                <p class="font-semibold text-slate-800 mb-2">Pontos de atenção</p>
+                <ul class="space-y-1 text-slate-600">
+                  <li class="flex items-start gap-2"><span class="text-slate-400 font-bold mt-0.5">-</span> Seca menos do que lava (7kg vs 11kg)</li>
+                  <li class="flex items-start gap-2"><span class="text-slate-400 font-bold mt-0.5">-</span> Ciclo completo lavar+secar é longo (~3h)</li>
+                </ul>
+              </div>
+            </div>
+            <a href="https://amzn.to/MIDEA-HEALTHGUARD" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon</a>
+          </div>
+        </div>
+
+        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-10 shadow-sm">
+          <div class="bg-slate-800 px-6 py-4">
+            <div class="flex items-center gap-3">
+              <span class="bg-white text-slate-800 text-xs font-black px-3 py-1 rounded-full">2º LUGAR</span>
+              <span class="bg-slate-700 text-white text-xs font-bold px-3 py-1 rounded-full">Melhor avaliada</span>
+            </div>
+            <p class="text-white font-black text-xl mt-2">Samsung WD11A Ecobubble 11kg</p>
+            <p class="text-slate-300 text-sm mt-1">Ecobubble, Digital Inverter, lavagem a vapor, 10 anos de garantia do motor</p>
+          </div>
+          <div class="p-6">
+            <div class="flex flex-col md:flex-row gap-6 mb-6">
+              <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 min-h-32">
+                <img src="/images/lava-seca/samsung-wd11a-11kg.jpg" alt="Lava e seca Samsung WD11A Ecobubble 11kg branca" class="max-h-36 object-contain" width="160" height="160" loading="lazy" />
+              </div>
+              <div class="flex-1">
+                <p class="text-slate-700 text-sm leading-relaxed mb-3">
+                  A Samsung WD11A é a lava e seca mais bem avaliada do mercado brasileiro em 2026. A tecnologia Ecobubble mistura água, detergente e ar para criar uma espuma que penetra profundamente nas fibras, lavando melhor em temperaturas mais baixas, economizando energia e preservando as roupas.
+                </p>
+                <p class="text-slate-700 text-sm leading-relaxed mb-3">
+                  O motor Digital Inverter tem 10 anos de garantia, um dos maiores do mercado. Funciona com menos vibração e ruído do que modelos convencionais, o que é especialmente importante em apartamentos com vizinhos próximos.
+                </p>
+                <p class="text-slate-700 text-sm leading-relaxed">
+                  Tem ciclo de lavagem a vapor para higienização profunda e ciclo Rápido de 15 minutos para roupas levemente sujas do dia a dia.
+                </p>
+              </div>
+            </div>
+            <div class="grid grid-cols-2 gap-3 mb-5 text-xs">
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Capacidade lavagem</p><p class="font-bold text-slate-800">11 kg</p></div>
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Capacidade secagem</p><p class="font-bold text-slate-800">7 kg</p></div>
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Tecnologia</p><p class="font-bold text-slate-800">Ecobubble</p></div>
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Motor</p><p class="font-bold text-slate-800">Digital Inverter</p></div>
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Garantia motor</p><p class="font-bold text-slate-800">10 anos</p></div>
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Vapor</p><p class="font-bold text-slate-800">Sim</p></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-5 text-sm">
+              <div>
+                <p class="font-semibold text-slate-800 mb-2">Pontos fortes</p>
+                <ul class="space-y-1 text-slate-600">
+                  <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Ecobubble: lava melhor com menos energia</li>
+                  <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Motor com 10 anos de garantia</li>
+                  <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Muito silenciosa para apartamento</li>
+                  <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Ciclo a vapor para higienização profunda</li>
+                </ul>
+              </div>
+              <div>
+                <p class="font-semibold text-slate-800 mb-2">Pontos de atenção</p>
+                <ul class="space-y-1 text-slate-600">
+                  <li class="flex items-start gap-2"><span class="text-slate-400 font-bold mt-0.5">-</span> Preço um pouco acima da Midea</li>
+                  <li class="flex items-start gap-2"><span class="text-slate-400 font-bold mt-0.5">-</span> Profundidade padrão (não é Slim)</li>
+                </ul>
+              </div>
+            </div>
+            <a href="https://amzn.to/SAMSUNG-WD11A" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon</a>
+          </div>
+        </div>
+
+        <div id="secadora-modelos" class="mb-2">
+          <h2 class="text-slate-800 font-black text-2xl mb-2">Secadora separada: quando faz sentido</h2>
+          <p class="text-slate-600 text-sm mb-8 leading-relaxed">A secadora separada faz sentido para quem já tem uma boa lavadora, precisa secar grande volume de roupa todo dia e tem espaço disponível. Para a maioria dos apartamentos, a conta não fecha.</p>
+        </div>
+
+        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-10 shadow-sm">
+          <div class="bg-slate-700 px-6 py-4">
+            <div class="flex items-center gap-3">
+              <span class="bg-white text-slate-700 text-xs font-black px-3 py-1 rounded-full">DESTAQUE</span>
+              <span class="bg-slate-600 text-white text-xs font-bold px-3 py-1 rounded-full">Compacta de parede</span>
+            </div>
+            <p class="text-white font-black text-xl mt-2">Electrolux SVP11 Essential Care 10,5kg</p>
+            <p class="text-slate-300 text-sm mt-1">Condensação, suspensa na parede ou no piso, 56,5cm de prof., sensor de umidade</p>
+          </div>
+          <div class="p-6">
+            <div class="flex flex-col md:flex-row gap-6 mb-6">
+              <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 min-h-32">
+                <img src="/images/lava-seca/electrolux-svp11-secadora.jpg" alt="Secadora de roupas Electrolux SVP11 10,5kg branca compacta" class="max-h-36 object-contain" width="160" height="160" loading="lazy" />
+              </div>
+              <div class="flex-1">
+                <p class="text-slate-700 text-sm leading-relaxed mb-3">
+                  A SVP11 é a secadora de condensação mais indicada para apartamentos no Brasil. Pode ficar no piso ou suspensa na parede, o que é uma vantagem real para lavanderias pequenas: a máquina de lavar embaixo e a secadora em cima, aproveitando altura sem ocupar área de piso.
+                </p>
+                <p class="text-slate-700 text-sm leading-relaxed mb-3">
+                  Com 56,5cm de profundidade, cabe onde a maioria das lavadoras cabe. A secagem por condensação não precisa de duto de saída, então funciona em qualquer ambiente interno sem ventilação externa. Os sensores de umidade desligam o aparelho automaticamente quando a roupa está seca.
+                </p>
+                <p class="text-slate-700 text-sm leading-relaxed">
+                  O filtro de fiapos triplo é uma das melhores da categoria: captura fibras com alta eficiência e a limpeza é rápida, feita com a mão sem precisar de ferramentas.
+                </p>
+              </div>
+            </div>
+            <div class="grid grid-cols-2 gap-3 mb-5 text-xs">
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Capacidade</p><p class="font-bold text-slate-800">10,5 kg</p></div>
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Tipo secagem</p><p class="font-bold text-slate-800">Condensação</p></div>
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Profundidade</p><p class="font-bold text-slate-800">56,5 cm</p></div>
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Instalação</p><p class="font-bold text-slate-800">Piso ou parede</p></div>
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Sensor umidade</p><p class="font-bold text-slate-800">Sim</p></div>
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Filtro fiapos</p><p class="font-bold text-slate-800">Triplo</p></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-5 text-sm">
+              <div>
+                <p class="font-semibold text-slate-800 mb-2">Pontos fortes</p>
+                <ul class="space-y-1 text-slate-600">
+                  <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Pode ser suspensa — libera o piso</li>
+                  <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Condensação sem duto em qualquer cômodo</li>
+                  <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Sensor desliga ao secar — econômica</li>
+                  <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Filtro triplo fácil de limpar</li>
+                </ul>
+              </div>
+              <div>
+                <p class="font-semibold text-slate-800 mb-2">Pontos de atenção</p>
+                <ul class="space-y-1 text-slate-600">
+                  <li class="flex items-start gap-2"><span class="text-slate-400 font-bold mt-0.5">-</span> Exige lavadora separada</li>
+                  <li class="flex items-start gap-2"><span class="text-slate-400 font-bold mt-0.5">-</span> Custo total mais alto (dois aparelhos)</li>
+                  <li class="flex items-start gap-2"><span class="text-slate-400 font-bold mt-0.5">-</span> Kit de fixação na parede vendido separado</li>
+                </ul>
+              </div>
+            </div>
+            <a href="https://amzn.to/ELECTROLUX-SVP11" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon</a>
+          </div>
+        </div>
+
+        <div id="comparativo" class="mb-10">
+          <h2 class="text-slate-800 font-black text-2xl mb-6">Comparativo direto: lava e seca vs lavadora + secadora</h2>
+          <div class="overflow-x-auto rounded-2xl border border-slate-200">
+            <table class="w-full text-sm">
+              <thead>
+                <tr class="bg-slate-800 text-white">
+                  <th class="text-left px-4 py-3 font-bold">Critério</th>
+                  <th class="text-center px-4 py-3 font-bold">Lava e seca</th>
+                  <th class="text-center px-4 py-3 font-bold">Lavadora + Secadora</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-100">
+                <tr class="bg-white"><td class="px-4 py-3 font-medium text-slate-700">Espaço necessário</td><td class="px-4 py-3 text-center text-green-700 font-bold">1 aparelho</td><td class="px-4 py-3 text-center text-slate-500">2 aparelhos</td></tr>
+                <tr class="bg-slate-50"><td class="px-4 py-3 font-medium text-slate-700">Custo inicial</td><td class="px-4 py-3 text-center text-green-700 font-bold">R$ 3.000 a 5.000</td><td class="px-4 py-3 text-center text-slate-500">R$ 5.000 a 8.000</td></tr>
+                <tr class="bg-white"><td class="px-4 py-3 font-medium text-slate-700">Capacidade de secagem</td><td class="px-4 py-3 text-center text-slate-500">7kg por ciclo</td><td class="px-4 py-3 text-center text-green-700 font-bold">10 a 11kg por ciclo</td></tr>
+                <tr class="bg-slate-50"><td class="px-4 py-3 font-medium text-slate-700">Velocidade (lavar + secar)</td><td class="px-4 py-3 text-center text-slate-500">Ciclo único ~3h</td><td class="px-4 py-3 text-center text-green-700 font-bold">Pode rodar simultâneo</td></tr>
+                <tr class="bg-white"><td class="px-4 py-3 font-medium text-slate-700">Instalação</td><td class="px-4 py-3 text-center text-green-700 font-bold">1 ponto de água e esgoto</td><td class="px-4 py-3 text-center text-slate-500">2 instalações</td></tr>
+                <tr class="bg-slate-50"><td class="px-4 py-3 font-medium text-slate-700">Ideal para</td><td class="px-4 py-3 text-center text-green-700 font-bold">Apartamento</td><td class="px-4 py-3 text-center text-slate-500">Casa, família grande</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div id="veredicto" class="bg-orange-50 border border-orange-200 rounded-2xl p-6 mb-10">
+          <h2 class="text-orange-900 font-black text-xl mb-5">Para quem é cada opção</h2>
+          <div class="space-y-4">
+            <div class="flex gap-4 items-start">
+              <div class="bg-orange-500 text-white rounded-xl px-3 py-2 text-xs font-bold flex-shrink-0 text-center w-32">Lava e seca</div>
+              <div class="text-sm text-slate-700 leading-relaxed"><strong>Para apartamento.</strong> Se você mora em apartamento, não tem espaço extra na lavanderia e quer resolver o problema de secar roupa de uma vez, a lava e seca é a escolha certa. Para famílias de até 4 pessoas com frequência de lavagem de 2 a 4 vezes por semana, ela supre muito bem.</div>
+            </div>
+            <div class="flex gap-4 items-start">
+              <div class="bg-orange-500 text-white rounded-xl px-3 py-2 text-xs font-bold flex-shrink-0 text-center w-32">Com filhos</div>
+              <div class="text-sm text-slate-700 leading-relaxed"><strong>Lava e seca ainda mais.</strong> Quem tem filhos pequenos precisa lavar roupa com frequência alta: manchas, roupas de cama, uniformes. O ciclo completo sem precisar estender no varal e sem depender do sol muda a rotina de forma real.</div>
+            </div>
+            <div class="flex gap-4 items-start">
+              <div class="bg-slate-600 text-white rounded-xl px-3 py-2 text-xs font-bold flex-shrink-0 text-center w-32">Secadora</div>
+              <div class="text-sm text-slate-700 leading-relaxed"><strong>Para casa com espaço ou família grande.</strong> Se você já tem uma lavadora que funciona bem, tem espaço na lavanderia e precisa secar grande volume de roupa todos os dias, adicionar uma secadora de condensação faz sentido. Ou se a lava e seca ficou pequena para a demanda crescente da família.</div>
+            </div>
+            <div class="flex gap-4 items-start">
+              <div class="bg-slate-600 text-white rounded-xl px-3 py-2 text-xs font-bold flex-shrink-0 text-center w-32">Minha escolha</div>
+              <div class="text-sm text-slate-700 leading-relaxed"><strong>Midea HealthGuard Slim 11kg.</strong> Dois anos de uso, filhos, apartamento, sem arrependimento. A Samsung WD11A seria minha segunda opção para quem valoriza a tecnologia Ecobubble e a garantia de 10 anos do motor.</div>
+            </div>
+          </div>
+        </div>
+
+        <div id="faq" class="mb-10">
+          <h2 class="text-slate-800 font-black text-2xl mb-6">Perguntas frequentes sobre lava e seca</h2>
+          <div class="space-y-3">
+
+            <details class="border border-slate-200 rounded-xl overflow-hidden group">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+                <span>Lava e seca seca bem as roupas ou fica úmido?</span>
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 py-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
+                Nos modelos modernos com motor Inverter e condensação, a secagem é muito boa. A roupa sai pronta para guardar, sem aquele cheiro de úmido que varal fechado dá. O segredo é não encher demais: respeitar a capacidade de secagem, que é menor que a de lavagem, é fundamental para o resultado ser bom.
+              </div>
+            </details>
+
+            <details class="border border-slate-200 rounded-xl overflow-hidden group">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+                <span>Lava e seca estraga roupa?</span>
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 py-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
+                Modelos com tecnologia de condensação e ciclos delicados são seguros para a maioria das roupas. O que pode estragar são tecidos que não suportam calor: lã, seda, peças com elastano em alta proporção. Para esses itens, use o ciclo de secagem a ar frio ou seque no varal. Roupas de algodão, linho e sintéticos comuns não têm problema.
+              </div>
+            </details>
+
+            <details class="border border-slate-200 rounded-xl overflow-hidden group">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+                <span>Quanto tempo dura o ciclo completo de uma lava e seca?</span>
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 py-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
+                O ciclo completo de lavar e secar em modelos de 11kg dura em média 2h30 a 3h30, dependendo do programa e da quantidade de roupa. É mais longo do que lavar e pendurar separado, mas você não precisa fazer nada durante esse tempo. Com Wi-Fi, dá para programar para rodar de madrugada e acordar com a roupa seca.
+              </div>
+            </details>
+
+            <details class="border border-slate-200 rounded-xl overflow-hidden group">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+                <span>Lava e seca consome muita energia?</span>
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 py-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
+                A secagem consome mais energia do que a lavagem. Um ciclo completo em modelo Inverter consome em torno de 1,5 a 2,5 kWh, o equivalente a R$ 1,20 a R$ 2,00 por lavagem na tarifa média. Para uso de 4 a 5 vezes por semana, o acréscimo mensal fica entre R$ 25 e R$ 45. Usar no horário de tarifa reduzida ajuda a baixar esse custo.
+              </div>
+            </details>
+
+            <details class="border border-slate-200 rounded-xl overflow-hidden group">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+                <span>Precisa de instalação especial para a lava e seca?</span>
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 py-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
+                A instalação é a mesma de uma lavadora convencional: ponto de água fria, saída de esgoto e tomada 220V ou 127V conforme o modelo. A condensação não precisa de duto de saída de ar. A lava e seca vai exatamente onde a lavadora ia, sem obras.
+              </div>
+            </details>
+
+            <details class="border border-slate-200 rounded-xl overflow-hidden group">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+                <span>Vale a pena pagar a mais pelo modelo Slim?</span>
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 py-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
+                Depende da sua lavanderia. Os 4,5cm a menos de profundidade do modelo Slim parecem pouco, mas em lavanderias de apartamento onde a porta fecha em cima do aparelho, esses centímetros podem ser a diferença entre caber ou não. Meça o espaço disponível antes de decidir. Se tiver folga suficiente, o modelo convencional entrega o mesmo desempenho por menos dinheiro.
+              </div>
+            </details>
+
+          </div>
+        </div>
+
+        <div class="bg-slate-800 text-white rounded-2xl p-6 mb-8">
+          <h2 class="font-black text-xl mb-3">Minha conclusão depois de 2 anos com a lava e seca</h2>
+          <p class="text-slate-300 text-sm leading-relaxed mb-3">
+            Para quem mora em apartamento, a lava e seca é a resposta certa na esmagadora maioria dos casos. Ela resolve o problema de secar roupa sem varal, sem sol e sem espaço extra, que é exatamente o problema de quem vive em apartamento com filhos.
+          </p>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Tenho a Midea HealthGuard Slim 11kg há dois anos e funciona no dia a dia sem complicação. Para quem ainda tem dúvida, a Samsung WD11A Ecobubble é igualmente sólida. A secadora separada tem seu lugar, mas para a maioria dos apartamentos simplesmente não cabe, seja por espaço, seja pelo custo de dois aparelhos.
+          </p>
+        </div>
+
+        <script type="application/ld+json" set:html={JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Lava e seca seca bem as roupas ou fica úmido?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Nos modelos modernos com motor Inverter e condensação, a roupa sai pronta para guardar. O segredo é respeitar a capacidade de secagem e não encher demais." }
+            },
+            {
+              "@type": "Question",
+              "name": "Lava e seca estraga roupa?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Modelos com condensação são seguros para a maioria das roupas. Evite secar lã, seda e peças com muito elastano no ciclo de calor." }
+            },
+            {
+              "@type": "Question",
+              "name": "Quanto tempo dura o ciclo completo de uma lava e seca?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Em média 2h30 a 3h30 para o ciclo completo de lavar e secar em modelos de 11kg." }
+            },
+            {
+              "@type": "Question",
+              "name": "Lava e seca consome muita energia?",
+              "acceptedAnswer": { "@type": "Answer", "text": "O ciclo completo consome entre 1,5 e 2,5 kWh. Para uso de 4 a 5 vezes por semana, o acréscimo mensal fica entre R$ 25 e R$ 45." }
+            },
+            {
+              "@type": "Question",
+              "name": "Precisa de instalação especial para a lava e seca?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Não. Mesma instalação de uma lavadora convencional: água fria, esgoto e tomada 220V ou 127V. Sem obras, sem duto de ar." }
+            },
+            {
+              "@type": "Question",
+              "name": "Vale a pena pagar a mais pelo modelo Slim?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Depende da medida da sua lavanderia. Os 4,5cm a menos do Slim podem ser a diferença entre caber ou não em lavanderias apertadas de apartamento." }
             }
           ]
         })} />

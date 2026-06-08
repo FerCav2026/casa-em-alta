@@ -185,6 +185,16 @@ export const posts: Post[] = [
     categoriaColor: 'bg-orange-100 text-orange-700',
   },
   {
+    slug: 'lava-e-seca-ou-secadora-apartamento',
+    titulo: 'Lava e Seca ou Secadora de Roupas: Qual Compensa Mais para Quem Mora em Apartamento?',
+    resumo: 'Tenho uma lava e seca Midea 11kg há 2 anos e moro em apartamento com filhos. Comparo os dois aparelhos e mostro quando cada um faz sentido.',
+    tempo: '9 min de leitura',
+    imagem: '/images/lava-seca/capa-lava-seca.jpg',
+    categoria: 'comparativos',
+    categoriaLabel: 'Comparativo',
+    categoriaColor: 'bg-blue-100 text-blue-700',
+  },
+  {
     slug: 'maquina-de-gelo-portatil',
     titulo: 'Máquina de Gelo Portátil: Vale a Pena Ter em Casa? Veja os Melhores Modelos de 2026',
     resumo: 'Gelo em 6 minutos sem freezer. Comparamos os 4 melhores modelos portáteis de 2026 com fichas técnicas.',
