@@ -95,6 +95,13 @@ const posts: Record<string, { titulo: string; descricao: string; categoria: stri
     dataCriacao: '2026-06-04',
     dataModificacao: '2026-06-04',
   },
+  'lava-loucas-midea-8-servicos-review': {
+    titulo: 'Lava-louças Compacta Midea 8 Serviços: Testamos por Meses e Isso é o que Você Precisa Saber',
+    descricao: 'Usamos a Midea 8 serviços no dia a dia e contamos tudo: consumo real de água e energia, o que lava bem, o que falta e para quem vale a pena comprar.',
+    categoria: 'Review',
+    dataCriacao: '2026-06-08',
+    dataModificacao: '2026-06-08',
+  },
 };
 
 export function getStaticPaths() {
@@ -112,6 +119,7 @@ export function getStaticPaths() {
     'maquina-de-gelo-portatil': {},
     'chaleira-eletrica-com-controle-de-temperatura': {},
     'vaporizador-de-roupas-portatil': {},
+    'lava-loucas-midea-8-servicos-review': {},
   }).map((slug) => ({ params: { slug } }));
 }
 
@@ -157,6 +165,7 @@ const isMultiprocessador = slug === 'melhor-multiprocessador-de-alimentos';
 const isMaquinaGelo = slug === 'maquina-de-gelo-portatil';
 const isChaleira = slug === 'chaleira-eletrica-com-controle-de-temperatura';
 const isVaporizador = slug === 'vaporizador-de-roupas-portatil';
+const isLavaLoucas = slug === 'lava-loucas-midea-8-servicos-review';
 
 const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
   : isAirfryer ? '/images/airfryer/capa-airfryer.png'
@@ -171,6 +180,7 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
   : isMaquinaGelo ? '/images/maquina-gelo/capa-maquina-gelo.jpg'
   : isChaleira ? '/images/chaleira/capa-chaleira.jpg'
   : isVaporizador ? '/images/vaporizador/capa-vaporizador.jpg'
+  : isLavaLoucas ? '/images/lava-loucas/capa-lava-loucas.jpg'
   : undefined;
 ---
 
@@ -6190,6 +6200,416 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
         })}></script>
 
 
+      </div>
+    )}
+
+    {isLavaLoucas && (
+      <div>
+
+        <!-- DISCLOSURE AFILIADO -->
+        <p class="text-xs text-slate-500 italic mb-6 border border-slate-100 rounded-xl px-4 py-3 bg-slate-50">
+          Este artigo pode conter links de afiliados. Se você comprar por um desses links, posso receber uma comissão sem custo adicional para você.
+        </p>
+
+        <!-- IMAGEM DE CAPA -->
+        <img
+          src="/images/lava-loucas/capa-lava-loucas.jpg"
+          alt="Lava-louças compacta Midea 8 serviços sobre bancada de cozinha moderna"
+          class="w-full rounded-2xl mb-8 object-cover"
+          width="1200"
+          height="675"
+          loading="eager"
+        />
+
+        <!-- BOX INTRODUÇÃO -->
+        <div class="bg-orange-50 border border-orange-100 rounded-2xl p-6 mb-8">
+          <p class="text-slate-800 text-base leading-relaxed mb-3">
+            Faz alguns meses que a Midea 8 serviços mora na minha cozinha. Antes de comprar, pesquisei muito. Li fórum, assisti vídeo, perguntei para conhecidos que já tinham lava-louças. A Midea aparecia em tudo: bem avaliada, recomendada por quem usava há anos, com ótimo custo-benefício para o tamanho compacto.
+          </p>
+          <p class="text-slate-800 text-base leading-relaxed mb-3">
+            O que me convenceu mesmo foi uma amiga que tem a mesma máquina há dois anos e nunca precisou de assistência. Ela lavava a mão a vida toda e disse que não volta atrás.
+          </p>
+          <p class="text-slate-800 text-base leading-relaxed">
+            Sou Claudia Castro, criadora do Casa em Alta. Neste artigo conto tudo que aprendi depois de meses usando a Midea 8 serviços no dia a dia: o que funciona muito bem, o que falta e para quem esse modelo realmente faz sentido comprar.
+          </p>
+        </div>
+
+        <!-- BOX AZUL DE INSIGHTS -->
+        <div class="bg-blue-50 border border-blue-200 rounded-2xl p-6 mb-10">
+          <h2 class="text-blue-900 font-bold text-lg mb-4">O que ninguém te conta sobre lava-louças compacta</h2>
+          <div class="space-y-4 text-slate-700 text-sm leading-relaxed">
+            <div>
+              <p class="font-semibold text-slate-800 mb-1">A economia de água é real e mensurável</p>
+              <p>A Midea usa 8 litros por ciclo. Lavar a mesma quantidade de louça na mão consome entre 30 e 40 litros. Isso é quase 5 vezes menos. Para quem lava louça duas vezes ao dia, a economia pode passar de 1.000 litros por mês, o que aparece na conta de água ao longo dos meses.</p>
+            </div>
+            <div>
+              <p class="font-semibold text-slate-800 mb-1">A conta de energia não muda de forma perceptível</p>
+              <p>O consumo por ciclo é de 0,72 kWh (127V). Usando uma vez por dia, o acréscimo mensal fica entre R$ 6 e R$ 9 na conta de luz. Na prática, esse valor é tão pequeno que não se nota na fatura.</p>
+            </div>
+            <div>
+              <p class="font-semibold text-slate-800 mb-1">Falta um cestinho lateral de talheres</p>
+              <p>A Midea 8 serviços não tem cestinho lateral separado para talheres. Eles ficam no suporte dentro da cesta inferior, junto com pratos e panelas menores. A louça sai limpa, mas a organização é menos intuitiva do que em modelos com cestinho isolado. É o ponto que mais gera comentário de quem já usou outros modelos.</p>
+            </div>
+            <div>
+              <p class="font-semibold text-slate-800 mb-1">O ciclo ECO é o seu aliado no dia a dia</p>
+              <p>É mais lento, mas usa menos água e energia. Para a louça comum do almoço e jantar, ele resolve muito bem. Reserve o ciclo Intensivo (70°C) para quando tiver gordura pesada acumulada ou quiser higienização mais profunda.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ÍNDICE -->
+        <nav class="border border-slate-200 rounded-2xl p-6 mb-10 bg-white">
+          <p class="font-bold text-slate-800 mb-3">Neste artigo:</p>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#ficha-tecnica" class="text-orange-500 hover:text-orange-600 font-medium">Ficha técnica completa e link para compra</a></li>
+            <li><a href="#instalacao" class="text-orange-500 hover:text-orange-600 font-medium">Como é a instalação na prática</a></li>
+            <li><a href="#programas" class="text-orange-500 hover:text-orange-600 font-medium">Os 8 programas de lavagem</a></li>
+            <li><a href="#consumo" class="text-orange-500 hover:text-orange-600 font-medium">Consumo real de água e energia</a></li>
+            <li><a href="#resultado" class="text-orange-500 hover:text-orange-600 font-medium">O que a Midea lava bem (e o que não)</a></li>
+            <li><a href="#para-quem" class="text-orange-500 hover:text-orange-600 font-medium">Para quem vale a pena comprar</a></li>
+            <li><a href="#faq" class="text-orange-500 hover:text-orange-600 font-medium">Perguntas frequentes</a></li>
+          </ul>
+        </nav>
+
+        <!-- CARD DO PRODUTO -->
+        <div id="ficha-tecnica" class="border border-slate-200 rounded-2xl overflow-hidden mb-10 shadow-sm">
+          <div class="bg-orange-500 px-6 py-4">
+            <div class="flex items-center gap-3">
+              <span class="bg-white text-orange-500 text-xs font-black px-3 py-1 rounded-full">NOSSA ESCOLHA</span>
+              <span class="bg-orange-400 text-white text-xs font-bold px-3 py-1 rounded-full">Melhor custo-benefício compacta</span>
+            </div>
+            <p class="text-white font-black text-xl mt-2">Midea Lava-Louças 8 Serviços DWA08S</p>
+            <p class="text-orange-100 text-sm mt-1">8 programas, 8L por ciclo, ECO e Intensivo 70°C, Adiar Início</p>
+          </div>
+          <div class="p-6">
+            <div class="flex flex-col md:flex-row gap-6 mb-6">
+              <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 min-h-32">
+                <img src="/images/lava-loucas/midea-8-servicos.webp" alt="Lava-louças compacta Midea 8 serviços DWA08S cor cinza" class="max-h-36 object-contain" width="160" height="160" loading="lazy" />
+              </div>
+              <div class="flex-1">
+                <p class="text-slate-700 text-sm leading-relaxed mb-3">
+                  A Midea 8 serviços é a lava-louças compacta mais recomendada do mercado brasileiro. Cabe bem em cozinhas pequenas e integradas, tem instalação simples com conexão direta na torneira, e entrega limpeza consistente no uso diário. Os 8 serviços atendem bem de 1 a 3 pessoas morando juntas.
+                </p>
+                <p class="text-slate-700 text-sm leading-relaxed mb-3">
+                  O destaque principal é o consumo de água: 8 litros por ciclo, contra 30 a 40 litros que a maioria das pessoas usa lavando na mão. Para quem cozinha todos os dias, essa diferença aparece na conta de água em poucos meses.
+                </p>
+                <p class="text-slate-700 text-sm leading-relaxed">
+                  Disponível em branco, preto e cinza. O interior em aço inox melhora o isolamento térmico e facilita a limpeza interna. A função Adiar Início permite programar o ciclo para começar em 2, 4 ou 8 horas.
+                </p>
+              </div>
+            </div>
+            <div class="grid grid-cols-2 gap-3 mb-5 text-xs">
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Capacidade</p><p class="font-bold text-slate-800">8 serviços</p></div>
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Programas</p><p class="font-bold text-slate-800">8 ciclos</p></div>
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Consumo de água</p><p class="font-bold text-slate-800">8L por ciclo</p></div>
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Consumo energia</p><p class="font-bold text-slate-800">0,72 kWh/ciclo</p></div>
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Interior</p><p class="font-bold text-slate-800">Aço inox</p></div>
+              <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Cores</p><p class="font-bold text-slate-800">Branco, preto, cinza</p></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-5 text-sm">
+              <div>
+                <p class="font-semibold text-slate-800 mb-2">Pontos fortes</p>
+                <ul class="space-y-1 text-slate-600">
+                  <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Usa 5x menos água que lavar na mão</li>
+                  <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Interior em aço inox</li>
+                  <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Ciclo Intensivo higieniza a 70°C</li>
+                  <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Adiar Início: 2, 4 ou 8 horas</li>
+                  <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Instalação sem encanador</li>
+                  <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Sem diferença perceptível na conta de luz</li>
+                </ul>
+              </div>
+              <div>
+                <p class="font-semibold text-slate-800 mb-2">Pontos de atenção</p>
+                <ul class="space-y-1 text-slate-600">
+                  <li class="flex items-start gap-2"><span class="text-slate-400 font-bold mt-0.5">-</span> Sem cestinho lateral de talheres</li>
+                  <li class="flex items-start gap-2"><span class="text-slate-400 font-bold mt-0.5">-</span> Sem display de tempo restante no ciclo</li>
+                  <li class="flex items-start gap-2"><span class="text-slate-400 font-bold mt-0.5">-</span> 8 serviços não atende famílias com 4+ pessoas</li>
+                </ul>
+              </div>
+            </div>
+            <a href="https://amzn.to/MIDEA-LINK" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon</a>
+          </div>
+        </div>
+
+        <!-- INSTALAÇÃO -->
+        <div id="instalacao" class="mb-10">
+          <h2 class="text-slate-800 font-black text-2xl mb-6">Como é a instalação na prática</h2>
+          <p class="text-slate-600 text-sm mb-5 leading-relaxed">
+            A instalação não exige encanador. Você conecta a mangueira de entrada direto na torneira da pia usando um adaptador que já vem na caixa. A mangueira de saída vai para o ralo. Leva menos de 30 minutos para deixar tudo funcionando.
+          </p>
+          <div class="space-y-4">
+            <div class="border border-slate-200 rounded-2xl p-5 bg-white">
+              <h3 class="font-bold text-slate-800 mb-2">O que vem na caixa</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">A Midea inclui mangueiras de entrada e saída, adaptadores para torneira e manual de instalação. Na maioria das cozinhas brasileiras, você instala com o que vem na embalagem. Em alguns casos pode ser necessário um adaptador extra, dependendo do modelo da torneira, mas é peça barata encontrada em qualquer loja de materiais de construção.</p>
+            </div>
+            <div class="border border-slate-200 rounded-2xl p-5 bg-white">
+              <h3 class="font-bold text-slate-800 mb-2">Espaço mínimo na bancada</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">Deixe pelo menos 10 cm de espaço ao redor para ventilação. A máquina fica sobre a bancada mesmo, plugada em tomada comum. Não precisa de armário especial nem embutimento. O design slim foi feito para caber em cozinhas pequenas e integradas.</p>
+            </div>
+            <div class="border border-slate-200 rounded-2xl p-5 bg-white">
+              <h3 class="font-bold text-slate-800 mb-2">Pressão de água</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">A máquina precisa de pressão mínima na torneira para funcionar bem. Em apartamentos, a pressão da rede normalmente é suficiente. Se você mora em casa térrea ou em andar baixo com pressão conhecidamente baixa, vale testar a vazão antes de comprar. Pressão insuficiente pode fazer o ciclo demorar mais ou não concluir corretamente.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROGRAMAS -->
+        <div id="programas" class="mb-10">
+          <h2 class="text-slate-800 font-black text-2xl mb-6">Os 8 programas de lavagem</h2>
+          <p class="text-slate-600 text-sm mb-5 leading-relaxed">
+            Cada ciclo foi pensado para um tipo de sujeira. No dia a dia, você vai usar principalmente o ECO e o Normal. O Intensivo fica para quando precisar de higienização mais funda.
+          </p>
+          <div class="overflow-x-auto rounded-2xl border border-slate-200 shadow-sm mb-6">
+            <table class="w-full text-sm">
+              <thead>
+                <tr class="bg-slate-800 text-white">
+                  <th class="text-left px-4 py-3 font-bold">Programa</th>
+                  <th class="text-left px-4 py-3 font-bold">Para que serve</th>
+                  <th class="text-center px-4 py-3 font-bold">Quando usar</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-t border-slate-100">
+                  <td class="px-4 py-3 font-semibold text-slate-800">Pré-lavagem</td>
+                  <td class="px-4 py-3 text-slate-600">Molha a louça sem detergente</td>
+                  <td class="px-4 py-3 text-slate-600 text-center">Antes de acumular louça suja por horas</td>
+                </tr>
+                <tr class="bg-slate-50 border-t border-slate-100">
+                  <td class="px-4 py-3 font-semibold text-slate-800">Rápido</td>
+                  <td class="px-4 py-3 text-slate-600">Lavagem completa em 30 min</td>
+                  <td class="px-4 py-3 text-slate-600 text-center">Louça pouco suja do dia a dia</td>
+                </tr>
+                <tr class="border-t border-slate-100">
+                  <td class="px-4 py-3 font-semibold text-orange-600">ECO</td>
+                  <td class="px-4 py-3 text-slate-600">Menos água e energia, ciclo mais lento</td>
+                  <td class="px-4 py-3 text-slate-600 text-center">Uso diário — recomendado</td>
+                </tr>
+                <tr class="bg-slate-50 border-t border-slate-100">
+                  <td class="px-4 py-3 font-semibold text-slate-800">Normal</td>
+                  <td class="px-4 py-3 text-slate-600">Lavagem padrão completa</td>
+                  <td class="px-4 py-3 text-slate-600 text-center">Rotina com gordura moderada</td>
+                </tr>
+                <tr class="border-t border-slate-100">
+                  <td class="px-4 py-3 font-semibold text-red-700">Intensivo 70°C</td>
+                  <td class="px-4 py-3 text-slate-600">Alta temperatura, higienização profunda</td>
+                  <td class="px-4 py-3 text-slate-600 text-center">Gordura pesada, panelas, tábuas</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="bg-orange-50 border border-orange-200 rounded-2xl p-5">
+            <p class="font-bold text-orange-900 mb-2">Função Adiar Início: como aproveitar</p>
+            <p class="text-sm text-slate-700 leading-relaxed">A função Adiar Início programa o ciclo para começar em 2, 4 ou 8 horas. Dois usos práticos: programar a lavagem para a madrugada, quando a tarifa de energia é mais barata no horário fora de ponta, ou colocar a louça antes de sair de casa e chegar com ela lavada e seca.</p>
+          </div>
+        </div>
+
+        <!-- CONSUMO -->
+        <div id="consumo" class="mb-10">
+          <h2 class="text-slate-800 font-black text-2xl mb-6">Consumo real de água e energia</h2>
+          <div class="space-y-5">
+            <div class="border border-slate-200 rounded-2xl p-5 bg-white">
+              <h3 class="font-bold text-slate-800 mb-2">Água: 8 litros por ciclo</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">Um ciclo completo usa 8 litros de água. Quem lava louça na torneira aberta gasta entre 30 e 40 litros para a mesma quantidade. Isso é quase 5 vezes menos. Para um casal que lava louça duas vezes ao dia, a economia pode chegar a 1.200 litros por mês. Essa diferença começa a aparecer na conta de água a partir de 2 a 3 meses de uso regular.</p>
+            </div>
+            <div class="border border-slate-200 rounded-2xl p-5 bg-white">
+              <h3 class="font-bold text-slate-800 mb-2">Energia: sem diferença perceptível na conta</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">O consumo por ciclo é de 0,72 kWh no modelo 127V. Usando uma vez por dia, o acréscimo mensal é de cerca de 21,6 kWh, o que equivale a R$ 6 a R$ 9 por mês na tarifa residencial média. Na prática, quem usa a máquina todos os dias não percebe diferença na fatura de energia. O que você economiza na água compensa com folga.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- RESULTADO DA LAVAGEM -->
+        <div id="resultado" class="mb-10">
+          <h2 class="text-slate-800 font-black text-2xl mb-6">O que a Midea lava bem (e o que não)</h2>
+          <div class="space-y-4">
+            <div class="bg-green-50 border border-green-200 rounded-2xl p-5">
+              <h3 class="font-bold text-green-800 mb-3">Lava muito bem</h3>
+              <ul class="space-y-2 text-sm text-slate-700">
+                <li class="flex items-start gap-2"><span class="text-green-600 font-bold mt-0.5">+</span> Pratos e tigelas com resíduo de comida comum</li>
+                <li class="flex items-start gap-2"><span class="text-green-600 font-bold mt-0.5">+</span> Copos e xícaras com manchas de café e chá</li>
+                <li class="flex items-start gap-2"><span class="text-green-600 font-bold mt-0.5">+</span> Panelas com gordura leve a moderada</li>
+                <li class="flex items-start gap-2"><span class="text-green-600 font-bold mt-0.5">+</span> Talheres de inox saem sem marcas</li>
+                <li class="flex items-start gap-2"><span class="text-green-600 font-bold mt-0.5">+</span> Vasilhas de plástico de tamanho médio</li>
+              </ul>
+            </div>
+            <div class="bg-yellow-50 border border-yellow-200 rounded-2xl p-5">
+              <h3 class="font-bold text-yellow-800 mb-3">Exige atenção</h3>
+              <ul class="space-y-2 text-sm text-slate-700">
+                <li class="flex items-start gap-2"><span class="text-yellow-600 font-bold mt-0.5">!</span> Panelas com queimado ou resíduo muito grudado: dar um pré-molho antes de colocar na máquina</li>
+                <li class="flex items-start gap-2"><span class="text-yellow-600 font-bold mt-0.5">!</span> Copos de cristal: usar o ciclo ECO, nunca o Intensivo</li>
+                <li class="flex items-start gap-2"><span class="text-yellow-600 font-bold mt-0.5">!</span> Facas com cabo de madeira podem ressecar com o calor</li>
+              </ul>
+            </div>
+            <div class="bg-red-50 border border-red-200 rounded-2xl p-5">
+              <h3 class="font-bold text-red-800 mb-3">Não coloque na lava-louças</h3>
+              <ul class="space-y-2 text-sm text-slate-700">
+                <li class="flex items-start gap-2"><span class="text-red-500 font-bold mt-0.5">-</span> Utensílios de madeira (colheres, tábuas) — resecam e racham</li>
+                <li class="flex items-start gap-2"><span class="text-red-500 font-bold mt-0.5">-</span> Alumínio sem revestimento — oxida e escurece</li>
+                <li class="flex items-start gap-2"><span class="text-red-500 font-bold mt-0.5">-</span> Panelas antiaderentes com arranhões — o revestimento se deteriora mais rápido</li>
+              </ul>
+            </div>
+            <div class="bg-orange-50 border border-orange-200 rounded-2xl p-5">
+              <h3 class="font-bold text-orange-900 mb-2">Sobre a falta do cestinho de talheres</h3>
+              <p class="text-sm text-slate-700 leading-relaxed">A Midea 8 serviços não tem cestinho lateral separado para talheres. Eles ficam no suporte dentro da cesta inferior, junto com outros utensílios menores. O resultado da lavagem é bom, os talheres saem limpos. O que muda é a organização: não é tão prático quanto um cestinho isolado, especialmente quando você tem muitos talheres de uma vez. Esse é o ponto que mais gera comentário nos reviews da Amazon e que confirmo no meu uso diário.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- PARA QUEM VALE A PENA -->
+        <div id="para-quem" class="bg-orange-50 border border-orange-200 rounded-2xl p-6 mb-10">
+          <h2 class="text-orange-900 font-black text-xl mb-5">Para quem vale a pena comprar</h2>
+          <div class="space-y-4">
+            <div class="flex gap-4 items-start">
+              <div class="bg-orange-500 text-white rounded-xl px-3 py-2 text-xs font-bold flex-shrink-0 text-center w-28">Casal ou 1 pessoa</div>
+              <div class="text-sm text-slate-700 leading-relaxed"><strong>Sim, vale muito.</strong> 8 serviços atendem bem quem mora sozinho ou em casal. Dá para lavar a louça de um dia inteiro em um único ciclo. É a compra que mais faz sentido para apartamentos pequenos.</div>
+            </div>
+            <div class="flex gap-4 items-start">
+              <div class="bg-orange-500 text-white rounded-xl px-3 py-2 text-xs font-bold flex-shrink-0 text-center w-28">Família de 3</div>
+              <div class="text-sm text-slate-700 leading-relaxed"><strong>Vale, com ressalva.</strong> Para uma família de 3 pessoas, pode ser necessário fazer dois ciclos por dia em algumas situações. Se a família cozinha bastante, avalie bem a capacidade antes de decidir.</div>
+            </div>
+            <div class="flex gap-4 items-start">
+              <div class="bg-slate-600 text-white rounded-xl px-3 py-2 text-xs font-bold flex-shrink-0 text-center w-28">Família de 4+</div>
+              <div class="text-sm text-slate-700 leading-relaxed"><strong>Considere um modelo maior.</strong> Para famílias de 4 ou mais pessoas, o ideal é uma lava-louças de 10 a 14 serviços. A Midea 8 serviços vai funcionar, mas provavelmente vai precisar de dois ciclos diários.</div>
+            </div>
+            <div class="flex gap-4 items-start">
+              <div class="bg-orange-500 text-white rounded-xl px-3 py-2 text-xs font-bold flex-shrink-0 text-center w-28">Cozinha pequena</div>
+              <div class="text-sm text-slate-700 leading-relaxed"><strong>Sim, feita para isso.</strong> O design compacto cabe bem em bancadas de 60 cm. Não precisa de armário especial nem instalação embutida. Ideal para apartamentos integrados e cozinhas americanas com espaço limitado.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ ACORDEÃO -->
+        <div id="faq" class="mb-10">
+          <h2 class="text-slate-800 font-black text-2xl mb-6">Perguntas frequentes sobre a Midea 8 serviços</h2>
+          <div class="space-y-3">
+
+            <details class="border border-slate-200 rounded-xl overflow-hidden group">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+                <span>Lava-louças compacta realmente economiza água?</span>
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 py-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
+                Sim, e a diferença é grande. A Midea usa 8 litros por ciclo. Lavar a mesma louça na torneira aberta consome entre 30 e 40 litros. Isso é quase 5 vezes menos água. Para quem lava louça duas vezes ao dia, a economia pode passar de 1.000 litros por mês, com redução real na conta de água.
+              </div>
+            </details>
+
+            <details class="border border-slate-200 rounded-xl overflow-hidden group">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+                <span>A conta de energia vai aumentar muito com a lava-louças?</span>
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 py-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
+                Não de forma perceptível. O consumo por ciclo é de 0,72 kWh. Usando uma vez por dia, o acréscimo na conta de energia fica entre R$ 6 e R$ 9 por mês. Na prática, esse valor é tão pequeno que não se percebe na fatura. O que você economiza na conta de água compensa com folga o pequeno aumento na conta de luz.
+              </div>
+            </details>
+
+            <details class="border border-slate-200 rounded-xl overflow-hidden group">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+                <span>Qual a diferença entre os programas ECO e Intensivo?</span>
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 py-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
+                O ECO usa menos água e energia, é mais silencioso e indicado para o uso diário com gordura leve a moderada. O ciclo é mais lento, mas resolve bem a louça do cotidiano. O Intensivo aquece a água a 70°C para eliminar gordura pesada e higienizar fundo. Reserve o Intensivo para panelas com óleo acumulado, tábuas de corte ou quando quiser uma limpeza mais profunda. O ECO é o modo padrão do dia a dia.
+              </div>
+            </details>
+
+            <details class="border border-slate-200 rounded-xl overflow-hidden group">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+                <span>Precisa de encanador para instalar a Midea lava-louças?</span>
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 py-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
+                Não. A instalação é simples e pode ser feita sem encanador. Você conecta a mangueira de entrada na torneira usando o adaptador que já vem na caixa, e a mangueira de saída vai para o ralo da pia. Em alguns casos pode ser necessário um adaptador adicional dependendo do modelo da torneira, mas é uma peça barata. A instalação completa leva entre 15 e 30 minutos.
+              </div>
+            </details>
+
+            <details class="border border-slate-200 rounded-xl overflow-hidden group">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+                <span>A Midea 8 serviços lava talheres direito?</span>
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 py-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
+                Lava bem. Os talheres de inox saem sem manchas. O ponto de atenção é que não há cestinho lateral separado: eles ficam no suporte dentro da cesta inferior. O resultado é bom, mas a organização é menos prática que um cestinho isolado, especialmente quando você tem muitos talheres de uma vez.
+              </div>
+            </details>
+
+            <details class="border border-slate-200 rounded-xl overflow-hidden group">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+                <span>Pode usar qualquer sabão ou precisa ser específico para lava-louças?</span>
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 py-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
+                Precisa de detergente específico para lava-louças automática (pó, gel ou tablete). O detergente comum de lavar louça na mão forma espuma demais e pode vazar pela máquina. O aditivo brilhante (rinse aid) também ajuda a deixar os utensílios sem marcas de água ao final do ciclo.
+              </div>
+            </details>
+
+          </div>
+        </div>
+
+        <!-- CONCLUSÃO -->
+        <div class="bg-slate-800 text-white rounded-2xl p-6 mb-8">
+          <h2 class="font-black text-xl mb-3">Minha conclusão depois de meses usando</h2>
+          <p class="text-slate-300 text-sm leading-relaxed mb-4">
+            A Midea 8 serviços vale a pena para quem mora sozinho, em casal ou com um filho. A economia de água é real, a conta de energia não muda de forma perceptível, e a praticidade do dia a dia compensa o investimento em poucos meses. O único ponto que sinto falta é do cestinho de talheres separado. Fora isso, não me arrependo em nada da compra.
+          </p>
+          <a href="https://amzn.to/MIDEA-LINK" target="_blank" rel="nofollow noopener" class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-xl transition-colors">Ver na Amazon</a>
+        </div>
+
+        <!-- SCHEMA FAQ JSON-LD -->
+        <script type="application/ld+json" set:html={JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Lava-louças compacta realmente economiza água?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sim. A Midea usa 8 litros por ciclo, contra 30 a 40 litros na lavagem manual. Isso representa quase 5 vezes menos água. Para quem lava louça duas vezes ao dia, a economia pode passar de 1.000 litros por mês."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "A conta de energia vai aumentar muito com a lava-louças?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Não de forma perceptível. O consumo por ciclo é de 0,72 kWh. Usando uma vez por dia, o acréscimo fica entre R$ 6 e R$ 9 por mês na conta de luz."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Qual a diferença entre os programas ECO e Intensivo da Midea?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "O ECO usa menos água e energia e é indicado para uso diário. O Intensivo aquece a água a 70°C para gordura pesada e higienização profunda."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Precisa de encanador para instalar a Midea lava-louças?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Não. A instalação usa adaptadores que já vêm na caixa, conectados direto na torneira da pia. Leva entre 15 e 30 minutos sem necessidade de encanador."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "A Midea 8 serviços lava talheres direito?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Lava bem. Os talheres saem limpos. Porém não há cestinho lateral separado: eles ficam no suporte da cesta inferior, o que é menos prático para quem tem muitos talheres de uma vez."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Pode usar qualquer sabão na lava-louças Midea?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Não. Precisa de detergente específico para máquina automática (pó, gel ou tablete). O detergente comum de lavar louça na mão forma espuma demais e pode vazar pela máquina."
+              }
+            }
+          ]
+        })} />
       </div>
     )}
 

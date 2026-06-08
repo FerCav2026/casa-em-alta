@@ -175,6 +175,16 @@ export const posts: Post[] = [
     categoriaColor: 'bg-green-100 text-green-700',
   },
   {
+    slug: 'lava-loucas-midea-8-servicos-review',
+    titulo: 'Lava-louças Compacta Midea 8 Serviços: Testamos por Meses e Isso é o que Você Precisa Saber',
+    resumo: 'Usamos a Midea 8 serviços no dia a dia e contamos tudo: consumo real de água e energia, o que lava bem, o que falta e para quem vale a pena comprar.',
+    tempo: '8 min de leitura',
+    imagem: '/images/lava-loucas/capa-lava-loucas.jpg',
+    categoria: 'reviews',
+    categoriaLabel: 'Review',
+    categoriaColor: 'bg-orange-100 text-orange-700',
+  },
+  {
     slug: 'maquina-de-gelo-portatil',
     titulo: 'Máquina de Gelo Portátil: Vale a Pena Ter em Casa? Veja os Melhores Modelos de 2026',
     resumo: 'Gelo em 6 minutos sem freezer. Comparamos os 4 melhores modelos portáteis de 2026 com fichas técnicas.',
