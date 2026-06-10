@@ -109,6 +109,13 @@ const posts: Record<string, { titulo: string; descricao: string; categoria: stri
     dataCriacao: '2026-06-08',
     dataModificacao: '2026-06-08',
   },
+  'como-escolher-liquidificador': {
+    titulo: 'Como Escolher Liquidificador: o Que Ninguém te Conta na Hora de Comprar',
+    descricao: 'Potência, material do copo, velocidades e limpeza fácil: o que realmente importa antes de comprar um liquidificador. Guia completo para não errar na escolha.',
+    categoria: 'Guia de Compra',
+    dataCriacao: '2026-06-15',
+    dataModificacao: '2026-06-15',
+  },
 };
 
 export function getStaticPaths() {
@@ -128,6 +135,7 @@ export function getStaticPaths() {
     'vaporizador-de-roupas-portatil': {},
     'forno-eletrico-portatil-vale-a-pena': {},
     'lava-loucas-midea-8-servicos-review': {},
+    'como-escolher-liquidificador': {},
   }).map((slug) => ({ params: { slug } }));
 }
 
@@ -175,6 +183,7 @@ const isChaleira = slug === 'chaleira-eletrica-com-controle-de-temperatura';
 const isVaporizador = slug === 'vaporizador-de-roupas-portatil';
 const isLavaLoucas = slug === 'lava-loucas-midea-8-servicos-review';
 const isFornoEletrico = slug === 'forno-eletrico-portatil-vale-a-pena';
+const isComoEscolherLiquidificador = slug === 'como-escolher-liquidificador';
 
 const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
   : isAirfryer ? '/images/airfryer/capa-airfryer.png'
@@ -191,6 +200,7 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
   : isVaporizador ? '/images/vaporizador/capa-vaporizador.jpg'
   : isLavaLoucas ? '/images/lava-loucas/capa-lava-loucas.jpg'
   : isFornoEletrico ? '/images/forno-eletrico/capa-forno-eletrico.png'
+  : isComoEscolherLiquidificador ? '/images/liquidificador/capa-liquidificador.jpg'
   : undefined;
 ---
 
@@ -7163,6 +7173,370 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
                 "@type": "Answer",
                 "text": "A garantia oficial da Midea é de 12 meses contra defeitos de fabricação. Algumas lojas parceiras oferecem garantia estendida de até 24 meses. Verifique na hora da compra."
               }
+            }
+          ]
+        })} />
+      </div>
+    )}
+
+    {isComoEscolherLiquidificador && (
+      <div>
+
+        <p class="text-xs text-slate-500 italic mb-6 border border-slate-100 rounded-xl px-4 py-3 bg-slate-50">
+          Este artigo pode conter links de afiliados. Se você comprar por um desses links, posso receber uma comissão sem custo adicional para você.
+        </p>
+
+        <img
+          src="/images/liquidificador/capa-liquidificador.jpg"
+          alt="Liquidificador sobre bancada de cozinha moderna com frutas ao redor"
+          class="w-full rounded-2xl mb-8 object-cover"
+          width="1536"
+          height="1024"
+          loading="eager"
+        />
+
+        <div class="bg-orange-50 border border-orange-100 rounded-2xl p-6 mb-8">
+          <p class="text-slate-800 text-base leading-relaxed mb-3">
+            Meu primeiro liquidificador durou menos de um ano. Comprei olhando só para o preço e para a cor, sem entender nada do que estava avaliando. O motor esquentava, não triturava gelo direito e as lâminas enferrujaram rápido. Joguei fora e comecei do zero.
+          </p>
+          <p class="text-slate-800 text-base leading-relaxed mb-3">
+            Da segunda vez, pesquisei mais. Entendi o que a potência significa na prática, por que o material do copo importa mais do que parece e que número de velocidades não é indicador de qualidade. Hoje uso o mesmo liquidificador há quatro anos sem nenhum problema.
+          </p>
+          <p class="text-slate-800 text-base leading-relaxed">
+            Sou Claudia Castro, criadora do Casa em Alta. Neste guia reúno tudo que aprendi para você não errar na compra, independente do orçamento disponível.
+          </p>
+        </div>
+
+        <div class="bg-blue-50 border border-blue-200 rounded-2xl p-6 mb-10">
+          <h2 class="text-blue-900 font-bold text-lg mb-4">O que ninguém te conta sobre liquidificadores</h2>
+          <div class="space-y-4 text-slate-700 text-sm leading-relaxed">
+            <div>
+              <p class="font-semibold text-slate-800 mb-1">Potência importa mais do que velocidades</p>
+              <p>Um liquidificador com 1.200W e 3 velocidades tritura muito melhor do que um com 600W e 12 velocidades. Fabricantes usam o número de velocidades como argumento de venda, mas o que move a lâmina com força de verdade é o motor. Olhe sempre a potência em watts antes de qualquer outra coisa.</p>
+            </div>
+            <div>
+              <p class="font-semibold text-slate-800 mb-1">Copo de vidro não é só estética</p>
+              <p>Vidro não absorve cheiro nem cor. Depois de anos batendo vitamina de manga e suco de beterraba, o copo de vidro sai limpo como novo. O plástico de qualidade inferior guarda odor e fica com aspecto manchado em poucos meses. Se você usa com frequência, o vidro compensa o peso extra.</p>
+            </div>
+            <div>
+              <p class="font-semibold text-slate-800 mb-1">A função pulsar é subestimada</p>
+              <p>O botão pulsar aplica rajadas rápidas de potência máxima. É o recurso certo para picar gelo, desfazer pedaços maiores e controlar a textura de molhos e pastas. Liquidificadores que não têm essa função perdem muito em versatilidade no dia a dia.</p>
+            </div>
+            <div>
+              <p class="font-semibold text-slate-800 mb-1">Tampa com abertura central vale ouro</p>
+              <p>Tampa com abertura no centro permite adicionar ingredientes com o liquidificador ligado sem precisar parar tudo. Parece detalhe pequeno, mas quem usa para receitas que pedem adição gradual de líquidos ou temperos sente falta quando o modelo não tem.</p>
+            </div>
+          </div>
+        </div>
+
+        <nav class="border border-slate-200 rounded-2xl p-6 mb-10 bg-white">
+          <p class="font-bold text-slate-800 mb-3">Neste artigo:</p>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#potencia" class="text-orange-500 hover:text-orange-600 font-medium">Potência: o fator mais decisivo</a></li>
+            <li><a href="#copo" class="text-orange-500 hover:text-orange-600 font-medium">Material do copo: vidro, plástico ou inox</a></li>
+            <li><a href="#velocidades" class="text-orange-500 hover:text-orange-600 font-medium">Velocidades e função pulsar</a></li>
+            <li><a href="#laminas" class="text-orange-500 hover:text-orange-600 font-medium">Lâminas: o detalhe que define a durabilidade</a></li>
+            <li><a href="#limpeza" class="text-orange-500 hover:text-orange-600 font-medium">Facilidade de limpeza</a></li>
+            <li><a href="#preco" class="text-orange-500 hover:text-orange-600 font-medium">Faixas de preço</a></li>
+            <li><a href="#para-quem" class="text-orange-500 hover:text-orange-600 font-medium">Para quem cada tipo serve</a></li>
+            <li><a href="#faq" class="text-orange-500 hover:text-orange-600 font-medium">Perguntas frequentes</a></li>
+          </ul>
+        </nav>
+
+        <div id="potencia" class="mb-10">
+          <h2 class="text-slate-800 font-black text-2xl mb-4">Potência: o fator mais decisivo</h2>
+          <p class="text-slate-700 leading-relaxed mb-5">A potência determina o que o liquidificador consegue fazer de verdade. Um motor fraco aquece rápido, não sustenta o ritmo em preparações densas e tende a travar quando encontra resistência maior. Com o tempo, essa sobrecarga queima o motor.</p>
+          <div class="space-y-4">
+            <div class="border border-slate-200 rounded-2xl p-5 bg-white">
+              <div class="flex items-center gap-3 mb-2">
+                <span class="bg-slate-100 text-slate-700 text-xs font-bold px-3 py-1 rounded-full">Até 600W</span>
+                <p class="font-semibold text-slate-800">Uso básico</p>
+              </div>
+              <p class="text-slate-600 text-sm leading-relaxed">Vitaminas com frutas macias, sucos simples e molhos líquidos. Não indicado para gelo, sementes duras, pastas espessas ou uso frequente. Funciona, mas tem limitações claras. Indicado para quem usa raramente e tem orçamento reduzido.</p>
+            </div>
+            <div class="border border-slate-200 rounded-2xl p-5 bg-white">
+              <div class="flex items-center gap-3 mb-2">
+                <span class="bg-orange-100 text-orange-700 text-xs font-bold px-3 py-1 rounded-full">700W a 1.000W</span>
+                <p class="font-semibold text-slate-800">Uso regular — a faixa ideal para a maioria</p>
+              </div>
+              <p class="text-slate-600 text-sm leading-relaxed">Resolve bem vitaminas, smoothies, sucos com polpa, gelo picado e molhos mais grossos. Suporta uso diário sem superaquecer. É a faixa com melhor custo-benefício para quem usa o liquidificador todo dia ou quase todo dia.</p>
+            </div>
+            <div class="border border-slate-200 rounded-2xl p-5 bg-white">
+              <div class="flex items-center gap-3 mb-2">
+                <span class="bg-green-100 text-green-700 text-xs font-bold px-3 py-1 rounded-full">1.200W ou mais</span>
+                <p class="font-semibold text-slate-800">Uso intenso ou profissional</p>
+              </div>
+              <p class="text-slate-600 text-sm leading-relaxed">Tritura gelo em cubos inteiros, grãos, sementes e ingredientes muito duros sem esforço. Motor silencioso mesmo em alta carga. Indicado para quem faz receitas mais elaboradas, usa muito ou quer um equipamento que dure muitos anos.</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="copo" class="mb-10">
+          <h2 class="text-slate-800 font-black text-2xl mb-4">Material do copo: vidro, plástico ou inox</h2>
+          <p class="text-slate-700 leading-relaxed mb-5">O material do copo afeta a durabilidade, a higiene e o peso do aparelho. Cada um tem vantagens reais dependendo do uso.</p>
+          <div class="overflow-x-auto rounded-2xl border border-slate-200 shadow-sm mb-6">
+            <table class="w-full text-sm">
+              <thead>
+                <tr class="bg-slate-800 text-white">
+                  <th class="text-left px-4 py-3 font-bold">Material</th>
+                  <th class="text-left px-4 py-3 font-bold">Pontos fortes</th>
+                  <th class="text-left px-4 py-3 font-bold">Pontos de atenção</th>
+                  <th class="text-left px-4 py-3 font-bold">Para quem</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="px-4 py-3 border-t border-slate-100 font-semibold text-slate-800">Vidro</td>
+                  <td class="px-4 py-3 border-t border-slate-100 text-slate-600">Não absorve odor nem cor. Fácil de ver o conteúdo. Higiênico.</td>
+                  <td class="px-4 py-3 border-t border-slate-100 text-slate-600">Mais pesado. Pode quebrar se cair.</td>
+                  <td class="px-4 py-3 border-t border-slate-100 text-slate-600">Uso diário, quem preza por higiene</td>
+                </tr>
+                <tr class="bg-slate-50">
+                  <td class="px-4 py-3 border-t border-slate-100 font-semibold text-slate-800">Plástico (Tritan)</td>
+                  <td class="px-4 py-3 border-t border-slate-100 text-slate-600">Leve. Resistente a impactos. Transparente.</td>
+                  <td class="px-4 py-3 border-t border-slate-100 text-slate-600">Plástico de baixa qualidade absorve cheiro com o tempo.</td>
+                  <td class="px-4 py-3 border-t border-slate-100 text-slate-600">Quem busca praticidade e leveza</td>
+                </tr>
+                <tr>
+                  <td class="px-4 py-3 border-t border-slate-100 font-semibold text-slate-800">Inox</td>
+                  <td class="px-4 py-3 border-t border-slate-100 text-slate-600">Resistente. Não quebra. Não absorve odor.</td>
+                  <td class="px-4 py-3 border-t border-slate-100 text-slate-600">Não transparente — difícil ver o que está dentro.</td>
+                  <td class="px-4 py-3 border-t border-slate-100 text-slate-600">Durabilidade acima de tudo</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="bg-orange-50 border border-orange-100 rounded-2xl p-5">
+            <p class="font-semibold text-slate-800 mb-1">Dica prática</p>
+            <p class="text-slate-700 text-sm leading-relaxed">Se o orçamento permitir, priorize copo de vidro ou plástico do tipo Tritan (que não absorve odor). Evite plástico genérico sem identificação do material: após alguns meses de uso com beterraba, manga ou outros ingredientes com pigmento forte, o copo fica com aspecto manchado e retém cheiro mesmo depois de lavado.</p>
+          </div>
+        </div>
+
+        <div id="velocidades" class="mb-10">
+          <h2 class="text-slate-800 font-black text-2xl mb-4">Velocidades e função pulsar</h2>
+          <p class="text-slate-700 leading-relaxed mb-4">A maioria dos liquidificadores do mercado hoje tem entre 3 e 15 velocidades. A verdade é que você vai usar, no máximo, duas ou três delas no dia a dia. O que importa de verdade não é o número, mas a qualidade das opções disponíveis.</p>
+          <div class="space-y-4">
+            <div class="border border-slate-200 rounded-2xl p-5 bg-white">
+              <h3 class="font-bold text-slate-800 mb-2">Velocidade baixa</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">Para misturar ingredientes que já estão parcialmente processados, molhos com textura mais rústica ou preparações que não exigem potência total. Usar velocidade baixa em ingredientes duros força o motor desnecessariamente.</p>
+            </div>
+            <div class="border border-slate-200 rounded-2xl p-5 bg-white">
+              <h3 class="font-bold text-slate-800 mb-2">Velocidade alta</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">Para vitaminas, sucos com polpa, smoothies e qualquer preparação que exige liquidificação real. Na prática, é o modo mais usado no dia a dia.</p>
+            </div>
+            <div class="border border-orange-100 rounded-2xl p-5 bg-orange-50">
+              <h3 class="font-bold text-orange-800 mb-2">Função pulsar — a mais importante de todas</h3>
+              <p class="text-slate-700 text-sm leading-relaxed">O pulsar aplica rajadas de potência máxima por frações de segundo. É o recurso certo para gelo, pedaços maiores de fruta congelada, castanhas e qualquer ingrediente que exige impacto forte e controlado. Sem essa função, você perde muito em versatilidade. Se tiver que escolher entre um modelo com 12 velocidades sem pulsar e um com 3 velocidades com pulsar, escolha o segundo.</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="laminas" class="mb-10">
+          <h2 class="text-slate-800 font-black text-2xl mb-4">Lâminas: o detalhe que define a durabilidade</h2>
+          <p class="text-slate-700 leading-relaxed mb-4">As lâminas são a parte que mais varia em qualidade entre os modelos. Lâminas ruins perdem o fio rápido, especialmente com gelo, sementes ou ingredientes mais duros. A diferença é sentida claramente após 6 a 12 meses de uso.</p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="border border-green-200 rounded-2xl p-5 bg-green-50">
+              <p class="font-semibold text-green-800 mb-2">O que procurar</p>
+              <ul class="space-y-2 text-sm text-slate-700">
+                <li class="flex items-start gap-2"><span class="text-green-600 font-bold mt-0.5">+</span> Inox resistente, preferencialmente temperado</li>
+                <li class="flex items-start gap-2"><span class="text-green-600 font-bold mt-0.5">+</span> 6 dentes ou mais para melhor corte</li>
+                <li class="flex items-start gap-2"><span class="text-green-600 font-bold mt-0.5">+</span> Fixação robusta na base do copo</li>
+                <li class="flex items-start gap-2"><span class="text-green-600 font-bold mt-0.5">+</span> Peça removível para limpeza profunda</li>
+              </ul>
+            </div>
+            <div class="border border-red-200 rounded-2xl p-5 bg-red-50">
+              <p class="font-semibold text-red-800 mb-2">Sinais de alerta</p>
+              <ul class="space-y-2 text-sm text-slate-700">
+                <li class="flex items-start gap-2"><span class="text-red-500 font-bold mt-0.5">-</span> Lâminas muito finas ou leves ao toque</li>
+                <li class="flex items-start gap-2"><span class="text-red-500 font-bold mt-0.5">-</span> Apenas 4 dentes em modelos de entrada</li>
+                <li class="flex items-start gap-2"><span class="text-red-500 font-bold mt-0.5">-</span> Fixação plástica da lâmina na base</li>
+                <li class="flex items-start gap-2"><span class="text-red-500 font-bold mt-0.5">-</span> Sem peça de reposição disponível</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div id="limpeza" class="mb-10">
+          <h2 class="text-slate-800 font-black text-2xl mb-4">Facilidade de limpeza faz diferença no dia a dia</h2>
+          <p class="text-slate-700 leading-relaxed mb-4">Um liquidificador difícil de limpar acaba sendo usado menos. Com o tempo, restos de alimento acumulados perto das lâminas e na vedação da base geram mofo e cheiro. A limpeza fácil não é frescura, é higiene.</p>
+          <div class="space-y-4">
+            <div class="border border-slate-200 rounded-2xl p-5 bg-white">
+              <h3 class="font-bold text-slate-800 mb-2">Função autolimpeza</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">Coloque água morna com uma gota de detergente no copo e pulse por 30 segundos. Remove 90% dos resíduos sem precisar desmontar. Modelos que têm essa função tornam a limpeza rotineira muito mais rápida.</p>
+            </div>
+            <div class="border border-slate-200 rounded-2xl p-5 bg-white">
+              <h3 class="font-bold text-slate-800 mb-2">Base removível das lâminas</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">Modelos que permitem remover o conjunto de lâminas do copo facilitam a limpeza completa da área de vedação, que é onde o resíduo mais se acumula. Prefira modelos que têm essa opção.</p>
+            </div>
+            <div class="border border-slate-200 rounded-2xl p-5 bg-white">
+              <h3 class="font-bold text-slate-800 mb-2">Compatibilidade com lava-louças</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">Muitos copos de vidro e alguns de plástico Tritan são compatíveis com lava-louças. Verifique na embalagem antes de colocar, especialmente modelos com plástico convencional, que podem empenar com o calor.</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="preco" class="mb-10">
+          <h2 class="text-slate-800 font-black text-2xl mb-4">Faixas de preço: o que cada uma entrega</h2>
+          <p class="text-slate-700 leading-relaxed mb-5">O mercado de liquidificadores no Brasil tem opções de R$ 80 a mais de R$ 800. A diferença de qualidade entre as faixas é real, mas existe um ponto de diminuição de retorno após os R$ 400.</p>
+          <div class="space-y-3">
+            <div class="flex gap-4 items-start border border-slate-200 rounded-2xl p-5 bg-white">
+              <div class="bg-slate-100 text-slate-700 rounded-xl px-3 py-2 text-xs font-bold flex-shrink-0 text-center w-28">R$ 80 a 150</div>
+              <div>
+                <p class="font-semibold text-slate-800 mb-1">Entrada — para uso eventual</p>
+                <p class="text-slate-600 text-sm leading-relaxed">Motor básico de 400W a 600W. Copo de plástico simples. Funciona para vitaminas leves e sucos com frutas macias. Não espere durabilidade longa com uso frequente.</p>
+              </div>
+            </div>
+            <div class="flex gap-4 items-start border border-orange-200 rounded-2xl p-5 bg-orange-50">
+              <div class="bg-orange-500 text-white rounded-xl px-3 py-2 text-xs font-bold flex-shrink-0 text-center w-28">R$ 200 a 400</div>
+              <div>
+                <p class="font-semibold text-slate-800 mb-1">Intermediário — melhor custo-benefício</p>
+                <p class="text-slate-600 text-sm leading-relaxed">Motor de 700W a 1.000W. Copo de vidro ou plástico Tritan. Função pulsar presente. Suporta uso diário com gelo, smoothies e molhos mais densos. É aqui que está a maioria das boas escolhas do mercado.</p>
+              </div>
+            </div>
+            <div class="flex gap-4 items-start border border-slate-200 rounded-2xl p-5 bg-white">
+              <div class="bg-slate-700 text-white rounded-xl px-3 py-2 text-xs font-bold flex-shrink-0 text-center w-28">R$ 450 a 800</div>
+              <div>
+                <p class="font-semibold text-slate-800 mb-1">Premium — para quem usa muito ou quer o melhor</p>
+                <p class="text-slate-600 text-sm leading-relaxed">Motor de 1.200W ou mais. Silencioso mesmo em alta potência. Tritura qualquer ingrediente. Garantia estendida. Indicado para quem usa diariamente para receitas variadas ou quer um equipamento que dure 7 a 10 anos.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="para-quem" class="mb-10">
+          <h2 class="text-slate-800 font-black text-2xl mb-4">Para quem cada tipo serve</h2>
+          <div class="space-y-4">
+            <div class="border border-slate-200 rounded-2xl p-5 bg-white">
+              <p class="font-semibold text-slate-800 mb-2">Moro sozinho ou faço pouco uso</p>
+              <p class="text-slate-600 text-sm leading-relaxed">Um modelo de 700W a 800W com copo de vidro de 1 litro resolve bem. Você não precisa pagar por potência que não vai usar. Foque em facilidade de limpeza e função pulsar.</p>
+            </div>
+            <div class="border border-slate-200 rounded-2xl p-5 bg-white">
+              <p class="font-semibold text-slate-800 mb-2">Família de 3 ou mais pessoas, uso diário</p>
+              <p class="text-slate-600 text-sm leading-relaxed">Priorize motor de pelo menos 900W e copo com 1,5 litros ou mais. O motor vai trabalhar bastante: invista numa faixa de preço que entrega durabilidade real. Copo de vidro ou Tritan.</p>
+            </div>
+            <div class="border border-slate-200 rounded-2xl p-5 bg-white">
+              <p class="font-semibold text-slate-800 mb-2">Smoothies, gelo e receitas elaboradas</p>
+              <p class="text-slate-600 text-sm leading-relaxed">Motor de 1.000W ou mais é o mínimo. Gelo regular em cubos exige potência real. Liquidificadores de entrada emperram ou superaquecem nesse uso. Função pulsar é obrigatória.</p>
+            </div>
+            <div class="border border-slate-200 rounded-2xl p-5 bg-white">
+              <p class="font-semibold text-slate-800 mb-2">Uso profissional ou muito intenso</p>
+              <p class="text-slate-600 text-sm leading-relaxed">Invista em um modelo de 1.200W ou mais com garantia estendida. Marcas como Philips Walita e Oster têm modelos com proteção contra sobrecarga e motores com sistema de resfriamento. Custam mais, mas duram muito mais.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-slate-800 text-white rounded-2xl p-6 mb-8">
+          <h2 class="font-black text-xl mb-3">Resumo: o que priorizar na hora de escolher</h2>
+          <ul class="space-y-2 text-slate-300 text-sm leading-relaxed">
+            <li class="flex items-start gap-2"><span class="text-orange-400 font-bold mt-0.5">1.</span> Potência acima de 700W para uso regular</li>
+            <li class="flex items-start gap-2"><span class="text-orange-400 font-bold mt-0.5">2.</span> Copo de vidro ou plástico Tritan</li>
+            <li class="flex items-start gap-2"><span class="text-orange-400 font-bold mt-0.5">3.</span> Função pulsar presente</li>
+            <li class="flex items-start gap-2"><span class="text-orange-400 font-bold mt-0.5">4.</span> Tampa com abertura central</li>
+            <li class="flex items-start gap-2"><span class="text-orange-400 font-bold mt-0.5">5.</span> Lâmina removível para limpeza completa</li>
+            <li class="flex items-start gap-2"><span class="text-orange-400 font-bold mt-0.5">6.</span> Marca com assistência técnica disponível no Brasil</li>
+          </ul>
+        </div>
+
+        <div id="faq" class="mb-10">
+          <h2 class="text-slate-800 font-black text-2xl mb-6">Perguntas frequentes sobre liquidificadores</h2>
+          <div class="space-y-3">
+
+            <details class="border border-slate-200 rounded-xl overflow-hidden group">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+                <span>Qual a potência mínima para um liquidificador triturar gelo?</span>
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 py-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
+                Para triturar gelo em cubos com segurança, o liquidificador precisa de pelo menos 800W. Abaixo disso, o motor pode emperrar, superaquecer e perder vida útil rapidamente. Para uso frequente com gelo, prefira modelos acima de 1.000W.
+              </div>
+            </details>
+
+            <details class="border border-slate-200 rounded-xl overflow-hidden group">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+                <span>Liquidificador ou processador de alimentos: qual devo comprar primeiro?</span>
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 py-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
+                Depende do que você mais cozinha. O liquidificador é mais versátil para o dia a dia: vitaminas, sucos, sopas, molhos e vitaminas. O processador é melhor para picar, ralar, fatiar e misturar massas. Para quem está montando a cozinha do zero, o liquidificador costuma ser a primeira compra mais útil.
+              </div>
+            </details>
+
+            <details class="border border-slate-200 rounded-xl overflow-hidden group">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+                <span>Como limpar o liquidificador sem desmontar tudo?</span>
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 py-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
+                Coloque água morna até a metade do copo, adicione uma gota de detergente neutro e pulse por 30 segundos. Esvazie e enxague. Para limpeza mais profunda, desmonte as lâminas e lave separadamente com esponja macia. Nunca mergulhe a base motorizada em água.
+              </div>
+            </details>
+
+            <details class="border border-slate-200 rounded-xl overflow-hidden group">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+                <span>Liquidificador com mais velocidades é melhor?</span>
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 py-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
+                Não necessariamente. O número de velocidades é mais um argumento de marketing do que indicador de qualidade. O que importa é a potência do motor e a presença da função pulsar. Um modelo de 900W com 3 velocidades e pulsar é superior na prática a um de 600W com 12 velocidades sem pulsar.
+              </div>
+            </details>
+
+            <details class="border border-slate-200 rounded-xl overflow-hidden group">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+                <span>Quais marcas de liquidificador são mais confiáveis no Brasil?</span>
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 py-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
+                Philips Walita e Oster são as marcas com melhor histórico de durabilidade e assistência técnica no Brasil. Britânia e Arno oferecem bom custo-benefício na faixa intermediária. Mondial tem modelos de entrada com boa relação qualidade-preço para uso leve. Evite marcas sem histórico de assistência técnica, mesmo que o preço seja atrativo.
+              </div>
+            </details>
+
+            <details class="border border-slate-200 rounded-xl overflow-hidden group">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+                <span>Vale a pena pagar mais por um liquidificador com garantia estendida?</span>
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 py-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
+                Para uso intenso diário, sim. Um liquidificador de qualidade com garantia de 2 a 3 anos costuma custar 30% a 50% a mais, mas evita a troca prematura. Se você usa o liquidificador uma ou duas vezes por semana, a garantia padrão de 12 meses costuma ser suficiente.
+              </div>
+            </details>
+
+          </div>
+        </div>
+
+        <script type="application/ld+json" set:html={JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Qual a potência mínima para um liquidificador triturar gelo?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Para triturar gelo em cubos com segurança, o liquidificador precisa de pelo menos 800W. Para uso frequente com gelo, prefira modelos acima de 1.000W." }
+            },
+            {
+              "@type": "Question",
+              "name": "Liquidificador ou processador de alimentos: qual comprar primeiro?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Para quem está montando a cozinha do zero, o liquidificador costuma ser a primeira compra mais útil. É mais versátil para vitaminas, sucos, sopas e molhos do dia a dia." }
+            },
+            {
+              "@type": "Question",
+              "name": "Como limpar o liquidificador sem desmontar tudo?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Coloque água morna até a metade do copo, adicione uma gota de detergente e pulse por 30 segundos. Para limpeza mais profunda, desmonte as lâminas e lave separadamente." }
+            },
+            {
+              "@type": "Question",
+              "name": "Liquidificador com mais velocidades é melhor?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Não. O que importa é a potência do motor e a presença da função pulsar. Um modelo de 900W com 3 velocidades e pulsar é superior na prática a um de 600W com 12 velocidades." }
+            },
+            {
+              "@type": "Question",
+              "name": "Quais marcas de liquidificador são mais confiáveis no Brasil?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Philips Walita e Oster têm melhor histórico de durabilidade e assistência técnica. Britânia e Arno oferecem bom custo-benefício na faixa intermediária." }
+            },
+            {
+              "@type": "Question",
+              "name": "Vale a pena pagar mais por um liquidificador com garantia estendida?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Para uso intenso diário, sim. Um liquidificador com garantia de 2 a 3 anos custa mais, mas evita a troca prematura. Para uso leve, a garantia padrão de 12 meses costuma ser suficiente." }
             }
           ]
         })} />
