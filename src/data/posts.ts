@@ -56,8 +56,8 @@ export const categorias: Categoria[] = [
 export const posts: Post[] = [
   {
     slug: 'melhores-aspiradores-po-2026',
-    titulo: 'Os 7 Melhores Aspiradores de Pó de 2026',
-    resumo: 'Testamos os modelos mais vendidos do mercado para descobrir qual realmente vale o preço. Confira nosso ranking.',
+    titulo: 'Os 7 Melhores Aspiradores de Pó de 2026: Vertical, Sem Fio ou Robô?',
+    resumo: 'Testamos verticais, sem fio e robôs para descobrir qual tipo vale mais para cada casa. Ranking completo com os melhores modelos.',
     tempo: '8 min de leitura',
     imagem: '/images/aspiradores/capa-aspiradores.png',
     categoria: 'rankings-e-listas',
