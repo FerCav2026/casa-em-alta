@@ -189,7 +189,7 @@ export const posts: Post[] = [
     titulo: 'Forno Elétrico Portátil Vale a Pena Ter em Casa? Review Honesto Depois de Anos de Uso',
     resumo: 'Tenho um forno elétrico Fischer há mais de 5 anos e ele já mudou de apartamento comigo. Conto tudo: potência real, consumo de energia, o que faz bem e para quem vale a pena.',
     tempo: '9 min de leitura',
-    imagem: '/images/forno-eletrico/capa-forno-eletrico.jpg',
+    imagem: '/images/forno-eletrico/fischer-gourmet-grill.png',
     categoria: 'reviews',
     categoriaLabel: 'Review',
     categoriaColor: 'bg-orange-100 text-orange-700',
