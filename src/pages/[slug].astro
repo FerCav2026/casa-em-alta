@@ -109,6 +109,13 @@ const posts: Record<string, { titulo: string; descricao: string; categoria: stri
     dataCriacao: '2026-06-08',
     dataModificacao: '2026-06-08',
   },
+  'como-escolher-microondas': {
+    titulo: 'Como Escolher Microondas: Potência, Litros e o Que Realmente Importa Antes de Comprar',
+    descricao: 'Potência, litros, grill ou sem grill: o que realmente faz diferença na hora de escolher um microondas. Guia completo para não errar na compra.',
+    categoria: 'Guia de Compra',
+    dataCriacao: '2026-06-17',
+    dataModificacao: '2026-06-17',
+  },
 };
 
 export function getStaticPaths() {
@@ -128,6 +135,7 @@ export function getStaticPaths() {
     'vaporizador-de-roupas-portatil': {},
     'forno-eletrico-portatil-vale-a-pena': {},
     'lava-loucas-midea-8-servicos-review': {},
+    'como-escolher-microondas': {},
   }).map((slug) => ({ params: { slug } }));
 }
 
@@ -175,6 +183,7 @@ const isChaleira = slug === 'chaleira-eletrica-com-controle-de-temperatura';
 const isVaporizador = slug === 'vaporizador-de-roupas-portatil';
 const isLavaLoucas = slug === 'lava-loucas-midea-8-servicos-review';
 const isFornoEletrico = slug === 'forno-eletrico-portatil-vale-a-pena';
+const isComoEscolherMicroondas = slug === 'como-escolher-microondas';
 
 const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
   : isAirfryer ? '/images/airfryer/capa-airfryer.png'
@@ -191,6 +200,7 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
   : isVaporizador ? '/images/vaporizador/capa-vaporizador.jpg'
   : isLavaLoucas ? '/images/lava-loucas/capa-lava-loucas.jpg'
   : isFornoEletrico ? '/images/forno-eletrico/capa-forno-eletrico.png'
+  : isComoEscolherMicroondas ? '/images/microondas/capa-microondas.jpg'
   : undefined;
 ---
 
@@ -7163,6 +7173,377 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
                 "@type": "Answer",
                 "text": "A garantia oficial da Midea é de 12 meses contra defeitos de fabricação. Algumas lojas parceiras oferecem garantia estendida de até 24 meses. Verifique na hora da compra."
               }
+            }
+          ]
+        })} />
+      </div>
+    )}
+
+    {isComoEscolherMicroondas && (
+      <div>
+
+        <p class="text-xs text-slate-500 italic mb-6 border border-slate-100 rounded-xl px-4 py-3 bg-slate-50">
+          Este artigo pode conter links de afiliados. Se você comprar por um desses links, posso receber uma comissão sem custo adicional para você.
+        </p>
+
+        <img
+          src="/images/microondas/capa-microondas.jpg"
+          alt="Microondas moderno sobre bancada de cozinha com porta aberta"
+          class="w-full rounded-2xl mb-8 object-cover"
+          width="1536"
+          height="1024"
+          loading="eager"
+        />
+
+        <div class="bg-orange-50 border border-orange-100 rounded-2xl p-6 mb-8">
+          <p class="text-slate-800 text-base leading-relaxed mb-3">
+            Quando fui comprar meu primeiro microondas sozinha, fiquei paralisada na frente da prateleira. Todos pareciam iguais. Peguei o que estava em promoção, sem olhar para nada além do preço. Três meses depois, o prato giratório travou e a potência já não era a mesma que na caixa.
+          </p>
+          <p class="text-slate-800 text-base leading-relaxed mb-3">
+            Da segunda vez entendi que microondas tem muito mais coisa para avaliar do que parece: potência real, capacidade em litros para o uso que você tem, diferença entre modelos com grill e sem, e o que o fabricante chama de potência nem sempre é o que chega à comida.
+          </p>
+          <p class="text-slate-800 text-base leading-relaxed">
+            Sou Claudia Castro, do Casa em Alta. Neste guia reúno tudo que aprendi para você escolher o microondas certo para o seu apartamento sem desperdiçar dinheiro.
+          </p>
+        </div>
+
+        <div class="bg-blue-50 border border-blue-200 rounded-2xl p-6 mb-10">
+          <h2 class="text-blue-900 font-bold text-lg mb-4">O que ninguém te conta sobre microondas</h2>
+          <div class="space-y-4 text-slate-700 text-sm leading-relaxed">
+            <div>
+              <p class="font-semibold text-slate-800 mb-1">A potência na caixa não é a potência que chega à comida</p>
+              <p>Um microondas de 800W pode aquecer tão bem quanto um de 1.000W dependendo da tecnologia de distribuição das ondas. O que importa mais do que o número é a uniformidade do aquecimento. Verifique se o modelo tem prato giratório ou sistema inversor, que distribui as ondas de forma mais regular.</p>
+            </div>
+            <div>
+              <p class="font-semibold text-slate-800 mb-1">Litros e dimensão interna são coisas diferentes</p>
+              <p>Um microondas de 30 litros pode ter dimensões internas menores que um de 25 litros de outra marca, dependendo da espessura das paredes. Antes de comprar, verifique a largura, altura e profundidade internas, não só a capacidade em litros. Isso define se o prato que você usa no dia a dia vai caber.</p>
+            </div>
+            <div>
+              <p class="font-semibold text-slate-800 mb-1">Grill e convecção são funções muito diferentes</p>
+              <p>O grill usa uma resistência elétrica para dourar e gratinar. A convecção usa um ventilador e calor seco para cozinhar como um forno pequeno. Muita gente compra microondas com convecção achando que vai substituir o forno elétrico, mas os resultados são diferentes. Para apenas dourar queijo e gratinar, o grill simples já resolve.</p>
+            </div>
+            <div>
+              <p class="font-semibold text-slate-800 mb-1">Microondas compacto economiza bancada, não dinheiro</p>
+              <p>Modelos compactos de 20 a 23 litros costumam custar tão caro quanto intermediários de 28 a 30 litros. O preço alto vem do design, não da tecnologia. Se você tem espaço, vale mais um modelo intermediário com mais capacidade pelo mesmo valor.</p>
+            </div>
+          </div>
+        </div>
+
+        <nav class="border border-slate-200 rounded-2xl p-6 mb-10 bg-white">
+          <p class="font-bold text-slate-800 mb-3">Neste artigo:</p>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#potencia" class="text-orange-500 hover:text-orange-600 font-medium">Potência: o que o número realmente significa</a></li>
+            <li><a href="#litros" class="text-orange-500 hover:text-orange-600 font-medium">Capacidade em litros: quanto você precisa</a></li>
+            <li><a href="#grill" class="text-orange-500 hover:text-orange-600 font-medium">Grill, convecção ou microondas simples</a></li>
+            <li><a href="#tecnologia" class="text-orange-500 hover:text-orange-600 font-medium">Prato giratório ou sistema inversor</a></li>
+            <li><a href="#instalacao" class="text-orange-500 hover:text-orange-600 font-medium">Instalação e posicionamento</a></li>
+            <li><a href="#preco" class="text-orange-500 hover:text-orange-600 font-medium">Faixas de preço</a></li>
+            <li><a href="#para-quem" class="text-orange-500 hover:text-orange-600 font-medium">Para quem cada tipo serve</a></li>
+            <li><a href="#faq" class="text-orange-500 hover:text-orange-600 font-medium">Perguntas frequentes</a></li>
+          </ul>
+        </nav>
+
+        <div id="potencia" class="mb-10">
+          <h2 class="text-slate-800 font-black text-2xl mb-4">Potência: o que o número realmente significa</h2>
+          <p class="text-slate-700 leading-relaxed mb-5">A potência em watts determina a velocidade de aquecimento, não necessariamente a qualidade. Modelos mais potentes aquecem mais rápido, mas uma distribuição ruim das ondas ainda resulta em comida fria no meio e quente nas bordas.</p>
+          <div class="space-y-4">
+            <div class="border border-slate-200 rounded-2xl p-5 bg-white">
+              <div class="flex items-center gap-3 mb-2">
+                <span class="bg-slate-100 text-slate-700 text-xs font-bold px-3 py-1 rounded-full">600W a 700W</span>
+                <p class="font-semibold text-slate-800">Uso básico</p>
+              </div>
+              <p class="text-slate-600 text-sm leading-relaxed">Suficiente para esquentar comida pronta, derreter manteiga, descongelar e preparar receitas simples. O aquecimento é mais lento e pode ser menos uniforme. Indicado para uso eventual ou segundo microondas.</p>
+            </div>
+            <div class="border border-orange-200 rounded-2xl p-5 bg-orange-50">
+              <div class="flex items-center gap-3 mb-2">
+                <span class="bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full">800W a 1.000W</span>
+                <p class="font-semibold text-slate-800">Uso regular — faixa ideal para a maioria</p>
+              </div>
+              <p class="text-slate-600 text-sm leading-relaxed">Aquece com rapidez, descongela bem e suporta uso diário sem superaquecer. É a potência mais comum nos modelos de bom custo-benefício. Suficiente para esquentar refeições, cozinhar legumes e preparar lanches.</p>
+            </div>
+            <div class="border border-slate-200 rounded-2xl p-5 bg-white">
+              <div class="flex items-center gap-3 mb-2">
+                <span class="bg-green-100 text-green-700 text-xs font-bold px-3 py-1 rounded-full">1.100W ou mais</span>
+                <p class="font-semibold text-slate-800">Uso intenso ou família grande</p>
+              </div>
+              <p class="text-slate-600 text-sm leading-relaxed">Aquecimento rápido mesmo para volumes maiores. Descongelamento mais eficiente. Indicado para quem usa o microondas várias vezes ao dia ou tem família com mais de 4 pessoas. O diferencial na prática é o tempo: aquece em menos da metade do tempo de um modelo de 700W.</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="litros" class="mb-10">
+          <h2 class="text-slate-800 font-black text-2xl mb-4">Capacidade em litros: quanto você precisa</h2>
+          <p class="text-slate-700 leading-relaxed mb-5">A capacidade define o tamanho dos utensílios que cabem dentro. Antes de comprar, mede o prato que você mais usa no dia a dia e verifique se ele caberá com folga para girar.</p>
+          <div class="overflow-x-auto rounded-2xl border border-slate-200 shadow-sm mb-6">
+            <table class="w-full text-sm">
+              <thead>
+                <tr class="bg-slate-800 text-white">
+                  <th class="text-left px-4 py-3 font-bold">Capacidade</th>
+                  <th class="text-left px-4 py-3 font-bold">Prato giratório aprox.</th>
+                  <th class="text-left px-4 py-3 font-bold">Ideal para</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="px-4 py-3 border-t border-slate-100 font-semibold text-slate-800">20 a 23 L</td>
+                  <td class="px-4 py-3 border-t border-slate-100 text-slate-600">25 a 27 cm</td>
+                  <td class="px-4 py-3 border-t border-slate-100 text-slate-600">1 a 2 pessoas, uso leve</td>
+                </tr>
+                <tr class="bg-slate-50">
+                  <td class="px-4 py-3 border-t border-slate-100 font-semibold text-slate-800">25 a 30 L</td>
+                  <td class="px-4 py-3 border-t border-slate-100 text-slate-600">28 a 31 cm</td>
+                  <td class="px-4 py-3 border-t border-slate-100 text-slate-600">2 a 4 pessoas, uso diário regular — faixa mais recomendada</td>
+                </tr>
+                <tr>
+                  <td class="px-4 py-3 border-t border-slate-100 font-semibold text-slate-800">32 L ou mais</td>
+                  <td class="px-4 py-3 border-t border-slate-100 text-slate-600">32 cm ou mais</td>
+                  <td class="px-4 py-3 border-t border-slate-100 text-slate-600">Família grande, uso intenso, receitas maiores</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="bg-orange-50 border border-orange-100 rounded-2xl p-5">
+            <p class="font-semibold text-slate-800 mb-1">Dica prática</p>
+            <p class="text-slate-700 text-sm leading-relaxed">Antes de comprar, meça o prato de jantar que você usa com mais frequência. Um prato de 28 cm precisa de prato giratório de pelo menos 30 cm para girar sem tocar nas paredes. Prato giratório pequeno = você tendo que pausar para girar na mão. Na prática, isso é mais irritante do que parece.</p>
+          </div>
+        </div>
+
+        <div id="grill" class="mb-10">
+          <h2 class="text-slate-800 font-black text-2xl mb-4">Grill, convecção ou microondas simples</h2>
+          <p class="text-slate-700 leading-relaxed mb-5">Essa é a decisão que mais impacta o preço. Entender a diferença real entre as funções evita pagar por algo que você não vai usar.</p>
+          <div class="space-y-4">
+            <div class="border border-slate-200 rounded-2xl p-5 bg-white">
+              <div class="flex items-center justify-between mb-2">
+                <p class="font-semibold text-slate-800">Microondas simples</p>
+                <span class="text-xs font-bold text-slate-500 bg-slate-100 px-2 py-1 rounded-full">Mais barato</span>
+              </div>
+              <p class="text-slate-600 text-sm leading-relaxed mb-2">Aquece, descongela e cozinha por micro-ondas. Sem dourar, sem gratinar. Resolve o dia a dia de quem usa o microondas principalmente para esquentar comida e descongelar. É a escolha mais prática para apartamentos pequenos com forno no fogão.</p>
+              <p class="text-slate-500 text-xs">Indicado para: quem tem forno elétrico ou forno de embutir separado.</p>
+            </div>
+            <div class="border border-orange-200 rounded-2xl p-5 bg-orange-50">
+              <div class="flex items-center justify-between mb-2">
+                <p class="font-semibold text-slate-800">Microondas com grill</p>
+                <span class="text-xs font-bold text-orange-600 bg-white px-2 py-1 rounded-full border border-orange-200">Melhor custo-benefício extra</span>
+              </div>
+              <p class="text-slate-600 text-sm leading-relaxed mb-2">Além das funções do microondas simples, tem resistência elétrica superior para dourar queijo, gratinar massas e tostar a superfície dos alimentos. O resultado não é igual ao forno, mas resolve bem para uso cotidiano. O preço a mais é geralmente pequeno — R$ 50 a R$ 100 — e vale para quem cozinha com regularidade.</p>
+              <p class="text-slate-500 text-xs">Indicado para: quem cozinha com frequência e quer gratinar sem precisar ligar o forno.</p>
+            </div>
+            <div class="border border-slate-200 rounded-2xl p-5 bg-white">
+              <div class="flex items-center justify-between mb-2">
+                <p class="font-semibold text-slate-800">Microondas com convecção</p>
+                <span class="text-xs font-bold text-slate-500 bg-slate-100 px-2 py-1 rounded-full">Mais caro</span>
+              </div>
+              <p class="text-slate-600 text-sm leading-relaxed mb-2">Combina micro-ondas, grill e circulação de ar quente (como um forno pequeno). Permite assar, dourar e cozinhar com mais profundidade. É o tipo mais versátil, mas também o mais caro. O resultado de assar num microondas com convecção ainda não é igual ao de um forno elétrico dedicado.</p>
+              <p class="text-slate-500 text-xs">Indicado para: apartamento sem forno, quem quer um único aparelho para muitas funções.</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="tecnologia" class="mb-10">
+          <h2 class="text-slate-800 font-black text-2xl mb-4">Prato giratório ou sistema inversor</h2>
+          <p class="text-slate-700 leading-relaxed mb-4">Essa diferença técnica tem impacto direto na qualidade do aquecimento e no tamanho dos utensílios que você pode usar.</p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="border border-slate-200 rounded-2xl p-5 bg-white">
+              <p class="font-semibold text-slate-800 mb-3">Prato giratório</p>
+              <ul class="space-y-2 text-sm text-slate-600">
+                <li class="flex items-start gap-2"><span class="text-green-500 font-bold mt-0.5">+</span> Mais comum e mais barato</li>
+                <li class="flex items-start gap-2"><span class="text-green-500 font-bold mt-0.5">+</span> Fácil de limpar (prato removível)</li>
+                <li class="flex items-start gap-2"><span class="text-red-400 font-bold mt-0.5">-</span> Limita o tamanho dos utensílios</li>
+                <li class="flex items-start gap-2"><span class="text-red-400 font-bold mt-0.5">-</span> Pode aquecer de forma menos uniforme</li>
+              </ul>
+            </div>
+            <div class="border border-slate-200 rounded-2xl p-5 bg-white">
+              <p class="font-semibold text-slate-800 mb-3">Sistema inversor (sem prato giratório)</p>
+              <ul class="space-y-2 text-sm text-slate-600">
+                <li class="flex items-start gap-2"><span class="text-green-500 font-bold mt-0.5">+</span> Aquecimento mais uniforme</li>
+                <li class="flex items-start gap-2"><span class="text-green-500 font-bold mt-0.5">+</span> Cabe utensílios maiores e quadrados</li>
+                <li class="flex items-start gap-2"><span class="text-green-500 font-bold mt-0.5">+</span> Interior plano é mais fácil de limpar</li>
+                <li class="flex items-start gap-2"><span class="text-red-400 font-bold mt-0.5">-</span> Geralmente mais caro</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div id="instalacao" class="mb-10">
+          <h2 class="text-slate-800 font-black text-2xl mb-4">Instalação e posicionamento</h2>
+          <p class="text-slate-700 leading-relaxed mb-4">Microondas precisa de espaço ao redor para ventilação. Colocá-lo em armário fechado ou encostado diretamente na parede lateral pode superaquecer o aparelho e reduzir a vida útil.</p>
+          <div class="space-y-4">
+            <div class="border border-slate-200 rounded-2xl p-5 bg-white">
+              <h3 class="font-bold text-slate-800 mb-2">Espaço mínimo recomendado</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">Deixe pelo menos 10 cm acima, 5 cm nas laterais e 10 cm na parte traseira. As grades de ventilação ficam geralmente atrás ou nas laterais. Bloquear a saída de ar faz o motor trabalhar mais para se resfriar.</p>
+            </div>
+            <div class="border border-slate-200 rounded-2xl p-5 bg-white">
+              <h3 class="font-bold text-slate-800 mb-2">Tomada dedicada</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">Microondas de 1.000W ou mais devem ser ligados preferencialmente em tomada com circuito exclusivo ou compartilhado com aparelhos de baixo consumo. Ligar junto com fritadeira elétrica, cafeteira e forno pode sobrecarregar o circuito e derrubar o disjuntor.</p>
+            </div>
+            <div class="border border-slate-200 rounded-2xl p-5 bg-white">
+              <h3 class="font-bold text-slate-800 mb-2">Modelos de embutir vs sobre bancada</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">Microondas de embutir são projetados para ficar dentro de armários com kit de embutimento específico, que direciona o fluxo de ar. Nunca coloque um microondas comum dentro de um armário sem esse kit — o calor acumula e danifica tanto o aparelho quanto o móvel.</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="preco" class="mb-10">
+          <h2 class="text-slate-800 font-black text-2xl mb-4">Faixas de preço: o que cada uma entrega</h2>
+          <div class="space-y-3">
+            <div class="flex gap-4 items-start border border-slate-200 rounded-2xl p-5 bg-white">
+              <div class="bg-slate-100 text-slate-700 rounded-xl px-3 py-2 text-xs font-bold flex-shrink-0 text-center w-28">R$ 200 a 350</div>
+              <div>
+                <p class="font-semibold text-slate-800 mb-1">Entrada — uso leve</p>
+                <p class="text-slate-600 text-sm leading-relaxed">700W a 800W, 20 a 25 litros, sem grill. Funciona bem para esquentar comida e descongelar. Plástico interno simples. Durabilidade menor com uso intenso.</p>
+              </div>
+            </div>
+            <div class="flex gap-4 items-start border border-orange-200 rounded-2xl p-5 bg-orange-50">
+              <div class="bg-orange-500 text-white rounded-xl px-3 py-2 text-xs font-bold flex-shrink-0 text-center w-28">R$ 400 a 650</div>
+              <div>
+                <p class="font-semibold text-slate-800 mb-1">Intermediário — melhor custo-benefício</p>
+                <p class="text-slate-600 text-sm leading-relaxed">900W a 1.000W, 28 a 32 litros, com ou sem grill. Interior em aço inox ou pintura epóxi. Uso diário confortável. É aqui que estão as melhores escolhas do mercado para a maioria dos apartamentos.</p>
+              </div>
+            </div>
+            <div class="flex gap-4 items-start border border-slate-200 rounded-2xl p-5 bg-white">
+              <div class="bg-slate-700 text-white rounded-xl px-3 py-2 text-xs font-bold flex-shrink-0 text-center w-28">R$ 700 a 1.500</div>
+              <div>
+                <p class="font-semibold text-slate-800 mb-1">Premium — versatilidade e durabilidade</p>
+                <p class="text-slate-600 text-sm leading-relaxed">1.000W a 1.200W, 30 litros ou mais, sistema inversor, grill ou convecção. Interior inox, design mais robusto. Indicado para uso intenso ou quem quer substituir o forno com uma função de convecção.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="para-quem" class="mb-10">
+          <h2 class="text-slate-800 font-black text-2xl mb-4">Para quem cada tipo serve</h2>
+          <div class="space-y-4">
+            <div class="border border-slate-200 rounded-2xl p-5 bg-white">
+              <p class="font-semibold text-slate-800 mb-2">Moro sozinho, uso básico</p>
+              <p class="text-slate-600 text-sm leading-relaxed">Um modelo de 800W a 900W com 23 a 25 litros resolve bem. Sem necessidade de grill se você tem forno no fogão. Foque em facilidade de limpeza e custo acessível.</p>
+            </div>
+            <div class="border border-slate-200 rounded-2xl p-5 bg-white">
+              <p class="font-semibold text-slate-800 mb-2">Casal ou família pequena, uso diário</p>
+              <p class="text-slate-600 text-sm leading-relaxed">Priorize 900W ou mais, 28 a 30 litros, com grill para dar mais versatilidade. Interior em inox facilita a limpeza com uso frequente. Esta faixa tem as melhores opções de custo-benefício.</p>
+            </div>
+            <div class="border border-slate-200 rounded-2xl p-5 bg-white">
+              <p class="font-semibold text-slate-800 mb-2">Apartamento sem forno no fogão</p>
+              <p class="text-slate-600 text-sm leading-relaxed">Invista em modelo com grill ou convecção. O grill resolve a maioria das necessidades de dourar e gratinar. A convecção vai além, mas o preço sobe consideravelmente. Avalie com honestidade se você realmente vai assar com frequência antes de optar pela convecção.</p>
+            </div>
+            <div class="border border-slate-200 rounded-2xl p-5 bg-white">
+              <p class="font-semibold text-slate-800 mb-2">Família com 4 ou mais pessoas</p>
+              <p class="text-slate-600 text-sm leading-relaxed">Capacidade de 30 litros ou mais, potência de 1.000W acima e prato giratório de 31 cm ou sistema sem prato. O uso intenso exige robustez: prefira marcas com assistência técnica fácil de acionar.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-slate-800 text-white rounded-2xl p-6 mb-8">
+          <h2 class="font-black text-xl mb-3">Resumo: o que verificar antes de comprar</h2>
+          <ul class="space-y-2 text-slate-300 text-sm leading-relaxed">
+            <li class="flex items-start gap-2"><span class="text-orange-400 font-bold mt-0.5">1.</span> Potência mínima de 900W para uso diário</li>
+            <li class="flex items-start gap-2"><span class="text-orange-400 font-bold mt-0.5">2.</span> Capacidade de 28 a 30L para a maioria dos usos</li>
+            <li class="flex items-start gap-2"><span class="text-orange-400 font-bold mt-0.5">3.</span> Grill vale o custo extra se você cozinha regularmente</li>
+            <li class="flex items-start gap-2"><span class="text-orange-400 font-bold mt-0.5">4.</span> Medir o prato que você usa antes de comprar</li>
+            <li class="flex items-start gap-2"><span class="text-orange-400 font-bold mt-0.5">5.</span> Interior em inox ou pintura epóxi dura mais que plástico</li>
+            <li class="flex items-start gap-2"><span class="text-orange-400 font-bold mt-0.5">6.</span> Verificar espaço na bancada incluindo ventilação lateral e traseira</li>
+          </ul>
+        </div>
+
+        <div id="faq" class="mb-10">
+          <h2 class="text-slate-800 font-black text-2xl mb-6">Perguntas frequentes sobre microondas</h2>
+          <div class="space-y-3">
+
+            <details class="border border-slate-200 rounded-xl overflow-hidden group">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+                <span>Quantos litros de microondas é ideal para apartamento?</span>
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 py-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
+                Para 1 a 2 pessoas, 23 a 25 litros já atendem bem. Para casais ou famílias de 3 a 4 pessoas com uso diário, 28 a 30 litros é a faixa mais recomendada. Modelos acima de 32 litros são indicados para famílias maiores ou uso intenso com utensílios grandes.
+              </div>
+            </details>
+
+            <details class="border border-slate-200 rounded-xl overflow-hidden group">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+                <span>Microondas com grill vale a pena?</span>
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 py-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
+                Vale se você costuma gratinar queijo, dourar frango, tostar pão ou fazer lasanha. O grill usa uma resistência elétrica superior para dourar a superfície dos alimentos, o que o microondas simples não consegue. A diferença de preço costuma ser pequena — entre R$ 50 e R$ 150 — e o benefício no dia a dia é real para quem cozinha regularmente.
+              </div>
+            </details>
+
+            <details class="border border-slate-200 rounded-xl overflow-hidden group">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+                <span>Qual a diferença entre microondas com grill e com convecção?</span>
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 py-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
+                O grill usa resistência elétrica para dourar a superfície. A convecção usa calor seco circulante, como um forno pequeno, para cozinhar por dentro e dourar por fora. A convecção é mais versátil e cara. Para a maioria dos usos domésticos, o grill já resolve. A convecção só vale se você não tem forno e quer assar com frequência.
+              </div>
+            </details>
+
+            <details class="border border-slate-200 rounded-xl overflow-hidden group">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+                <span>Microondas consome muita energia?</span>
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 py-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
+                O consumo é baixo porque o tempo de uso é curto. Um microondas de 1.000W funcionando 20 minutos por dia consome 0,33 kWh, o que representa menos de R$ 0,30 na tarifa média. Mesmo com uso intenso de 1 hora por dia, o acréscimo mensal fica em torno de R$ 9 a R$ 12 na conta de luz.
+              </div>
+            </details>
+
+            <details class="border border-slate-200 rounded-xl overflow-hidden group">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+                <span>Como limpar o interior do microondas sem danificar?</span>
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 py-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
+                Coloque uma tigela com água e suco de limão no interior e ligue por 3 a 5 minutos. O vapor solta a sujeira das paredes. Depois é só limpar com pano úmido. Nunca use palha de aço ou produtos abrasivos no interior, especialmente em modelos com revestimento especial. Limpar logo após o respingo evita que a gordura resseque e grude.
+              </div>
+            </details>
+
+            <details class="border border-slate-200 rounded-xl overflow-hidden group">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+                <span>Quais marcas de microondas são mais confiáveis no Brasil?</span>
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 py-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
+                Electrolux, Panasonic e LG têm histórico sólido de durabilidade e assistência técnica no Brasil. Brastemp e Consul são boas opções na faixa intermediária com fácil acesso a peças. Midea tem crescido com boa relação custo-benefício. Evite marcas sem assistência técnica autorizada disponível na sua cidade.
+              </div>
+            </details>
+
+          </div>
+        </div>
+
+        <script type="application/ld+json" set:html={JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Quantos litros de microondas é ideal para apartamento?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Para 1 a 2 pessoas, 23 a 25 litros já atendem. Para casais ou famílias de 3 a 4 pessoas, 28 a 30 litros é a faixa mais recomendada. Acima de 32 litros para famílias maiores." }
+            },
+            {
+              "@type": "Question",
+              "name": "Microondas com grill vale a pena?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Vale se você costuma gratinar queijo, dourar frango ou fazer lasanha. A diferença de preço costuma ser pequena — entre R$ 50 e R$ 150 — e o benefício no dia a dia é real para quem cozinha regularmente." }
+            },
+            {
+              "@type": "Question",
+              "name": "Qual a diferença entre microondas com grill e com convecção?",
+              "acceptedAnswer": { "@type": "Answer", "text": "O grill usa resistência elétrica para dourar a superfície. A convecção usa calor seco circulante como um forno pequeno. Para a maioria dos usos domésticos, o grill já resolve." }
+            },
+            {
+              "@type": "Question",
+              "name": "Microondas consome muita energia?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Não. Com uso de 20 minutos por dia, um microondas de 1.000W representa menos de R$ 0,30 por dia na conta de luz. Mesmo com uso intenso, o acréscimo mensal fica em torno de R$ 9 a R$ 12." }
+            },
+            {
+              "@type": "Question",
+              "name": "Como limpar o interior do microondas sem danificar?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Coloque uma tigela com água e suco de limão e ligue por 3 a 5 minutos. O vapor solta a sujeira. Depois limpe com pano úmido. Nunca use palha de aço ou abrasivos no interior." }
+            },
+            {
+              "@type": "Question",
+              "name": "Quais marcas de microondas são mais confiáveis no Brasil?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Electrolux, Panasonic e LG têm histórico sólido. Brastemp e Consul são boas na faixa intermediária. Midea tem boa relação custo-benefício." }
             }
           ]
         })} />
