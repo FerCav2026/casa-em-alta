@@ -205,6 +205,16 @@ export const posts: Post[] = [
     categoriaColor: 'bg-blue-100 text-blue-700',
   },
   {
+    slug: 'como-escolher-liquidificador',
+    titulo: 'Como Escolher Liquidificador: o Que Ninguém te Conta na Hora de Comprar',
+    resumo: 'Potência, material do copo, velocidades e limpeza fácil: o que realmente importa antes de comprar. Guia completo para não errar na escolha.',
+    tempo: '7 min de leitura',
+    imagem: '/images/liquidificador/capa-liquidificador.jpg',
+    categoria: 'guias-de-compra',
+    categoriaLabel: 'Guia de Compra',
+    categoriaColor: 'bg-purple-100 text-purple-700',
+  },
+  {
     slug: 'maquina-de-gelo-portatil',
     titulo: 'Máquina de Gelo Portátil: Vale a Pena Ter em Casa? Veja os Melhores Modelos de 2026',
     resumo: 'Gelo em 6 minutos sem freezer. Comparamos os 4 melhores modelos portáteis de 2026 com fichas técnicas.',
