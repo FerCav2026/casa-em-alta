@@ -1,4 +1,4 @@
-export type Post = {
+﻿export type Post = {
   slug: string;
   titulo: string;
   resumo: string;
@@ -223,6 +223,16 @@ export const posts: Post[] = [
     categoria: 'rankings-e-listas',
     categoriaLabel: 'Rankings e Listas',
     categoriaColor: 'bg-green-100 text-green-700',
+  },
+  {
+    slug: 'liquidificador-vs-processador-de-alimentos',
+    titulo: 'Liquidificador vs Processador de Alimentos: Qual Comprar Primeiro?',
+    resumo: 'Tenho os dois em casa e vou te dizer a diferença real. Saiba quando cada um vale a pena, a tabela comparativa completa e qual comprar primeiro para a sua cozinha.',
+    tempo: '7 min de leitura',
+    imagem: '/images/liquidificador-vs-processador/capa-liquidificador-vs-processador.jpg',
+    categoria: 'comparativos',
+    categoriaLabel: 'Comparativo',
+    categoriaColor: 'bg-blue-100 text-blue-700',
   },
 ];
 
