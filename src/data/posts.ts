@@ -233,7 +233,7 @@ export const posts: Post[] = [
     categoria: 'comparativos',
     categoriaLabel: 'Comparativo',
     categoriaColor: 'bg-blue-100 text-blue-700',
-  },,
+  },
   {
     slug: 'como-escolher-microondas',
     titulo: 'Como Escolher Microondas: Potência, Litros e o Que Realmente Importa Antes de Comprar',
