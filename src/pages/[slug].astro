@@ -169,8 +169,8 @@ const blogPostingSchema = {
   dateModified: post.dataModificacao + 'T00:00:00-03:00',
   author: {
     '@type': 'Person',
-    name: 'Casa em Alta',
-    url: Astro.site?.href,
+    name: 'Claudia Castro',
+    url: new URL('/sobre', Astro.site).href,
   },
   publisher: {
     '@type': 'Organization',
@@ -249,7 +249,7 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
       {postData?.categoriaLabel ?? post.categoria}
     </span>
     <h1 class="text-3xl md:text-4xl font-black text-slate-900 mt-2 mb-3">{post.titulo}</h1>
-    <p class="text-slate-500 text-base mb-2">Por <strong class="text-slate-700">Casa em Alta</strong> &bull; Atualizado em 26/05/2026</p>
+    <p class="text-slate-500 text-base mb-2">Por <strong class="text-slate-700">Claudia Castro</strong> &bull; Atualizado em {new Date(post.dataModificacao + 'T12:00:00').toLocaleDateString('pt-BR')}</p>
     <p class="text-slate-600 text-lg mb-10 leading-relaxed">{post.descricao}</p>
 
     {isAspiradores && (
