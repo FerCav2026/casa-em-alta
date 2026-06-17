@@ -16,7 +16,8 @@ const {
   schema,
 } = Astro.props;
 
-const canonicalURL = Astro.props.canonicalURL ?? new URL(Astro.url.pathname, Astro.site).href;
+const rawPath = Astro.url.pathname.replace(/\/$/, '') || '/';
+const canonicalURL = Astro.props.canonicalURL ?? new URL(rawPath, Astro.site).href;
 const imageURL = new URL(image, Astro.site).href;
 
 const websiteSchema = {
