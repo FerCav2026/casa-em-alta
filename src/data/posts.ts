@@ -205,6 +205,16 @@ export const posts: Post[] = [
     categoriaColor: 'bg-blue-100 text-blue-700',
   },
   {
+    slug: 'como-escolher-microondas',
+    titulo: 'Como Escolher Microondas: Potência, Litros e o Que Realmente Importa Antes de Comprar',
+    resumo: 'Potência, litros, grill ou sem grill: o que realmente faz diferença na hora de escolher um microondas. Guia completo para não errar na compra.',
+    tempo: '8 min de leitura',
+    imagem: '/images/microondas/capa-microondas.jpg',
+    categoria: 'guias-de-compra',
+    categoriaLabel: 'Guia de Compra',
+    categoriaColor: 'bg-purple-100 text-purple-700',
+  },
+  {
     slug: 'como-escolher-liquidificador',
     titulo: 'Como Escolher Liquidificador: o Que Ninguém te Conta na Hora de Comprar',
     resumo: 'Potência, material do copo, velocidades e limpeza fácil: o que realmente importa antes de comprar. Guia completo para não errar na escolha.',
