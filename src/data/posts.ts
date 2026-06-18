@@ -245,6 +245,16 @@ export const posts: Post[] = [
     categoriaColor: 'bg-purple-100 text-purple-700',
   },
   {
+    slug: 'microondas-electrolux-mef41-review',
+    titulo: 'Microondas Electrolux MEF41: Vale a Pena? Review Honesto',
+    resumo: 'Testei o Electrolux MEF41 por mais de 6 meses no dia a dia do apê e conto tudo: aquecimento real, o menu Meus Favoritos que uso toda semana e as ressalvas honestas sobre tamanho e modelo descontinuado.',
+    tempo: '9 min de leitura',
+    imagem: '/images/microondas-mef41/capa-mef41.png',
+    categoria: 'reviews',
+    categoriaLabel: 'Review',
+    categoriaColor: 'bg-orange-100 text-orange-700',
+  },
+  {
     slug: 'microondas-com-grill-vale-a-pena',
     titulo: 'Microondas com Grill vs Sem Grill: Qual Vale a Pena Comprar?',
     resumo: 'Já usei os dois tipos e te conto quando o grill faz diferença real e quando é dinheiro jogado fora. Comparativo honesto com modelos e preços.',
