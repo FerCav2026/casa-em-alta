@@ -246,7 +246,7 @@ export const posts: Post[] = [
   },
   {
     slug: 'liquidificador-philips-walita-ri2110-review',
-    titulo: 'Liquidificador Philips Walita RI2110: Vale a Pena Comprar? Review Honesto',
+    titulo: 'Philips Walita RI2110: Vale a Pena? Review Honesto',
     resumo: 'Testei o Philips Walita RI2110 por semanas e conto tudo: desempenho real, limpeza, ruído e para quem ele realmente vale a pena comprar.',
     tempo: '8 min de leitura',
     imagem: '/images/liquidificador-ri2110/capa-ri2110.png',
