@@ -160,6 +160,7 @@ export function getStaticPaths() {
     'como-escolher-liquidificador': {},
     'liquidificador-vs-processador-de-alimentos': {},
     'como-escolher-microondas': {},
+    'microondas-com-grill-vs-sem-grill': {},
   }).map((slug) => ({ params: { slug } }));
 }
 
@@ -211,6 +212,7 @@ const isLavaSeca = slug === 'lava-e-seca-ou-secadora-apartamento';
 const isComoEscolherLiquidificador = slug === 'como-escolher-liquidificador';
 const isLiquidificadorVsProcessador = slug === 'liquidificador-vs-processador-de-alimentos';
 const isComoEscolherMicroondas = slug === 'como-escolher-microondas';
+const isMicroondasGrill = slug === 'microondas-com-grill-vs-sem-grill';
 
 const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
   : isAirfryer ? '/images/airfryer/capa-airfryer.png'
@@ -231,6 +233,7 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
   : isComoEscolherLiquidificador ? '/images/liquidificador/capa-liquidificador.jpg'
   : isLiquidificadorVsProcessador ? '/images/liquidificador-vs-processador/capa-liquidificador-vs-processador.jpg'
   : isComoEscolherMicroondas ? '/images/microondas/capa-microondas.jpg'
+  : isMicroondasGrill ? '/images/microondas-grill/capa-microondas-grill.jpg'
   : undefined;
 ---
 
@@ -9227,6 +9230,413 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
             }
           ]
         })} />
+      </div>
+    )}
+
+    {isMicroondasGrill && (
+      <div>
+
+        <!-- Capa -->
+        <div class="rounded-2xl overflow-hidden mb-8 shadow-md">
+          <img
+            src="/images/microondas-grill/capa-microondas-grill.jpg"
+            alt="Microondas com grill vs sem grill: qual vale a pena comprar?"
+            class="w-full h-auto object-cover"
+            loading="eager"
+          />
+        </div>
+
+        <!-- Introdução -->
+        <div class="bg-orange-50 border border-orange-100 rounded-2xl p-6 mb-8">
+          <p class="text-slate-800 text-base leading-relaxed mb-3">
+            Você está olhando dois modelos na loja. Um tem grill, o outro não. A diferença de preço é R$ 300. E a dúvida que bate é sempre a mesma: isso aqui vai mudar alguma coisa na minha vida ou vou usar uma vez e esquecer?
+          </p>
+          <p class="text-slate-800 text-base leading-relaxed mb-3">
+            Já passei por isso. E depois de testar os dois tipos na prática, consigo te dizer com clareza quando o grill vale cada centavo e quando ele é literalmente um resistor que você nunca vai ligar.
+          </p>
+          <p class="text-slate-800 text-base leading-relaxed">
+            A resposta curta: o grill vale a pena se você cozinha com frequência e quer dourar ou gratinar. Se o uso é só esquentar marmita e descongelar carne, o modelo sem grill entrega mais por menos.
+          </p>
+        </div>
+
+        <!-- Índice -->
+        <nav class="bg-white border border-slate-200 rounded-xl px-5 py-4 mb-10">
+          <p class="text-slate-800 font-bold text-sm mb-3">Neste artigo:</p>
+          <ul class="space-y-1.5">
+            <li><a href="#o-que-e-grill" class="text-orange-600 hover:text-orange-700 text-sm font-medium">O que é o grill no microondas e como funciona</a></li>
+            <li><a href="#diferencas" class="text-orange-600 hover:text-orange-700 text-sm font-medium">Diferenças práticas: grill vs sem grill</a></li>
+            <li><a href="#quando-faz-sentido" class="text-orange-600 hover:text-orange-700 text-sm font-medium">Quando o grill faz sentido (e quando não faz)</a></li>
+            <li><a href="#modelos" class="text-orange-600 hover:text-orange-700 text-sm font-medium">Modelos recomendados com e sem grill</a></li>
+            <li><a href="#veredicto" class="text-orange-600 hover:text-orange-700 text-sm font-medium">Veredicto final</a></li>
+            <li><a href="#faq-grill" class="text-orange-600 hover:text-orange-700 text-sm font-medium">Perguntas frequentes</a></li>
+          </ul>
+        </nav>
+
+        <!-- O que é o grill -->
+        <div id="o-que-e-grill" class="mb-10">
+          <h2 class="text-2xl font-bold text-slate-800 mb-4">O que é o grill no microondas e como funciona</h2>
+          <p class="text-slate-700 leading-relaxed mb-4">
+            O grill de um microondas é um resistor elétrico instalado no teto do aparelho. Quando você ativa essa função, ele aquece e irradia calor de cima para baixo, dourando a superfície do alimento. O efeito é parecido com a resistência de um forno elétrico.
+          </p>
+          <p class="text-slate-700 leading-relaxed mb-4">
+            Nos modelos mais simples, o grill funciona separado das micro-ondas: você usa um ou outro. Nos modelos mais completos, existe a função combinada, onde as micro-ondas cozinham por dentro enquanto o grill doura por fora ao mesmo tempo. Essa combinação reduz bastante o tempo de preparo.
+          </p>
+          <p class="text-slate-700 leading-relaxed mb-4">
+            Existem dois tipos de resistor. O resistor de quartzo aquece mais rápido e distribui calor de forma mais uniforme. O resistor convencional (metálico) é mais barato, mas demora um pouco mais para atingir a temperatura ideal.
+          </p>
+          <div class="bg-amber-50 border-l-4 border-amber-400 rounded-r-xl p-4 mb-4">
+            <p class="text-amber-900 text-sm leading-relaxed"><strong>Importante:</strong> o grill do microondas não substitui um forno elétrico nem uma air fryer. Ele doura a superfície, mas não circula calor como o forno convencional. Ótimo para gratinar e para carnes finas, mas limitado para assar pão ou fazer frango com pele crocante por igual.</p>
+          </div>
+        </div>
+
+        <!-- Imagem editorial 1 -->
+        <div class="rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <img
+            src="/images/microondas-grill/comparativo-interior.jpg"
+            alt="Interior de microondas com grill mostrando resistor no teto, ao lado de microondas sem grill"
+            class="w-full h-auto object-cover"
+            loading="lazy"
+          />
+        </div>
+
+        <!-- Diferenças práticas -->
+        <div id="diferencas" class="mb-10">
+          <h2 class="text-2xl font-bold text-slate-800 mb-4">Diferenças práticas: grill vs sem grill</h2>
+          <p class="text-slate-700 leading-relaxed mb-6">
+            Na teoria as diferenças são claras. Na prática, elas aparecem no dia a dia, e é aí que a decisão faz sentido ou não.
+          </p>
+          <div class="overflow-x-auto mb-6">
+            <table class="w-full text-sm border-collapse rounded-xl overflow-hidden">
+              <thead>
+                <tr class="bg-slate-800 text-white">
+                  <th class="px-4 py-3 text-left font-semibold">Critério</th>
+                  <th class="px-4 py-3 text-left font-semibold">Com Grill</th>
+                  <th class="px-4 py-3 text-left font-semibold">Sem Grill</th>
+                </tr>
+              </thead>
+              <tbody class="text-slate-700">
+                <tr class="border-b border-slate-100 bg-white"><td class="px-4 py-3 font-medium">Preço médio</td><td class="px-4 py-3">R$ 900 a R$ 1.500</td><td class="px-4 py-3">R$ 400 a R$ 900</td></tr>
+                <tr class="border-b border-slate-100 bg-slate-50"><td class="px-4 py-3 font-medium">Dourar e gratinar</td><td class="px-4 py-3 text-green-700 font-semibold">Sim</td><td class="px-4 py-3 text-red-500 font-semibold">Não</td></tr>
+                <tr class="border-b border-slate-100 bg-white"><td class="px-4 py-3 font-medium">Aquecer e descongelar</td><td class="px-4 py-3 text-green-700 font-semibold">Sim</td><td class="px-4 py-3 text-green-700 font-semibold">Sim</td></tr>
+                <tr class="border-b border-slate-100 bg-slate-50"><td class="px-4 py-3 font-medium">Consumo de energia</td><td class="px-4 py-3">Maior (resistor + micro-ondas)</td><td class="px-4 py-3">Menor</td></tr>
+                <tr class="border-b border-slate-100 bg-white"><td class="px-4 py-3 font-medium">Limpeza</td><td class="px-4 py-3">Mais trabalhosa (gordura no resistor)</td><td class="px-4 py-3">Mais simples</td></tr>
+                <tr class="bg-slate-50"><td class="px-4 py-3 font-medium">Ideal para</td><td class="px-4 py-3">Quem cozinha com frequência</td><td class="px-4 py-3">Uso básico diário</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="text-slate-700 leading-relaxed mb-4">
+            Um detalhe que pouca gente menciona: o grill aumenta o consumo de energia quando usado com frequência. O resistor consome entre 800W e 1.100W só na função grill, além da potência das micro-ondas. Se você usa essa função toda semana, isso aparece na conta de luz ao longo do tempo.
+          </p>
+          <p class="text-slate-700 leading-relaxed">
+            A limpeza também muda. No modelo sem grill, você passa um pano úmido e acabou. No modelo com grill, a gordura que respinga durante o preparo fica no resistor. Se não limpar logo depois, ela queima no uso seguinte e gera fumaça e cheiro ruim.
+          </p>
+        </div>
+
+        <!-- Quando faz sentido -->
+        <div id="quando-faz-sentido" class="mb-10">
+          <h2 class="text-2xl font-bold text-slate-800 mb-4">Quando o grill faz sentido (e quando não faz)</h2>
+          <p class="text-slate-700 leading-relaxed mb-6">
+            Essa é a parte que mais importa. A resposta depende de como você usa o microondas hoje, não de como você acha que vai usar depois que comprar.
+          </p>
+
+          <div class="grid md:grid-cols-2 gap-6 mb-8">
+            <div class="bg-green-50 border border-green-100 rounded-2xl p-5">
+              <p class="text-green-700 font-bold text-sm mb-3">Vale a pena se você:</p>
+              <ul class="text-sm text-slate-700 space-y-2">
+                <li>Gratina lasanha, macarrão ou legumes pelo menos uma vez por semana</li>
+                <li>Prepara frango ou peixe fino com frequência e quer acabamento dourado</li>
+                <li>Mora em apartamento pequeno e não tem forno elétrico separado</li>
+                <li>Quer substituir parcialmente o uso do forno convencional para pratos rápidos</li>
+                <li>Gosta de pizza congelada ou torrada com acabamento crocante</li>
+              </ul>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-5">
+              <p class="text-red-600 font-bold text-sm mb-3">Pode pular o grill se você:</p>
+              <ul class="text-sm text-slate-700 space-y-2">
+                <li>Usa o microondas só para esquentar marmita, café e descongelar carne</li>
+                <li>Já tem uma fritadeira air fryer ou um forno elétrico em casa</li>
+                <li>Prefere um aparelho mais simples de usar e limpar</li>
+                <li>Está em um orçamento apertado onde R$ 300 fazem diferença real</li>
+                <li>Cozinha pouco e o microondas é um apoio, não o centro da cozinha</li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="text-slate-700 leading-relaxed mb-4">
+            Quando eu ainda não tinha air fryer, o grill do microondas me salvou em muitas noites. Eu usava para gratinar o macarrão do jantar e para dar um acabamento no frango que tinha ficado pálido demais. Depois que comprei a air fryer, parei de usar o grill quase que completamente.
+          </p>
+          <div class="bg-blue-50 border border-blue-100 rounded-xl p-4 mb-4">
+            <p class="text-sm text-blue-900 leading-relaxed"><strong>Dica prática:</strong> antes de decidir, anote por uma semana tudo que você usa no microondas. Se aparecer algum preparo que envolveria dourar, a opção com grill faz sentido. Se a lista for só esquentar e descongelar, economize os R$ 300 e compre um bom modelo básico.</p>
+          </div>
+        </div>
+
+        <!-- Imagem editorial 2 -->
+        <div class="rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <img
+            src="/images/microondas-grill/uso-grill-cozinha.jpg"
+            alt="Lasanha gratinada saindo de microondas com grill em cozinha de apartamento"
+            class="w-full h-auto object-cover"
+            loading="lazy"
+          />
+        </div>
+
+        <!-- Modelos recomendados -->
+        <div id="modelos" class="mb-10">
+          <h2 class="text-2xl font-bold text-slate-800 mb-2">Modelos recomendados: com e sem grill</h2>
+          <p class="text-slate-600 leading-relaxed mb-8">Selecionei três modelos disponíveis na Amazon Brasil com boa avaliação e custo-benefício real. Um com grill e dois sem grill.</p>
+
+          <h3 class="text-lg font-bold text-slate-800 mb-4">Com grill</h3>
+
+          <!-- Card ME41X -->
+          <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+            <div class="bg-orange-500 px-6 py-4">
+              <div class="flex items-center justify-between flex-wrap gap-2">
+                <div>
+                  <p class="text-white font-black text-xl">Electrolux 31L Inox ME41X</p>
+                  <p class="text-orange-100 text-sm mt-1">Função Grill, Painel Blue Touch, 1.150W, 127V</p>
+                </div>
+                <span class="bg-white text-orange-600 text-xs font-black px-3 py-1 rounded-full uppercase tracking-wide">Com grill</span>
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex flex-col md:flex-row gap-6 mb-6">
+                <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 min-h-32">
+                  <img src="/images/microondas/electrolux-me41x.jpg" alt="Micro-ondas Electrolux ME41X 31L Inox com Grill" class="w-full h-auto object-contain max-h-40" loading="lazy" />
+                </div>
+                <div class="flex-1">
+                  <p class="text-slate-600 text-sm leading-relaxed mb-4">Para quem quer dourar e gratinar sem precisar ligar o forno elétrico. A resistência do grill faz diferença no queijo derretido, frango e lasanha gratinada. O interior em inox facilita muito a limpeza, inclusive do respingo de gordura que o grill provoca. A função tira odor é um bônus real para quem esquenta peixe ou alho em apartamento.</p>
+                  <a href="https://amzn.to/4a9bafU" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl transition-colors">Ver na Amazon</a>
+                </div>
+              </div>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Interior inox facilita limpeza após o grill</li>
+                    <li>Função tira odor incluída</li>
+                    <li>31L de capacidade para famílias</li>
+                    <li>Marca com assistência técnica no Brasil</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Preço mais alto que os sem grill</li>
+                    <li>Resistor convencional (não é quartzo)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="text-lg font-bold text-slate-800 mb-4">Sem grill</h3>
+
+          <!-- Card PMO23B -->
+          <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+            <div class="bg-slate-700 px-6 py-4">
+              <div class="flex items-center justify-between flex-wrap gap-2">
+                <div>
+                  <p class="text-white font-black text-xl">Philco 20L Branco PMO23B</p>
+                  <p class="text-slate-300 text-sm mt-1">Compacto, 1.100W, Limpa Fácil, 110V</p>
+                </div>
+                <span class="bg-white text-slate-700 text-xs font-black px-3 py-1 rounded-full uppercase tracking-wide">Melhor compacto</span>
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex flex-col md:flex-row gap-6 mb-6">
+                <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 min-h-32">
+                  <img src="/images/microondas/philco-pmo23b.jpg" alt="Micro-ondas Philco PMO23B 20L Branco" class="w-full h-auto object-contain max-h-40" loading="lazy" />
+                </div>
+                <div class="flex-1">
+                  <p class="text-slate-600 text-sm leading-relaxed mb-4">A escolha mais inteligente para quem quer um aparelho confiável e simples sem pagar pelo grill que não vai usar. O revestimento Limpa Fácil nas paredes internas resolve o problema da limpeza. Com 1.100W, aquece com agilidade para o tamanho. Boa opção para quem mora sozinho ou em casal com uso ocasional.</p>
+                  <a href="https://amzn.to/4a9b7ke" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl transition-colors">Ver na Amazon</a>
+                </div>
+              </div>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Preço mais acessível da lista</li>
+                    <li>Revestimento Limpa Fácil interno</li>
+                    <li>Compacto para cozinhas pequenas</li>
+                    <li>Nota média de 4,7 estrelas na Amazon</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Capacidade menor (20L)</li>
+                    <li>Sem função grill ou tira odor</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card MI41S -->
+          <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+            <div class="bg-slate-600 px-6 py-4">
+              <div class="flex items-center justify-between flex-wrap gap-2">
+                <div>
+                  <p class="text-white font-black text-xl">Electrolux 31L Inox MI41S</p>
+                  <p class="text-slate-200 text-sm mt-1">Painel Integrado, Função Tira Odor, 1.200W, 127V</p>
+                </div>
+                <span class="bg-white text-slate-600 text-xs font-black px-3 py-1 rounded-full uppercase tracking-wide">Mais vendido</span>
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex flex-col md:flex-row gap-6 mb-6">
+                <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 min-h-32">
+                  <img src="/images/microondas/electrolux-mi41s.jpg" alt="Micro-ondas Electrolux MI41S 31L Inox Espelhado" class="w-full h-auto object-contain max-h-40" loading="lazy" />
+                </div>
+                <div class="flex-1">
+                  <p class="text-slate-600 text-sm leading-relaxed mb-4">Para quem quer capacidade grande e design limpo sem pagar pelo grill. O painel espelhado some quando o aparelho está fechado, deixando a cozinha mais organizada visualmente. Ideal para famílias que usam o microondas intensamente no dia a dia mas sem precisar dourar nada. A função tira odor incluída é um diferencial real.</p>
+                  <a href="https://amzn.to/4xymQCH" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl transition-colors">Ver na Amazon</a>
+                </div>
+              </div>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Painel integrado espelhado: design limpo</li>
+                    <li>31L com função tira odor</li>
+                    <li>1.200W de potência</li>
+                    <li>Sem grill = limpeza mais simples</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Sem função grill</li>
+                    <li>Preço intermediário (não é o mais barato)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Leia Também -->
+        <div style="margin:32px 0;font-family:sans-serif;">
+          <p style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#1e5c2e;margin:0 0 12px;">Leia também:</p>
+          <a href="/como-escolher-microondas" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;min-width:200px;overflow:hidden;">
+              <img src="/images/microondas/capa-microondas.jpg" alt="Como escolher microondas: potência, litros e o que importa" style="width:100%;height:100%;object-fit:cover;display:block;" />
+            </div>
+            <div style="padding:20px 22px;display:flex;align-items:center;">
+              <p style="margin:0;font-size:15px;font-weight:500;line-height:1.5;color:#1a1a1a;">Como Escolher Microondas: Potência, Litros e o Que Realmente Importa Antes de Comprar</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Veredicto -->
+        <div id="veredicto" class="mb-10">
+          <h2 class="text-2xl font-bold text-slate-800 mb-4">Veredicto: com ou sem grill?</h2>
+          <p class="text-slate-700 leading-relaxed mb-4">
+            Se você cozinha de verdade e usa o microondas para preparar pratos, não só para esquentar: vai de grill. O Electrolux ME41X é o ponto de entrada mais seguro, com interior em inox que facilita a limpeza e função tira odor de bônus.
+          </p>
+          <p class="text-slate-700 leading-relaxed mb-4">
+            Se o seu uso é básico: esquenta o almoço, descongela a carne e aquece o café da manhã. Compra o Philco PMO23B ou o Electrolux MI41S. Você economiza entre R$ 300 e R$ 600 e não vai sentir falta de nada.
+          </p>
+          <p class="text-slate-700 leading-relaxed mb-4">
+            E se você já tem uma air fryer em casa, a decisão fica ainda mais fácil: o grill perde boa parte do apelo porque a air fryer entrega resultado superior para praticamente as mesmas funções. Nesse caso, economize e invista num bom modelo básico.
+          </p>
+          <p class="text-slate-700 leading-relaxed">
+            O grill mais caro do mundo não ajuda quem não vai usar. E o microondas mais simples do mercado é perfeito para quem só precisa do básico. A decisão certa é a que combina com o que você realmente faz na cozinha, todo dia.
+          </p>
+        </div>
+
+        <!-- FAQ -->
+        <div id="faq-grill" class="mb-10">
+          <h2 class="text-2xl font-bold text-slate-800 mb-6">Perguntas frequentes</h2>
+          <div class="space-y-3">
+
+            <details class="border border-slate-200 rounded-xl overflow-hidden group">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+                <span>Microondas com grill substitui o forno elétrico?</span>
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 py-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
+                Não totalmente. O grill do microondas doura a superfície do alimento, mas não circula calor como o forno elétrico. Para gratinar massas e dourar carnes finas, ele resolve bem. Para assar bolo, pão ou frango inteiro com acabamento uniforme, o forno elétrico ainda é superior.
+              </div>
+            </details>
+
+            <details class="border border-slate-200 rounded-xl overflow-hidden group">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+                <span>Microondas com grill consome mais energia?</span>
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 py-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
+                Sim, quando a função grill está ativa. O resistor adiciona entre 800W e 1.100W ao consumo normal do aparelho. Se você usa o grill com frequência, esse aumento aparece na conta de luz. Se usa só eventualmente, o impacto é pequeno.
+              </div>
+            </details>
+
+            <details class="border border-slate-200 rounded-xl overflow-hidden group">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+                <span>Qual a diferença entre grill de quartzo e grill convencional?</span>
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 py-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
+                O grill de quartzo aquece mais rápido e distribui calor de forma mais uniforme, dourando o alimento com mais consistência. O resistor convencional (metálico) demora um pouco mais e pode deixar partes mais douradas do que outras. Para uso frequente, o quartzo entrega resultado melhor.
+              </div>
+            </details>
+
+            <details class="border border-slate-200 rounded-xl overflow-hidden group">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+                <span>Tenho air fryer. Ainda vale a pena comprar microondas com grill?</span>
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 py-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
+                Provavelmente não. A air fryer já cobre a função de dourar e crocantear com resultado superior ao grill do microondas. Nesse caso, um microondas sem grill de boa potência atende tudo que a air fryer não faz (esquentar, descongelar, cozinhar rápido), sem duplicar função.
+              </div>
+            </details>
+
+            <details class="border border-slate-200 rounded-xl overflow-hidden group">
+              <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+                <span>Posso usar qualquer vasilha no microondas com grill?</span>
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-5 py-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
+                Não. Quando o grill está ativo, o aparelho gera calor real, como um forno. Recipientes de plástico não podem ser usados na função grill, mesmo que sejam próprios para micro-ondas. Use sempre vidro refratário ou cerâmica resistente ao calor. Verifique o manual do seu modelo para confirmar os materiais permitidos.
+              </div>
+            </details>
+
+          </div>
+        </div>
+
+        <!-- Schema FAQ -->
+        <script type="application/ld+json" set:html={JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Microondas com grill substitui o forno elétrico?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Não totalmente. O grill doura a superfície do alimento, mas não circula calor como o forno elétrico. Para gratinar e dourar carnes finas resolve. Para assar bolo, pão ou frango inteiro, o forno elétrico ainda é superior." }
+            },
+            {
+              "@type": "Question",
+              "name": "Microondas com grill consome mais energia?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Sim, quando a função grill está ativa. O resistor adiciona entre 800W e 1.100W ao consumo normal. Se você usa com frequência, aparece na conta de luz. Se usa só eventualmente, o impacto é pequeno." }
+            },
+            {
+              "@type": "Question",
+              "name": "Qual a diferença entre grill de quartzo e grill convencional?",
+              "acceptedAnswer": { "@type": "Answer", "text": "O grill de quartzo aquece mais rápido e distribui calor de forma mais uniforme. O resistor convencional demora mais e pode deixar partes mais douradas do que outras." }
+            },
+            {
+              "@type": "Question",
+              "name": "Tenho air fryer. Ainda vale a pena comprar microondas com grill?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Provavelmente não. A air fryer já cobre a função de dourar com resultado superior. Um microondas sem grill atende tudo que a air fryer não faz, sem duplicar função." }
+            },
+            {
+              "@type": "Question",
+              "name": "Posso usar qualquer vasilha no microondas com grill?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Não. Quando o grill está ativo, o aparelho gera calor real. Plástico não pode ser usado, mesmo se for próprio para micro-ondas. Use vidro refratário ou cerâmica resistente ao calor." }
+            }
+          ]
+        })} />
+
       </div>
     )}
 
