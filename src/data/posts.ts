@@ -249,7 +249,7 @@ export const posts: Post[] = [
     titulo: 'Microondas com Grill vs Sem Grill: Qual Vale a Pena Comprar?',
     resumo: 'Já usei os dois tipos e te conto quando o grill faz diferença real e quando é dinheiro jogado fora. Comparativo honesto com modelos e preços.',
     tempo: '7 min de leitura',
-    imagem: '/images/microondas-grill/capa-microondas-grill.jpg',
+    imagem: '/images/microondas-grill/capa-microondas-grill.png',
     categoria: 'comparativos',
     categoriaLabel: 'Comparativo',
     categoriaColor: 'bg-blue-100 text-blue-700',
