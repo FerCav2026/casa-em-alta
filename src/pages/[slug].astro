@@ -160,7 +160,7 @@ export function getStaticPaths() {
     'como-escolher-liquidificador': {},
     'liquidificador-vs-processador-de-alimentos': {},
     'como-escolher-microondas': {},
-    'microondas-com-grill-vs-sem-grill': {},
+    'microondas-com-grill-vale-a-pena': {},
   }).map((slug) => ({ params: { slug } }));
 }
 
@@ -212,7 +212,7 @@ const isLavaSeca = slug === 'lava-e-seca-ou-secadora-apartamento';
 const isComoEscolherLiquidificador = slug === 'como-escolher-liquidificador';
 const isLiquidificadorVsProcessador = slug === 'liquidificador-vs-processador-de-alimentos';
 const isComoEscolherMicroondas = slug === 'como-escolher-microondas';
-const isMicroondasGrill = slug === 'microondas-com-grill-vs-sem-grill';
+const isMicroondasGrill = slug === 'microondas-com-grill-vale-a-pena';
 
 const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
   : isAirfryer ? '/images/airfryer/capa-airfryer.png'
