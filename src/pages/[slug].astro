@@ -161,11 +161,7 @@ export function getStaticPaths() {
     'liquidificador-vs-processador-de-alimentos': {},
     'como-escolher-microondas': {},
     'microondas-com-grill-vale-a-pena': {},
-
     'liquidificador-philips-walita-ri2110-review': {},
-
-    'microondas-electrolux-mi41s-review': {},
-
   }).map((slug) => ({ params: { slug } }));
 }
 
@@ -218,11 +214,7 @@ const isComoEscolherLiquidificador = slug === 'como-escolher-liquidificador';
 const isLiquidificadorVsProcessador = slug === 'liquidificador-vs-processador-de-alimentos';
 const isComoEscolherMicroondas = slug === 'como-escolher-microondas';
 const isMicroondasGrill = slug === 'microondas-com-grill-vale-a-pena';
-
 const isReviewRI2110 = slug === 'liquidificador-philips-walita-ri2110-review';
-
-const isMI41SReview = slug === 'microondas-electrolux-mi41s-review';
-
 
 const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
   : isAirfryer ? '/images/airfryer/capa-airfryer.png'
@@ -244,11 +236,7 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
   : isLiquidificadorVsProcessador ? '/images/liquidificador-vs-processador/capa-liquidificador-vs-processador.jpg'
   : isComoEscolherMicroondas ? '/images/microondas/capa-microondas.jpg'
   : isMicroondasGrill ? '/images/microondas-grill/capa-microondas-grill.png'
-
   : isReviewRI2110 ? '/images/liquidificador-ri2110/capa-ri2110.png'
-
-  : isMI41SReview ? '/images/microondas-mi41s/capa-mi41s.png'
-
   : undefined;
 ---
 
@@ -9694,31 +9682,20 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
       </div>
     )}
 
-
     {isReviewRI2110 && (
-
-
-    {isMI41SReview && (
-
       <div>
 
         <!-- Capa -->
         <div class="rounded-2xl overflow-hidden mb-8 shadow-md">
           <img
-
             src="/images/liquidificador-ri2110/capa-ri2110.png"
             alt="Review Liquidificador Philips Walita RI2110: vale a pena comprar?"
-
-            src="/images/microondas-mi41s/capa-mi41s.png"
-            alt="Review Microondas Electrolux MI41S: vale a pena comprar?"
-
             class="w-full h-auto object-cover"
             loading="eager"
           />
         </div>
 
         <!-- Data + Intro -->
-
         <p class="text-xs text-slate-400 mb-6">Publicado em 22 de junho de 2026 · Atualizado em 22 de junho de 2026</p>
 
         <div class="bg-orange-50 border border-orange-100 rounded-2xl p-6 mb-8">
@@ -9731,18 +9708,6 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
           </p>
           <p class="text-slate-800 text-base leading-relaxed">
             A conclusão curta: o RI2110 é um liquidificador de entrada da Philips Walita com 550W e copo de plástico BPA-free. Ele faz muito bem o básico do dia a dia, tem preço acessível e é fácil de limpar. Não é para uso intenso com muito gelo, mas entrega bem mais do que o preço sugere.
-
-        <p class="text-xs text-slate-400 mb-6">Publicado em 24 de junho de 2026 · Atualizado em 24 de junho de 2026</p>
-        <p class="text-xs text-slate-500 mb-4">Produto testado em apartamento durante mais de seis meses. Dados de desempenho baseados em uso cotidiano real. Preços verificados em junho de 2026.</p>
-
-        <div class="bg-orange-50 border border-orange-100 rounded-2xl p-6 mb-8">
-          <p class="text-slate-500 text-xs italic mb-3">Este artigo é baseado em teste pessoal realizado por Claudia Castro, que usa o Microondas Electrolux MI41S em apartamento no preparo cotidiano de refeições.</p>
-          <p class="text-slate-800 text-base leading-relaxed mb-3">
-            O <strong>Microondas Electrolux MI41S</strong> é um forno de micro-ondas convencional (sem grill) de <strong>31 litros e 1.000 W de potência</strong>, com 10 níveis de potência, 12 receitas pré-programadas, prato giratório de 31,5 cm, acabamento inox espelhado e disponível em 127V. Eficiência energética Procel A. Garantia de 12 meses. Preço médio em junho de 2026: R$ 699 a R$ 799 (consulte o link da Amazon para o preço atual).
-          </p>
-          <p class="text-slate-800 text-base leading-relaxed mb-3">
-            O Microondas Electrolux MI41S foi a minha escolha quando o meu microondas antigo resolveu parar de girar o prato no meio de um jantar, e há mais de seis meses ele aguenta a minha rotina de quem vive em apê de dois quartos. Fui direto pesquisar o que a Electrolux tinha para oferecer naquela faixa de preço e não me arrependo. Ele esquentou marmita, descongelou frango às 23h, fez pipoca sem queimar (na maioria das vezes) e, nos seis meses de teste, estimo que passei de 360 usos sem falha mecânica ou queda de desempenho.
-
           </p>
         </div>
 
@@ -9750,7 +9715,6 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
         <nav class="bg-white border border-slate-200 rounded-xl px-5 py-4 mb-10">
           <p class="text-slate-800 font-bold text-sm mb-3">Neste artigo:</p>
           <ul class="space-y-1.5">
-
             <li><a href="#ficha-tecnica" class="text-orange-600 hover:text-orange-700 text-sm font-medium">Ficha técnica do RI2110</a></li>
             <li><a href="#uso-dia-a-dia" class="text-orange-600 hover:text-orange-700 text-sm font-medium">Como é usar no dia a dia</a></li>
             <li><a href="#pontos-positivos" class="text-orange-600 hover:text-orange-700 text-sm font-medium">O que o RI2110 faz bem</a></li>
@@ -9758,19 +9722,10 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
             <li><a href="#para-quem" class="text-orange-600 hover:text-orange-700 text-sm font-medium">Para quem vale a pena</a></li>
             <li><a href="#veredicto-ri2110" class="text-orange-600 hover:text-orange-700 text-sm font-medium">Veredicto final e nota</a></li>
             <li><a href="#faq-ri2110" class="text-orange-600 hover:text-orange-700 text-sm font-medium">Perguntas frequentes</a></li>
-
-            <li><a href="#ficha-tecnica-mi41s" class="text-orange-600 hover:text-orange-700 text-sm font-medium">Ficha técnica do MI41S</a></li>
-            <li><a href="#uso-dia-a-dia-mi41s" class="text-orange-600 hover:text-orange-700 text-sm font-medium">Como é usar no dia a dia</a></li>
-            <li><a href="#pros-limites-mi41s" class="text-orange-600 hover:text-orange-700 text-sm font-medium">O que o MI41S faz bem e onde tem limite</a></li>
-            <li><a href="#para-quem-mi41s" class="text-orange-600 hover:text-orange-700 text-sm font-medium">Para quem vale a pena</a></li>
-            <li><a href="#veredicto-mi41s" class="text-orange-600 hover:text-orange-700 text-sm font-medium">Veredicto final e nota</a></li>
-            <li><a href="#faq-mi41s" class="text-orange-600 hover:text-orange-700 text-sm font-medium">Perguntas frequentes</a></li>
-
           </ul>
         </nav>
 
         <!-- Ficha técnica -->
-
         <div id="ficha-tecnica" class="mb-10">
           <h2 class="text-2xl font-bold text-slate-800 mb-4">Ficha técnica do Philips Walita RI2110</h2>
 
@@ -9783,26 +9738,11 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
                   <p class="text-orange-100 text-sm mt-1">550W, 2L, ProBlend 4, 2 velocidades + pulsar</p>
                 </div>
                 <span class="bg-white text-orange-600 text-xs font-black px-3 py-1 rounded-full uppercase tracking-wide">Nossa escolha</span>
-
-        <div id="ficha-tecnica-mi41s" class="mb-10">
-          <h2 class="text-2xl font-bold text-slate-800 mb-4">Ficha técnica do Microondas Electrolux MI41S</h2>
-          <p class="text-slate-600 leading-relaxed mb-5">O MI41S é um micro-ondas de 1.000W e 31 litros com prato giratório de 31,5 cm, 10 níveis de potência e Painel Integrado com Função Tira Odor para salvar até 3 configurações personalizadas. O ponto mais importante antes de comprar: a capacidade útil real é de cerca de 18 litros, não os 31 anunciados, e o aparelho não é bivolt.</p>
-
-          <div class="border border-slate-200 rounded-2xl overflow-hidden mb-6 shadow-sm">
-            <div class="bg-orange-500 px-6 py-4">
-              <div class="flex items-center justify-between flex-wrap gap-2">
-                <div>
-                  <p class="text-white font-black text-xl">Electrolux MI41S</p>
-                  <p class="text-orange-100 text-sm mt-1">31L, 1.000W, 10 potências, Procel A</p>
-                </div>
-                <span class="bg-white text-orange-600 text-xs font-black px-3 py-1 rounded-full uppercase tracking-wide">Testado</span>
-
               </div>
             </div>
             <div class="p-6">
               <div class="flex flex-col md:flex-row gap-6 mb-6">
                 <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 min-h-32">
-
                   <img src="/images/liquidificador-ri2110/ri2110-produto.png" alt="Liquidificador Philips Walita RI2110 branco" class="w-full h-auto object-contain max-h-40" loading="lazy" />
                 </div>
                 <div class="flex-1">
@@ -9818,27 +9758,6 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
                         <tr class="border-b border-slate-100"><td class="py-2 pr-4 text-slate-500 font-medium">Rotação</td><td class="py-2 text-slate-800 font-semibold">23.000 RPM</td></tr>
                         <tr class="border-b border-slate-100"><td class="py-2 pr-4 text-slate-500 font-medium">Voltagem</td><td class="py-2 text-slate-800 font-semibold">110V ou 220V</td></tr>
                         <tr><td class="py-2 pr-4 text-slate-500 font-medium">Garantia</td><td class="py-2 text-slate-800 font-semibold">2 anos</td></tr>
-
-                  <img src="/images/microondas-mi41s/mi41s-produto.png" alt="Microondas Electrolux MI41S branco" class="w-full h-auto object-contain max-h-40" loading="lazy" />
-                </div>
-                <div class="flex-1">
-                  <a href="https://link.amazon/B03OUj931" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl transition-colors mb-4">Ver preço na Amazon</a>
-                  <div class="overflow-x-auto">
-                    <table class="w-full text-sm border-collapse">
-                      <tbody>
-                        <tr class="border-b border-slate-100"><td class="py-2 pr-4 text-slate-500 font-medium w-44">Capacidade</td><td class="py-2 text-slate-800 font-semibold">31L total / ~18L útil</td></tr>
-                        <tr class="border-b border-slate-100"><td class="py-2 pr-4 text-slate-500 font-medium">Potência</td><td class="py-2 text-slate-800 font-semibold">1.000W</td></tr>
-                        <tr class="border-b border-slate-100"><td class="py-2 pr-4 text-slate-500 font-medium">Níveis de potência</td><td class="py-2 text-slate-800 font-semibold">10</td></tr>
-                        <tr class="border-b border-slate-100"><td class="py-2 pr-4 text-slate-500 font-medium">Prato giratório</td><td class="py-2 text-slate-800 font-semibold">31,5 cm</td></tr>
-                        <tr class="border-b border-slate-100"><td class="py-2 pr-4 text-slate-500 font-medium">Receitas pré-programadas</td><td class="py-2 text-slate-800 font-semibold">12</td></tr>
-                        <tr class="border-b border-slate-100"><td class="py-2 pr-4 text-slate-500 font-medium">Meus Favoritos</td><td class="py-2 text-slate-800 font-semibold">Até 3 receitas salvas</td></tr>
-                        <tr class="border-b border-slate-100"><td class="py-2 pr-4 text-slate-500 font-medium">Tipo</td><td class="py-2 text-slate-800 font-semibold">Convencional (sem grill)</td></tr>
-                        <tr class="border-b border-slate-100"><td class="py-2 pr-4 text-slate-500 font-medium">Acabamento</td><td class="py-2 text-slate-800 font-semibold">Branco, aço esmaltado</td></tr>
-                        <tr class="border-b border-slate-100"><td class="py-2 pr-4 text-slate-500 font-medium">Voltagem</td><td class="py-2 text-slate-800 font-semibold">127V ou 220V (não bivolt)</td></tr>
-                        <tr class="border-b border-slate-100"><td class="py-2 pr-4 text-slate-500 font-medium">Eficiência</td><td class="py-2 text-slate-800 font-semibold">Procel A</td></tr>
-                        <tr class="border-b border-slate-100"><td class="py-2 pr-4 text-slate-500 font-medium">Dimensões (A×L×P)</td><td class="py-2 text-slate-800 font-semibold">32,5 × 52 × 41,5 cm</td></tr>
-                        <tr><td class="py-2 pr-4 text-slate-500 font-medium">Garantia</td><td class="py-2 text-slate-800 font-semibold">12 meses</td></tr>
-
                       </tbody>
                     </table>
                   </div>
@@ -9846,7 +9765,6 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
               </div>
             </div>
           </div>
-
 
           <div class="bg-amber-50 border-l-4 border-amber-400 rounded-r-xl p-4 mb-4">
             <p class="text-amber-900 text-sm leading-relaxed"><strong>Atenção na hora de comprar:</strong> o RI2110 existe em versão 110V e em versão 220V com sufixos diferentes no código. Confira a voltagem da sua tomada antes de finalizar o pedido.</p>
@@ -9878,79 +9796,21 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
           <h3 class="text-lg font-bold text-slate-800 mt-6 mb-3">Limpeza: rápida com uma ressalva</h3>
           <p class="text-slate-700 leading-relaxed mb-4">
             O modo de limpeza automática funciona: água com uma gota de detergente, liga por alguns segundos e enxágua. Ótimo para sucos e vitaminas. A ressalva fica para a tampa, que tem cantos internos que acumulam resíduo com receitas mais espessas. E o copo não vai ao lava-louça segundo o fabricante.
-
-          <div class="bg-amber-50 border-l-4 border-amber-400 rounded-r-xl p-4 mb-3">
-            <p class="text-amber-900 text-sm leading-relaxed"><strong>Atenção na capacidade:</strong> os 31 litros são a capacidade total do compartimento, não a útil. O prato giratório tem 31,5 cm — travessas ovais longas ou formas retangulares podem não girar. A capacidade útil real fica em torno de 18 litros.</p>
-          </div>
-          <div class="bg-amber-50 border-l-4 border-amber-400 rounded-r-xl p-4 mb-4">
-            <p class="text-amber-900 text-sm leading-relaxed"><strong>Atenção na voltagem:</strong> o MI41S existe em versão 127V e 220V separadas — não é bivolt. Confira a tensão da tomada antes de finalizar o pedido.</p>
-          </div>
-          <p class="text-slate-500 text-xs mt-2">Especificações conforme a <a href="https://www.electrolux.com.br" rel="noopener" class="text-orange-600 hover:underline">página oficial da Electrolux no Brasil</a>. Eficiência <a href="https://www.inmetro.gov.br/consumidor/produtos/eletrodomesticos.asp" rel="noopener" class="text-orange-600 hover:underline">Procel A</a> certificada pelo Inmetro.</p>
-        </div>
-
-        <!-- Uso no dia a dia -->
-        <div id="uso-dia-a-dia-mi41s" class="mb-10">
-          <h2 class="text-2xl font-bold text-slate-800 mb-4">Como é usar o MI41S no dia a dia</h2>
-          <p class="text-slate-700 leading-relaxed mb-4">
-            Minha rotina com o MI41S começa cedo. De manhã, ele esquenta o leite para o café em 40 segundos no nível 7 de potência, sem espirrar e sem deixar película por cima, que era o meu pesadelo com o microondas anterior. Depois, na hora do almoço, é a marmita que entra. Uma vasilha de vidro com arroz, feijão e carne já fria do dia anterior aquece uniformemente em cerca de 3 minutos na potência máxima, sem deixar o centro frio ou as bordas fervendo.
-          </p>
-          <p class="text-slate-700 leading-relaxed mb-4">
-            O ruído do MI41S é baixo para um aparelho de 1.000 W. Não é silencioso, dá para ouvir o motor girar o prato e o zumbido típico de qualquer micro-ondas, mas está bem abaixo do que eu esperava. No meu apartamento de sala-cozinha integrada, ele não atrapalha nem a conversa nem a televisão ao lado.
-          </p>
-          <p class="text-slate-700 leading-relaxed mb-4">
-            Um detalhe que uso mais do que pensei que usaria: o botão de +30 segundos. Para quem tem pressa, é o atalho mais útil do painel. Aperta uma vez, ele começa na potência máxima por 30 segundos. Aperta de novo sem abrir a porta, acrescenta mais 30. Simples, sem ter que digitar nada.
-          </p>
-
-          <h3 class="text-lg font-bold text-slate-800 mt-6 mb-3">Funções automáticas do MI41S: o Meus Favoritos que uso toda semana</h3>
-          <p class="text-slate-700 leading-relaxed mb-4">
-            O MI41S oferece 12 receitas pré-programadas e o Painel Integrado com Função Tira Odor, que salva até 3 configurações personalizadas. Na prática de seis meses, o Meus Favoritos é a função mais útil do aparelho. As receitas automáticas funcionam bem para a maioria dos itens, mas a pipoca varia conforme a marca e o tamanho do sachê e exige acompanhamento auditivo.
-          </p>
-          <p class="text-slate-700 leading-relaxed mb-4">
-            Testei o arroz pré-programado com 2 xícaras de arroz e 4 de água em tigela de vidro: resultado consistente nas 3 tentativas que fiz. O descongelamento automático de frango funcionou bem para peitos de até 500g. Para cortes maiores ou com osso, fica melhor com potência manual a 30% por mais tempo. O descongelamento de carne vermelha no modo automático deixou as bordas levemente cozidas no meu teste — prefiro controlar na mão.
-          </p>
-          <p class="text-slate-700 leading-relaxed mb-4">
-            O MI41S tem 12 receitas pré-programadas: arroz, macarrão, risoto, strogonoff, batata, tomate seco, hambúrguer, brigadeiro, frutas, vegetais, sopas e pipoca. Na teoria, você escolhe o item e ele define tempo e potência automaticamente.
-          </p>
-          <p class="text-slate-700 leading-relaxed mb-4">
-            Na prática, a pipoca automática me deu uma surpresa ruim na segunda vez que usei. Segui exatamente a mesma embalagem de 100g que tinha funcionado perfeitamente na primeira, mas dessa vez o aparelho achou que precisava de mais tempo e quase queimei o pacote. Aprendi que vale acompanhar pelo ouvido, mesmo usando a função automática: quando o intervalo entre os estouros chegar a 2 segundos, é hora de parar, independente do que o timer diga.
-          </p>
-          <p class="text-slate-700 leading-relaxed mb-4">
-            O Painel Integrado com Função Tira Odor é genuinamente útil. Salvei três configurações que uso toda semana: leite por 40 segundos na potência 7, sopa de legumes por 4 minutos na potência 8, e descongelamento de frango que funciona melhor para mim do que o modo automático de degelo. Uma vez salvo, é só dois toques e pronto.
-          </p>
-
-          <h3 class="text-lg font-bold text-slate-800 mt-6 mb-3">Limpeza</h3>
-          <p class="text-slate-700 leading-relaxed mb-4">
-            O interior em aço esmaltado branco limpa bem com pano úmido. Gordura de fritura, espirro de molho, tudo sai sem precisar de produto agressivo. O prato giratório vai direto para a pia ou para a lava-louças.
-          </p>
-          <p class="text-slate-700 leading-relaxed mb-4">
-            O que me incomoda um pouco é que os cantos internos são arredondados só na parte da frente. No fundo, perto do aro do prato, acumula resíduo que exige mais atenção. Nada grave, mas não é um aparelho de limpeza zero esforço como alguns reviews fazem parecer.
-
           </p>
         </div>
 
         <!-- Imagem de uso -->
         <div class="rounded-2xl overflow-hidden mb-8 shadow-sm">
-
           <img src="/images/liquidificador-ri2110/ri2110-uso.png" alt="Vitamina sendo preparada no liquidificador Philips Walita RI2110" class="w-full h-auto object-cover" loading="lazy" />
         </div>
 
         <!-- Pontos positivos e negativos -->
         <div id="pontos-positivos" class="mb-10">
           <h2 class="text-2xl font-bold text-slate-800 mb-6">O que o RI2110 faz bem e onde tem limite</h2>
-
-          <img src="/images/microondas-mi41s/mi41s-uso.png" alt="Microondas Electrolux MI41S em uso na cozinha de apartamento" class="w-full h-auto object-cover" loading="lazy" />
-        </div>
-
-        <!-- Pontos positivos e negativos -->
-        <div id="pros-limites-mi41s" class="mb-10">
-          <h2 class="text-2xl font-bold text-slate-800 mb-6">O que o MI41S faz bem e onde tem limite</h2>
-          <p class="text-slate-600 leading-relaxed mb-5">No uso diário por seis meses, o MI41S se destacou no aquecimento uniforme, no ruído baixo para 1.000W e na facilidade do painel. As principais limitações reais são o tamanho (52 cm de largura é muito para cozinhas compactas), a ausência de grill e o fato de ser modelo atual.</p>
-
           <div class="grid md:grid-cols-2 gap-6">
             <div class="bg-green-50 border border-green-100 rounded-2xl p-5">
               <p class="text-green-700 font-bold text-sm mb-3">Pontos positivos</p>
               <ul class="text-sm text-slate-700 space-y-2">
-
                 <li>Vitaminas e smoothies: textura uniforme em poucos segundos</li>
                 <li>Sopas batidas e molhos: cremoso com legumes cozidos</li>
                 <li>Gelo moderado: funciona com pulsar para uso esporádico</li>
@@ -9969,29 +9829,6 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
                 <li>Copo não vai ao lava-louça</li>
                 <li>550W tem limite com volumes grandes de gelo ou ingredientes muito duros</li>
                 <li>Apenas 2 velocidades: controle mais fino não existe</li>
-
-                <li>Aquece de forma uniforme, sem ponto frio no centro</li>
-                <li>Botão +30s rápido e intuitivo para o uso diário</li>
-                <li>Menu Meus Favoritos salva configurações reais do seu uso</li>
-                <li>Ruído baixo para 1.000W de potência</li>
-                <li>Interior esmaltado limpa bem com pano úmido</li>
-                <li>Prato de 31,5 cm cabe vasilhas comuns de marmita</li>
-                <li>Eficiência energética Procel A</li>
-                <li>Design discreto que encaixa em cozinhas brancas e neutras</li>
-              </ul>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-5">
-              <p class="text-red-600 font-bold text-sm mb-3">Limitações reais</p>
-              <ul class="text-sm text-slate-700 space-y-2">
-                <li>Capacidade útil real é ~18L, não os 31L divulgados</li>
-                <li>Sem grill: não gratina, não crocanteia, não substitui forno</li>
-                <li>Funções automáticas de pipoca podem variar com a marca/tamanho do sachê</li>
-                <li>52 cm de largura é muito para cozinhas compactas de apê pequeno</li>
-                <li>Não é bivolt — confira a tensão antes de comprar</li>
-                <li>Não tem função de manter aquecido (keep warm)</li>
-                <li>Canto interno do fundo acumula resíduo e pede atenção extra</li>
-                <li>Modelo descontinuado — estoque limitado em algumas lojas</li>
-
               </ul>
             </div>
           </div>
@@ -10000,109 +9837,62 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
         <!-- Leia Também 1 -->
         <div style="margin:32px 0;font-family:sans-serif;">
           <p style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#1e5c2e;margin:0 0 12px;">Leia também:</p>
-
           <a href="/como-escolher-liquidificador" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
             <div style="width:200px;min-width:200px;overflow:hidden;">
               <img src="/images/liquidificador/capa-liquidificador.jpg" alt="Como escolher liquidificador" style="width:100%;height:100%;object-fit:cover;display:block;" />
             </div>
             <div style="padding:20px 22px;display:flex;align-items:center;">
               <p style="margin:0;font-size:15px;font-weight:500;line-height:1.5;color:#1a1a1a;">Como Escolher Liquidificador: o Que Ninguém te Conta na Hora de Comprar</p>
-
-          <a href="/como-escolher-microondas" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
-            <div style="width:200px;min-width:200px;overflow:hidden;">
-              <img src="/images/microondas/capa-microondas.jpg" alt="Como escolher microondas" style="width:100%;height:100%;object-fit:cover;display:block;" />
-            </div>
-            <div style="padding:20px 22px;display:flex;align-items:center;">
-              <p style="margin:0;font-size:15px;font-weight:500;line-height:1.5;color:#1a1a1a;">Como Escolher Microondas: o Que Realmente Importa Antes de Comprar</p>
-
             </div>
           </a>
         </div>
 
         <!-- Para quem vale -->
-
         <div id="para-quem" class="mb-10">
           <h2 class="text-2xl font-bold text-slate-800 mb-6">Para quem vale a pena (e para quem não vale)</h2>
-
-        <div id="para-quem-mi41s" class="mb-10">
-          <h2 class="text-2xl font-bold text-slate-800 mb-6">Para quem o MI41S vale a pena (e para quem não vale)</h2>
-
           <div class="grid md:grid-cols-2 gap-6 mb-6">
             <div class="bg-green-50 border border-green-100 rounded-2xl p-5">
               <p class="text-green-700 font-bold text-sm mb-3">Vale a pena se você:</p>
               <ul class="text-sm text-slate-700 space-y-2">
-
                 <li>Mora sozinho ou a dois e usa o liquidificador de uma a três vezes por semana</li>
                 <li>Quer uma marca confiável com garantia de 2 anos sem gastar muito</li>
                 <li>Precisa substituir um liquidificador antigo por algo compacto e funcional</li>
                 <li>Faz vitaminas, sucos, sopas batidas e molhos simples</li>
                 <li>Tem cozinha pequena e precisa de aparelho que não tome espaço</li>
-
-                <li>Usa o micro-ondas para esquentar e descongelar, sem precisar de grill</li>
-                <li>Mora sozinho ou em casal e prepara refeições simples no dia a dia</li>
-                <li>Quer uma marca confiável entre R$ 699 e R$ 799</li>
-                <li>Tem balcão com pelo menos 55 cm de largura disponíveis</li>
-                <li>Prefere painel simples a telas touch com dezenas de funções que não usa</li>
-                <li>Valoriza interior fácil de limpar que não retém cheiro</li>
-
               </ul>
             </div>
             <div class="bg-red-50 border border-red-100 rounded-2xl p-5">
               <p class="text-red-600 font-bold text-sm mb-3">Não vale se você:</p>
               <ul class="text-sm text-slate-700 space-y-2">
-
                 <li>Usa o liquidificador todos os dias para receitas pesadas com muito gelo — para uso intenso, vale olhar <a href="/como-escolher-liquidificador" class="text-orange-600 hover:underline">modelos com mais potência</a></li>
                 <li>Precisa de alta potência para pastas grossas ou cremes muito densos</li>
                 <li>Quer copo de vidro (o RI2110 tem copo plástico)</li>
                 <li>Coloca tudo no lava-louça e não quer lavar à mão</li>
                 <li>Tem sono leve e não tolera barulho na cozinha de manhã</li>
-
-                <li>Quer gratinar, dourar ou crocantear alimentos no micro-ondas</li>
-                <li>Tem cozinha muito pequena onde 52 cm inviabiliza o uso</li>
-                <li>Precisa de bivolt por segurança na troca de apê</li>
-                <li>Cozinha para família maior e usa travessas grandes com frequência</li>
-                <li>Prioriza acesso fácil a peças e assistência técnica de <a href="/como-escolher-microondas" class="text-orange-600 hover:underline">modelo ativo</a></li>
-
               </ul>
             </div>
           </div>
         </div>
 
-
         <!-- Imagem de limpeza -->
         <div class="rounded-2xl overflow-hidden mb-8 shadow-sm">
           <img src="/images/liquidificador-ri2110/ri2110-limpeza.png" alt="Limpeza do copo do liquidificador Philips Walita RI2110 na pia" class="w-full h-auto object-cover" loading="lazy" />
-
-        <!-- Imagem de produto -->
-        <div class="rounded-2xl overflow-hidden mb-8 shadow-sm">
-          <img src="/images/microondas-mi41s/mi41s-produto.png" alt="Painel digital do Microondas Electrolux MI41S" class="w-full h-auto object-cover" loading="lazy" />
-
         </div>
 
         <!-- Leia Também 2 -->
         <div style="margin:32px 0;font-family:sans-serif;">
           <p style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#1e5c2e;margin:0 0 12px;">Leia também:</p>
-
           <a href="/liquidificador-vs-processador-de-alimentos" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
             <div style="width:200px;min-width:200px;overflow:hidden;">
               <img src="/images/liquidificador-vs-processador/capa-liquidificador-vs-processador.jpg" alt="Liquidificador vs processador de alimentos" style="width:100%;height:100%;object-fit:cover;display:block;" />
             </div>
             <div style="padding:20px 22px;display:flex;align-items:center;">
               <p style="margin:0;font-size:15px;font-weight:500;line-height:1.5;color:#1a1a1a;">Liquidificador vs Processador de Alimentos: Qual Comprar Primeiro?</p>
-
-          <a href="/microondas-com-grill-vale-a-pena" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
-            <div style="width:200px;min-width:200px;overflow:hidden;">
-              <img src="/images/microondas-grill/capa-microondas-grill.png" alt="Microondas com grill vs sem grill" style="width:100%;height:100%;object-fit:cover;display:block;" />
-            </div>
-            <div style="padding:20px 22px;display:flex;align-items:center;">
-              <p style="margin:0;font-size:15px;font-weight:500;line-height:1.5;color:#1a1a1a;">Microondas com Grill vs Sem Grill: Qual Vale a Pena Comprar?</p>
-
             </div>
           </a>
         </div>
 
         <!-- Veredicto -->
-
         <div id="veredicto-ri2110" class="mb-10">
           <h2 class="text-2xl font-bold text-slate-800 mb-4">Veredicto: vale a pena comprar o Philips Walita RI2110?</h2>
           <p class="text-slate-700 leading-relaxed mb-4">
@@ -10113,21 +9903,11 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
           </p>
           <p class="text-slate-700 leading-relaxed mb-6">
             Se você precisa de algo simples, confiável e acessível para o dia a dia, o RI2110 é uma compra sem arrependimento. Se o uso é intenso ou você quer recursos mais avançados, vale investir um pouco mais em modelos com maior potência.
-
-        <div id="veredicto-mi41s" class="mb-10">
-          <h2 class="text-2xl font-bold text-slate-800 mb-4">Veredicto: vale a pena comprar o Electrolux MI41S?</h2>
-          <p class="text-slate-700 leading-relaxed mb-4">
-            O MI41S vale a pena para quem usa o micro-ondas principalmente para esquentar marmita, descongelar carne e preparar receitas simples no dia a dia, e quer uma marca de confiança entre R$ 699 e R$ 799. Com nota 8,4 de 10 neste teste, ele se destaca pelo aquecimento uniforme, pelo Painel Integrado com Função Tira Odor e pelo ruído baixo para a potência. Os pontos de atenção são o tamanho (52 cm de largura pesa na cozinha compacta), a ausência de grill e o fato de ser modelo atual.
-          </p>
-          <p class="text-slate-700 leading-relaxed mb-6">
-            Depois de seis meses de uso diário, não me arrependo da compra. Mas se eu fosse comprar hoje, avaliaria se tem estoque disponível e se a assistência técnica da Electrolux na minha cidade ainda atende esse modelo. Na faixa de R$ 699 a R$ 799, o MI41S concorre com o Panasonic NN-ST27H (32L, 800W, sem menu de favoritos) e opções com grill como o Electrolux ME41X. Para quem prioriza capacidade com painel simples, o MI41S leva vantagem. Para quem quer gratinar, o ME41X é a escolha certa.
-
           </p>
 
           <div class="bg-white border border-slate-200 rounded-2xl p-6 mb-6">
             <p class="font-bold text-slate-800 mb-4">Nota final</p>
             <div class="grid grid-cols-2 md:grid-cols-3 gap-4 text-sm mb-4">
-
               <div class="bg-slate-50 rounded-xl p-3 text-center"><p class="text-slate-500 text-xs mb-1">Desempenho</p><p class="font-black text-orange-500 text-xl">8,0</p></div>
               <div class="bg-slate-50 rounded-xl p-3 text-center"><p class="text-slate-500 text-xs mb-1">Custo-benefício</p><p class="font-black text-orange-500 text-xl">9,0</p></div>
               <div class="bg-slate-50 rounded-xl p-3 text-center"><p class="text-slate-500 text-xs mb-1">Facilidade de uso</p><p class="font-black text-orange-500 text-xl">9,0</p></div>
@@ -10143,137 +9923,70 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
         <!-- FAQ -->
         <div id="faq-ri2110" class="mb-10">
           <h2 class="text-2xl font-bold text-slate-800 mb-6">Perguntas frequentes sobre o Philips Walita RI2110</h2>
-
-              <div class="bg-slate-50 rounded-xl p-3 text-center"><p class="text-slate-500 text-xs mb-1">Desempenho</p><p class="font-black text-orange-500 text-xl">8,5</p></div>
-              <div class="bg-slate-50 rounded-xl p-3 text-center"><p class="text-slate-500 text-xs mb-1">Custo-benefício</p><p class="font-black text-orange-500 text-xl">8,0</p></div>
-              <div class="bg-slate-50 rounded-xl p-3 text-center"><p class="text-slate-500 text-xs mb-1">Facilidade de uso</p><p class="font-black text-orange-500 text-xl">9,0</p></div>
-              <div class="bg-slate-50 rounded-xl p-3 text-center"><p class="text-slate-500 text-xs mb-1">Limpeza</p><p class="font-black text-orange-500 text-xl">8,5</p></div>
-              <div class="bg-slate-50 rounded-xl p-3 text-center"><p class="text-slate-500 text-xs mb-1">Silêncio</p><p class="font-black text-orange-500 text-xl">8,0</p></div>
-              <div class="bg-orange-500 rounded-xl p-3 text-center"><p class="text-orange-100 text-xs mb-1">Nota geral</p><p class="font-black text-white text-xl">8,4</p></div>
-            </div>
-            <p class="text-slate-500 text-xs mb-3">A nota geral 8,4 é a média simples dos cinco critérios avaliados com base em seis meses de uso cotidiano em apartamento.</p>
-            <p class="text-slate-600 text-sm leading-relaxed mb-4">O Desempenho ficou em 8,5 pelo aquecimento uniforme e Meus Favoritos, mas a pipoca automática que precisa de acompanhamento impediu nota mais alta. O Custo-benefício ficou em 8,0 pela Procel A e pela marca, mas o modelo atual pesa. A Facilidade de uso foi 9,0 pelo botão +30s e pelo painel simples. A Limpeza ficou em 8,5 porque o interior esmaltado é fácil, mas o canto do fundo pede atenção extra. O Silêncio foi 8,0 — baixo para a potência, mas perceptível em cozinha aberta.</p>
-            <a href="https://link.amazon/B03OUj931" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl transition-colors">Ver preço do Electrolux MI41S na Amazon</a>
-          </div>
-        </div>
-
-        <!-- FAQ -->
-        <div id="faq-mi41s" class="mb-10">
-          <h2 class="text-2xl font-bold text-slate-800 mb-6">Perguntas frequentes sobre o Microondas Electrolux MI41S</h2>
-
           <div class="space-y-3">
 
             <details class="border border-slate-200 rounded-xl overflow-hidden group">
               <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
-
                 <span>O Philips Walita RI2110 bate gelo?</span>
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
               </summary>
               <div class="px-5 py-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
                 Sim, com moderação. Para três a seis cubos usando a função pulsar em intervalos curtos, o desempenho é bom. Não é indicado para grandes quantidades de gelo ou uso intenso repetido.
-
-                <span>O MI41S vem em 127V ou 220V?</span>
-                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
-              </summary>
-              <div class="px-5 py-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
-                O MI41S encontrado na Amazon é a versão 127V. Confira a voltagem antes de comprar. Se a sua tomada for 220V, você precisará de um adaptador bivolt ou de outro modelo.
-
               </div>
             </details>
 
             <details class="border border-slate-200 rounded-xl overflow-hidden group">
               <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
-
                 <span>O copo do RI2110 é de vidro ou de plástico?</span>
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
               </summary>
               <div class="px-5 py-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
                 O copo é de plástico polipropileno livre de BPA. Ele não vai ao lava-louça segundo o fabricante. Para quem prefere copo de vidro, é necessário buscar outro modelo da linha Philips Walita.
-
-                <span>A capacidade real do MI41S é de 31 litros?</span>
-                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
-              </summary>
-              <div class="px-5 py-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
-                Os 31 litros são a capacidade total do compartimento interno. A capacidade útil, aquilo que gira dentro do prato e aquece uniformemente, fica em torno de 18 litros. O prato giratório tem 31,5 cm de diâmetro — vasilhas que caibam dentro desse círculo funcionam bem. Travessas ovais longas ou formas retangulares tendem a bater na parede.
-
               </div>
             </details>
 
             <details class="border border-slate-200 rounded-xl overflow-hidden group">
               <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
-
                 <span>O Philips Walita RI2110 é muito barulhento?</span>
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
               </summary>
               <div class="px-5 py-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
                 Na velocidade 1, o ruído é moderado e aceitável para apartamento. Na velocidade 2, fica mais alto e perceptível em outros cômodos. Não é extremo, mas vai incomodar em manhãs cedo com paredes finas.
-
-                <span>O MI41S tem grill?</span>
-                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
-              </summary>
-              <div class="px-5 py-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
-                Não. O MI41S é um micro-ondas convencional sem resistência de grill. Ele esquenta, descongela e cozinha, mas não gratina, não dora e não crocanteia. Se você quer usar o micro-ondas para gratinar queijo ou dourar frango, precisará de um modelo com grill.
-
               </div>
             </details>
 
             <details class="border border-slate-200 rounded-xl overflow-hidden group">
               <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
-
                 <span>O RI2110 tem versão 220V?</span>
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
               </summary>
               <div class="px-5 py-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
                 Sim. Existe nas versões 110V e 220V, identificadas pelo sufixo diferente no código do modelo. Confira sempre a voltagem da sua tomada antes de comprar.
-
-                <span>As funções automáticas do MI41S funcionam bem?</span>
-                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
-              </summary>
-              <div class="px-5 py-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
-                Funcionam, mas com ressalvas. Para sopa, arroz e macarrão os menus automáticos acertam bem. Para pipoca, o resultado varia com a marca e tamanho do sachê — vale acompanhar pelo ouvido mesmo na função automática. O Função Tira Odor é o destaque do painel integrado diária.
-
               </div>
             </details>
 
             <details class="border border-slate-200 rounded-xl overflow-hidden group">
               <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
-
                 <span>Qual a garantia do Philips Walita RI2110?</span>
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
               </summary>
               <div class="px-5 py-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
                 A garantia é de 2 anos, válida mundialmente. É um diferencial relevante para um liquidificador de entrada, e a assistência técnica da Philips Walita é bem distribuída no Brasil.
-
-                <span>O MI41S faz muito barulho?</span>
-                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
-              </summary>
-              <div class="px-5 py-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
-                Tem o ruído padrão de qualquer micro-ondas: motor do prato giratório e o zumbido da magnetron. O nível de ruído é baixo para um aparelho de 1.000W. Em cozinha integrada com sala, dá para ouvir, mas não interrompe conversa ou televisão.
-
               </div>
             </details>
 
             <details class="border border-slate-200 rounded-xl overflow-hidden group">
               <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
-
                 <span>O RI2110 é bom para usar todos os dias?</span>
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
               </summary>
               <div class="px-5 py-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
                 O RI2110 foi projetado para uso moderado, de uma a três vezes por semana. Para uso intenso diário, especialmente com ingredientes duros como gelo em bloco ou grãos secos, um liquidificador de maior potência acima de 800W seria mais adequado. No uso típico de vitaminas e sucos, o motor de 550W cumpre bem a função sem sinais de desgaste no curto prazo.
-
-                <span>Qual a diferença entre o MI41S e o ME41X da Electrolux?</span>
-                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
-              </summary>
-              <div class="px-5 py-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
-                Os dois são micro-ondas convencionais sem grill de 31 litros da Electrolux. A principal diferença está no acabamento: o MI41S é inox espelhado e tem o Painel Integrado com Função Tira Odor. O MI41S tem acabamento em inox escovado. O desempenho de aquecimento é equivalente. A escolha costuma ser pela estética da cozinha e disponibilidade de estoque.
-
               </div>
             </details>
 
             <details class="border border-slate-200 rounded-xl overflow-hidden group">
               <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
-
                 <span>Qual a diferença entre o RI2110 e outros liquidificadores Philips Walita?</span>
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
               </summary>
@@ -10289,13 +10002,6 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
               </summary>
               <div class="px-5 py-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
                 Não. O copo do RI2110 não é indicado para lava-louças. O fabricante recomenda lavagem manual com água e detergente logo após o uso. O copo plástico pode absorver odores de alimentos como alho e gengibre se não for lavado imediatamente. A tampa é a parte mais difícil de limpar por causa das ranhuras internas.
-
-                <span>O MI41S ainda é fabricado? Tem assistência técnica?</span>
-                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
-              </summary>
-              <div class="px-5 py-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
-                O MI41S foi descontinuado pela Electrolux. Unidades novas ainda aparecem em estoque de varejistas e peças de reposição como prato giratório ainda são encontradas na Amazon. A garantia de 12 meses do fabricante segue válida para unidades novas. Se a facilidade de assistência técnica for prioridade, avalie modelos ativos da linha Electrolux.
-
               </div>
             </details>
 
@@ -10307,7 +10013,6 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
           "@context": "https://schema.org",
           "@type": "FAQPage",
           "mainEntity": [
-
             {
               "@type": "Question",
               "name": "O Philips Walita RI2110 bate gelo?",
@@ -10348,15 +10053,6 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
               "name": "O copo do RI2110 vai ao lava-louças?",
               "acceptedAnswer": { "@type": "Answer", "text": "Não. O copo do RI2110 não é indicado para lava-louças. O fabricante recomenda lavagem manual com água e detergente logo após o uso. O copo plástico pode absorver odores de alimentos como alho e gengibre se não for lavado imediatamente." }
             }
-
-            { "@type": "Question", "name": "O MI41S vem em 127V ou 220V?", "acceptedAnswer": { "@type": "Answer", "text": "Não. O MI41S existe em duas versões separadas: 127V e 220V. Você precisa checar a voltagem da tomada do seu apartamento antes de comprar e escolher a versão correta." } },
-            { "@type": "Question", "name": "A capacidade real do MI41S é de 31 litros?", "acceptedAnswer": { "@type": "Answer", "text": "Os 31 litros são a capacidade total do compartimento interno. A capacidade útil real, limitada pelo prato giratório de 31,5 cm de diâmetro, fica em torno de 18 litros. Travessas ovais longas ou formas retangulares tendem a bater na parede." } },
-            { "@type": "Question", "name": "O MI41S tem grill?", "acceptedAnswer": { "@type": "Answer", "text": "Não. O MI41S é um micro-ondas convencional sem resistência de grill. Ele esquenta, descongela e cozinha, mas não gratina, não dora e não crocanteia." } },
-            { "@type": "Question", "name": "As funções automáticas do MI41S funcionam bem?", "acceptedAnswer": { "@type": "Answer", "text": "Funcionam, com ressalvas. Para sopa, arroz e macarrão os menus automáticos acertam bem. Para pipoca, o resultado varia com a marca e tamanho do sachê. O Função Tira Odor é o destaque do painel integrado." } },
-            { "@type": "Question", "name": "O MI41S faz muito barulho?", "acceptedAnswer": { "@type": "Answer", "text": "O nível de ruído é baixo para 1.000W. Em cozinha integrada com sala, dá para ouvir o motor e o zumbido, mas não interrompe conversa ou televisão." } },
-            { "@type": "Question", "name": "Qual a diferença entre o MI41S e o ME41X da Electrolux?", "acceptedAnswer": { "@type": "Answer", "text": "Os dois são micro-ondas convencionais sem grill de 31 litros. O MI41S tem acabamento inox espelhado esmaltado e o Painel Integrado com Função Tira Odor. O MI41S tem inox escovado. O desempenho de aquecimento é equivalente." } },
-            { "@type": "Question", "name": "O MI41S ainda é fabricado?", "acceptedAnswer": { "@type": "Answer", "text": "O MI41S foi descontinuado pela Electrolux. Unidades novas ainda aparecem em estoque de varejistas. A garantia de 12 meses do fabricante segue válida para unidades novas compradas agora." } }
-
           ]
         })} />
 
@@ -10364,7 +10060,6 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
         <script type="application/ld+json" set:html={JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Review",
-
           "name": "Philips Walita RI2110: Vale a Pena? Review Honesto",
           "reviewBody": "O Philips Walita RI2110 é um liquidificador de 550W com copo plástico BPA-free de 2 litros, lâminas ProBlend 4 e garantia de dois anos. Indicado para uso moderado em cozinhas compactas. Nota 8,2 de 10.",
           "reviewRating": {
@@ -10397,20 +10092,6 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
               "reviewCount": "1",
               "bestRating": "10"
             }
-
-          "name": "Microondas Electrolux MI41S: Vale a Pena? Review Honesto",
-          "reviewBody": "O Microondas Electrolux MI41S é um micro-ondas convencional sem grill de 31 litros e 1.000W, com Painel Integrado com Função Tira Odor, prato giratório de 31,5 cm e eficiência Procel A. Testado por mais de 6 meses em uso diário em apartamento. Nota 8,4 de 10.",
-          "reviewRating": { "@type": "Rating", "ratingValue": "8.4", "bestRating": "10", "worstRating": "0" },
-          "author": { "@type": "Person", "name": "Claudia Castro" },
-          "datePublished": "2026-06-24T00:00:00-03:00",
-          "publisher": { "@type": "Organization", "name": "Casa em Alta", "url": "https://www.casaemalta.com.br" },
-          "itemReviewed": {
-            "@type": "Product",
-            "name": "Microondas Electrolux MI41S",
-            "brand": { "@type": "Brand", "name": "Electrolux" },
-            "description": "Micro-ondas convencional sem grill de 31 litros, 1.000W, 10 níveis de potência, 12 receitas pré-programadas, prato giratório 31,5 cm, Procel A.",
-            "aggregateRating": { "@type": "AggregateRating", "ratingValue": "8.4", "reviewCount": "1", "bestRating": "10" }
-
           }
         })} />
 
