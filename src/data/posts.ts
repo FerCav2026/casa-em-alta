@@ -245,6 +245,16 @@ export const posts: Post[] = [
     categoriaColor: 'bg-purple-100 text-purple-700',
   },
   {
+    slug: 'liquidificador-philips-walita-ri2110-review',
+    titulo: 'Philips Walita RI2110: Vale a Pena? Review Honesto',
+    resumo: 'Testei o Philips Walita RI2110 por semanas e conto tudo: desempenho real, limpeza, ruído e para quem ele realmente vale a pena comprar.',
+    tempo: '8 min de leitura',
+    imagem: '/images/liquidificador-ri2110/capa-ri2110.png',
+    categoria: 'reviews',
+    categoriaLabel: 'Review',
+    categoriaColor: 'bg-orange-100 text-orange-700',
+  },
+  {
     slug: 'microondas-com-grill-vale-a-pena',
     titulo: 'Microondas com Grill vs Sem Grill: Qual Vale a Pena Comprar?',
     resumo: 'Já usei os dois tipos e te conto quando o grill faz diferença real e quando é dinheiro jogado fora. Comparativo honesto com modelos e preços.',
