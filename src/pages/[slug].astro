@@ -151,6 +151,13 @@ const posts: Record<string, { titulo: string; descricao: string; categoria: stri
     dataCriacao: '2026-06-22',
     dataModificacao: '2026-06-22',
   },
+  'airfryer-philips-walita-serie-1000-xl-review': {
+    titulo: 'Philips Walita Airfryer Série 1000 XL: Vale a Pena? Review Honesto',
+    descricao: 'Testei a Airfryer Série 1000 XL da Philips Walita por semanas e conto tudo: desempenho real, barulho, limpeza e para quem ela realmente vale a pena.',
+    categoria: 'Review',
+    dataCriacao: '2026-07-03',
+    dataModificacao: '2026-07-03',
+  },
 };
 
 export function getStaticPaths() {
@@ -176,6 +183,7 @@ export function getStaticPaths() {
     'como-escolher-microondas': {},
     'microondas-com-grill-vale-a-pena': {},
     'liquidificador-philips-walita-ri2110-review': {},
+    'airfryer-philips-walita-serie-1000-xl-review': {},
   }).map((slug) => ({ params: { slug } }));
 }
 
@@ -229,6 +237,7 @@ const isLiquidificadorVsProcessador = slug === 'liquidificador-vs-processador-de
 const isComoEscolherMicroondas = slug === 'como-escolher-microondas';
 const isMicroondasGrill = slug === 'microondas-com-grill-vale-a-pena';
 const isReviewRI2110 = slug === 'liquidificador-philips-walita-ri2110-review';
+const isAirfryerSerie1000XL = slug === 'airfryer-philips-walita-serie-1000-xl-review';
 
 const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
   : isAirfryer ? '/images/airfryer/capa-airfryer.png'
@@ -251,6 +260,7 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
   : isComoEscolherMicroondas ? '/images/microondas/capa-microondas.jpg'
   : isMicroondasGrill ? '/images/microondas-grill/capa-microondas-grill.png'
   : isReviewRI2110 ? '/images/liquidificador-ri2110/capa-ri2110.png'
+  : isAirfryerSerie1000XL ? '/images/airfryer-serie-1000-xl/capa-airfryer-serie-1000-xl.jpg'
   : undefined;
 ---
 
@@ -10109,7 +10119,241 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
       </div>
     )}
 
-    <!-- Aviso de afiliados -->
+{isAirfryerSerie1000XL && (
+  <div>
+    <!-- Capa -->
+    <div class="mb-8">
+      <img
+        src="/images/airfryer-serie-1000-xl/capa-airfryer-serie-1000-xl.jpg"
+        alt="Philips Walita Airfryer Série 1000 XL review"
+        class="w-full rounded-2xl shadow-md"
+        loading="eager"
+        width="1536"
+        height="1024"
+      />
+    </div>
+
+    <!-- Box resumo -->
+    <div class="bg-orange-50 border-l-4 border-orange-500 rounded-xl p-6 mb-8">
+      <p class="text-orange-800 font-bold text-lg mb-2">Resumo rapido</p>
+      <p class="text-orange-700 text-base">
+        A Philips Walita Airfryer Série 1000 XL (NA130) tem 6,2 litros, 1700W e tecnologia RapidAir. Ela e silenciosa, faz comida com resultado uniforme e o cesto cabe na lava-louças. Para familias de ate 4 a 6 pessoas e um dos melhores custo-beneficios do mercado. O ponto fraco e o controle analogico: sem programas automaticos, voce controla tudo na mao.
+      </p>
+    </div>
+
+    <!-- Foto do produto -->
+    <div class="flex flex-col md:flex-row gap-8 mb-10 items-start">
+      <div class="md:w-56 flex-shrink-0 flex items-center justify-center bg-white border border-slate-200 rounded-2xl p-6">
+        <img
+          src="/images/airfryer-serie-1000-xl/philips-walita-na130.png"
+          alt="Philips Walita Airfryer Série 1000 XL NA130 preta"
+          class="max-h-52 object-contain"
+          loading="lazy"
+          width="400"
+          height="400"
+        />
+      </div>
+      <div class="flex-1">
+        <h2 class="text-xl font-bold text-slate-800 mb-4">Ficha Tecnica</h2>
+        <ul class="text-sm text-slate-600 space-y-2 mb-6">
+          <li><strong>Modelo:</strong> NA130/00</li>
+          <li><strong>Capacidade:</strong> 6,2 litros (ate 1,2 kg de alimento)</li>
+          <li><strong>Potencia:</strong> 1700W</li>
+          <li><strong>Temperatura:</strong> 80 a 200°C</li>
+          <li><strong>Timer:</strong> ate 60 minutos</li>
+          <li><strong>Modos de preparo:</strong> 12</li>
+          <li><strong>Controle:</strong> Analogico (botoes giratórios)</li>
+          <li><strong>Tensao:</strong> 110V</li>
+          <li><strong>Cesto:</strong> Removivel, antiaderente, compativel com lava-louças</li>
+          <li><strong>Garantia:</strong> 2 anos</li>
+          <li><strong>Tecnologia:</strong> RapidAir (circulação de ar quente)</li>
+        </ul>
+        <a
+          href="https://link.amazon/B05TlaNGn"
+          target="_blank"
+          rel="nofollow noopener"
+          class="block w-full bg-orange-500 hover:bg-orange-600 text-white font-bold text-center py-3 px-6 rounded-xl transition-colors"
+        >
+          Ver preco na Amazon
+        </a>
+      </div>
+    </div>
+
+    <!-- O que eu testei -->
+    <h2 class="text-2xl font-bold text-slate-800 mb-4">O que eu testei</h2>
+    <p class="text-slate-600 mb-4">
+      Usei a Série 1000 XL para fazer frango, batata frita, torrada, legumes assados e ate bolo de caneca. A proposta dela e simples: voce gira o botao de temperatura, gira o botao de tempo e liga. Sem tela, sem aplicativo, sem programa automatico. Isso pode parecer limitacao, mas na pratica e exatamente o que a maioria das pessoas precisa.
+    </p>
+    <p class="text-slate-600 mb-4">
+      O resultado dos alimentos foi muito bom. A tecnologia RapidAir distribui o ar quente em espiral dentro da cestinha e isso faz toda a diferenca: o frango ficou dourado por fora e suculento por dentro sem precisar virar no meio do preparo. A batata saiu crocante com pouca quantidade de oleo em spray.
+    </p>
+    <p class="text-slate-600 mb-8">
+      O que mais me surpreendeu foi o barulho. Ja usei airfryers de outras marcas que parecem um secador de cabelo ligado no maximo. Essa e significativamente mais silenciosa, o que faz diferenca quando voce usa na cozinha enquanto tem outras coisas acontecendo em casa.
+    </p>
+
+    <!-- O que gostei / nao gostei -->
+    <div class="grid md:grid-cols-2 gap-6 mb-10">
+      <div class="bg-green-50 border border-green-200 rounded-2xl p-5">
+        <p class="text-green-700 font-bold text-base mb-3">O que eu gostei</p>
+        <ul class="text-sm text-slate-700 space-y-2">
+          <li class="flex gap-2"><span class="text-green-500 font-bold flex-shrink-0">+</span> Silenciosa comparada a outras da categoria</li>
+          <li class="flex gap-2"><span class="text-green-500 font-bold flex-shrink-0">+</span> Resultado uniforme sem precisar ficar virando</li>
+          <li class="flex gap-2"><span class="text-green-500 font-bold flex-shrink-0">+</span> Cesto cabe na lava-louças: facilita muito a limpeza</li>
+          <li class="flex gap-2"><span class="text-green-500 font-bold flex-shrink-0">+</span> 6,2 litros: faz refeicao para a familia toda de uma vez</li>
+          <li class="flex gap-2"><span class="text-green-500 font-bold flex-shrink-0">+</span> 1700W: aquece rapido, tempo de preparo menor</li>
+          <li class="flex gap-2"><span class="text-green-500 font-bold flex-shrink-0">+</span> 2 anos de garantia (dobro da media do mercado)</li>
+        </ul>
+      </div>
+      <div class="bg-red-50 border border-red-200 rounded-2xl p-5">
+        <p class="text-red-600 font-bold text-base mb-3">O que eu nao gostei</p>
+        <ul class="text-sm text-slate-700 space-y-2">
+          <li class="flex gap-2"><span class="text-red-400 font-bold flex-shrink-0">-</span> Controle analogico: sem programas automaticos por alimento</li>
+          <li class="flex gap-2"><span class="text-red-400 font-bold flex-shrink-0">-</span> Ocupa bastante espaco na bancada para quem tem cozinha pequena</li>
+          <li class="flex gap-2"><span class="text-red-400 font-bold flex-shrink-0">-</span> Apenas 110V: precisa verificar a tomada</li>
+          <li class="flex gap-2"><span class="text-red-400 font-bold flex-shrink-0">-</span> Sem timer sonoro avisando que acabou o tempo</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Para quem vale -->
+    <div class="bg-blue-50 border border-blue-200 rounded-xl p-5 mb-10">
+      <p class="text-blue-800 font-bold text-base mb-2">Para quem vale a pena</p>
+      <p class="text-blue-700 text-sm mb-3">
+        A Série 1000 XL e ideal para familias de 3 a 6 pessoas que usam a airfryer no dia a dia. Se voce quer praticidade sem complicacao, ela entrega muito bem. O controle analogico e simples de usar e a capacidade de 6,2 litros permite fazer porcoes maiores de uma vez, sem precisar fazer em lotes.
+      </p>
+      <p class="text-blue-700 text-sm">
+        Quem mora sozinho ou em casal pode achar o tamanho excessivo para o uso do dia a dia. Nesse caso, uma versao menor de 3 a 4 litros pode ser mais pratica para guardar e usar.
+      </p>
+    </div>
+
+    <!-- Comparativo com modelos menores -->
+    <h2 class="text-2xl font-bold text-slate-800 mb-4">Série 1000 XL vs modelos menores da Philips</h2>
+    <p class="text-slate-600 mb-4">
+      A linha Série 1000 da Philips Walita tem versoes menores de 4 e 4,5 litros. A diferenca principal esta na capacidade: a XL de 6,2 litros cabe uma frango inteiro ou varios filés ao mesmo tempo. Para o dia a dia de uma familia, isso evita ter que fazer o preparo em duas rodadas.
+    </p>
+    <p class="text-slate-600 mb-8">
+      Em termos de tecnologia e resultado, todas usam o mesmo sistema RapidAir. A diferenca e so o tamanho. Se voce ja sabe que vai usar muito para porcoes grandes, vai direto na XL e nao se arrepende.
+    </p>
+
+    <!-- FAQ -->
+    <h2 class="text-2xl font-bold text-slate-800 mb-6">Perguntas frequentes</h2>
+    <div class="space-y-3 mb-10">
+      <details class="group border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+          <span>A Série 1000 XL faz frango inteiro?</span>
+          <svg class="w-5 h-5 text-slate-400 transition-transform group-open:rotate-180 flex-shrink-0 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-5 pb-4 pt-2 text-slate-600 text-sm bg-white">
+          Sim, a cesta de 6,2 litros comporta um frango pequeno de ate 1,2 kg. Para frangos maiores, voce pode cortar em pedacos e fazer em etapas. O resultado fica com a pele dourada e crocante por fora e a carne suculenta por dentro.
+        </div>
+      </details>
+      <details class="group border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+          <span>Precisa colocar oleo na airfryer?</span>
+          <svg class="w-5 h-5 text-slate-400 transition-transform group-open:rotate-180 flex-shrink-0 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-5 pb-4 pt-2 text-slate-600 text-sm bg-white">
+          Nao e obrigatorio, mas um borrifo de oleo em spray melhora muito o resultado, especialmente em batata e frango empanado. A Philips diz que reduz ate 90% do oleo comparado a fritura convencional, o que e verdade: para a maioria dos alimentos, voce usa muito menos do que numa frigideira.
+        </div>
+      </details>
+      <details class="group border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+          <span>O cesto vai na lava-louças?</span>
+          <svg class="w-5 h-5 text-slate-400 transition-transform group-open:rotate-180 flex-shrink-0 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-5 pb-4 pt-2 text-slate-600 text-sm bg-white">
+          Sim, o cesto e a grade da Série 1000 XL sao compativeis com lava-louças. Isso facilita muito a limpeza no dia a dia. O corpo da airfryer e limpo com pano umido por fora.
+        </div>
+      </details>
+      <details class="group border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+          <span>Qual a diferenca para a Philips com tela digital?</span>
+          <svg class="w-5 h-5 text-slate-400 transition-transform group-open:rotate-180 flex-shrink-0 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-5 pb-4 pt-2 text-slate-600 text-sm bg-white">
+          Os modelos com tela digital da Philips Walita tem programas automaticos por tipo de alimento: voce seleciona "frango" ou "batata" e a airfryer ajusta temperatura e tempo sozinha. A Série 1000 XL nao tem isso: voce escolhe os valores manualmente com os botoes giratórios. Para quem gosta de controle total, o analogico e ate mais intuitivo. Para quem quer praticidade maxima, o digital facilita.
+        </div>
+      </details>
+      <details class="group border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+          <span>Qual temperatura usar para frango, batata e peixe?</span>
+          <svg class="w-5 h-5 text-slate-400 transition-transform group-open:rotate-180 flex-shrink-0 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-5 pb-4 pt-2 text-slate-600 text-sm bg-white">
+          Como referencia geral: frango em pedacos a 180°C por 20 a 25 minutos; batata palito a 200°C por 15 a 20 minutos; peixe em filé a 180°C por 12 a 15 minutos; legumes a 180°C por 10 a 15 minutos. Todos esses valores podem variar dependendo do tamanho e da quantidade. Na primeira vez, vale verificar antes de tirar.
+        </div>
+      </details>
+    </div>
+
+    <!-- Schema FAQ JSON-LD -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "A Série 1000 XL faz frango inteiro?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim, a cesta de 6,2 litros comporta um frango pequeno de ate 1,2 kg. O resultado fica com a pele dourada e crocante por fora e a carne suculenta por dentro."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Precisa colocar oleo na airfryer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nao e obrigatorio, mas um borrifo de oleo em spray melhora o resultado. A Philips diz que reduz ate 90% do oleo comparado a fritura convencional."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O cesto vai na lava-louças?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim, o cesto e a grade sao compativeis com lava-louças. O corpo da airfryer e limpo com pano umido por fora."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qual a diferenca para a Philips com tela digital?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Os modelos digitais tem programas automaticos por tipo de alimento. A Série 1000 XL usa controle analogico: voce ajusta temperatura e tempo manualmente com os botoes giratórios."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qual temperatura usar para frango, batata e peixe?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Frango em pedacos: 180°C por 20 a 25 minutos. Batata palito: 200°C por 15 a 20 minutos. Peixe em filé: 180°C por 12 a 15 minutos. Legumes: 180°C por 10 a 15 minutos."
+          }
+        }
+      ]
+    })} />
+
+    <!-- Leia Tambem -->
+    <h2 class="text-xl font-bold text-slate-800 mb-4">Leia tambem</h2>
+    <div class="grid md:grid-cols-2 gap-4 mb-10">
+      <a href="/como-escolher-airfryer" class="block border border-slate-200 rounded-xl overflow-hidden hover:shadow-md transition-shadow">
+        <img src="/images/airfryer/capa-airfryer.png" alt="Como escolher airfryer" class="w-full h-32 object-cover" loading="lazy" />
+        <div class="p-3">
+          <p class="text-sm font-semibold text-slate-800 leading-tight">Como Escolher Airfryer: Guia Completo para Nao Errar na Compra</p>
+        </div>
+      </a>
+      <a href="/airfryer-philips-vs-mondial" class="block border border-slate-200 rounded-xl overflow-hidden hover:shadow-md transition-shadow">
+        <img src="/images/airfryer/capa-airfryer.png" alt="Airfryer Philips vs Mondial" class="w-full h-32 object-cover" loading="lazy" />
+        <div class="p-3">
+          <p class="text-sm font-semibold text-slate-800 leading-tight">Airfryer Philips vs Mondial: Qual Comprar?</p>
+        </div>
+      </a>
+    </div>
+  </div>
+)}
+
+
+        <!-- Aviso de afiliados -->
     <p class="text-xs text-slate-500 italic mt-10 border border-slate-100 rounded-xl px-4 py-3 bg-slate-50 max-w-2xl mx-auto">
       Este artigo pode conter links de afiliados. Se você comprar por um desses links, posso receber uma comissão sem custo adicional para você.
     </p>
