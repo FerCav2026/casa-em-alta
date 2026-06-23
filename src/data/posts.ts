@@ -56,7 +56,7 @@ export const categorias: Categoria[] = [
 export const posts: Post[] = [
   {
     slug: 'melhores-aspiradores-po-2026',
-    titulo: 'Os 7 Melhores Aspiradores de Pó de 2026: Vertical, Sem Fio ou Robô?',
+    titulo: 'Os 7 Melhores Aspiradores de Pó 2026: Com Fio, Sem Fio e Robôs',
     resumo: 'Testamos verticais, sem fio e robôs para descobrir qual tipo vale mais para cada casa. Ranking completo com os melhores modelos.',
     tempo: '8 min de leitura',
     imagem: '/images/aspiradores/capa-aspiradores.png',
@@ -66,7 +66,7 @@ export const posts: Post[] = [
   },
   {
     slug: 'airfryer-philips-vs-mondial',
-    titulo: 'Airfryer Philips vs Mondial: Qual Comprar em 2026?',
+    titulo: 'Airfryer Philips vs Mondial: Qual Comprar?',
     resumo: 'Comparamos consumo de energia, capacidade, facilidade de limpeza e resultado final. A resposta vai te surpreender.',
     tempo: '6 min de leitura',
     imagem: '/images/airfryer/capa-airfryer.png',
@@ -96,7 +96,7 @@ export const posts: Post[] = [
   },
   {
     slug: 'panela-pressao-eletrica-review',
-    titulo: 'Panela de Pressão Elétrica: Review Completo após 6 Meses de Uso',
+    titulo: 'Panela de Pressão Elétrica Vale a Pena? Review de 4 Modelos Testados',
     resumo: 'Usamos por 6 meses e contamos tudo: pontos fortes, limitações e se realmente economiza tempo na cozinha.',
     tempo: '7 min de leitura',
     imagem: '/images/panela/capa-panela.png',
@@ -106,7 +106,7 @@ export const posts: Post[] = [
   },
   {
     slug: 'itens-casa-30-reais-amazon',
-    titulo: '14 Itens Incríveis para Casa por até R$ 30 na Amazon',
+    titulo: '15 Itens Incríveis para Casa por até R$ 30 na Amazon',
     resumo: 'Garimpos que valem muito mais do que custam. Atualizamos essa lista com os melhores achados.',
     tempo: '4 min de leitura',
     imagem: '/images/itens30/capa-itens30.png',
@@ -146,7 +146,7 @@ export const posts: Post[] = [
   },
   {
     slug: 'melhor-multiprocessador-de-alimentos',
-    titulo: 'Melhor Multiprocessador de Alimentos 2026: Vale a Pena Ter um em Casa?',
+    titulo: 'Multiprocessador de Alimentos Vale a Pena? Review de Quem Usa em Casa',
     resumo: 'Comparamos os modelos mais vendidos da Amazon: Philips Walita, Mondial, Britania e Arno. Qual realmente vale o preço?',
     tempo: '7 min de leitura',
     imagem: '/images/multiprocessador/capa-multiprocessador.jpg',
@@ -226,7 +226,7 @@ export const posts: Post[] = [
   },
   {
     slug: 'liquidificador-vs-processador-de-alimentos',
-    titulo: 'Liquidificador vs Processador de Alimentos: Qual Comprar Primeiro?',
+    titulo: 'Liquidificador ou Processador de Alimentos: Qual Comprar Primeiro?',
     resumo: 'Tenho os dois em casa e vou te dizer a diferença real. Saiba quando cada um vale a pena, a tabela comparativa completa e qual comprar primeiro para a sua cozinha.',
     tempo: '7 min de leitura',
     imagem: '/images/liquidificador-vs-processador/capa-liquidificador-vs-processador.jpg',
