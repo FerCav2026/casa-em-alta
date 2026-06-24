@@ -255,6 +255,16 @@ export const posts: Post[] = [
     categoriaColor: 'bg-orange-100 text-orange-700',
   },
   {
+    slug: 'microondas-electrolux-mi41s-review',
+    titulo: 'Microondas Electrolux MI41S: Vale a Pena? Review Honesto',
+    resumo: 'Testei o Electrolux MI41S no dia a dia do apê e conto tudo: aquecimento real, o painel integrado com Função Tira Odor, e o que você precisa saber antes de comprar.',
+    tempo: '9 min de leitura',
+    imagem: '/images/microondas-mi41s/capa-mi41s.png',
+    categoria: 'reviews',
+    categoriaLabel: 'Review',
+    categoriaColor: 'bg-orange-100 text-orange-700',
+  },
+  {
     slug: 'microondas-com-grill-vale-a-pena',
     titulo: 'Microondas com Grill vs Sem Grill: Qual Vale a Pena Comprar?',
     resumo: 'Já usei os dois tipos e te conto quando o grill faz diferença real e quando é dinheiro jogado fora. Comparativo honesto com modelos e preços.',
