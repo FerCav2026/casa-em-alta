@@ -1,74 +1,96 @@
 ARTIGOS PUBLICADOS - CASA EM ALTA
-Última atualização: 2026-06-08
-Total: 14 artigos publicados
+Última atualização: 2026-06-24
+Total: 22 publicados | 4 agendados
 Blog: https://casaemalta.com.br
 Arquivo de dados: src/data/posts.ts
 =====================================
 
-1. Os 7 Melhores Aspiradores de Po de 2026
-   Slug: melhores-aspiradores-po-2026
-   Categoria: Rankings e Listas
+PUBLICADOS (22)
 
-2. Airfryer Philips vs Mondial: Qual Comprar em 2026?
-   Slug: airfryer-philips-vs-mondial
-   Categoria: Comparativo
+1.  Os 7 Melhores Aspiradores de Pó 2026: Com Fio, Sem Fio e Robôs
+    Slug: melhores-aspiradores-po-2026 | Categoria: Rankings e Listas
 
-3. 10 Organizadores de Armario Baratos que Valem Cada Centavo
-   Slug: organizadores-armario-barato
-   Categoria: Rankings e Listas
+2.  Airfryer Philips vs Mondial: Qual Comprar?
+    Slug: airfryer-philips-vs-mondial | Categoria: Comparativo
 
-4. Robos Aspiradores: Os 5 Melhores Custo-Beneficio
-   Slug: robos-aspirador-custo-beneficio
-   Categoria: Comparativo
+3.  10 Organizadores de Armário Baratos que Valem Cada Centavo
+    Slug: organizadores-armario-barato | Categoria: Rankings e Listas
 
-5. Panela de Pressao Eletrica: Review Completo apos 6 Meses de Uso
-   Slug: panela-pressao-eletrica-review
-   Categoria: Review
+4.  Robôs Aspiradores: Os 5 Melhores Custo-Benefício
+    Slug: robos-aspirador-custo-beneficio | Categoria: Comparativo
 
-6. 14 Itens Incriveis para Casa por ate R$ 30 na Amazon
-   Slug: itens-casa-30-reais-amazon
-   Categoria: Rankings e Listas
+5.  Panela de Pressão Elétrica Vale a Pena? Review de 4 Modelos Testados
+    Slug: panela-pressao-eletrica-review | Categoria: Review
 
-7. Como Escolher a Frigideira Certa para Cada Tipo de Fogao
-   Slug: como-escolher-frigideira
-   Categoria: Guia de Compra
+6.  15 Itens Incríveis para Casa por até R$ 30 na Amazon
+    Slug: itens-casa-30-reais-amazon | Categoria: Rankings e Listas
 
-8. Purificador de Agua Realmente Vale a Pena? Testamos 4 Modelos
-   Slug: purificador-agua-vale-pena
-   Categoria: Review
+7.  Como Escolher a Frigideira Certa para Cada Tipo de Fogão
+    Slug: como-escolher-frigideira | Categoria: Guia de Compra
 
-9. Kit Organizacao de Cozinha: Monte o seu por R$ 150
-   Slug: kit-organizacao-cozinha
-   Categoria: Guia de Compra
+8.  Purificador de Água Realmente Vale a Pena? Testamos 4 Modelos
+    Slug: purificador-agua-vale-pena | Categoria: Review
 
-10. Melhor Multiprocessador de Alimentos 2026: Vale a Pena Ter um em Casa?
-    Slug: melhor-multiprocessador-de-alimentos
-    Categoria: Rankings e Listas
+9.  Kit Organização de Cozinha: Monte o seu por R$ 150
+    Slug: kit-organizacao-cozinha | Categoria: Guia de Compra
 
-11. Vaporizador de Roupas Portatil: os Melhores para Comprar em 2026
-    Slug: vaporizador-de-roupas-portatil
-    Categoria: Rankings e Listas
-    Publicado: 05/06/2026
+10. Multiprocessador de Alimentos Vale a Pena? Review de Quem Usa em Casa
+    Slug: melhor-multiprocessador-de-alimentos | Categoria: Review
 
-12. Chaleira Eletrica com Controle de Temperatura: a Melhor para Cafe, Cha e Chimarrao em 2026
-    Slug: chaleira-eletrica-com-controle-de-temperatura
-    Categoria: Rankings e Listas
-    Publicado: 05/06/2026
+11. Vaporizador de Roupas Portátil: os Melhores para Comprar em 2026
+    Slug: vaporizador-de-roupas-portatil | Categoria: Rankings e Listas | Publicado: 05/06/2026
 
-13. Maquina de Gelo Portatil: Vale a Pena Ter em Casa? Veja os Melhores Modelos de 2026
-    Slug: maquina-de-gelo-portatil
-    Categoria: Rankings e Listas
-    Publicado: 05/06/2026
+12. Chaleira Elétrica com Controle de Temperatura: a Melhor para Café, Chá e Chimarrão em 2026
+    Slug: chaleira-eletrica-com-controle-de-temperatura | Categoria: Rankings e Listas | Publicado: 05/06/2026
 
-14. Lava-loucas Compacta Midea 8 Servicos: Testamos por Meses e Isso e o que Voce Precisa Saber
-    Slug: lava-loucas-midea-8-servicos-review
-    Categoria: Review
-    Publicado: 08/06/2026
-    OBS: Link de afiliado placeholder (amzn.to/MIDEA-LINK) — substituir antes de publicar
+13. Máquina de Gelo Portátil: Vale a Pena Ter em Casa? Veja os Melhores Modelos de 2026
+    Slug: maquina-de-gelo-portatil | Categoria: Rankings e Listas | Publicado: 05/06/2026
+
+14. Lava-louças Compacta Midea 8 Serviços: Testamos por Meses e Isso é o que Você Precisa Saber
+    Slug: lava-loucas-midea-8-servicos-review | Categoria: Review | Publicado: 08/06/2026
+
+15. Forno Elétrico Portátil Vale a Pena Ter em Casa? Review Honesto Depois de Anos de Uso
+    Slug: forno-eletrico-portatil-vale-a-pena | Categoria: Review | Publicado: 10/06/2026
+
+16. Lava e Seca ou Secadora de Roupas: Qual Compensa Mais para Quem Mora em Apartamento?
+    Slug: lava-e-seca-ou-secadora-apartamento | Categoria: Comparativo | Publicado: 11/06/2026
+
+17. Como Escolher Liquidificador: o Que Ninguém te Conta na Hora de Comprar
+    Slug: como-escolher-liquidificador | Categoria: Guia de Compra | Publicado: 15/06/2026
+
+18. Liquidificador ou Processador de Alimentos: Qual Comprar Primeiro?
+    Slug: liquidificador-vs-processador-de-alimentos | Categoria: Comparativo | Publicado: 15/06/2026
+
+19. Como Escolher Microondas: Potência, Litros e o Que Realmente Importa Antes de Comprar
+    Slug: como-escolher-microondas | Categoria: Guia de Compra | Publicado: 17/06/2026
+
+20. Microondas com Grill vs Sem Grill: Qual Vale a Pena Comprar?
+    Slug: microondas-com-grill-vale-a-pena | Categoria: Comparativo | Publicado: 18/06/2026
+
+21. Philips Walita RI2110/01: Vale a Pena? Review Honesto
+    Slug: liquidificador-philips-walita-ri2110-review | Categoria: Review | Publicado: 22/06/2026
+
+22. Microondas Electrolux MI41S: Vale a Pena? Review Honesto
+    Slug: microondas-electrolux-mi41s-review | Categoria: Review | Publicado: 24/06/2026
 
 =====================================
-CATEGORIAS:
-- Rankings e Listas: 7 artigos
-- Comparativo: 2 artigos
-- Review: 3 artigos
-- Guia de Compra: 2 artigos
+AGENDADOS (4)
+
+23. Como Escolher Airfryer: Guia Completo para Não Errar na Compra
+    Slug: como-escolher-airfryer | Data: 26/06/2026 | Branch: draft/como-escolher-airfryer
+
+24. Os 7 Melhores Liquidificadores de 2026
+    Slug: melhores-liquidificadores-2026 | Data: 29/06/2026 | Branch: draft/melhores-liquidificadores-2026
+
+25. Os 7 Melhores Microondas de 2026
+    Slug: melhores-microondas-2026 | Data: 01/07/2026 | Branch: draft/melhores-microondas-2026
+
+26. Philips Walita Airfryer Série 1000 XL: Vale a Pena? Review Honesto
+    Slug: airfryer-philips-walita-serie-1000-xl-review | Data: 03/07/2026 | Branch: draft/airfryer-serie-1000-xl-review
+
+=====================================
+CATEGORIAS (22 publicados):
+- Rankings e Listas: 6 artigos
+- Comparativo: 5 artigos
+- Review: 7 artigos
+- Guia de Compra: 4 artigos
