@@ -12,11 +12,6 @@ export default defineConfig({
     }),
   ],
   site: 'https://www.casaemalta.com.br',
-  build: {
-    // Embute o CSS direto no HTML para eliminar requisicao que bloqueia
-    // a renderizacao (melhora FCP/LCP no celular)
-    inlineStylesheets: 'always',
-  },
   redirects: {
     '/posts/[slug]': '/[slug]',
   },
