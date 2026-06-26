@@ -217,10 +217,10 @@ const blogPostingSchema = {
     name: 'Casa em Alta',
     url: Astro.site?.href,
   },
-  url: new URL(`/\${slug}`, Astro.site).href,
+  url: new URL(`/${slug}`, Astro.site).href,
   mainEntityOfPage: {
     '@type': 'WebPage',
-    '@id': new URL(`/\${slug}`, Astro.site).href,
+    '@id': new URL(`/${slug}`, Astro.site).href,
   },
 };
 
@@ -10717,7 +10717,7 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
               <div>
                 <p style="font-size:11px;color:#888;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;">Melhor custo-benefício</p>
                 <h3 style="font-size:17px;font-weight:700;color:#1e293b;margin-bottom:8px;line-height:1.3;">Mondial AF-35-BF</h3>
-                <p style="font-size:13px;color:#475569;margin-bottom:12px;line-height:1.5;">3,5L · 1.400W · Painel digital · Antiaderente removível · Ideal para 1 a 2 pessoas</p>
+                <p style="font-size:13px;color:#475569;margin-bottom:12px;line-height:1.5;">3,5L · 1.400W · Controle mecânico com timer · Cesto antiaderente removível · Ideal para 1 a 2 pessoas</p>
                 <p style="font-size:15px;color:#ea580c;font-weight:700;margin-bottom:0;">~R$ 200 a R$ 250</p>
               </div>
               <div style="margin-top:16px;">
