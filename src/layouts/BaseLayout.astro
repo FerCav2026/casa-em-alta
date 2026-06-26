@@ -60,24 +60,24 @@ const websiteSchema = {
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={imageURL} />
 
-    <!-- Fonte otimizada: preload + font-display swap -->
+    <!-- Fonte otimizada: font-display optional evita troca tardia de fonte (CLS) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=optional"
       rel="stylesheet"
       media="print"
       onload="this.media='all'"
     />
     <noscript>
-      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=optional" rel="stylesheet" />
     </noscript>
 
-    <!-- Fonte de reserva com métricas iguais à Inter (evita layout shift / CLS) -->
+    <!-- Fonte de reserva com métricas iguais à Inter (evita layout shift / CLS em quem tem Arial/clones) -->
     <style is:global>
       @font-face {
         font-family: 'Inter Fallback';
-        src: local('Arial');
+        src: local('Arial'), local('Liberation Sans'), local('Helvetica Neue'), local('Roboto');
         ascent-override: 90.20%;
         descent-override: 22.48%;
         line-gap-override: 0.00%;
