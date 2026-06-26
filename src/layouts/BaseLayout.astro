@@ -62,21 +62,17 @@ const websiteSchema = {
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={imageURL} />
 
-    <!-- Fonte otimizada: font-display optional evita troca tardia de fonte (CLS) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=optional"
-      rel="stylesheet"
-      media="print"
-      onload="this.media='all'"
-    />
-    <noscript>
-      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=optional" rel="stylesheet" />
-    </noscript>
-
-    <!-- Fonte de reserva com métricas iguais à Inter (evita layout shift / CLS em quem tem Arial/clones) -->
+    <!-- Fonte Inter hospedada localmente (woff2 variavel) + preload -->
+    <link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin />
     <style is:global>
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 100 900;
+        font-display: optional;
+        src: url('/fonts/inter-latin.woff2') format('woff2');
+      }
+      /* Fonte de reserva com metricas iguais a Inter (evita layout shift / CLS) */
       @font-face {
         font-family: 'Inter Fallback';
         src: local('Arial'), local('Liberation Sans'), local('Helvetica Neue'), local('Roboto');
