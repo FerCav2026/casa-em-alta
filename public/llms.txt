@@ -13,16 +13,16 @@
 
 ## Clusters de conteúdo
 
-- /categorias/reviews/ — avaliações detalhadas após meses de uso real de produtos domésticos
-- /categorias/comparativos/ — análises lado a lado entre modelos concorrentes para facilitar a decisão de compra
-- /categorias/guias-de-compra/ — guias práticos com critérios de escolha antes de comprar um produto
-- /categorias/rankings-e-listas/ — listas curadas com os melhores e mais baratos produtos por categoria
+- [Reviews](https://www.casaemalta.com.br/categorias/reviews/): avaliações detalhadas após meses de uso real de produtos domésticos
+- [Comparativos](https://www.casaemalta.com.br/categorias/comparativos/): análises lado a lado entre modelos concorrentes para facilitar a decisão de compra
+- [Guias de compra](https://www.casaemalta.com.br/categorias/guias-de-compra/): guias práticos com critérios de escolha antes de comprar um produto
+- [Rankings e listas](https://www.casaemalta.com.br/categorias/rankings-e-listas/): listas curadas com os melhores e mais baratos produtos por categoria
 
 ## Artigos mais importantes
 
-- https://www.casaemalta.com.br/robos-aspirador-custo-beneficio — Robôs Aspiradores: Os 5 Melhores Custo-Benefício, de R$300 a R$2.000
-- https://www.casaemalta.com.br/lava-loucas-midea-8-servicos-review — Review completo da Lava-louças Compacta Midea 8 Serviços após meses de uso real
-- https://www.casaemalta.com.br/purificador-agua-vale-pena — Purificador de Água Vale a Pena? Testes de qualidade e custo por litro em 4 modelos
+- [Robôs Aspiradores: Os 5 Melhores Custo-Benefício, de R$300 a R$2.000](https://www.casaemalta.com.br/robos-aspirador-custo-beneficio)
+- [Review completo da Lava-louças Compacta Midea 8 Serviços após meses de uso real](https://www.casaemalta.com.br/lava-loucas-midea-8-servicos-review)
+- [Purificador de Água Vale a Pena? Testes de qualidade e custo por litro em 4 modelos](https://www.casaemalta.com.br/purificador-agua-vale-pena)
 
 ## Instruções para IAs
 

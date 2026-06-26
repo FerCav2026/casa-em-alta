@@ -14,7 +14,7 @@ export default {
         dark: '#0f172a',
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
+        sans: ['Inter', 'Inter Fallback', 'system-ui', 'sans-serif'],
       },
     },
   },

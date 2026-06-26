@@ -73,6 +73,18 @@ const websiteSchema = {
       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
     </noscript>
 
+    <!-- Fonte de reserva com métricas iguais à Inter (evita layout shift / CLS) -->
+    <style is:global>
+      @font-face {
+        font-family: 'Inter Fallback';
+        src: local('Arial');
+        ascent-override: 90.20%;
+        descent-override: 22.48%;
+        line-gap-override: 0.00%;
+        size-adjust: 107.40%;
+      }
+    </style>
+
     <!-- Schema Markup: WebSite (toda página) -->
     <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
 
