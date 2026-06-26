@@ -11,14 +11,16 @@ interface Props {
 const {
   title = 'Casa em Alta - Reviews, Comparativos e Ofertas de Utilidades Domésticas',
   description = 'Encontre as melhores utilidades domésticas com reviews honestos, comparativos detalhados e as melhores ofertas do mercado.',
-  image = '/images/og-default.png',
+  image = '/images/og-default.webp',
   type = 'website',
   schema,
 } = Astro.props;
 
 const rawPath = Astro.url.pathname.replace(/\/$/, '') || '/';
 const canonicalURL = Astro.props.canonicalURL ?? new URL(rawPath, Astro.site).href;
-const imageURL = new URL(image, Astro.site).href;
+// Compartilhamento (WhatsApp/Facebook) usa a versao JPG da capa, mais compativel que WebP
+const ogImage = image.replace(/\.webp$/i, '.jpg');
+const imageURL = new URL(ogImage, Astro.site).href;
 
 const websiteSchema = {
   '@context': 'https://schema.org',
