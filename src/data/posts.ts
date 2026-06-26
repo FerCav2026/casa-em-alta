@@ -273,6 +273,16 @@ export const posts: Post[] = [
     categoria: 'comparativos',
     categoriaLabel: 'Comparativo',
     categoriaColor: 'bg-blue-100 text-blue-700',
+  },
+  {
+    slug: 'como-escolher-airfryer',
+    titulo: 'Como Escolher Airfryer: Guia Completo para Não Errar na Compra',
+    resumo: 'Capacidade útil real, potência certa e cesto vs forno: o que realmente importa antes de comprar uma airfryer. Guia com dicas práticas para todos os bolsos.',
+    tempo: '8 min de leitura',
+    imagem: '/images/airfryer-guia/capa-como-escolher-airfryer.png',
+    categoria: 'guias-de-compra',
+    categoriaLabel: 'Guia de Compra',
+    categoriaColor: 'bg-purple-100 text-purple-700',
   }
 ];
 

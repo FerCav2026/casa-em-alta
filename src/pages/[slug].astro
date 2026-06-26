@@ -158,6 +158,13 @@ const posts: Record<string, { titulo: string; descricao: string; categoria: stri
     dataCriacao: '2026-06-24',
     dataModificacao: '2026-06-24',
   },
+  'como-escolher-airfryer': {
+    titulo: 'Como Escolher Airfryer: Guia Completo para Não Errar na Compra',
+    descricao: 'Capacidade, potência, cesto ou forno: o que realmente importa antes de comprar uma airfryer. Guia com dicas práticas para todos os bolsos.',
+    categoria: 'Guia de Compra',
+    dataCriacao: '2026-06-26',
+    dataModificacao: '2026-06-26',
+  },
 };
 
 export function getStaticPaths() {
@@ -184,6 +191,7 @@ export function getStaticPaths() {
     'microondas-com-grill-vale-a-pena': {},
     'liquidificador-philips-walita-ri2110-review': {},
     'microondas-electrolux-mi41s-review': {},
+    'como-escolher-airfryer': {},
   }).map((slug) => ({ params: { slug } }));
 }
 
@@ -238,6 +246,7 @@ const isComoEscolherMicroondas = slug === 'como-escolher-microondas';
 const isMicroondasGrill = slug === 'microondas-com-grill-vale-a-pena';
 const isReviewRI2110 = slug === 'liquidificador-philips-walita-ri2110-review';
 const isMI41SReview = slug === 'microondas-electrolux-mi41s-review';
+const isComoEscolherAirfryer = slug === 'como-escolher-airfryer';
 
 const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
   : isAirfryer ? '/images/airfryer/capa-airfryer.png'
@@ -261,6 +270,7 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
   : isMicroondasGrill ? '/images/microondas-grill/capa-microondas-grill.png'
   : isReviewRI2110 ? '/images/liquidificador-ri2110/capa-ri2110.png'
   : isMI41SReview ? '/images/microondas-mi41s/capa-mi41s.png'
+  : isComoEscolherAirfryer ? '/images/airfryer-guia/capa-como-escolher-airfryer.png'
   : undefined;
 ---
 
@@ -10485,6 +10495,470 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.png'
             "description": "Micro-ondas convencional sem grill de 31 litros, 1.000W, 10 níveis de potência, 12 receitas pré-programadas, prato giratório 31,5 cm, Procel A.",
             "aggregateRating": { "@type": "AggregateRating", "ratingValue": "8.4", "reviewCount": "1", "bestRating": "10" }
           }
+        })} />
+
+      </div>
+    )}
+
+    {isComoEscolherAirfryer && (
+      <div>
+
+        <!-- Capa -->
+        <div class="rounded-2xl overflow-hidden mb-8 shadow-md">
+          <img
+            src="/images/airfryer-guia/capa-como-escolher-airfryer.png"
+            alt="Como escolher airfryer: guia completo com dicas práticas"
+            class="w-full h-auto object-cover"
+            loading="eager"
+          />
+        </div>
+
+        <!-- Data de publicação -->
+        <p class="text-xs text-slate-400 mb-6">Publicado em 26 de junho de 2026 · Atualizado em 26 de junho de 2026</p>
+
+        <!-- Introdução -->
+        <div class="bg-orange-50 border border-orange-100 rounded-2xl p-6 mb-8">
+          <p class="text-slate-800 text-base leading-relaxed mb-3">
+            Tenho airfryer há 4 anos e já passei por três modelos diferentes. O primeiro era pequeno demais e ficava cheio na metade. O segundo tinha grill, forno e seis funções que nunca usei. O terceiro acertei: cesto de 4L, 1.500W e limpeza fácil. Mas só entendi isso depois de muito dinheiro gasto à toa.
+          </p>
+          <p class="text-slate-800 text-base leading-relaxed mb-3">
+            A boa notícia é que escolher airfryer é mais simples do que parece — desde que você saiba o que olhar. Potência real, capacidade útil (não a capacidade da caixa), tipo de cesto e tamanho externo são os quatro pontos que fazem diferença de verdade.
+          </p>
+          <p class="text-slate-800 text-base leading-relaxed">
+            Sou Claudia Castro, do Casa em Alta. Neste guia reúno tudo que aprendi para você não cometer os mesmos erros que eu cometi.
+          </p>
+        </div>
+
+        <!-- Definição GEO -->
+        <div class="bg-blue-50 border border-blue-200 rounded-2xl p-6 mb-10">
+          <h2 class="text-blue-900 font-bold text-lg mb-3">O que é uma airfryer e como ela funciona</h2>
+          <p class="text-slate-700 text-sm leading-relaxed mb-3">
+            Uma airfryer é um eletrodoméstico de cozinha que circula ar quente em alta velocidade ao redor dos alimentos, simulando o efeito da fritura por imersão com muito menos óleo. O processo usa convecção forçada: uma resistência elétrica aquece o ar, e um ventilador distribui esse ar uniformemente pelo cesto ou câmara interna.
+          </p>
+          <p class="text-slate-700 text-sm leading-relaxed">
+            O resultado são alimentos com exterior crocante e interior macio, em menos tempo do que no forno convencional, usando muito menos óleo do que a fritura tradicional — fabricantes como Philips e Mondial reportam redução de 70% a 80% em relação ao método convencional. A temperatura pode variar de 80°C a 200°C dependendo do modelo.
+          </p>
+        </div>
+
+        <!-- Índice -->
+        <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 mb-10">
+          <p class="text-slate-800 font-bold text-base mb-3">Neste artigo:</p>
+          <ul class="space-y-2 text-sm text-slate-700">
+            <li><a href="#capacidade" class="text-orange-600 hover:underline">→ Capacidade: quanto espaço você precisa de verdade?</a></li>
+            <li><a href="#potencia" class="text-orange-600 hover:underline">→ Qual potência de airfryer comprar?</a></li>
+            <li><a href="#cesto-vs-forno" class="text-orange-600 hover:underline">→ Airfryer de cesto ou forno: qual é melhor?</a></li>
+            <li><a href="#alem-dos-numeros" class="text-orange-600 hover:underline">→ O que avaliar além das especificações técnicas?</a></li>
+            <li><a href="#faixas-de-preco" class="text-orange-600 hover:underline">→ Faixas de preço e o que esperar de cada uma</a></li>
+            <li><a href="#modelos" class="text-orange-600 hover:underline">→ Modelos recomendados</a></li>
+            <li><a href="#erros-comuns" class="text-orange-600 hover:underline">→ Os 5 erros mais comuns na hora de comprar</a></li>
+            <li><a href="#faq" class="text-orange-600 hover:underline">→ Perguntas frequentes</a></li>
+          </ul>
+        </div>
+
+        <!-- Capacidade -->
+        <h2 id="capacidade" class="text-2xl font-bold text-slate-900 mb-4">Capacidade: quanto espaço você precisa de verdade?</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          O número que aparece na caixa — 4L, 5L, 6L — é a capacidade total do cesto, não a capacidade útil. Na prática, você usa cerca de dois terços desse volume, porque os alimentos precisam de espaço para o ar circular. Uma airfryer de 4L tem capacidade útil de aproximadamente 2,5L a 2,7L.
+        </p>
+
+        <div class="overflow-x-auto mb-8">
+          <table class="w-full text-sm border-collapse">
+            <thead>
+              <tr class="bg-orange-50">
+                <th class="border border-slate-200 px-4 py-3 text-left font-bold text-slate-800">Capacidade total</th>
+                <th class="border border-slate-200 px-4 py-3 text-left font-bold text-slate-800">Capacidade útil real</th>
+                <th class="border border-slate-200 px-4 py-3 text-left font-bold text-slate-800">Ideal para</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border border-slate-200 px-4 py-3 text-slate-700">2L</td>
+                <td class="border border-slate-200 px-4 py-3 text-slate-700">~1,3L</td>
+                <td class="border border-slate-200 px-4 py-3 text-slate-700">1 pessoa — porções pequenas</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="border border-slate-200 px-4 py-3 text-slate-700">3L a 3,5L</td>
+                <td class="border border-slate-200 px-4 py-3 text-slate-700">~2L</td>
+                <td class="border border-slate-200 px-4 py-3 text-slate-700">1 a 2 pessoas</td>
+              </tr>
+              <tr>
+                <td class="border border-slate-200 px-4 py-3 text-slate-700">4L a 4,5L</td>
+                <td class="border border-slate-200 px-4 py-3 text-slate-700">~2,7L</td>
+                <td class="border border-slate-200 px-4 py-3 text-slate-700">2 a 3 pessoas — uso diário</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="border border-slate-200 px-4 py-3 text-slate-700">5L ou mais</td>
+                <td class="border border-slate-200 px-4 py-3 text-slate-700">~3,5L+</td>
+                <td class="border border-slate-200 px-4 py-3 text-slate-700">Família de 3 a 5 pessoas</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="bg-amber-50 border border-amber-200 rounded-xl p-5 mb-8">
+          <p class="text-amber-900 font-semibold text-sm mb-1">Dica prática</p>
+          <p class="text-slate-700 text-sm leading-relaxed">Se você mora sozinho mas recebe visitas com frequência, já compre 4L. O custo entre 3L e 4L é pequeno, mas a diferença de uso é grande quando você quer preparar mais de uma porção.</p>
+        </div>
+
+        <!-- Potência -->
+        <h2 id="potencia" class="text-2xl font-bold text-slate-900 mb-4">Qual potência de airfryer comprar?</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          A potência de uma airfryer varia de 1.000W a 2.000W. Quanto maior a potência, mais rápida a circulação do ar quente e menor o tempo de preparo. Modelos abaixo de 1.200W demoram mais para atingir a temperatura desejada e podem resultar em alimentos menos crocantes.
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          O ponto ideal para uso doméstico é entre 1.400W e 1.600W: preço acessível, resultado consistente e consumo razoável. Airfryers forno geralmente usam 1.800W a 2.000W pela câmara maior.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+          <div class="bg-red-50 border border-red-100 rounded-xl p-4">
+            <p class="font-bold text-red-800 text-sm mb-1">1.000W a 1.200W</p>
+            <p class="text-slate-700 text-xs leading-relaxed">Suficiente para modelos de 2L. Em cestos maiores pode resultar em cozimento desigual e tempo de preparo longo.</p>
+          </div>
+          <div class="bg-green-50 border border-green-100 rounded-xl p-4">
+            <p class="font-bold text-green-800 text-sm mb-1">1.400W a 1.600W ✓</p>
+            <p class="text-slate-700 text-xs leading-relaxed">Faixa ideal para uso doméstico. Aquece rápido, resultados crocantes consistentes e custo de energia razoável.</p>
+          </div>
+          <div class="bg-blue-50 border border-blue-100 rounded-xl p-4">
+            <p class="font-bold text-blue-800 text-sm mb-1">1.800W a 2.000W</p>
+            <p class="text-slate-700 text-xs leading-relaxed">Típico de modelos forno ou XL. Mais potência e velocidade, mas também mais consumo e preço mais alto.</p>
+          </div>
+        </div>
+
+        <!-- Cesto vs Forno -->
+        <h2 id="cesto-vs-forno" class="text-2xl font-bold text-slate-900 mb-4">Airfryer de cesto ou forno: qual é melhor?</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-6">
+          Esse é o ponto onde mais gente erra. A airfryer de cesto (formato tradicional) e a airfryer forno (formato vertical) são aparelhos com propósitos diferentes.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+          <div class="border border-slate-200 rounded-2xl p-5">
+            <h3 class="font-bold text-slate-900 text-base mb-3">Airfryer de cesto</h3>
+            <ul class="space-y-2 text-sm text-slate-700">
+              <li class="flex gap-2"><span class="text-green-500 font-bold">✓</span>Resultado mais crocante (ar circula concentrado)</li>
+              <li class="flex gap-2"><span class="text-green-500 font-bold">✓</span>Preaquece em 2 a 3 minutos</li>
+              <li class="flex gap-2"><span class="text-green-500 font-bold">✓</span>Menor tamanho externo</li>
+              <li class="flex gap-2"><span class="text-green-500 font-bold">✓</span>Cesto removível e fácil de lavar</li>
+              <li class="flex gap-2"><span class="text-red-400 font-bold">✗</span>Não serve para pizza inteira ou frango espetado</li>
+              <li class="flex gap-2"><span class="text-red-400 font-bold">✗</span>Sem grelha ou espeto</li>
+            </ul>
+          </div>
+          <div class="border border-slate-200 rounded-2xl p-5">
+            <h3 class="font-bold text-slate-900 text-base mb-3">Airfryer forno</h3>
+            <ul class="space-y-2 text-sm text-slate-700">
+              <li class="flex gap-2"><span class="text-green-500 font-bold">✓</span>Serve pizza, frango inteiro, espeto</li>
+              <li class="flex gap-2"><span class="text-green-500 font-bold">✓</span>Mais funções (desidratação, rotisserie)</li>
+              <li class="flex gap-2"><span class="text-green-500 font-bold">✓</span>Maior capacidade visível</li>
+              <li class="flex gap-2"><span class="text-red-400 font-bold">✗</span>Muito maior — ocupa mais bancada</li>
+              <li class="flex gap-2"><span class="text-red-400 font-bold">✗</span>Difícil de lavar (partes fixas)</li>
+              <li class="flex gap-2"><span class="text-red-400 font-bold">✗</span>Preço mais alto</li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="text-slate-700 text-base leading-relaxed mb-8">
+          Para a maioria das pessoas em apartamento, a airfryer de cesto é a escolha certa. Mais prática, mais fácil de limpar e com resultado mais crocante para o uso diário. A airfryer forno só vale a pena se você realmente vai usar as funções extras com frequência.
+        </p>
+
+        <!-- Além dos números -->
+        <h2 id="alem-dos-numeros" class="text-2xl font-bold text-slate-900 mb-4">O que avaliar além das especificações técnicas?</h2>
+
+        <div class="space-y-5 mb-8">
+          <div class="border-l-4 border-orange-400 pl-4">
+            <p class="font-semibold text-slate-800 text-sm mb-1">Limpeza</p>
+            <p class="text-slate-700 text-sm leading-relaxed">Verifique se o cesto e a gaveta são antiaderentes e compatíveis com lava-louças. Modelos com revestimento de qualidade inferior soltam o antiaderente em 6 a 8 meses de uso. Prefira marcas com peças avulsas disponíveis.</p>
+          </div>
+          <div class="border-l-4 border-orange-400 pl-4">
+            <p class="font-semibold text-slate-800 text-sm mb-1">Barulho</p>
+            <p class="text-slate-700 text-sm leading-relaxed">Toda airfryer faz ruído — o ventilador interno gera entre 55 e 65 decibéis, equivalente a uma conversa normal. Modelos mais baratos tendem a ser mais ruidosos. Não existe airfryer completamente silenciosa. Em 4 anos usando, aprendi a posicionar longe da sala de estar para não incomodar quem está assistindo TV.</p>
+          </div>
+          <div class="border-l-4 border-orange-400 pl-4">
+            <p class="font-semibold text-slate-800 text-sm mb-1">Tamanho externo</p>
+            <p class="text-slate-700 text-sm leading-relaxed">A capacidade interna e o tamanho externo nem sempre são proporcionais. Meça o espaço disponível na sua bancada antes de comprar. Uma airfryer de 4L pode ter dimensões externas de 35cm x 30cm x 32cm — verifique sempre nas especificações.</p>
+          </div>
+          <div class="border-l-4 border-orange-400 pl-4">
+            <p class="font-semibold text-slate-800 text-sm mb-1">Garantia</p>
+            <p class="text-slate-700 text-sm leading-relaxed">Marcas reconhecidas como Philips, Mondial, Arno e Britânia oferecem 12 meses de garantia com assistência técnica acessível no Brasil. Marcas desconhecidas podem oferecer garantia no papel mas dificultar o processo na prática.</p>
+          </div>
+        </div>
+
+        <!-- Faixas de preço -->
+        <h2 id="faixas-de-preco" class="text-2xl font-bold text-slate-900 mb-6">Faixas de preço e o que esperar de cada uma</h2>
+
+        <div class="space-y-4 mb-10">
+          <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+            <p class="font-bold text-slate-800 mb-2">Até R$ 200 — básica, mas funciona</p>
+            <p class="text-slate-700 text-sm leading-relaxed">Modelos com controle analógico, capacidade de 2L a 3,5L e potência entre 1.000W e 1.200W. Funcionam para uso eventual ou para testar se você vai usar uma airfryer no dia a dia. Não espere resultado idêntico ao de modelos premium.</p>
+          </div>
+          <div class="bg-orange-50 border border-orange-200 rounded-xl p-5">
+            <p class="font-bold text-orange-800 mb-2">R$ 200 a R$ 400 — melhor custo-benefício</p>
+            <p class="text-slate-700 text-sm leading-relaxed">Nessa faixa você encontra modelos com painel digital, capacidade de 3,5L a 5L e potência de 1.400W a 1.600W. São os modelos com melhor custo-benefício: resultado consistente, fáceis de usar e duráveis.</p>
+          </div>
+          <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+            <p class="font-bold text-slate-800 mb-2">Acima de R$ 400 — premium e airfryer forno</p>
+            <p class="text-slate-700 text-sm leading-relaxed">Modelos premium de marcas como Philips Avance Collection e Ninja, ou airfryers forno com rotisserie e desidratação. Vale somente se você vai usar essas funções extras com frequência real.</p>
+          </div>
+        </div>
+
+        <!-- Modelos recomendados -->
+        <h2 id="modelos" class="text-2xl font-bold text-slate-900 mb-6">Modelos recomendados</h2>
+
+        <!-- Card Mondial AF-35-BF -->
+        <a href="https://link.amazon/B0iZLiGsB" rel="nofollow noopener" target="_blank" style="text-decoration:none;display:block;background:#ffffff;border:1px solid #e8e8e8;border-radius:16px;overflow:hidden;margin-bottom:24px;">
+          <div style="display:flex;align-items:stretch;gap:0;">
+            <div style="flex-shrink:0;width:180px;background:#f8f8f8;display:flex;align-items:center;justify-content:center;padding:16px;">
+              <img
+                src="/images/airfryer-guia/mondial-af35.jpg"
+                alt="Airfryer Mondial AF-35-BF preta digital"
+                style="width:140px;height:140px;object-fit:contain;"
+                loading="lazy"
+              />
+            </div>
+            <div style="flex:1;padding:20px 24px;display:flex;flex-direction:column;justify-content:space-between;">
+              <div>
+                <p style="font-size:11px;color:#888;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;">Melhor custo-benefício</p>
+                <h3 style="font-size:17px;font-weight:700;color:#1e293b;margin-bottom:8px;line-height:1.3;">Mondial AF-35-BF</h3>
+                <p style="font-size:13px;color:#475569;margin-bottom:12px;line-height:1.5;">3,5L · 1.400W · Painel digital · Antiaderente removível · Ideal para 1 a 2 pessoas</p>
+                <p style="font-size:15px;color:#ea580c;font-weight:700;margin-bottom:0;">~R$ 200 a R$ 250</p>
+              </div>
+              <div style="margin-top:16px;">
+                <span style="background:#ea580c;color:#fff;font-size:13px;font-weight:600;padding:10px 20px;border-radius:8px;">Ver na Amazon →</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card Philips RI9252 -->
+        <a href="https://link.amazon/B0cdZjB8x" rel="nofollow noopener" target="_blank" style="text-decoration:none;display:block;background:#ffffff;border:1px solid #e8e8e8;border-radius:16px;overflow:hidden;margin-bottom:32px;">
+          <div style="display:flex;align-items:stretch;gap:0;">
+            <div style="flex-shrink:0;width:180px;background:#f8f8f8;display:flex;align-items:center;justify-content:center;padding:16px;">
+              <img
+                src="/images/airfryer-guia/philips-ri9252.jpg"
+                alt="Airfryer Philips RI9252 preta"
+                style="width:140px;height:140px;object-fit:contain;"
+                loading="lazy"
+              />
+            </div>
+            <div style="flex:1;padding:20px 24px;display:flex;flex-direction:column;justify-content:space-between;">
+              <div>
+                <p style="font-size:11px;color:#888;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;">Melhor resultado</p>
+                <h3 style="font-size:17px;font-weight:700;color:#1e293b;margin-bottom:8px;line-height:1.3;">Philips RI9252</h3>
+                <p style="font-size:13px;color:#475569;margin-bottom:12px;line-height:1.5;">4,1L · 1.400W · Rapid Air · Cozimento mais uniforme · Ideal para 2 a 3 pessoas</p>
+                <p style="font-size:15px;color:#ea580c;font-weight:700;margin-bottom:0;">~R$ 380 a R$ 430</p>
+              </div>
+              <div style="margin-top:16px;">
+                <span style="background:#ea580c;color:#fff;font-size:13px;font-weight:600;padding:10px 20px;border-radius:8px;">Ver na Amazon →</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <p class="text-xs text-slate-400 italic mb-6">Preços consultados em junho de 2026 e sujeitos a alteração sem aviso prévio.</p>
+
+        <!-- Leia Também -->
+        <a href="/airfryer-philips-vs-mondial" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;margin-bottom:40px;">
+          <div style="width:200px;flex-shrink:0;">
+            <img src="/images/airfryer/capa-airfryer.png" alt="Airfryer Philips vs Mondial" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" />
+          </div>
+          <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+            <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+            <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Airfryer Philips vs Mondial: Qual Comprar em 2026?</span>
+          </div>
+        </a>
+
+        <!-- Leia Também 2 -->
+        <a href="/como-escolher-liquidificador" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;margin-bottom:40px;">
+          <div style="width:200px;flex-shrink:0;">
+            <img src="/images/liquidificador/capa-liquidificador.jpg" alt="Como escolher liquidificador" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" />
+          </div>
+          <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+            <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+            <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Como Escolher Liquidificador: o Que Ningúem te Conta na Hora de Comprar</span>
+          </div>
+        </a>
+
+        <!-- 5 Erros comuns -->
+        <h2 id="erros-comuns" class="text-2xl font-bold text-slate-900 mb-6">Os 5 erros mais comuns na hora de comprar airfryer</h2>
+
+        <div class="space-y-4 mb-10">
+          <div class="flex gap-4 items-start">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-red-100 text-red-700 font-bold text-sm flex items-center justify-center">1</span>
+            <div>
+              <p class="font-semibold text-slate-800 text-sm mb-1">Comprar menor do que precisa</p>
+              <p class="text-slate-700 text-sm leading-relaxed">Uma airfryer de 2L parece ok até você querer preparar mais de uma porção. O custo entre 2L e 4L é pequeno, mas a diferença de uso é enorme no dia a dia.</p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-start">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-red-100 text-red-700 font-bold text-sm flex items-center justify-center">2</span>
+            <div>
+              <p class="font-semibold text-slate-800 text-sm mb-1">Confundir capacidade total com capacidade útil</p>
+              <p class="text-slate-700 text-sm leading-relaxed">O fabricante informa a capacidade total do cesto. Você usa cerca de dois terços disso — os alimentos precisam de espaço para o ar circular e dourar por igual.</p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-start">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-red-100 text-red-700 font-bold text-sm flex items-center justify-center">3</span>
+            <div>
+              <p class="font-semibold text-slate-800 text-sm mb-1">Ignorar a potência</p>
+              <p class="text-slate-700 text-sm leading-relaxed">Modelos abaixo de 1.200W em cestos de 4L ou mais resultam em cozimento desigual e tempo de preparo bem maior. Prefira 1.400W ou mais.</p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-start">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-red-100 text-red-700 font-bold text-sm flex items-center justify-center">4</span>
+            <div>
+              <p class="font-semibold text-slate-800 text-sm mb-1">Não medir o espaço antes de comprar</p>
+              <p class="text-slate-700 text-sm leading-relaxed">Uma airfryer de 4L pode ter 35cm de largura e 32cm de altura. Muitas pessoas compram sem medir e descobrem que não cabe na bancada ou no armário.</p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-start">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-red-100 text-red-700 font-bold text-sm flex items-center justify-center">5</span>
+            <div>
+              <p class="font-semibold text-slate-800 text-sm mb-1">Comprar airfryer forno sem precisar das funções extras</p>
+              <p class="text-slate-700 text-sm leading-relaxed">Airfryers forno são maiores, mais difíceis de limpar e mais caras. Se você só quer assar batata frita e frango, a airfryer de cesto é mais prática e entrega resultado mais crocante.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Veredicto -->
+        <div class="bg-slate-900 text-white rounded-2xl p-7 mb-10">
+          <h2 class="text-xl font-bold mb-4">Como escolher: o resumo direto</h2>
+          <p class="text-slate-200 text-base leading-relaxed mb-3">
+            Para a maioria das pessoas em apartamento, a fórmula ideal é: airfryer de cesto, capacidade entre 3,5L e 4L, potência mínima de 1.400W e painel digital. Isso resolve a maioria dos preparos do dia a dia.
+          </p>
+          <p class="text-slate-200 text-base leading-relaxed">
+            Se você mora sozinho e tem orçamento limitado, a Mondial AF-35-BF entrega bom resultado por cerca de R$ 230. Se a família tem 3 ou mais pessoas e você cozinha frequentemente, a Philips RI9252 vale o investimento pelo resultado mais uniforme e por ser uma linha com mais de 15 anos no mercado brasileiro.
+          </p>
+        </div>
+
+        <!-- FAQ -->
+        <h2 id="faq" class="text-2xl font-bold text-slate-900 mb-6">Perguntas frequentes sobre airfryer</h2>
+
+        <div class="space-y-3 mb-10">
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Qual capacidade de airfryer comprar para uma pessoa que mora sozinha?</span>
+              <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Para uma pessoa, uma airfryer de 3L já é suficiente para o uso diário. Se você costuma cozinhar porções maiores ou receber amigos com frequência, vá para 3,5L. Modelos de 2L ficam pequenos demais para qualquer preparo além de porções individuais.
+            </div>
+          </details>
+
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Airfryer de 1.000W é suficiente ou precisa de mais potência?</span>
+              <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Depende do tamanho do cesto. Para airfryers de 2L, 1.000W é aceitável. Em modelos de 3,5L ou mais, 1.000W resulta em cozimento mais lento e menos uniforme. O ideal é 1.400W ou mais para garantir resultado crocante e tempo de preparo razoável.
+            </div>
+          </details>
+
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Airfryer de cesto ou forno: qual é melhor para família?</span>
+              <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Para família de 3 a 4 pessoas, uma airfryer de cesto com 5L a 6L resolve bem a maioria dos preparos com resultado mais crocante e limpeza mais fácil. A airfryer forno faz sentido apenas se a família tem o hábito de preparar frango inteiro, pizza ou usar a função rotisserie com frequência.
+            </div>
+          </details>
+
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Airfryer faz muito barulho? Isso é normal?</span>
+              <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Sim, é completamente normal. Toda airfryer faz ruído porque o ventilador interno é o responsável pelo cozimento. Os modelos mais comuns geram entre 55 e 65 decibéis, equivalente a uma conversa normal ou a uma televisão ligada. Não existe airfryer silenciosa.
+            </div>
+          </details>
+
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Posso usar papel alumínio na airfryer?</span>
+              <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Sim, com uma condição: o papel alumínio nunca pode cobrir todo o fundo do cesto nem bloquear as saídas de ar — ele precisa permitir que o ar circule. Use pedaços pequenos para cobrir alimentos que soltam muito líquido. Papel alumínio sem alimentos dentro pode ser puxado pelo ventilador e tocar na resistência, causando risco de incêndio.
+            </div>
+          </details>
+
+                    <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Airfryer consome muita energia?</span>
+              <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              O consumo é baixo para o tempo de uso. Uma airfryer de 1.400W usada por 20 minutos consome cerca de 0,47 kWh — o equivalente a aproximadamente R$ 0,40 por preparo na tarifa média brasileira. É muito menos do que um forno elétrico convencional, que precisa de 40 a 60 minutos para o mesmo resultado.
+            </div>
+          </details>
+
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Quanto tempo leva para aquecer uma airfryer?</span>
+              <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Modelos de 1.400W a 1.600W atingem 180°C em cerca de 3 a 5 minutos. Modelos com menor potência (abaixo de 1.200W) podem demorar 6 a 8 minutos. Airfryers forno demoram um pouco mais pela câmara maior. Nenhuma airfryer precisa preaquecer tanto quanto um forno convencional — essa é uma das grandes vantagens do aparelho.
+            </div>
+          </details>
+
+<details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Vale a pena pagar mais por uma airfryer com painel digital?</span>
+              <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              O painel digital permite ajustar temperatura em incrementos de 5°C e programar o tempo com mais precisão do que um botão analógico. Para quem vai usar com frequência, vale a pena. A diferença de preço entre um modelo analógico e um digital da mesma marca costuma ser pequena — em geral R$ 40 a R$ 80.
+            </div>
+          </details>
+        </div>
+
+        <!-- Schema FAQ -->
+        <script type="application/ld+json" set:html={JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Qual capacidade de airfryer comprar para uma pessoa que mora sozinha?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Para uma pessoa, uma airfryer de 3L já é suficiente para o uso diário. Se você costuma cozinhar porções maiores ou receber amigos com frequência, vá para 3,5L. Modelos de 2L ficam pequenos demais para qualquer preparo além de porções individuais." }
+            },
+            {
+              "@type": "Question",
+              "name": "Airfryer de 1.000W é suficiente ou precisa de mais potência?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Depende do tamanho do cesto. Para airfryers de 2L, 1.000W é aceitável. Em modelos de 3,5L ou mais, 1.000W resulta em cozimento mais lento e menos uniforme. O ideal é 1.400W ou mais para garantir resultado crocante e tempo de preparo razoável." }
+            },
+            {
+              "@type": "Question",
+              "name": "Airfryer de cesto ou forno: qual é melhor para família?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Para família de 3 a 4 pessoas, uma airfryer de cesto com 5L a 6L resolve bem a maioria dos preparos com resultado mais crocante e limpeza mais fácil. A airfryer forno faz sentido apenas se a família tem o hábito de preparar frango inteiro, pizza ou usar a função rotisserie com frequência." }
+            },
+            {
+              "@type": "Question",
+              "name": "Airfryer faz muito barulho?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Sim, é normal. Os modelos mais comuns geram entre 55 e 65 decibéis, equivalente a uma conversa normal. Não existe airfryer silenciosa — o ventilador interno é o que garante o cozimento crocante." }
+            },
+            {
+              "@type": "Question",
+              "name": "Posso usar papel alumínio na airfryer?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Sim, com uma condição: o papel alumínio nunca pode cobrir todo o fundo do cesto nem bloquear as saídas de ar. Papel alumínio sem alimentos pode ser puxado pelo ventilador e tocar na resistência, causando risco de incêndio." }
+            },
+            {
+              "@type": "Question",
+              "name": "Vale a pena pagar mais por uma airfryer com painel digital?",
+              "acceptedAnswer": { "@type": "Answer", "text": "O painel digital permite ajustar temperatura em incrementos de 5°C com mais precisão. Para uso frequente, vale a pena. A diferença de preço entre modelo analógico e digital da mesma marca costuma ser de R$ 40 a R$ 80." }
+            },
+            {
+              "@type": "Question",
+              "name": "Airfryer consome muita energia?",
+              "acceptedAnswer": { "@type": "Answer", "text": "O consumo é baixo para o tempo de uso. Uma airfryer de 1.400W usada por 20 minutos consome cerca de 0,47 kWh — o equivalente a aproximadamente R$ 0,40 por preparo na tarifa média brasileira. É muito menos do que um forno elétrico convencional, que precisa de 40 a 60 minutos para o mesmo resultado." }
+            },
+            {
+              "@type": "Question",
+              "name": "Quanto tempo leva para aquecer uma airfryer?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Modelos de 1.400W a 1.600W atingem 180°C em cerca de 3 a 5 minutos. Modelos com menor potência (abaixo de 1.200W) podem demorar 6 a 8 minutos. Nenhuma airfryer precisa preaquecer tanto quanto um forno convencional — essa é uma das grandes vantagens do aparelho." }
+            }
+          ]
         })} />
 
       </div>
