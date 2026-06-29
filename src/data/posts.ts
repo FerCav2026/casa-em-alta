@@ -283,6 +283,16 @@ export const posts: Post[] = [
     categoria: 'guias-de-compra',
     categoriaLabel: 'Guia de Compra',
     categoriaColor: 'bg-purple-100 text-purple-700',
+  },
+  {
+    slug: 'melhores-liquidificadores-2026',
+    titulo: 'Os 7 Melhores Liquidificadores de 2026',
+    resumo: 'Os mais vendidos e bem avaliados da Amazon, do básico ao premium. Comparei potência, capacidade e custo-benefício para você não errar na compra.',
+    tempo: '9 min de leitura',
+    imagem: '/images/melhores-liquidificadores/capa-melhores-liquidificadores.webp',
+    categoria: 'rankings-e-listas',
+    categoriaLabel: 'Rankings e Listas',
+    categoriaColor: 'bg-green-100 text-green-700',
   }
 ];
 
