@@ -80,7 +80,7 @@ AGENDADOS (4)
     Slug: como-escolher-airfryer | Data: 26/06/2026 | Branch: draft/como-escolher-airfryer
 
 24. Os 7 Melhores Liquidificadores de 2026
-    Slug: melhores-liquidificadores-2026 | Data: 29/06/2026 | Branch: draft/melhores-liquidificadores-2026
+    Slug: melhores-liquidificadores-2026 | Data: 29/06/2026 | PUBLICADO (commit 4786c2c, aplicacao aditiva) | links retroativos em #17, #18, #21
 
 25. Os 7 Melhores Microondas de 2026
     Slug: melhores-microondas-2026 | Data: 01/07/2026 | Branch: draft/melhores-microondas-2026
