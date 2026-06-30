@@ -8,7 +8,7 @@ export default defineConfig({
     sitemap({
       changefreq: 'weekly',
       priority: 0.7,
-      lastmod: new Date('2026-06-16'),
+      lastmod: new Date(),
     }),
   ],
   site: 'https://www.casaemalta.com.br',
