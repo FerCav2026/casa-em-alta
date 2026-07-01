@@ -1,4 +1,6 @@
 ---
+import CookieConsent from '../components/CookieConsent.astro';
+
 interface Props {
   title?: string;
   description?: string;
@@ -89,14 +91,7 @@ const websiteSchema = {
     <!-- Schema Markup: específico da página (ex: BlogPosting) -->
     {schema && <script type="application/ld+json" set:html={JSON.stringify(schema)} />}
 
-    <!-- Microsoft Clarity -->
-    <script type="text/javascript">
-      (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-      })(window, document, "clarity", "script", "wyo4kb1u7h");
-    </script>
+    <!-- Microsoft Clarity é carregado pelo componente CookieConsent, apenas após consentimento (LGPD) -->
   </head>
   <body class="bg-white font-sans text-slate-900 antialiased">
     <header class="sticky top-0 z-50 bg-white border-b border-slate-100 shadow-sm">
@@ -133,8 +128,11 @@ const websiteSchema = {
         <div class="flex gap-6">
           <a href="/politica-de-privacidade" class="hover:text-white transition-colors">Política de Privacidade</a>
           <a href="/termos-de-uso" class="hover:text-white transition-colors">Termos de Uso</a>
+          <a href="#" data-cc-open class="hover:text-white transition-colors">Preferências de cookies</a>
         </div>
       </div>
     </footer>
+
+    <CookieConsent />
   </body>
 </html>

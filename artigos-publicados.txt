@@ -83,7 +83,7 @@ AGENDADOS (4)
     Slug: melhores-liquidificadores-2026 | Data: 29/06/2026 | PUBLICADO (commit 4786c2c, aplicacao aditiva) | links retroativos em #17, #18, #21
 
 25. Os 7 Melhores Microondas de 2026
-    Slug: melhores-microondas-2026 | Data: 01/07/2026 | Branch: draft/melhores-microondas-2026
+    Slug: melhores-microondas-2026 | Data: 01/07/2026 | PUBLICADO (commit 6327a49, aplicacao aditiva) | imagens WebP + capa jpg og | links retroativos em #19, #20, #22 (commit f4ac282)
 
 26. Philips Walita Airfryer Série 1000 XL: Vale a Pena? Review Honesto
     Slug: airfryer-philips-walita-serie-1000-xl-review | Data: 03/07/2026 | Branch: draft/airfryer-serie-1000-xl-review
