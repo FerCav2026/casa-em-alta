@@ -1,10 +1,37 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+
+const description = 'Conheça a Claudia Castro, criadora do Casa em Alta e do Indica Casa. Reviews honestos de utilidades domésticas para ajudar você a comprar melhor.';
+
+const personSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Claudia Castro',
+  url: new URL('/sobre', Astro.site).href,
+  image: new URL('/images/claudia-castro.webp', Astro.site).href,
+  description,
+  jobTitle: 'Especialista em Economia Doméstica',
+  knowsAbout: ['Utilidades domésticas', 'Economia doméstica', 'Organização de apartamentos pequenos'],
+  worksFor: [
+    {
+      '@type': 'Organization',
+      name: 'Casa em Alta',
+      url: Astro.site?.href,
+    },
+    {
+      '@type': 'Organization',
+      name: 'Indica Casa',
+      url: 'https://www.indicacasa.com.br',
+    },
+  ],
+  sameAs: ['https://www.indicacasa.com.br'],
+};
 ---
 
 <BaseLayout
   title="Sobre - Casa em Alta"
-  description="Conheça a Claudia Castro, criadora do Casa em Alta e do Indica Casa. Reviews honestos de utilidades domésticas para ajudar você a comprar melhor."
+  description={description}
+  schema={personSchema}
 >
   <div class="max-w-6xl mx-auto px-4 py-20">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
