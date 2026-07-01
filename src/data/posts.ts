@@ -293,6 +293,16 @@ export const posts: Post[] = [
     categoria: 'rankings-e-listas',
     categoriaLabel: 'Rankings e Listas',
     categoriaColor: 'bg-green-100 text-green-700',
+  },
+  {
+    slug: 'melhores-microondas-2026',
+    titulo: 'Os 7 Melhores Microondas de 2026',
+    resumo: 'Os modelos mais vendidos e mais bem avaliados da Amazon, do compacto ao maior. Comparei potência, litros e custo-benefício para você não errar na compra.',
+    tempo: '9 min de leitura',
+    imagem: '/images/melhores-microondas/capa-melhores-microondas.webp',
+    categoria: 'rankings-e-listas',
+    categoriaLabel: 'Rankings e Listas',
+    categoriaColor: 'bg-green-100 text-green-700',
   }
 ];
 

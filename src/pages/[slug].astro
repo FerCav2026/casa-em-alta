@@ -172,6 +172,13 @@ const posts: Record<string, { titulo: string; descricao: string; categoria: stri
     dataCriacao: '2026-06-29',
     dataModificacao: '2026-06-29',
   },
+  'melhores-microondas-2026': {
+    titulo: 'Os 7 Melhores Microondas de 2026',
+    descricao: 'Os modelos mais vendidos e mais bem avaliados da Amazon, do compacto ao maior. Comparei potência, litros e custo-benefício para você não errar na compra.',
+    categoria: 'Rankings e Listas',
+    dataCriacao: '2026-07-01',
+    dataModificacao: '2026-07-01',
+  },
 };
 
 export function getStaticPaths() {
@@ -200,6 +207,7 @@ export function getStaticPaths() {
     'microondas-electrolux-mi41s-review': {},
     'como-escolher-airfryer': {},
     'melhores-liquidificadores-2026': {},
+    'melhores-microondas-2026': {},
   }).map((slug) => ({ params: { slug } }));
 }
 
@@ -256,6 +264,7 @@ const isReviewRI2110 = slug === 'liquidificador-philips-walita-ri2110-review';
 const isMI41SReview = slug === 'microondas-electrolux-mi41s-review';
 const isComoEscolherAirfryer = slug === 'como-escolher-airfryer';
 const isMelhoresLiquidificadores = slug === 'melhores-liquidificadores-2026';
+const isMelhoresMicroondas = slug === 'melhores-microondas-2026';
 
 const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isAirfryer ? '/images/airfryer/capa-airfryer.webp'
@@ -281,6 +290,7 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isMI41SReview ? '/images/microondas-mi41s/capa-mi41s.webp'
   : isComoEscolherAirfryer ? '/images/airfryer-guia/capa-como-escolher-airfryer.webp'
   : isMelhoresLiquidificadores ? '/images/melhores-liquidificadores/capa-melhores-liquidificadores.webp'
+  : isMelhoresMicroondas ? '/images/melhores-microondas/capa-melhores-microondas.webp'
   : undefined;
 ---
 
@@ -10996,6 +11006,639 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
           ]
         })} />
 
+      </div>
+    )}
+
+    {isMelhoresMicroondas && (
+      <div>
+        <!-- Capa -->
+        <div class="mb-8">
+          <img
+            src="/images/melhores-microondas/capa-melhores-microondas.webp"
+            alt="Os 7 Melhores Microondas de 2026"
+            class="w-full rounded-2xl shadow-md"
+            loading="eager"
+            width="1280"
+            height="853"
+          />
+        </div>
+
+        <!-- Box de introducao -->
+        <div class="bg-orange-50 border-l-4 border-orange-500 rounded-xl p-6 mb-8">
+          <p class="text-orange-800 font-bold text-lg mb-2">Resumo rápido</p>
+          <p class="text-orange-700 text-base">
+            Testei e pesquisei os microondas mais vendidos da Amazon Brasil em 2026. Nesta lista você encontra sete modelos, do compacto 20L ao grande 34L, com preços entre R$ 417 e R$ 729. O melhor custo-benefício para a maioria das casas é o <strong>Philco PMO23B</strong>. Para quem quer algo mais completo, o <strong>Electrolux MI41S</strong> e o <strong>Panasonic NN-ST67LSRU</strong> são os destaques.
+          </p>
+        </div>
+
+        <!-- Dica azul -->
+        <div class="bg-blue-50 border border-blue-200 rounded-xl p-5 mb-10">
+          <p class="text-blue-800 font-bold text-sm mb-1">Antes de decidir</p>
+          <p class="text-blue-700 text-sm">
+            Litros não são tudo. Um microondas de 20L é suficiente para aquecer pratos e descongelar alimentos no dia a dia. Só vale ir para 31L ou 34L se você usa muito o microondas para cozinhar de verdade ou tem família grande. Leia também o nosso <a href="/como-escolher-microondas" class="text-blue-700 underline font-medium">guia completo de como escolher microondas</a> para entender o que realmente importa.
+          </p>
+        </div>
+
+        <!-- Produto 1: Philco PMO23B -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-orange-500 px-6 py-4">
+            <p class="text-white font-black text-xl">1º lugar - Philco PMO23B 20L Branco</p>
+            <p class="text-orange-100 text-sm mt-1">O melhor custo-benefício da lista, compacto e prático para o dia a dia</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 min-h-32">
+              <img
+                src="/images/melhores-microondas/philco-pmo23b.webp"
+                alt="Philco PMO23B microondas 20L branco"
+                class="max-h-36 object-contain"
+                loading="lazy"
+                width="300"
+                height="300"
+              />
+            </div>
+            <div class="flex-1">
+              <a
+                href="https://link.amazon/B07V6Alnd"
+                target="_blank"
+                rel="nofollow noopener"
+                class="block w-full bg-orange-500 hover:bg-orange-600 text-white font-bold text-center py-3 px-6 rounded-xl mb-6 transition-colors"
+              >
+                Conferir preço na Amazon
+              </a>
+              <h3 class="font-bold text-slate-800 mb-3">Ficha técnica</h3>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Capacidade:</strong> 20 litros</li>
+                <li><strong>Potência:</strong> 800W</li>
+                <li><strong>Tensão:</strong> 110V</li>
+                <li><strong>Cor:</strong> Branco</li>
+                <li><strong>Níveis de potência:</strong> 10</li>
+                <li><strong>Funções extras:</strong> relógio, timer, 6 receitas pré-programadas</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
+                  <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
+                    <li>Preço acessível para a categoria</li>
+                    <li>Compacto, cabe em qualquer bancada</li>
+                    <li>10 níveis de potência para versatilidade</li>
+                    <li>Fácil de usar sem manual</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
+                  <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
+                    <li>Potência de 800W é menor que a de concorrentes</li>
+                    <li>Design simples, sem porta espelhada</li>
+                    <li>Só 110V, não funciona em 220V</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 2: Midea MasterCook -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-slate-800 px-6 py-4">
+            <p class="text-white font-black text-xl">2º lugar - Midea MasterCook 20L</p>
+            <p class="text-slate-300 text-sm mt-1">Funções avançadas de cozimento por pouco mais que o básico</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 min-h-32">
+              <img
+                src="/images/melhores-microondas/midea-mastercook.webp"
+                alt="Midea MasterCook microondas 20L branco"
+                class="max-h-36 object-contain"
+                loading="lazy"
+                width="300"
+                height="300"
+              />
+            </div>
+            <div class="flex-1">
+              <a
+                href="https://link.amazon/B0cw7Jr5g"
+                target="_blank"
+                rel="nofollow noopener"
+                class="block w-full bg-orange-500 hover:bg-orange-600 text-white font-bold text-center py-3 px-6 rounded-xl mb-6 transition-colors"
+              >
+                Conferir preço na Amazon
+              </a>
+              <h3 class="font-bold text-slate-800 mb-3">Ficha técnica</h3>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Capacidade:</strong> 20 litros</li>
+                <li><strong>Potência:</strong> 700W</li>
+                <li><strong>Tensão:</strong> 110V</li>
+                <li><strong>Cor:</strong> Branco</li>
+                <li><strong>Níveis de potência:</strong> 10</li>
+                <li><strong>Funções MasterCook:</strong> desidrata, cozinha, assa, cozinha a vapor, derrete e fermenta</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
+                  <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
+                    <li>6 modos de cozimento inclusos</li>
+                    <li>Revestimento interno MasterClean fácil de limpar</li>
+                    <li>3 receitas pré-programadas (pipoca, arroz, brigadeiro)</li>
+                    <li>Design moderno e compacto</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
+                  <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
+                    <li>700W é a menor potência da lista</li>
+                    <li>Tempo de aquecimento um pouco maior</li>
+                    <li>Apenas 110V</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 3: MONDIAL MO-01-21-B -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-slate-800 px-6 py-4">
+            <p class="text-white font-black text-xl">3º lugar - MONDIAL MO-01-21-B 21L Preto</p>
+            <p class="text-slate-300 text-sm mt-1">Maior potência entre os compactos e função tira odor inclusa</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 min-h-32">
+              <img
+                src="/images/melhores-microondas/mondial-mo01-21b.webp"
+                alt="MONDIAL MO-01-21-B microondas 21L preto"
+                class="max-h-36 object-contain"
+                loading="lazy"
+                width="300"
+                height="300"
+              />
+            </div>
+            <div class="flex-1">
+              <a
+                href="https://link.amazon/B04bStcU2"
+                target="_blank"
+                rel="nofollow noopener"
+                class="block w-full bg-orange-500 hover:bg-orange-600 text-white font-bold text-center py-3 px-6 rounded-xl mb-6 transition-colors"
+              >
+                Conferir preço na Amazon
+              </a>
+              <h3 class="font-bold text-slate-800 mb-3">Ficha técnica</h3>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Capacidade:</strong> 21 litros</li>
+                <li><strong>Potência:</strong> 1200W</li>
+                <li><strong>Tensão:</strong> 110V</li>
+                <li><strong>Cor:</strong> Preto</li>
+                <li><strong>Níveis de potência:</strong> 10</li>
+                <li><strong>Funções extras:</strong> tira odor, menu kids, menu diário, início rápido +30 seg</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
+                  <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
+                    <li>1200W de potência: aquece rápido</li>
+                    <li>21 litros com melhor aproveitamento interno</li>
+                    <li>Função tira odor muito útil no dia a dia</li>
+                    <li>Botão de início rápido +30 segundos</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
+                  <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
+                    <li>Cor preta marca mais impressão digital</li>
+                    <li>Design sem porta espelhada</li>
+                    <li>Apenas 110V</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 4: Panasonic NN-ST27LWRU -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-slate-800 px-6 py-4">
+            <p class="text-white font-black text-xl">4º lugar - Panasonic NN-ST27LWRU 21L Espelhado</p>
+            <p class="text-slate-300 text-sm mt-1">Design sofisticado com porta espelhada e tecnologia Pega Fácil</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 min-h-32">
+              <img
+                src="/images/melhores-microondas/panasonic-nn-st27lwru.webp"
+                alt="Panasonic NN-ST27LWRU microondas 21L espelhado"
+                class="max-h-36 object-contain"
+                loading="lazy"
+                width="300"
+                height="300"
+              />
+            </div>
+            <div class="flex-1">
+              <a
+                href="https://link.amazon/B0awwPiX2"
+                target="_blank"
+                rel="nofollow noopener"
+                class="block w-full bg-orange-500 hover:bg-orange-600 text-white font-bold text-center py-3 px-6 rounded-xl mb-6 transition-colors"
+              >
+                Conferir preço na Amazon
+              </a>
+              <h3 class="font-bold text-slate-800 mb-3">Ficha técnica</h3>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Capacidade:</strong> 21 litros</li>
+                <li><strong>Potência:</strong> 700W</li>
+                <li><strong>Tensão:</strong> 127V</li>
+                <li><strong>Cor:</strong> branco com porta espelhada</li>
+                <li><strong>Níveis de potência:</strong> 10</li>
+                <li><strong>Funções extras:</strong> tira odor, 3 receitas pré-programadas, tecnologia Pega Fácil</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
+                  <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
+                    <li>Porta espelhada com design elegante</li>
+                    <li>Tecnologia Pega Fácil: abre a porta com toque suave</li>
+                    <li>Função tira odor inclusa</li>
+                    <li>Marca com excelente reputação</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
+                  <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
+                    <li>700W de potência é mais lento</li>
+                    <li>Preço mais alto que concorrentes com mais potência</li>
+                    <li>Disponível em 127V (verifique a tensão da tomada)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 5: MONDIAL MO-02-34-E -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-slate-800 px-6 py-4">
+            <p class="text-white font-black text-xl">5º lugar - MONDIAL MO-02-34-E 34L Espelhado</p>
+            <p class="text-slate-300 text-sm mt-1">Alta potência e capacidade generosa para famílias maiores</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 min-h-32">
+              <img
+                src="/images/melhores-microondas/mondial-mo02-34e.webp"
+                alt="MONDIAL MO-02-34-E microondas 34L espelhado"
+                class="max-h-36 object-contain"
+                loading="lazy"
+                width="300"
+                height="300"
+              />
+            </div>
+            <div class="flex-1">
+              <a
+                href="https://link.amazon/B00r4HRR4"
+                target="_blank"
+                rel="nofollow noopener"
+                class="block w-full bg-orange-500 hover:bg-orange-600 text-white font-bold text-center py-3 px-6 rounded-xl mb-6 transition-colors"
+              >
+                Conferir preço na Amazon
+              </a>
+              <h3 class="font-bold text-slate-800 mb-3">Ficha técnica</h3>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Capacidade:</strong> 34 litros</li>
+                <li><strong>Potência:</strong> 1400W</li>
+                <li><strong>Tensão:</strong> 110V</li>
+                <li><strong>Acabamento:</strong> espelhado</li>
+                <li><strong>Níveis de potência:</strong> 10</li>
+                <li><strong>Funções extras:</strong> tira odor, início rápido, relógio digital</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
+                  <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
+                    <li>1400W: o mais potente de 34L na faixa de preço</li>
+                    <li>34 litros para pratos grandes e refratários</li>
+                    <li>Acabamento espelhado elegante</li>
+                    <li>110V sem precisar de transformador</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
+                  <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
+                    <li>Ocupa mais espaço na bancada</li>
+                    <li>Menos recursos que os modelos Panasonic</li>
+                    <li>Interior menos sofisticado que Electrolux e Panasonic</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 6: Electrolux MI41S -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-slate-800 px-6 py-4">
+            <p class="text-white font-black text-xl">6º lugar - Electrolux MI41S 31L Inox</p>
+            <p class="text-slate-300 text-sm mt-1">Painel integrado elegante e função tira odor profissional</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 min-h-32">
+              <img
+                src="/images/melhores-microondas/electrolux-mi41s.webp"
+                alt="Electrolux MI41S microondas 31L inox prata espelhado"
+                class="max-h-36 object-contain"
+                loading="lazy"
+                width="300"
+                height="300"
+              />
+            </div>
+            <div class="flex-1">
+              <a
+                href="https://link.amazon/B0eX58EBj"
+                target="_blank"
+                rel="nofollow noopener"
+                class="block w-full bg-orange-500 hover:bg-orange-600 text-white font-bold text-center py-3 px-6 rounded-xl mb-6 transition-colors"
+              >
+                Conferir preço na Amazon
+              </a>
+              <h3 class="font-bold text-slate-800 mb-3">Ficha técnica</h3>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Capacidade:</strong> 31 litros (útil: 19 litros)</li>
+                <li><strong>Potência:</strong> 1500W</li>
+                <li><strong>Tensão:</strong> 127V</li>
+                <li><strong>Acabamento:</strong> inox prata espelhado</li>
+                <li><strong>Níveis de potência:</strong> 10</li>
+                <li><strong>Funções extras:</strong> painel integrado, tira odor, tira gelo, fácil limpeza, 6 receitas</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
+                  <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
+                    <li>Painel integrado que aparece só quando a porta abre</li>
+                    <li>1500W: a maior potência da lista</li>
+                    <li>Design inox que combina com qualquer cozinha</li>
+                    <li>Função fácil limpeza amolece a sujeira</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
+                  <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
+                    <li>Apenas 127V (verifique a tomada)</li>
+                    <li>Preço mais alto, justificado pelo design</li>
+                    <li>Capacidade útil menor que a total</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text-sm text-slate-500 mt-4">Leia o <a href="/microondas-electrolux-mi41s-review" class="text-orange-500 underline">review completo do Electrolux MI41S</a> que fiz depois de meses usando.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 7: Panasonic NN-ST67LSRU -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-slate-800 px-6 py-4">
+            <p class="text-white font-black text-xl">7º lugar - Panasonic NN-ST67LSRU 34L Inox</p>
+            <p class="text-slate-300 text-sm mt-1">O mais completo: antibactéria, dual meal e revestimento antiaderente</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 min-h-32">
+              <img
+                src="/images/melhores-microondas/panasonic-nn-st67lsru.webp"
+                alt="Panasonic NN-ST67LSRU microondas 34L inox antibactéria"
+                class="max-h-36 object-contain"
+                loading="lazy"
+                width="300"
+                height="300"
+              />
+            </div>
+            <div class="flex-1">
+              <a
+                href="https://link.amazon/B00JBGybX"
+                target="_blank"
+                rel="nofollow noopener"
+                class="block w-full bg-orange-500 hover:bg-orange-600 text-white font-bold text-center py-3 px-6 rounded-xl mb-6 transition-colors"
+              >
+                Conferir preço na Amazon
+              </a>
+              <h3 class="font-bold text-slate-800 mb-3">Ficha técnica</h3>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Capacidade:</strong> 34 litros (útil: 23 litros)</li>
+                <li><strong>Potência:</strong> 900W</li>
+                <li><strong>Tensão:</strong> 127V</li>
+                <li><strong>Acabamento:</strong> inox escovado</li>
+                <li><strong>Níveis de potência:</strong> 10</li>
+                <li><strong>Funções extras:</strong> antibactéria Ag, Dual Meal, revestimento antiaderente, Easy Handle</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
+                  <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
+                    <li>Tecnologia antibactéria inibe 99,9% das bactérias no interior</li>
+                    <li>Dual Meal: aquece dois pratos ao mesmo tempo</li>
+                    <li>Revestimento antiaderente 4x mais fácil de limpar</li>
+                    <li>Acabamento inox escovado premium</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
+                  <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
+                    <li>900W de potência é menor que o do Electrolux</li>
+                    <li>Apenas 127V</li>
+                    <li>Preço mais alto da lista</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Comparativo -->
+        <div class="bg-slate-50 rounded-2xl p-6 mb-10">
+          <h2 class="text-xl font-bold text-slate-800 mb-4">Comparativo rápido</h2>
+          <div class="overflow-x-auto">
+            <table class="w-full text-sm text-left">
+              <thead>
+                <tr class="border-b border-slate-200">
+                  <th class="py-2 pr-4 text-slate-700 font-semibold">Modelo</th>
+                  <th class="py-2 pr-4 text-slate-700 font-semibold">Litros</th>
+                  <th class="py-2 pr-4 text-slate-700 font-semibold">Potência</th>
+                  <th class="py-2 text-slate-700 font-semibold">Destaque</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-100">
+                <tr>
+                  <td class="py-2 pr-4 font-medium text-slate-800">Philco PMO23B</td>
+                  <td class="py-2 pr-4 text-slate-600">20L</td>
+                  <td class="py-2 pr-4 text-slate-600">800W</td>
+                  <td class="py-2 text-slate-600">Melhor preço</td>
+                </tr>
+                <tr>
+                  <td class="py-2 pr-4 font-medium text-slate-800">Midea MasterCook</td>
+                  <td class="py-2 pr-4 text-slate-600">20L</td>
+                  <td class="py-2 pr-4 text-slate-600">700W</td>
+                  <td class="py-2 text-slate-600">6 modos de cozimento</td>
+                </tr>
+                <tr>
+                  <td class="py-2 pr-4 font-medium text-slate-800">MONDIAL MO-01</td>
+                  <td class="py-2 pr-4 text-slate-600">21L</td>
+                  <td class="py-2 pr-4 text-slate-600">1200W</td>
+                  <td class="py-2 text-slate-600">Maior potência compacto</td>
+                </tr>
+                <tr>
+                  <td class="py-2 pr-4 font-medium text-slate-800">Panasonic ST27</td>
+                  <td class="py-2 pr-4 text-slate-600">21L</td>
+                  <td class="py-2 pr-4 text-slate-600">700W</td>
+                  <td class="py-2 text-slate-600">Pega Fácil + espelhado</td>
+                </tr>
+                <tr>
+                  <td class="py-2 pr-4 font-medium text-slate-800">MONDIAL MO-02</td>
+                  <td class="py-2 pr-4 text-slate-600">34L</td>
+                  <td class="py-2 pr-4 text-slate-600">1400W</td>
+                  <td class="py-2 text-slate-600">Maior capacidade e potência</td>
+                </tr>
+                <tr>
+                  <td class="py-2 pr-4 font-medium text-slate-800">Electrolux MI41S</td>
+                  <td class="py-2 pr-4 text-slate-600">31L</td>
+                  <td class="py-2 pr-4 text-slate-600">1500W</td>
+                  <td class="py-2 text-slate-600">Painel integrado + design</td>
+                </tr>
+                <tr>
+                  <td class="py-2 pr-4 font-medium text-slate-800">Panasonic ST67</td>
+                  <td class="py-2 pr-4 text-slate-600">34L</td>
+                  <td class="py-2 pr-4 text-slate-600">900W</td>
+                  <td class="py-2 text-slate-600">Antibactéria + Dual Meal</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Como escolher -->
+        <h2 class="text-2xl font-bold text-slate-800 mb-4">Como escolher o microondas certo</h2>
+        <p class="text-slate-600 mb-4">
+          A primeira coisa a definir é o tamanho. Para quem mora sozinho ou em casal e usa o microondas só para aquecer e descongelar, um modelo de 20L a 21L atende bem e ocupa menos espaço. Família com filhos ou quem cozinha no microondas com frequência vai se beneficiar dos 31L a 34L.
+        </p>
+        <p class="text-slate-600 mb-4">
+          A potência importa mais do que os litros no dia a dia. Um microondas de 1200W aquece o mesmo prato em metade do tempo de um de 700W. Se você usa o aparelho várias vezes ao dia, vale pagar um pouco mais pela potência.
+        </p>
+        <p class="text-slate-600 mb-8">
+          Para quem tem dúvida entre o grill e o sem grill, temos um comparativo completo em <a href="/microondas-com-grill-vale-a-pena" class="text-orange-500 underline">Microondas com Grill: Vale a Pena?</a> que ajuda a decidir.
+        </p>
+
+        <!-- FAQ -->
+        <h2 class="text-2xl font-bold text-slate-800 mb-6">Perguntas frequentes</h2>
+        <div class="space-y-3 mb-10">
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+              <span>Quantos litros de microondas preciso para uma pessoa?</span>
+              <svg class="w-5 h-5 text-slate-400 transition-transform group-open:rotate-180 flex-shrink-0 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </summary>
+            <div class="px-5 pb-4 pt-2 text-slate-600 text-sm bg-white">
+              Para quem mora sozinho, um microondas de 20L é suficiente. Esse tamanho aquece pratos individuais, descongela alimentos e faz pipoca sem problema. O espaço interno é adequado para a maioria dos pratos e tigelas do dia a dia.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+              <span>Qual a diferença entre 700W e 1200W no uso real?</span>
+              <svg class="w-5 h-5 text-slate-400 transition-transform group-open:rotate-180 flex-shrink-0 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </summary>
+            <div class="px-5 pb-4 pt-2 text-slate-600 text-sm bg-white">
+              A diferença está no tempo de aquecimento. Um microondas de 1200W aquece o mesmo prato em menos da metade do tempo de um de 700W. Se você usa o microondas com frequência durante o dia, a potência mais alta faz diferença real no tempo total. Para uso esporádico, 700W já resolve bem.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+              <span>Microondas de 110V e 127V: qual a diferença?</span>
+              <svg class="w-5 h-5 text-slate-400 transition-transform group-open:rotate-180 flex-shrink-0 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </summary>
+            <div class="px-5 pb-4 pt-2 text-slate-600 text-sm bg-white">
+              No uso prático, a diferença é mínima: ambos funcionam na rede elétrica residencial de baixa tensão no Brasil. A maioria das casas brasileiras tem tomadas de 127V no uso geral. Verifique qual é a tensão disponível na tomada da sua cozinha antes de comprar. Se tiver dúvida, consulte um eletricista ou veja a etiqueta nas tomadas existentes.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+              <span>Vale a pena pagar mais caro por um microondas com painel integrado?</span>
+              <svg class="w-5 h-5 text-slate-400 transition-transform group-open:rotate-180 flex-shrink-0 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </summary>
+            <div class="px-5 pb-4 pt-2 text-slate-600 text-sm bg-white">
+              Depende do quanto o design importa para você. O painel integrado, como no Electrolux MI41S, fica escondido e só aparece quando a porta é aberta. O resultado visual é muito mais limpo e integrado com a cozinha. Se você tem uma cozinha organizada e valoriza a estética, vale o investimento extra. Para uso puramente funcional, os modelos com painel convencional atendem igual.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+              <span>O que é a função tira odor do microondas?</span>
+              <svg class="w-5 h-5 text-slate-400 transition-transform group-open:rotate-180 flex-shrink-0 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </summary>
+            <div class="px-5 pb-4 pt-2 text-slate-600 text-sm bg-white">
+              A função tira odor aquece o interior do microondas em alta temperatura por alguns minutos para eliminar cheiros de alimentos anteriores, como peixe e comidas com tempero forte. É muito útil no dia a dia e evita que o cheiro de um alimento contamine o próximo que for aquecido. Modelos como o MONDIAL MO-01-21-B e o Electrolux MI41S trazem essa função inclusa.
+            </div>
+          </details>
+        </div>
+
+        <!-- Schema FAQ JSON-LD -->
+        <script type="application/ld+json" set:html={JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Quantos litros de microondas preciso para uma pessoa?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Para quem mora sozinho, um microondas de 20L é suficiente. Esse tamanho aquece pratos individuais, descongela alimentos e faz pipoca sem problema."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Qual a diferença entre 700W e 1200W no uso real?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A diferença está no tempo de aquecimento. Um microondas de 1200W aquece o mesmo prato em menos da metade do tempo de um de 700W."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Microondas de 110V e 127V: qual a diferença?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No uso prático, a diferença é mínima. Ambos funcionam na rede elétrica residencial de baixa tensão no Brasil. Verifique a tensão disponível na tomada da sua cozinha antes de comprar."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Vale a pena pagar mais caro por um microondas com painel integrado?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depende do quanto o design importa para você. O painel integrado fica escondido e só aparece quando a porta é aberta. Para uso puramente funcional, os modelos convencionais atendem igual."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "O que é a função tira odor do microondas?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A função tira odor aquece o interior do microondas em alta temperatura por alguns minutos para eliminar cheiros de alimentos anteriores, como peixe e comidas com tempero forte."
+              }
+            }
+          ]
+        })} />
+
+        <!-- Leia Tambem -->
+        <h2 class="text-xl font-bold text-slate-800 mb-4">Leia também</h2>
+        <div class="grid md:grid-cols-3 gap-4 mb-10">
+          <a href="/como-escolher-microondas" class="block border border-slate-200 rounded-xl overflow-hidden hover:shadow-md transition-shadow">
+            <img src="/images/microondas/capa-microondas.webp" alt="Como escolher microondas" class="w-full h-32 object-cover" loading="lazy" />
+            <div class="p-3">
+              <p class="text-sm font-semibold text-slate-800 leading-tight">Como Escolher Microondas: Potência, Litros e o Que Realmente Importa</p>
+            </div>
+          </a>
+          <a href="/microondas-com-grill-vale-a-pena" class="block border border-slate-200 rounded-xl overflow-hidden hover:shadow-md transition-shadow">
+            <img src="/images/microondas-grill/capa-microondas-grill.webp" alt="Microondas com grill vale a pena" class="w-full h-32 object-cover" loading="lazy" />
+            <div class="p-3">
+              <p class="text-sm font-semibold text-slate-800 leading-tight">Microondas com Grill vs Sem Grill: Qual Vale a Pena Comprar?</p>
+            </div>
+          </a>
+          <a href="/microondas-electrolux-mi41s-review" class="block border border-slate-200 rounded-xl overflow-hidden hover:shadow-md transition-shadow">
+            <img src="/images/microondas-mi41s/capa-mi41s.webp" alt="Review Electrolux MI41S" class="w-full h-32 object-cover" loading="lazy" />
+            <div class="p-3">
+              <p class="text-sm font-semibold text-slate-800 leading-tight">Microondas Electrolux MI41S: Vale a Pena? Review Honesto</p>
+            </div>
+          </a>
+        </div>
       </div>
     )}
 
