@@ -306,7 +306,7 @@ export const posts: Post[] = [
   },
   {
     slug: 'airfryer-philips-walita-serie-1000-xl-review',
-    titulo: 'Philips Walita Airfryer Série 1000 XL: Vale a Pena? Review Honesto',
+    titulo: 'Airfryer Philips Walita 1000 XL: Vale a Pena?',
     resumo: 'Testei a Airfryer Série 1000 XL da Philips Walita e conto tudo: resultado real, barulho, limpeza e para quem ela realmente vale a pena comprar.',
     tempo: '8 min de leitura',
     imagem: '/images/airfryer-serie-1000-xl/capa-airfryer-serie-1000-xl.webp',
