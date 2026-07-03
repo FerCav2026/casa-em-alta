@@ -1,11 +1,11 @@
 ARTIGOS PUBLICADOS - CASA EM ALTA
-Última atualização: 2026-06-24
-Total: 22 publicados | 4 agendados
+Última atualização: 2026-07-03
+Total: 26 publicados | 0 agendados
 Blog: https://casaemalta.com.br
 Arquivo de dados: src/data/posts.ts
 =====================================
 
-PUBLICADOS (22)
+PUBLICADOS (26)
 
 1.  Os 7 Melhores Aspiradores de Pó 2026: Com Fio, Sem Fio e Robôs
     Slug: melhores-aspiradores-po-2026 | Categoria: Rankings e Listas
@@ -73,24 +73,26 @@ PUBLICADOS (22)
 22. Microondas Electrolux MI41S: Vale a Pena? Review Honesto
     Slug: microondas-electrolux-mi41s-review | Categoria: Review | Publicado: 24/06/2026
 
-=====================================
-AGENDADOS (4)
-
 23. Como Escolher Airfryer: Guia Completo para Não Errar na Compra
-    Slug: como-escolher-airfryer | Data: 26/06/2026 | Branch: draft/como-escolher-airfryer
+    Slug: como-escolher-airfryer | Categoria: Guia de Compra | Publicado: 26/06/2026
 
 24. Os 7 Melhores Liquidificadores de 2026
-    Slug: melhores-liquidificadores-2026 | Data: 29/06/2026 | PUBLICADO (commit 4786c2c, aplicacao aditiva) | links retroativos em #17, #18, #21
+    Slug: melhores-liquidificadores-2026 | Categoria: Rankings e Listas | Publicado: 29/06/2026 (aplicacao aditiva) | links retroativos em #17, #18, #21
 
 25. Os 7 Melhores Microondas de 2026
-    Slug: melhores-microondas-2026 | Data: 01/07/2026 | PUBLICADO (commit 6327a49, aplicacao aditiva) | imagens WebP + capa jpg og | links retroativos em #19, #20, #22 (commit f4ac282)
+    Slug: melhores-microondas-2026 | Categoria: Rankings e Listas | Publicado: 01/07/2026 (aplicacao aditiva) | links retroativos em #19, #20, #22
 
 26. Philips Walita Airfryer Série 1000 XL: Vale a Pena? Review Honesto
-    Slug: airfryer-philips-walita-serie-1000-xl-review | Data: 03/07/2026 | Branch: draft/airfryer-serie-1000-xl-review
+    Slug: airfryer-philips-walita-serie-1000-xl-review | Categoria: Review | Publicado: 03/07/2026 (aplicacao aditiva sobre a main, commit 57aada4)
 
 =====================================
-CATEGORIAS (22 publicados):
-- Rankings e Listas: 6 artigos
+AGENDADOS (0)
+
+Nenhum artigo agendado no momento. Próximo do calendário: 07/07 (a definir) e 08/07 "As 7 Melhores Airfryers de 2026" (fecha o cluster Airfryer).
+
+=====================================
+CATEGORIAS (26 publicados):
+- Rankings e Listas: 8 artigos
 - Comparativo: 5 artigos
-- Review: 7 artigos
+- Review: 9 artigos
 - Guia de Compra: 4 artigos
