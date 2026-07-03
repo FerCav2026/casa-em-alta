@@ -82,8 +82,8 @@ PUBLICADOS (26)
 25. Os 7 Melhores Microondas de 2026
     Slug: melhores-microondas-2026 | Categoria: Rankings e Listas | Publicado: 01/07/2026 (aplicacao aditiva) | links retroativos em #19, #20, #22
 
-26. Philips Walita Airfryer Série 1000 XL: Vale a Pena? Review Honesto
-    Slug: airfryer-philips-walita-serie-1000-xl-review | Categoria: Review | Publicado: 03/07/2026 (aplicacao aditiva sobre a main, commit 57aada4)
+26. Airfryer Philips Walita 1000 XL: Vale a Pena?
+    Slug: airfryer-philips-walita-serie-1000-xl-review | Categoria: Review | Publicado: 03/07/2026 (aplicacao aditiva, commit 57aada4) | titulo SEO encurtado, artigo expandido p/ ~1700 palavras, capa trocada (commits 3cb442f/f1625bd/0a477e2)
 
 =====================================
 AGENDADOS (0)
