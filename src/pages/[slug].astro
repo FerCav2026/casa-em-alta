@@ -186,6 +186,13 @@ const posts: Record<string, { titulo: string; descricao: string; categoria: stri
     dataCriacao: '2026-07-03',
     dataModificacao: '2026-07-03',
   },
+  'airfryer-philips-walita-hd9252-review': {
+    titulo: 'Airfryer Philips Walita HD9252: Vale a Pena?',
+    descricao: 'Analisamos a fritadeira digital Philips Walita HD9252 (RI9252): ficha técnica, predefinições por toque, prós, contras e para quem realmente vale a pena.',
+    categoria: 'Review',
+    dataCriacao: '2026-07-06',
+    dataModificacao: '2026-07-06',
+  },
 };
 
 export function getStaticPaths() {
@@ -216,6 +223,7 @@ export function getStaticPaths() {
     'melhores-liquidificadores-2026': {},
     'melhores-microondas-2026': {},
     'airfryer-philips-walita-serie-1000-xl-review': {},
+    'airfryer-philips-walita-hd9252-review': {},
   }).map((slug) => ({ params: { slug } }));
 }
 
@@ -274,6 +282,7 @@ const isComoEscolherAirfryer = slug === 'como-escolher-airfryer';
 const isMelhoresLiquidificadores = slug === 'melhores-liquidificadores-2026';
 const isMelhoresMicroondas = slug === 'melhores-microondas-2026';
 const isAirfryerSerie1000XL = slug === 'airfryer-philips-walita-serie-1000-xl-review';
+const isAirfryerHD9252 = slug === 'airfryer-philips-walita-hd9252-review';
 
 const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isAirfryer ? '/images/airfryer/capa-airfryer.webp'
@@ -301,6 +310,7 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isMelhoresLiquidificadores ? '/images/melhores-liquidificadores/capa-melhores-liquidificadores.webp'
   : isMelhoresMicroondas ? '/images/melhores-microondas/capa-melhores-microondas.webp'
   : isAirfryerSerie1000XL ? '/images/airfryer-serie-1000-xl/capa-airfryer-serie-1000-xl.webp'
+  : isAirfryerHD9252 ? '/images/airfryer-hd9252/capa-airfryer-hd9252.webp'
   : undefined;
 ---
 
@@ -1555,12 +1565,20 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
         <!-- Leia também -->
         <div style="margin:32px 0;font-family:sans-serif;">
           <p style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#1e5c2e;margin:0 0 12px;">Leia também:</p>
-          <a href="/forno-eletrico-portatil-vale-a-pena" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+          <a href="/forno-eletrico-portatil-vale-a-pena" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;margin-bottom:12px;">
             <div style="width:200px;min-width:200px;overflow:hidden;">
               <img src="/images/forno-eletrico/capa-forno-eletrico.webp" alt="Forno elétrico portátil vale a pena?" style="width:100%;height:100%;object-fit:cover;display:block;" />
             </div>
             <div style="padding:20px 22px;display:flex;align-items:center;">
               <p style="margin:0;font-size:15px;font-weight:500;line-height:1.5;color:#1a1a1a;">Forno Elétrico Portátil Vale a Pena Ter em Casa?</p>
+            </div>
+          </a>
+          <a href="/airfryer-philips-walita-hd9252-review" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;min-width:200px;overflow:hidden;">
+              <img src="/images/airfryer-hd9252/capa-airfryer-hd9252.webp" alt="Airfryer Philips Walita HD9252 vale a pena?" style="width:100%;height:100%;object-fit:cover;display:block;" />
+            </div>
+            <div style="padding:20px 22px;display:flex;align-items:center;">
+              <p style="margin:0;font-size:15px;font-weight:500;line-height:1.5;color:#1a1a1a;">Airfryer Philips Walita HD9252: Vale a Pena?</p>
             </div>
           </a>
         </div>
@@ -10860,6 +10878,17 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
           </div>
         </a>
 
+        <!-- Leia Também 3 -->
+        <a href="/airfryer-philips-walita-hd9252-review" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;margin-bottom:40px;">
+          <div style="width:200px;flex-shrink:0;">
+            <img src="/images/airfryer-hd9252/capa-airfryer-hd9252.webp" alt="Airfryer Philips Walita HD9252" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" />
+          </div>
+          <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+            <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+            <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Airfryer Philips Walita HD9252: Vale a Pena?</span>
+          </div>
+        </a>
+
         <!-- 5 Erros comuns -->
         <h2 id="erros-comuns" class="text-2xl font-bold text-slate-900 mb-6">Os 5 erros mais comuns na hora de comprar airfryer</h2>
 
@@ -12540,6 +12569,307 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
     </div>
   </div>
 )}
+
+{isAirfryerHD9252 && (
+  <div>
+    <!-- Capa -->
+    <div class="mb-8">
+      <img
+        src="/images/airfryer-hd9252/capa-airfryer-hd9252.webp"
+        alt="Airfryer Philips Walita HD9252 review"
+        class="w-full rounded-2xl shadow-md"
+        loading="eager"
+        width="1280"
+        height="853"
+      />
+    </div>
+
+    <!-- Box resumo -->
+    <div class="bg-orange-50 border-l-4 border-orange-500 rounded-xl p-6 mb-8">
+      <p class="text-orange-800 font-bold text-lg mb-2">Resumo rápido</p>
+      <p class="text-orange-700 text-base">
+        A Philips Walita HD9252 (vendida no Brasil como RI9252) é a versão digital de entrada da linha Essential, com 4,1 litros, 1400W e painel touch com 7 predefinições prontas. É uma airfryer compacta e fácil de usar, ideal para quem mora sozinho ou em casal e quer só apertar um botão sem pensar em temperatura e tempo. O ponto de atenção é a capacidade útil menor (2,6 litros de fato), que atende bem 1 a 2 pessoas por preparo.
+      </p>
+    </div>
+
+    <!-- Foto do produto -->
+    <div class="flex flex-col md:flex-row gap-8 mb-10 items-start">
+      <div class="md:w-56 flex-shrink-0 flex items-center justify-center bg-white border border-slate-200 rounded-2xl p-6">
+        <img
+          src="/images/airfryer-hd9252/philips-walita-ri9252.webp"
+          alt="Philips Walita RI9252 preta com painel digital"
+          class="max-h-52 object-contain"
+          loading="lazy"
+          width="400"
+          height="400"
+        />
+      </div>
+      <div class="flex-1">
+        <h2 class="text-xl font-bold text-slate-800 mb-4">Ficha Técnica</h2>
+        <ul class="text-sm text-slate-600 space-y-2 mb-6">
+          <li><strong>Modelo:</strong> RI9252/91 (nacional) / HD9252 (internacional)</li>
+          <li><strong>Capacidade:</strong> 4,1 litros (capacidade útil de 2,6 litros)</li>
+          <li><strong>Potência:</strong> 1400W</li>
+          <li><strong>Temperatura:</strong> 80 a 200°C</li>
+          <li><strong>Timer:</strong> até 60 minutos, com desligamento automático</li>
+          <li><strong>Predefinições:</strong> 7 (petiscos congelados, batata frita fresca, carne, peixe, coxas de frango, bolo, vegetais)</li>
+          <li><strong>Controle:</strong> Digital, painel touch</li>
+          <li><strong>Tensão:</strong> 127V e 220V (verificar a versão antes de comprar)</li>
+          <li><strong>Cesto:</strong> Removível, antiaderente, compatível com lava-louças</li>
+          <li><strong>Peso:</strong> 4,63 kg</li>
+          <li><strong>Tecnologia:</strong> RapidAir + função Keep Warm (mantém aquecido por até 30 min)</li>
+          <li><strong>Extra:</strong> Acesso ao app NutriU com receitas prontas para os programas</li>
+        </ul>
+        <a
+          href="https://link.amazon/B0bTL5gQT"
+          target="_blank"
+          rel="nofollow noopener"
+          class="block w-full bg-orange-500 hover:bg-orange-600 text-white font-bold text-center py-3 px-6 rounded-xl transition-colors"
+        >
+          Ver preço na Amazon
+        </a>
+      </div>
+    </div>
+
+    <!-- O que essa airfryer entrega -->
+    <h2 class="text-2xl font-bold text-slate-800 mb-4">O que a HD9252 promete e o que ela realmente entrega</h2>
+    <p class="text-slate-600 mb-4">
+      A proposta da HD9252 é simplicidade para quem não quer pensar em temperatura e tempo toda vez que for cozinhar. No painel touch aparecem sete ícones: petiscos congelados, batata frita fresca, carne, peixe, coxas de frango, bolo e vegetais. Basta tocar no ícone certo que a fritadeira já ajusta temperatura e tempo sozinha, algo que a Série 1000 XL (que já reviamos aqui no blog) não tem, já que ali o controle é todo manual nos botões giratórios.
+    </p>
+    <p class="text-slate-600 mb-4">
+      Essa automação é o principal diferencial da linha digital. Quem já testou modelos parecidos da Philips Walita relata que os presets funcionam bem para o uso mais comum, como batata congelada e coxa de frango, mas que vale ajustar manualmente quando o alimento é mais grosso ou está em quantidade maior que o normal, porque os programas foram calibrados para porções médias.
+    </p>
+    <p class="text-slate-600 mb-4">
+      A tecnologia por trás é a mesma RapidAir usada em toda a linha Philips: o ar quente circula em espiral dentro do cesto para dourar por fora e manter a suculência por dentro, sem precisar de óleo (ou usando bem pouco, com um borrifo em spray). O que muda de um modelo para outro é o tamanho do cesto e a forma de controlar o preparo, não a tecnologia de cocção em si.
+    </p>
+    <p class="text-slate-600 mb-8">
+      Um recurso que chama atenção é o Keep Warm: depois que o ciclo termina, a fritadeira mantém a comida aquecida por até 30 minutos. É útil em dias corridos, quando a comida fica pronta antes de todo mundo sentar à mesa, e evita ter que reaquecer o prato depois.
+    </p>
+
+    <!-- Capacidade: o ponto de atenção -->
+    <h2 class="text-2xl font-bold text-slate-800 mb-4">Capacidade: o ponto que merece atenção antes de comprar</h2>
+    <p class="text-slate-600 mb-4">
+      Os 4,1 litros no papel parecem generosos, mas a Philips é clara ao informar que a capacidade útil real gira em torno de 2,6 litros, o equivalente a até 800g de alimento, considerando o espaço necessário para o ar circular sem empilhar. Na prática, isso rende bem para 1 ou 2 pessoas por preparo. Para porções maiores, como um frango inteiro ou jantar para 4 pessoas de uma vez, o ideal é olhar para modelos de 5 litros ou mais, como a própria Série 1000 XL da Philips, que tem 6,2 litros.
+    </p>
+    <p class="text-slate-600 mb-8">
+      Isso não é um defeito exclusivo da HD9252: é uma característica comum em modelos digitais compactos dessa faixa de preço, pensados para agilidade no dia a dia de quem cozinha porções menores, como lanches, acompanhamentos e proteínas em pedaços, e não para o jantar de uma família grande de uma vez só.
+    </p>
+
+    <!-- Prós e contras -->
+    <div class="grid md:grid-cols-2 gap-6 mb-10">
+      <div class="bg-green-50 border border-green-200 rounded-2xl p-5">
+        <p class="text-green-700 font-bold text-base mb-3">Pontos fortes</p>
+        <ul class="text-sm text-slate-700 space-y-2">
+          <li class="flex gap-2"><span class="text-green-500 font-bold flex-shrink-0">+</span> Painel digital com 7 predefinições: fácil para quem não curte ajustar tempo e temperatura</li>
+          <li class="flex gap-2"><span class="text-green-500 font-bold flex-shrink-0">+</span> Cesto removível e compatível com lava-louças</li>
+          <li class="flex gap-2"><span class="text-green-500 font-bold flex-shrink-0">+</span> Função Keep Warm mantém a comida quente após o preparo</li>
+          <li class="flex gap-2"><span class="text-green-500 font-bold flex-shrink-0">+</span> Disponível em 127V e 220V</li>
+          <li class="flex gap-2"><span class="text-green-500 font-bold flex-shrink-0">+</span> Tamanho compacto: ocupa pouco espaço na bancada</li>
+          <li class="flex gap-2"><span class="text-green-500 font-bold flex-shrink-0">+</span> App NutriU com receitas prontas para os programas</li>
+        </ul>
+      </div>
+      <div class="bg-red-50 border border-red-200 rounded-2xl p-5">
+        <p class="text-red-600 font-bold text-base mb-3">Pontos fracos</p>
+        <ul class="text-sm text-slate-700 space-y-2">
+          <li class="flex gap-2"><span class="text-red-400 font-bold flex-shrink-0">-</span> Capacidade útil real de só 2,6 litros (até 800g): pequena para famílias</li>
+          <li class="flex gap-2"><span class="text-red-400 font-bold flex-shrink-0">-</span> Predefinições calibradas para porções médias, exigem ajuste manual às vezes</li>
+          <li class="flex gap-2"><span class="text-red-400 font-bold flex-shrink-0">-</span> Sem informação de garantia estendida divulgada pela marca</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Para quem vale -->
+    <div class="bg-blue-50 border border-blue-200 rounded-xl p-5 mb-10">
+      <p class="text-blue-800 font-bold text-base mb-2">Para quem vale a pena</p>
+      <p class="text-blue-700 text-sm mb-3">
+        A HD9252 faz mais sentido para quem mora sozinho, em casal, ou para quem quer uma segunda airfryer menor para lanches e acompanhamentos rápidos. O painel digital com predefinições ajuda bastante quem está começando a usar airfryer agora e não quer decorar tempo e temperatura de cada alimento.
+      </p>
+      <p class="text-blue-700 text-sm">
+        Para família de 4 pessoas ou mais, ou para quem cozinha porções grandes com frequência, vale considerar um modelo com capacidade maior, como a própria Série 1000 XL da Philips (6,2 litros), que já testamos aqui e que tem controle manual mas rende muito mais por preparo.
+      </p>
+    </div>
+
+    <!-- Comparativo -->
+    <h2 class="text-2xl font-bold text-slate-800 mb-4">HD9252 (digital, 4,1L) vs Série 1000 XL (analógica, 6,2L)</h2>
+    <p class="text-slate-600 mb-4">
+      As duas são da Philips Walita, mas atendem perfis diferentes. A tabela abaixo resume as principais diferenças entre os dois modelos:
+    </p>
+    <div class="overflow-x-auto mb-8 rounded-xl border border-slate-200">
+      <table class="w-full text-sm">
+        <thead>
+          <tr class="bg-slate-800 text-white">
+            <th class="text-left px-4 py-3 font-bold">Especificação</th>
+            <th class="text-center px-4 py-3 font-bold">HD9252 (Série 3000)</th>
+            <th class="text-center px-4 py-3 font-bold">Série 1000 XL</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-t border-slate-100 bg-orange-50">
+            <td class="px-4 py-3 font-semibold text-slate-800">Capacidade</td>
+            <td class="text-center px-4 py-3 text-slate-700">4,1 litros (útil 2,6L)</td>
+            <td class="text-center px-4 py-3 text-slate-700">6,2 litros</td>
+          </tr>
+          <tr class="border-t border-slate-100">
+            <td class="px-4 py-3 font-semibold text-slate-800">Potência</td>
+            <td class="text-center px-4 py-3 text-slate-700">1400W</td>
+            <td class="text-center px-4 py-3 text-slate-700">1700W</td>
+          </tr>
+          <tr class="border-t border-slate-100 bg-orange-50">
+            <td class="px-4 py-3 font-semibold text-slate-800">Controle</td>
+            <td class="text-center px-4 py-3 text-slate-700">Digital, painel touch, 7 predefinições</td>
+            <td class="text-center px-4 py-3 text-slate-700">Analógico, botões giratórios</td>
+          </tr>
+          <tr class="border-t border-slate-100">
+            <td class="px-4 py-3 font-semibold text-slate-800">Tensão</td>
+            <td class="text-center px-4 py-3 text-slate-700">127V e 220V</td>
+            <td class="text-center px-4 py-3 text-slate-700">Apenas 110V</td>
+          </tr>
+          <tr class="border-t border-slate-100">
+            <td class="px-4 py-3 font-semibold text-slate-800">Ideal para</td>
+            <td class="text-center px-4 py-3 text-slate-700">1 a 2 pessoas</td>
+            <td class="text-center px-4 py-3 text-slate-700">3 a 6 pessoas</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="text-slate-600 mb-8">
+      Na prática, quem mora sozinho ou em casal tende a preferir a HD9252 pelo tamanho compacto e pela praticidade dos programas automáticos. Já quem cozinha para a família toda de uma vez sente falta da capacidade e do timer mais longo, e aí a Série 1000 XL compensa melhor, mesmo sem o painel digital.
+    </p>
+
+    <!-- FAQ -->
+    <h2 class="text-2xl font-bold text-slate-800 mb-6">Perguntas frequentes</h2>
+    <div class="space-y-3 mb-10">
+      <details class="group border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+          <span>A HD9252 é a mesma coisa que a RI9252?</span>
+          <svg class="w-5 h-5 text-slate-400 transition-transform group-open:rotate-180 flex-shrink-0 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-5 pb-4 pt-2 text-slate-600 text-sm bg-white">
+          Sim. HD9252 é o código internacional da Philips e RI9252 é o código usado pela Philips Walita no Brasil para o mesmo produto, da linha Essential/Série 3000. As especificações são as mesmas.
+        </div>
+      </details>
+      <details class="group border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+          <span>4,1 litros é suficiente para quantas pessoas?</span>
+          <svg class="w-5 h-5 text-slate-400 transition-transform group-open:rotate-180 flex-shrink-0 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-5 pb-4 pt-2 text-slate-600 text-sm bg-white">
+          Como a capacidade útil real é de 2,6 litros, ela atende bem 1 a 2 pessoas por preparo. Para 3 pessoas ou mais de uma vez só, o ideal é fazer em duas levas ou optar por um modelo maior, como a Série 1000 XL de 6,2 litros.
+        </div>
+      </details>
+      <details class="group border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+          <span>Precisa do app NutriU para usar a HD9252?</span>
+          <svg class="w-5 h-5 text-slate-400 transition-transform group-open:rotate-180 flex-shrink-0 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-5 pb-4 pt-2 text-slate-600 text-sm bg-white">
+          Não. As 7 predefinições do painel touch funcionam sozinhas, sem precisar de celular ou internet. O app NutriU é um recurso extra, com receitas prontas pensadas para os programas automáticos, mas totalmente opcional.
+        </div>
+      </details>
+      <details class="group border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+          <span>O cesto vai na lava-louças?</span>
+          <svg class="w-5 h-5 text-slate-400 transition-transform group-open:rotate-180 flex-shrink-0 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-5 pb-4 pt-2 text-slate-600 text-sm bg-white">
+          Sim, o cesto e a grade interna são removíveis e podem ir direto na lava-louças. O corpo externo, onde fica o painel touch, deve ser limpo só com um pano úmido.
+        </div>
+      </details>
+      <details class="group border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+          <span>Qual a diferença entre os 127V e 220V?</span>
+          <svg class="w-5 h-5 text-slate-400 transition-transform group-open:rotate-180 flex-shrink-0 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-5 pb-4 pt-2 text-slate-600 text-sm bg-white">
+          São versões diferentes do mesmo modelo, cada uma feita para a voltagem da tomada de casa. Antes de comprar, é essencial conferir qual voltagem é usada no imóvel para escolher a versão certa e evitar danificar o aparelho.
+        </div>
+      </details>
+      <details class="group border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+          <span>Vale a pena comprar a HD9252 em 2026?</span>
+          <svg class="w-5 h-5 text-slate-400 transition-transform group-open:rotate-180 flex-shrink-0 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-5 pb-4 pt-2 text-slate-600 text-sm bg-white">
+          Sim, principalmente para quem mora sozinho, em casal, ou quer uma segunda airfryer compacta para o dia a dia. O painel digital com predefinições é um diferencial real para quem não quer se preocupar com tempo e temperatura. Para famílias maiores, um modelo com capacidade acima de 5 litros costuma valer mais a pena.
+        </div>
+      </details>
+    </div>
+
+    <!-- Schema FAQ JSON-LD -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "A HD9252 é a mesma coisa que a RI9252?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim. HD9252 é o código internacional da Philips e RI9252 é o código usado no Brasil pela Philips Walita para o mesmo produto, da linha Essential/Série 3000."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "4,1 litros é suficiente para quantas pessoas?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Como a capacidade útil real é de 2,6 litros, atende bem 1 a 2 pessoas por preparo. Para mais pessoas, vale fazer em duas levas ou optar por um modelo maior."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Precisa do app NutriU para usar a HD9252?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Não. As 7 predefinições do painel touch funcionam sozinhas, sem celular ou internet. O app NutriU é um recurso extra e opcional, com receitas prontas para os programas automáticos."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O cesto vai na lava-louças?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim, o cesto e a grade interna são removíveis e vão direto na lava-louças. O corpo externo deve ser limpo só com pano úmido."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qual a diferença entre os 127V e 220V?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "São versões diferentes do mesmo modelo, cada uma para uma voltagem. É essencial conferir a voltagem da tomada de casa antes de comprar."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Vale a pena comprar a HD9252 em 2026?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim, principalmente para quem mora sozinho, em casal ou quer uma segunda airfryer compacta. Para famílias maiores, um modelo acima de 5 litros costuma valer mais a pena."
+          }
+        }
+      ]
+    })} />
+
+    <!-- Leia Também -->
+    <h2 class="text-xl font-bold text-slate-800 mb-4">Leia também</h2>
+    <div class="grid md:grid-cols-2 gap-4 mb-10">
+      <a href="/airfryer-philips-walita-serie-1000-xl-review" class="block border border-slate-200 rounded-xl overflow-hidden hover:shadow-md transition-shadow">
+        <img src="/images/airfryer-serie-1000-xl/capa-airfryer-serie-1000-xl.webp" alt="Airfryer Philips Walita 1000 XL" class="w-full h-32 object-cover" loading="lazy" />
+        <div class="p-3">
+          <p class="text-sm font-semibold text-slate-800 leading-tight">Airfryer Philips Walita 1000 XL: Vale a Pena?</p>
+        </div>
+      </a>
+      <a href="/como-escolher-airfryer" class="block border border-slate-200 rounded-xl overflow-hidden hover:shadow-md transition-shadow">
+        <img src="/images/airfryer-guia/capa-como-escolher-airfryer.webp" alt="Como escolher airfryer" class="w-full h-32 object-cover" loading="lazy" />
+        <div class="p-3">
+          <p class="text-sm font-semibold text-slate-800 leading-tight">Como Escolher Airfryer: Guia Completo para Não Errar na Compra</p>
+        </div>
+      </a>
+    </div>
+  </div>
+)}
+
 
     <!-- Aviso de afiliados -->
     <p class="text-xs text-slate-500 italic mt-10 border border-slate-100 rounded-xl px-4 py-3 bg-slate-50 max-w-2xl mx-auto">

@@ -313,6 +313,16 @@ export const posts: Post[] = [
     categoria: 'reviews',
     categoriaLabel: 'Review',
     categoriaColor: 'bg-orange-100 text-orange-700',
+  },
+  {
+    slug: 'airfryer-philips-walita-hd9252-review',
+    titulo: 'Airfryer Philips Walita HD9252: Vale a Pena?',
+    resumo: 'Analisamos a fritadeira digital Philips Walita HD9252 (RI9252): ficha técnica, predefinições por toque, prós, contras e para quem realmente vale a pena.',
+    tempo: '7 min de leitura',
+    imagem: '/images/airfryer-hd9252/capa-airfryer-hd9252.webp',
+    categoria: 'reviews',
+    categoriaLabel: 'Review',
+    categoriaColor: 'bg-orange-100 text-orange-700',
   }
 ];
 
