@@ -1,11 +1,11 @@
 ARTIGOS PUBLICADOS - CASA EM ALTA
-Última atualização: 2026-07-03
-Total: 26 publicados | 0 agendados
+Última atualização: 2026-07-06
+Total: 27 publicados | 0 agendados
 Blog: https://casaemalta.com.br
 Arquivo de dados: src/data/posts.ts
 =====================================
 
-PUBLICADOS (26)
+PUBLICADOS (27)
 
 1.  Os 7 Melhores Aspiradores de Pó 2026: Com Fio, Sem Fio e Robôs
     Slug: melhores-aspiradores-po-2026 | Categoria: Rankings e Listas
@@ -84,6 +84,9 @@ PUBLICADOS (26)
 
 26. Airfryer Philips Walita 1000 XL: Vale a Pena?
     Slug: airfryer-philips-walita-serie-1000-xl-review | Categoria: Review | Publicado: 03/07/2026 (aplicacao aditiva, commit 57aada4) | titulo SEO encurtado, artigo expandido p/ ~1700 palavras, capa trocada (commits 3cb442f/f1625bd/0a477e2)
+
+27. Airfryer Philips Walita HD9252: Vale a Pena?
+    Slug: airfryer-philips-walita-hd9252-review | Categoria: Review | Publicado: 06/07/2026 (commit ba963c6) | artigo escrito do zero, comparativo com a Serie 1000 XL, links retroativos em #2 e #23. Falta so o ranking "As 7 Melhores Airfryers de 2026" (08/07) para fechar o cluster Airfryer.
 
 =====================================
 AGENDADOS (0)
