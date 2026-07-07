@@ -1,11 +1,11 @@
 ARTIGOS PUBLICADOS - CASA EM ALTA
-Última atualização: 2026-07-06
-Total: 27 publicados | 0 agendados
+Última atualização: 2026-07-07
+Total: 28 publicados | 0 agendados
 Blog: https://casaemalta.com.br
 Arquivo de dados: src/data/posts.ts
 =====================================
 
-PUBLICADOS (27)
+PUBLICADOS (28)
 
 1.  Os 7 Melhores Aspiradores de Pó 2026: Com Fio, Sem Fio e Robôs
     Slug: melhores-aspiradores-po-2026 | Categoria: Rankings e Listas
@@ -86,16 +86,19 @@ PUBLICADOS (27)
     Slug: airfryer-philips-walita-serie-1000-xl-review | Categoria: Review | Publicado: 03/07/2026 (aplicacao aditiva, commit 57aada4) | titulo SEO encurtado, artigo expandido p/ ~1700 palavras, capa trocada (commits 3cb442f/f1625bd/0a477e2)
 
 27. Airfryer Philips Walita HD9252: Vale a Pena?
-    Slug: airfryer-philips-walita-hd9252-review | Categoria: Review | Publicado: 06/07/2026 (commit ba963c6) | artigo escrito do zero, comparativo com a Serie 1000 XL, links retroativos em #2 e #23. Falta so o ranking "As 7 Melhores Airfryers de 2026" (08/07) para fechar o cluster Airfryer.
+    Slug: airfryer-philips-walita-hd9252-review | Categoria: Review | Publicado: 06/07/2026 (commit ba963c6) | artigo escrito do zero, comparativo com a Serie 1000 XL, links retroativos em #2 e #23.
+
+28. Os 7 Melhores Airfryers de 2026: do Compacto ao Familiar
+    Slug: melhores-airfryers-2026 | Categoria: Rankings e Listas | Publicado: 07/07/2026 (aplicacao aditiva, commits 3d597d3/4180142) | fecha o cluster Airfryer; produtos #6 e #7 (Cadence e Britania) atualizados para os modelos reais dos links de afiliado (FRT555 em vez de FRT550, Britania Redstone BFR50 em vez de BAF40A); links retroativos em #2 e #23.
 
 =====================================
 AGENDADOS (0)
 
-Nenhum artigo agendado no momento. Próximo do calendário: 07/07 (a definir) e 08/07 "As 7 Melhores Airfryers de 2026" (fecha o cluster Airfryer).
+Nenhum artigo agendado no momento. Próximo do calendário: 10/07 "Os 17 Mais Vendidos da Shopee para Casa" (pilar Shopee).
 
 =====================================
-CATEGORIAS (26 publicados):
-- Rankings e Listas: 8 artigos
+CATEGORIAS (28 publicados):
+- Rankings e Listas: 9 artigos
 - Comparativo: 5 artigos
 - Review: 9 artigos
-- Guia de Compra: 4 artigos
+- Guia de Compra: 5 artigos
