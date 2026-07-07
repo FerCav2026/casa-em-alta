@@ -323,6 +323,16 @@ export const posts: Post[] = [
     categoria: 'reviews',
     categoriaLabel: 'Review',
     categoriaColor: 'bg-orange-100 text-orange-700',
+  },
+  {
+    slug: 'melhores-airfryers-2026',
+    titulo: 'Os 7 Melhores Airfryers de 2026',
+    resumo: 'Comparamos sete airfryers vendidas no Brasil, do compacto de 3,8 litros ao modelo tipo forno de 16 litros, para você escolher sem errar.',
+    tempo: '10 min de leitura',
+    imagem: '/images/melhores-airfryers/capa-melhores-airfryers.webp',
+    categoria: 'rankings-e-listas',
+    categoriaLabel: 'Rankings e Listas',
+    categoriaColor: 'bg-green-100 text-green-700',
   }
 ];
 

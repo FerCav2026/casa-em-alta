@@ -193,6 +193,13 @@ const posts: Record<string, { titulo: string; descricao: string; categoria: stri
     dataCriacao: '2026-07-06',
     dataModificacao: '2026-07-06',
   },
+  'melhores-airfryers-2026': {
+    titulo: 'Os 7 Melhores Airfryers de 2026',
+    descricao: 'Comparamos sete airfryers vendidas no Brasil, do compacto de 3,2 litros ao modelo tipo forno de 16 litros, para você escolher sem errar.',
+    categoria: 'Rankings e Listas',
+    dataCriacao: '2026-07-08',
+    dataModificacao: '2026-07-08',
+  },
 };
 
 export function getStaticPaths() {
@@ -224,6 +231,7 @@ export function getStaticPaths() {
     'melhores-microondas-2026': {},
     'airfryer-philips-walita-serie-1000-xl-review': {},
     'airfryer-philips-walita-hd9252-review': {},
+    'melhores-airfryers-2026': {},
   }).map((slug) => ({ params: { slug } }));
 }
 
@@ -283,6 +291,7 @@ const isMelhoresLiquidificadores = slug === 'melhores-liquidificadores-2026';
 const isMelhoresMicroondas = slug === 'melhores-microondas-2026';
 const isAirfryerSerie1000XL = slug === 'airfryer-philips-walita-serie-1000-xl-review';
 const isAirfryerHD9252 = slug === 'airfryer-philips-walita-hd9252-review';
+const isMelhoresAirfryers = slug === 'melhores-airfryers-2026';
 
 const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isAirfryer ? '/images/airfryer/capa-airfryer.webp'
@@ -311,6 +320,7 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isMelhoresMicroondas ? '/images/melhores-microondas/capa-melhores-microondas.webp'
   : isAirfryerSerie1000XL ? '/images/airfryer-serie-1000-xl/capa-airfryer-serie-1000-xl.webp'
   : isAirfryerHD9252 ? '/images/airfryer-hd9252/capa-airfryer-hd9252.webp'
+  : isMelhoresAirfryers ? '/images/melhores-airfryers/capa-melhores-airfryers.webp'
   : undefined;
 ---
 
@@ -12869,6 +12879,565 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
     </div>
   </div>
 )}
+
+{isMelhoresAirfryers && (
+  <div>
+    <!-- Capa -->
+    <div class="mb-8">
+      <img
+        src="/images/melhores-airfryers/capa-melhores-airfryers.webp"
+        alt="Os 7 Melhores Airfryers de 2026"
+        class="w-full rounded-2xl shadow-md"
+        loading="eager"
+        width="1280"
+        height="853"
+      />
+    </div>
+
+    <!-- Resumo rapido -->
+    <div class="bg-orange-50 border-l-4 border-orange-500 rounded-xl p-6 mb-8">
+      <p class="text-orange-800 font-bold text-lg mb-2">Resumo rápido</p>
+      <p class="text-orange-700 text-base">
+        Reunimos e comparamos sete airfryers vendidas no Brasil em 2026, do compacto de 3,8 litros ao modelo tipo forno de 16 litros. A mais completa da lista é a <strong>Philips Walita Série 3000 XL (NA341)</strong>, com painel digital e visor. Para quem quer economizar sem abrir mão da qualidade, a <strong>Mondial Grand Family</strong> é o melhor custo-benefício. Já testamos duas Philips Walita aqui no blog (a Série 1000 XL e a HD9252) e elas seguem entre as recomendadas.
+      </p>
+    </div>
+
+    <!-- Dica azul -->
+    <div class="bg-blue-50 border border-blue-200 rounded-xl p-5 mb-10">
+      <p class="text-blue-800 font-bold text-sm mb-1">Antes de decidir</p>
+      <p class="text-blue-700 text-sm">
+        Capacidade total e capacidade útil não são a mesma coisa: o fabricante sempre informa um número maior no total, mas o espaço realmente aproveitável para os alimentos circularem é menor. Leia também o nosso <a href="/como-escolher-airfryer" class="text-blue-700 underline font-medium">guia completo de como escolher airfryer</a> para entender potência, controle digital vs analógico e o que mais importa antes de comprar.
+      </p>
+    </div>
+
+    <!-- Produto 1: Philips Walita NA341 -->
+    <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+      <div class="bg-orange-500 px-6 py-4">
+        <p class="text-white font-black text-xl">1º lugar - Philips Walita Série 3000 XL (NA341)</p>
+        <p class="text-orange-100 text-sm mt-1">A mais completa da lista: painel digital, visor iluminado e 12 predefinições</p>
+      </div>
+      <div class="p-6 flex flex-col md:flex-row gap-8">
+        <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 min-h-32">
+          <img
+            src="/images/melhores-airfryers/philips-na341.webp"
+            alt="Philips Walita Série 3000 XL NA341 preta"
+            class="max-h-36 object-contain"
+            loading="lazy"
+            width="300"
+            height="300"
+          />
+        </div>
+        <div class="flex-1">
+          <a
+            href="https://link.amazon/B0bS9BPmV"
+            target="_blank"
+            rel="nofollow noopener"
+            class="block w-full bg-orange-500 hover:bg-orange-600 text-white font-bold text-center py-3 px-6 rounded-xl mb-6 transition-colors"
+          >
+            Conferir preço na Amazon
+          </a>
+          <h3 class="font-bold text-slate-800 mb-3">Ficha técnica</h3>
+          <ul class="text-sm text-slate-600 space-y-1 mb-6">
+            <li><strong>Capacidade:</strong> 7,2 litros (útil 4,7 litros)</li>
+            <li><strong>Potência:</strong> 2000W (220V) / 1800W (110V)</li>
+            <li><strong>Controle:</strong> Digital touch com visor iluminado</li>
+            <li><strong>Predefinições:</strong> 12 + 1 personalizável</li>
+            <li><strong>Temperatura:</strong> 80 a 200°C</li>
+            <li><strong>Timer:</strong> até 60 minutos</li>
+            <li><strong>Garantia:</strong> 24 meses</li>
+          </ul>
+          <div class="grid md:grid-cols-2 gap-4">
+            <div>
+              <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
+              <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
+                <li>Visor iluminado mostra a comida sem abrir a gaveta</li>
+                <li>Capacidade útil generosa para o tamanho</li>
+                <li>Garantia de 24 meses, o dobro da média</li>
+                <li>12 predefinições cobrem quase tudo do dia a dia</li>
+              </ul>
+            </div>
+            <div>
+              <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
+              <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
+                <li>É a mais cara da lista</li>
+                <li>Corpo maior, exige mais espaço na bancada</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Produto 2: Mondial Grand Family AFN-50 -->
+    <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+      <div class="bg-slate-800 px-6 py-4">
+        <p class="text-white font-black text-xl">2º lugar - Mondial Grand Family (AFN-50-RI)</p>
+        <p class="text-slate-300 text-sm mt-1">Melhor custo-benefício: capacidade de família por um preço bem mais baixo</p>
+      </div>
+      <div class="p-6 flex flex-col md:flex-row gap-8">
+        <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 min-h-32">
+          <img
+            src="/images/melhores-airfryers/mondial-afn50.webp"
+            alt="Mondial Grand Family AFN-50 vermelha"
+            class="max-h-36 object-contain"
+            loading="lazy"
+            width="300"
+            height="300"
+          />
+        </div>
+        <div class="flex-1">
+          <a
+            href="https://link.amazon/B02EakjGt"
+            target="_blank"
+            rel="nofollow noopener"
+            class="block w-full bg-orange-500 hover:bg-orange-600 text-white font-bold text-center py-3 px-6 rounded-xl mb-6 transition-colors"
+          >
+            Conferir preço na Amazon
+          </a>
+          <h3 class="font-bold text-slate-800 mb-3">Ficha técnica</h3>
+          <ul class="text-sm text-slate-600 space-y-1 mb-6">
+            <li><strong>Capacidade:</strong> 5 litros</li>
+            <li><strong>Potência:</strong> 1900W</li>
+            <li><strong>Tensão:</strong> 127V ou 220V</li>
+            <li><strong>Controle:</strong> Analógico (botões giratórios)</li>
+            <li><strong>Temperatura:</strong> até 200°C</li>
+            <li><strong>Timer:</strong> até 60 minutos</li>
+            <li><strong>Garantia:</strong> 1 ano</li>
+          </ul>
+          <div class="grid md:grid-cols-2 gap-4">
+            <div>
+              <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
+              <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
+                <li>5 litros por um preço bem abaixo das digitais</li>
+                <li>Disponível em 127V e 220V</li>
+                <li>Cesto com revestimento Duraflon, vai na lava-louças</li>
+              </ul>
+            </div>
+            <div>
+              <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
+              <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
+                <li>Sem predefinições automáticas</li>
+                <li>Garantia de só 1 ano</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Produto 3: Philips Walita Serie 1000 XL (ja revisada) -->
+    <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+      <div class="bg-slate-800 px-6 py-4">
+        <p class="text-white font-black text-xl">3º lugar - Philips Walita Série 1000 XL</p>
+        <p class="text-slate-300 text-sm mt-1">Testamos aqui no blog: silenciosa e ideal para famílias de 3 a 6 pessoas</p>
+      </div>
+      <div class="p-6 flex flex-col md:flex-row gap-8">
+        <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 min-h-32">
+          <img
+            src="/images/airfryer-serie-1000-xl/philips-walita-na130.webp"
+            alt="Philips Walita Airfryer Série 1000 XL preta"
+            class="max-h-36 object-contain"
+            loading="lazy"
+            width="300"
+            height="300"
+          />
+        </div>
+        <div class="flex-1">
+          <a
+            href="https://link.amazon/B05TlaNGn"
+            target="_blank"
+            rel="nofollow noopener"
+            class="block w-full bg-orange-500 hover:bg-orange-600 text-white font-bold text-center py-3 px-6 rounded-xl mb-6 transition-colors"
+          >
+            Conferir preço na Amazon
+          </a>
+          <h3 class="font-bold text-slate-800 mb-3">Ficha técnica</h3>
+          <ul class="text-sm text-slate-600 space-y-1 mb-6">
+            <li><strong>Capacidade:</strong> 6,2 litros</li>
+            <li><strong>Potência:</strong> 1700W</li>
+            <li><strong>Tensão:</strong> 110V</li>
+            <li><strong>Controle:</strong> Analógico (botões giratórios)</li>
+            <li><strong>Timer:</strong> até 60 minutos</li>
+            <li><strong>Garantia:</strong> 2 anos</li>
+          </ul>
+          <div class="grid md:grid-cols-2 gap-4">
+            <div>
+              <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
+              <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
+                <li>Uma das mais silenciosas que já usamos</li>
+                <li>Cesto vai na lava-louças</li>
+                <li>2 anos de garantia, o dobro da categoria</li>
+              </ul>
+            </div>
+            <div>
+              <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
+              <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
+                <li>Sem predefinições automáticas</li>
+                <li>Só 110V</li>
+              </ul>
+            </div>
+          </div>
+          <p class="text-sm text-slate-500 mt-4">
+            Leia a <a href="/airfryer-philips-walita-serie-1000-xl-review" class="text-orange-600 underline font-medium">review completa da Série 1000 XL</a> que fizemos aqui no blog.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Produto 4: Philips Walita HD9252 (ja revisada) -->
+    <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+      <div class="bg-slate-800 px-6 py-4">
+        <p class="text-white font-black text-xl">4º lugar - Philips Walita HD9252 (RI9252)</p>
+        <p class="text-slate-300 text-sm mt-1">Testamos aqui no blog: a melhor compacta digital para quem mora sozinho ou em casal</p>
+      </div>
+      <div class="p-6 flex flex-col md:flex-row gap-8">
+        <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 min-h-32">
+          <img
+            src="/images/airfryer-hd9252/philips-walita-ri9252.webp"
+            alt="Philips Walita RI9252 preta com painel digital"
+            class="max-h-36 object-contain"
+            loading="lazy"
+            width="300"
+            height="300"
+          />
+        </div>
+        <div class="flex-1">
+          <a
+            href="https://link.amazon/B0bTL5gQT"
+            target="_blank"
+            rel="nofollow noopener"
+            class="block w-full bg-orange-500 hover:bg-orange-600 text-white font-bold text-center py-3 px-6 rounded-xl mb-6 transition-colors"
+          >
+            Conferir preço na Amazon
+          </a>
+          <h3 class="font-bold text-slate-800 mb-3">Ficha técnica</h3>
+          <ul class="text-sm text-slate-600 space-y-1 mb-6">
+            <li><strong>Capacidade:</strong> 4,1 litros (útil 2,6 litros)</li>
+            <li><strong>Potência:</strong> 1400W</li>
+            <li><strong>Controle:</strong> Digital, 7 predefinições por toque</li>
+            <li><strong>Tensão:</strong> 127V e 220V</li>
+            <li><strong>Timer:</strong> até 60 minutos</li>
+          </ul>
+          <div class="grid md:grid-cols-2 gap-4">
+            <div>
+              <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
+              <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
+                <li>Painel digital fácil para quem está começando</li>
+                <li>Compacta, ocupa pouco espaço</li>
+                <li>Função Keep Warm mantém a comida quente</li>
+              </ul>
+            </div>
+            <div>
+              <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
+              <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
+                <li>Capacidade útil pequena (2,6L) para famílias</li>
+              </ul>
+            </div>
+          </div>
+          <p class="text-sm text-slate-500 mt-4">
+            Leia a <a href="/airfryer-philips-walita-hd9252-review" class="text-orange-600 underline font-medium">review completa da HD9252</a> que fizemos aqui no blog.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Produto 5: Britania Oven BAF16A -->
+    <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+      <div class="bg-slate-800 px-6 py-4">
+        <p class="text-white font-black text-xl">5º lugar - Britânia Oven (BAF16A)</p>
+        <p class="text-slate-300 text-sm mt-1">A maior da lista: 16 litros e função forno para quem cozinha para muita gente</p>
+      </div>
+      <div class="p-6 flex flex-col md:flex-row gap-8">
+        <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 min-h-32">
+          <img
+            src="/images/melhores-airfryers/britania-baf16a.webp"
+            alt="Britânia Oven BAF16A 16 litros"
+            class="max-h-36 object-contain"
+            loading="lazy"
+            width="300"
+            height="300"
+          />
+        </div>
+        <div class="flex-1">
+          <a
+            href="https://link.amazon/B0hzeouKt"
+            target="_blank"
+            rel="nofollow noopener"
+            class="block w-full bg-orange-500 hover:bg-orange-600 text-white font-bold text-center py-3 px-6 rounded-xl mb-6 transition-colors"
+          >
+            Conferir preço na Amazon
+          </a>
+          <h3 class="font-bold text-slate-800 mb-3">Ficha técnica</h3>
+          <ul class="text-sm text-slate-600 space-y-1 mb-6">
+            <li><strong>Capacidade:</strong> 16 litros (cesto de 5,5 litros)</li>
+            <li><strong>Potência:</strong> 1900W (110V) / 2000W (220V)</li>
+            <li><strong>Controle:</strong> Digital, 10 funções pré-programadas</li>
+            <li><strong>Funções:</strong> 4 em 1 — assa, frita, desidrata e reaquece</li>
+            <li><strong>Temperatura:</strong> 80 a 200°C</li>
+            <li><strong>Timer:</strong> até 90 minutos</li>
+            <li><strong>Acessórios:</strong> 2 grelhas, bandeja coletora de gordura</li>
+            <li><strong>Garantia:</strong> 1 ano</li>
+          </ul>
+          <div class="grid md:grid-cols-2 gap-4">
+            <div>
+              <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
+              <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
+                <li>Substitui o forno elétrico em boa parte dos usos</li>
+                <li>Timer mais longo (90 min) para assados maiores</li>
+                <li>Porta removível facilita a limpeza</li>
+              </ul>
+            </div>
+            <div>
+              <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
+              <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
+                <li>Ocupa bastante espaço na bancada</li>
+                <li>Mais pesada (6,4 kg) e menos prática para guardar</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Produto 6: Cadence Super Light Fryer Colors -->
+    <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+      <div class="bg-slate-800 px-6 py-4">
+        <p class="text-white font-black text-xl">6º lugar - Cadence Super Light Fryer (FRT555)</p>
+        <p class="text-slate-300 text-sm mt-1">A mais compacta e leve: ideal para quem mora sozinho e tem pouco espaço</p>
+      </div>
+      <div class="p-6 flex flex-col md:flex-row gap-8">
+        <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 min-h-32">
+          <img
+            src="/images/melhores-airfryers/cadence-frt555.webp"
+            alt="Cadence Super Light Fryer FRT555 preta"
+            class="max-h-36 object-contain"
+            loading="lazy"
+            width="300"
+            height="300"
+          />
+        </div>
+        <div class="flex-1">
+          <a
+            href="https://link.amazon/B06j9uBEd"
+            target="_blank"
+            rel="nofollow noopener"
+            class="block w-full bg-orange-500 hover:bg-orange-600 text-white font-bold text-center py-3 px-6 rounded-xl mb-6 transition-colors"
+          >
+            Conferir preço na Amazon
+          </a>
+          <h3 class="font-bold text-slate-800 mb-3">Ficha técnica</h3>
+          <ul class="text-sm text-slate-600 space-y-1 mb-6">
+            <li><strong>Capacidade:</strong> 3,8 litros</li>
+            <li><strong>Potência:</strong> 1500W</li>
+            <li><strong>Tensão:</strong> 220V</li>
+            <li><strong>Controle:</strong> 3 níveis de temperatura (90°C a 200°C)</li>
+            <li><strong>Timer:</strong> até 30 minutos, com alarme sonoro</li>
+            <li><strong>Peso:</strong> 4 kg</li>
+            <li><strong>Garantia:</strong> 12 meses</li>
+          </ul>
+          <div class="grid md:grid-cols-2 gap-4">
+            <div>
+              <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
+              <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
+                <li>Mais leve e compacta da lista (4 kg)</li>
+                <li>Preço acessível</li>
+                <li>Fácil de guardar em cozinha pequena</li>
+                <li>Grelha removível e acabamento em inox nos detalhes</li>
+              </ul>
+            </div>
+            <div>
+              <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
+              <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
+                <li>Timer limitado a 30 minutos por ciclo</li>
+                <li>Capacidade de só 3,8 litros: melhor para 1 ou 2 pessoas</li>
+                <li>Só 220V — confira a voltagem da sua casa antes de comprar</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Produto 7: Britânia Redstone BFR50 -->
+    <div class="border border-slate-200 rounded-2xl overflow-hidden mb-10 shadow-sm">
+      <div class="bg-slate-800 px-6 py-4">
+        <p class="text-white font-black text-xl">7º lugar - Britânia Redstone (BFR50)</p>
+        <p class="text-slate-300 text-sm mt-1">A opção mais em conta da lista, com boa capacidade para o preço</p>
+      </div>
+      <div class="p-6 flex flex-col md:flex-row gap-8">
+        <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 min-h-32">
+          <img
+            src="/images/melhores-airfryers/britania-bfr50.webp"
+            alt="Britânia Redstone BFR50 preta"
+            class="max-h-36 object-contain"
+            loading="lazy"
+            width="300"
+            height="300"
+          />
+        </div>
+        <div class="flex-1">
+          <a
+            href="https://link.amazon/B01x0dB5t"
+            target="_blank"
+            rel="nofollow noopener"
+            class="block w-full bg-orange-500 hover:bg-orange-600 text-white font-bold text-center py-3 px-6 rounded-xl mb-6 transition-colors"
+          >
+            Conferir preço na Amazon
+          </a>
+          <h3 class="font-bold text-slate-800 mb-3">Ficha técnica</h3>
+          <ul class="text-sm text-slate-600 space-y-1 mb-6">
+            <li><strong>Capacidade:</strong> 5,5 litros</li>
+            <li><strong>Potência:</strong> 1500W</li>
+            <li><strong>Tensão:</strong> 127V</li>
+            <li><strong>Controle:</strong> Manual (temperatura e tempo)</li>
+            <li><strong>Temperatura:</strong> 80 a 200°C</li>
+            <li><strong>Timer:</strong> mecânico, até 60 minutos</li>
+            <li><strong>Garantia:</strong> 12 meses</li>
+          </ul>
+          <div class="grid md:grid-cols-2 gap-4">
+            <div>
+              <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
+              <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
+                <li>A mais barata da lista</li>
+                <li>Boa capacidade para o preço (5,5 litros)</li>
+                <li>Revestimento antiaderente Redstone facilita a limpeza</li>
+              </ul>
+            </div>
+            <div>
+              <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
+              <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
+                <li>Sem predefinições automáticas</li>
+                <li>Design mais simples, sem visor digital</li>
+                <li>Só 127V</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="text-xs text-slate-400 italic mb-6">Preços consultados em julho de 2026 e sujeitos a alteração sem aviso prévio.</p>
+
+    <!-- FAQ -->
+    <h2 class="text-2xl font-bold text-slate-800 mb-6">Perguntas frequentes</h2>
+    <div class="space-y-3 mb-10">
+      <details class="group border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+          <span>Qual a melhor airfryer custo-benefício de 2026?</span>
+          <svg class="w-5 h-5 text-slate-400 transition-transform group-open:rotate-180 flex-shrink-0 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-5 pb-4 pt-2 text-slate-600 text-sm bg-white">
+          A Mondial Grand Family (AFN-50) é a que melhor equilibra preço e capacidade: 5 litros por um valor bem abaixo das digitais. Para quem prioriza praticidade e não se importa em pagar mais, a Philips Walita HD9252 também compensa pelo painel digital.
+        </div>
+      </details>
+      <details class="group border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+          <span>Airfryer digital é melhor que analógica?</span>
+          <svg class="w-5 h-5 text-slate-400 transition-transform group-open:rotate-180 flex-shrink-0 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-5 pb-4 pt-2 text-slate-600 text-sm bg-white">
+          Não necessariamente melhor, apenas mais prática para quem não quer decorar tempo e temperatura de cada alimento. O resultado da fritura por ar depende muito mais da tecnologia de circulação e do tamanho do cesto do que do tipo de controle. As analógicas desta lista, como a Mondial Grand Family e a Philips 1000 XL, entregam resultado tão bom quanto as digitais.
+        </div>
+      </details>
+      <details class="group border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+          <span>Quantos litros de airfryer eu preciso?</span>
+          <svg class="w-5 h-5 text-slate-400 transition-transform group-open:rotate-180 flex-shrink-0 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-5 pb-4 pt-2 text-slate-600 text-sm bg-white">
+          Para 1 pessoa, de 2 a 3,2 litros já resolve. Para casal, entre 4 e 5 litros. Para famílias de 3 a 6 pessoas, o ideal é 5,5 litros ou mais. Se você cozinha para muita gente com frequência ou quer substituir parte do uso do forno, os modelos tipo forno de 12 a 16 litros compensam.
+        </div>
+      </details>
+      <details class="group border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+          <span>Vale a pena pagar mais caro numa airfryer premium?</span>
+          <svg class="w-5 h-5 text-slate-400 transition-transform group-open:rotate-180 flex-shrink-0 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-5 pb-4 pt-2 text-slate-600 text-sm bg-white">
+          Vale se você usa a airfryer todos os dias e valoriza detalhes como visor iluminado, mais predefinições e garantia estendida, como na Philips Walita Série 3000 XL. Para uso ocasional, um modelo intermediário como a Mondial Grand Family entrega praticamente o mesmo resultado de cocção por um preço bem menor.
+        </div>
+      </details>
+      <details class="group border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 bg-white hover:bg-orange-50 transition-colors list-none">
+          <span>Airfryer tipo forno substitui o forno elétrico de verdade?</span>
+          <svg class="w-5 h-5 text-slate-400 transition-transform group-open:rotate-180 flex-shrink-0 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-5 pb-4 pt-2 text-slate-600 text-sm bg-white">
+          Para boa parte do uso do dia a dia, sim: assados, gratinados e receitas com grelha ficam bem resolvidos em modelos como a Britânia Oven de 16 litros. Para bolos que precisam de forma redonda grande ou pizzas grandes, um forno elétrico tradicional ainda tem vantagem de espaço.
+        </div>
+      </details>
+    </div>
+
+    <!-- Schema FAQ JSON-LD -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Qual a melhor airfryer custo-benefício de 2026?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Mondial Grand Family (AFN-50) equilibra melhor preço e capacidade: 5 litros por um valor bem abaixo das digitais. A Philips Walita HD9252 também compensa pelo painel digital."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Airfryer digital é melhor que analógica?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Não necessariamente melhor, apenas mais prática. O resultado da fritura por ar depende mais da tecnologia de circulação e do tamanho do cesto do que do tipo de controle."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quantos litros de airfryer eu preciso?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Para 1 pessoa, 2 a 3,2 litros. Para casal, 4 a 5 litros. Para famílias de 3 a 6 pessoas, 5,5 litros ou mais. Para substituir parte do forno, modelos de 12 a 16 litros."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Vale a pena pagar mais caro numa airfryer premium?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Vale para uso diário e quem valoriza visor iluminado, mais predefinições e garantia estendida. Para uso ocasional, um modelo intermediário entrega resultado de cocção parecido por menos."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Airfryer tipo forno substitui o forno elétrico de verdade?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Para boa parte do uso do dia a dia, sim, principalmente assados e gratinados. Para bolos grandes ou pizzas grandes, um forno elétrico tradicional ainda tem vantagem de espaço."
+          }
+        }
+      ]
+    })} />
+
+    <!-- Leia Também -->
+    <a href="/como-escolher-airfryer" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;margin-bottom:16px;">
+      <div style="width:200px;flex-shrink:0;">
+        <img src="/images/airfryer-guia/capa-como-escolher-airfryer.webp" alt="Como escolher airfryer" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" />
+      </div>
+      <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+        <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+        <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Como Escolher Airfryer: Guia Completo para Não Errar na Compra</span>
+      </div>
+    </a>
+    <a href="/airfryer-philips-walita-hd9252-review" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+      <div style="width:200px;flex-shrink:0;">
+        <img src="/images/airfryer-hd9252/capa-airfryer-hd9252.webp" alt="Airfryer Philips Walita HD9252" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" />
+      </div>
+      <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+        <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+        <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Airfryer Philips Walita HD9252: Vale a Pena?</span>
+      </div>
+    </a>
+  </div>
+)}
+
 
 
     <!-- Aviso de afiliados -->
