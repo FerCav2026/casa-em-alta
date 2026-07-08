@@ -1,0 +1,332 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import AuthorBio from '../components/AuthorBio.astro';
+import CalculadoraEnergia from '../components/CalculadoraEnergia.astro';
+import {
+  aparelhos,
+  custoMensal,
+  consumoMensal,
+  TARIFA_MEDIA,
+  ATUALIZADO_EM,
+  ATUALIZADO_EM_ISO,
+} from '../data/energia';
+
+const titulo = 'Quanto Gasta de Energia Cada Eletrodoméstico? Calcule Aqui';
+const description =
+  'Descubra quanto cada aparelho da sua casa pesa na conta de luz. Calculadora gratuita com a fórmula da ANEEL e a potência real dos modelos que já testamos.';
+const imagem = '/images/consumo-energia/capa-consumo-energia.webp';
+const dataPublicacao = '2026-07-13';
+
+const brl = (n: number) =>
+  n.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', minimumFractionDigits: 2 });
+const num = (n: number, casas = 1) =>
+  n.toLocaleString('pt-BR', { minimumFractionDigits: casas, maximumFractionDigits: casas });
+
+// Tabela calculada no build a partir de energia.ts. Nunca sai de sincronia com a calculadora.
+const linhas = aparelhos
+  .map((a) => ({
+    ...a,
+    kwh: consumoMensal(a.watts, a.horas, a.dias),
+    mes: custoMensal(a.watts, a.horas, a.dias, TARIFA_MEDIA),
+  }))
+  .sort((a, b) => b.mes - a.mes);
+
+// Comparação airfryer vs forno elétrico, também derivada dos dados
+const forno = linhas.find((l) => l.nome === 'Forno elétrico')!;
+const air = linhas.find((l) => l.nome === 'Airfryer')!;
+const economiaAno = (forno.mes - air.mes) * 12;
+
+const faq = [
+  {
+    p: 'Como calcular o consumo de energia de um aparelho?',
+    r: `A fórmula da ANEEL é: potência em quilowatts multiplicada pelas horas de uso, pelos dias de uso no mês e pela tarifa do kWh. Um aparelho de 1.700 W usado 40 minutos por dia, todos os dias, com tarifa de ${brl(TARIFA_MEDIA)}, consome cerca de ${num(air.kwh)} kWh e custa aproximadamente ${brl(air.mes)} por mês.`,
+  },
+  {
+    p: 'Onde encontro o valor do kWh da minha conta de luz?',
+    r: 'Está na sua fatura, geralmente no quadro de detalhamento do consumo, como "tarifa" ou "valor unitário". Esse número já vem com a bandeira tarifária e o ICMS do seu estado embutidos, por isso ele é mais preciso do que qualquer média nacional.',
+  },
+  {
+    p: 'Airfryer gasta muita energia?',
+    r: `Não. Uma airfryer de 1.700 W usada 40 minutos por dia custa cerca de ${brl(air.mes)} por mês. Um forno elétrico de 1.500 W no mesmo tempo custa em torno de ${brl(forno.mes)}. Nenhum dos dois se aproxima do chuveiro elétrico, que sozinho pode passar de ${brl(linhas[0].mes)} por mês.`,
+  },
+  {
+    p: 'Os watts escritos no micro-ondas são o consumo real?',
+    r: 'Não. O número que aparece no rótulo do micro-ondas (700 W, por exemplo) é a potência de aquecimento entregue ao alimento, não o que o aparelho puxa da tomada. Um micro-ondas de 700 W costuma consumir cerca de 1.200 W da rede. Para os outros eletrodomésticos, o valor do rótulo é o consumo mesmo.',
+  },
+  {
+    p: 'Vale a pena trocar de aparelho para economizar energia?',
+    r: 'Quase nunca, se o seu funciona bem. A diferença de consumo entre dois modelos da mesma categoria costuma ser de poucos reais por mês, o que leva anos para pagar um aparelho novo. Faz sentido considerar o consumo quando você já decidiu comprar, como critério de desempate.',
+  },
+];
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'BlogPosting',
+      headline: titulo,
+      description,
+      image: new URL(imagem, Astro.site).href,
+      datePublished: dataPublicacao + 'T00:00:00-03:00',
+      dateModified: ATUALIZADO_EM_ISO + 'T00:00:00-03:00',
+      author: { '@type': 'Person', name: 'Claudia Castro', url: new URL('/sobre', Astro.site).href },
+      publisher: { '@type': 'Organization', name: 'Casa em Alta', url: Astro.site?.href },
+      mainEntityOfPage: new URL('/quanto-gasta-de-energia-eletrodomesticos', Astro.site).href,
+    },
+    {
+      '@type': 'WebApplication',
+      name: 'Calculadora de Consumo de Energia',
+      url: new URL('/quanto-gasta-de-energia-eletrodomesticos', Astro.site).href,
+      applicationCategory: 'UtilitiesApplication',
+      operatingSystem: 'Navegador web',
+      offers: { '@type': 'Offer', price: '0', priceCurrency: 'BRL' },
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: faq.map((f) => ({
+        '@type': 'Question',
+        name: f.p,
+        acceptedAnswer: { '@type': 'Answer', text: f.r },
+      })),
+    },
+  ],
+};
+---
+
+<BaseLayout title={titulo} description={description} image={imagem} type="article" schema={schema}>
+  <article class="max-w-3xl mx-auto px-4 py-12">
+    <p class="text-sm font-semibold text-purple-700 bg-purple-100 inline-block px-3 py-1 rounded-full">
+      Guia de Compra
+    </p>
+
+    <h1 class="text-3xl md:text-4xl font-black text-slate-900 mt-4 leading-tight">
+      Quanto gasta de energia cada eletrodoméstico?
+    </h1>
+
+    <p class="text-slate-500 text-sm mt-3">
+      Por Claudia Castro. Atualizado em {ATUALIZADO_EM}.
+    </p>
+
+    <img
+      src={imagem}
+      alt="Airfryer, micro-ondas e chaleira elétrica ligados na tomada em uma bancada de cozinha"
+      class="w-full rounded-2xl mt-6"
+      width="1280"
+      height="853"
+      loading="eager"
+    />
+
+    <p class="text-lg text-slate-700 leading-relaxed mt-8">
+      A conta de luz subiu e você não sabe quem é o culpado. Desconfia da airfryer, do micro-ondas,
+      daquele ar-condicionado que ficou ligado a noite inteira. A boa notícia é que dá para descobrir
+      em trinta segundos, e a resposta quase sempre é diferente do que a gente imagina.
+    </p>
+
+    <p class="text-slate-700 leading-relaxed mt-4">
+      Use a calculadora abaixo. Ela funciona com a fórmula oficial da ANEEL e já vem com a potência
+      real dos modelos que analisamos aqui no blog.
+    </p>
+
+    <CalculadoraEnergia titulo="Calculadora de consumo de energia" />
+
+    <h2 class="text-2xl font-black text-slate-900 mt-12 mb-4">Como essa conta é feita</h2>
+
+    <p class="text-slate-700 leading-relaxed">
+      A fórmula é uma multiplicação só, e é a mesma que a ANEEL usa:
+    </p>
+
+    <div class="bg-slate-900 text-white rounded-2xl p-6 my-5 text-center">
+      <p class="font-mono text-sm md:text-base">
+        (potência em watts ÷ 1.000) × horas por dia × dias no mês × tarifa
+      </p>
+    </div>
+
+    <p class="text-slate-700 leading-relaxed">
+      Dividir por mil transforma watts em quilowatts, que é a unidade da conta de luz. Multiplicar
+      pelas horas dá o quilowatt-hora, o famoso kWh. E aí é só multiplicar pelo preço do kWh na sua
+      região.
+    </p>
+
+    <p class="text-slate-700 leading-relaxed mt-4">
+      Um exemplo com uma airfryer de 1.700 W, usada 40 minutos por dia, todos os dias:
+      1,7 × 0,67 × 30 = {num(air.kwh)} kWh por mês. Com a tarifa de {brl(TARIFA_MEDIA)}, dá
+      {' '}<strong>{brl(air.mes)} por mês</strong>.
+    </p>
+
+    <div class="bg-orange-50 border-l-4 border-orange-400 rounded-r-xl p-5 my-6">
+      <p class="text-slate-700 leading-relaxed text-sm">
+        <strong>O detalhe que muda tudo:</strong> não use a média nacional se você tem a conta de luz
+        na mão. A tarifa impressa na sua fatura já traz a bandeira tarifária do mês e o ICMS do seu
+        estado embutidos. É o número certo, e ele muda de cidade para cidade.
+      </p>
+    </div>
+
+    <h2 class="text-2xl font-black text-slate-900 mt-12 mb-4">
+      Quanto cada aparelho da casa custa por mês
+    </h2>
+
+    <p class="text-slate-700 leading-relaxed mb-5">
+      Valores estimados com tarifa de {brl(TARIFA_MEDIA)} por kWh e um padrão de uso comum de uma
+      família brasileira. Ordenado do que mais pesa para o que menos pesa.
+    </p>
+
+    <div class="overflow-x-auto rounded-2xl border border-slate-200">
+      <table class="w-full text-sm">
+        <thead class="bg-slate-50">
+          <tr class="text-left text-slate-500 text-xs uppercase tracking-wide">
+            <th class="px-4 py-3 font-semibold">Aparelho</th>
+            <th class="px-4 py-3 font-semibold text-right">Potência</th>
+            <th class="px-4 py-3 font-semibold text-right whitespace-nowrap">Uso considerado</th>
+            <th class="px-4 py-3 font-semibold text-right">kWh/mês</th>
+            <th class="px-4 py-3 font-semibold text-right">Custo/mês</th>
+          </tr>
+        </thead>
+        <tbody>
+          {linhas.map((l) => (
+            <tr class="border-t border-slate-100">
+              <td class="px-4 py-3 text-slate-800 font-medium">{l.nome}</td>
+              <td class="px-4 py-3 text-right text-slate-500 whitespace-nowrap">{l.watts} W</td>
+              <td class="px-4 py-3 text-right text-slate-500 whitespace-nowrap">
+                {num(l.horas, 2).replace(',00', '')}h × {l.dias}d
+              </td>
+              <td class="px-4 py-3 text-right text-slate-600 whitespace-nowrap">{num(l.kwh)}</td>
+              <td class="px-4 py-3 text-right font-bold text-slate-900 whitespace-nowrap">
+                {brl(l.mes)}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <div class="mt-5 space-y-3">
+      {linhas
+        .filter((l) => l.observacao)
+        .map((l) => (
+          <p class="text-xs text-slate-500 leading-relaxed">
+            <strong class="text-slate-600">{l.nome}:</strong> {l.observacao}
+          </p>
+        ))}
+    </div>
+
+    <h2 class="text-2xl font-black text-slate-900 mt-12 mb-4">
+      Os verdadeiros vilões da sua conta de luz
+    </h2>
+
+    <p class="text-slate-700 leading-relaxed">
+      Olhe a tabela de novo. O <strong>chuveiro elétrico</strong> aparece na frente com folga, e ele
+      fica ligado meia hora por dia. É esse o padrão do consumo doméstico brasileiro: os aparelhos que
+      esquentam água ou ar são os que pesam, porque transformar eletricidade em calor exige muita
+      potência.
+    </p>
+
+    <p class="text-slate-700 leading-relaxed mt-4">
+      Depois dele vêm o <strong>ar-condicionado</strong> e a <strong>secadora de roupas</strong>. Os
+      eletrodomésticos de cozinha que a gente costuma culpar, como airfryer e micro-ondas, ficam bem
+      atrás. Eles têm potência alta, mas ficam ligados poucos minutos por dia, e é o tempo de uso que
+      faz a conta crescer.
+    </p>
+
+    <p class="text-slate-700 leading-relaxed mt-4">
+      A geladeira é o caso mais curioso. Ela fica ligada 24 horas, mas o compressor só trabalha parte
+      do tempo, então o consumo real é modesto para um aparelho que nunca desliga.
+    </p>
+
+    <h2 class="text-2xl font-black text-slate-900 mt-12 mb-4">
+      Airfryer ou forno elétrico: qual gasta menos?
+    </h2>
+
+    <p class="text-slate-700 leading-relaxed">
+      Essa é a comparação mais pedida, e a resposta é a airfryer, mas por menos do que se imagina.
+      No mesmo tempo de uso, o forno elétrico custa {brl(forno.mes)} por mês contra
+      {' '}{brl(air.mes)} da airfryer. A economia é de <strong>{brl(economiaAno)} por ano</strong>.
+    </p>
+
+    <p class="text-slate-700 leading-relaxed mt-4">
+      Só que a comparação justa não é essa. Na prática a airfryer cozinha a mesma porção em menos
+      tempo e sem preaquecimento longo, então o uso real dela é mais curto. É aí que a diferença
+      aparece de verdade, não na potência.
+    </p>
+
+    <p class="text-slate-700 leading-relaxed mt-4">
+      Nenhum dos dois substitui o outro por completo. Se quiser entender onde cada um ganha, vale ler
+      o <a href="/forno-eletrico-portatil-vale-a-pena" class="text-orange-500 font-semibold hover:underline">review
+      do forno elétrico portátil</a> e o <a href="/melhores-airfryers-2026" class="text-orange-500 font-semibold hover:underline">ranking
+      das melhores airfryers</a>.
+    </p>
+
+    <h2 class="text-2xl font-black text-slate-900 mt-12 mb-4">Como economizar de verdade</h2>
+
+    <p class="text-slate-700 leading-relaxed mb-4">
+      Vou ser honesta com você: trocar um aparelho que funciona por um mais econômico raramente se
+      paga. A diferença entre dois modelos da mesma categoria costuma ser de poucos reais por mês. O
+      que muda a conta é outra coisa.
+    </p>
+
+    <ul class="space-y-3 text-slate-700">
+      <li class="flex gap-3">
+        <span class="text-orange-500 font-black">1.</span>
+        <span>
+          <strong>Chuveiro no verão.</strong> Passar a chave para "verão" reduz a potência quase pela
+          metade. É a única mudança que sozinha aparece na fatura.
+        </span>
+      </li>
+      <li class="flex gap-3">
+        <span class="text-orange-500 font-black">2.</span>
+        <span>
+          <strong>Não preaqueça a airfryer sem necessidade.</strong> Para a maioria das receitas ela
+          não precisa, e são três a cinco minutos de potência máxima economizados por uso.
+        </span>
+      </li>
+      <li class="flex gap-3">
+        <span class="text-orange-500 font-black">3.</span>
+        <span>
+          <strong>Aproveite a inércia do forno.</strong> Se for assar duas coisas, asse em sequência,
+          sem esperar esfriar.
+        </span>
+      </li>
+      <li class="flex gap-3">
+        <span class="text-orange-500 font-black">4.</span>
+        <span>
+          <strong>Geladeira longe do fogão e do sol.</strong> Quanto mais quente o ambiente, mais o
+          compressor trabalha.
+        </span>
+      </li>
+      <li class="flex gap-3">
+        <span class="text-orange-500 font-black">5.</span>
+        <span>
+          <strong>Ferro de passar de uma vez só.</strong> O gasto está em aquecer. Passar tudo numa
+          sessão gasta bem menos que quatro sessões curtas.
+        </span>
+      </li>
+    </ul>
+
+    <h2 class="text-2xl font-black text-slate-900 mt-12 mb-4">Perguntas frequentes</h2>
+
+    <div class="space-y-3">
+      {faq.map((f) => (
+        <details class="group bg-slate-50 rounded-xl border border-slate-200 overflow-hidden">
+          <summary class="flex items-center justify-between gap-3 cursor-pointer px-5 py-4 font-semibold text-slate-800 list-none">
+            <span>{f.p}</span>
+            <svg
+              class="w-5 h-5 shrink-0 text-orange-500 transition-transform group-open:rotate-180"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+          <p class="px-5 pb-5 text-slate-600 leading-relaxed text-sm">{f.r}</p>
+        </details>
+      ))}
+    </div>
+
+    <p class="text-xs text-slate-500 italic mt-10 border border-slate-100 rounded-xl px-4 py-3 bg-slate-50">
+      Este artigo pode conter links de afiliados. Se você comprar por um desses links, posso receber
+      uma comissão sem custo adicional para você.
+    </p>
+
+    <AuthorBio />
+  </article>
+</BaseLayout>

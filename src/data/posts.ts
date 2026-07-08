@@ -333,6 +333,16 @@ export const posts: Post[] = [
     categoria: 'rankings-e-listas',
     categoriaLabel: 'Rankings e Listas',
     categoriaColor: 'bg-green-100 text-green-700',
+  },
+  {
+    slug: 'quanto-gasta-de-energia-eletrodomesticos',
+    titulo: 'Quanto Gasta de Energia Cada Eletrodoméstico? Calcule Aqui',
+    resumo: 'Calculadora gratuita com a fórmula da ANEEL e a potência real dos modelos que já testamos. Descubra qual aparelho pesa de verdade na sua conta de luz.',
+    tempo: '7 min de leitura',
+    imagem: '/images/consumo-energia/capa-consumo-energia.webp',
+    categoria: 'guias-de-compra',
+    categoriaLabel: 'Guia de Compra',
+    categoriaColor: 'bg-purple-100 text-purple-700',
   }
 ];
 

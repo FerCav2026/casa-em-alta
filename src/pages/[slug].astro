@@ -2,6 +2,22 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getPostBySlug } from '../data/posts';
 import AuthorBio from '../components/AuthorBio.astro';
+import CalculadoraEnergia from '../components/CalculadoraEnergia.astro';
+
+// Artigos que ganham a calculadora de energia no final, já travada na categoria certa.
+// Ver /quanto-gasta-de-energia-eletrodomesticos e src/data/energia.ts
+const CALCULADORA_POR_SLUG: Record<string, string> = {
+  'melhores-airfryers-2026': 'airfryer',
+  'airfryer-philips-walita-serie-1000-xl-review': 'airfryer',
+  'airfryer-philips-walita-hd9252-review': 'airfryer',
+  'airfryer-philips-vs-mondial': 'airfryer',
+  'como-escolher-airfryer': 'airfryer',
+  'panela-pressao-eletrica-review': 'panela',
+  'chaleira-eletrica-com-controle-de-temperatura': 'chaleira',
+  'vaporizador-de-roupas-portatil': 'vaporizador',
+  'melhores-aspiradores-po-2026': 'aspirador',
+  'melhor-multiprocessador-de-alimentos': 'multiprocessador',
+};
 
 const posts: Record<string, { titulo: string; descricao: string; categoria: string; dataCriacao: string; dataModificacao: string }> = {
   'melhores-aspiradores-po-2026': {
@@ -953,7 +969,7 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
           <ul class="space-y-3 text-slate-700 text-sm leading-relaxed">
             <li><strong>Ferrugem na Philips:</strong> existem dezenas de reclamações no Reclame Aqui de usuários que encontraram ferrugem na resistência interna com menos de 1 ano de uso. Isso acontece quando o interior fica com umidade após a lavagem. A solução é sempre secar completamente antes de guardar, especialmente a resistência e as paredes internas.</li>
             <li><strong>Antiaderente descascando na Mondial:</strong> o revestimento Duraflon da Mondial tem histórico documentado de descascar a partir de 3 a 6 meses de uso intenso. Há relatos de pedaços caindo nos alimentos. A solução é curar a cesta antes do primeiro uso e nunca usar esponja de aço ou utensílios de metal.</li>
-            <li><strong>Consumo real na conta de luz:</strong> a Philips (1.700W) custa cerca de R$ 27 por mês usando 40 minutos por dia. A Mondial (1.900W) chega a R$ 30 por mês no mesmo ritmo. A diferença é pequena, mas a Mondial aquece um pouco mais por potência maior.</li>
+            <li><strong>Consumo real na conta de luz:</strong> a Philips (1.700W) custa cerca de R$ 27 por mês usando 40 minutos por dia, com a tarifa de R$ 0,80/kWh vigente em maio de 2026. A Mondial (1.900W) chega a R$ 30 por mês no mesmo ritmo. A diferença é pequena, mas a Mondial aquece um pouco mais por potência maior. <a href="/quanto-gasta-de-energia-eletrodomesticos" class="text-orange-500 font-semibold hover:underline">Calcule com a tarifa da sua conta de luz</a>.</li>
             <li><strong>Pré-aquecimento:</strong> a Philips dispensa pré-aquecimento para a maioria das receitas graças à tecnologia RapidAir. A Mondial se beneficia de 3 a 5 minutos de pré-aquecimento para resultados mais uniformes, especialmente com carnes.</li>
             <li><strong>Frango com pele:</strong> para frango com pele, a Philips distribui o calor de forma mais uniforme pelo design em estrela da RapidAir, deixando a pele crocante por igual. Na Mondial, parte da pele pode ficar menos dourada dependendo do posicionamento.</li>
           </ul>
@@ -1063,7 +1079,7 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
                   </tr>
                   <tr>
                     <td class="py-2 pr-4 text-slate-500 font-medium">Consumo estimado</td>
-                    <td class="py-2 text-slate-800 font-semibold">Aprox. R$ 27/mês (40 min/dia, tarifa R$ 0,80/kWh)</td>
+                    <td class="py-2 text-slate-800 font-semibold">Aprox. R$ 27/mês (40 min/dia, tarifa de R$ 0,80/kWh em maio de 2026)</td>
                   </tr>
                 </tbody>
               </table>
@@ -1186,7 +1202,7 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
                   </tr>
                   <tr>
                     <td class="py-2 pr-4 text-slate-500 font-medium">Consumo estimado</td>
-                    <td class="py-2 text-slate-800 font-semibold">Aprox. R$ 30/mês (40 min/dia, tarifa R$ 0,80/kWh)</td>
+                    <td class="py-2 text-slate-800 font-semibold">Aprox. R$ 30/mês (40 min/dia, tarifa de R$ 0,80/kWh em maio de 2026)</td>
                   </tr>
                 </tbody>
               </table>
@@ -1315,7 +1331,7 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
               </tbody>
             </table>
           </div>
-          <p class="text-xs text-slate-400 mt-2">Consumo estimado com base em 40 minutos de uso diário e tarifa de R$ 0,80/kWh (fórmula ANEEL). Preços conferidos em maio de 2026.</p>
+          <p class="text-xs text-slate-400 mt-2">Consumo estimado com base em 40 minutos de uso diário e na tarifa de R$ 0,80/kWh vigente em maio de 2026 (fórmula ANEEL). Preços conferidos em maio de 2026. Para o valor de hoje, use a <a href="/quanto-gasta-de-energia-eletrodomesticos" class="text-orange-500 hover:underline">calculadora de consumo</a> com a tarifa da sua conta.</p>
         </div>
 
         <!-- GUIA O QUE AVALIAR ANTES DE COMPRAR -->
@@ -1335,7 +1351,7 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
             <div class="border border-slate-200 rounded-xl p-5">
               <h3 class="font-black text-slate-800 text-base mb-2">Quanto vai custar na conta de luz?</h3>
               <p class="text-slate-600 text-sm leading-relaxed">
-                Usando a fórmula da ANEEL (potência em kW x horas de uso x dias x tarifa), com 40 minutos diários e tarifa de R$ 0,80/kWh: a Philips de 1.700W gasta cerca de R$ 27 por mês. A Mondial de 1.900W chega a R$ 30 por mês. Se sua tarifa estiver na média nacional de 2025 (próxima de R$ 0,98/kWh), os valores sobem para R$ 33 e R$ 37 respectivamente.
+                Usando a fórmula da ANEEL (potência em kW x horas de uso x dias x tarifa), com 40 minutos diários e a tarifa de R$ 0,80/kWh vigente em maio de 2026: a Philips de 1.700W gasta cerca de R$ 27 por mês. A Mondial de 1.900W chega a R$ 30 por mês. Com a média nacional mais recente, próxima de R$ 0,98/kWh, os valores sobem para R$ 33 e R$ 37 respectivamente. A tarifa muda por distribuidora e por bandeira, então o número que vale é o da sua conta.
               </p>
             </div>
 
@@ -1490,7 +1506,7 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
               </summary>
               <div class="px-5 py-4 bg-slate-50 text-sm text-slate-600 leading-relaxed border-t border-slate-100">
-                Usando a fórmula da ANEEL e 40 minutos de uso diário com tarifa de R$ 0,80/kWh: a Philips (1.700W) consome cerca de R$ 27 por mês e a Mondial (1.900W) chega a R$ 30. A diferença é de R$ 3 mensais, ou seja, R$ 36 por ano. Não é um fator decisivo na escolha, mas é bom saber. Com a tarifa média nacional de 2025 (R$ 0,98/kWh), os valores sobem para aproximadamente R$ 33 e R$ 37 respectivamente.
+                Usando a fórmula da ANEEL e 40 minutos de uso diário, com a tarifa de R$ 0,80/kWh vigente em maio de 2026: a Philips (1.700W) consome cerca de R$ 27 por mês e a Mondial (1.900W) chega a R$ 30. A diferença é de R$ 3 mensais, ou seja, R$ 36 por ano. Não é um fator decisivo na escolha, mas é bom saber. Com a média nacional mais recente (R$ 0,98/kWh), os valores sobem para aproximadamente R$ 33 e R$ 37 respectivamente.
               </div>
             </details>
 
@@ -1559,7 +1575,7 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
               "name": "Qual airfryer gasta mais energia, a Philips 1700W ou a Mondial 1900W?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Com 40 minutos de uso diário e tarifa de R$ 0,80/kWh, a Philips de 1.700W custa cerca de R$ 27 por mês e a Mondial de 1.900W chega a R$ 30. A diferença é de R$ 3 mensais, usando a fórmula de cálculo da ANEEL."
+                "text": "Com 40 minutos de uso diário e a tarifa de R$ 0,80/kWh vigente em maio de 2026, a Philips de 1.700W custa cerca de R$ 27 por mês e a Mondial de 1.900W chega a R$ 30. A diferença é de R$ 3 mensais, usando a fórmula de cálculo da ANEEL. Com a média nacional mais recente, de R$ 0,98/kWh, os valores sobem para cerca de R$ 33 e R$ 37."
               }
             },
             {
@@ -6805,7 +6821,7 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
           <div class="space-y-5">
             <div class="border border-slate-200 rounded-2xl p-5 bg-white">
               <h3 class="font-bold text-slate-800 mb-2">Quanto gasta por uso</h3>
-              <p class="text-slate-600 text-sm leading-relaxed">Um forno de 1750W ligado por 1 hora consome 1,75 kWh. Na tarifa residencial média de R$ 0,80/kWh, isso é aproximadamente R$ 1,40 por hora de uso. Uma pizza assando por 20 minutos custa menos de R$ 0,50. Um frango inteiro de 1 hora custa cerca de R$ 1,40.</p>
+              <p class="text-slate-600 text-sm leading-relaxed">Um forno de 1750W ligado por 1 hora consome 1,75 kWh. Na tarifa residencial média de R$ 0,80/kWh, vigente em maio de 2026, isso é aproximadamente R$ 1,40 por hora de uso. Uma pizza assando por 20 minutos custa menos de R$ 0,50. Um frango inteiro de 1 hora custa cerca de R$ 1,40. Para calcular com a tarifa atual da sua conta, use a <a href="/quanto-gasta-de-energia-eletrodomesticos" class="text-orange-500 font-semibold hover:underline">calculadora de consumo de energia</a>.</p>
             </div>
             <div class="border border-slate-200 rounded-2xl p-5 bg-white">
               <h3 class="font-bold text-slate-800 mb-2">Impacto mensal na conta de luz</h3>
@@ -13458,6 +13474,22 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
 )}
 
 
+
+    <!-- Calculadora de consumo de energia, travada na categoria do artigo -->
+    {CALCULADORA_POR_SLUG[slug as string] && (
+      <div class="max-w-2xl mx-auto">
+        <CalculadoraEnergia
+          categoria={CALCULADORA_POR_SLUG[slug as string]}
+          titulo="Quanto isso pesa na sua conta de luz?"
+        />
+        <p class="text-sm text-slate-600 -mt-6 mb-2">
+          Quer calcular o consumo de outros aparelhos da casa?{' '}
+          <a href="/quanto-gasta-de-energia-eletrodomesticos" class="text-orange-500 font-semibold hover:underline">
+            Veja a calculadora completa
+          </a>.
+        </p>
+      </div>
+    )}
 
     <!-- Aviso de afiliados -->
     <p class="text-xs text-slate-500 italic mt-10 border border-slate-100 rounded-xl px-4 py-3 bg-slate-50 max-w-2xl mx-auto">

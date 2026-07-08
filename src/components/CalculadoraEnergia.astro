@@ -1,0 +1,364 @@
+---
+import { categorias, produtos, TARIFA_MEDIA, ATUALIZADO_EM } from '../data/energia';
+
+interface Props {
+  /** Trava a calculadora numa categoria (usado no embed dentro dos artigos) */
+  categoria?: string;
+  /** Título exibido acima da ferramenta */
+  titulo?: string;
+}
+
+const { categoria: categoriaFixa, titulo = 'Calculadora de consumo de energia' } = Astro.props;
+
+// Id único: permite mais de uma instância na mesma página sem os scripts colidirem
+const uid = 'calc-' + Math.random().toString(36).slice(2, 8);
+
+const cats = categoriaFixa ? categorias.filter((c) => c.id === categoriaFixa) : categorias;
+const prods = categoriaFixa ? produtos.filter((p) => p.categoria === categoriaFixa) : produtos;
+const catInicial = cats[0];
+
+// Potência que abre no modo "já tenho": a mediana dos modelos da categoria.
+// Sem isso, um artigo de panela abriria sugerindo 1.700 W, que é valor de airfryer.
+function medianaWatts(lista: typeof produtos): number {
+  if (!lista.length) return 1700;
+  const w = lista.map((p) => p.watts).sort((a, b) => a - b);
+  const meio = Math.floor(w.length / 2);
+  return w.length % 2 ? w[meio] : Math.round((w[meio - 1] + w[meio]) / 2);
+}
+const wattsPadrao = categoriaFixa ? medianaWatts(prods) : 1700;
+---
+
+<section
+  id={uid}
+  class="my-10 rounded-2xl border border-slate-200 bg-slate-50 overflow-hidden"
+  data-tarifa-padrao={TARIFA_MEDIA}
+>
+  <div class="bg-slate-900 px-5 py-4">
+    <h2 class="text-white font-black text-lg">{titulo}</h2>
+    <p class="text-slate-400 text-xs mt-1">
+      Fórmula da ANEEL. Tarifa média atualizada em {ATUALIZADO_EM}.
+    </p>
+  </div>
+
+  <!-- Abas -->
+  <div class="flex border-b border-slate-200 bg-white" role="tablist">
+    <button
+      type="button"
+      data-aba="tenho"
+      role="tab"
+      aria-selected="true"
+      class="js-aba flex-1 px-4 py-3 text-sm font-semibold text-orange-600 border-b-2 border-orange-500 transition-colors"
+    >
+      Já tenho o aparelho
+    </button>
+    <button
+      type="button"
+      data-aba="comprar"
+      role="tab"
+      aria-selected="false"
+      class="js-aba flex-1 px-4 py-3 text-sm font-semibold text-slate-500 border-b-2 border-transparent hover:text-slate-700 transition-colors"
+    >
+      Estou pensando em comprar
+    </button>
+  </div>
+
+  <div class="p-5">
+    <!-- Campo de tarifa, comum aos dois modos -->
+    <div class="bg-orange-50 border border-orange-100 rounded-xl p-4 mb-5">
+      <label class="block text-sm font-semibold text-slate-800 mb-1.5" for={`${uid}-tarifa`}>
+        Quanto custa o kWh na sua região?
+      </label>
+      <div class="flex items-center gap-2">
+        <span class="text-slate-500 font-semibold">R$</span>
+        <input
+          id={`${uid}-tarifa`}
+          class="js-tarifa w-28 rounded-lg border border-slate-300 px-3 py-2 text-slate-900 font-semibold focus:outline-none focus:ring-2 focus:ring-orange-400"
+          type="number"
+          min="0.10"
+          max="3"
+          step="0.01"
+          value={TARIFA_MEDIA}
+        />
+      </div>
+      <p class="text-xs text-slate-500 mt-2 leading-relaxed">
+        Esse número está na sua última conta de luz e já inclui a bandeira tarifária e o ICMS do seu
+        estado. Não achou? Deixe o valor de {ATUALIZADO_EM}, que é a média nacional.
+      </p>
+    </div>
+
+    <!-- MODO A: já tenho o aparelho -->
+    <div class="js-painel" data-painel="tenho">
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div>
+          <label class="block text-sm font-semibold text-slate-800 mb-1.5" for={`${uid}-watts`}>
+            Potência (watts)
+          </label>
+          <input
+            id={`${uid}-watts`}
+            class="js-watts w-full rounded-lg border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
+            type="number"
+            min="1"
+            max="10000"
+            step="10"
+            value={wattsPadrao}
+          />
+          <p class="text-xs text-slate-400 mt-1">Está no adesivo atrás do aparelho.</p>
+        </div>
+        <div>
+          <label class="block text-sm font-semibold text-slate-800 mb-1.5" for={`${uid}-horas`}>
+            Horas por dia
+          </label>
+          <input
+            id={`${uid}-horas`}
+            class="js-horas w-full rounded-lg border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
+            type="number"
+            min="0.01"
+            max="24"
+            step="0.1"
+            value={catInicial?.horasPadrao ?? 0.67}
+          />
+          <p class="text-xs text-slate-400 mt-1">40 minutos = 0,67</p>
+        </div>
+        <div>
+          <label class="block text-sm font-semibold text-slate-800 mb-1.5" for={`${uid}-dias`}>
+            Dias por mês
+          </label>
+          <input
+            id={`${uid}-dias`}
+            class="js-dias w-full rounded-lg border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
+            type="number"
+            min="1"
+            max="31"
+            step="1"
+            value={catInicial?.diasPadrao ?? 30}
+          />
+          <p class="text-xs text-slate-400 mt-1">Todo dia = 30</p>
+        </div>
+      </div>
+
+      <!-- Resultado. min-height reservado para não causar layout shift -->
+      <div class="js-resultado mt-5 rounded-xl bg-white border border-slate-200 p-5" style="min-height:132px">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
+          <div>
+            <p class="text-xs uppercase tracking-wide text-slate-400 font-semibold">Consumo</p>
+            <p class="js-kwh text-2xl font-black text-slate-800 mt-1">&mdash;</p>
+            <p class="text-xs text-slate-400">kWh por mês</p>
+          </div>
+          <div>
+            <p class="text-xs uppercase tracking-wide text-slate-400 font-semibold">Por mês</p>
+            <p class="js-mes text-2xl font-black text-orange-500 mt-1">&mdash;</p>
+            <p class="text-xs text-slate-400">na conta de luz</p>
+          </div>
+          <div>
+            <p class="text-xs uppercase tracking-wide text-slate-400 font-semibold">Por ano</p>
+            <p class="js-ano text-2xl font-black text-slate-800 mt-1">&mdash;</p>
+            <p class="text-xs text-slate-400">12 meses</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODO B: vou comprar -->
+    <div class="js-painel hidden" data-painel="comprar">
+      {!categoriaFixa && (
+        <div class="mb-4">
+          <label class="block text-sm font-semibold text-slate-800 mb-1.5" for={`${uid}-cat`}>
+            Qual aparelho?
+          </label>
+          <select
+            id={`${uid}-cat`}
+            class="js-cat w-full rounded-lg border border-slate-300 px-3 py-2 bg-white focus:outline-none focus:ring-2 focus:ring-orange-400"
+          >
+            {cats.map((c) => <option value={c.id}>{c.label}</option>)}
+          </select>
+        </div>
+      )}
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div>
+          <label class="block text-sm font-semibold text-slate-800 mb-1.5" for={`${uid}-bhoras`}>
+            Horas por dia
+          </label>
+          <input
+            id={`${uid}-bhoras`}
+            class="js-bhoras w-full rounded-lg border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
+            type="number"
+            min="0.01"
+            max="24"
+            step="0.1"
+            value={catInicial?.horasPadrao ?? 0.67}
+          />
+        </div>
+        <div>
+          <label class="block text-sm font-semibold text-slate-800 mb-1.5" for={`${uid}-bdias`}>
+            Dias por mês
+          </label>
+          <input
+            id={`${uid}-bdias`}
+            class="js-bdias w-full rounded-lg border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
+            type="number"
+            min="1"
+            max="31"
+            step="1"
+            value={catInicial?.diasPadrao ?? 30}
+          />
+        </div>
+      </div>
+
+      <div class="js-tabela mt-5 overflow-x-auto" style="min-height:220px"></div>
+      <p class="js-veredito text-sm text-slate-700 leading-relaxed bg-white border border-slate-200 rounded-xl p-4 mt-3"></p>
+    </div>
+
+    <p class="text-xs text-slate-400 mt-4 leading-relaxed">
+      Estimativa. O consumo real varia com a temperatura ambiente, a tensão da rede e o estado de
+      conservação do aparelho. Cálculo pela fórmula da ANEEL: potência em kW × horas de uso × dias × tarifa.
+    </p>
+  </div>
+</section>
+
+<script is:inline define:vars={{ uid, prods, cats, categoriaFixa }}>
+  (function () {
+    const raiz = document.getElementById(uid);
+    if (!raiz) return;
+
+    const brl = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' });
+    const num = (n, casas = 1) =>
+      n.toLocaleString('pt-BR', { minimumFractionDigits: casas, maximumFractionDigits: casas });
+
+    const q = (sel) => raiz.querySelector(sel);
+    const custo = (w, h, d, t) => (w / 1000) * h * d * t;
+
+    const tarifaEl = q('.js-tarifa');
+    const tarifa = () => {
+      const v = parseFloat(tarifaEl.value);
+      return isFinite(v) && v > 0 ? v : parseFloat(raiz.dataset.tarifaPadrao);
+    };
+
+    // ---------- Abas ----------
+    raiz.querySelectorAll('.js-aba').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const alvo = btn.dataset.aba;
+        raiz.querySelectorAll('.js-aba').forEach((b) => {
+          const ativo = b === btn;
+          b.setAttribute('aria-selected', String(ativo));
+          b.classList.toggle('text-orange-600', ativo);
+          b.classList.toggle('border-orange-500', ativo);
+          b.classList.toggle('text-slate-500', !ativo);
+          b.classList.toggle('border-transparent', !ativo);
+        });
+        raiz.querySelectorAll('.js-painel').forEach((p) => {
+          p.classList.toggle('hidden', p.dataset.painel !== alvo);
+        });
+      });
+    });
+
+    // ---------- Modo A: já tenho ----------
+    const watts = q('.js-watts');
+    const horas = q('.js-horas');
+    const dias = q('.js-dias');
+
+    function calcularA() {
+      const w = parseFloat(watts.value);
+      const h = parseFloat(horas.value);
+      const d = parseFloat(dias.value);
+      if (!(w > 0 && h > 0 && d > 0)) return;
+      const kwh = (w / 1000) * h * d;
+      const mes = kwh * tarifa();
+      q('.js-kwh').textContent = num(kwh);
+      q('.js-mes').textContent = brl.format(mes);
+      q('.js-ano').textContent = brl.format(mes * 12);
+    }
+
+    [watts, horas, dias, tarifaEl].forEach((el) => el.addEventListener('input', calcularA));
+
+    // ---------- Modo B: vou comprar ----------
+    const catEl = q('.js-cat');
+    const bhoras = q('.js-bhoras');
+    const bdias = q('.js-bdias');
+    const tabela = q('.js-tabela');
+    const veredito = q('.js-veredito');
+
+    const catAtual = () => (categoriaFixa ? categoriaFixa : catEl ? catEl.value : cats[0].id);
+
+    function calcularB() {
+      const cid = catAtual();
+      const h = parseFloat(bhoras.value);
+      const d = parseFloat(bdias.value);
+      const t = tarifa();
+      if (!(h > 0 && d > 0)) return;
+
+      const lista = prods
+        .filter((p) => p.categoria === cid)
+        .map((p) => ({ ...p, mes: custo(p.watts, h, d, t) }))
+        .sort((a, b) => a.mes - b.mes);
+
+      if (!lista.length) {
+        tabela.innerHTML = '<p class="text-sm text-slate-500">Ainda não temos modelos analisados nessa categoria.</p>';
+        veredito.textContent = '';
+        return;
+      }
+
+      tabela.innerHTML =
+        '<table class="w-full text-sm"><thead><tr class="text-left text-slate-400 text-xs uppercase tracking-wide">' +
+        '<th class="pb-2 font-semibold">Modelo</th><th class="pb-2 font-semibold text-right">Potência</th>' +
+        '<th class="pb-2 font-semibold text-right">Custo/mês</th><th class="pb-2"></th></tr></thead><tbody>' +
+        lista
+          .map(
+            (p, i) =>
+              '<tr class="border-t border-slate-100">' +
+              '<td class="py-2.5 pr-3 text-slate-800 font-medium">' +
+              p.nome +
+              (i === 0 ? ' <span class="text-green-600 text-xs font-bold">mais econômico</span>' : '') +
+              '</td>' +
+              '<td class="py-2.5 text-right text-slate-500 whitespace-nowrap">' + p.watts + ' W</td>' +
+              '<td class="py-2.5 text-right font-bold text-slate-900 whitespace-nowrap">' + brl.format(p.mes) + '</td>' +
+              '<td class="py-2.5 pl-3 text-right whitespace-nowrap"><a class="text-orange-500 hover:text-orange-600 font-semibold" href="/' +
+              p.slugArtigo +
+              '">ver análise</a></td>' +
+              '</tr>'
+          )
+          .join('') +
+        '</tbody></table>';
+
+      const menor = lista[0];
+      const maior = lista[lista.length - 1];
+      const difAno = (maior.mes - menor.mes) * 12;
+
+      if (lista.length < 2) {
+        veredito.textContent =
+          'Só temos um modelo analisado nessa categoria até agora, então não dá para comparar consumo.';
+      } else if (difAno < 50) {
+        veredito.innerHTML =
+          '<strong>Não escolha pelo consumo.</strong> Entre o modelo mais econômico e o menos econômico dessa lista a diferença é de apenas ' +
+          brl.format(difAno) +
+          ' por ano, cerca de ' +
+          brl.format(difAno / 12) +
+          ' por mês. Capacidade, garantia e qualidade do resultado pesam muito mais. E se o seu aparelho atual funciona, trocar só por energia não se paga.';
+      } else {
+        veredito.innerHTML =
+          'Do mais econômico (' +
+          menor.nome +
+          ') ao menos econômico (' +
+          maior.nome +
+          ') a diferença chega a <strong>' +
+          brl.format(difAno) +
+          ' por ano</strong>. Isso já é relevante, mas ainda assim vale conferir capacidade e garantia antes de decidir só pelo consumo.';
+      }
+    }
+
+    if (catEl) {
+      catEl.addEventListener('change', () => {
+        const c = cats.find((x) => x.id === catEl.value);
+        if (c) {
+          bhoras.value = c.horasPadrao;
+          bdias.value = c.diasPadrao;
+        }
+        calcularB();
+      });
+    }
+    [bhoras, bdias, tarifaEl].forEach((el) => el.addEventListener('input', calcularB));
+
+    calcularA();
+    calcularB();
+  })();
+</script>
