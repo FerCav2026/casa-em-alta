@@ -1,11 +1,11 @@
 ARTIGOS PUBLICADOS - CASA EM ALTA
-Última atualização: 2026-07-07
-Total: 28 publicados | 0 agendados
+Última atualização: 2026-07-08
+Total: 29 publicados | 0 agendados
 Blog: https://casaemalta.com.br
 Arquivo de dados: src/data/posts.ts
 =====================================
 
-PUBLICADOS (28)
+PUBLICADOS (29)
 
 1.  Os 7 Melhores Aspiradores de Pó 2026: Com Fio, Sem Fio e Robôs
     Slug: melhores-aspiradores-po-2026 | Categoria: Rankings e Listas
@@ -91,14 +91,18 @@ PUBLICADOS (28)
 28. Os 7 Melhores Airfryers de 2026: do Compacto ao Familiar
     Slug: melhores-airfryers-2026 | Categoria: Rankings e Listas | Publicado: 07/07/2026 (aplicacao aditiva, commits 3d597d3/4180142) | fecha o cluster Airfryer; produtos #6 e #7 (Cadence e Britania) atualizados para os modelos reais dos links de afiliado (FRT555 em vez de FRT550, Britania Redstone BFR50 em vez de BAF40A); links retroativos em #2 e #23.
 
+29. Quanto Gasta de Energia Cada Eletrodoméstico? Calcule Aqui
+    Slug: quanto-gasta-de-energia-eletrodomesticos | Categoria: Guia de Compra | Publicado: 08/07/2026 (commit bcc7175) | Página própria com calculadora interativa (fórmula ANEEL), NÃO usa [slug].astro. Dado perecível isolado em src/data/energia.ts (manutenção anual = trocar 2 linhas). Embed travado por categoria em 10 artigos. Valores antigos de consumo foram datados, não reescritos.
+
 =====================================
 AGENDADOS (0)
 
 Nenhum artigo agendado no momento. Próximo do calendário: 10/07 "Os 17 Mais Vendidos da Shopee para Casa" (pilar Shopee).
+A vaga de 13/07 ("10 Utilidades da Shopee por Menos de R$30") ficou livre: a calculadora era a candidata a ocupá-la e acabou indo ao ar em 08/07.
 
 =====================================
-CATEGORIAS (28 publicados):
+CATEGORIAS (29 publicados):
 - Rankings e Listas: 9 artigos
 - Comparativo: 5 artigos
 - Review: 9 artigos
-- Guia de Compra: 5 artigos
+- Guia de Compra: 6 artigos
