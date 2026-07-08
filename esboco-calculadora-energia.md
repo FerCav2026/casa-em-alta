@@ -194,10 +194,44 @@ Os artigos atuais têm valores cravados (R$ 27/mês, R$ 30/mês) calculados com 
 
 ## 10. Esforço e encaixe no calendário
 
-Construir isso bem feito custa mais ou menos o mesmo que um artigo do calendário.
+**RESOLVIDO em 08/07/2026.** Publicada como artigo extra, fora da cadência de três por semana.
+Nenhuma vaga do calendário foi cedida.
 
-**Recomendação:** não substituir o pilar Shopee de 10/07 (é abertura de frente nova de comissão). O candidato natural a ceder a vaga é **13/07 (Utilidades Shopee até R$ 30)**, que é o de menor ticket e menor comissão da fila.
+Publicar no Casa em Alta é dar push na main, não existe agendamento como no WordPress. Então a página
+foi ao ar no dia em que ficou pronta (08/07), e não na data cogitada (13/07).
 
-Alternativa: publicar como quarto artigo de uma semana, fora da cadência de três.
+O calendário permanece intacto:
+- 10/07: Os 17 Mais Vendidos da Shopee para Casa (pilar Shopee)
+- 13/07: 10 Utilidades da Shopee por Menos de R$ 30
+- 15/07 em diante: cluster Cafeteiras
 
-Decisão pendente da Fernanda.
+---
+
+## 11. Status da implementação
+
+Tudo abaixo está no ar (commits `bcc7175` e `4e6ea9f`).
+
+| Item | Situação |
+|---|---|
+| `src/data/energia.ts` | Feito. 21 produtos reais, 12 aparelhos comuns |
+| `src/components/CalculadoraEnergia.astro` | Feito. Dois modos, altura reservada |
+| `src/pages/quanto-gasta-de-energia-eletrodomesticos.astro` | Feito. Tabela derivada do build |
+| Capa (gpt-image-1, WebP + gêmeo JPG) | Feita |
+| Embed em 10 artigos via mapa slug → categoria | Feito |
+| Valores antigos datados (7 trechos) | Feito |
+| Tarefa anual de manutenção na SmartAgenda | Criada para 15/01/2027 |
+
+### Decisões de integridade tomadas na construção
+
+- **Micro-ondas fora da lista de produtos.** Os watts do rótulo são potência de aquecimento, não consumo
+  da tomada (um de 700 W puxa ~1.200 W). Explicado na tabela em vez de virar número errado.
+- **Britânia Redstone BFR50 fora.** O fabricante não publica a potência. Não inventar dado.
+- **Potência inicial do campo = mediana da categoria.** Sem isso, o artigo de panela abria sugerindo
+  1.700 W, que é valor de airfryer. Defeito encontrado testando a página num navegador headless.
+
+### Pendência herdada, não causada por esta entrega
+
+O IndexNow devolve HTTP 403 nos dois endpoints (Bing e api.indexnow.org). Verificado: chave no ar, 32 bytes
+exatos, sem BOM, `text/plain`, host `www` sem redirect, URLs do sitemap batendo com o `host`. A configuração
+está correta. Olhar a aba IndexNow do Bing Webmaster Tools. Google e sitemap não são afetados, e o script é
+desenhado para nunca derrubar o deploy.
