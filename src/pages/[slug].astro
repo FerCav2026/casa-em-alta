@@ -216,6 +216,13 @@ const posts: Record<string, { titulo: string; descricao: string; categoria: stri
     dataCriacao: '2026-07-08',
     dataModificacao: '2026-07-08',
   },
+  'mais-vendidos-shopee-casa': {
+    titulo: 'Os 6 Mais Vendidos da Shopee para Casa: Achados Que Realmente Valem a Pena',
+    descricao: 'Selecionamos os itens para casa mais vendidos da Shopee que realmente entregam o que prometem, com preço, avaliação e para quem cada um vale a pena.',
+    categoria: 'Rankings e Listas',
+    dataCriacao: '2026-07-10',
+    dataModificacao: '2026-07-10',
+  },
 };
 
 export function getStaticPaths() {
@@ -248,6 +255,7 @@ export function getStaticPaths() {
     'airfryer-philips-walita-serie-1000-xl-review': {},
     'airfryer-philips-walita-hd9252-review': {},
     'melhores-airfryers-2026': {},
+    'mais-vendidos-shopee-casa': {},
   }).map((slug) => ({ params: { slug } }));
 }
 
@@ -308,6 +316,7 @@ const isMelhoresMicroondas = slug === 'melhores-microondas-2026';
 const isAirfryerSerie1000XL = slug === 'airfryer-philips-walita-serie-1000-xl-review';
 const isAirfryerHD9252 = slug === 'airfryer-philips-walita-hd9252-review';
 const isMelhoresAirfryers = slug === 'melhores-airfryers-2026';
+const isMaisVendidosShopee = slug === 'mais-vendidos-shopee-casa';
 
 const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isAirfryer ? '/images/airfryer/capa-airfryer.webp'
@@ -337,6 +346,7 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isAirfryerSerie1000XL ? '/images/airfryer-serie-1000-xl/capa-airfryer-serie-1000-xl.webp'
   : isAirfryerHD9252 ? '/images/airfryer-hd9252/capa-airfryer-hd9252.webp'
   : isMelhoresAirfryers ? '/images/melhores-airfryers/capa-melhores-airfryers.webp'
+  : isMaisVendidosShopee ? '/images/mais-vendidos-shopee/capa-mais-vendidos-shopee.webp'
   : undefined;
 ---
 
@@ -13468,6 +13478,287 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
       <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
         <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
         <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Airfryer Philips Walita HD9252: Vale a Pena? Review Honesto</span>
+      </div>
+    </a>
+  </div>
+)}
+
+{isMaisVendidosShopee && (
+  <div>
+
+    <!-- Capa do artigo -->
+    <div class="rounded-2xl overflow-hidden mb-8 shadow-md">
+      <img
+        src="/images/mais-vendidos-shopee/capa-mais-vendidos-shopee.webp"
+        alt="Os 6 mais vendidos da Shopee para casa"
+        class="w-full h-auto object-cover"
+        loading="eager"
+      />
+    </div>
+
+    <!-- Box de introdução -->
+    <div class="bg-orange-50 border border-orange-100 rounded-2xl p-6 mb-8">
+      <p class="text-slate-800 text-base leading-relaxed mb-3">
+        Toda vez que abro a Shopee para resolver um problema específico da casa, acabo saindo com mais um item que nem sabia que precisava. Esta lista reúne 6 produtos para casa que estão entre os mais vendidos da plataforma agora, com uma diferença em relação às listas genéricas que você encontra por aí: já comprei dois destes itens e uso no dia a dia, e pesquisei a fundo avaliação, nota e reclamações reais dos outros quatro antes de colocar aqui.
+      </p>
+      <p class="text-slate-800 text-base leading-relaxed">
+        Preços e descontos consultados em julho de 2026. A Shopee muda promoções com frequência, então confira o valor atual na página do produto antes de finalizar a compra.
+      </p>
+    </div>
+
+    <!-- Índice -->
+    <nav class="bg-white border border-slate-200 rounded-xl px-5 py-4 mb-10">
+      <p class="text-slate-800 font-bold text-sm mb-3">Neste artigo:</p>
+      <ul class="space-y-1.5">
+        <li><a href="#criterios" class="text-orange-600 hover:text-orange-700 text-sm font-medium">Como escolhi esses 6 itens</a></li>
+        <li><a href="#produtos" class="text-orange-600 hover:text-orange-700 text-sm font-medium">Os 6 produtos, um por um</a></li>
+        <li><a href="#seguranca" class="text-orange-600 hover:text-orange-700 text-sm font-medium">Como comprar com segurança na Shopee</a></li>
+        <li><a href="#faq" class="text-orange-600 hover:text-orange-700 text-sm font-medium">Perguntas frequentes</a></li>
+      </ul>
+    </nav>
+
+    <!-- Critérios -->
+    <div id="criterios" class="bg-blue-50 border border-blue-200 rounded-2xl p-6 mb-10">
+      <h2 class="text-slate-800 font-bold text-lg mb-4">Como escolhi esses 6 itens</h2>
+      <p class="text-slate-700 text-sm leading-relaxed mb-3">
+        Esta não é uma lista de "mais vendidos" copiada direto da vitrine da Shopee. Antes de colocar qualquer produto aqui, olhei três coisas: nota de avaliação de pelo menos 4,5 estrelas com um volume real de avaliações, se o problema que o produto resolve é relevante para quem mora em apartamento pequeno, e se o preço ainda faz sentido depois do desconto do dia.
+      </p>
+      <p class="text-slate-700 text-sm leading-relaxed">
+        Dois destes produtos eu já comprei e uso em casa: o cabideiro organizador de closet e a panela de pressão. Os outros quatro passaram pelo mesmo crivo de pesquisa que uso em qualquer outro artigo deste blog, sem inventar uso que não tive.
+      </p>
+    </div>
+
+    <!-- Produtos -->
+    <section id="produtos" class="mb-10">
+      <h2 class="text-2xl font-black text-slate-900 mb-6">Os 6 produtos, um por um</h2>
+
+      <div class="border border-slate-200 rounded-xl overflow-hidden mb-4 shadow-sm">
+        <div class="bg-slate-800 px-5 py-3 flex items-center gap-3">
+          <span class="bg-orange-500 text-white font-black text-sm px-2.5 py-1 rounded-lg">01</span>
+          <div>
+            <span class="text-orange-300 text-xs font-semibold uppercase tracking-wide">Organização · Já uso</span>
+            <p class="text-white font-bold text-sm leading-tight">Cabideiro Casal Closet Arara com Prateleiras Organizadoras de Roupas</p>
+          </div>
+        </div>
+        <div class="p-5 flex flex-col md:flex-row gap-4">
+          <div class="w-32 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-2 border border-slate-100">
+            <img src="/images/mais-vendidos-shopee/cabideiro-closet.webp" alt="Cabideiro casal closet arara com prateleiras organizadoras" class="w-full h-auto object-contain rounded-lg" loading="lazy" />
+          </div>
+          <div class="flex-1">
+            <p class="text-slate-700 text-sm leading-relaxed mb-2">
+              Comprei este cabideiro para resolver a falta de espaço de um armário embutido pequeno demais para duas pessoas, e a qualidade me surpreendeu: estrutura firme, varão duplo para roupas compridas e curtas, prateleiras para o que não pode ficar pendurado e um espaço embaixo para calçados. É a resposta certa para quem tem quarto de casal em apartamento sem closet planejado e não quer gastar com marcenaria.
+            </p>
+            <p class="text-orange-600 font-bold text-sm">Avaliação 5 estrelas na Shopee</p>
+          </div>
+          <div class="flex flex-col gap-2 md:w-40 flex-shrink-0">
+            <a href="https://collshp.com/indicacasaecasaemalta?view=storefront" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-2 rounded-xl text-sm transition-colors">Ver na Shopee</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="border border-slate-200 rounded-xl overflow-hidden mb-4 shadow-sm">
+        <div class="bg-slate-800 px-5 py-3 flex items-center gap-3">
+          <span class="bg-orange-500 text-white font-black text-sm px-2.5 py-1 rounded-lg">02</span>
+          <div>
+            <span class="text-orange-300 text-xs font-semibold uppercase tracking-wide">Cozinha · Já uso</span>
+            <p class="text-white font-bold text-sm leading-tight">Panela de Pressão 4,5 Litros Antiaderente Teflon com Tampa</p>
+          </div>
+        </div>
+        <div class="p-5 flex flex-col md:flex-row gap-4">
+          <div class="w-32 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-2 border border-slate-100">
+            <img src="/images/mais-vendidos-shopee/panela-pressao-45l.webp" alt="Panela de pressão 4,5 litros antiaderente com tampa" class="w-full h-auto object-contain rounded-lg" loading="lazy" />
+          </div>
+          <div class="flex-1">
+            <p class="text-slate-700 text-sm leading-relaxed mb-2">
+              Também comprei essa panela e a qualidade é ótima. O revestimento antiaderente facilita muito a limpeza depois de feijão ou carne de panela, e os 4,5 litros dão conta de cozinhar para duas ou três pessoas sem sobrar espaço vazio nem faltar lugar. A alça é confortável e a válvula de segurança funciona como esperado.
+            </p>
+            <p class="text-orange-600 font-bold text-sm">R$ 179,90 com 27% de desconto (julho de 2026)</p>
+          </div>
+          <div class="flex flex-col gap-2 md:w-40 flex-shrink-0">
+            <a href="https://collshp.com/indicacasaecasaemalta?view=storefront" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-2 rounded-xl text-sm transition-colors">Ver na Shopee</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="border border-slate-200 rounded-xl overflow-hidden mb-4 shadow-sm">
+        <div class="bg-slate-800 px-5 py-3 flex items-center gap-3">
+          <span class="bg-orange-500 text-white font-black text-sm px-2.5 py-1 rounded-lg">03</span>
+          <div>
+            <span class="text-orange-300 text-xs font-semibold uppercase tracking-wide">Organização</span>
+            <p class="text-white font-bold text-sm leading-tight">Kit até 30 Cabides de Madeira Premium Marfim</p>
+          </div>
+        </div>
+        <div class="p-5 flex flex-col md:flex-row gap-4">
+          <div class="w-32 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-2 border border-slate-100">
+            <img src="/images/mais-vendidos-shopee/kit-cabides-madeira.webp" alt="Kit de cabides de madeira premium marfim" class="w-full h-auto object-contain rounded-lg" loading="lazy" />
+          </div>
+          <div class="flex-1">
+            <p class="text-slate-700 text-sm leading-relaxed mb-2">
+              Cabide de madeira segura melhor o caimento de camisa e blazer do que cabide de plástico fino, e não deixa aquela marquinha de ombro em peças mais delicadas. É um item que aparece o tempo todo entre os mais vendidos de organização da Shopee porque resolve um problema simples: closet com cabides desencontrados, de material e tamanho diferentes, sempre parece mais bagunçado do que realmente é.
+            </p>
+            <p class="text-orange-600 font-bold text-sm">R$ 199,90 com 66% de desconto (julho de 2026)</p>
+          </div>
+          <div class="flex flex-col gap-2 md:w-40 flex-shrink-0">
+            <a href="https://collshp.com/indicacasaecasaemalta?view=storefront" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-2 rounded-xl text-sm transition-colors">Ver na Shopee</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="border border-slate-200 rounded-xl overflow-hidden mb-4 shadow-sm">
+        <div class="bg-slate-800 px-5 py-3 flex items-center gap-3">
+          <span class="bg-orange-500 text-white font-black text-sm px-2.5 py-1 rounded-lg">04</span>
+          <div>
+            <span class="text-orange-300 text-xs font-semibold uppercase tracking-wide">Mesa posta</span>
+            <p class="text-white font-bold text-sm leading-tight">Jogo de Talheres Dourados em Aço Inoxidável, 24 Peças</p>
+          </div>
+        </div>
+        <div class="p-5 flex flex-col md:flex-row gap-4">
+          <div class="w-32 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-2 border border-slate-100">
+            <img src="/images/mais-vendidos-shopee/talheres-dourados.webp" alt="Jogo de talheres dourados em aço inoxidável, 24 peças" class="w-full h-auto object-contain rounded-lg" loading="lazy" />
+          </div>
+          <div class="flex-1">
+            <p class="text-slate-700 text-sm leading-relaxed mb-2">
+              Talher dourado virou tendência de mesa posta nos últimos anos, e o motivo de aparecer tanto nos mais vendidos é simples: em aço inoxidável, não descasca nem oxida como as versões banhadas mais baratas de alguns anos atrás. O kit com 24 peças serve 6 pessoas completo, com faca, garfo, colher e colher de sobremesa, o suficiente para trocar a decoração da mesa sem gastar com talher de prata de verdade.
+            </p>
+            <p class="text-orange-600 font-bold text-sm">Kit completo para 6 pessoas</p>
+          </div>
+          <div class="flex flex-col gap-2 md:w-40 flex-shrink-0">
+            <a href="https://collshp.com/indicacasaecasaemalta?view=storefront" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-2 rounded-xl text-sm transition-colors">Ver na Shopee</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="border border-slate-200 rounded-xl overflow-hidden mb-4 shadow-sm">
+        <div class="bg-slate-800 px-5 py-3 flex items-center gap-3">
+          <span class="bg-orange-500 text-white font-black text-sm px-2.5 py-1 rounded-lg">05</span>
+          <div>
+            <span class="text-orange-300 text-xs font-semibold uppercase tracking-wide">Cozinha</span>
+            <p class="text-white font-bold text-sm leading-tight">Jogo de Panelas Elegance Antiaderente Teflon, 9 Peças</p>
+          </div>
+        </div>
+        <div class="p-5 flex flex-col md:flex-row gap-4">
+          <div class="w-32 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-2 border border-slate-100">
+            <img src="/images/mais-vendidos-shopee/jogo-panelas-elegance.webp" alt="Jogo de panelas Elegance antiaderente Teflon, 9 peças" class="w-full h-auto object-contain rounded-lg" loading="lazy" />
+          </div>
+          <div class="flex-1">
+            <p class="text-slate-700 text-sm leading-relaxed mb-2">
+              Para quem está montando cozinha do zero, comprar panela avulsa sai mais caro do que um jogo completo. Este conjunto de 9 peças com revestimento antiaderente Teflon inclui frigideira, panelas de tamanhos diferentes e utensílios de cozinha, cobrindo praticamente todo o básico do dia a dia sem precisar completar aos poucos.
+            </p>
+            <p class="text-orange-600 font-bold text-sm">9 peças, jogo completo</p>
+          </div>
+          <div class="flex flex-col gap-2 md:w-40 flex-shrink-0">
+            <a href="https://collshp.com/indicacasaecasaemalta?view=storefront" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-2 rounded-xl text-sm transition-colors">Ver na Shopee</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="border border-slate-200 rounded-xl overflow-hidden mb-4 shadow-sm">
+        <div class="bg-slate-800 px-5 py-3 flex items-center gap-3">
+          <span class="bg-orange-500 text-white font-black text-sm px-2.5 py-1 rounded-lg">06</span>
+          <div>
+            <span class="text-orange-300 text-xs font-semibold uppercase tracking-wide">Limpeza · Na minha lista de desejos</span>
+            <p class="text-white font-bold text-sm leading-tight">Vaporizador Higienizador Mondial 1000W</p>
+          </div>
+        </div>
+        <div class="p-5 flex flex-col md:flex-row gap-4">
+          <div class="w-32 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-2 border border-slate-100">
+            <img src="/images/mais-vendidos-shopee/vaporizador-mondial.webp" alt="Vaporizador higienizador Mondial 1000W" class="w-full h-auto object-contain rounded-lg" loading="lazy" />
+          </div>
+          <div class="flex-1">
+            <p class="text-slate-700 text-sm leading-relaxed mb-2">
+              Este eu ainda não comprei, mas está na minha lista de próximas compras, e por isso decidi incluir aqui com essa ressalva clara. É um higienizador a vapor de 1000W da Mondial, marca que já conheço de outros eletroportáteis testados neste blog, com bicos variados para limpar estofado, colchão, box de banheiro e até roupa sem precisar passar. A proposta de resolver limpeza pesada sem produto químico é o que mais me atrai nele.
+            </p>
+            <p class="text-orange-600 font-bold text-sm">R$ 193,41 no Pix, com 23% de desconto (julho de 2026)</p>
+          </div>
+          <div class="flex flex-col gap-2 md:w-40 flex-shrink-0">
+            <a href="https://collshp.com/indicacasaecasaemalta?view=storefront" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-2 rounded-xl text-sm transition-colors">Ver na Shopee</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Segurança na compra -->
+    <div id="seguranca" class="bg-slate-50 border border-slate-200 rounded-2xl p-6 mb-10">
+      <h2 class="text-xl font-black text-slate-900 mb-3">Como comprar com segurança na Shopee</h2>
+      <p class="text-slate-700 leading-relaxed mb-3">
+        Prefira sempre vendedores com selo de loja oficial ou com mais de mil avaliações e nota acima de 4,7. Leia as avaliações de 1 e 2 estrelas antes de comprar: são elas que revelam problema recorrente de tamanho, cor ou funcionamento, não as avaliações de 5 estrelas cheias de elogio genérico.
+      </p>
+      <p class="text-slate-700 leading-relaxed mb-3">
+        A entrega de produtos sem frete expresso costuma levar de 15 a 25 dias, então não compre pensando em usar o item na semana seguinte. Guarde o comprovante de compra e as fotos do produto embalado: se algo chegar errado ou quebrado, o pedido de reembolso pela Central de Ajuda da Shopee é mais rápido com essas evidências em mãos.
+      </p>
+      <p class="text-slate-700 leading-relaxed">
+        Para itens elétricos como o vaporizador desta lista, confirme na página do produto se ele tem certificação Inmetro antes de finalizar a compra. É a garantia mínima de segurança elétrica para qualquer aparelho que aqueça ou gere vapor dentro de casa.
+      </p>
+    </div>
+
+    <h2 id="faq" class="text-2xl font-black text-slate-900 mb-6">Dúvidas frequentes</h2>
+    <p class="text-slate-600 leading-relaxed mb-5">Reunimos as dúvidas mais comuns de quem está pensando em comprar algum destes 6 itens na Shopee, cobrindo prazo de entrega, qualidade, garantia e se realmente compensa em relação a outras lojas.</p>
+    <div class="space-y-3 mb-10">
+      <details class="border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+          Produto da Shopee tem a mesma qualidade da Amazon?
+          <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+          Depende do vendedor, não da plataforma. Os itens desta lista foram escolhidos justamente por terem nota alta e volume grande de avaliações, o que reduz bastante o risco. A diferença real está no prazo de entrega, geralmente mais longo na Shopee, e não na qualidade do produto em si.
+        </div>
+      </details>
+      <details class="border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+          Quanto tempo demora para chegar um pedido da Shopee?
+          <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+          Para a maioria dos vendedores, entre 15 e 25 dias úteis. Alguns produtos com frete expresso ou despachados de centro de distribuição local chegam bem mais rápido, isso costuma aparecer descrito na própria página do produto antes da compra.
+        </div>
+      </details>
+      <details class="border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+          O cabideiro de closet aguenta o peso de roupa de casal?
+          <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+          No meu uso, sim, mesmo com o varão cheio de casacos e camisas dos dois lados. A estrutura em aço distribui bem o peso, mas vale evitar pendurar peças muito pesadas como casacos de couro ou edredom em excesso em um único ponto do varão.
+        </div>
+      </details>
+      <details class="border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+          Se o produto chegar com defeito, como pedir reembolso?
+          <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+          Abra uma solicitação de devolução direto no pedido, dentro do prazo informado na página do produto (em geral 7 dias após o recebimento). Anexe fotos do produto e da embalagem. Com o vendedor respondendo, o reembolso costuma cair de volta na carteira Shopee ou no meio de pagamento original em poucos dias.
+        </div>
+      </details>
+      <details class="border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+          Vale a pena comprar vários itens desta lista juntos?
+          <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+          Sim, e costuma compensar mais ainda. Ao juntar itens do mesmo vendedor ou aproveitar cupom de frete grátis acima de um valor mínimo, o custo total cai proporcionalmente. Vale revisar o carrinho antes de finalizar para ver se algum cupom automático da Shopee já não está disponível.
+        </div>
+      </details>
+    </div>
+    <script type="application/ld+json" set:html={JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Produto da Shopee tem a mesma qualidade da Amazon?","acceptedAnswer":{"@type":"Answer","text":"Depende do vendedor, não da plataforma. Os itens desta lista têm nota alta e volume grande de avaliações, o que reduz o risco. A diferença real está no prazo de entrega, geralmente mais longo na Shopee."}},{"@type":"Question","name":"Quanto tempo demora para chegar um pedido da Shopee?","acceptedAnswer":{"@type":"Answer","text":"Para a maioria dos vendedores, entre 15 e 25 dias úteis. Produtos com frete expresso chegam mais rápido, isso aparece descrito na página do produto."}},{"@type":"Question","name":"O cabideiro de closet aguenta o peso de roupa de casal?","acceptedAnswer":{"@type":"Answer","text":"Sim, mesmo com o varão cheio dos dois lados. A estrutura em aço distribui bem o peso, mas vale evitar pendurar peças muito pesadas em um único ponto."}},{"@type":"Question","name":"Se o produto chegar com defeito, como pedir reembolso?","acceptedAnswer":{"@type":"Answer","text":"Abra uma solicitação de devolução direto no pedido, dentro do prazo informado na página do produto, anexando fotos do produto e da embalagem."}},{"@type":"Question","name":"Vale a pena comprar vários itens desta lista juntos?","acceptedAnswer":{"@type":"Answer","text":"Sim. Ao juntar itens do mesmo vendedor ou aproveitar cupom de frete grátis, o custo total cai proporcionalmente."}}]})} />
+
+    <!-- Leia Também -->
+    <a href="/organizadores-armario-barato" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;margin-bottom:16px;">
+      <div style="width:200px;flex-shrink:0;">
+        <img src="/images/organizadores/capa-organizadores.webp" alt="Organizadores de armário baratos" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" />
+      </div>
+      <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+        <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+        <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">10 Organizadores de Armário Baratos que Valem Cada Centavo</span>
+      </div>
+    </a>
+    <a href="/kit-organizacao-cozinha" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+      <div style="width:200px;flex-shrink:0;">
+        <img src="/images/kit-cozinha/capa-kit-cozinha.webp" alt="Kit organização de cozinha" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" />
+      </div>
+      <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+        <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+        <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Kit Organização de Cozinha: Monte o seu por R$ 150</span>
       </div>
     </a>
   </div>

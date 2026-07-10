@@ -343,6 +343,16 @@ export const posts: Post[] = [
     categoria: 'guias-de-compra',
     categoriaLabel: 'Guia de Compra',
     categoriaColor: 'bg-purple-100 text-purple-700',
+  },
+  {
+    slug: 'mais-vendidos-shopee-casa',
+    titulo: 'Os 6 Mais Vendidos da Shopee para Casa: Achados Que Realmente Valem a Pena',
+    resumo: 'Selecionamos os itens para casa mais vendidos da Shopee que realmente entregam o que prometem, com preço, avaliação e para quem cada um vale a pena.',
+    tempo: '8 min de leitura',
+    imagem: '/images/mais-vendidos-shopee/capa-mais-vendidos-shopee.webp',
+    categoria: 'rankings-e-listas',
+    categoriaLabel: 'Rankings e Listas',
+    categoriaColor: 'bg-green-100 text-green-700',
   }
 ];
 
