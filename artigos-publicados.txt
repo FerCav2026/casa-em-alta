@@ -1,11 +1,11 @@
 ARTIGOS PUBLICADOS - CASA EM ALTA
-Última atualização: 2026-07-08
-Total: 29 publicados | 0 agendados
+Última atualização: 2026-07-10
+Total: 30 publicados | 0 agendados
 Blog: https://casaemalta.com.br
 Arquivo de dados: src/data/posts.ts
 =====================================
 
-PUBLICADOS (29)
+PUBLICADOS (30)
 
 1.  Os 7 Melhores Aspiradores de Pó 2026: Com Fio, Sem Fio e Robôs
     Slug: melhores-aspiradores-po-2026 | Categoria: Rankings e Listas
@@ -94,17 +94,20 @@ PUBLICADOS (29)
 29. Quanto Gasta de Energia Cada Eletrodoméstico? Calcule Aqui
     Slug: quanto-gasta-de-energia-eletrodomesticos | Categoria: Guia de Compra | Publicado: 08/07/2026 (commit bcc7175) | Página própria com calculadora interativa (fórmula ANEEL), NÃO usa [slug].astro. Dado perecível isolado em src/data/energia.ts (manutenção anual = trocar 2 linhas). Embed travado por categoria em 10 artigos. Valores antigos de consumo foram datados, não reescritos.
 
+30. Os 6 Mais Vendidos da Shopee para Casa: Achados Que Realmente Valem a Pena
+    Slug: mais-vendidos-shopee-casa | Categoria: Rankings e Listas | Publicado: 10/07/2026 (commits 069bc9f/1d614f4) | Abre o Cluster Shopee. Mudou de 17 para 6 produtos escolhidos pela Fernanda (cabideiro closet e panela de pressão com experiência real de uso; vaporizador Mondial marcado como lista de desejos, ainda não comprado; demais 3 em tom de curadoria). Fotos reais dos 6 produtos + capa gerada com gpt-image-1 (Lumi). Links de afiliado individuais por produto.
+
 =====================================
 AGENDADOS (0)
 
-Nenhum artigo agendado no momento. Próximo do calendário: 10/07 "Os 17 Mais Vendidos da Shopee para Casa" (pilar Shopee).
-O calendário segue INTACTO. A calculadora (#29) chegou a ser cogitada para ocupar a vaga de 13/07, mas foi
-ao ar em 08/07 como artigo extra, fora da cadência de 3 por semana. Nada foi remanejado:
-13/07 continua sendo "10 Utilidades da Shopee por Menos de R$30".
+Nenhum artigo agendado no momento. Próximo do calendário: 13/07 "10 Utilidades da Shopee por Menos de R$30" (2º artigo do Cluster Shopee).
+O calendário segue quase intacto: o #39 planejado ("Os 17 Mais Vendidos da Shopee") virou o #30 acima, publicado
+com 6 produtos em vez de 17, 5 dias antes do previsto (era 10/07 mesmo, então a data bateu). Restam 5 artigos
+do Cluster Shopee (13/07 a 10/08).
 
 =====================================
-CATEGORIAS (29 publicados):
-- Rankings e Listas: 9 artigos
+CATEGORIAS (30 publicados):
+- Rankings e Listas: 10 artigos
 - Comparativo: 5 artigos
 - Review: 9 artigos
 - Guia de Compra: 6 artigos
