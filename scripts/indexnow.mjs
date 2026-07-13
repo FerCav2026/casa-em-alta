@@ -9,11 +9,11 @@ import { readFile, readdir } from 'node:fs/promises';
 import { join } from 'node:path';
 
 const HOST = 'www.casaemalta.com.br';
-// Chave gerada DENTRO do Bing Webmaster Tools (13/07/2026).
-// Chave gerada por conta propria e recusada com 403 UserForbiddedToAccessSite
-// quando o dominio esta registrado no BWT — foi o que derrubou o envio desde ~08/07.
-// Se voltar a dar 403, pegar a chave nova no painel do Bing, nao inventar uma.
-const KEY = '2d40844156fd442396f13382c4cb598f';
+// Chave gerada na aba IndexNow do Bing Webmaster Tools, PARA ESTE SITE (13/07/2026).
+// O Bing amarra a chave ao site: chave inventada por conta propria, ou chave de
+// outro site da mesma conta, e recusada com 403 UserForbiddedToAccessSite.
+// Se voltar a dar 403, gerar chave nova no painel do Bing — nunca inventar uma.
+const KEY = 'b3de45b11a7e4fa98951dca469ea6aa4';
 const KEY_LOCATION = `https://${HOST}/${KEY}.txt`;
 const DIST = 'dist';
 
