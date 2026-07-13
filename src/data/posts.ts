@@ -353,6 +353,16 @@ export const posts: Post[] = [
     categoria: 'rankings-e-listas',
     categoriaLabel: 'Rankings e Listas',
     categoriaColor: 'bg-green-100 text-green-700',
+  },
+  {
+    slug: 'utilidades-shopee-ate-30-reais',
+    titulo: '10 Utilidades da Shopee por Menos de R$30 Que Valem a Pena',
+    resumo: 'Dez utilidades para casa por menos de R$30 na Shopee, com preço e foto real de cada uma. Quatro delas eu uso no dia a dia e conto o que achei.',
+    tempo: '9 min de leitura',
+    imagem: '/images/utilidades-shopee-30/capa-utilidades-shopee-30.webp',
+    categoria: 'rankings-e-listas',
+    categoriaLabel: 'Rankings e Listas',
+    categoriaColor: 'bg-green-100 text-green-700',
   }
 ];
 

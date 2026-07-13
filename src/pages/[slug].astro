@@ -223,6 +223,13 @@ const posts: Record<string, { titulo: string; descricao: string; categoria: stri
     dataCriacao: '2026-07-10',
     dataModificacao: '2026-07-10',
   },
+  'utilidades-shopee-ate-30-reais': {
+    titulo: '10 Utilidades da Shopee por Menos de R$30 Que Valem a Pena',
+    descricao: 'Dez utilidades para casa por menos de R$30 na Shopee, com preço e foto real de cada uma. Quatro delas eu uso no dia a dia e conto o que achei de verdade.',
+    categoria: 'Rankings e Listas',
+    dataCriacao: '2026-07-13',
+    dataModificacao: '2026-07-13',
+  },
 };
 
 export function getStaticPaths() {
@@ -256,6 +263,7 @@ export function getStaticPaths() {
     'airfryer-philips-walita-hd9252-review': {},
     'melhores-airfryers-2026': {},
     'mais-vendidos-shopee-casa': {},
+    'utilidades-shopee-ate-30-reais': {},
   }).map((slug) => ({ params: { slug } }));
 }
 
@@ -317,6 +325,7 @@ const isAirfryerSerie1000XL = slug === 'airfryer-philips-walita-serie-1000-xl-re
 const isAirfryerHD9252 = slug === 'airfryer-philips-walita-hd9252-review';
 const isMelhoresAirfryers = slug === 'melhores-airfryers-2026';
 const isMaisVendidosShopee = slug === 'mais-vendidos-shopee-casa';
+const isUtilidadesShopee30 = slug === 'utilidades-shopee-ate-30-reais';
 
 const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isAirfryer ? '/images/airfryer/capa-airfryer.webp'
@@ -347,6 +356,7 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isAirfryerHD9252 ? '/images/airfryer-hd9252/capa-airfryer-hd9252.webp'
   : isMelhoresAirfryers ? '/images/melhores-airfryers/capa-melhores-airfryers.webp'
   : isMaisVendidosShopee ? '/images/mais-vendidos-shopee/capa-mais-vendidos-shopee.webp'
+  : isUtilidadesShopee30 ? '/images/utilidades-shopee-30/capa-utilidades-shopee-30.webp'
   : undefined;
 ---
 
@@ -3233,6 +3243,17 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
           </details>
         </div>
         <script type="application/ld+json" set:html={JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Produtos baratos da Amazon são de qualidade?","acceptedAnswer":{"@type":"Answer","text":"Para utensílios simples como clipes, raspadores e ganchos, o preço baixo não compromete a função. Os itens desta lista foram escolhidos porque a função não exige material sofisticado."}},{"@type":"Question","name":"Vale mais comprar na Shopee ou na Amazon para itens baratos?","acceptedAnswer":{"@type":"Answer","text":"Para itens sem urgência, a Shopee costuma ser mais barata. Para quem tem Amazon Prime, a velocidade e o atendimento pós-venda tornam a Amazon mais vantajosa."}},{"@type":"Question","name":"Como conseguir frete grátis na Amazon?","acceptedAnswer":{"@type":"Answer","text":"Compras acima de R$ 79 em produtos elegíveis têm frete grátis mesmo sem Amazon Prime. A melhor estratégia é agrupar vários itens em um único pedido."}},{"@type":"Question","name":"Gancho adesivo aguenta peso?","acceptedAnswer":{"@type":"Answer","text":"Sim. Limpe com álcool 70%, cole com pressão firme por 30 segundos e espere 24 horas antes de colocar peso. Suporta entre 3 e 5 kg em superfícies lisas."}},{"@type":"Question","name":"Produto chegou diferente do anunciado. O que fazer?","acceptedAnswer":{"@type":"Answer","text":"Abra uma solicitação de devolução na Amazon dentro de 30 dias. Selecione o motivo correto e, para produtos vendidos e enviados pela Amazon, o reembolso chega em 3 a 5 dias úteis."}},{"@type":"Question","name":"Vale a pena assinar o Amazon Prime para comprar itens baratos?","acceptedAnswer":{"@type":"Answer","text":"Se você compra na Amazon pelo menos 2 vezes por mês, o Prime já se paga só no frete. Além do frete grátis, inclui Prime Video, Prime Music e acesso a promoções do Prime Day."}},{"@type":"Question","name":"Esponja de melamina é segura para usar na cozinha?","acceptedAnswer":{"@type":"Answer","text":"Sim, mas não use em superfícies antiaderentes (risca o revestimento), em madeira tratada ou superfícies pintadas com brilho. É ideal para paredes, azulejo, rejunte, plástico e inox."}}]})} />
+
+        <!-- Leia Também -->
+        <a href="/utilidades-shopee-ate-30-reais" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;margin-top:24px;">
+          <div style="width:200px;flex-shrink:0;">
+            <img src="/images/utilidades-shopee-30/capa-utilidades-shopee-30.webp" alt="Utilidades da Shopee por menos de 30 reais" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+          </div>
+          <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+            <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+            <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">10 Utilidades da Shopee por Menos de R$30 Que Valem a Pena</span>
+          </div>
+        </a>
       </div>
     )}
 
@@ -13752,13 +13773,399 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
         <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">10 Organizadores de Armário Baratos que Valem Cada Centavo</span>
       </div>
     </a>
-    <a href="/kit-organizacao-cozinha" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+    <a href="/kit-organizacao-cozinha" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;margin-bottom:16px;">
       <div style="width:200px;flex-shrink:0;">
         <img src="/images/kit-cozinha/capa-kit-cozinha.webp" alt="Kit organização de cozinha" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" />
       </div>
       <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
         <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
         <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Kit Organização de Cozinha: Monte o seu por R$ 150</span>
+      </div>
+    </a>
+    <a href="/utilidades-shopee-ate-30-reais" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+      <div style="width:200px;flex-shrink:0;">
+        <img src="/images/utilidades-shopee-30/capa-utilidades-shopee-30.webp" alt="Utilidades da Shopee por menos de 30 reais" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+      </div>
+      <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+        <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+        <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">10 Utilidades da Shopee por Menos de R$30 Que Valem a Pena</span>
+      </div>
+    </a>
+  </div>
+)}
+
+{isUtilidadesShopee30 && (
+  <div>
+
+    <!-- Capa do artigo -->
+    <div class="rounded-2xl overflow-hidden mb-8 shadow-md">
+      <img
+        src="/images/utilidades-shopee-30/capa-utilidades-shopee-30.webp"
+        alt="Utilidades para casa compradas na Shopee por menos de 30 reais"
+        class="w-full h-auto object-cover"
+        loading="eager"
+      />
+    </div>
+
+    <!-- Box de introdução -->
+    <div class="bg-orange-50 border border-orange-100 rounded-2xl p-6 mb-8">
+      <p class="text-slate-800 text-base leading-relaxed mb-3">
+        Trinta reais não compram um eletrodoméstico, mas compram algo que muita gente subestima: a solução de um incômodo pequeno que se repete todo dia. O pano que não larga fiapo na bancada. O varal que finalmente dá conta das meias. O tapete que faz o banheiro parar de parecer inacabado. Esta lista tem dez utilidades da Shopee que custam menos de R$30, e quatro delas eu uso em casa de verdade.
+      </p>
+      <p class="text-slate-800 text-base leading-relaxed">
+        Faço questão de separar o que é experiência e o que é pesquisa. Nos quatro que já usei, conto o que achei com minhas palavras, inclusive quando o produto tem limite. Nos outros seis, digo abertamente que ainda não comprei e explico por que entraram na lista. Preços consultados em julho de 2026, e a Shopee muda promoção quase toda semana, então confira o valor atual na página do produto.
+      </p>
+    </div>
+
+    <!-- Índice -->
+    <nav class="bg-white border border-slate-200 rounded-xl px-5 py-4 mb-10">
+      <p class="text-slate-800 font-bold text-sm mb-3">Neste artigo:</p>
+      <ul class="space-y-1.5">
+        <li><a href="#expectativa" class="text-orange-600 hover:text-orange-700 text-sm font-medium">O que esperar de um item de até R$30</a></li>
+        <li><a href="#produtos" class="text-orange-600 hover:text-orange-700 text-sm font-medium">As 10 utilidades, uma por uma</a></li>
+        <li><a href="#frete" class="text-orange-600 hover:text-orange-700 text-sm font-medium">A conta do frete: onde o barato deixa de ser barato</a></li>
+        <li><a href="#faq" class="text-orange-600 hover:text-orange-700 text-sm font-medium">Perguntas frequentes</a></li>
+      </ul>
+    </nav>
+
+    <!-- Expectativa realista -->
+    <div id="expectativa" class="bg-blue-50 border border-blue-200 rounded-2xl p-6 mb-10">
+      <h2 class="text-slate-800 font-bold text-lg mb-4">O que esperar de um item de até R$30</h2>
+      <p class="text-slate-700 text-sm leading-relaxed mb-3">
+        Produto barato tem uma regra que quase nunca falha: quanto mais simples a função, melhor ele envelhece. Um pano de microfibra, um tapete, um varal de prendedores e uma sapateira desmontável são objetos sem motor, sem eletrônica e sem peça que queime. Um item de R$20 nessas categorias pode durar anos. Já qualquer coisa que tenha bateria, motor ou aquecimento por menos de R$30 é uma aposta, e eu trato como aposta no texto abaixo.
+      </p>
+      <p class="text-slate-700 text-sm leading-relaxed">
+        O segundo filtro é a nota do vendedor. Antes de colocar qualquer coisa aqui, olhei se o produto tinha avaliação acima de 4,5 com um volume real de compradores, e li as avaliações de uma e duas estrelas, que são as que revelam problema recorrente. Elogio genérico de cinco estrelas não diz nada. Reclamação repetida de tamanho, cor ou costura diz tudo.
+      </p>
+    </div>
+
+    <!-- Produtos -->
+    <section id="produtos" class="mb-10">
+      <h2 class="text-2xl font-black text-slate-900 mb-6">As 10 utilidades, uma por uma</h2>
+
+      <div class="border border-slate-200 rounded-xl overflow-hidden mb-4 shadow-sm">
+        <div class="bg-slate-800 px-5 py-3 flex items-center gap-3">
+          <span class="bg-orange-500 text-white font-black text-sm px-2.5 py-1 rounded-lg">01</span>
+          <div>
+            <span class="text-orange-300 text-xs font-semibold uppercase tracking-wide">Banheiro · Já uso</span>
+            <p class="text-white font-bold text-sm leading-tight">Tapete de Chão para Banheiro Bolinha em Microfibra Antiderrapante</p>
+          </div>
+        </div>
+        <div class="p-5 flex flex-col md:flex-row gap-4">
+          <div class="w-32 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-2 border border-slate-100">
+            <img src="/images/utilidades-shopee-30/tapete-bolinha-banheiro.webp" alt="Tapete de banheiro bolinha em microfibra antiderrapante" class="w-full h-auto object-contain rounded-lg" loading="lazy" width="128" height="128" />
+          </div>
+          <div class="flex-1">
+            <p class="text-slate-700 text-sm leading-relaxed mb-2">
+              Esse é o queridinho da minha casa. É maravilhoso de pisar, absurdamente macio no pé descalço e fica lindo no banheiro, com aquele aspecto fofo de bolinha que valoriza um ambiente simples sem precisar reformar nada. Absorve bem a água que escorre do box e a base antiderrapante segura no piso frio. O cuidado que eu recomendo é lavar na máquina em ciclo delicado e secar na sombra, porque secadora e sol forte endurecem as bolinhas com o tempo.
+            </p>
+            <p class="text-orange-600 font-bold text-sm">R$ 18,90 (julho de 2026)</p>
+          </div>
+          <div class="flex flex-col gap-2 md:w-40 flex-shrink-0">
+            <a href="https://s.shopee.com.br/903aDJxCls" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-2 rounded-xl text-sm transition-colors">Ver na Shopee</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="border border-slate-200 rounded-xl overflow-hidden mb-4 shadow-sm">
+        <div class="bg-slate-800 px-5 py-3 flex items-center gap-3">
+          <span class="bg-orange-500 text-white font-black text-sm px-2.5 py-1 rounded-lg">02</span>
+          <div>
+            <span class="text-orange-300 text-xs font-semibold uppercase tracking-wide">Banheiro</span>
+            <p class="text-white font-bold text-sm leading-tight">Toalha de Rosto Karsten Lumina Toque Macio 100% Algodão</p>
+          </div>
+        </div>
+        <div class="p-5 flex flex-col md:flex-row gap-4">
+          <div class="w-32 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-2 border border-slate-100">
+            <img src="/images/utilidades-shopee-30/toalha-rosto-karsten.webp" alt="Toalha de rosto Karsten Lumina 100% algodão" class="w-full h-auto object-contain rounded-lg" loading="lazy" width="128" height="128" />
+          </div>
+          <div class="flex-1">
+            <p class="text-slate-700 text-sm leading-relaxed mb-2">
+              Aqui o ponto não é o preço baixo, é a marca. Karsten é uma fabricante têxtil brasileira tradicional, e pegar uma toalha de rosto dela em 100% algodão por menos de trinta reais é o tipo de achado que justifica olhar a Shopee. Toalha de rosto é o item que a gente troca com menos frequência do que deveria, e a diferença entre uma boa e uma ruim aparece já na primeira semana: a de algodão puro seca de verdade, a de mistura sintética barata só espalha a água. Ainda não comprei esta, ela está na minha lista.
+            </p>
+            <p class="text-orange-600 font-bold text-sm">R$ 29,90 (julho de 2026)</p>
+          </div>
+          <div class="flex flex-col gap-2 md:w-40 flex-shrink-0">
+            <a href="https://s.shopee.com.br/1VxZHeSUxi" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-2 rounded-xl text-sm transition-colors">Ver na Shopee</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="border border-slate-200 rounded-xl overflow-hidden mb-4 shadow-sm">
+        <div class="bg-slate-800 px-5 py-3 flex items-center gap-3">
+          <span class="bg-orange-500 text-white font-black text-sm px-2.5 py-1 rounded-lg">03</span>
+          <div>
+            <span class="text-orange-300 text-xs font-semibold uppercase tracking-wide">Banheiro</span>
+            <p class="text-white font-bold text-sm leading-tight">Toalha de Piso para Banheiro 100% Algodão</p>
+          </div>
+        </div>
+        <div class="p-5 flex flex-col md:flex-row gap-4">
+          <div class="w-32 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-2 border border-slate-100">
+            <img src="/images/utilidades-shopee-30/toalha-piso-banheiro.webp" alt="Toalha de piso para banheiro em algodão, várias cores" class="w-full h-auto object-contain rounded-lg" loading="lazy" width="128" height="128" />
+          </div>
+          <div class="flex-1">
+            <p class="text-slate-700 text-sm leading-relaxed mb-2">
+              É a alternativa direta ao tapete de bolinha do primeiro item, e a escolha entre os dois depende de uma coisa só: quem lava. A toalha de piso de algodão é fina, entra em qualquer máquina, seca rápido no varal e é a opção sensata para quem tem banheiro pequeno e troca o tapete toda semana. O de bolinha é mais macio e mais bonito, mas demora bem mais para secar. Muita gente compra os dois e reveza. Este eu ainda não tenho.
+            </p>
+            <p class="text-orange-600 font-bold text-sm">R$ 29,90 (julho de 2026)</p>
+          </div>
+          <div class="flex flex-col gap-2 md:w-40 flex-shrink-0">
+            <a href="https://s.shopee.com.br/8pkA1HNLL6" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-2 rounded-xl text-sm transition-colors">Ver na Shopee</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="border border-slate-200 rounded-xl overflow-hidden mb-4 shadow-sm">
+        <div class="bg-slate-800 px-5 py-3 flex items-center gap-3">
+          <span class="bg-orange-500 text-white font-black text-sm px-2.5 py-1 rounded-lg">04</span>
+          <div>
+            <span class="text-orange-300 text-xs font-semibold uppercase tracking-wide">Organização</span>
+            <p class="text-white font-bold text-sm leading-tight">Kit 5 Peças de Organizadores de Viagem para Sapatos</p>
+          </div>
+        </div>
+        <div class="p-5 flex flex-col md:flex-row gap-4">
+          <div class="w-32 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-2 border border-slate-100">
+            <img src="/images/utilidades-shopee-30/organizadores-sapato-viagem.webp" alt="Kit de 5 sacos organizadores de viagem para sapatos" class="w-full h-auto object-contain rounded-lg" loading="lazy" width="128" height="128" />
+          </div>
+          <div class="flex-1">
+            <p class="text-slate-700 text-sm leading-relaxed mb-2">
+              Cinco sacos com cordão e visor transparente, feitos para levar sapato na mala sem sujar a roupa. O uso menos óbvio, e talvez o melhor, é dentro de casa: guardar o sapato que você só usa em ocasião específica, aquele de festa que fica anos parado juntando poeira na prateleira. Como o visor deixa ver o que tem dentro, você não precisa abrir cinco sacos para achar um par. Não comprei ainda, mas é o tipo de item que resolve um problema real de armário apertado por menos de vinte e cinco reais.
+            </p>
+            <p class="text-orange-600 font-bold text-sm">R$ 24,89 (julho de 2026)</p>
+          </div>
+          <div class="flex flex-col gap-2 md:w-40 flex-shrink-0">
+            <a href="https://s.shopee.com.br/20tpssRVqj" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-2 rounded-xl text-sm transition-colors">Ver na Shopee</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="border border-slate-200 rounded-xl overflow-hidden mb-4 shadow-sm">
+        <div class="bg-slate-800 px-5 py-3 flex items-center gap-3">
+          <span class="bg-orange-500 text-white font-black text-sm px-2.5 py-1 rounded-lg">05</span>
+          <div>
+            <span class="text-orange-300 text-xs font-semibold uppercase tracking-wide">Lavanderia · Já uso</span>
+            <p class="text-white font-bold text-sm leading-tight">Varal de Teto com 40 Prendedores para Roupa</p>
+          </div>
+        </div>
+        <div class="p-5 flex flex-col md:flex-row gap-4">
+          <div class="w-32 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-2 border border-slate-100">
+            <img src="/images/utilidades-shopee-30/varal-40-prendedores.webp" alt="Varal suspenso com 40 prendedores de metal para roupas" class="w-full h-auto object-contain rounded-lg" loading="lazy" width="128" height="128" />
+          </div>
+          <div class="flex-1">
+            <p class="text-slate-700 text-sm leading-relaxed mb-2">
+              Tenho e uso. É muito prático para estender meia e roupa íntima, que são exatamente as peças que ocupam espaço demais no varal comum e sempre acabam caindo. Você pendura o conjunto inteiro em um gancho, prende quarenta peças pequenas em um palmo de área e ainda pode girar para pegar o próximo prendedor sem dar a volta. Para quem mora em apartamento e lava roupa dentro de casa, resolve uma dor específica que varal grande nenhum resolve.
+            </p>
+            <p class="text-orange-600 font-bold text-sm">R$ 24,98 (julho de 2026)</p>
+          </div>
+          <div class="flex flex-col gap-2 md:w-40 flex-shrink-0">
+            <a href="https://s.shopee.com.br/7prcphAidS" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-2 rounded-xl text-sm transition-colors">Ver na Shopee</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="border border-slate-200 rounded-xl overflow-hidden mb-4 shadow-sm">
+        <div class="bg-slate-800 px-5 py-3 flex items-center gap-3">
+          <span class="bg-orange-500 text-white font-black text-sm px-2.5 py-1 rounded-lg">06</span>
+          <div>
+            <span class="text-orange-300 text-xs font-semibold uppercase tracking-wide">Cozinha</span>
+            <p class="text-white font-bold text-sm leading-tight">Kit Tapete e Passadeira para Cozinha</p>
+          </div>
+        </div>
+        <div class="p-5 flex flex-col md:flex-row gap-4">
+          <div class="w-32 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-2 border border-slate-100">
+            <img src="/images/utilidades-shopee-30/kit-tapete-cozinha.webp" alt="Kit com tapete e passadeira antiderrapante para cozinha" class="w-full h-auto object-contain rounded-lg" loading="lazy" width="128" height="128" />
+          </div>
+          <div class="flex-1">
+            <p class="text-slate-700 text-sm leading-relaxed mb-2">
+              Um kit com passadeira comprida para a frente da pia e um tapete menor, os dois com base antiderrapante. Quem cozinha em pé sabe que meia hora de pia no piso duro cansa o pé de um jeito que a gente nem associa à cozinha. Duas ressalvas honestas, já que não tenho este em casa: modelos com estampa escrita cansam mais rápido do que os lisos, e é preciso lavar com frequência porque tapete de cozinha absorve respingo de gordura. Prefira liso se a ideia for durar anos.
+            </p>
+            <p class="text-orange-600 font-bold text-sm">R$ 25,90 (julho de 2026)</p>
+          </div>
+          <div class="flex flex-col gap-2 md:w-40 flex-shrink-0">
+            <a href="https://s.shopee.com.br/18lVRc0Li" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-2 rounded-xl text-sm transition-colors">Ver na Shopee</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="border border-slate-200 rounded-xl overflow-hidden mb-4 shadow-sm">
+        <div class="bg-slate-800 px-5 py-3 flex items-center gap-3">
+          <span class="bg-orange-500 text-white font-black text-sm px-2.5 py-1 rounded-lg">07</span>
+          <div>
+            <span class="text-orange-300 text-xs font-semibold uppercase tracking-wide">Organização · Já usei</span>
+            <p class="text-white font-bold text-sm leading-tight">Sapateira de 4 ou 5 Andares Multiuso Desmontável</p>
+          </div>
+        </div>
+        <div class="p-5 flex flex-col md:flex-row gap-4">
+          <div class="w-32 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-2 border border-slate-100">
+            <img src="/images/utilidades-shopee-30/sapateira-desmontavel.webp" alt="Sapateira desmontável de metal com 4 ou 5 andares" class="w-full h-auto object-contain rounded-lg" loading="lazy" width="128" height="128" />
+          </div>
+          <div class="flex-1">
+            <p class="text-slate-700 text-sm leading-relaxed mb-2">
+              Já tive uma dessas e usei muito. O que mais me agradou foi poder carregar para outro cômodo sem desmontar: ela é leve, então sai do quarto para a entrada de casa quando você quer os sapatos do dia à mão, e volta depois. Monta em minutos, sem ferramenta, e por ser desmontável some dentro do armário quando você não precisa. Vale saber o limite: sapato pesado de couro ou bota deforma a prateleira com o tempo, então ela é para tênis, sapatilha, chinelo e sandália, não para uma coleção de botas.
+            </p>
+            <p class="text-orange-600 font-bold text-sm">R$ 17,98 (julho de 2026)</p>
+          </div>
+          <div class="flex flex-col gap-2 md:w-40 flex-shrink-0">
+            <a href="https://s.shopee.com.br/7fYCdcRhFA" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-2 rounded-xl text-sm transition-colors">Ver na Shopee</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="border border-slate-200 rounded-xl overflow-hidden mb-4 shadow-sm">
+        <div class="bg-slate-800 px-5 py-3 flex items-center gap-3">
+          <span class="bg-orange-500 text-white font-black text-sm px-2.5 py-1 rounded-lg">08</span>
+          <div>
+            <span class="text-orange-300 text-xs font-semibold uppercase tracking-wide">Limpeza · Já uso</span>
+            <p class="text-white font-bold text-sm leading-tight">Kit 10 Panos de Limpeza em Microfibra de Alta Absorção</p>
+          </div>
+        </div>
+        <div class="p-5 flex flex-col md:flex-row gap-4">
+          <div class="w-32 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-2 border border-slate-100">
+            <img src="/images/utilidades-shopee-30/kit-panos-microfibra.webp" alt="Kit de panos de limpeza em microfibra coloridos" class="w-full h-auto object-contain rounded-lg" loading="lazy" width="128" height="128" />
+          </div>
+          <div class="flex-1">
+            <p class="text-slate-700 text-sm leading-relaxed mb-2">
+              Não fico sem eles na cozinha. É o item mais barato da lista e provavelmente o que eu mais uso: microfibra puxa a sujeira em vez de espalhar, não solta fiapo no vidro e limpa bancada só com água na maioria das vezes, sem precisar de produto. Com dez panos dá para separar por função, um jogo de cor para bancada, outro para vidro, outro para o chão, e nunca mais usar o mesmo pano da gordura no espelho. A um real e pouco cada, é o melhor custo-benefício que existe aqui.
+            </p>
+            <p class="text-orange-600 font-bold text-sm">R$ 14,97 (julho de 2026)</p>
+          </div>
+          <div class="flex flex-col gap-2 md:w-40 flex-shrink-0">
+            <a href="https://s.shopee.com.br/50XRSlK06S" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-2 rounded-xl text-sm transition-colors">Ver na Shopee</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="border border-slate-200 rounded-xl overflow-hidden mb-4 shadow-sm">
+        <div class="bg-slate-800 px-5 py-3 flex items-center gap-3">
+          <span class="bg-orange-500 text-white font-black text-sm px-2.5 py-1 rounded-lg">09</span>
+          <div>
+            <span class="text-orange-300 text-xs font-semibold uppercase tracking-wide">Limpeza</span>
+            <p class="text-white font-bold text-sm leading-tight">Espuma Desengordurante Zip Clean My Place 300ml</p>
+          </div>
+        </div>
+        <div class="p-5 flex flex-col md:flex-row gap-4">
+          <div class="w-32 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-2 border border-slate-100">
+            <img src="/images/utilidades-shopee-30/espuma-desengordurante-zip.webp" alt="Espuma desengordurante Zip Clean My Place 300ml para limpeza pesada" class="w-full h-auto object-contain rounded-lg" loading="lazy" width="128" height="128" />
+          </div>
+          <div class="flex-1">
+            <p class="text-slate-700 text-sm leading-relaxed mb-2">
+              Espuma em spray para gordura encrostada de fogão, coifa e forno, aquela que pano com detergente não tira mais. A vantagem da espuma sobre o líquido é que ela gruda na superfície vertical e continua agindo em vez de escorrer. Este ainda não é meu, e vale um aviso que não tem a ver com o produto e sim com a categoria: desengordurante forte pede luva, janela aberta e cuidado com superfície de alumínio ou pintada, porque a mesma força que dissolve a gordura pode manchar o acabamento. Teste num cantinho escondido antes.
+            </p>
+            <p class="text-orange-600 font-bold text-sm">R$ 15,80 (julho de 2026)</p>
+          </div>
+          <div class="flex flex-col gap-2 md:w-40 flex-shrink-0">
+            <a href="https://s.shopee.com.br/3g23sUtpYb" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-2 rounded-xl text-sm transition-colors">Ver na Shopee</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="border border-slate-200 rounded-xl overflow-hidden mb-4 shadow-sm">
+        <div class="bg-slate-800 px-5 py-3 flex items-center gap-3">
+          <span class="bg-orange-500 text-white font-black text-sm px-2.5 py-1 rounded-lg">10</span>
+          <div>
+            <span class="text-orange-300 text-xs font-semibold uppercase tracking-wide">Cozinha · Na minha lista de desejos</span>
+            <p class="text-white font-bold text-sm leading-tight">Batedor Misturador Mixer Elétrico de Mão</p>
+          </div>
+        </div>
+        <div class="p-5 flex flex-col md:flex-row gap-4">
+          <div class="w-32 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-2 border border-slate-100">
+            <img src="/images/utilidades-shopee-30/batedor-mixer-eletrico.webp" alt="Batedor misturador mixer elétrico de mão com hastes" class="w-full h-auto object-contain rounded-lg" loading="lazy" width="128" height="128" />
+          </div>
+          <div class="flex-1">
+            <p class="text-slate-700 text-sm leading-relaxed mb-2">
+              Único item elétrico da lista, e por isso o mais honesto de todos para eu comentar. Não é uma batedeira. É um mini misturador de mão, do tipo que faz espuma de leite para o café, mistura achocolatado sem grumo, bate um ovo ou um molho rápido. Dentro dessa função ele resolve, e é justamente por isso que está na minha lista de próximas compras. Fora dela, decepciona: não bate clara em neve firme de bolo nem massa pesada, e cobrar isso de um aparelho de dezoito reais seria injusto. Compre sabendo o que ele é.
+            </p>
+            <p class="text-orange-600 font-bold text-sm">R$ 18,90 (julho de 2026)</p>
+          </div>
+          <div class="flex flex-col gap-2 md:w-40 flex-shrink-0">
+            <a href="https://s.shopee.com.br/3VidgG1eHq" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-2 rounded-xl text-sm transition-colors">Ver na Shopee</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Frete -->
+    <div id="frete" class="bg-slate-50 border border-slate-200 rounded-2xl p-6 mb-10">
+      <h2 class="text-xl font-black text-slate-900 mb-3">A conta do frete: onde o barato deixa de ser barato</h2>
+      <p class="text-slate-700 leading-relaxed mb-3">
+        Em uma lista de itens de até R$30, o frete é o fator que decide se a compra vale a pena. Pagar R$14,97 em um kit de panos e mais R$15 de entrega significa que você pagou o dobro. É por isso que a compra inteligente aqui é a compra somada: junte três ou quatro itens no carrinho, de preferência do mesmo vendedor, e o custo da entrega se dilui. A Shopee costuma ter cupom de frete grátis a partir de um valor mínimo, e ele quase sempre já está disponível na aba de cupons antes de você finalizar.
+      </p>
+      <p class="text-slate-700 leading-relaxed mb-3">
+        O prazo é o outro ponto. Boa parte dos vendedores entrega entre 15 e 25 dias, e alguns produtos vêm de fora. Não compre nada desta lista contando em usar na semana que vem. Se a pressa é real, a comparação honesta com o marketplace concorrente ajuda, e eu já escrevi sobre isso na lista de itens de casa por até R$30 na Amazon, que está logo abaixo.
+      </p>
+      <p class="text-slate-700 leading-relaxed">
+        Por último, tamanho. Metade dos arrependimentos com tapete e passadeira comprados on-line é de medida, não de qualidade. Meça o espaço com fita métrica e compare com as dimensões descritas na página do produto antes de escolher, porque foto de vitrine engana a escala com uma facilidade impressionante.
+      </p>
+    </div>
+
+    <h2 id="faq" class="text-2xl font-black text-slate-900 mb-6">Dúvidas frequentes</h2>
+    <p class="text-slate-600 leading-relaxed mb-5">As perguntas que mais aparecem de quem quer comprar utilidades baratas na Shopee, cobrindo qualidade, frete, prazo e o que realmente compensa em um item de até R$30.</p>
+    <div class="space-y-3 mb-10">
+      <details class="border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+          Vale a pena comprar utilidades tão baratas na Shopee?
+          <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+          Vale quando o produto é simples e não depende de motor, bateria ou aquecimento. Pano de microfibra, tapete, varal de prendedores e sapateira desmontável são objetos sem peça que queima, e um item de R$20 nessas categorias pode durar anos. Já qualquer coisa elétrica por menos de R$30 tem que ser comprada com expectativa ajustada.
+        </div>
+      </details>
+      <details class="border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+          O frete não acaba com a economia de um produto de R$15?
+          <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+          Acaba, se você comprar um item sozinho. A forma certa de comprar barato na Shopee é somar três ou quatro produtos no mesmo pedido, de preferência do mesmo vendedor, e aproveitar o cupom de frete grátis a partir do valor mínimo. Assim o custo da entrega se dilui entre os itens em vez de dobrar o preço de um só.
+        </div>
+      </details>
+      <details class="border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+          Tapete de bolinha ou toalha de piso: qual é melhor para o banheiro?
+          <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+          O de bolinha em microfibra é muito mais macio no pé e mais bonito, e é o que eu uso em casa. A toalha de piso de algodão ganha na praticidade: é fina, lava e seca rápido, ideal para quem troca toda semana. Se o banheiro é pequeno e a lavagem é frequente, a toalha de piso compensa. Se a prioridade é conforto e visual, o de bolinha.
+        </div>
+      </details>
+      <details class="border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+          O batedor elétrico de R$18 substitui uma batedeira?
+          <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+          Não, e nem tenta. Ele é um misturador de mão para espuma de leite, achocolatado sem grumo, ovo batido e molho rápido. Dentro dessa função cumpre bem o papel. Para clara em neve firme, massa de bolo ou chantilly de verdade, você precisa de uma batedeira, e não existe atalho de dezoito reais para isso.
+        </div>
+      </details>
+      <details class="border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+          Quanto tempo demora para chegar e o que fazer se vier errado?
+          <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+          Conte de 15 a 25 dias para a maioria dos vendedores, salvo frete expresso. Se o produto chegar errado, com defeito ou em tamanho diferente do anunciado, abra a solicitação de devolução direto no pedido dentro do prazo informado na página, anexando foto do item e da embalagem. Guardar essas fotos desde a abertura da caixa acelera muito o reembolso.
+        </div>
+      </details>
+    </div>
+    <script type="application/ld+json" set:html={JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Vale a pena comprar utilidades tão baratas na Shopee?","acceptedAnswer":{"@type":"Answer","text":"Vale quando o produto é simples e não depende de motor, bateria ou aquecimento. Pano de microfibra, tapete, varal de prendedores e sapateira desmontável não têm peça que queima e podem durar anos. Itens elétricos por menos de R$30 exigem expectativa ajustada."}},{"@type":"Question","name":"O frete não acaba com a economia de um produto de R$15?","acceptedAnswer":{"@type":"Answer","text":"Acaba, se você comprar um item sozinho. A forma certa é somar três ou quatro produtos no mesmo pedido, de preferência do mesmo vendedor, e aproveitar o cupom de frete grátis a partir do valor mínimo."}},{"@type":"Question","name":"Tapete de bolinha ou toalha de piso: qual é melhor para o banheiro?","acceptedAnswer":{"@type":"Answer","text":"O de bolinha em microfibra é mais macio e mais bonito. A toalha de piso de algodão é fina, lava e seca rápido, ideal para quem troca toda semana. Banheiro pequeno com lavagem frequente favorece a toalha de piso."}},{"@type":"Question","name":"O batedor elétrico de R$18 substitui uma batedeira?","acceptedAnswer":{"@type":"Answer","text":"Não. Ele é um misturador de mão para espuma de leite, achocolatado, ovo batido e molho rápido. Para clara em neve firme, massa de bolo ou chantilly, é preciso uma batedeira de verdade."}},{"@type":"Question","name":"Quanto tempo demora para chegar e o que fazer se vier errado?","acceptedAnswer":{"@type":"Answer","text":"De 15 a 25 dias para a maioria dos vendedores. Se vier errado ou com defeito, abra a solicitação de devolução no próprio pedido dentro do prazo, anexando foto do item e da embalagem."}}]})} />
+
+    <!-- Leia Também -->
+    <a href="/mais-vendidos-shopee-casa" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;margin-bottom:16px;">
+      <div style="width:200px;flex-shrink:0;">
+        <img src="/images/mais-vendidos-shopee/capa-mais-vendidos-shopee.webp" alt="Os mais vendidos da Shopee para casa" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+      </div>
+      <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+        <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+        <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Os 6 Mais Vendidos da Shopee para Casa: Achados Que Realmente Valem a Pena</span>
+      </div>
+    </a>
+    <a href="/itens-casa-30-reais-amazon" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+      <div style="width:200px;flex-shrink:0;">
+        <img src="/images/itens30/capa-itens30.webp" alt="Itens para casa por até 30 reais na Amazon" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+      </div>
+      <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+        <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+        <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">15 Itens Incríveis para Casa por até R$ 30 na Amazon</span>
       </div>
     </a>
   </div>
