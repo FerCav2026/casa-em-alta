@@ -9,7 +9,10 @@ import { readFile, readdir } from 'node:fs/promises';
 import { join } from 'node:path';
 
 const HOST = 'www.casaemalta.com.br';
-const KEY = '449eded63c9945deada24cdb43b13353';
+// Chave trocada em 13/07/2026: a anterior (449eded6...) passou a receber
+// 403 UserForbiddedToAccessSite do Bing desde ~08/07. A chave antiga
+// continua publicada em public/ de proposito, para nao quebrar nada.
+const KEY = '09cde6955fa54154995ef86e8edb91ad';
 const KEY_LOCATION = `https://${HOST}/${KEY}.txt`;
 const DIST = 'dist';
 
