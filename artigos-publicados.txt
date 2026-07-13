@@ -97,17 +97,19 @@ PUBLICADOS (30)
 30. Os 6 Mais Vendidos da Shopee para Casa: Achados Que Realmente Valem a Pena
     Slug: mais-vendidos-shopee-casa | Categoria: Rankings e Listas | Publicado: 10/07/2026 (commits 069bc9f/1d614f4) | Abre o Cluster Shopee. Mudou de 17 para 6 produtos escolhidos pela Fernanda (cabideiro closet e panela de pressão com experiência real de uso; vaporizador Mondial marcado como lista de desejos, ainda não comprado; demais 3 em tom de curadoria). Fotos reais dos 6 produtos + capa gerada com gpt-image-1 (Lumi). Links de afiliado individuais por produto.
 
+31. 10 Utilidades da Shopee por Menos de R$30 Que Valem a Pena
+    Slug: utilidades-shopee-ate-30-reais | Categoria: Rankings e Listas | Publicado: 13/07/2026 (commit b5fa9a9) | 2º artigo do Cluster Shopee. 10 produtos reais escolhidos pela Fernanda, todos abaixo de R$30, com foto real e link de afiliado individual na ORDEM em que ela enviou. 4 com experiência real de uso, marcados "Já uso" no card: tapete de bolinha do banheiro (R$18,90), varal de 40 prendedores (R$24,98), sapateira desmontável (R$17,98, ela já teve), kit de 10 panos de microfibra (R$14,97). Os outros 6 em tom de curadoria, com a ressalva explícita no texto de que ainda não comprou. Capa gerada com gpt-image-1 (flat-lay sem texto). Links retroativos inseridos em mais-vendidos-shopee-casa e itens-casa-30-reais-amazon (este não tinha bloco Leia Também).
+    ATENÇÃO: a Shopee bloqueia leitura automática (API responde 403, página é SPA em JS e o slug do produto vira "opaanlp" no link curto). Não dá para conferir produto/preço por link. Os dados vieram da Fernanda e a ordem dos links é a garantia de que cada botão leva ao produto certo.
+
 =====================================
 AGENDADOS (0)
 
-Nenhum artigo agendado no momento. Próximo do calendário: 13/07 "10 Utilidades da Shopee por Menos de R$30" (2º artigo do Cluster Shopee).
-O calendário segue quase intacto: o #39 planejado ("Os 17 Mais Vendidos da Shopee") virou o #30 acima, publicado
-com 6 produtos em vez de 17, 5 dias antes do previsto (era 10/07 mesmo, então a data bateu). Restam 5 artigos
-do Cluster Shopee (13/07 a 10/08).
+Nenhum artigo agendado no momento. Próximo do calendário: 20/07 "Mini Eletrodomésticos Mais Vendidos da Shopee" (3º artigo do Cluster Shopee).
+Restam 4 artigos do Cluster Shopee (20/07 a 10/08).
 
 =====================================
-CATEGORIAS (30 publicados):
-- Rankings e Listas: 10 artigos
+CATEGORIAS (31 publicados):
+- Rankings e Listas: 11 artigos
 - Comparativo: 5 artigos
 - Review: 9 artigos
 - Guia de Compra: 6 artigos
