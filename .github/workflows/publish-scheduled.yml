@@ -1,0 +1,40 @@
+name: Publica artigos agendados
+
+on:
+  schedule:
+    # 12:00 UTC = 09:00 (America/Sao_Paulo)
+    - cron: '0 12 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: main
+
+      - name: Configura git
+        run: |
+          git config user.name "casa-em-alta-bot"
+          git config user.email "actions@github.com"
+
+      - name: Publica artigos cuja data chegou
+        id: publish
+        run: node scripts/publish-scheduled.mjs
+
+      - name: Abre issue se houve conflito
+        if: steps.publish.outputs.has_conflicts == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: 'Agendamento com conflito: ajuste manual necessário',
+              body: `A publicação automática de hoje encontrou conflito de merge nestes artigos: ${{ steps.publish.outputs.conflict_list }}\n\nEntre na branch draft correspondente, resolva o conflito com a main e faça o merge manualmente.`
+            })
