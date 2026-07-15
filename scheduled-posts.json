@@ -1,3 +1,10 @@
 {
-  "posts": []
+  "posts": [
+    {
+      "branch": "draft/teste-automacao",
+      "slug": "teste-automacao",
+      "publishDate": "2026-07-15",
+      "status": "pending"
+    }
+  ]
 }
