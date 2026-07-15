@@ -4,7 +4,8 @@
       "branch": "draft/teste-automacao",
       "slug": "teste-automacao",
       "publishDate": "2026-07-15",
-      "status": "pending"
+      "status": "published",
+      "publishedAt": "2026-07-15"
     }
   ]
 }
