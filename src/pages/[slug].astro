@@ -230,6 +230,13 @@ const posts: Record<string, { titulo: string; descricao: string; categoria: stri
     dataCriacao: '2026-07-13',
     dataModificacao: '2026-07-13',
   },
+  'mini-eletrodomesticos-mais-vendidos-shopee': {
+    titulo: 'Mini Eletrodomésticos Mais Vendidos da Shopee: Vale a Pena ou é Furada?',
+    descricao: 'Analisamos 5 mini eletrodomésticos best-sellers da Shopee com nota alta e milhares de avaliações: o que cada um realmente faz, onde vale a pena e onde a expectativa precisa ser ajustada.',
+    categoria: 'Rankings e Listas',
+    dataCriacao: '2026-07-20',
+    dataModificacao: '2026-07-20',
+  },
 };
 
 export function getStaticPaths() {
@@ -264,6 +271,7 @@ export function getStaticPaths() {
     'melhores-airfryers-2026': {},
     'mais-vendidos-shopee-casa': {},
     'utilidades-shopee-ate-30-reais': {},
+    'mini-eletrodomesticos-mais-vendidos-shopee': {},
   }).map((slug) => ({ params: { slug } }));
 }
 
@@ -326,6 +334,7 @@ const isAirfryerHD9252 = slug === 'airfryer-philips-walita-hd9252-review';
 const isMelhoresAirfryers = slug === 'melhores-airfryers-2026';
 const isMaisVendidosShopee = slug === 'mais-vendidos-shopee-casa';
 const isUtilidadesShopee30 = slug === 'utilidades-shopee-ate-30-reais';
+const isMiniEletrodomesticosShopee = slug === 'mini-eletrodomesticos-mais-vendidos-shopee';
 
 const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isAirfryer ? '/images/airfryer/capa-airfryer.webp'
@@ -357,6 +366,7 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isMelhoresAirfryers ? '/images/melhores-airfryers/capa-melhores-airfryers.webp'
   : isMaisVendidosShopee ? '/images/mais-vendidos-shopee/capa-mais-vendidos-shopee.webp'
   : isUtilidadesShopee30 ? '/images/utilidades-shopee-30/capa-utilidades-shopee-30.webp'
+  : isMiniEletrodomesticosShopee ? '/images/mini-eletrodomesticos-shopee/capa-mini-eletrodomesticos-shopee.webp'
   : undefined;
 ---
 
@@ -13782,13 +13792,22 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
         <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Kit Organização de Cozinha: Monte o seu por R$ 150</span>
       </div>
     </a>
-    <a href="/utilidades-shopee-ate-30-reais" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+    <a href="/utilidades-shopee-ate-30-reais" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;margin-bottom:16px;">
       <div style="width:200px;flex-shrink:0;">
         <img src="/images/utilidades-shopee-30/capa-utilidades-shopee-30.webp" alt="Utilidades da Shopee por menos de 30 reais" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
       </div>
       <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
         <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
         <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">10 Utilidades da Shopee por Menos de R$30 Que Valem a Pena</span>
+      </div>
+    </a>
+    <a href="/mini-eletrodomesticos-mais-vendidos-shopee" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+      <div style="width:200px;flex-shrink:0;">
+        <img src="/images/mini-eletrodomesticos-shopee/capa-mini-eletrodomesticos-shopee.webp" alt="Mini eletrodomésticos mais vendidos da Shopee" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+      </div>
+      <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+        <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+        <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Mini Eletrodomésticos Mais Vendidos da Shopee: Vale a Pena ou é Furada?</span>
       </div>
     </a>
   </div>
@@ -14176,7 +14195,7 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
         <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Os 6 Mais Vendidos da Shopee para Casa: Achados Que Realmente Valem a Pena</span>
       </div>
     </a>
-    <a href="/itens-casa-30-reais-amazon" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+    <a href="/itens-casa-30-reais-amazon" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;margin-bottom:16px;">
       <div style="width:200px;flex-shrink:0;">
         <img src="/images/itens30/capa-itens30.webp" alt="Itens para casa por até 30 reais na Amazon" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
       </div>
@@ -14185,10 +14204,283 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
         <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">15 Itens Incríveis para Casa por até R$ 30 na Amazon</span>
       </div>
     </a>
+    <a href="/mini-eletrodomesticos-mais-vendidos-shopee" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+      <div style="width:200px;flex-shrink:0;">
+        <img src="/images/mini-eletrodomesticos-shopee/capa-mini-eletrodomesticos-shopee.webp" alt="Mini eletrodomésticos mais vendidos da Shopee" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+      </div>
+      <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+        <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+        <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Mini Eletrodomésticos Mais Vendidos da Shopee: Vale a Pena ou é Furada?</span>
+      </div>
+    </a>
   </div>
 )}
 
+{isMiniEletrodomesticosShopee && (
+  <div>
 
+    <!-- Capa do artigo -->
+    <div class="rounded-2xl overflow-hidden mb-8 shadow-md">
+      <img
+        src="/images/mini-eletrodomesticos-shopee/capa-mini-eletrodomesticos-shopee.webp"
+        alt="Cinco mini eletrodomésticos mais vendidos da Shopee sobre uma bancada de cozinha"
+        class="w-full h-auto object-cover"
+        loading="eager"
+      />
+    </div>
+
+    <!-- Box de introdução -->
+    <div class="bg-orange-50 border border-orange-100 rounded-2xl p-6 mb-8">
+      <p class="text-slate-800 text-base leading-relaxed mb-3">
+        Mini eletrodoméstico é a categoria que mais divide opinião na Shopee. Para cada review de cinco estrelas elogiando o tamanho compacto, existe alguém reclamando que "mini" também significa "faz pouco de cada vez". Reuni aqui cinco dos mais vendidos da plataforma, uma waffleira, uma máquina de mini bolo, uma panela de arroz, um grill e um mixer portátil, para entender onde cada um cumpre o que promete e onde a expectativa precisa ser ajustada antes de comprar.
+      </p>
+      <p class="text-slate-800 text-base leading-relaxed mb-3">
+        Sendo honesta: nunca usei nenhum dos cinco. Esta lista é fruto de pesquisa, não de teste próprio. O que fiz foi ler a nota média de cada produto, o volume de avaliações por trás dela e, principalmente, os comentários de quem já recebeu e usou em casa, prestando atenção especial no que se repete tanto no elogio quanto na reclamação.
+      </p>
+      <p class="text-slate-800 text-base leading-relaxed">
+        Preços de mini eletrodoméstico na Shopee mudam com frequência, então não vou cravar um valor aqui: confira o preço atual direto no botão de cada produto antes de decidir.
+      </p>
+    </div>
+
+    <!-- Índice -->
+    <nav class="bg-white border border-slate-200 rounded-xl px-5 py-4 mb-10">
+      <p class="text-slate-800 font-bold text-sm mb-3">Neste artigo:</p>
+      <ul class="space-y-1.5">
+        <li><a href="#metodologia" class="text-orange-600 hover:text-orange-700 text-sm font-medium">Como avaliei sem ter usado nenhum</a></li>
+        <li><a href="#produtos" class="text-orange-600 hover:text-orange-700 text-sm font-medium">Os 5 mini eletrodomésticos, um por um</a></li>
+        <li><a href="#furada" class="text-orange-600 hover:text-orange-700 text-sm font-medium">Vale a pena ou é furada? O que os cinco têm em comum</a></li>
+        <li><a href="#faq" class="text-orange-600 hover:text-orange-700 text-sm font-medium">Perguntas frequentes</a></li>
+      </ul>
+    </nav>
+
+    <!-- Metodologia -->
+    <div id="metodologia" class="bg-blue-50 border border-blue-200 rounded-2xl p-6 mb-10">
+      <h2 class="text-slate-800 font-bold text-lg mb-4">Como avaliei sem ter usado nenhum</h2>
+      <p class="text-slate-700 text-sm leading-relaxed mb-3">
+        Sem experiência própria, o critério precisa ser outro: nota média alta combinada com volume alto de avaliações (produto com 40 reviews e 5 estrelas diz muito menos do que um com 6 mil), e a leitura das avaliações de 1 e 2 estrelas, que costumam revelar o defeito recorrente que a média geral esconde. Também separei o que o anúncio promete do que quem comprou realmente relata, porque nem sempre bate.
+      </p>
+      <p class="text-slate-700 text-sm leading-relaxed">
+        Um ponto que vale citar de saída: mini eletrodoméstico elétrico é uma aposta maior do que utilidade sem motor. Item com resistência, motor ou bateria tem peça que pode falhar, e isso muda a régua de decisão em relação a um tapete ou um pano de limpeza, por exemplo.
+      </p>
+    </div>
+
+    <!-- Produtos -->
+    <section id="produtos" class="mb-10">
+      <h2 class="text-2xl font-black text-slate-900 mb-6">Os 5 mini eletrodomésticos, um por um</h2>
+
+      <div class="border border-slate-200 rounded-xl overflow-hidden mb-4 shadow-sm">
+        <div class="bg-slate-800 px-5 py-3 flex items-center gap-3">
+          <span class="bg-orange-500 text-white font-black text-sm px-2.5 py-1 rounded-lg">01</span>
+          <div>
+            <span class="text-orange-300 text-xs font-semibold uppercase tracking-wide">Café da manhã · Nota 4,9 de 5 (mais de 23 mil avaliações)</span>
+            <p class="text-white font-bold text-sm leading-tight">Mini Máquina de Waffles Elétrica Portátil</p>
+          </div>
+        </div>
+        <div class="p-5 flex flex-col md:flex-row gap-4">
+          <div class="w-32 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-2 border border-slate-100">
+            <img src="/images/mini-eletrodomesticos-shopee/mini-maquina-waffles.webp" alt="Mini máquina de waffles elétrica portátil vermelha" class="w-full h-auto object-contain rounded-lg" loading="lazy" width="128" height="128" />
+          </div>
+          <div class="flex-1">
+            <p class="text-slate-700 text-sm leading-relaxed mb-2">
+              Faz waffles de 11 centímetros no formato clássico, é bivolt (110V-220V) e tem tomada padrão brasileiro, então não precisa de adaptador. Nas avaliações reais, o elogio que mais se repete é a superfície antiaderente funcionando de verdade, sem o waffle grudar. A ressalva que também aparece com frequência: por ser mini, render uma quantidade grande demora, então ela serve melhor para 1 ou 2 pessoas por vez do que para uma família inteira de uma vez só.
+            </p>
+            <p class="text-orange-600 font-bold text-sm">Confira o preço atual na Shopee</p>
+          </div>
+          <div class="flex flex-col gap-2 md:w-40 flex-shrink-0">
+            <a href="https://s.shopee.com.br/AKZ97xfJ7g" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-2 rounded-xl text-sm transition-colors">Ver na Shopee</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="border border-slate-200 rounded-xl overflow-hidden mb-4 shadow-sm">
+        <div class="bg-slate-800 px-5 py-3 flex items-center gap-3">
+          <span class="bg-orange-500 text-white font-black text-sm px-2.5 py-1 rounded-lg">02</span>
+          <div>
+            <span class="text-orange-300 text-xs font-semibold uppercase tracking-wide">Sobremesa · Avaliações 5 estrelas recorrentes</span>
+            <p class="text-white font-bold text-sm leading-tight">Mini Máquina de Assar Bolo Elétrica (Mini Bundt Maker)</p>
+          </div>
+        </div>
+        <div class="p-5 flex flex-col md:flex-row gap-4">
+          <div class="w-32 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-2 border border-slate-100">
+            <img src="/images/mini-eletrodomesticos-shopee/mini-maquina-bolo-bundt.webp" alt="Mini máquina de assar bolo elétrica em formato bundt" class="w-full h-auto object-contain rounded-lg" loading="lazy" width="128" height="128" />
+          </div>
+          <div class="flex-1">
+            <p class="text-slate-700 text-sm leading-relaxed mb-2">
+              Assa mini bolos em formato bundt, com superfície antiaderente e limpeza só com pano úmido. Diferente da waffleira, este produto vem em variações de cor (rosa, verde, preto), e quem comprou destaca justamente isso: "é bem pequeno", disse uma cliente, levando cerca de 10 minutos para assar cada bolinho, o que o torna mais indicado para fazer com crianças ou para quem come pouca quantidade do que para produção em série.
+            </p>
+            <p class="text-orange-600 font-bold text-sm">Confira o preço atual na Shopee</p>
+          </div>
+          <div class="flex flex-col gap-2 md:w-40 flex-shrink-0">
+            <a href="https://s.shopee.com.br/7pro9fYcnh" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-2 rounded-xl text-sm transition-colors">Ver na Shopee</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="border border-slate-200 rounded-xl overflow-hidden mb-4 shadow-sm">
+        <div class="bg-slate-800 px-5 py-3 flex items-center gap-3">
+          <span class="bg-orange-500 text-white font-black text-sm px-2.5 py-1 rounded-lg">03</span>
+          <div>
+            <span class="text-orange-300 text-xs font-semibold uppercase tracking-wide">Cozinha do dia a dia · Nota 4,8 de 5 (quase 1 mil avaliações)</span>
+            <p class="text-white font-bold text-sm leading-tight">Mini Panela Elétrica de Arroz Viccoli 1,8L</p>
+          </div>
+        </div>
+        <div class="p-5 flex flex-col md:flex-row gap-4">
+          <div class="w-32 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-2 border border-slate-100">
+            <img src="/images/mini-eletrodomesticos-shopee/mini-panela-arroz.webp" alt="Mini panela elétrica de arroz cerâmica 1,8 litros" class="w-full h-auto object-contain rounded-lg" loading="lazy" width="128" height="128" />
+          </div>
+          <div class="flex-1">
+            <p class="text-slate-700 text-sm leading-relaxed mb-2">
+              Revestimento de cerâmica antiaderente, 350W, 1,8 litros, e cozinha também legumes, sopa e mingau, não só arroz. O anúncio fala em até 6 porções, mas quem comprou é mais realista: as próprias avaliações descrevem como "ideal para uma até duas pessoas". Um ponto de atenção que apareceu mais de uma vez: o acabamento parece frágil por causa da leveza, embora quem já usa relate que aguenta bem o dia a dia. A garantia informada pelo fornecedor é curta, de apenas 1 mês.
+            </p>
+            <p class="text-orange-600 font-bold text-sm">Confira o preço atual na Shopee</p>
+          </div>
+          <div class="flex flex-col gap-2 md:w-40 flex-shrink-0">
+            <a href="https://s.shopee.com.br/2BDRPSowjf" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-2 rounded-xl text-sm transition-colors">Ver na Shopee</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="border border-slate-200 rounded-xl overflow-hidden mb-4 shadow-sm">
+        <div class="bg-slate-800 px-5 py-3 flex items-center gap-3">
+          <span class="bg-orange-500 text-white font-black text-sm px-2.5 py-1 rounded-lg">04</span>
+          <div>
+            <span class="text-orange-300 text-xs font-semibold uppercase tracking-wide">Refeições rápidas · Nota 4,9 de 5 (mais de 600 avaliações)</span>
+            <p class="text-white font-bold text-sm leading-tight">Mini Grill Elétrico Oster Inox 2 em 1</p>
+          </div>
+        </div>
+        <div class="p-5 flex flex-col md:flex-row gap-4">
+          <div class="w-32 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-2 border border-slate-100">
+            <img src="/images/mini-eletrodomesticos-shopee/mini-grill-oster.webp" alt="Mini grill elétrico Oster inox 2 em 1 com chapas lisa e ondulada" class="w-full h-auto object-contain rounded-lg" loading="lazy" width="128" height="128" />
+          </div>
+          <div class="flex-1">
+            <p class="text-slate-700 text-sm leading-relaxed mb-2">
+              Este é o único da lista de uma marca que qualquer brasileiro já ouviu falar, e isso aparece na diferença de garantia: 12 meses, contra 1 mês do item anterior. Vem com duas chapas, lisa e ondulada, para grelhar carne, sanduíche ou legumes, tem alça fria e pés antiderrapantes, e o elogio mais repetido nas avaliações é a facilidade de limpeza porque a comida não gruda. Com 1000W, é também o mais potente da lista.
+            </p>
+            <p class="text-orange-600 font-bold text-sm">Confira o preço atual na Shopee</p>
+          </div>
+          <div class="flex flex-col gap-2 md:w-40 flex-shrink-0">
+            <a href="https://s.shopee.com.br/5Ar2z6IYch" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-2 rounded-xl text-sm transition-colors">Ver na Shopee</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="border border-slate-200 rounded-xl overflow-hidden mb-4 shadow-sm">
+        <div class="bg-slate-800 px-5 py-3 flex items-center gap-3">
+          <span class="bg-orange-500 text-white font-black text-sm px-2.5 py-1 rounded-lg">05</span>
+          <div>
+            <span class="text-orange-300 text-xs font-semibold uppercase tracking-wide">Bebidas · Nota 4,8 de 5 (mais de 6 mil avaliações)</span>
+            <p class="text-white font-bold text-sm leading-tight">Mini Mixer Elétrico Portátil 2 em 1</p>
+          </div>
+        </div>
+        <div class="p-5 flex flex-col md:flex-row gap-4">
+          <div class="w-32 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-2 border border-slate-100">
+            <img src="/images/mini-eletrodomesticos-shopee/mini-mixer-portatil.webp" alt="Mini mixer elétrico portátil recarregável por USB" class="w-full h-auto object-contain rounded-lg" loading="lazy" width="128" height="128" />
+          </div>
+          <div class="flex-1">
+            <p class="text-slate-700 text-sm leading-relaxed mb-2">
+              Espumador de leite e café que também bate ovo, recarregável por USB, com 2 cabeças removíveis (uma delas em formato fouet) e 3 velocidades. É o item mais versátil da lista e o que mais aparece sendo usado todo dia nas avaliações, geralmente para cappuccino, achocolatado ou pré-treino. Vale o alerta que os próprios compradores fazem: não substitui uma batedeira, é para bebida cremosa e mistura rápida, não para massa pesada.
+            </p>
+            <p class="text-orange-600 font-bold text-sm">Confira o preço atual na Shopee</p>
+          </div>
+          <div class="flex flex-col gap-2 md:w-40 flex-shrink-0">
+            <a href="https://s.shopee.com.br/4qECadTWld" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-2 rounded-xl text-sm transition-colors">Ver na Shopee</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vale a pena ou é furada -->
+    <div id="furada" class="bg-slate-50 border border-slate-200 rounded-2xl p-6 mb-10">
+      <h2 class="text-xl font-black text-slate-900 mb-3">Vale a pena ou é furada? O que os cinco têm em comum</h2>
+      <p class="text-slate-700 leading-relaxed mb-3">
+        Nenhum dos cinco é furada pelo que vi nas avaliações, mas todos pedem expectativa ajustada, e é justamente aí que mora a diferença entre ficar satisfeito e se arrepender. "Mini" aqui significa mesmo pequeno: porção individual ou para duas pessoas, não substituto do aparelho de tamanho normal. Quem compra pensando nisso relata satisfação; quem espera o desempenho de um eletrodoméstico grande, não.
+      </p>
+      <div class="bg-orange-50 border border-orange-200 rounded-xl p-5 mb-4">
+        <h3 class="text-slate-900 font-bold text-base mb-2">O que olhar antes de comprar</h3>
+        <ul class="list-disc pl-5 space-y-1.5 text-slate-700 text-sm leading-relaxed">
+          <li>Marca conhecida muda a garantia: o grill Oster tem 12 meses, enquanto produtos sem marca reconhecida na lista chegam a ter só 1 mês. Isso pesa na decisão, principalmente em item elétrico.</li>
+          <li>Confirme a voltagem antes de comprar. Nem todo mini eletrodoméstico importado é bivolt automático, e ligar 220V numa tomada de 127V (ou o contrário) queima o aparelho.</li>
+          <li>Leia as avaliações de 1 e 2 estrelas, não só a nota média. É ali que aparece o defeito que se repete, como o caso do fio curto relatado no grill.</li>
+          <li>Compare o volume de avaliações, não só a nota. Um produto com nota 4,9 e 20 mil avaliações é uma informação bem mais confiável do que a mesma nota com 40 avaliações.</li>
+        </ul>
+      </div>
+      <p class="text-slate-700 leading-relaxed">
+        Prazo de entrega segue a lógica de qualquer compra na Shopee: conte de 15 a 25 dias na maioria dos casos, e resgate o cupom de frete grátis na aba de cupons antes de fechar o pedido, porque ele não entra sozinho no carrinho.
+      </p>
+    </div>
+
+    <h2 id="faq" class="text-2xl font-black text-slate-900 mb-6">Perguntas frequentes</h2>
+    <p class="text-slate-600 leading-relaxed mb-5">As dúvidas mais comuns de quem está pensando em comprar mini eletrodoméstico na Shopee, cobrindo desempenho real, garantia e quando vale a pena.</p>
+    <div class="space-y-3 mb-10">
+      <details class="border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+          Mini eletrodoméstico da Shopee é furada?
+          <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+          Pelas avaliações reais dos cinco produtos analisados aqui, não é furada, desde que a expectativa seja de um aparelho para uso individual ou para duas pessoas. O problema não costuma ser o produto em si, e sim comprar esperando o desempenho de um eletrodoméstico de tamanho cheio.
+        </div>
+      </details>
+      <details class="border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+          A mini panela de arroz de 1,8L serve para quantas pessoas?
+          <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+          O anúncio promete até 6 porções, mas as avaliações de quem já usa são mais realistas: descrevem como ideal para uma ou duas pessoas. Para uma casa de 3 pessoas ou mais no dia a dia, uma panela de arroz de tamanho normal ainda é a escolha mais prática.
+        </div>
+      </details>
+      <details class="border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+          Por que o grill Oster tem garantia tão mais longa que os outros?
+          <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+          Porque é o único item da lista fabricado por uma marca estabelecida no mercado brasileiro. Produtos de fornecedores sem marca reconhecida costumam oferecer só a garantia mínima do fornecedor, geralmente 1 a 3 meses, enquanto marcas como a Oster sustentam garantia de 12 meses porque têm estrutura de assistência técnica por trás.
+        </div>
+      </details>
+      <details class="border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+          A mini waffleira e a máquina de mini bolo servem para fazer quantidade grande?
+          <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+          Não é o ponto forte delas. As duas fazem uma unidade por vez (um waffle ou um bolinho), e as próprias avaliações comentam que fazer uma quantidade grande demora. Elas funcionam melhor para uma receita rápida individual, ou como atividade para fazer com criança, do que para servir muita gente de uma vez.
+        </div>
+      </details>
+      <details class="border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+          O mini mixer portátil substitui uma batedeira?
+          <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+          Não. Ele é ótimo para espumar leite, dissolver achocolatado ou bater um ovo rápido, e é isso que os compradores mais elogiam. Para clara em neve firme ou massa de bolo, ele não tem a potência necessária, e comprar esperando isso vai gerar frustração.
+        </div>
+      </details>
+    </div>
+    <script type="application/ld+json" set:html={JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Mini eletrodoméstico da Shopee é furada?","acceptedAnswer":{"@type":"Answer","text":"Pelas avaliações reais dos cinco produtos analisados, não é furada, desde que a expectativa seja de um aparelho para uso individual ou para duas pessoas. O problema não costuma ser o produto, e sim esperar o desempenho de um eletrodoméstico de tamanho cheio."}},{"@type":"Question","name":"A mini panela de arroz de 1,8L serve para quantas pessoas?","acceptedAnswer":{"@type":"Answer","text":"O anúncio promete até 6 porções, mas as avaliações de quem já usa descrevem como ideal para uma ou duas pessoas. Para uma casa de 3 pessoas ou mais, uma panela de arroz de tamanho normal ainda é mais prática."}},{"@type":"Question","name":"Por que o grill Oster tem garantia tão mais longa que os outros?","acceptedAnswer":{"@type":"Answer","text":"Porque é o único item da lista de uma marca estabelecida no Brasil. Produtos sem marca reconhecida costumam oferecer só a garantia mínima do fornecedor, geralmente 1 a 3 meses, enquanto marcas como a Oster sustentam 12 meses de garantia."}},{"@type":"Question","name":"A mini waffleira e a máquina de mini bolo servem para fazer quantidade grande?","acceptedAnswer":{"@type":"Answer","text":"Não é o ponto forte delas. As duas fazem uma unidade por vez, e as avaliações comentam que fazer quantidade grande demora. Funcionam melhor para uma receita individual rápida ou como atividade com criança."}},{"@type":"Question","name":"O mini mixer portátil substitui uma batedeira?","acceptedAnswer":{"@type":"Answer","text":"Não. Ele é ótimo para espumar leite, dissolver achocolatado ou bater um ovo rápido. Para clara em neve firme ou massa de bolo, não tem a potência necessária."}}]})} />
+
+    <!-- Leia Também -->
+    <a href="/mais-vendidos-shopee-casa" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;margin-bottom:16px;">
+      <div style="width:200px;flex-shrink:0;">
+        <img src="/images/mais-vendidos-shopee/capa-mais-vendidos-shopee.webp" alt="Os mais vendidos da Shopee para casa" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+      </div>
+      <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+        <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+        <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Os 6 Mais Vendidos da Shopee para Casa: Achados Que Realmente Valem a Pena</span>
+      </div>
+    </a>
+    <a href="/utilidades-shopee-ate-30-reais" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+      <div style="width:200px;flex-shrink:0;">
+        <img src="/images/utilidades-shopee-30/capa-utilidades-shopee-30.webp" alt="Utilidades para casa por menos de 30 reais na Shopee" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+      </div>
+      <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+        <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+        <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">10 Utilidades da Shopee por Menos de R$30 Que Valem a Pena</span>
+      </div>
+    </a>
+  </div>
+)}
 
     <!-- Calculadora de consumo de energia, travada na categoria do artigo -->
     {CALCULADORA_POR_SLUG[slug as string] && (

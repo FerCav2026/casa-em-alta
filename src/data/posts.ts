@@ -363,6 +363,16 @@ export const posts: Post[] = [
     categoria: 'rankings-e-listas',
     categoriaLabel: 'Rankings e Listas',
     categoriaColor: 'bg-green-100 text-green-700',
+  },
+  {
+    slug: 'mini-eletrodomesticos-mais-vendidos-shopee',
+    titulo: 'Mini Eletrodomésticos Mais Vendidos da Shopee: Vale a Pena ou é Furada?',
+    resumo: 'Analisamos 5 mini eletrodomésticos best-sellers da Shopee (waffleira, mini bolo bundt, mini panela de arroz, grill e mixer) para mostrar o que cada um promete de verdade e onde a expectativa precisa ser ajustada.',
+    tempo: '8 min de leitura',
+    imagem: '/images/mini-eletrodomesticos-shopee/capa-mini-eletrodomesticos-shopee.webp',
+    categoria: 'rankings-e-listas',
+    categoriaLabel: 'Rankings e Listas',
+    categoriaColor: 'bg-green-100 text-green-700',
   }
 ];
 
