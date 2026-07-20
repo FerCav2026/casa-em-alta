@@ -1,11 +1,11 @@
 ARTIGOS PUBLICADOS - CASA EM ALTA
-Última atualização: 2026-07-10
-Total: 30 publicados | 0 agendados
+Última atualização: 2026-07-20
+Total: 32 publicados | 0 agendados
 Blog: https://casaemalta.com.br
 Arquivo de dados: src/data/posts.ts
 =====================================
 
-PUBLICADOS (30)
+PUBLICADOS (32)
 
 1.  Os 7 Melhores Aspiradores de Pó 2026: Com Fio, Sem Fio e Robôs
     Slug: melhores-aspiradores-po-2026 | Categoria: Rankings e Listas
@@ -101,15 +101,18 @@ PUBLICADOS (30)
     Slug: utilidades-shopee-ate-30-reais | Categoria: Rankings e Listas | Publicado: 13/07/2026 (commit b5fa9a9) | 2º artigo do Cluster Shopee. 10 produtos reais escolhidos pela Fernanda, todos abaixo de R$30, com foto real e link de afiliado individual na ORDEM em que ela enviou. 4 com experiência real de uso, marcados "Já uso" no card: tapete de bolinha do banheiro (R$18,90), varal de 40 prendedores (R$24,98), sapateira desmontável (R$17,98, ela já teve), kit de 10 panos de microfibra (R$14,97). Os outros 6 em tom de curadoria, com a ressalva explícita no texto de que ainda não comprou. Capa gerada com gpt-image-1 (flat-lay sem texto). Links retroativos inseridos em mais-vendidos-shopee-casa e itens-casa-30-reais-amazon (este não tinha bloco Leia Também).
     ATENÇÃO: a Shopee bloqueia leitura automática (API responde 403, página é SPA em JS e o slug do produto vira "opaanlp" no link curto). Não dá para conferir produto/preço por link. Os dados vieram da Fernanda e a ordem dos links é a garantia de que cada botão leva ao produto certo.
 
+32. Mini Eletrodomésticos Mais Vendidos da Shopee: Vale a Pena ou é Furada?
+    Slug: mini-eletrodomesticos-mais-vendidos-shopee | Categoria: Rankings e Listas | Publicado: 20/07/2026 (commit d401b76) | 3º artigo do Cluster Shopee. 5 mini eletrodomésticos (waffleira, mini bolo/bundt maker, panela de arroz, grill Oster, mixer portátil) escolhidos e enviados pela Fernanda, NENHUM usado por ela pessoalmente — tom 100% curadoria baseado em nota média e avaliações reais de compradores (prints enviados por ela). Sem preço fixo no texto (não informado e Shopee não permite conferir por link) — usado "confira o preço atual". Links retroativos inseridos em mais-vendidos-shopee-casa e utilidades-shopee-ate-30-reais.
+
 =====================================
 AGENDADOS (0)
 
-Nenhum artigo agendado no momento. Próximo do calendário: 20/07 "Mini Eletrodomésticos Mais Vendidos da Shopee" (3º artigo do Cluster Shopee).
-Restam 4 artigos do Cluster Shopee (20/07 a 10/08).
+Nenhum artigo agendado no momento. Próximo do calendário: 27/07 "Robô Aspirador Barato da Shopee Funciona Mesmo?" (4º artigo do Cluster Shopee).
+Restam 3 artigos do Cluster Shopee (27/07 a 10/08).
 
 =====================================
-CATEGORIAS (31 publicados):
-- Rankings e Listas: 11 artigos
+CATEGORIAS (32 publicados):
+- Rankings e Listas: 12 artigos
 - Comparativo: 5 artigos
 - Review: 9 artigos
 - Guia de Compra: 6 artigos
