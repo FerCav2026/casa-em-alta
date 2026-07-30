@@ -237,6 +237,13 @@ const posts: Record<string, { titulo: string; descricao: string; categoria: stri
     dataCriacao: '2026-07-20',
     dataModificacao: '2026-07-20',
   },
+  'robo-aspirador-barato-shopee': {
+    titulo: 'Robô Aspirador Barato da Shopee Funciona Mesmo? O Que Esperar de Um por Menos de R$200',
+    descricao: 'Robô aspirador barato da Shopee funciona? Reunimos avaliações reais (nota 4,7 de 5, com 261 avaliações) do Agratto 3 em 1 para mostrar o que esperar no dia a dia, sem enrolação.',
+    categoria: 'Review',
+    dataCriacao: '2026-07-30',
+    dataModificacao: '2026-07-30',
+  },
 };
 
 export function getStaticPaths() {
@@ -272,6 +279,7 @@ export function getStaticPaths() {
     'mais-vendidos-shopee-casa': {},
     'utilidades-shopee-ate-30-reais': {},
     'mini-eletrodomesticos-mais-vendidos-shopee': {},
+    'robo-aspirador-barato-shopee': {},
   }).map((slug) => ({ params: { slug } }));
 }
 
@@ -335,6 +343,7 @@ const isMelhoresAirfryers = slug === 'melhores-airfryers-2026';
 const isMaisVendidosShopee = slug === 'mais-vendidos-shopee-casa';
 const isUtilidadesShopee30 = slug === 'utilidades-shopee-ate-30-reais';
 const isMiniEletrodomesticosShopee = slug === 'mini-eletrodomesticos-mais-vendidos-shopee';
+const isRoboAspiradorShopee = slug === 'robo-aspirador-barato-shopee';
 
 const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isAirfryer ? '/images/airfryer/capa-airfryer.webp'
@@ -367,6 +376,7 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isMaisVendidosShopee ? '/images/mais-vendidos-shopee/capa-mais-vendidos-shopee.webp'
   : isUtilidadesShopee30 ? '/images/utilidades-shopee-30/capa-utilidades-shopee-30.webp'
   : isMiniEletrodomesticosShopee ? '/images/mini-eletrodomesticos-shopee/capa-mini-eletrodomesticos-shopee.webp'
+  : isRoboAspiradorShopee ? '/images/robo-aspirador-shopee/capa-robo-aspirador-shopee.webp'
   : undefined;
 ---
 
@@ -959,6 +969,14 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
             </div>
             <div style="padding:20px 22px;display:flex;align-items:center;">
               <p style="margin:0;font-size:15px;font-weight:500;line-height:1.5;color:#1a1a1a;">Robôs Aspiradores: Os 5 Melhores Custo-Benefício</p>
+            </div>
+          </a>
+          <a href="/robo-aspirador-barato-shopee" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;margin-top:12px;">
+            <div style="width:200px;min-width:200px;overflow:hidden;">
+              <img src="/images/robo-aspirador-shopee/capa-robo-aspirador-shopee.webp" alt="Robô aspirador barato da Shopee" style="width:100%;height:100%;object-fit:cover;display:block;" />
+            </div>
+            <div style="padding:20px 22px;display:flex;align-items:center;">
+              <p style="margin:0;font-size:15px;font-weight:500;line-height:1.5;color:#1a1a1a;">Robô Aspirador Barato da Shopee Funciona Mesmo?</p>
             </div>
           </a>
         </div>
@@ -2444,6 +2462,14 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
             </div>
             <div style="padding:20px 22px;display:flex;align-items:center;">
               <p style="margin:0;font-size:15px;font-weight:500;line-height:1.5;color:#1a1a1a;">Os 7 Melhores Aspiradores de Pó de 2026</p>
+            </div>
+          </a>
+          <a href="/robo-aspirador-barato-shopee" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;margin-top:12px;">
+            <div style="width:200px;min-width:200px;overflow:hidden;">
+              <img src="/images/robo-aspirador-shopee/capa-robo-aspirador-shopee.webp" alt="Robô aspirador barato da Shopee" style="width:100%;height:100%;object-fit:cover;display:block;" />
+            </div>
+            <div style="padding:20px 22px;display:flex;align-items:center;">
+              <p style="margin:0;font-size:15px;font-weight:500;line-height:1.5;color:#1a1a1a;">Robô Aspirador Barato da Shopee Funciona Mesmo?</p>
             </div>
           </a>
         </div>
@@ -14479,6 +14505,265 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
         <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">10 Utilidades da Shopee por Menos de R$30 Que Valem a Pena</span>
       </div>
     </a>
+  </div>
+)}
+
+{isRoboAspiradorShopee && (
+  <div>
+
+    <!-- Capa do artigo -->
+    <div class="rounded-2xl overflow-hidden mb-8 shadow-md">
+      <img
+        src="/images/robo-aspirador-shopee/capa-robo-aspirador-shopee.webp"
+        alt="Robô aspirador barato da Shopee sobre piso laminado em apartamento pequeno"
+        class="w-full h-auto object-cover"
+        loading="eager"
+      />
+    </div>
+
+    <!-- TL;DR / Veredito -->
+    <div class="bg-orange-50 border border-orange-100 rounded-2xl p-6 mb-8">
+      <p class="text-slate-900 font-bold text-sm uppercase tracking-wide mb-2">Resumo rápido</p>
+      <p class="text-slate-800 text-base leading-relaxed mb-3">
+        O robô aspirador barato da Shopee funciona bem para manutenção leve em pisos duros, principalmente pó e pelo de pet, mas não substitui um robô premium: a função de passar pano é fraca e existe risco real de defeito prematuro. Nas avaliações reais do Aspirador Robô Agratto 3 em 1, a nota geral é 4,7 de 5, com 261 avaliações, mas pelo menos um comprador relatou o aparelho parando de carregar com apenas 19 dias de uso.
+      </p>
+      <p class="text-slate-800 text-base leading-relaxed">
+        Este texto não é baseado em teste próprio do produto. É uma curadoria honesta das avaliações públicas de quem comprou, cruzada com a ficha técnica do fabricante, para você decidir com informação real, não com propaganda.
+      </p>
+    </div>
+
+    <!-- Índice -->
+    <nav class="bg-white border border-slate-200 rounded-xl px-5 py-4 mb-10">
+      <p class="text-slate-800 font-bold text-sm mb-3">Neste artigo:</p>
+      <ul class="space-y-1.5">
+        <li><a href="#promete" class="text-orange-600 hover:text-orange-700 text-sm font-medium">O que o robô promete no papel</a></li>
+        <li><a href="#compradores" class="text-orange-600 hover:text-orange-700 text-sm font-medium">O que dizem os compradores reais</a></li>
+        <li><a href="#vale-a-pena" class="text-orange-600 hover:text-orange-700 text-sm font-medium">Pra quem vale a pena o robô aspirador barato</a></li>
+        <li><a href="#como-usar" class="text-orange-600 hover:text-orange-700 text-sm font-medium">Como tirar o melhor proveito dele</a></li>
+        <li><a href="#faq" class="text-orange-600 hover:text-orange-700 text-sm font-medium">Perguntas frequentes</a></li>
+      </ul>
+    </nav>
+
+    <p class="text-slate-700 leading-relaxed mb-8">
+      Você já deve ter visto esses robôs aspiradores custando menos de R$200 na Shopee e pensado: "isso não pode funcionar de verdade". É uma dúvida justa. Quando um produto que costuma custar mil reais ou mais aparece por um décimo do preço, o primeiro instinto é desconfiar. Pra responder isso sem enrolação, fomos direto na fonte que mais importa: quem já comprou. Reunimos aqui as avaliações reais de compradores do <strong>Aspirador Robô Agratto 3 em 1</strong>, um dos robôs aspiradores baratos mais vendidos da Shopee, pra entender o que ele entrega de verdade e onde ele decepciona.
+    </p>
+
+    <!-- O que promete -->
+    <section id="promete" class="mb-10">
+      <h2 class="text-2xl font-black text-slate-900 mb-4">O que o robô promete no papel?</h2>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        O Agratto 3 em 1 é vendido como um aspirador que varre, aspira e passa pano ao mesmo tempo. A proposta é simples: você liga, ele anda sozinho pela casa e faz a limpeza básica do dia a dia sem você precisar pegar na vassoura. Na página do produto na Shopee, o preço estava em R$151,30 no Pix com cupom (ou R$177,99 sem cupom em outros métodos de pagamento), consultado em 30 de julho de 2026 — como preço de Shopee muda com frequência, confira o valor atual direto no botão antes de decidir.
+      </p>
+
+      <div class="overflow-x-auto mb-4">
+        <table class="w-full text-sm border border-slate-200 rounded-xl overflow-hidden">
+          <tbody>
+            <tr class="border-b border-slate-100"><td class="px-4 py-2.5 font-semibold text-slate-800 bg-slate-50 w-1/3">Sucção</td><td class="px-4 py-2.5 text-slate-700">1800PA</td></tr>
+            <tr class="border-b border-slate-100"><td class="px-4 py-2.5 font-semibold text-slate-800 bg-slate-50">Bateria</td><td class="px-4 py-2.5 text-slate-700">Lítio 1200mAh, carrega em cerca de 150 minutos via USB</td></tr>
+            <tr class="border-b border-slate-100"><td class="px-4 py-2.5 font-semibold text-slate-800 bg-slate-50">Autonomia anunciada</td><td class="px-4 py-2.5 text-slate-700">Até 90 minutos de uso</td></tr>
+            <tr class="border-b border-slate-100"><td class="px-4 py-2.5 font-semibold text-slate-800 bg-slate-50">Altura</td><td class="px-4 py-2.5 text-slate-700">7,5cm — modelo slim, alcança embaixo de cama, sofá e armário</td></tr>
+            <tr class="border-b border-slate-100"><td class="px-4 py-2.5 font-semibold text-slate-800 bg-slate-50">Rodas</td><td class="px-4 py-2.5 text-slate-700">Emborrachadas, não riscam piso laminado nem porcelanato</td></tr>
+            <tr class="border-b border-slate-100"><td class="px-4 py-2.5 font-semibold text-slate-800 bg-slate-50">Ruído</td><td class="px-4 py-2.5 text-slate-700">55dB</td></tr>
+            <tr class="border-b border-slate-100"><td class="px-4 py-2.5 font-semibold text-slate-800 bg-slate-50">Filtro e reservatório</td><td class="px-4 py-2.5 text-slate-700">Laváveis</td></tr>
+            <tr class="border-b border-slate-100"><td class="px-4 py-2.5 font-semibold text-slate-800 bg-slate-50">Indicado para</td><td class="px-4 py-2.5 text-slate-700">Pisos frios, laminados e de madeira</td></tr>
+            <tr><td class="px-4 py-2.5 font-semibold text-slate-800 bg-slate-50">Não indicado para</td><td class="px-4 py-2.5 text-slate-700">Carpetes e tapetes grossos</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-slate-700 leading-relaxed">
+        Vem na caixa 1 robô, 2 escovas giratórias, 1 flanela de mop, cabo de carregamento USB e manual de instruções.
+      </p>
+      <div class="mt-5 mb-2 bg-white border border-slate-200 rounded-2xl p-5 max-w-md mx-auto text-center">
+        <p class="text-slate-900 font-semibold text-sm mb-1">Aspirador Robô Agratto 3 em 1</p>
+        <p class="text-slate-600 text-xs mb-4">R$151,30 no Pix com cupom (ou R$177,99 sem cupom) — preço consultado em 30/07/2026</p>
+        <a href="https://s.shopee.com.br/111k0FYP56" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl text-sm transition-colors">Confira o preço atual na Shopee</a>
+      </div>
+    </section>
+
+    <!-- Imagem: perfil fino embaixo do sofá -->
+    <div class="rounded-2xl overflow-hidden mb-10 shadow-md">
+      <img
+        src="/images/robo-aspirador-shopee/robo-perto-sofa.webp"
+        alt="Robô aspirador barato passando embaixo de um sofá baixo, mostrando o perfil fino de 7,5cm"
+        class="w-full h-auto object-cover"
+        loading="lazy"
+      />
+    </div>
+
+    <!-- Compradores -->
+    <section id="compradores" class="mb-10">
+      <h2 class="text-2xl font-black text-slate-900 mb-4">O que dizem os compradores reais do robô aspirador Agratto?</h2>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        Na página do produto, a nota geral é <strong>4,7 de 5</strong>, somando <strong>261 avaliações</strong> (consultado em 30/07/2026) — volume alto o suficiente pra não ser sorte de poucos clientes satisfeitos. A maioria dos relatos é positiva, mas existe um detalhe importante que vale a pena olhar antes de comprar.
+      </p>
+
+      <h3 class="text-lg font-bold text-slate-800 mb-2">Os elogios mais comuns</h3>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        Boa parte das avaliações destaca a mesma coisa: o robô dá conta bem de pó e pelo de animal. Uma compradora relatou que estava ansiosa pela ajuda por causa da quantidade de pelo de cachorro em casa e disse que o aparelho ajudou bastante nesse cuidado. Outros comentários seguem a mesma linha: "aspira muito bem pelos de cachorro, bateria boa", "produto maravilhoso, não coleta sujeira grande mas todo o pó, entrega rápida, bateria dura bastante", "funciona bem, sucção boa, passar pano ótimo, super recomendo". Um padrão fica claro: pra sujeira leve do dia a dia, tipo pó e pelo, o robô cumpre o que promete na visão da maioria de quem comprou.
+      </p>
+
+      <h3 class="text-lg font-bold text-slate-800 mb-2">O ponto negativo que você precisa saber</h3>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        Duas críticas se repetem entre os compradores. A primeira é sobre a função de passar pano: mais de um relato descreve que ela "não é muito eficiente" e que serve basicamente pra espalhar um pouco de essência no chão, não pra limpar de verdade. A segunda é mais séria: uma avaliação de 1 estrela relatou que o produto chegou bem embalado, mas com pouca potência de sucção e manobras bem limitadas pela casa. A autonomia real de bateria ficou perto dos 99 minutos, mas o carregamento levou mais de 3 horas — e com apenas 19 dias de uso, o aparelho parou de carregar.
+      </p>
+      <p class="text-slate-700 leading-relaxed">
+        Isso não significa que todo mundo vai ter esse problema — nas 261 avaliações da página, esse tipo de relato é minoria. Mas é um relato real e verificável direto na página do produto, e ignorá-lo seria falta de honestidade da nossa parte. Produtos nessa faixa de preço costumam ter controle de qualidade menos rígido, e defeito prematuro é um risco que existe.
+      </p>
+    </section>
+
+    <!-- Vale a pena -->
+    <div id="vale-a-pena" class="bg-slate-50 border border-slate-200 rounded-2xl p-6 mb-10">
+      <h2 class="text-xl font-black text-slate-900 mb-3">Pra quem vale a pena o robô aspirador barato?</h2>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        Um robô aspirador barato como esse não substitui uma faxina completa nem compete com modelos premium que mapeiam a casa com laser e esvaziam a própria caixa de poeira sozinhos. Ele não faz isso, e não é essa a proposta.
+      </p>
+      <div class="grid md:grid-cols-2 gap-4">
+        <div class="bg-white border border-green-200 rounded-xl p-5">
+          <h3 class="text-slate-900 font-bold text-sm mb-2">Vale a pena se você</h3>
+          <ul class="list-disc pl-5 space-y-1.5 text-slate-700 text-sm leading-relaxed">
+            <li>Mora em apartamento pequeno com piso liso, laminado ou porcelanato</li>
+            <li>Tem pet e sofre com pelo espalhado pela casa todo dia</li>
+            <li>Quer só manter o pó controlado entre uma faxina e outra</li>
+            <li>Busca algo silencioso, que não incomoda em home office ou durante o sono</li>
+            <li>Não quer gastar muito pra testar se a rotina de robô funciona pra você</li>
+          </ul>
+        </div>
+        <div class="bg-white border border-red-200 rounded-xl p-5">
+          <h3 class="text-slate-900 font-bold text-sm mb-2">Não vale a pena se você</h3>
+          <ul class="list-disc pl-5 space-y-1.5 text-slate-700 text-sm leading-relaxed">
+            <li>Tem carpete ou tapete grosso em casa</li>
+            <li>Espera que ele substitua passar pano de verdade</li>
+            <li>Lida com sujeira pesada, tipo obra ou reforma recente</li>
+            <li>Não tem paciência pra lidar com um possível defeito e precisar acionar garantia</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Como usar -->
+    <section id="como-usar" class="mb-10">
+      <h2 class="text-2xl font-black text-slate-900 mb-4">Como tirar o melhor proveito do robô aspirador barato?</h2>
+      <p class="text-slate-700 leading-relaxed mb-3">
+        Algumas avaliações positivas têm em comum o jeito como as pessoas usam o aparelho. Vale seguir essas dicas pra ter uma experiência melhor:
+      </p>
+      <ul class="list-disc pl-5 space-y-1.5 text-slate-700 leading-relaxed">
+        <li>Use o robô pra manutenção diária, não como faxina profunda semanal</li>
+        <li>Recolha fios, cabos soltos e objetos pequenos do chão antes de ligar</li>
+        <li>Não espere resultado de mop de verdade na função de passar pano, trate como um extra</li>
+        <li>Lave o filtro e o reservatório com regularidade pra manter a sucção</li>
+        <li>Guarde a nota fiscal e o comprovante de compra, caso precise acionar garantia</li>
+      </ul>
+    </section>
+
+    <!-- Imagem: reservatório e filtro abertos -->
+    <div class="rounded-2xl overflow-hidden mb-10 shadow-md">
+      <img
+        src="/images/robo-aspirador-shopee/reservatorio-filtro-aberto.webp"
+        alt="Reservatório e filtro do robô aspirador barato abertos sobre bancada, mostrando a manutenção"
+        class="w-full h-auto object-cover"
+        loading="lazy"
+      />
+    </div>
+
+    <h2 id="faq" class="text-2xl font-black text-slate-900 mb-6">Perguntas frequentes sobre o robô aspirador barato</h2>
+    <div class="space-y-3 mb-10">
+      <details class="border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+          Ele funciona em tapete?
+          <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+          Não é indicado. O fabricante recomenda uso apenas em pisos frios, laminados e de madeira. Em tapetes grossos, a sucção de 1800PA não costuma ser suficiente.
+        </div>
+      </details>
+      <details class="border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+          Quanto tempo de bateria ele realmente tem?
+          <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+          O anúncio promete até 90 minutos. Um comprador relatou autonomia próxima de 99 minutos, o que bate com o prometido. O carregamento completo leva cerca de 150 minutos, podendo passar de 3 horas segundo outro relato.
+        </div>
+      </details>
+      <details class="border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+          Ele faz barulho?
+          <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+          Segundo a ficha técnica, o ruído fica em torno de 55dB, considerado baixo. Não há relatos de compradores reclamando de barulho excessivo entre as 261 avaliações da página.
+        </div>
+      </details>
+      <details class="border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+          A função de passar pano funciona bem?
+          <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+          Não é o ponto forte do aparelho. Vários compradores descrevem essa função como fraca, mais decorativa que eficiente. Se você precisa de um mop de verdade, essa não é a expectativa certa pra esse produto.
+        </div>
+      </details>
+      <details class="border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+          Vale mais a pena que um robô mais caro?
+          <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+          Depende do que você precisa. Se o objetivo é manter o pó e o pelo de pet sob controle em um piso liso, o custo bem menor compensa o risco. Se você busca robustez, mapeamento inteligente e durabilidade garantida, um modelo de faixa de preço mais alta tende a entregar mais segurança.
+        </div>
+      </details>
+      <details class="border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+          Dá pra conferir essas avaliações por conta própria?
+          <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+          Sim. As 261 avaliações citadas aqui são públicas e estão na própria página do produto na Shopee, no mesmo link usado neste artigo — vale a pena ler direto lá antes de comprar, principalmente as de 1 e 2 estrelas.
+        </div>
+      </details>
+      <details class="border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+          O que fazer se o produto apresentar defeito?
+          <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+          Guarde a nota fiscal e o comprovante de compra assim que receber o produto. A Shopee emite nota fiscal para os produtos vendidos na plataforma, e isso é o que garante seu direito de troca ou reembolso dentro do prazo de garantia, caso aconteça o mesmo problema relatado por outros compradores.
+        </div>
+      </details>
+    </div>
+    <script type="application/ld+json" set:html={JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Ele funciona em tapete?","acceptedAnswer":{"@type":"Answer","text":"Não é indicado. O fabricante recomenda uso apenas em pisos frios, laminados e de madeira. Em tapetes grossos, a sucção de 1800PA não costuma ser suficiente."}},{"@type":"Question","name":"Quanto tempo de bateria ele realmente tem?","acceptedAnswer":{"@type":"Answer","text":"O anúncio promete até 90 minutos. Um comprador relatou autonomia próxima de 99 minutos. O carregamento completo leva cerca de 150 minutos, podendo passar de 3 horas segundo outro relato."}},{"@type":"Question","name":"Ele faz barulho?","acceptedAnswer":{"@type":"Answer","text":"Segundo a ficha técnica, o ruído fica em torno de 55dB, considerado baixo. Não há relatos de compradores reclamando de barulho excessivo."}},{"@type":"Question","name":"A função de passar pano funciona bem?","acceptedAnswer":{"@type":"Answer","text":"Não é o ponto forte do aparelho. Vários compradores descrevem essa função como fraca, mais decorativa que eficiente."}},{"@type":"Question","name":"Vale mais a pena que um robô mais caro?","acceptedAnswer":{"@type":"Answer","text":"Depende do uso. Para manter pó e pelo de pet sob controle em piso liso, o custo menor compensa o risco. Para robustez e durabilidade garantida, um modelo mais caro tende a entregar mais segurança."}},{"@type":"Question","name":"Dá pra conferir essas avaliações por conta própria?","acceptedAnswer":{"@type":"Answer","text":"Sim. As 261 avaliações citadas são públicas e estão na própria página do produto na Shopee, no mesmo link usado no artigo."}},{"@type":"Question","name":"O que fazer se o produto apresentar defeito?","acceptedAnswer":{"@type":"Answer","text":"Guarde a nota fiscal e o comprovante de compra. A Shopee emite nota fiscal para os produtos vendidos na plataforma, o que garante o direito de troca ou reembolso dentro do prazo de garantia."}}]})} />
+
+    <h2 class="text-xl font-black text-slate-900 mb-3">Vale a pena comprar o robô aspirador barato?</h2>
+    <p class="text-slate-700 leading-relaxed mb-3">
+      Pra quem quer algo simples, silencioso e barato pra ajudar na manutenção do dia a dia, principalmente em casas com pet e piso liso, o Agratto 3 em 1 entrega o que promete na visão da maioria de quem comprou (nota 4,7 de 5 em 261 avaliações). Ele não substitui um aspirador robô premium nem faz milagre em tapete ou sujeira pesada. A função de passar pano é fraca, e existe risco real de durabilidade, com pelo menos um relato de defeito depois de poucos dias de uso.
+    </p>
+    <p class="text-slate-700 leading-relaxed mb-10">
+      Se você entende essas limitações e ainda assim quer testar a rotina de ter um robô cuidando do pó da casa, o preço baixo torna esse teste bem menos arriscado. Só compre com nota fiscal, guarde o comprovante e fique de olho no prazo de garantia, caso precise usar.
+    </p>
+
+    <!-- Leia Também -->
+    <a href="/melhores-aspiradores-po-2026" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;margin-bottom:16px;">
+      <div style="width:200px;flex-shrink:0;">
+        <img src="/images/aspiradores/capa-aspiradores.webp" alt="Os melhores aspiradores de pó de 2026" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+      </div>
+      <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+        <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+        <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Os 7 Melhores Aspiradores de Pó 2026: Com Fio, Sem Fio e Robôs</span>
+      </div>
+    </a>
+    <a href="/robos-aspirador-custo-beneficio" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+      <div style="width:200px;flex-shrink:0;">
+        <img src="/images/robos/capa-robos.webp" alt="Robôs aspiradores custo-benefício" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+      </div>
+      <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+        <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+        <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Robôs Aspiradores: Os 5 Melhores Custo-Benefício</span>
+      </div>
+    </a>
+
+    <p class="text-xs text-slate-500 italic mt-6 border-t border-slate-100 pt-4">
+      Este review foi feito por curadoria de avaliações reais de compradores da Shopee, não por teste direto do produto pela autora.
+    </p>
   </div>
 )}
 
