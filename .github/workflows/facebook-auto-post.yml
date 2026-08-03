@@ -1,0 +1,41 @@
+name: Publica artigos novos no Facebook
+
+on:
+  schedule:
+    # roda a cada 3 horas
+    - cron: '0 */3 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: main
+
+      - name: Configura git
+        run: |
+          git config user.name "facebook-auto-post-bot"
+          git config user.email "actions@github.com"
+
+      - name: Publica artigos novos no Facebook (Casa em Alta, Indica Casa, Mundo dos Sobrenomes)
+        env:
+          FB_TOKEN_CASA_EM_ALTA: ${{ secrets.FB_TOKEN_CASA_EM_ALTA }}
+          FB_TOKEN_INDICA_CASA: ${{ secrets.FB_TOKEN_INDICA_CASA }}
+          FB_TOKEN_MUNDO_SOBRENOMES: ${{ secrets.FB_TOKEN_MUNDO_SOBRENOMES }}
+        run: node scripts/facebook-auto-post.mjs
+
+      - name: Salva o estado atualizado
+        run: |
+          if ! git diff --quiet -- state/facebook-posted.json; then
+            git add state/facebook-posted.json
+            git commit -m "chore: atualiza artigos já publicados no Facebook"
+            git push
+          else
+            echo "Nada novo para commitar."
+          fi
