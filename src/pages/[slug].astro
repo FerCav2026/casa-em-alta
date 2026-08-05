@@ -244,6 +244,13 @@ const posts: Record<string, { titulo: string; descricao: string; categoria: stri
     dataCriacao: '2026-07-30',
     dataModificacao: '2026-07-30',
   },
+  'electrolux-ergorapido-erg26-review': {
+    titulo: 'Electrolux Ergorapido ERG26: Vale a Pena? Review Completo',
+    descricao: 'Vale a pena o Electrolux Ergorapido ERG26? Veja ficha técnica, prós e contras, preço atualizado (ago/2026) e o que dizem os compradores reais.',
+    categoria: 'Review',
+    dataCriacao: '2026-08-05',
+    dataModificacao: '2026-08-05',
+  },
 };
 
 export function getStaticPaths() {
@@ -280,6 +287,7 @@ export function getStaticPaths() {
     'utilidades-shopee-ate-30-reais': {},
     'mini-eletrodomesticos-mais-vendidos-shopee': {},
     'robo-aspirador-barato-shopee': {},
+    'electrolux-ergorapido-erg26-review': {},
   }).map((slug) => ({ params: { slug } }));
 }
 
@@ -344,6 +352,7 @@ const isMaisVendidosShopee = slug === 'mais-vendidos-shopee-casa';
 const isUtilidadesShopee30 = slug === 'utilidades-shopee-ate-30-reais';
 const isMiniEletrodomesticosShopee = slug === 'mini-eletrodomesticos-mais-vendidos-shopee';
 const isRoboAspiradorShopee = slug === 'robo-aspirador-barato-shopee';
+const isElectroluxERG26 = slug === 'electrolux-ergorapido-erg26-review';
 
 const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isAirfryer ? '/images/airfryer/capa-airfryer.webp'
@@ -377,6 +386,7 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isUtilidadesShopee30 ? '/images/utilidades-shopee-30/capa-utilidades-shopee-30.webp'
   : isMiniEletrodomesticosShopee ? '/images/mini-eletrodomesticos-shopee/capa-mini-eletrodomesticos-shopee.webp'
   : isRoboAspiradorShopee ? '/images/robo-aspirador-shopee/capa-robo-aspirador-shopee.webp'
+  : isElectroluxERG26 ? '/images/electrolux-erg26/capa-electrolux-erg26.webp'
   : undefined;
 ---
 
@@ -14771,6 +14781,260 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
 
     <p class="text-xs text-slate-500 italic mt-6 border-t border-slate-100 pt-4">
       Este review foi feito por curadoria de avaliações reais de compradores da Shopee, não por teste direto do produto pela autora.
+    </p>
+  </div>
+)}
+
+{isElectroluxERG26 && (
+  <div>
+
+    <!-- Capa do artigo -->
+    <div class="rounded-2xl overflow-hidden mb-8 shadow-md">
+      <img
+        src="/images/electrolux-erg26/capa-electrolux-erg26.webp"
+        alt="Aspirador vertical sem fio Electrolux Ergorapido ERG26 dourado"
+        class="w-full h-auto object-cover"
+        loading="eager"
+      />
+    </div>
+
+    <p class="text-xs text-slate-400 mb-6">Atualizado em agosto de 2026</p>
+
+    <!-- TL;DR / Veredito -->
+    <div class="bg-orange-50 border border-orange-100 rounded-2xl p-6 mb-8">
+      <p class="text-slate-900 font-bold text-sm uppercase tracking-wide mb-2">Resumo rápido</p>
+      <p class="text-slate-800 text-base leading-relaxed mb-3">
+        O Electrolux Ergorapido ERG26 é um aspirador vertical sem fio bom para manutenção diária em apartamentos pequenos, com destaque para o filtro HEPA e o bocal Pet Care. No Mercado Livre, soma nota 4,9 de 5 em 1.138 avaliações, com selo de mais vendido na categoria. O ponto de atenção real é a autonomia: os 45 minutos anunciados valem só para a potência mínima, caindo para cerca de 15 minutos na potência máxima.
+      </p>
+      <p class="text-slate-800 text-base leading-relaxed">
+        Este texto não é baseado em teste próprio do produto. É uma curadoria da ficha técnica oficial da Electrolux cruzada com as avaliações reais de quem comprou, para você decidir com informação real.
+      </p>
+    </div>
+
+    <!-- Índice -->
+    <nav class="bg-white border border-slate-200 rounded-xl px-5 py-4 mb-10">
+      <p class="text-slate-800 font-bold text-sm mb-3">Neste artigo:</p>
+      <ul class="space-y-1.5">
+        <li><a href="#ficha-tecnica" class="text-orange-600 hover:text-orange-700 text-sm font-medium">Ficha técnica</a></li>
+        <li><a href="#autonomia" class="text-orange-600 hover:text-orange-700 text-sm font-medium">Autonomia: o ponto que mais gera dúvida</a></li>
+        <li><a href="#pros-contras" class="text-orange-600 hover:text-orange-700 text-sm font-medium">Prós e contras</a></li>
+        <li><a href="#avaliacoes" class="text-orange-600 hover:text-orange-700 text-sm font-medium">O que dizem os compradores reais</a></li>
+        <li><a href="#preco" class="text-orange-600 hover:text-orange-700 text-sm font-medium">Quanto custa</a></li>
+        <li><a href="#vale-a-pena" class="text-orange-600 hover:text-orange-700 text-sm font-medium">Para quem vale a pena</a></li>
+        <li><a href="#faq" class="text-orange-600 hover:text-orange-700 text-sm font-medium">Perguntas frequentes</a></li>
+      </ul>
+    </nav>
+
+    <p class="text-slate-700 leading-relaxed mb-8">
+      Quem mora em apartamento pequeno sabe o incômodo de limpar a casa com um aspirador cheio de fio, tendo que trocar de tomada a cada cômodo. É exatamente esse problema que os aspiradores verticais sem fio prometem resolver, e o Electrolux Ergorapido ERG26 é um dos modelos mais procurados dessa categoria no Brasil. Neste review, reunimos a ficha técnica oficial da Electrolux e as avaliações reais de mais de mil compradores no Mercado Livre para responder à pergunta que importa: esse aspirador vale o investimento?
+    </p>
+
+    <!-- Ficha técnica -->
+    <section id="ficha-tecnica" class="mb-10">
+      <h2 class="text-2xl font-black text-slate-900 mb-4">Ficha técnica do Electrolux Ergorapido ERG26</h2>
+      <div class="overflow-x-auto mb-4">
+        <table class="w-full text-sm border border-slate-200 rounded-xl overflow-hidden">
+          <tbody>
+            <tr class="border-b border-slate-100"><td class="px-4 py-2.5 font-semibold text-slate-800 bg-slate-50 w-1/3">Nome completo</td><td class="px-4 py-2.5 text-slate-700">Aspirador de Pó Vertical Sem Fio Ergorapido 2 em 1 Bocal Pet ERG26</td></tr>
+            <tr class="border-b border-slate-100"><td class="px-4 py-2.5 font-semibold text-slate-800 bg-slate-50">Autonomia</td><td class="px-4 py-2.5 text-slate-700">até 45 min na potência mínima / cerca de 15 min na potência máxima</td></tr>
+            <tr class="border-b border-slate-100"><td class="px-4 py-2.5 font-semibold text-slate-800 bg-slate-50">Bateria</td><td class="px-4 py-2.5 text-slate-700">íon-lítio</td></tr>
+            <tr class="border-b border-slate-100"><td class="px-4 py-2.5 font-semibold text-slate-800 bg-slate-50">Filtragem</td><td class="px-4 py-2.5 text-slate-700">sistema de tripla filtragem com filtro HEPA</td></tr>
+            <tr class="border-b border-slate-100"><td class="px-4 py-2.5 font-semibold text-slate-800 bg-slate-50">Tecnologia</td><td class="px-4 py-2.5 text-slate-700">Cyclone + Brush Roll Clean (limpeza automática da escova)</td></tr>
+            <tr class="border-b border-slate-100"><td class="px-4 py-2.5 font-semibold text-slate-800 bg-slate-50">Bocal especial</td><td class="px-4 py-2.5 text-slate-700">Pet Care com luz de LED</td></tr>
+            <tr class="border-b border-slate-100"><td class="px-4 py-2.5 font-semibold text-slate-800 bg-slate-50">Voltagem</td><td class="px-4 py-2.5 text-slate-700">Bivolt</td></tr>
+            <tr><td class="px-4 py-2.5 font-semibold text-slate-800 bg-slate-50">Cor</td><td class="px-4 py-2.5 text-slate-700">Dourado</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-slate-700 leading-relaxed">
+        Segundo o fabricante, o filtro HEPA de tripla camada remove até 99,9% das impurezas do ar aspirado, o que ajuda bastante em casas com pets ou pessoas com alergia a poeira. Já a potência e o nível de ruído não são informados oficialmente pela Electrolux: comparativos especializados independentes estimam a potência em torno de 120 a 130W e o ruído próximo de 80dB, mas trate esses dois números como aproximação, não como dado confirmado pelo fabricante.
+      </p>
+
+      <div class="mt-5 mb-2 bg-white border border-slate-200 rounded-2xl p-5 max-w-md mx-auto text-center">
+        <img
+          src="/images/electrolux-erg26/produto-erg26.webp"
+          alt="Electrolux Ergorapido ERG26 visto de corpo inteiro"
+          class="w-24 h-auto object-contain mx-auto mb-3 rounded-lg"
+          loading="lazy"
+          width="96"
+          height="388"
+        />
+        <p class="text-slate-900 font-semibold text-sm mb-1">Electrolux Ergorapido ERG26 (Dourado)</p>
+        <p class="text-slate-600 text-xs mb-4">R$1.199,90 no Mercado Livre, 18x de R$66,66 sem juros — preço consultado em 05/08/2026</p>
+        <a href="https://meli.la/2EWQsf5" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl text-sm transition-colors">Confira o preço atual no Mercado Livre</a>
+      </div>
+    </section>
+
+    <!-- Autonomia -->
+    <section id="autonomia" class="mb-10">
+      <h2 class="text-2xl font-black text-slate-900 mb-4">Autonomia: o ponto que mais gera dúvida</h2>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        Essa é provavelmente a informação mais importante para quem vai usar o aspirador no dia a dia. Na potência mínima, o ERG26 aguenta até 45 minutos ligado, o suficiente para limpar um apartamento inteiro sem parar para recarregar.
+      </p>
+      <p class="text-slate-700 leading-relaxed">
+        O problema aparece quando você liga na potência máxima, indicada para sujeira mais pesada ou tapetes. Nesse modo, a autonomia cai para cerca de 15 minutos. Ou seja, se a sua rotina exige potência máxima com frequência, vai precisar recarregar bem mais rápido do que o número de 45 minutos sugere à primeira vista.
+      </p>
+    </section>
+
+    <!-- Prós e contras -->
+    <div id="pros-contras" class="bg-slate-50 border border-slate-200 rounded-2xl p-6 mb-10">
+      <h2 class="text-xl font-black text-slate-900 mb-3">Prós e contras do Ergorapido ERG26</h2>
+      <div class="grid md:grid-cols-2 gap-4">
+        <div class="bg-white border border-green-200 rounded-xl p-5">
+          <h3 class="text-slate-900 font-bold text-sm mb-2">Pontos positivos</h3>
+          <ul class="list-disc pl-5 space-y-1.5 text-slate-700 text-sm leading-relaxed">
+            <li>Boa autonomia na potência mínima, ideal para manutenção diária</li>
+            <li>Filtro HEPA de tripla filtragem, remove até 99,9% das impurezas</li>
+            <li>Bocal Pet Care com LED facilita achar sujeira em cantos escuros</li>
+            <li>Brush Roll Clean evita fios e cabelos presos na escova</li>
+            <li>Formato 2 em 1, funciona como aspirador de mão em estofados</li>
+            <li>Bivolt, funciona em qualquer instalação elétrica do Brasil</li>
+          </ul>
+        </div>
+        <div class="bg-white border border-red-200 rounded-xl p-5">
+          <h3 class="text-slate-900 font-bold text-sm mb-2">Pontos de atenção</h3>
+          <ul class="list-disc pl-5 space-y-1.5 text-slate-700 text-sm leading-relaxed">
+            <li>Autonomia cai para cerca de 15 minutos na potência máxima</li>
+            <li>Ruído estimado em torno de 80dB, considerado alto para a categoria</li>
+            <li>Reservatório compacto, exige esvaziar com frequência em limpeza pesada</li>
+            <li>Bateria não é removível de forma simples pelo usuário</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Avaliações reais -->
+    <section id="avaliacoes" class="mb-10">
+      <h2 class="text-2xl font-black text-slate-900 mb-4">O que dizem as avaliações de quem já comprou</h2>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        Até o momento da atualização deste artigo, o Electrolux Ergorapido ERG26 tinha nota <strong>4,9 de 5 estrelas</strong> no Mercado Livre, somando <strong>1.138 avaliações</strong> e o selo de "Mais Vendido", ocupando o 2º lugar na categoria Aspiradores, com mais de 5 mil unidades vendidas pela plataforma (consultado em 05/08/2026).
+      </p>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        Esse volume de avaliações positivas é um indicativo forte de satisfação real, já que dificilmente um produto sustenta nota tão alta com mais de mil compradores diferentes se não entregar o que promete no uso cotidiano.
+      </p>
+      <p class="text-slate-700 leading-relaxed">
+        Nas avaliações, os elogios mais recorrentes apontam para a facilidade de manuseio, o peso leve para movimentar entre os cômodos e a eficiência do bocal Pet Care em remover pelos de cachorro e gato de sofás e tapetes. Já as poucas críticas giram em torno do barulho durante o uso e da necessidade de esvaziar o reservatório com frequência em casas com mais sujeira acumulada, pontos que batem exatamente com o que a ficha técnica e os comparativos especializados já sinalizam.
+      </p>
+    </section>
+
+    <!-- Preço -->
+    <section id="preco" class="mb-10">
+      <h2 class="text-2xl font-black text-slate-900 mb-4">Quanto custa o Electrolux Ergorapido ERG26</h2>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        Preço consultado em agosto de 2026: no Mercado Livre, o ERG26 estava sendo vendido por R$ 1.199,90, parcelado em 18x de R$ 66,66 sem juros no cartão. No site oficial da Electrolux, o mesmo modelo aparecia por R$ 999,90, com desconto de 50% sobre o valor de tabela de R$ 1.999,90.
+      </p>
+      <p class="text-slate-700 leading-relaxed">
+        Vale lembrar que preço de eletroportátil muda com frequência por causa de promoções e datas comerciais, então esses valores servem como referência da faixa de preço do produto, não como valor fixo. Antes de comprar, vale a pena conferir o preço atualizado direto na página do produto.
+      </p>
+    </section>
+
+    <!-- Vale a pena -->
+    <div id="vale-a-pena" class="bg-slate-50 border border-slate-200 rounded-2xl p-6 mb-10">
+      <h2 class="text-xl font-black text-slate-900 mb-3">Para quem vale a pena o Ergorapido ERG26</h2>
+      <div class="grid md:grid-cols-2 gap-4">
+        <div class="bg-white border border-green-200 rounded-xl p-5">
+          <h3 class="text-slate-900 font-bold text-sm mb-2">Vale a pena se você</h3>
+          <ul class="list-disc pl-5 space-y-1.5 text-slate-700 text-sm leading-relaxed">
+            <li>Mora em apartamento pequeno ou médio</li>
+            <li>Tem pet em casa e sofre com pelo em sofá e tapete</li>
+            <li>Prioriza filtragem HEPA por causa de alergia respiratória</li>
+            <li>Quer praticidade na limpeza do dia a dia, sem fio no meio do caminho</li>
+          </ul>
+        </div>
+        <div class="bg-white border border-red-200 rounded-xl p-5">
+          <h3 class="text-slate-900 font-bold text-sm mb-2">Não vale a pena se você</h3>
+          <ul class="list-disc pl-5 space-y-1.5 text-slate-700 text-sm leading-relaxed">
+            <li>Tem tapetes grossos ou área grande que exige uso constante na potência máxima</li>
+            <li>Não tolera ruído mais alto durante a limpeza</li>
+            <li>Precisa de troca de bateria fácil no futuro</li>
+          </ul>
+        </div>
+      </div>
+      <p class="text-slate-700 leading-relaxed mt-4">
+        Se a sua casa exige uso constante na potência máxima, os 15 minutos de autonomia nesse modo podem incomodar bastante. Nesse caso, vale considerar outras opções com bateria maior, ou complementar a rotina com um robô aspirador. Se você ainda está em dúvida entre diferentes marcas e modelos, vale conferir o nosso ranking com <a href="/melhores-aspiradores-po-2026" class="text-orange-600 font-semibold hover:underline">Os 7 Melhores Aspiradores de Pó de 2026</a>, onde comparamos o ERG26 com outras opções de vertical sem fio. E se a ideia é somar praticidade com um robô que limpa sozinho, também temos um comparativo com os <a href="/robos-aspirador-custo-beneficio" class="text-orange-600 font-semibold hover:underline">5 Melhores Robôs Aspiradores Custo-Benefício</a>.
+      </p>
+    </div>
+
+    <h2 id="faq" class="text-2xl font-black text-slate-900 mb-6">Perguntas frequentes sobre o Electrolux Ergorapido ERG26</h2>
+    <div class="space-y-3 mb-10">
+      <details class="border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+          O Electrolux Ergorapido ERG26 é bom para quem tem pet em casa?
+          <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+          Sim. O bocal Pet Care com luz de LED foi desenvolvido justamente para remover pelos de animais em sofás, tapetes e cantos de difícil acesso, e é um dos pontos mais elogiados nas avaliações de compradores.
+        </div>
+      </details>
+      <details class="border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+          Quanto tempo dura a bateria do ERG26?
+          <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+          Segundo o fabricante, a autonomia é de até 45 minutos na potência mínima e cerca de 15 minutos na potência máxima. A diferença é grande, então vale pensar em qual potência você mais vai usar no dia a dia.
+        </div>
+      </details>
+      <details class="border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+          O ERG26 é barulhento?
+          <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+          Comparativos especializados estimam o ruído em torno de 80dB, o que é considerado alto para a categoria de aspiradores verticais sem fio. Esse dado não é confirmado oficialmente pela Electrolux, mas é citado com frequência em análises independentes.
+        </div>
+      </details>
+      <details class="border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+          Qual a diferença entre o ERG26 e outros modelos da linha Ergorapido?
+          <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+          O ERG26 se destaca por trazer o filtro HEPA de tripla filtragem e o bocal Pet Care exclusivo, recursos que nem todos os modelos da linha Ergorapido oferecem. Por isso costuma ser indicado como a opção mais completa para quem tem animais em casa.
+        </div>
+      </details>
+      <details class="border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+          Vale a pena comprar o ERG26 pelo Mercado Livre?
+          <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+          Com nota 4,9 de 5 estrelas em 1.138 avaliações e selo de mais vendido na categoria, o histórico de compradores reais é um bom indicativo de confiabilidade. Ainda assim, vale sempre comparar o preço com o site oficial da Electrolux antes de fechar a compra, já que os valores mudam com frequência.
+        </div>
+      </details>
+    </div>
+    <script type="application/ld+json" set:html={JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"O Electrolux Ergorapido ERG26 é bom para quem tem pet em casa?","acceptedAnswer":{"@type":"Answer","text":"Sim. O bocal Pet Care com luz de LED foi desenvolvido justamente para remover pelos de animais em sofás, tapetes e cantos de difícil acesso, e é um dos pontos mais elogiados nas avaliações de compradores."}},{"@type":"Question","name":"Quanto tempo dura a bateria do ERG26?","acceptedAnswer":{"@type":"Answer","text":"Segundo o fabricante, a autonomia é de até 45 minutos na potência mínima e cerca de 15 minutos na potência máxima."}},{"@type":"Question","name":"O ERG26 é barulhento?","acceptedAnswer":{"@type":"Answer","text":"Comparativos especializados estimam o ruído em torno de 80dB, considerado alto para a categoria. Esse dado não é confirmado oficialmente pela Electrolux."}},{"@type":"Question","name":"Qual a diferença entre o ERG26 e outros modelos da linha Ergorapido?","acceptedAnswer":{"@type":"Answer","text":"O ERG26 se destaca pelo filtro HEPA de tripla filtragem e o bocal Pet Care exclusivo, recursos que nem todos os modelos da linha oferecem."}},{"@type":"Question","name":"Vale a pena comprar o ERG26 pelo Mercado Livre?","acceptedAnswer":{"@type":"Answer","text":"Com nota 4,9 de 5 estrelas em 1.138 avaliações e selo de mais vendido na categoria, o histórico de compradores reais é um bom indicativo de confiabilidade."}}]})} />
+
+    <h2 class="text-xl font-black text-slate-900 mb-3">Vale a pena comprar o Electrolux Ergorapido ERG26?</h2>
+    <p class="text-slate-700 leading-relaxed mb-3">
+      Com base na ficha técnica oficial e nas avaliações reais de compradores, o Ergorapido ERG26 entrega o que promete para o uso mais comum em apartamento pequeno: leveza, praticidade e boa filtragem. A nota 4,9 com mais de mil avaliações no Mercado Livre reforça isso.
+    </p>
+    <p class="text-slate-700 leading-relaxed mb-10">
+      Os pontos de atenção são reais e não devem ser ignorados, principalmente o barulho e a autonomia curta na potência máxima. Mas para quem busca um aspirador leve, sem fio, com bom acabamento e foco em remoção de pelos de pet, ele segue como uma das opções mais bem avaliadas da categoria.
+    </p>
+
+    <!-- Leia Também -->
+    <a href="/melhores-aspiradores-po-2026" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;margin-bottom:16px;">
+      <div style="width:200px;flex-shrink:0;">
+        <img src="/images/aspiradores/capa-aspiradores.webp" alt="Os melhores aspiradores de pó de 2026" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+      </div>
+      <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+        <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+        <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Os 7 Melhores Aspiradores de Pó 2026: Com Fio, Sem Fio e Robôs</span>
+      </div>
+    </a>
+    <a href="/robos-aspirador-custo-beneficio" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+      <div style="width:200px;flex-shrink:0;">
+        <img src="/images/robos/capa-robos.webp" alt="Robôs aspiradores custo-benefício" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+      </div>
+      <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+        <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+        <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Robôs Aspiradores: Os 5 Melhores Custo-Benefício</span>
+      </div>
+    </a>
+
+    <p class="text-xs text-slate-500 italic mt-6 border-t border-slate-100 pt-4">
+      Este review foi feito por curadoria da ficha técnica oficial e de avaliações reais de compradores, não por teste direto do produto pela autora.
     </p>
   </div>
 )}

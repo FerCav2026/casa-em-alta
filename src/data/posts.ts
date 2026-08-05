@@ -383,6 +383,16 @@ export const posts: Post[] = [
     categoria: 'reviews',
     categoriaLabel: 'Review',
     categoriaColor: 'bg-orange-100 text-orange-700',
+  },
+  {
+    slug: 'electrolux-ergorapido-erg26-review',
+    titulo: 'Electrolux Ergorapido ERG26: Vale a Pena? Review Completo',
+    resumo: 'Ficha técnica oficial, prós e contras e avaliações reais de compradores (nota 4,9 de 5, 1.138 avaliações) do aspirador vertical sem fio Electrolux Ergorapido ERG26.',
+    tempo: '7 min de leitura',
+    imagem: '/images/electrolux-erg26/capa-electrolux-erg26.webp',
+    categoria: 'reviews',
+    categoriaLabel: 'Review',
+    categoriaColor: 'bg-orange-100 text-orange-700',
   }
 ];
 
