@@ -251,6 +251,13 @@ const posts: Record<string, { titulo: string; descricao: string; categoria: stri
     dataCriacao: '2026-08-05',
     dataModificacao: '2026-08-05',
   },
+  'como-escolher-aspirador-de-po': {
+    titulo: 'Como Escolher Aspirador de Pó: Com Fio, Sem Fio, Vertical ou Robô?',
+    descricao: 'Guia completo pra escolher o aspirador de pó ideal: com fio, sem fio, vertical ou robô. Veja piso, bateria, filtro HEPA e ruído antes de comprar.',
+    categoria: 'Guia de Compra',
+    dataCriacao: '2026-08-07',
+    dataModificacao: '2026-08-07',
+  },
 };
 
 export function getStaticPaths() {
@@ -288,6 +295,7 @@ export function getStaticPaths() {
     'mini-eletrodomesticos-mais-vendidos-shopee': {},
     'robo-aspirador-barato-shopee': {},
     'electrolux-ergorapido-erg26-review': {},
+    'como-escolher-aspirador-de-po': {},
   }).map((slug) => ({ params: { slug } }));
 }
 
@@ -353,6 +361,7 @@ const isUtilidadesShopee30 = slug === 'utilidades-shopee-ate-30-reais';
 const isMiniEletrodomesticosShopee = slug === 'mini-eletrodomesticos-mais-vendidos-shopee';
 const isRoboAspiradorShopee = slug === 'robo-aspirador-barato-shopee';
 const isElectroluxERG26 = slug === 'electrolux-ergorapido-erg26-review';
+const isComoEscolherAspirador = slug === 'como-escolher-aspirador-de-po';
 
 const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isAirfryer ? '/images/airfryer/capa-airfryer.webp'
@@ -387,6 +396,7 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isMiniEletrodomesticosShopee ? '/images/mini-eletrodomesticos-shopee/capa-mini-eletrodomesticos-shopee.webp'
   : isRoboAspiradorShopee ? '/images/robo-aspirador-shopee/capa-robo-aspirador-shopee.webp'
   : isElectroluxERG26 ? '/images/electrolux-erg26/capa-electrolux-erg26.webp'
+  : isComoEscolherAspirador ? '/images/aspirador-guia/capa-como-escolher-aspirador-de-po.webp'
   : undefined;
 ---
 
@@ -973,7 +983,15 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
         <!-- Leia também -->
         <div style="margin:32px 0;font-family:sans-serif;">
           <p style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#1e5c2e;margin:0 0 12px;">Leia também:</p>
-          <a href="/robos-aspirador-custo-beneficio" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+          <a href="/como-escolher-aspirador-de-po" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;min-width:200px;overflow:hidden;">
+              <img src="/images/aspirador-guia/capa-como-escolher-aspirador-de-po.webp" alt="Como escolher aspirador de pó" style="width:100%;height:100%;object-fit:cover;display:block;" />
+            </div>
+            <div style="padding:20px 22px;display:flex;align-items:center;">
+              <p style="margin:0;font-size:15px;font-weight:500;line-height:1.5;color:#1a1a1a;">Como Escolher Aspirador de Pó: Com Fio, Sem Fio, Vertical ou Robô?</p>
+            </div>
+          </a>
+          <a href="/robos-aspirador-custo-beneficio" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;margin-top:12px;">
             <div style="width:200px;min-width:200px;overflow:hidden;">
               <img src="/images/robos/capa-robos.webp" alt="Os 5 melhores robôs aspiradores custo-benefício" style="width:100%;height:100%;object-fit:cover;display:block;" />
             </div>
@@ -2466,7 +2484,15 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
         <!-- Leia também -->
         <div style="margin:32px 0;font-family:sans-serif;">
           <p style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#1e5c2e;margin:0 0 12px;">Leia também:</p>
-          <a href="/melhores-aspiradores-po-2026" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+          <a href="/como-escolher-aspirador-de-po" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;min-width:200px;overflow:hidden;">
+              <img src="/images/aspirador-guia/capa-como-escolher-aspirador-de-po.webp" alt="Como escolher aspirador de pó" style="width:100%;height:100%;object-fit:cover;display:block;" />
+            </div>
+            <div style="padding:20px 22px;display:flex;align-items:center;">
+              <p style="margin:0;font-size:15px;font-weight:500;line-height:1.5;color:#1a1a1a;">Como Escolher Aspirador de Pó: Com Fio, Sem Fio, Vertical ou Robô?</p>
+            </div>
+          </a>
+          <a href="/melhores-aspiradores-po-2026" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;margin-top:12px;">
             <div style="width:200px;min-width:200px;overflow:hidden;">
               <img src="/images/aspiradores/capa-aspiradores.webp" alt="Os 7 melhores aspiradores de pó de 2026" style="width:100%;height:100%;object-fit:cover;display:block;" />
             </div>
@@ -11199,6 +11225,323 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
       </div>
     )}
 
+    {isComoEscolherAspirador && (
+      <div>
+
+        <!-- Capa -->
+        <div class="rounded-2xl overflow-hidden mb-8 shadow-md">
+          <img
+            src="/images/aspirador-guia/capa-como-escolher-aspirador-de-po.webp"
+            alt="Como escolher aspirador de pó: com fio, sem fio, vertical ou robô"
+            class="w-full h-auto object-cover"
+            loading="eager"
+          />
+        </div>
+
+        <!-- Introdução -->
+        <div class="bg-orange-50 border border-orange-100 rounded-2xl p-6 mb-8">
+          <p class="text-slate-800 text-base leading-relaxed mb-3">
+            Se você já entrou numa loja ou abriu um marketplace pra comprar um aspirador de pó, sabe como a vitrine confunde. Tem modelo com fio, sem fio, vertical, robô, com saco, sem saco, uns prometendo potência absurda e outros vendendo autonomia de bateria como se fosse o único critério que importa.
+          </p>
+          <p class="text-slate-800 text-base leading-relaxed">
+            A verdade é que não existe "o melhor aspirador de pó" de forma genérica. Existe o aspirador certo pra sua casa, pro seu piso e pra sua rotina de limpeza. Este guia reúne os critérios que realmente fazem diferença na hora de escolher, sem empurrar o modelo mais caro como se fosse sinônimo de melhor.
+          </p>
+        </div>
+
+        <!-- Índice -->
+        <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 mb-10">
+          <p class="text-slate-800 font-bold text-base mb-3">Neste artigo:</p>
+          <ul class="space-y-2 text-sm text-slate-700">
+            <li><a href="#fio-ou-sem-fio" class="text-purple-600 hover:underline">→ Com fio ou sem fio: entenda a diferença</a></li>
+            <li><a href="#vertical-ou-robo" class="text-purple-600 hover:underline">→ Vertical ou robô: qual faz mais sentido pra sua rotina</a></li>
+            <li><a href="#criterios-tecnicos" class="text-purple-600 hover:underline">→ Os critérios técnicos que realmente importam</a></li>
+            <li><a href="#erros-comuns" class="text-purple-600 hover:underline">→ Erros comuns na hora de comprar</a></li>
+            <li><a href="#checklist" class="text-purple-600 hover:underline">→ Checklist rápido antes de comprar</a></li>
+            <li><a href="#faq" class="text-purple-600 hover:underline">→ Perguntas frequentes</a></li>
+          </ul>
+        </div>
+
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          Se você já quer ver opções específicas, vale conferir o nosso ranking com <a href="/melhores-aspiradores-po-2026" class="text-purple-700 underline font-medium">os 7 melhores aspiradores de pó de 2026</a>, com modelos com fio, sem fio e robôs lado a lado.
+        </p>
+
+        <!-- Com fio ou sem fio -->
+        <h2 id="fio-ou-sem-fio" class="text-2xl font-bold text-slate-900 mb-4">Com fio ou sem fio: entenda a diferença antes de decidir</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-6">
+          Essa é a primeira bifurcação que você vai encontrar. E ela pesa bastante no preço, na autonomia e até no formato do aparelho.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+          <div class="border border-slate-200 rounded-2xl p-5">
+            <h3 class="font-bold text-slate-900 text-base mb-3">Aspirador com fio</h3>
+            <ul class="space-y-2 text-sm text-slate-700">
+              <li class="flex gap-2"><span class="text-green-500 font-bold">✓</span>Potência de sucção mais alta e constante, sem depender de carga de bateria</li>
+              <li class="flex gap-2"><span class="text-green-500 font-bold">✓</span>Sem limite de tempo de uso, ideal pra casa grande ou limpeza mais demorada</li>
+              <li class="flex gap-2"><span class="text-green-500 font-bold">✓</span>Costuma ser mais barato que um sem fio de potência equivalente</li>
+              <li class="flex gap-2"><span class="text-red-400 font-bold">✗</span>Menos prático pra subir escadas ou trocar de ambiente (precisa mudar de tomada)</li>
+              <li class="flex gap-2"><span class="text-red-400 font-bold">✗</span>Mais pesado e menos ágil pra limpezas rápidas do dia a dia</li>
+            </ul>
+          </div>
+          <div class="border border-slate-200 rounded-2xl p-5">
+            <h3 class="font-bold text-slate-900 text-base mb-3">Aspirador sem fio</h3>
+            <ul class="space-y-2 text-sm text-slate-700">
+              <li class="flex gap-2"><span class="text-green-500 font-bold">✓</span>Liberdade total de movimento, sem fio pra tropeçar ou puxar</li>
+              <li class="flex gap-2"><span class="text-green-500 font-bold">✓</span>Ótimo pra limpezas rápidas e pontuais</li>
+              <li class="flex gap-2"><span class="text-green-500 font-bold">✓</span>Geralmente mais leve e compacto que os modelos com fio</li>
+              <li class="flex gap-2"><span class="text-red-400 font-bold">✗</span>Autonomia limitada, pode faltar bateria em casas grandes</li>
+              <li class="flex gap-2"><span class="text-red-400 font-bold">✗</span>Costuma custar mais caro que um modelo com fio de potência parecida</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="bg-amber-50 border border-amber-200 rounded-xl p-5 mb-10">
+          <p class="text-amber-900 font-semibold text-sm mb-1">Regra prática</p>
+          <p class="text-slate-700 text-sm leading-relaxed">Se sua casa tem menos de 100 metros quadrados e você prefere limpar em vários momentos rápidos ao longo do dia, o sem fio tende a compensar. Se você faz uma faxina mais longa de uma vez só, ou tem uma área grande pra cobrir, o com fio evita a frustração de ficar sem bateria na metade do serviço.</p>
+        </div>
+
+        <!-- Vertical ou robô -->
+        <h2 id="vertical-ou-robo" class="text-2xl font-bold text-slate-900 mb-4">Vertical ou robô: qual faz mais sentido pra sua rotina</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-6">
+          Depois de decidir entre fio e bateria, vem a segunda pergunta: você quer operar o aspirador ou prefere que ele trabalhe sozinho?
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+          <div class="border border-slate-200 rounded-2xl p-5">
+            <h3 class="font-bold text-slate-900 text-base mb-3">Aspirador vertical</h3>
+            <p class="text-slate-700 text-sm leading-relaxed">É o formato que você empurra e passa nos ambientes, geralmente com bocal maior e mais potência de sucção real. Costuma ser a escolha mais eficiente pra limpeza profunda, principalmente em tapetes, carpetes e cantos com sujeira acumulada, além de resolver melhor o problema de pelos de animal presos em tecido.</p>
+          </div>
+          <div class="border border-slate-200 rounded-2xl p-5">
+            <h3 class="font-bold text-slate-900 text-base mb-3">Robô aspirador</h3>
+            <p class="text-slate-700 text-sm leading-relaxed">O diferencial é a praticidade: você programa um horário e ele limpa sozinho. Ótimo pra manutenção diária, mas tem limitações: não sobe em sofás, não limpa cortinas nem parte de cima de móveis, e em geral tem sucção mais fraca que um vertical bem potente.</p>
+          </div>
+        </div>
+
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          Na prática, muita gente combina os dois: o robô cuida da manutenção do dia a dia e um aspirador vertical entra em ação nas faxinas mais pesadas. Se esse é o seu caso, separamos um comparativo específico com <a href="/robos-aspirador-custo-beneficio" class="text-purple-700 underline font-medium">os 5 robôs aspiradores com melhor custo-benefício</a> pra te ajudar a escolher sem gastar mais do que precisa.
+        </p>
+
+        <!-- Critérios técnicos -->
+        <h2 id="criterios-tecnicos" class="text-2xl font-bold text-slate-900 mb-6">Os critérios técnicos que realmente importam na hora de comprar</h2>
+
+        <div class="space-y-5 mb-10">
+          <div class="border-l-4 border-purple-400 pl-4">
+            <p class="font-semibold text-slate-800 text-sm mb-1">Potência de sucção, não só potência do motor</p>
+            <p class="text-slate-700 text-sm leading-relaxed">A potência em watts (W) indica o consumo de energia do motor, não a força real de sucção. Um motor de 1600W mal projetado pode aspirar pior que um de 1200W com bom aproveitamento de ar. Para uso doméstico comum, modelos entre 1200W e 1800W (com fio) já entregam sucção suficiente pra piso, tapete fino e sofá.</p>
+          </div>
+          <div class="border-l-4 border-purple-400 pl-4">
+            <p class="font-semibold text-slate-800 text-sm mb-1">Autonomia da bateria, se for sem fio</p>
+            <p class="text-slate-700 text-sm leading-relaxed">Aspiradores sem fio costumam informar autonomia entre 20 e 60 minutos, mas esse número é medido no modo de potência mais baixa. No modo turbo a bateria some muito mais rápido, às vezes em 8 a 10 minutos. Se a área é grande, vale checar se dá pra trocar a bateria por uma sobressalente.</p>
+          </div>
+          <div class="border-l-4 border-purple-400 pl-4">
+            <p class="font-semibold text-slate-800 text-sm mb-1">Capacidade do reservatório</p>
+            <p class="text-slate-700 text-sm leading-relaxed">Reservatórios pequenos, de até 0,5 litro, são comuns em modelos sem fio compactos e exigem esvaziar com frequência. Modelos com fio costumam vir com 1,5 a 3 litros. Se você tem pets, um reservatório maior evita interromper a faxina toda hora.</p>
+          </div>
+          <div class="border-l-4 border-purple-400 pl-4">
+            <p class="font-semibold text-slate-800 text-sm mb-1">Filtro HEPA e qualidade do ar</p>
+            <p class="text-slate-700 text-sm leading-relaxed">O filtro HEPA retém partículas microscópicas, como ácaros e resíduos de pólen, que filtros comuns deixam passar de volta pro ar. Pra quem tem alergia respiratória, asma ou pets em casa, esse filtro é praticamente item obrigatório. Vale checar se é lavável ou se precisa ser substituído periodicamente.</p>
+          </div>
+          <div class="border-l-4 border-purple-400 pl-4">
+            <p class="font-semibold text-slate-800 text-sm mb-1">Peso e ergonomia</p>
+            <p class="text-slate-700 text-sm leading-relaxed">Modelos sem fio costumam pesar entre 1,5kg e 3kg, enquanto os verticais com fio variam de 3kg a mais de 6kg dependendo da potência. Se você tem dor nas costas ou vai usar por longos períodos, confira o peso e as avaliações de outros compradores sobre esse ponto.</p>
+          </div>
+          <div class="border-l-4 border-purple-400 pl-4">
+            <p class="font-semibold text-slate-800 text-sm mb-1">Nível de ruído</p>
+            <p class="text-slate-700 text-sm leading-relaxed">Aspiradores variam de aproximadamente 60 a mais de 80 decibéis. Modelos muito potentes tendem a ser mais barulhentos, o que pode ser um problema em apartamento com paredes finas. Procure o dado em decibéis (dB) na ficha técnica e compare entre os modelos.</p>
+          </div>
+          <div class="border-l-4 border-purple-400 pl-4">
+            <p class="font-semibold text-slate-800 text-sm mb-1">Tipo de piso da sua casa</p>
+            <p class="text-slate-700 text-sm leading-relaxed">Pisos lisos, como porcelanato, laminado e madeira, pedem menos potência de sucção e se beneficiam de bocais com cerdas suaves. Tapetes e carpetes exigem mais força e bocais rotativos. Se sua casa mistura os dois tipos, procure um modelo com bocal ajustável ou acessórios intercambiáveis.</p>
+          </div>
+        </div>
+
+        <!-- Erros comuns -->
+        <h2 id="erros-comuns" class="text-2xl font-bold text-slate-900 mb-6">Erros comuns na hora de comprar um aspirador de pó</h2>
+
+        <div class="space-y-4 mb-10">
+          <div class="flex gap-4 items-start">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-red-100 text-red-700 font-bold text-sm flex items-center justify-center">1</span>
+            <div>
+              <p class="font-semibold text-slate-800 text-sm mb-1">Escolher só pela potência em watts</p>
+              <p class="text-slate-700 text-sm leading-relaxed">Como já vimos, isso não garante sucção real. Compare especificações de fluxo de ar ou pascal (Pa) quando possível.</p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-start">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-red-100 text-red-700 font-bold text-sm flex items-center justify-center">2</span>
+            <div>
+              <p class="font-semibold text-slate-800 text-sm mb-1">Ignorar o tipo de piso predominante em casa</p>
+              <p class="text-slate-700 text-sm leading-relaxed">Um aspirador ótimo pra tapete pode ser barulhento e exagerado pra quem só tem piso liso.</p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-start">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-red-100 text-red-700 font-bold text-sm flex items-center justify-center">3</span>
+            <div>
+              <p class="font-semibold text-slate-800 text-sm mb-1">Subestimar a autonomia real da bateria</p>
+              <p class="text-slate-700 text-sm leading-relaxed">O tempo anunciado quase sempre é no modo econômico, não no modo turbo que você provavelmente vai usar mais.</p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-start">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-red-100 text-red-700 font-bold text-sm flex items-center justify-center">4</span>
+            <div>
+              <p class="font-semibold text-slate-800 text-sm mb-1">Não considerar o peso do aparelho</p>
+              <p class="text-slate-700 text-sm leading-relaxed">Parece detalhe pequeno até você precisar carregar o aspirador escada acima todos os dias.</p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-start">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-red-100 text-red-700 font-bold text-sm flex items-center justify-center">5</span>
+            <div>
+              <p class="font-semibold text-slate-800 text-sm mb-1">Comprar só pelo preço mais baixo</p>
+              <p class="text-slate-700 text-sm leading-relaxed">Modelos muito baratos costumam ter filtro de baixa qualidade e vida útil curta, o que sai mais caro no fim das contas.</p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-start">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-red-100 text-red-700 font-bold text-sm flex items-center justify-center">6</span>
+            <div>
+              <p class="font-semibold text-slate-800 text-sm mb-1">Esquecer do custo de manutenção</p>
+              <p class="text-slate-700 text-sm leading-relaxed">Sacos descartáveis, filtros de reposição e baterias sobressalentes têm custo recorrente que passa batido na hora da compra.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Checklist -->
+        <div class="bg-slate-900 text-white rounded-2xl p-7 mb-10" id="checklist">
+          <h2 class="text-xl font-bold mb-4">Checklist rápido antes de finalizar a compra</h2>
+          <ul class="space-y-2 text-slate-200 text-sm leading-relaxed">
+            <li>Qual o tipo de piso predominante na minha casa: liso, tapete ou os dois?</li>
+            <li>Tenho pets ou algum morador com alergia respiratória? Filtro HEPA passa a ser prioridade.</li>
+            <li>Prefiro praticidade no dia a dia ou potência pra faxinas mais pesadas?</li>
+            <li>Minha casa é grande ou pequena? Isso define se bateria é limitação real ou não.</li>
+            <li>Tenho paciência pra esvaziar o reservatório com frequência, ou prefiro um modelo com capacidade maior?</li>
+            <li>Considerei o custo de manutenção (filtros, sacos, baterias) e não só o preço de compra?</li>
+          </ul>
+        </div>
+
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          Se você já reduziu sua busca a um modelo específico de entrada, compacto e sem fio, pode ser útil conferir nossa análise detalhada do <a href="/electrolux-ergorapido-erg26-review" class="text-purple-700 underline font-medium">Electrolux Ergorapido ERG26</a>, um dos aspiradores mais procurados nessa categoria. E se quiser ver o ranking completo, o <a href="/melhores-aspiradores-po-2026" class="text-purple-700 underline font-medium">Os 7 Melhores Aspiradores de Pó de 2026</a> reúne opções pra cada perfil de casa.
+        </p>
+
+        <!-- FAQ -->
+        <h2 id="faq" class="text-2xl font-bold text-slate-900 mb-6">Perguntas frequentes sobre como escolher aspirador de pó</h2>
+
+        <div class="space-y-3 mb-10">
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Aspirador sem fio tem potência suficiente pra tapete e carpete?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Depende do modelo. Aspiradores sem fio de entrada costumam ter sucção mais fraca, mas as versões intermediárias e premium já entregam potência comparável a muitos modelos com fio, principalmente no modo turbo. Vale checar se o bocal vem com escova motorizada, que ajuda bastante em tapetes.
+            </div>
+          </details>
+
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Robô aspirador substitui completamente o aspirador manual?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Não totalmente. O robô é excelente pra manutenção diária do piso, mas não limpa sofá, cortina, parte de cima de móveis nem sobe escadas. A combinação mais eficiente costuma ser robô pra rotina e um aspirador manual pra faxinas mais completas.
+            </div>
+          </details>
+
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Vale a pena pagar mais por filtro HEPA?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Se você tem pets, alergia respiratória ou mora em cidade com muita poeira, sim. O filtro HEPA retém partículas que filtros comuns deixam passar de volta pro ambiente, o que faz diferença real na qualidade do ar da casa.
+            </div>
+          </details>
+
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Qual a diferença entre potência em watts e potência de sucção?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Watts mede o consumo de energia do motor, enquanto a sucção real depende do aproveitamento desse motor e do design do sistema de ar. Por isso um aparelho de menos watts pode aspirar melhor que um de mais watts, dependendo da engenharia interna.
+            </div>
+          </details>
+
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Aspirador com saco ou sem saco, qual é melhor?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Modelos com saco costumam reter melhor a poeira fina e sujam menos na hora de esvaziar, mas geram custo recorrente com a compra de sacos novos. Modelos sem saco eliminam esse custo, mas exigem lavar o reservatório com mais frequência, o que pode soltar poeira no ar durante o processo.
+            </div>
+          </details>
+        </div>
+
+        <!-- Schema FAQ -->
+        <script type="application/ld+json" set:html={JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Aspirador sem fio tem potência suficiente pra tapete e carpete?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Depende do modelo. Aspiradores sem fio de entrada costumam ter sucção mais fraca, mas as versões intermediárias e premium já entregam potência comparável a muitos modelos com fio, principalmente no modo turbo. Vale checar se o bocal vem com escova motorizada, que ajuda bastante em tapetes." }
+            },
+            {
+              "@type": "Question",
+              "name": "Robô aspirador substitui completamente o aspirador manual?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Não totalmente. O robô é excelente pra manutenção diária do piso, mas não limpa sofá, cortina, parte de cima de móveis nem sobe escadas. A combinação mais eficiente costuma ser robô pra rotina e um aspirador manual pra faxinas mais completas." }
+            },
+            {
+              "@type": "Question",
+              "name": "Vale a pena pagar mais por filtro HEPA?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Se você tem pets, alergia respiratória ou mora em cidade com muita poeira, sim. O filtro HEPA retém partículas que filtros comuns deixam passar de volta pro ambiente, o que faz diferença real na qualidade do ar da casa." }
+            },
+            {
+              "@type": "Question",
+              "name": "Qual a diferença entre potência em watts e potência de sucção?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Watts mede o consumo de energia do motor, enquanto a sucção real depende do aproveitamento desse motor e do design do sistema de ar. Por isso um aparelho de menos watts pode aspirar melhor que um de mais watts, dependendo da engenharia interna." }
+            },
+            {
+              "@type": "Question",
+              "name": "Aspirador com saco ou sem saco, qual é melhor?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Modelos com saco costumam reter melhor a poeira fina e sujam menos na hora de esvaziar, mas geram custo recorrente com a compra de sacos novos. Modelos sem saco eliminam esse custo, mas exigem lavar o reservatório com mais frequência, o que pode soltar poeira no ar durante o processo." }
+            }
+          ]
+        })} />
+
+        <!-- Leia também -->
+        <p style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#6b21a8;margin:24px 0 12px;">Leia também:</p>
+        <div style="display:flex;flex-direction:column;gap:12px;">
+          <a href="/melhores-aspiradores-po-2026" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;flex-shrink:0;">
+              <img src="/images/aspiradores/capa-aspiradores.webp" alt="Os 7 Melhores Aspiradores de Pó 2026" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Os 7 Melhores Aspiradores de Pó 2026: Com Fio, Sem Fio e Robôs</span>
+            </div>
+          </a>
+          <a href="/robos-aspirador-custo-beneficio" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;flex-shrink:0;">
+              <img src="/images/robos/capa-robos.webp" alt="Robôs aspiradores custo-benefício" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Robôs Aspiradores: Os 5 Melhores Custo-Benefício</span>
+            </div>
+          </a>
+          <a href="/electrolux-ergorapido-erg26-review" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;flex-shrink:0;">
+              <img src="/images/electrolux-erg26/capa-electrolux-erg26.webp" alt="Electrolux Ergorapido ERG26 review" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Electrolux Ergorapido ERG26: Vale a Pena? Review Completo</span>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    )}
+
     {isMelhoresMicroondas && (
       <div>
         <!-- Capa -->
@@ -15014,6 +15357,15 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
     </p>
 
     <!-- Leia Também -->
+    <a href="/como-escolher-aspirador-de-po" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;margin-bottom:16px;">
+      <div style="width:200px;flex-shrink:0;">
+        <img src="/images/aspirador-guia/capa-como-escolher-aspirador-de-po.webp" alt="Como escolher aspirador de pó" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+      </div>
+      <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+        <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+        <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Como Escolher Aspirador de Pó: Com Fio, Sem Fio, Vertical ou Robô?</span>
+      </div>
+    </a>
     <a href="/melhores-aspiradores-po-2026" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;margin-bottom:16px;">
       <div style="width:200px;flex-shrink:0;">
         <img src="/images/aspiradores/capa-aspiradores.webp" alt="Os melhores aspiradores de pó de 2026" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />

@@ -393,6 +393,16 @@ export const posts: Post[] = [
     categoria: 'reviews',
     categoriaLabel: 'Review',
     categoriaColor: 'bg-orange-100 text-orange-700',
+  },
+  {
+    slug: 'como-escolher-aspirador-de-po',
+    titulo: 'Como Escolher Aspirador de Pó: Com Fio, Sem Fio, Vertical ou Robô?',
+    resumo: 'Guia completo pra escolher o aspirador de pó ideal: com fio, sem fio, vertical ou robô. Veja piso, bateria, filtro HEPA e ruído antes de comprar.',
+    tempo: '9 min de leitura',
+    imagem: '/images/aspirador-guia/capa-como-escolher-aspirador-de-po.webp',
+    categoria: 'guias-de-compra',
+    categoriaLabel: 'Guia de Compra',
+    categoriaColor: 'bg-purple-100 text-purple-700',
   }
 ];
 
