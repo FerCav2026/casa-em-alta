@@ -14,5 +14,6 @@ export default defineConfig({
   site: 'https://www.casaemalta.com.br',
   redirects: {
     '/posts/[slug]': '/[slug]',
+    '/categorias/guia-de-compra': '/categorias/guias-de-compra',
   },
 });
