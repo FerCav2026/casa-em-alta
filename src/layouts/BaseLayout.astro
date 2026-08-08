@@ -18,7 +18,7 @@ const {
   schema,
 } = Astro.props;
 
-const rawPath = Astro.url.pathname.replace(/\/$/, '') || '/';
+const rawPath = Astro.url.pathname === '/' ? '/' : Astro.url.pathname.replace(/\/$/, '') + '/';
 const canonicalURL = Astro.props.canonicalURL ?? new URL(rawPath, Astro.site).href;
 // Compartilhamento (WhatsApp/Facebook) usa a versao JPG da capa, mais compativel que WebP
 const ogImage = image.replace(/\.webp$/i, '.jpg');
