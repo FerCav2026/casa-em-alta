@@ -1,11 +1,11 @@
 ARTIGOS PUBLICADOS - CASA EM ALTA
-Última atualização: 2026-07-20
-Total: 32 publicados | 0 agendados
+Última atualização: 2026-08-10
+Total: 36 publicados | 0 agendados
 Blog: https://casaemalta.com.br
 Arquivo de dados: src/data/posts.ts
 =====================================
 
-PUBLICADOS (32)
+PUBLICADOS (36)
 
 1.  Os 7 Melhores Aspiradores de Pó 2026: Com Fio, Sem Fio e Robôs
     Slug: melhores-aspiradores-po-2026 | Categoria: Rankings e Listas
@@ -104,15 +104,26 @@ PUBLICADOS (32)
 32. Mini Eletrodomésticos Mais Vendidos da Shopee: Vale a Pena ou é Furada?
     Slug: mini-eletrodomesticos-mais-vendidos-shopee | Categoria: Rankings e Listas | Publicado: 20/07/2026 (commit d401b76) | 3º artigo do Cluster Shopee. 5 mini eletrodomésticos (waffleira, mini bolo/bundt maker, panela de arroz, grill Oster, mixer portátil) escolhidos e enviados pela Fernanda, NENHUM usado por ela pessoalmente — tom 100% curadoria baseado em nota média e avaliações reais de compradores (prints enviados por ela). Sem preço fixo no texto (não informado e Shopee não permite conferir por link) — usado "confira o preço atual". Links retroativos inseridos em mais-vendidos-shopee-casa e utilidades-shopee-ate-30-reais.
 
+33. Robô Aspirador Barato da Shopee Funciona Mesmo? O Que Esperar de Um por Menos de R$200
+    Slug: robo-aspirador-barato-shopee | Categoria: Review | Publicado: 30/07/2026 (commit 2cbee83) | 4º artigo do Cluster Shopee. Produto: Aspirador Robô Agratto 3 em 1, nota real 4,7/5 (261 avaliações), R$151,30 no Pix com cupom. Ângulo investigativo ("funciona mesmo?") para não canibalizar o cluster Aspiradores. Links retroativos em #1 (melhores-aspiradores-po-2026) e #4 (robos-aspirador-custo-beneficio).
+
+34. Electrolux Ergorapido ERG26: Vale a Pena? Review Completo
+    Slug: electrolux-ergorapido-erg26-review | Categoria: Review | Publicado: 05/08/2026 (commit 720402d) | Satélite do cluster Aspiradores. Aspirador vertical sem fio, nota 4,9/5 (1.138 avaliações no Mercado Livre), R$1.199,90. Especificações conferidas no site oficial da Electrolux. Fernanda não testou o produto, tom de curadoria/análise. Fotos reais do produto (sem gerar capa nova, créditos OpenAI zerados).
+
+35. Como Escolher Aspirador de Pó: Com Fio, Sem Fio, Vertical ou Robô?
+    Slug: como-escolher-aspirador-de-po | Categoria: Guia de Compra | Publicado: 07/08/2026 (commit 26adfb7) | PILAR do cluster Aspiradores, publicado no dia exato planejado no calendário. Guia genérico (com fio vs sem fio, vertical vs robô, critérios técnicos, erros comuns, checklist, FAQ com 5 perguntas), sem claim de teste pessoal. Links retroativos feitos em #1 (melhores-aspiradores-po-2026), #4 (robos-aspirador-custo-beneficio) e #34 (electrolux-ergorapido-erg26-review, que antes só linkava pros rankings). Capa gerada manualmente pela Fernanda (créditos OpenAI zerados de novo), convertida para WebP.
+
+36. Aspirador Vertical ou Portátil Sem Fio: Qual Vale Mais para Apartamento?
+    Slug: aspirador-vertical-ou-portatil-apartamento | Categoria: Comparativo | Publicado: 10/08/2026 | Satélite do cluster Aspiradores, no dia certo do calendário. Comparativo de categoria (vertical x portátil de mão), não teste pessoal — sucção, autonomia, peso, superfícies, onde guardar, preço (vigente ago/2026) e recomendação por perfil de morador (sem pet, com pet, com tapete grande). FAQ com 7 perguntas. Fluxo: artigo-pro escreveu, estrategista-blog auditou (SEO 50→70, E-E-A-T 66→78, GEO 74→88 após correções), eu corrigi um claim falso que a auditoria tinha inserido (dizia que a Fernanda testou o ERG26 pessoalmente, o que não é verdade) antes de integrar. Links retroativos: pilar (como-escolher-aspirador-de-po) ganhou card "Leia Também" apontando pra este artigo. Falta: imagem de capa e o dado de sucção em Pa/Air Watts (não fabricado, precisa de fonte real).
+
 =====================================
 AGENDADOS (0)
 
-Nenhum artigo agendado no momento. Próximo do calendário: 27/07 "Robô Aspirador Barato da Shopee Funciona Mesmo?" (4º artigo do Cluster Shopee).
-Restam 3 artigos do Cluster Shopee (27/07 a 10/08).
+Nenhum artigo agendado no momento. Próximo do calendário: ranking "Os 7 Melhores Aspiradores Verticais Sem Fio de 2026" (12/08), que fecha o cluster Aspiradores. Depois entra o Cluster Cafeteiras a partir de 14/08.
 
 =====================================
-CATEGORIAS (32 publicados):
+CATEGORIAS (36 publicados):
 - Rankings e Listas: 12 artigos
-- Comparativo: 5 artigos
-- Review: 9 artigos
-- Guia de Compra: 6 artigos
+- Comparativo: 6 artigos
+- Review: 11 artigos
+- Guia de Compra: 7 artigos

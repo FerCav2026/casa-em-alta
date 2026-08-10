@@ -258,6 +258,13 @@ const posts: Record<string, { titulo: string; descricao: string; categoria: stri
     dataCriacao: '2026-08-07',
     dataModificacao: '2026-08-07',
   },
+  'aspirador-vertical-ou-portatil-apartamento': {
+    titulo: 'Aspirador Vertical ou Portátil Sem Fio para Apartamento',
+    descricao: 'Aspirador vertical ou portátil sem fio: qual vale mais para o seu apartamento? Comparamos sucção, autonomia, peso e preço de cada tipo.',
+    categoria: 'Comparativo',
+    dataCriacao: '2026-08-10',
+    dataModificacao: '2026-08-10',
+  },
 };
 
 export function getStaticPaths() {
@@ -296,6 +303,7 @@ export function getStaticPaths() {
     'robo-aspirador-barato-shopee': {},
     'electrolux-ergorapido-erg26-review': {},
     'como-escolher-aspirador-de-po': {},
+    'aspirador-vertical-ou-portatil-apartamento': {},
   }).map((slug) => ({ params: { slug } }));
 }
 
@@ -362,6 +370,7 @@ const isMiniEletrodomesticosShopee = slug === 'mini-eletrodomesticos-mais-vendid
 const isRoboAspiradorShopee = slug === 'robo-aspirador-barato-shopee';
 const isElectroluxERG26 = slug === 'electrolux-ergorapido-erg26-review';
 const isComoEscolherAspirador = slug === 'como-escolher-aspirador-de-po';
+const isAspiradorVerticalOuPortatil = slug === 'aspirador-vertical-ou-portatil-apartamento';
 
 const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isAirfryer ? '/images/airfryer/capa-airfryer.webp'
@@ -397,6 +406,7 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isRoboAspiradorShopee ? '/images/robo-aspirador-shopee/capa-robo-aspirador-shopee.webp'
   : isElectroluxERG26 ? '/images/electrolux-erg26/capa-electrolux-erg26.webp'
   : isComoEscolherAspirador ? '/images/aspirador-guia/capa-como-escolher-aspirador-de-po.webp'
+  : isAspiradorVerticalOuPortatil ? '/images/aspirador-vertical-portatil/capa-aspirador-vertical-portatil.webp'
   : undefined;
 ---
 
@@ -11537,10 +11547,350 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
               <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Electrolux Ergorapido ERG26: Vale a Pena? Review Completo</span>
             </div>
           </a>
+          <a href="/aspirador-vertical-ou-portatil-apartamento" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;flex-shrink:0;">
+              <img src="/images/aspirador-vertical-portatil/capa-aspirador-vertical-portatil.webp" alt="Aspirador vertical ou portátil sem fio para apartamento" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Aspirador Vertical ou Portátil Sem Fio: Qual Vale Mais para Apartamento?</span>
+            </div>
+          </a>
         </div>
 
       </div>
     )}
+
+    {isAspiradorVerticalOuPortatil && (
+  <div>
+
+    <!-- Capa do artigo -->
+    <div class="rounded-2xl overflow-hidden mb-8 shadow-md">
+      <img
+        src="/images/aspirador-vertical-portatil/capa-aspirador-vertical-portatil.webp"
+        alt="Aspirador vertical e aspirador portátil sem fio lado a lado em apartamento pequeno"
+        class="w-full h-auto object-cover"
+        loading="eager"
+      />
+    </div>
+
+    <!-- Introdução -->
+    <p class="text-slate-700 leading-relaxed mb-4">
+      Quem está decidindo entre aspirador vertical ou portátil sem fio para apartamento geralmente cai numa vitrine cheia de opções parecidas e preços bem diferentes. E a dúvida faz sentido: os dois prometem praticidade, os dois são sem fio, mas eles não servem para a mesma coisa.
+    </p>
+    <p class="text-slate-700 leading-relaxed mb-4">
+      Este comparativo não é um teste lado a lado feito por mim. É uma curadoria de ficha técnica, faixa de preço real de mercado e o uso mais comum de cada categoria, para te ajudar a decidir sem comprar o modelo errado para o seu apê. Se quiser a análise de um modelo específico, com ficha técnica conferida na fonte oficial, veja a review do <a href="/electrolux-ergorapido-erg26-review" class="text-orange-600 font-semibold hover:underline">Electrolux Ergorapido ERG26</a>, um dos verticais sem fio mais vendidos do Brasil.
+    </p>
+
+    <!-- TL;DR -->
+    <div class="bg-orange-50 border border-orange-200 rounded-2xl px-5 py-4 mb-6">
+      <p class="font-bold text-slate-800 mb-1">Em resumo:</p>
+      <p class="text-slate-700 text-sm leading-relaxed">O aspirador vertical sem fio (R$ 500 a R$ 1.200) ganha em sucção, reservatório e limpeza de piso inteiro, tapete e carpete. O portátil de mão (R$ 180 a R$ 570) ganha em preço, peso e praticidade para sofá, carro e cantos. Para apartamento pequeno sem pet e sem tapete grande, o portátil pode ser suficiente. Com pet ou tapete, o vertical compensa mais.</p>
+    </div>
+
+    <!-- Índice -->
+    <nav class="border border-slate-200 rounded-2xl p-6 mb-10 bg-white">
+      <p class="font-bold text-slate-800 mb-3">Neste artigo:</p>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#vertical" class="text-orange-500 hover:text-orange-600 font-medium">Aspirador vertical: como funciona e onde ele ganha</a></li>
+        <li><a href="#portatil" class="text-orange-500 hover:text-orange-600 font-medium">Aspirador portátil de mão: como funciona e onde ele ganha</a></li>
+        <li><a href="#tabela-comparativa" class="text-orange-500 hover:text-orange-600 font-medium">Tabela comparativa: vertical x portátil sem fio</a></li>
+        <li><a href="#sucao-autonomia-peso" class="text-orange-500 hover:text-orange-600 font-medium">Sucção, autonomia e peso: o que pesa mais na escolha</a></li>
+        <li><a href="#superficies" class="text-orange-500 hover:text-orange-600 font-medium">Qual superfície cada um limpa melhor</a></li>
+        <li><a href="#guardar" class="text-orange-500 hover:text-orange-600 font-medium">Onde guardar em apartamento pequeno</a></li>
+        <li><a href="#preco" class="text-orange-500 hover:text-orange-600 font-medium">Quanto custa cada tipo</a></li>
+        <li><a href="#perfil" class="text-orange-500 hover:text-orange-600 font-medium">Qual vale mais para o seu perfil de morador</a></li>
+        <li><a href="#faq" class="text-orange-500 hover:text-orange-600 font-medium">Perguntas frequentes</a></li>
+      </ul>
+    </nav>
+
+    <p class="text-slate-700 leading-relaxed mb-10">
+      Se você ainda está no início da pesquisa e quer entender também a diferença entre com fio, sem fio e robô, vale ler primeiro o nosso guia <a href="/como-escolher-aspirador-de-po" class="text-orange-600 font-semibold hover:underline">Como Escolher Aspirador de Pó</a>, que explica os critérios técnicos com mais profundidade.
+    </p>
+
+    <!-- Aspirador vertical -->
+    <h2 id="vertical" class="text-2xl font-black text-slate-900 mt-10 mb-4">Aspirador vertical: como funciona e onde ele ganha</h2>
+    <p class="text-slate-700 leading-relaxed mb-4">
+      O aspirador vertical sem fio, também chamado de escoba ou stick, é o formato que você empurra pelo chão com as duas mãos. Tem um bocal maior, motor mais robusto e reservatório com mais capacidade que os modelos de mão.
+    </p>
+    <p class="text-slate-700 leading-relaxed mb-4">
+      É a escolha certa quando o objetivo é limpar o piso inteiro do apartamento numa passada só, incluindo tapetes e cantos com sujeira acumulada. Boa parte dos modelos, como o Electrolux Ergorapido, também se desmonta e vira um aspirador de mão, o que ajuda bastante em estofado e escada.
+    </p>
+    <ul class="list-disc list-inside space-y-2 text-slate-700 mb-4 ml-2">
+      <li>Sucção mais forte, melhor para tapete e carpete</li>
+      <li>Reservatório maior, esvazia com menos frequência</li>
+      <li>Bocal com escova motorizada, ajuda em pelo de pet</li>
+      <li>Costuma vir com filtro HEPA nos modelos intermediários e premium</li>
+    </ul>
+
+    <!-- Aspirador portátil -->
+    <h2 id="portatil" class="text-2xl font-black text-slate-900 mt-10 mb-4">Aspirador portátil de mão: como funciona e onde ele ganha</h2>
+    <p class="text-slate-700 leading-relaxed mb-4">
+      O aspirador portátil de mão é o modelo compacto que cabe numa gaveta, pesa pouco mais de meio quilo e serve para limpezas rápidas e pontuais. Não foi feito para substituir a faxina do piso inteiro.
+    </p>
+    <p class="text-slate-700 leading-relaxed mb-4">
+      Ele brilha em migalhas na mesa, farelo de pão, pelo de gato no sofá, sujeira no carro e poeira em frestas de móveis. É o aspirador que fica à mão para resolver aquele acidente pontual sem precisar puxar um aparelho maior do armário.
+    </p>
+    <ul class="list-disc list-inside space-y-2 text-slate-700 mb-4 ml-2">
+      <li>Leve e compacto, cabe em gaveta ou prateleira</li>
+      <li>Ótimo para sofá, carro, estante e cantos apertados</li>
+      <li>Preço de entrada mais baixo que o vertical</li>
+      <li>Reservatório pequeno, exige esvaziar com frequência</li>
+    </ul>
+
+    <p class="text-slate-700 leading-relaxed mb-10">
+      Vale conferir também o nosso ranking com <a href="/melhores-aspiradores-po-2026" class="text-orange-600 font-semibold hover:underline">Os 7 Melhores Aspiradores de Pó de 2026</a>, que reúne modelos verticais, sem fio e robôs lado a lado, e a análise completa do <a href="/electrolux-ergorapido-erg26-review" class="text-orange-600 font-semibold hover:underline">Electrolux Ergorapido ERG26</a>, um dos verticais sem fio mais vendidos do Brasil.
+    </p>
+
+    <!-- Tabela comparativa -->
+    <h2 id="tabela-comparativa" class="text-2xl font-black text-slate-900 mt-10 mb-4">Tabela comparativa: vertical x portátil sem fio</h2>
+    <p class="text-slate-700 leading-relaxed mb-5">
+      Para facilitar a comparação lado a lado, organizei os critérios que mais pesam na decisão de quem mora em apartamento.
+    </p>
+    <div class="overflow-x-auto mb-6">
+      <table class="w-full text-sm border-collapse">
+        <thead>
+          <tr class="bg-slate-100">
+            <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Critério</th>
+            <th class="text-left px-4 py-3 font-bold text-orange-600 border border-slate-200">Aspirador vertical</th>
+            <th class="text-left px-4 py-3 font-bold text-blue-700 border border-slate-200">Aspirador portátil</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="bg-white">
+            <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Sucção real</td>
+            <td class="px-4 py-3 text-slate-600 border border-slate-200">Mais forte, dá conta de tapete</td>
+            <td class="px-4 py-3 text-slate-600 border border-slate-200">Mais fraca, ideal para pontual</td>
+          </tr>
+          <tr class="bg-slate-50">
+            <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Autonomia da bateria</td>
+            <td class="px-4 py-3 text-slate-600 border border-slate-200">20 a 45 min (min), 10 a 15 min (turbo)</td>
+            <td class="px-4 py-3 text-slate-600 border border-slate-200">10 a 20 min contínuos</td>
+          </tr>
+          <tr class="bg-white">
+            <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Peso médio</td>
+            <td class="px-4 py-3 text-slate-600 border border-slate-200">1,5 kg a 3 kg</td>
+            <td class="px-4 py-3 text-slate-600 border border-slate-200">0,6 kg a 1,2 kg</td>
+          </tr>
+          <tr class="bg-slate-50">
+            <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Reservatório</td>
+            <td class="px-4 py-3 text-slate-600 border border-slate-200">0,3 a 0,6 litro</td>
+            <td class="px-4 py-3 text-slate-600 border border-slate-200">0,4 a 0,6 litro</td>
+          </tr>
+          <tr class="bg-white">
+            <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Melhor para</td>
+            <td class="px-4 py-3 text-slate-600 border border-slate-200">Piso inteiro, tapete, carpete</td>
+            <td class="px-4 py-3 text-slate-600 border border-slate-200">Sofá, carro, estante, cantos</td>
+          </tr>
+          <tr class="bg-slate-50">
+            <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Onde guardar</td>
+            <td class="px-4 py-3 text-slate-600 border border-slate-200">Suporte de parede ou canto de armário</td>
+            <td class="px-4 py-3 text-slate-600 border border-slate-200">Gaveta ou prateleira pequena</td>
+          </tr>
+          <tr class="bg-white">
+            <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Preço médio</td>
+            <td class="px-4 py-3 text-slate-600 border border-slate-200">R$ 500 a R$ 1.200</td>
+            <td class="px-4 py-3 text-slate-600 border border-slate-200">R$ 180 a R$ 570</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Sucção, autonomia e peso -->
+    <h2 id="sucao-autonomia-peso" class="text-2xl font-black text-slate-900 mt-10 mb-4">Sucção, autonomia e peso: o que pesa mais na escolha</h2>
+
+    <h3 class="text-lg font-bold text-slate-800 mt-6 mb-3">Capacidade de sucção</h3>
+    <p class="text-slate-700 leading-relaxed mb-4">
+      O vertical leva vantagem clara aqui. O motor é maior, o bocal costuma vir com escova motorizada e o fluxo de ar é mais eficiente, o que faz diferença real em tapete, carpete e sujeira mais pesada. O portátil de mão tem motor bem menor, então funciona bem em superfície lisa e sujeira solta, mas perde força rápido em tecido grosso.
+    </p>
+
+    <h3 class="text-lg font-bold text-slate-800 mt-6 mb-3">Autonomia da bateria</h3>
+    <p class="text-slate-700 leading-relaxed mb-4">
+      Aqui a diferença é menor do que parece. Aspiradores verticais anunciam entre 20 e 45 minutos, mas esse tempo cai bastante no modo turbo, geralmente para 10 a 15 minutos. Os portáteis de mão já são pensados para uso curto, então 10 a 20 minutos contínuos costuma ser suficiente para o que eles se propõem a fazer.
+    </p>
+
+    <h3 class="text-lg font-bold text-slate-800 mt-6 mb-3">Peso e ergonomia</h3>
+    <p class="text-slate-700 leading-relaxed mb-4">
+      O portátil ganha disparado em leveza, o que importa se você tem dor no braço ou vai usar por vários minutos seguidos em superfícies verticais, como estofado ou banco de carro. Já o vertical, mesmo mais pesado, costuma ter o peso melhor distribuído por causa do cabo longo, o que reduz o esforço na hora de empurrar pelo chão.
+    </p>
+
+    <!-- Superfícies -->
+    <h2 id="superficies" class="text-2xl font-black text-slate-900 mt-10 mb-4">Qual superfície cada um limpa melhor</h2>
+    <p class="text-slate-700 leading-relaxed mb-4">
+      Em piso liso, como porcelanato ou laminado, os dois tipos dão conta do recado sem grande diferença perceptível no resultado final. A diferença aparece em três situações específicas.
+    </p>
+    <ul class="list-disc list-inside space-y-2 text-slate-700 mb-4 ml-2">
+      <li><strong>Tapete e carpete:</strong> o vertical ganha com folga, principalmente com bocal de escova motorizada</li>
+      <li><strong>Estofado, colchão e banco de carro:</strong> o portátil é mais prático por ser leve e ter bico menor</li>
+      <li><strong>Cantos, frestas e rodapé:</strong> os dois resolvem bem, mas o portátil chega mais fácil em espaços apertados</li>
+    </ul>
+    <p class="text-slate-700 leading-relaxed mb-10">
+      Muita gente resolve isso combinando os dois: o vertical faz a limpeza geral do piso e o portátil entra para os retoques em estofado e carro. Se você já tem um robô aspirador para a manutenção diária e está pensando em complementar com um vertical ou robô mais potente, vale conferir o comparativo com <a href="/robos-aspirador-custo-beneficio" class="text-orange-600 font-semibold hover:underline">os 5 robôs aspiradores com melhor custo-benefício</a>.
+    </p>
+
+    <!-- Guardar -->
+    <h2 id="guardar" class="text-2xl font-black text-slate-900 mt-10 mb-4">Onde guardar em apartamento pequeno</h2>
+    <p class="text-slate-700 leading-relaxed mb-4">
+      Em apartamento com pouco espaço de armário, esse critério pesa mais do que parece na hora da compra. O portátil de mão cabe numa gaveta de cozinha ou numa prateleira de área de serviço sem disputar espaço com mais nada.
+    </p>
+    <p class="text-slate-700 leading-relaxed mb-4">
+      O vertical precisa de um espaço vertical dedicado, seja um suporte de parede, um canto de armário ou atrás de uma porta. A maioria dos modelos já vem com o próprio suporte de carregamento na caixa, então vale medir o espaço disponível antes de comprar, principalmente se o corredor de serviço for estreito.
+    </p>
+
+    <!-- Preço -->
+    <h2 id="preco" class="text-2xl font-black text-slate-900 mt-10 mb-4">Quanto custa cada tipo</h2>
+    <p class="text-slate-700 leading-relaxed mb-4">
+      O portátil de mão é a opção mais barata para começar, com modelos de entrada a partir de R$ 180 e opções intermediárias até R$ 570. O aspirador vertical sem fio costuma ficar entre R$ 500 e R$ 1.200, dependendo da marca, da autonomia e dos acessórios inclusos.
+    </p>
+    <p class="text-slate-700 leading-relaxed mb-4">
+      Vale lembrar que preço de eletroportátil muda com frequência por causa de promoções e datas comerciais, então essas faixas servem como referência da faixa de mercado vigente em agosto de 2026, não como valor fixo.
+    </p>
+    <p class="text-slate-700 leading-relaxed mb-10">
+      Nível de ruído também entra na conta do custo-benefício: aspiradores em geral costumam operar entre 65 dB e 82 dB no modo turbo, bem acima dos 55 dB que a <a href="https://www.invivo.fiocruz.br/saude/poluicao-sonora/" target="_blank" rel="noopener" class="text-orange-600 font-semibold hover:underline">Fiocruz aponta como limite recomendado</a> para exposição prolongada. Isso não impede o uso do dia a dia, mas explica por que alguns modelos incomodam mais que outros em apartamento com paredes finas.
+    </p>
+
+    <!-- Perfil -->
+    <h2 id="perfil" class="text-2xl font-black text-slate-900 mt-10 mb-4">Qual vale mais para o seu perfil de morador</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
+      <div class="bg-white border border-slate-200 rounded-2xl p-5">
+        <p class="font-bold text-slate-900 text-sm mb-2">Apê pequeno, sem pet</p>
+        <p class="text-slate-700 text-sm leading-relaxed">O portátil de mão costuma ser suficiente para manter a casa limpa no dia a dia, especialmente se o piso é liso e não tem tapete grande. Mais barato e mais fácil de guardar.</p>
+      </div>
+      <div class="bg-white border border-slate-200 rounded-2xl p-5">
+        <p class="font-bold text-slate-900 text-sm mb-2">Apê com pet</p>
+        <p class="text-slate-700 text-sm leading-relaxed">O vertical compensa mais aqui, pelo reservatório maior e pela escova motorizada, que dá conta de pelo em sofá e tapete. Um portátil como complemento ajuda no banco do carro e nos cantos.</p>
+      </div>
+      <div class="bg-white border border-slate-200 rounded-2xl p-5">
+        <p class="font-bold text-slate-900 text-sm mb-2">Apê com tapete ou carpete grande</p>
+        <p class="text-slate-700 text-sm leading-relaxed">O vertical é praticamente obrigatório. O portátil de mão não tem sucção suficiente para tirar sujeira encravada em fibra de tapete, principalmente em áreas grandes.</p>
+      </div>
+    </div>
+
+    <p class="text-slate-700 leading-relaxed mb-10">
+      Se depois dessa comparação você concluiu que o vertical é o seu caminho, vale conferir a análise completa do <a href="/electrolux-ergorapido-erg26-review" class="text-orange-600 font-semibold hover:underline">Electrolux Ergorapido ERG26</a>, um dos modelos mais bem avaliados dessa categoria no Brasil, com ficha técnica oficial da <a href="https://loja.electrolux.com.br/eletroportateis/aspirador-de-po/aspirador-de-po-vertical-sem-fio" target="_blank" rel="noopener" class="text-orange-600 font-semibold hover:underline">linha de verticais sem fio da Electrolux</a> disponível para consulta.
+    </p>
+
+    <!-- FAQ -->
+    <h2 id="faq" class="text-2xl font-black text-slate-900 mb-6">Perguntas frequentes sobre aspirador vertical ou portátil sem fio</h2>
+    <div class="space-y-3 mb-10">
+      <details class="border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+          Aspirador portátil sem fio consegue limpar o apartamento inteiro?
+          <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+          Consegue, se o apartamento for pequeno, o piso for liso e não tiver tapete grande. Para casas maiores ou com carpete, o reservatório pequeno e a sucção mais fraca tornam o processo mais demorado e menos eficiente que um vertical.
+        </div>
+      </details>
+      <details class="border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+          Qual dura mais, a bateria do vertical ou do portátil?
+          <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+          O vertical anuncia mais tempo, entre 20 e 45 minutos no modo econômico, mas cai para 10 a 15 minutos no turbo. O portátil já é pensado para uso curto, então os 10 a 20 minutos contínuos costumam bastar para o que ele se propõe a fazer.
+        </div>
+      </details>
+      <details class="border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+          Vale a pena ter os dois em casa?
+          <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+          Para quem tem pet, tapete e carro, faz sentido. O vertical cuida do piso e o portátil resolve estofado, carro e cantos. Se o orçamento for apertado, o critério que mais pesa na escolha de qual comprar primeiro é ter ou não tapete grande em casa.
+        </div>
+      </details>
+      <details class="border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+          Aspirador portátil é bom para pelo de animal?
+          <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+          Funciona bem para retoques pontuais em sofá ou banco de carro, mas não substitui um vertical com escova motorizada quando o pelo está espalhado por tapete ou carpete inteiro.
+        </div>
+      </details>
+      <details class="border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+          Aspirador vertical sem fio é bom para tapete grosso?
+          <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+          Sim, principalmente os modelos com bocal de escova motorizada e modo turbo, feitos para levantar sujeira presa na fibra. Vale só lembrar que a autonomia cai bastante nesse modo, então tapetes grandes exigem recarga com mais frequência.
+        </div>
+      </details>
+      <details class="border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+          Aspirador de pó faz muito barulho?
+          <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+          Costuma sim, principalmente no modo turbo: a maioria opera entre 65 dB e 82 dB, acima do limite de 55 dB que a Fiocruz recomenda para exposição prolongada. Em apartamento com paredes finas, vale considerar isso, sobretudo se for aspirar em horário que incomode vizinhos.
+        </div>
+      </details>
+      <details class="border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+          Vale mais economizar no portátil ou investir no vertical?
+          <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+          Depende do que você já tem em casa. Se o piso é liso e não tem pet nem tapete, o portátil resolve por menos da metade do preço. Se tem tapete grande ou pet, o vertical evita frustração: economizar ali pode significar comprar de novo em pouco tempo.
+        </div>
+      </details>
+    </div>
+    <script type="application/ld+json" set:html={JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Aspirador portátil sem fio consegue limpar o apartamento inteiro?","acceptedAnswer":{"@type":"Answer","text":"Consegue, se o apartamento for pequeno, o piso for liso e não tiver tapete grande. Para casas maiores ou com carpete, o reservatório pequeno e a sucção mais fraca tornam o processo mais demorado e menos eficiente que um vertical."}},{"@type":"Question","name":"Qual dura mais, a bateria do vertical ou do portátil?","acceptedAnswer":{"@type":"Answer","text":"O vertical anuncia mais tempo, entre 20 e 45 minutos no modo econômico, mas cai para 10 a 15 minutos no turbo. O portátil já é pensado para uso curto, então os 10 a 20 minutos contínuos costumam bastar."}},{"@type":"Question","name":"Vale a pena ter os dois em casa?","acceptedAnswer":{"@type":"Answer","text":"Para quem tem pet, tapete e carro, faz sentido. O vertical cuida do piso e o portátil resolve estofado, carro e cantos."}},{"@type":"Question","name":"Aspirador portátil é bom para pelo de animal?","acceptedAnswer":{"@type":"Answer","text":"Funciona bem para retoques pontuais em sofá ou banco de carro, mas não substitui um vertical com escova motorizada quando o pelo está espalhado por tapete ou carpete inteiro."}},{"@type":"Question","name":"Aspirador vertical sem fio é bom para tapete grosso?","acceptedAnswer":{"@type":"Answer","text":"Sim, principalmente os modelos com bocal de escova motorizada e modo turbo. Vale lembrar que a autonomia cai bastante nesse modo, então tapetes grandes exigem recarga com mais frequência."}},{"@type":"Question","name":"Aspirador de pó faz muito barulho?","acceptedAnswer":{"@type":"Answer","text":"Costuma sim, principalmente no modo turbo: a maioria opera entre 65 dB e 82 dB, acima do limite de 55 dB recomendado pela Fiocruz para exposição prolongada."}},{"@type":"Question","name":"Vale mais economizar no portátil ou investir no vertical?","acceptedAnswer":{"@type":"Answer","text":"Depende do que você já tem em casa. Se o piso é liso e não tem pet nem tapete, o portátil resolve por menos da metade do preço. Se tem tapete grande ou pet, o vertical evita frustração."}}]})} />
+
+    <h2 class="text-xl font-black text-slate-900 mb-3">Qual comprar primeiro: vertical ou portátil?</h2>
+    <p class="text-slate-700 leading-relaxed mb-3">
+      Se você só pode comprar um agora, olhe para o piso da sua casa antes do preço. Tapete grande ou pet em casa pedem vertical. Apartamento pequeno, piso liso e sem bicho pedem portátil, que já resolve o dia a dia por um preço bem menor.
+    </p>
+    <p class="text-slate-700 leading-relaxed mb-10">
+      Com o tempo, muita gente acaba tendo os dois, porque eles não competem entre si, eles se complementam. Um cuida do piso, o outro cuida do resto.
+    </p>
+
+    <!-- Leia também -->
+    <p style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#c2410c;margin:24px 0 12px;">Leia também:</p>
+    <div style="display:flex;flex-direction:column;gap:12px;">
+      <a href="/como-escolher-aspirador-de-po" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+        <div style="width:200px;flex-shrink:0;">
+          <img src="/images/aspirador-guia/capa-como-escolher-aspirador-de-po.webp" alt="Como escolher aspirador de pó" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+        </div>
+        <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+          <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+          <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Como Escolher Aspirador de Pó: Com Fio, Sem Fio, Vertical ou Robô?</span>
+        </div>
+      </a>
+      <a href="/melhores-aspiradores-po-2026" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+        <div style="width:200px;flex-shrink:0;">
+          <img src="/images/aspiradores/capa-aspiradores.webp" alt="Os 7 Melhores Aspiradores de Pó 2026" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+        </div>
+        <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+          <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+          <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Os 7 Melhores Aspiradores de Pó 2026: Com Fio, Sem Fio e Robôs</span>
+        </div>
+      </a>
+      <a href="/robos-aspirador-custo-beneficio" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+        <div style="width:200px;flex-shrink:0;">
+          <img src="/images/robos/capa-robos.webp" alt="Robôs aspiradores custo-benefício" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+        </div>
+        <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+          <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+          <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Robôs Aspiradores: Os 5 Melhores Custo-Benefício</span>
+        </div>
+      </a>
+      <a href="/electrolux-ergorapido-erg26-review" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+        <div style="width:200px;flex-shrink:0;">
+          <img src="/images/electrolux-erg26/capa-electrolux-erg26.webp" alt="Electrolux Ergorapido ERG26 review" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+        </div>
+        <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+          <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+          <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Electrolux Ergorapido ERG26: Vale a Pena? Review Completo</span>
+        </div>
+      </a>
+    </div>
+
+  </div>
+)}
 
     {isMelhoresMicroondas && (
       <div>

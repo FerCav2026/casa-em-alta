@@ -403,6 +403,16 @@ export const posts: Post[] = [
     categoria: 'guias-de-compra',
     categoriaLabel: 'Guia de Compra',
     categoriaColor: 'bg-purple-100 text-purple-700',
+  },
+  {
+    slug: 'aspirador-vertical-ou-portatil-apartamento',
+    titulo: 'Aspirador Vertical ou Portátil Sem Fio para Apartamento',
+    resumo: 'Sucção, autonomia, peso, preço e onde guardar: comparamos os dois tipos para você escolher o certo para o seu apê.',
+    tempo: '8 min de leitura',
+    imagem: '/images/aspirador-vertical-portatil/capa-aspirador-vertical-portatil.webp',
+    categoria: 'comparativos',
+    categoriaLabel: 'Comparativo',
+    categoriaColor: 'bg-blue-100 text-blue-700',
   }
 ];
 
