@@ -265,6 +265,13 @@ const posts: Record<string, { titulo: string; descricao: string; categoria: stri
     dataCriacao: '2026-08-10',
     dataModificacao: '2026-08-10',
   },
+  'xiaomi-s40-ou-h40-robo-aspirador': {
+    titulo: 'Xiaomi S40 ou H40: Qual Robô Aspirador Vale Mais a Pena?',
+    descricao: 'Comparamos o robô aspirador Xiaomi S40 e o H40 com base de autolimpeza: sucção, autonomia, preço vigente em agosto de 2026 e 3 meses de uso real do S40 para te ajudar a decidir.',
+    categoria: 'Comparativo',
+    dataCriacao: '2026-08-10',
+    dataModificacao: '2026-08-10',
+  },
 };
 
 export function getStaticPaths() {
@@ -304,6 +311,7 @@ export function getStaticPaths() {
     'electrolux-ergorapido-erg26-review': {},
     'como-escolher-aspirador-de-po': {},
     'aspirador-vertical-ou-portatil-apartamento': {},
+    'xiaomi-s40-ou-h40-robo-aspirador': {},
   }).map((slug) => ({ params: { slug } }));
 }
 
@@ -371,6 +379,7 @@ const isRoboAspiradorShopee = slug === 'robo-aspirador-barato-shopee';
 const isElectroluxERG26 = slug === 'electrolux-ergorapido-erg26-review';
 const isComoEscolherAspirador = slug === 'como-escolher-aspirador-de-po';
 const isAspiradorVerticalOuPortatil = slug === 'aspirador-vertical-ou-portatil-apartamento';
+const isXiaomiS40H40 = slug === 'xiaomi-s40-ou-h40-robo-aspirador';
 
 const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isAirfryer ? '/images/airfryer/capa-airfryer.webp'
@@ -407,6 +416,7 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isElectroluxERG26 ? '/images/electrolux-erg26/capa-electrolux-erg26.webp'
   : isComoEscolherAspirador ? '/images/aspirador-guia/capa-como-escolher-aspirador-de-po.webp'
   : isAspiradorVerticalOuPortatil ? '/images/aspirador-vertical-portatil/capa-aspirador-vertical-portatil.webp'
+  : isXiaomiS40H40 ? '/images/xiaomi-s40-h40/capa-xiaomi-s40-h40.webp'
   : undefined;
 ---
 
@@ -2516,6 +2526,14 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
             </div>
             <div style="padding:20px 22px;display:flex;align-items:center;">
               <p style="margin:0;font-size:15px;font-weight:500;line-height:1.5;color:#1a1a1a;">Robô Aspirador Barato da Shopee Funciona Mesmo?</p>
+            </div>
+          </a>
+          <a href="/xiaomi-s40-ou-h40-robo-aspirador" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;margin-top:12px;">
+            <div style="width:200px;min-width:200px;overflow:hidden;">
+              <img src="/images/xiaomi-s40-h40/capa-xiaomi-s40-h40.webp" alt="Xiaomi S40 ou H40: qual robô aspirador vale mais a pena" style="width:100%;height:100%;object-fit:cover;display:block;" />
+            </div>
+            <div style="padding:20px 22px;display:flex;align-items:center;">
+              <p style="margin:0;font-size:15px;font-weight:500;line-height:1.5;color:#1a1a1a;">Xiaomi S40 ou H40: Qual Robô Aspirador Vale Mais a Pena?</p>
             </div>
           </a>
         </div>
@@ -11556,6 +11574,15 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
               <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Aspirador Vertical ou Portátil Sem Fio: Qual Vale Mais para Apartamento?</span>
             </div>
           </a>
+          <a href="/xiaomi-s40-ou-h40-robo-aspirador" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;flex-shrink:0;">
+              <img src="/images/xiaomi-s40-h40/capa-xiaomi-s40-h40.webp" alt="Xiaomi S40 ou H40: qual robô aspirador vale mais a pena" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Xiaomi S40 ou H40: Qual Robô Aspirador Vale Mais a Pena?</span>
+            </div>
+          </a>
         </div>
 
       </div>
@@ -15471,6 +15498,15 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
         <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Robôs Aspiradores: Os 5 Melhores Custo-Benefício</span>
       </div>
     </a>
+    <a href="/xiaomi-s40-ou-h40-robo-aspirador" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;margin-top:16px;">
+      <div style="width:200px;flex-shrink:0;">
+        <img src="/images/xiaomi-s40-h40/capa-xiaomi-s40-h40.webp" alt="Xiaomi S40 ou H40: qual robô aspirador vale mais a pena" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+      </div>
+      <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+        <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+        <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Xiaomi S40 ou H40: Qual Robô Aspirador Vale Mais a Pena?</span>
+      </div>
+    </a>
 
     <p class="text-xs text-slate-500 italic mt-6 border-t border-slate-100 pt-4">
       Este review foi feito por curadoria de avaliações reais de compradores da Shopee, não por teste direto do produto pela autora.
@@ -15738,6 +15774,393 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
     <p class="text-xs text-slate-500 italic mt-6 border-t border-slate-100 pt-4">
       Este review foi feito por curadoria da ficha técnica oficial e de avaliações reais de compradores, não por teste direto do produto pela autora.
     </p>
+  </div>
+)}
+
+{isXiaomiS40H40 && (
+  <div>
+
+    <!-- Capa do artigo -->
+    <div class="rounded-2xl overflow-hidden mb-8 shadow-md">
+      <img
+        src="/images/xiaomi-s40-h40/capa-xiaomi-s40-h40.webp"
+        alt="Robô aspirador Xiaomi S40 ao lado do H40 com base de autolimpeza"
+        class="w-full h-auto object-cover"
+        loading="eager"
+      />
+    </div>
+
+    <!-- Introdução -->
+    <p class="text-slate-700 leading-relaxed mb-4">
+      Comprei um robô aspirador Xiaomi em abril de 2026, o modelo S40, e uso ele praticamente todo dia desde então. Quando fui escrever esse comparativo, a primeira pergunta que apareceu foi bem prática: será que valia a pena ter esperado um pouco mais e pago quase o dobro no H40, que tem aquela base que se limpa sozinha?
+    </p>
+    <p class="text-slate-700 leading-relaxed mb-4">
+      É essa dúvida que eu respondo aqui. Não é um ranking com nota final, é uma comparação direta entre os dois modelos: o que cada um entrega de verdade e onde a diferença de preço faz sentido. A parte do S40 eu falo por experiência própria, com três meses de uso dentro de casa. Já o H40 eu não testei pessoalmente: fui atrás da ficha técnica oficial e das avaliações de quem já comprou para trazer uma visão honesta mesmo sem ter usado o produto.
+    </p>
+
+    <!-- TL;DR -->
+    <div class="bg-orange-50 border border-orange-200 rounded-2xl px-5 py-4 mb-6">
+      <p class="font-bold text-slate-800 mb-1">Em resumo:</p>
+      <p class="text-slate-700 text-sm leading-relaxed">O Xiaomi S40 (R$ 1.247,00) já resolve bem o dia a dia de um apartamento: aspira, passa pano e mapeia por laser, mas o pó e a água precisam ser esvaziados manualmente. O H40 (R$ 2.045,00) soma a base de autolimpeza, que esvazia o pó e lava o pano sozinha, só que custa bem mais caro. Para rotina de limpar com frequência, o S40 já basta. Para quem quer esquecer da manutenção por meses, o H40 compensa a diferença.</p>
+    </div>
+
+    <!-- Índice -->
+    <nav class="border border-slate-200 rounded-2xl p-6 mb-10 bg-white">
+      <p class="font-bold text-slate-800 mb-3">Neste artigo:</p>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#comparativo" class="text-orange-500 hover:text-orange-600 font-medium">Xiaomi S40 x H40: comparação lado a lado</a></li>
+        <li><a href="#s40" class="text-orange-500 hover:text-orange-600 font-medium">Xiaomi S40: o que aprendi usando há 3 meses</a></li>
+        <li><a href="#h40" class="text-orange-500 hover:text-orange-600 font-medium">Xiaomi H40: vale pagar pela base de autolimpeza?</a></li>
+        <li><a href="#para-quem-vale" class="text-orange-500 hover:text-orange-600 font-medium">Qual vale mais para o seu apartamento</a></li>
+        <li><a href="#faq" class="text-orange-500 hover:text-orange-600 font-medium">Perguntas frequentes</a></li>
+      </ul>
+    </nav>
+
+    <p class="text-slate-700 leading-relaxed mb-10">
+      Se você ainda está decidindo entre os tipos de aspirador antes de focar num modelo específico, vale ler primeiro o nosso guia <a href="/como-escolher-aspirador-de-po" class="text-orange-600 font-semibold hover:underline">Como Escolher Aspirador de Pó</a>, que explica os critérios técnicos com mais profundidade.
+    </p>
+
+    <!-- Tabela comparativa -->
+    <h2 id="comparativo" class="text-2xl font-black text-slate-900 mt-10 mb-4">Xiaomi S40 x H40: comparação lado a lado</h2>
+    <p class="text-slate-700 leading-relaxed mb-5">
+      Os dois robôs compartilham a mesma base tecnológica: mesma sucção máxima, mesma bateria, mesma navegação a laser. A diferença que realmente separa um do outro está na base de carregamento. Veja lado a lado.
+    </p>
+    <div class="overflow-x-auto mb-10">
+      <table class="w-full text-sm border-collapse">
+        <thead>
+          <tr class="bg-slate-100">
+            <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Critério</th>
+            <th class="text-left px-4 py-3 font-bold text-orange-600 border border-slate-200">Xiaomi S40</th>
+            <th class="text-left px-4 py-3 font-bold text-blue-700 border border-slate-200">Xiaomi H40</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="bg-white">
+            <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Preço (ago/2026)</td>
+            <td class="px-4 py-3 text-slate-600 border border-slate-200">R$ 1.247,00</td>
+            <td class="px-4 py-3 text-slate-600 border border-slate-200">R$ 2.045,00</td>
+          </tr>
+          <tr class="bg-slate-50">
+            <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Nota de compradores</td>
+            <td class="px-4 py-3 text-slate-600 border border-slate-200">4,7 de 5 (421 avaliações)</td>
+            <td class="px-4 py-3 text-slate-600 border border-slate-200">4,3 de 5 (374 avaliações)</td>
+          </tr>
+          <tr class="bg-white">
+            <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Sucção máxima</td>
+            <td class="px-4 py-3 text-slate-600 border border-slate-200">10.000 Pa (modo turbo)</td>
+            <td class="px-4 py-3 text-slate-600 border border-slate-200">10.000 Pa (modo turbo)</td>
+          </tr>
+          <tr class="bg-slate-50">
+            <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Modos de potência</td>
+            <td class="px-4 py-3 text-slate-600 border border-slate-200">4 (silencioso, padrão, forte, turbo)</td>
+            <td class="px-4 py-3 text-slate-600 border border-slate-200">4 (silencioso, padrão, forte, turbo)</td>
+          </tr>
+          <tr class="bg-white">
+            <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Bateria</td>
+            <td class="px-4 py-3 text-slate-600 border border-slate-200">5.200 mAh, até 180 min</td>
+            <td class="px-4 py-3 text-slate-600 border border-slate-200">5.200 mAh, até 180 min</td>
+          </tr>
+          <tr class="bg-slate-50">
+            <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Reservatório de água (robô)</td>
+            <td class="px-4 py-3 text-slate-600 border border-slate-200">270 ml</td>
+            <td class="px-4 py-3 text-slate-600 border border-slate-200">210 ml</td>
+          </tr>
+          <tr class="bg-white">
+            <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Reservatório de pó</td>
+            <td class="px-4 py-3 text-slate-600 border border-slate-200">520 ml, esvazia manual</td>
+            <td class="px-4 py-3 text-slate-600 border border-slate-200">Base esvazia sozinha, saco de 4L</td>
+          </tr>
+          <tr class="bg-slate-50">
+            <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Base de autolimpeza</td>
+            <td class="px-4 py-3 text-slate-600 border border-slate-200">Não tem</td>
+            <td class="px-4 py-3 text-slate-600 border border-slate-200">Esvazia pó e lava o pano sozinha</td>
+          </tr>
+          <tr class="bg-white">
+            <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Passa pano</td>
+            <td class="px-4 py-3 text-slate-600 border border-slate-200">Sim, 3 modos ajustáveis</td>
+            <td class="px-4 py-3 text-slate-600 border border-slate-200">Sim, com lavagem automática</td>
+          </tr>
+          <tr class="bg-slate-50">
+            <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Navegação</td>
+            <td class="px-4 py-3 text-slate-600 border border-slate-200">Laser LiDAR 360°</td>
+            <td class="px-4 py-3 text-slate-600 border border-slate-200">Laser LiDAR 360°</td>
+          </tr>
+          <tr class="bg-white">
+            <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Anti-emaranhamento de pelo</td>
+            <td class="px-4 py-3 text-slate-600 border border-slate-200">Sim</td>
+            <td class="px-4 py-3 text-slate-600 border border-slate-200">Sim</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Xiaomi S40 -->
+    <h2 id="s40" class="text-2xl font-black text-slate-900 mt-10 mb-4">Xiaomi S40: o que aprendi usando há 3 meses</h2>
+    <p class="text-slate-700 leading-relaxed mb-4">
+      Comprei o Xiaomi Robot Vacuum S40 em 13 de abril de 2026, direto na Amazon. São três meses de uso praticamente todo dia, e ele segura bem a rotina de manter o apartamento limpo sem eu precisar pegar a vassoura toda hora.
+    </p>
+    <p class="text-slate-700 leading-relaxed mb-4">
+      O que mais gosto é que ele não é só aspirador. O passa pano funciona de verdade, com três níveis de umidade para ajustar dependendo do piso, e isso resolveu um problema que eu tinha antes: precisava aspirar e depois passar pano na mão, agora ele faz as duas coisas na mesma passada.
+    </p>
+    <p class="text-slate-700 leading-relaxed mb-4">
+      A navegação por laser mapeia o apartamento certinho, sem ficar batendo em móvel ou repetindo o mesmo canto três vezes. A bateria aguenta o apartamento inteiro numa carga só, mesmo no modo mais forte, nos dias em que a sujeira está pior.
+    </p>
+    <p class="text-slate-700 leading-relaxed mb-6">
+      Onde ele exige atenção é na manutenção manual: o reservatório de pó de 520 ml e o de água de 270 ml precisam ser esvaziados e enchidos por mim depois de cada ciclo. Não é um trabalho grande, uns dois minutos, mas é exatamente ali que mora a diferença para o H40.
+    </p>
+
+    <!-- Card produto S40 -->
+    <div class="border border-slate-200 rounded-2xl overflow-hidden mb-10 shadow-sm">
+      <div class="bg-orange-500 px-6 py-4">
+        <p class="text-white font-black text-xl">Xiaomi Robot Vacuum S40 (XM878BRA)</p>
+        <p class="text-orange-100 text-sm mt-1">O modelo que eu uso: aspira, passa pano e mapeia por laser</p>
+      </div>
+      <div class="p-6">
+        <div class="flex flex-col md:flex-row gap-6 mb-6">
+          <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 min-h-32">
+            <img src="/images/xiaomi-s40-h40/xiaomi-s40.webp" alt="Xiaomi Robot Vacuum S40 branco, robô aspirador Xiaomi" class="max-h-36 object-contain" width="220" height="157" loading="lazy" />
+          </div>
+          <div class="flex-1">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="text-2xl font-black text-slate-900">R$ 1.247,00</span>
+              <span class="text-sm text-slate-400 line-through">R$ 1.329,99</span>
+              <span class="bg-green-100 text-green-700 text-xs font-bold px-2 py-1 rounded-full">-6%</span>
+            </div>
+            <p class="text-slate-700 text-sm leading-relaxed mb-2">
+              Nota <strong>4,7 de 5</strong>, com 421 avaliações (86% deram 5 estrelas). Mais de 900 compras no mês passado na Amazon.
+            </p>
+            <p class="text-slate-500 text-xs">Preço vigente em agosto de 2026, sujeito a mudança.</p>
+          </div>
+        </div>
+        <h3 class="font-bold text-slate-800 mb-3">Ficha técnica</h3>
+        <div class="grid grid-cols-2 gap-3 mb-5 text-xs">
+          <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Sucção máxima</p><p class="font-bold text-slate-800">10.000 Pa</p></div>
+          <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Bateria</p><p class="font-bold text-slate-800">5.200 mAh / 180 min</p></div>
+          <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Reservatório de pó</p><p class="font-bold text-slate-800">520 ml</p></div>
+          <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Reservatório de água</p><p class="font-bold text-slate-800">270 ml</p></div>
+          <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Navegação</p><p class="font-bold text-slate-800">LiDAR 360°</p></div>
+          <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Compatibilidade</p><p class="font-bold text-slate-800">Alexa e Google Assistente</p></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6 text-sm">
+          <div>
+            <p class="font-semibold text-slate-800 mb-2">Pontos fortes</p>
+            <ul class="space-y-1 text-slate-600">
+              <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Passa pano de verdade, com 3 modos de umidade</li>
+              <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Mapeamento a laser preciso, sem repetir área</li>
+              <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Preço bem mais acessível que o H40</li>
+              <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Nota alta com 421 avaliações reais</li>
+            </ul>
+          </div>
+          <div>
+            <p class="font-semibold text-slate-800 mb-2">Pontos de atenção</p>
+            <ul class="space-y-1 text-slate-600">
+              <li class="flex items-start gap-2"><span class="text-slate-400 font-bold mt-0.5">-</span> Pó e água precisam ser esvaziados manualmente</li>
+              <li class="flex items-start gap-2"><span class="text-slate-400 font-bold mt-0.5">-</span> Sem base que lava o pano sozinha</li>
+            </ul>
+          </div>
+        </div>
+        <a href="https://link.amazon/B0ehuQ8Qu" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl transition-colors">Ver preço na Amazon</a>
+      </div>
+    </div>
+
+    <!-- Xiaomi H40 -->
+    <h2 id="h40" class="text-2xl font-black text-slate-900 mt-10 mb-4">Xiaomi H40: vale pagar pela base de autolimpeza?</h2>
+    <p class="text-slate-700 leading-relaxed mb-4">
+      Aqui eu preciso ser transparente: não testei o H40 pessoalmente. O que trago nessa parte vem da ficha técnica oficial da Xiaomi e das avaliações reais de quem já comprou, então é uma curadoria bem apurada, não um relato de uso no dia a dia.
+    </p>
+    <p class="text-slate-700 leading-relaxed mb-4">
+      A diferença central entre os dois modelos está na base. Enquanto o S40 exige que você esvazie o pó e lave o pano, o H40 tem uma base 2 em 1 que faz isso sozinha: o pó vai para um saco de 4 litros que dura até 3 meses sem precisar trocar, e o pano da mopagem é lavado automaticamente depois de cada passada.
+    </p>
+    <p class="text-slate-700 leading-relaxed mb-4">
+      O resto da ficha técnica é bem parecido com o S40: mesma sucção máxima de 10.000 Pa, os mesmos 4 modos de potência, bateria de 5.200 mAh com até 180 minutos de autonomia e navegação a laser 360°. A diferença de preço está quase toda concentrada na base.
+    </p>
+    <p class="text-slate-700 leading-relaxed mb-4">
+      A nota de compradores reais fica em 4,3 de 5, com 374 avaliações. É uma nota boa, mas um pouco abaixo da do S40, algo que costuma acontecer com produtos mais caros e mais complexos: mais peças, mais chance de alguém ter um problema pontual.
+    </p>
+    <div class="bg-blue-50 border border-blue-200 rounded-xl p-5 mb-6">
+      <p class="text-blue-800 font-bold text-sm mb-1">Atenção antes de comprar</p>
+      <p class="text-slate-700 text-sm leading-relaxed">O link disponível aqui é da versão 127V, comum na região de São Paulo. Se você mora em cidade com rede 220V, confira a voltagem certa para a sua região antes de fechar a compra.</p>
+    </div>
+
+    <!-- Card produto H40 -->
+    <div class="border border-slate-200 rounded-2xl overflow-hidden mb-10 shadow-sm">
+      <div class="bg-slate-800 px-6 py-4">
+        <p class="text-white font-black text-xl">Xiaomi Robot Vacuum H40 com base de autolimpeza</p>
+        <p class="text-slate-300 text-sm mt-1">Versão 127V, base esvazia o pó e lava o pano sozinha</p>
+      </div>
+      <div class="p-6">
+        <div class="flex flex-col md:flex-row gap-6 mb-6">
+          <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 min-h-32">
+            <img src="/images/xiaomi-s40-h40/xiaomi-h40.webp" alt="Xiaomi Robot Vacuum H40 com base de autolimpeza, robô aspirador Xiaomi" class="max-h-36 object-contain" width="180" height="176" loading="lazy" />
+          </div>
+          <div class="flex-1">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="text-2xl font-black text-slate-900">R$ 2.045,00</span>
+              <span class="text-sm text-slate-400 line-through">R$ 3.799,99</span>
+              <span class="bg-green-100 text-green-700 text-xs font-bold px-2 py-1 rounded-full">-46%</span>
+            </div>
+            <p class="text-slate-700 text-sm leading-relaxed mb-2">
+              Nota <strong>4,3 de 5</strong>, com 374 avaliações na Amazon.
+            </p>
+            <p class="text-slate-500 text-xs">Preço vigente em agosto de 2026, sujeito a mudança.</p>
+          </div>
+        </div>
+        <h3 class="font-bold text-slate-800 mb-3">Ficha técnica</h3>
+        <div class="grid grid-cols-2 gap-3 mb-5 text-xs">
+          <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Sucção máxima</p><p class="font-bold text-slate-800">10.000 Pa</p></div>
+          <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Bateria</p><p class="font-bold text-slate-800">5.200 mAh / 180 min</p></div>
+          <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Base de autolimpeza</p><p class="font-bold text-slate-800">Saco de 4L, até 3 meses</p></div>
+          <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Reservatório de água</p><p class="font-bold text-slate-800">210 ml</p></div>
+          <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Navegação</p><p class="font-bold text-slate-800">LiDAR 360°</p></div>
+          <div class="bg-slate-50 rounded-xl p-3"><p class="text-slate-500 mb-1">Voltagem do link</p><p class="font-bold text-slate-800">127V</p></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6 text-sm">
+          <div>
+            <p class="font-semibold text-slate-800 mb-2">Pontos fortes</p>
+            <ul class="space-y-1 text-slate-600">
+              <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Base esvazia o pó sozinha por até 3 meses</li>
+              <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Lava o pano da mopagem automaticamente</li>
+              <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Mesma sucção e autonomia do S40</li>
+            </ul>
+          </div>
+          <div>
+            <p class="font-semibold text-slate-800 mb-2">Pontos de atenção</p>
+            <ul class="space-y-1 text-slate-600">
+              <li class="flex items-start gap-2"><span class="text-slate-400 font-bold mt-0.5">-</span> Quase o dobro do preço do S40</li>
+              <li class="flex items-start gap-2"><span class="text-slate-400 font-bold mt-0.5">-</span> Conferir voltagem da sua região antes de comprar</li>
+            </ul>
+          </div>
+        </div>
+        <a href="https://link.amazon/B0dTtmopE" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl transition-colors">Ver preço na Amazon</a>
+      </div>
+    </div>
+
+    <p class="text-slate-700 leading-relaxed mb-10">
+      As fichas técnicas completas dos dois modelos estão disponíveis nas páginas oficiais da Xiaomi Brasil, para quem quiser conferir direto na fonte: <a href="https://www.mi.com/br/product/xiaomi-robot-vacuum-s40/" target="_blank" rel="noopener" class="text-orange-600 font-semibold hover:underline">especificações do S40</a> e <a href="https://www.mi.com/br/product/xiaomi-robot-vacuum-h40/" target="_blank" rel="noopener" class="text-orange-600 font-semibold hover:underline">especificações do H40</a>.
+    </p>
+
+    <!-- Para quem vale -->
+    <h2 id="para-quem-vale" class="text-2xl font-black text-slate-900 mt-10 mb-4">Qual vale mais para o seu apartamento</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
+      <div class="bg-white border border-slate-200 rounded-2xl p-5">
+        <p class="font-bold text-slate-900 text-sm mb-2">Apê pequeno, rotina de limpar direto</p>
+        <p class="text-slate-700 text-sm leading-relaxed">Se você não se importa de esvaziar o robô a cada ciclo, o S40 já resolve. É o que eu uso, funciona bem no dia a dia e custa quase R$ 800 a menos.</p>
+      </div>
+      <div class="bg-white border border-slate-200 rounded-2xl p-5">
+        <p class="font-bold text-slate-900 text-sm mb-2">Quer esquecer da manutenção por meses</p>
+        <p class="text-slate-700 text-sm leading-relaxed">Se o que te incomoda é ter que lembrar de esvaziar e lavar o pano toda hora, o H40 compensa a diferença. A base assume esse trabalho sozinha por até 3 meses.</p>
+      </div>
+      <div class="bg-white border border-slate-200 rounded-2xl p-5">
+        <p class="font-bold text-slate-900 text-sm mb-2">Casa que suja rápido, com pet ou família grande</p>
+        <p class="text-slate-700 text-sm leading-relaxed">Quando a sujeira se acumula todo dia, esvaziar o reservatório do S40 com frequência cansa. Aí a base do H40 evita esse trabalho extra.</p>
+      </div>
+    </div>
+
+    <p class="text-slate-700 leading-relaxed mb-10">
+      Se depois dessa comparação você quer ver outras opções de robô aspirador antes de decidir, vale conferir o nosso comparativo com <a href="/robos-aspirador-custo-beneficio" class="text-orange-600 font-semibold hover:underline">os 5 robôs aspiradores com melhor custo-benefício</a>, que reúne modelos de faixas de preço diferentes lado a lado.
+    </p>
+
+    <!-- FAQ -->
+    <h2 id="faq" class="text-2xl font-black text-slate-900 mb-6">Perguntas frequentes sobre o robô aspirador Xiaomi S40 e H40</h2>
+    <div class="space-y-3 mb-10">
+      <details class="border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+          O robô aspirador Xiaomi S40 passa pano de verdade ou só aspira?
+          <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+          Passa pano de verdade. Tem reservatório de água de 270 ml e 3 modos de umidade ajustáveis. Uso o meu assim há 3 meses e ele aspira e passa pano na mesma passada, sem eu precisar programar separado.
+        </div>
+      </details>
+      <details class="border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+          Vale a pena pagar quase o dobro pela base de autolimpeza do H40?
+          <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+          Depende do que incomoda mais: o preço ou a manutenção. Se esvaziar o pó e lavar o pano toda semana não é um problema para você, o S40 entrega praticamente a mesma limpeza por bem menos. Se o objetivo é esquecer da manutenção por meses, a base do H40 justifica o valor extra.
+        </div>
+      </details>
+      <details class="border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+          O Xiaomi H40 funciona em qualquer voltagem?
+          <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+          Não. O link indicado aqui é da versão 127V, comum na região de São Paulo. Antes de comprar, confira se a sua cidade usa 127V ou 220V para não levar o modelo errado para casa.
+        </div>
+      </details>
+      <details class="border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+          Qual dos dois tem mais autonomia de bateria?
+          <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+          Nenhum dos dois ganha aqui: ambos usam a mesma bateria de 5.200 mAh, com até 180 minutos de autonomia contínua. A diferença entre os modelos está na base, não na bateria.
+        </div>
+      </details>
+      <details class="border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+          Dá para comprar o S40 e depois complementar com uma base de autolimpeza separada?
+          <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+          Pelo que a Xiaomi informa oficialmente, não. A base de autolimpeza vem integrada e vendida junto do H40 como conjunto. Se a manutenção automática é decisiva para você, o caminho é comprar o H40 direto em vez de tentar complementar o S40 depois.
+        </div>
+      </details>
+    </div>
+    <script type="application/ld+json" set:html={JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"O robô aspirador Xiaomi S40 passa pano de verdade ou só aspira?","acceptedAnswer":{"@type":"Answer","text":"Passa pano de verdade. Tem reservatório de água de 270 ml e 3 modos de umidade ajustáveis. Aspira e passa pano na mesma passada, sem precisar programar separado."}},{"@type":"Question","name":"Vale a pena pagar quase o dobro pela base de autolimpeza do H40?","acceptedAnswer":{"@type":"Answer","text":"Depende do que incomoda mais: o preço ou a manutenção. Se esvaziar o pó e lavar o pano toda semana não é um problema, o S40 entrega praticamente a mesma limpeza por bem menos. Se o objetivo é esquecer da manutenção por meses, a base do H40 justifica o valor extra."}},{"@type":"Question","name":"O Xiaomi H40 funciona em qualquer voltagem?","acceptedAnswer":{"@type":"Answer","text":"Não. A versão mais comum vendida é 127V. Antes de comprar, confira se a sua cidade usa 127V ou 220V para não levar o modelo errado."}},{"@type":"Question","name":"Qual dos dois tem mais autonomia de bateria?","acceptedAnswer":{"@type":"Answer","text":"Nenhum dos dois ganha aqui: ambos usam a mesma bateria de 5.200 mAh, com até 180 minutos de autonomia contínua. A diferença está na base, não na bateria."}},{"@type":"Question","name":"Dá para comprar o S40 e depois complementar com uma base de autolimpeza separada?","acceptedAnswer":{"@type":"Answer","text":"Pelo que a Xiaomi informa oficialmente, não. A base de autolimpeza vem integrada e vendida junto do H40 como conjunto."}}]})} />
+
+    <h2 class="text-xl font-black text-slate-900 mb-3">Qual comprar: S40 ou H40?</h2>
+    <p class="text-slate-700 leading-relaxed mb-3">
+      Depois de três meses usando o S40 e de estudar a fundo a ficha técnica do H40, minha conclusão é simples: os dois limpam bem, a diferença está inteira na base. Se você topa esvaziar o pó e o pano de vez em quando, o S40 entrega praticamente a mesma experiência por um preço bem mais em conta.
+    </p>
+    <p class="text-slate-700 leading-relaxed mb-10">
+      Agora, se o que você mais quer é não pensar em manutenção por meses, o H40 vale o valor extra. É pagar para não precisar lembrar.
+    </p>
+
+    <!-- Leia também -->
+    <p style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#c2410c;margin:24px 0 12px;">Leia também:</p>
+    <div style="display:flex;flex-direction:column;gap:12px;">
+      <a href="/como-escolher-aspirador-de-po" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+        <div style="width:200px;flex-shrink:0;">
+          <img src="/images/aspirador-guia/capa-como-escolher-aspirador-de-po.webp" alt="Como escolher aspirador de pó" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+        </div>
+        <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+          <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+          <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Como Escolher Aspirador de Pó: Com Fio, Sem Fio, Vertical ou Robô?</span>
+        </div>
+      </a>
+      <a href="/melhores-aspiradores-po-2026" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+        <div style="width:200px;flex-shrink:0;">
+          <img src="/images/aspiradores/capa-aspiradores.webp" alt="Os 7 Melhores Aspiradores de Pó 2026" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+        </div>
+        <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+          <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+          <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Os 7 Melhores Aspiradores de Pó 2026: Com Fio, Sem Fio e Robôs</span>
+        </div>
+      </a>
+      <a href="/robos-aspirador-custo-beneficio" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+        <div style="width:200px;flex-shrink:0;">
+          <img src="/images/robos/capa-robos.webp" alt="Robôs aspiradores custo-benefício" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+        </div>
+        <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+          <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+          <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Robôs Aspiradores: Os 5 Melhores Custo-Benefício</span>
+        </div>
+      </a>
+      <a href="/robo-aspirador-barato-shopee" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+        <div style="width:200px;flex-shrink:0;">
+          <img src="/images/robo-aspirador-shopee/capa-robo-aspirador-shopee.webp" alt="Robô aspirador barato da Shopee" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+        </div>
+        <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+          <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+          <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Robô Aspirador Barato da Shopee Funciona Mesmo?</span>
+        </div>
+      </a>
+    </div>
+
   </div>
 )}
 

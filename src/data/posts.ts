@@ -413,6 +413,16 @@ export const posts: Post[] = [
     categoria: 'comparativos',
     categoriaLabel: 'Comparativo',
     categoriaColor: 'bg-blue-100 text-blue-700',
+  },
+  {
+    slug: 'xiaomi-s40-ou-h40-robo-aspirador',
+    titulo: 'Xiaomi S40 ou H40: Qual Robô Aspirador Vale Mais a Pena?',
+    resumo: 'Uso o Xiaomi S40 há 3 meses. Comparo com o H40, que tem base de autolimpeza, para você decidir se vale pagar quase o dobro.',
+    tempo: '9 min de leitura',
+    imagem: '/images/xiaomi-s40-h40/capa-xiaomi-s40-h40.webp',
+    categoria: 'comparativos',
+    categoriaLabel: 'Comparativo',
+    categoriaColor: 'bg-blue-100 text-blue-700',
   }
 ];
 
