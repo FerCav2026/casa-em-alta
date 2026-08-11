@@ -376,8 +376,8 @@ export const posts: Post[] = [
   },
   {
     slug: 'robo-aspirador-barato-shopee',
-    titulo: 'Robô Aspirador Barato da Shopee Funciona Mesmo? O Que Esperar de Um por Menos de R$200',
-    resumo: 'Reunimos avaliações reais de compradores (nota 4,7 de 5, 261 avaliações) do robô aspirador Agratto 3 em 1 para mostrar o que ele entrega de verdade e onde decepciona.',
+    titulo: 'Aspirador Robô Agratto é Bom? O Que Dizem as Avaliações Reais',
+    resumo: 'Aspirador robô Agratto é bom mesmo? Reunimos avaliações reais de compradores (nota 4,7 de 5, 261 avaliações) para mostrar o que ele entrega de verdade e onde decepciona.',
     tempo: '7 min de leitura',
     imagem: '/images/robo-aspirador-shopee/capa-robo-aspirador-shopee.webp',
     categoria: 'reviews',
