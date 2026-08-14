@@ -423,6 +423,16 @@ export const posts: Post[] = [
     categoria: 'comparativos',
     categoriaLabel: 'Comparativo',
     categoriaColor: 'bg-blue-100 text-blue-700',
+  },
+  {
+    slug: 'como-escolher-cafeteira',
+    titulo: 'Como Escolher Cafeteira: Cápsula, Expresso ou Coador?',
+    resumo: 'Guia completo pra escolher a cafeteira ideal: cápsula, expresso, coador, elétrica, italiana ou prensa francesa. Custo por xícara, praticidade e manutenção.',
+    tempo: '9 min de leitura',
+    imagem: '/images/cafeteira-guia/capa-como-escolher-cafeteira.webp',
+    categoria: 'guias-de-compra',
+    categoriaLabel: 'Guia de Compra',
+    categoriaColor: 'bg-purple-100 text-purple-700',
   }
 ];
 

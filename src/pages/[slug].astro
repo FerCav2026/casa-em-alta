@@ -272,6 +272,13 @@ const posts: Record<string, { titulo: string; descricao: string; categoria: stri
     dataCriacao: '2026-08-10',
     dataModificacao: '2026-08-10',
   },
+  'como-escolher-cafeteira': {
+    titulo: 'Como Escolher Cafeteira: Cápsula, Expresso ou Coador?',
+    descricao: 'Guia completo pra escolher a cafeteira ideal: cápsula, expresso, coador, elétrica, italiana ou prensa francesa. Custo por xícara, praticidade e manutenção.',
+    categoria: 'Guia de Compra',
+    dataCriacao: '2026-08-14',
+    dataModificacao: '2026-08-14',
+  },
 };
 
 export function getStaticPaths() {
@@ -312,6 +319,7 @@ export function getStaticPaths() {
     'como-escolher-aspirador-de-po': {},
     'aspirador-vertical-ou-portatil-apartamento': {},
     'xiaomi-s40-ou-h40-robo-aspirador': {},
+    'como-escolher-cafeteira': {},
   }).map((slug) => ({ params: { slug } }));
 }
 
@@ -380,6 +388,7 @@ const isElectroluxERG26 = slug === 'electrolux-ergorapido-erg26-review';
 const isComoEscolherAspirador = slug === 'como-escolher-aspirador-de-po';
 const isAspiradorVerticalOuPortatil = slug === 'aspirador-vertical-ou-portatil-apartamento';
 const isXiaomiS40H40 = slug === 'xiaomi-s40-ou-h40-robo-aspirador';
+const isComoEscolherCafeteira = slug === 'como-escolher-cafeteira';
 
 const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isAirfryer ? '/images/airfryer/capa-airfryer.webp'
@@ -417,6 +426,7 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isComoEscolherAspirador ? '/images/aspirador-guia/capa-como-escolher-aspirador-de-po.webp'
   : isAspiradorVerticalOuPortatil ? '/images/aspirador-vertical-portatil/capa-aspirador-vertical-portatil.webp'
   : isXiaomiS40H40 ? '/images/xiaomi-s40-h40/capa-xiaomi-s40-h40.webp'
+  : isComoEscolherCafeteira ? '/images/cafeteira-guia/capa-como-escolher-cafeteira.webp'
   : undefined;
 ---
 
@@ -16199,6 +16209,369 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
 
   </div>
 )}
+
+    {isComoEscolherCafeteira && (
+      <div>
+
+        <!-- Capa -->
+        <div class="rounded-2xl overflow-hidden mb-8 shadow-md">
+          <img
+            src="/images/cafeteira-guia/capa-como-escolher-cafeteira.webp"
+            alt="Como escolher cafeteira: cápsula, expresso ou coador"
+            class="w-full h-auto object-cover"
+            loading="eager"
+          />
+        </div>
+
+        <!-- Introdução -->
+        <div class="bg-orange-50 border border-orange-100 rounded-2xl p-6 mb-8">
+          <p class="text-slate-800 text-base leading-relaxed mb-3">
+            Escolher a cafeteira certa parece simples até você entrar numa loja ou abrir um site de vendas e se deparar com dezenas de modelos diferentes. Cápsula, expresso, coador, prensa francesa, italiana. Cada tipo promete ser o melhor, mas a verdade é que não existe uma cafeteira perfeita para todo mundo.
+          </p>
+          <p class="text-slate-800 text-base leading-relaxed">
+            Existe a cafeteira certa para a sua rotina, para o seu bolso e para o tipo de café que você gosta de tomar. Este guia passa por cada tipo disponível no mercado brasileiro, mostra as vantagens e desvantagens reais de cada um, e termina com um checklist prático para você decidir com segurança.
+          </p>
+        </div>
+
+        <!-- Índice -->
+        <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 mb-10">
+          <p class="text-slate-800 font-bold text-base mb-3">Neste artigo:</p>
+          <ul class="space-y-2 text-sm text-slate-700">
+            <li><a href="#antes-de-escolher" class="text-purple-600 hover:underline">→ Antes de escolher, pense na sua rotina</a></li>
+            <li><a href="#tipos-cafeteira" class="text-purple-600 hover:underline">→ Os principais tipos de cafeteira</a></li>
+            <li><a href="#criterios-tecnicos" class="text-purple-600 hover:underline">→ Os critérios técnicos que realmente importam</a></li>
+            <li><a href="#comparacao" class="text-purple-600 hover:underline">→ Comparação direta entre os tipos</a></li>
+            <li><a href="#erros-comuns" class="text-purple-600 hover:underline">→ Erros comuns na hora de comprar</a></li>
+            <li><a href="#checklist" class="text-purple-600 hover:underline">→ Checklist final para decidir</a></li>
+            <li><a href="#faq" class="text-purple-600 hover:underline">→ Perguntas frequentes</a></li>
+          </ul>
+        </div>
+
+        <!-- Antes de escolher -->
+        <h2 id="antes-de-escolher" class="text-2xl font-bold text-slate-900 mb-4">Antes de escolher, pense na sua rotina</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-6">
+          Antes de olhar para qualquer modelo específico, vale parar e responder três perguntas simples. Elas resolvem boa parte da indecisão na hora de comprar.
+        </p>
+        <ul class="space-y-2 text-sm text-slate-700 mb-6">
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Quantos cafés você toma por dia?</strong> Uma pessoa que toma uma xícara pela manhã tem necessidades bem diferentes de uma casa com quatro pessoas que consomem café o dia inteiro.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Você mora sozinho ou divide a casa com mais gente?</strong> Isso influencia diretamente na capacidade da cafeteira e no tipo de preparo mais prático.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Você prioriza praticidade ou sabor mais elaborado?</strong> Quem quer café pronto em segundos tem um caminho. Quem gosta do ritual de preparar o café e valoriza cada detalhe do sabor tem outro.</span></li>
+        </ul>
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          Com essas respostas em mente, fica mais fácil entender qual dos tipos abaixo faz mais sentido para o seu dia a dia.
+        </p>
+
+        <!-- Tipos de cafeteira -->
+        <h2 id="tipos-cafeteira" class="text-2xl font-bold text-slate-900 mb-6">Os principais tipos de cafeteira</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+          <div class="border border-slate-200 rounded-2xl p-5">
+            <h3 class="font-bold text-slate-900 text-base mb-3">Cafeteira de cápsula</h3>
+            <p class="text-slate-700 text-sm leading-relaxed mb-3">É o tipo mais popular dos últimos anos, puxado por marcas como Nespresso e Dolce Gusto. Você coloca a cápsula, aperta um botão e em menos de um minuto o café está pronto. Muitas máquinas também preparam chá, chocolate quente e cappuccino.</p>
+            <ul class="space-y-1.5 text-sm text-slate-700">
+              <li class="flex gap-2"><span class="text-green-500 font-bold">✓</span>Praticidade máxima, sem moagem nem sujeira</li>
+              <li class="flex gap-2"><span class="text-red-400 font-bold">✗</span>Custo por xícara mais alto e cápsulas descartáveis</li>
+            </ul>
+          </div>
+          <div class="border border-slate-200 rounded-2xl p-5">
+            <h3 class="font-bold text-slate-900 text-base mb-3">Cafeteira expresso tradicional</h3>
+            <p class="text-slate-700 text-sm leading-relaxed mb-3">Trabalha com café moído e uma bomba de pressão que força a água quente através do pó, o mesmo princípio das máquinas profissionais. O resultado é um café mais encorpado, com aquela camada de espuma por cima, a crema.</p>
+            <ul class="space-y-1.5 text-sm text-slate-700">
+              <li class="flex gap-2"><span class="text-green-500 font-bold">✓</span>Café forte e encorpado, com crema</li>
+              <li class="flex gap-2"><span class="text-red-400 font-bold">✗</span>Curva de aprendizado e modelos completos custam mais</li>
+            </ul>
+          </div>
+          <div class="border border-slate-200 rounded-2xl p-5">
+            <h3 class="font-bold text-slate-900 text-base mb-3">Cafeteira de coador e filtro de papel</h3>
+            <p class="text-slate-700 text-sm leading-relaxed mb-3">É o método mais tradicional das casas brasileiras. Água quente passa pelo pó de café dentro de um filtro de papel, sem depender de eletricidade nem de peças caras.</p>
+            <ul class="space-y-1.5 text-sm text-slate-700">
+              <li class="flex gap-2"><span class="text-green-500 font-bold">✓</span>Custo quase zero e insumo fácil de achar</li>
+              <li class="flex gap-2"><span class="text-red-400 font-bold">✗</span>Mais tempo de preparo, depende da técnica</li>
+            </ul>
+          </div>
+          <div class="border border-slate-200 rounded-2xl p-5">
+            <h3 class="font-bold text-slate-900 text-base mb-3">Cafeteira elétrica de café coado</h3>
+            <p class="text-slate-700 text-sm leading-relaxed mb-3">Uma versão automatizada do coador tradicional: você coloca água e pó, liga a máquina e ela deposita o café pronto numa jarra. A maioria prepara entre 600ml e 1,2 litro de uma vez.</p>
+            <ul class="space-y-1.5 text-sm text-slate-700">
+              <li class="flex gap-2"><span class="text-green-500 font-bold">✓</span>Ótima para famílias e visitas</li>
+              <li class="flex gap-2"><span class="text-red-400 font-bold">✗</span>Café perde sabor se ficar muito tempo na chapa</li>
+            </ul>
+          </div>
+          <div class="border border-slate-200 rounded-2xl p-5">
+            <h3 class="font-bold text-slate-900 text-base mb-3">Cafeteira italiana (moka)</h3>
+            <p class="text-slate-700 text-sm leading-relaxed mb-3">Não usa eletricidade: vai direto no fogão e funciona pela pressão do vapor de água, que sobe através do pó compactado e extrai uma bebida forte e aromática, parecida com um expresso.</p>
+            <ul class="space-y-1.5 text-sm text-slate-700">
+              <li class="flex gap-2"><span class="text-green-500 font-bold">✓</span>Durável, sem partes eletrônicas para quebrar</li>
+              <li class="flex gap-2"><span class="text-red-400 font-bold">✗</span>Exige atenção no fogão para não queimar o café</li>
+            </ul>
+          </div>
+          <div class="border border-slate-200 rounded-2xl p-5">
+            <h3 class="font-bold text-slate-900 text-base mb-3">Prensa francesa</h3>
+            <p class="text-slate-700 text-sm leading-relaxed mb-3">Método manual que usa um êmbolo com filtro de metal para separar o pó da água depois de alguns minutos de infusão. Preserva óleos naturais do grão que outros métodos filtram.</p>
+            <ul class="space-y-1.5 text-sm text-slate-700">
+              <li class="flex gap-2"><span class="text-green-500 font-bold">✓</span>Sabor encorpado e custo baixo</li>
+              <li class="flex gap-2"><span class="text-red-400 font-bold">✗</span>Exige técnica de moagem e tempo de infusão</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Critérios técnicos -->
+        <h2 id="criterios-tecnicos" class="text-2xl font-bold text-slate-900 mb-6">Os critérios técnicos que realmente importam</h2>
+
+        <div class="space-y-5 mb-10">
+          <div class="border-l-4 border-purple-400 pl-4">
+            <p class="font-semibold text-slate-800 text-sm mb-1">Custo por xícara</p>
+            <p class="text-slate-700 text-sm leading-relaxed">Um dos pontos mais subestimados na compra. A cápsula costuma ter o maior custo por xícara. Café coado e prensa francesa têm o menor custo no longo prazo. Para quem toma café todos os dias, essa diferença se acumula rápido ao longo do mês.</p>
+          </div>
+          <div class="border-l-4 border-purple-400 pl-4">
+            <p class="font-semibold text-slate-800 text-sm mb-1">Praticidade no dia a dia</p>
+            <p class="text-slate-700 text-sm leading-relaxed">Cápsula e elétrica de café coado levam vantagem em rotinas corridas. Métodos manuais, como coador, prensa francesa e italiana, pedem mais tempo e presença, o que pode virar um problema em dias de pressa ou um momento de pausa para quem gosta do ritual.</p>
+          </div>
+          <div class="border-l-4 border-purple-400 pl-4">
+            <p class="font-semibold text-slate-800 text-sm mb-1">Tipo de café que a máquina aceita</p>
+            <p class="text-slate-700 text-sm leading-relaxed">Vale conferir se a cafeteira aceita só cápsulas de uma marca (sistema fechado) ou de várias marcas, incluindo opções mais baratas de supermercado (sistema aberto). Cafeteiras de café coado e expresso tradicional geralmente aceitam qualquer marca de pó moído.</p>
+          </div>
+          <div class="border-l-4 border-purple-400 pl-4">
+            <p class="font-semibold text-slate-800 text-sm mb-1">Espaço na cozinha</p>
+            <p class="text-slate-700 text-sm leading-relaxed">Cafeteiras de cápsula costumam ser as mais compactas. Expresso completas, com moedor embutido, tendem a ser as maiores e mais pesadas. Métodos manuais praticamente não ocupam espaço fixo, já que podem ser guardados no armário.</p>
+          </div>
+          <div class="border-l-4 border-purple-400 pl-4">
+            <p class="font-semibold text-slate-800 text-sm mb-1">Manutenção e limpeza</p>
+            <p class="text-slate-700 text-sm leading-relaxed">Cafeteiras elétricas, de cápsula ou de café coado, precisam de descalcificação periódica para remover o acúmulo de calcário, principalmente onde a água é mais dura. Italiana e prensa francesa pedem limpeza manual mais cuidadosa, para não acumular resíduo de óleo do café.</p>
+          </div>
+          <div class="border-l-4 border-purple-400 pl-4">
+            <p class="font-semibold text-slate-800 text-sm mb-1">Consumo de energia</p>
+            <p class="text-slate-700 text-sm leading-relaxed">É comum achar que cafeteiras de cápsula gastam muita energia por terem potência alta, entre 1000W e 1500W. Na prática, o ciclo de aquecimento dura poucos segundos, então o consumo mensal costuma ficar entre 7 e 22 kWh, um valor bem menor do que muita gente imagina.</p>
+          </div>
+        </div>
+
+        <!-- Tabela comparativa -->
+        <div id="comparacao" class="mb-10">
+          <h2 class="text-2xl font-bold text-slate-900 mb-4">Cápsula, expresso ou coador: comparação direta</h2>
+          <div class="overflow-x-auto">
+            <table class="w-full text-sm border-collapse rounded-xl overflow-hidden">
+              <thead>
+                <tr class="bg-slate-800 text-white">
+                  <th class="py-3 px-4 text-left font-bold">Tipo</th>
+                  <th class="py-3 px-4 text-left font-bold">Melhor para</th>
+                  <th class="py-3 px-4 text-left font-bold">Ponto fraco</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-slate-100 bg-white">
+                  <td class="py-3 px-4 font-semibold text-slate-800">Cápsula</td>
+                  <td class="py-3 px-4 text-slate-600">Praticidade máxima, pouco espaço, variedade de bebidas</td>
+                  <td class="py-3 px-4 text-slate-600">Custo por xícara mais alto</td>
+                </tr>
+                <tr class="border-b border-slate-100 bg-slate-50">
+                  <td class="py-3 px-4 font-semibold text-slate-800">Expresso tradicional</td>
+                  <td class="py-3 px-4 text-slate-600">Café forte e encorpado, quem gosta de regular o preparo</td>
+                  <td class="py-3 px-4 text-slate-600">Curva de aprendizado e preço dos modelos completos</td>
+                </tr>
+                <tr class="border-b border-slate-100 bg-white">
+                  <td class="py-3 px-4 font-semibold text-slate-800">Coador de papel</td>
+                  <td class="py-3 px-4 text-slate-600">Custo baixíssimo, simplicidade</td>
+                  <td class="py-3 px-4 text-slate-600">Mais tempo de preparo, depende da técnica</td>
+                </tr>
+                <tr class="border-b border-slate-100 bg-slate-50">
+                  <td class="py-3 px-4 font-semibold text-slate-800">Elétrica de café coado</td>
+                  <td class="py-3 px-4 text-slate-600">Famílias, quem recebe visita, quantidade grande</td>
+                  <td class="py-3 px-4 text-slate-600">Café perde sabor se ficar muito tempo na chapa</td>
+                </tr>
+                <tr class="border-b border-slate-100 bg-white">
+                  <td class="py-3 px-4 font-semibold text-slate-800">Italiana (moka)</td>
+                  <td class="py-3 px-4 text-slate-600">Café forte sem eletricidade, durabilidade</td>
+                  <td class="py-3 px-4 text-slate-600">Exige atenção no fogão para não queimar o café</td>
+                </tr>
+                <tr class="bg-slate-50">
+                  <td class="py-3 px-4 font-semibold text-slate-800">Prensa francesa</td>
+                  <td class="py-3 px-4 text-slate-600">Sabor encorpado, café especial, custo baixo</td>
+                  <td class="py-3 px-4 text-slate-600">Exige técnica de moagem e tempo de infusão</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Erros comuns -->
+        <h2 id="erros-comuns" class="text-2xl font-bold text-slate-900 mb-6">Erros comuns na hora de comprar cafeteira</h2>
+
+        <div class="space-y-4 mb-10">
+          <div class="flex gap-4 items-start">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-red-100 text-red-700 font-bold text-sm flex items-center justify-center">1</span>
+            <div>
+              <p class="font-semibold text-slate-800 text-sm mb-1">Escolher pelo preço da máquina e ignorar o custo do café</p>
+              <p class="text-slate-700 text-sm leading-relaxed">Uma cafeteira de cápsula barata pode sair mais cara no fim do mês do que uma máquina de café coado um pouco mais cara na compra.</p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-start">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-red-100 text-red-700 font-bold text-sm flex items-center justify-center">2</span>
+            <div>
+              <p class="font-semibold text-slate-800 text-sm mb-1">Comprar sistema fechado sem pesquisar antes</p>
+              <p class="text-slate-700 text-sm leading-relaxed">Algumas máquinas só aceitam cápsulas de uma marca específica, o que limita as opções e pode encarecer o consumo com o tempo.</p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-start">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-red-100 text-red-700 font-bold text-sm flex items-center justify-center">3</span>
+            <div>
+              <p class="font-semibold text-slate-800 text-sm mb-1">Não considerar o tamanho do reservatório de água</p>
+              <p class="text-slate-700 text-sm leading-relaxed">Reservatórios pequenos exigem reabastecimento constante, o que incomoda quem consome muito café ao longo do dia.</p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-start">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-red-100 text-red-700 font-bold text-sm flex items-center justify-center">4</span>
+            <div>
+              <p class="font-semibold text-slate-800 text-sm mb-1">Ignorar a facilidade de limpeza</p>
+              <p class="text-slate-700 text-sm leading-relaxed">Máquinas com muitas peças pequenas ou de difícil acesso acabam sendo usadas com menos frequência simplesmente porque dão trabalho para limpar.</p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-start">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-red-100 text-red-700 font-bold text-sm flex items-center justify-center">5</span>
+            <div>
+              <p class="font-semibold text-slate-800 text-sm mb-1">Comprar capacidade maior do que o necessário</p>
+              <p class="text-slate-700 text-sm leading-relaxed">Uma cafeteira grande para quem mora sozinho ocupa espaço à toa e faz café sobrar, perdendo qualidade e sabor.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Checklist -->
+        <div class="bg-slate-900 text-white rounded-2xl p-7 mb-10" id="checklist">
+          <h2 class="text-xl font-bold mb-4">Checklist final para decidir</h2>
+          <ul class="space-y-2 text-slate-200 text-sm leading-relaxed">
+            <li>Defina quantas xícaras de café sua casa consome por dia, em média.</li>
+            <li>Decida se praticidade importa mais do que economia por xícara, ou o contrário.</li>
+            <li>Verifique se prefere sistema aberto ou fechado de cápsulas, caso escolha esse tipo.</li>
+            <li>Confira o espaço disponível na bancada da cozinha antes de escolher o tamanho da máquina.</li>
+            <li>Pense no tempo que você tem disponível pela manhã para o preparo.</li>
+            <li>Avalie a facilidade de limpeza e manutenção do modelo que está considerando.</li>
+            <li>Compare o custo por xícara do tipo de cafeteira com o quanto você gasta hoje.</li>
+          </ul>
+        </div>
+
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          Respondendo essas perguntas com sinceridade, fica bem mais fácil eliminar opções e chegar ao tipo de cafeteira que realmente combina com a sua rotina, sem se deixar levar apenas pela propaganda ou pelo modelo mais bonito na prateleira. Em breve, vamos publicar artigos específicos comparando modelos e marcas dentro de cada categoria, para ajudar ainda mais na hora de decidir qual levar para casa.
+        </p>
+
+        <!-- FAQ -->
+        <h2 id="faq" class="text-2xl font-bold text-slate-900 mb-6">Perguntas frequentes sobre como escolher cafeteira</h2>
+
+        <div class="space-y-3 mb-10">
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Cafeteira de cápsula compensa o gasto em relação ao café tradicional?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Depende do quanto você valoriza a praticidade. O custo por xícara é maior do que o café coado, mas para quem toma pouco café ou prioriza tempo, a diferença costuma valer a pena. Para consumo alto e diário, o café tradicional sai mais barato no fim do mês.
+            </div>
+          </details>
+
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Cafeteira gasta muita energia elétrica?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Não tanto quanto a potência do aparelho pode sugerir. Mesmo modelos com 1000W a 1500W costumam gastar entre 7 e 22 kWh por mês, porque o ciclo de aquecimento é rápido. O impacto na conta de luz costuma ser pequeno perto de outros eletrodomésticos da casa.
+            </div>
+          </details>
+
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Qual cafeteira é melhor para quem mora sozinho?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Cafeteiras de cápsula ou modelos compactos de café coado individual costumam ser os mais indicados, já que preparam apenas a quantidade necessária, sem desperdício e sem ocupar muito espaço na cozinha.
+            </div>
+          </details>
+
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Vale a pena comprar cafeteira com moedor embutido?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Vale para quem realmente valoriza café recém moído e está disposto a pagar mais caro pelo modelo. Moer o café na hora melhora o sabor e o aroma, mas exige mais manutenção e um investimento inicial maior.
+            </div>
+          </details>
+
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Cápsulas reutilizáveis são uma boa alternativa?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Sim, principalmente para quem gosta da praticidade da cafeteira de cápsula mas quer reduzir o custo por xícara e o impacto ambiental do descarte constante. É preciso encher e limpar a cápsula manualmente a cada uso, o que tira um pouco da praticidade original.
+            </div>
+          </details>
+
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Cafeteira elétrica de café coado serve para receber visitas?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Sim, é uma das melhores opções para isso, já que a maioria dos modelos prepara entre 600ml e 1,2 litro de uma vez, o suficiente para várias pessoas sem precisar preparar café repetidas vezes.
+            </div>
+          </details>
+
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Preciso descalcificar a cafeteira mesmo se ela for nova?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Sim, a descalcificação depende da dureza da água da região, não da idade da máquina. O manual de cada modelo costuma indicar a frequência recomendada, mas em geral vale fazer a cada poucas semanas de uso regular.
+            </div>
+          </details>
+        </div>
+
+        <!-- Schema FAQ -->
+        <script type="application/ld+json" set:html={JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Cafeteira de cápsula compensa o gasto em relação ao café tradicional?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Depende do quanto você valoriza a praticidade. O custo por xícara é maior do que o café coado, mas para quem toma pouco café ou prioriza tempo, a diferença costuma valer a pena. Para consumo alto e diário, o café tradicional sai mais barato no fim do mês." }
+            },
+            {
+              "@type": "Question",
+              "name": "Cafeteira gasta muita energia elétrica?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Não tanto quanto a potência do aparelho pode sugerir. Mesmo modelos com 1000W a 1500W costumam gastar entre 7 e 22 kWh por mês, porque o ciclo de aquecimento é rápido. O impacto na conta de luz costuma ser pequeno perto de outros eletrodomésticos da casa." }
+            },
+            {
+              "@type": "Question",
+              "name": "Qual cafeteira é melhor para quem mora sozinho?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Cafeteiras de cápsula ou modelos compactos de café coado individual costumam ser os mais indicados, já que preparam apenas a quantidade necessária, sem desperdício e sem ocupar muito espaço na cozinha." }
+            },
+            {
+              "@type": "Question",
+              "name": "Vale a pena comprar cafeteira com moedor embutido?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Vale para quem realmente valoriza café recém moído e está disposto a pagar mais caro pelo modelo. Moer o café na hora melhora o sabor e o aroma, mas exige mais manutenção e um investimento inicial maior." }
+            },
+            {
+              "@type": "Question",
+              "name": "Cápsulas reutilizáveis são uma boa alternativa?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Sim, principalmente para quem gosta da praticidade da cafeteira de cápsula mas quer reduzir o custo por xícara e o impacto ambiental do descarte constante. É preciso encher e limpar a cápsula manualmente a cada uso, o que tira um pouco da praticidade original." }
+            },
+            {
+              "@type": "Question",
+              "name": "Cafeteira elétrica de café coado serve para receber visitas?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Sim, é uma das melhores opções para isso, já que a maioria dos modelos prepara entre 600ml e 1,2 litro de uma vez, o suficiente para várias pessoas sem precisar preparar café repetidas vezes." }
+            },
+            {
+              "@type": "Question",
+              "name": "Preciso descalcificar a cafeteira mesmo se ela for nova?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Sim, a descalcificação depende da dureza da água da região, não da idade da máquina. O manual de cada modelo costuma indicar a frequência recomendada, mas em geral vale fazer a cada poucas semanas de uso regular." }
+            }
+          ]
+        })} />
+
+      </div>
+    )}
 
     <!-- Calculadora de consumo de energia, travada na categoria do artigo -->
     {CALCULADORA_POR_SLUG[slug as string] && (
