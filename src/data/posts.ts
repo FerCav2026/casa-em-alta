@@ -433,6 +433,16 @@ export const posts: Post[] = [
     categoria: 'guias-de-compra',
     categoriaLabel: 'Guia de Compra',
     categoriaColor: 'bg-purple-100 text-purple-700',
+  },
+  {
+    slug: 'dolce-gusto-vs-nespresso',
+    titulo: 'Dolce Gusto ou Nespresso: Qual Vale Mais a Pena para Apartamento?',
+    resumo: 'Comparamos os dois sistemas de cápsula: variedade de bebidas, custo por cápsula, reciclagem e qual cabe melhor na rotina de um apê pequeno.',
+    tempo: '9 min de leitura',
+    imagem: '/images/dolce-gusto-nespresso/capa-dolce-gusto-nespresso.webp',
+    categoria: 'comparativos',
+    categoriaLabel: 'Comparativo',
+    categoriaColor: 'bg-blue-100 text-blue-700',
   }
 ];
 

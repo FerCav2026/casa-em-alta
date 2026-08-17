@@ -279,6 +279,13 @@ const posts: Record<string, { titulo: string; descricao: string; categoria: stri
     dataCriacao: '2026-08-14',
     dataModificacao: '2026-08-14',
   },
+  'dolce-gusto-vs-nespresso': {
+    titulo: 'Dolce Gusto ou Nespresso: Qual Vale Mais a Pena para Apartamento?',
+    descricao: 'Dolce Gusto ou Nespresso: comparamos variedade de bebidas, custo por cápsula, reciclagem e qual sistema cabe melhor na rotina de um apartamento pequeno.',
+    categoria: 'Comparativo',
+    dataCriacao: '2026-08-17',
+    dataModificacao: '2026-08-17',
+  },
 };
 
 export function getStaticPaths() {
@@ -320,6 +327,7 @@ export function getStaticPaths() {
     'aspirador-vertical-ou-portatil-apartamento': {},
     'xiaomi-s40-ou-h40-robo-aspirador': {},
     'como-escolher-cafeteira': {},
+    'dolce-gusto-vs-nespresso': {},
   }).map((slug) => ({ params: { slug } }));
 }
 
@@ -389,6 +397,7 @@ const isComoEscolherAspirador = slug === 'como-escolher-aspirador-de-po';
 const isAspiradorVerticalOuPortatil = slug === 'aspirador-vertical-ou-portatil-apartamento';
 const isXiaomiS40H40 = slug === 'xiaomi-s40-ou-h40-robo-aspirador';
 const isComoEscolherCafeteira = slug === 'como-escolher-cafeteira';
+const isDolceGustoOuNespresso = slug === 'dolce-gusto-vs-nespresso';
 
 const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isAirfryer ? '/images/airfryer/capa-airfryer.webp'
@@ -427,6 +436,7 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isAspiradorVerticalOuPortatil ? '/images/aspirador-vertical-portatil/capa-aspirador-vertical-portatil.webp'
   : isXiaomiS40H40 ? '/images/xiaomi-s40-h40/capa-xiaomi-s40-h40.webp'
   : isComoEscolherCafeteira ? '/images/cafeteira-guia/capa-como-escolher-cafeteira.webp'
+  : isDolceGustoOuNespresso ? '/images/dolce-gusto-nespresso/capa-dolce-gusto-nespresso.webp'
   : undefined;
 ---
 
@@ -16449,7 +16459,7 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
         </div>
 
         <p class="text-slate-700 text-base leading-relaxed mb-10">
-          Respondendo essas perguntas com sinceridade, fica bem mais fácil eliminar opções e chegar ao tipo de cafeteira que realmente combina com a sua rotina, sem se deixar levar apenas pela propaganda ou pelo modelo mais bonito na prateleira. Em breve, vamos publicar artigos específicos comparando modelos e marcas dentro de cada categoria, para ajudar ainda mais na hora de decidir qual levar para casa.
+          Respondendo essas perguntas com sinceridade, fica bem mais fácil eliminar opções e chegar ao tipo de cafeteira que realmente combina com a sua rotina, sem se deixar levar apenas pela propaganda ou pelo modelo mais bonito na prateleira. Já publicamos o comparativo <a href="/dolce-gusto-vs-nespresso" class="text-purple-600 font-semibold hover:underline">Dolce Gusto ou Nespresso: Qual Vale Mais a Pena para Apartamento?</a>, e em breve vêm mais artigos comparando outros modelos e marcas dentro de cada categoria.
         </p>
 
         <!-- FAQ -->
@@ -16572,6 +16582,279 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
 
       </div>
     )}
+
+    {isDolceGustoOuNespresso && (
+  <div>
+
+    <!-- Capa do artigo -->
+    <div class="rounded-2xl overflow-hidden mb-8 shadow-md">
+      <img
+        src="/images/dolce-gusto-nespresso/capa-dolce-gusto-nespresso.webp"
+        alt="Cápsulas de café Dolce Gusto e Nespresso lado a lado em bancada de apartamento"
+        class="w-full h-auto object-cover"
+        loading="eager"
+      />
+    </div>
+
+    <!-- Introdução -->
+    <p class="text-slate-700 leading-relaxed mb-4">
+      Quem está montando a cozinha de um apartamento pequeno e decidiu trocar a cafeteira comum por uma de cápsula quase sempre esbarra na mesma dúvida: Dolce Gusto ou Nespresso? As duas marcas dominam esse mercado no Brasil, têm modelos compactos pensados para bancadas curtas e prometem resolver o café do dia a dia em poucos segundos, mas partem de propostas bem diferentes.
+    </p>
+    <p class="text-slate-700 leading-relaxed mb-4">
+      Não testei pessoalmente nenhuma das duas máquinas. O que trago aqui é uma curadoria baseada em ficha técnica oficial das marcas, preço real de mercado e avaliações de quem já usa cada sistema, para ajudar a entender como cada uma funciona, quanto custa manter abastecida mês a mês e qual cabe melhor no espaço e no hábito de consumo de quem mora sozinho ou em um apê pequeno.
+    </p>
+
+    <!-- TL;DR -->
+    <div class="bg-orange-50 border border-orange-200 rounded-2xl px-5 py-4 mb-6">
+      <p class="font-bold text-slate-800 mb-1">Em resumo:</p>
+      <p class="text-slate-700 text-sm leading-relaxed">A Dolce Gusto ganha em variedade de bebidas (café, cappuccino, chocolate, chá) e cápsula mais barata, enquanto a Nespresso foca em espresso e lungo de extração mais consistente, com cápsula de alumínio reciclável e uma rede de reciclagem mais estruturada no Brasil. Não existe uma vencedora única, a escolha certa depende do que a pessoa realmente bebe no dia a dia.</p>
+      <p class="text-slate-500 text-xs mt-2">Preços pesquisados em supermercados e marketplaces em agosto de 2026, sujeitos a mudança.</p>
+    </div>
+
+    <!-- Índice -->
+    <nav class="border border-slate-200 rounded-2xl p-6 mb-10 bg-white">
+      <p class="font-bold text-slate-800 mb-3">Neste artigo:</p>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#dolce-gusto" class="text-orange-500 hover:text-orange-600 font-medium">Como funciona o sistema Dolce Gusto</a></li>
+        <li><a href="#nespresso" class="text-orange-500 hover:text-orange-600 font-medium">Como funciona o sistema Nespresso</a></li>
+        <li><a href="#tabela-comparativa" class="text-orange-500 hover:text-orange-600 font-medium">Tabela comparativa direta</a></li>
+        <li><a href="#qual-escolher-apartamento" class="text-orange-500 hover:text-orange-600 font-medium">Qual escolher para apartamento pequeno</a></li>
+        <li><a href="#pros-contras" class="text-orange-500 hover:text-orange-600 font-medium">Prós e contras de cada sistema</a></li>
+        <li><a href="#erros-comuns" class="text-orange-500 hover:text-orange-600 font-medium">Erros comuns na hora de escolher</a></li>
+        <li><a href="#faq" class="text-orange-500 hover:text-orange-600 font-medium">Perguntas frequentes</a></li>
+      </ul>
+    </nav>
+
+    <p class="text-slate-700 leading-relaxed mb-10">
+      Se você ainda nem decidiu entre cápsula, espresso tradicional ou coador, vale ler primeiro o nosso guia <a href="/como-escolher-cafeteira" class="text-orange-600 font-semibold hover:underline">Como Escolher Cafeteira</a>, que explica os critérios técnicos com mais profundidade.
+    </p>
+
+    <!-- Dolce Gusto -->
+    <h2 id="dolce-gusto" class="text-2xl font-black text-slate-900 mt-10 mb-4">Como funciona o sistema Dolce Gusto</h2>
+    <p class="text-slate-700 leading-relaxed mb-4">
+      A Nescafé Dolce Gusto é uma marca da Nestlé e usa cápsulas próprias com um sistema chamado smart capsule, que ajusta a pressão da extração para cada tipo de bebida. É isso que permite que a mesma máquina prepare, além do café tradicional, receitas como cappuccino, latte macchiato, chocolate quente e até bebidas geladas, algo que o sistema Nespresso não faz por padrão.
+    </p>
+    <p class="text-slate-700 leading-relaxed mb-4">
+      Nos modelos de entrada, como a Genio S Basic, a extração roda a 15 bar de pressão e o reservatório de água comporta 800 ml, o que dá para preparar várias xícaras seguidas sem reabastecer toda hora. Já a linha mais recente da marca, a NEO, trouxe a tecnologia SmartBrew, capaz de reconhecer qual cápsula foi inserida e escolher entre três formas de extração (alta pressão para espressos e ristrettos, top up para americanos e slow brew para um café estilo coado), além de permitir ajustes pelo aplicativo da marca, conectado por bluetooth e wi-fi.
+    </p>
+    <p class="text-slate-700 leading-relaxed mb-4">
+      As cápsulas tradicionais da Dolce Gusto são de plástico. Na linha NEO, a marca passou a usar cápsulas de papel compostável, um avanço em relação ao restante do portfólio. O preço por cápsula varia conforme o sabor e a promoção do momento, mas uma pesquisa em supermercados e marketplaces mostra um valor girando entre R$ 2,50 e R$ 3,50 por unidade nas caixas com 10 ou 16 cápsulas. Esse número muda com frequência, o ideal é sempre conferir o preço atualizado antes de comprar.
+    </p>
+    <p class="text-slate-700 leading-relaxed mb-10">
+      Outro ponto que pesa na conta é a compatibilidade: existem cápsulas de outras marcas feitas para encaixar nas máquinas Dolce Gusto, como Gimoka, Bicafé, Toddy e Café do Ponto, geralmente mais baratas que as originais. Isso amplia bastante as opções para quem quer economizar no dia a dia.
+    </p>
+
+    <!-- Nespresso -->
+    <h2 id="nespresso" class="text-2xl font-black text-slate-900 mt-10 mb-4">Como funciona o sistema Nespresso</h2>
+    <p class="text-slate-700 leading-relaxed mb-4">
+      A Nespresso trabalha com cápsulas de alumínio que armazenam cerca de 5 gramas de café moído em um ambiente hermeticamente fechado, pensado para proteger o café da luz, do oxigênio e da umidade até o momento da extração. É a própria marca quem descreve esse selo como um dos motivos para o aroma se manter mais próximo do café recém moído.
+    </p>
+    <p class="text-slate-700 leading-relaxed mb-4">
+      No Brasil, a Nespresso vende dois sistemas de máquina. O Original é o mais tradicional, com cápsulas menores e foco em espresso (40 ml) e lungo (110 ml), e é um sistema aberto, ou seja, aceita cápsulas compatíveis de outras marcas desde que o formato físico seja o mesmo. Já o Vertuo usa cápsulas maiores, com um código de barras que a máquina lê para calibrar automaticamente a extração, e prepara desde um espresso até uma caneca de 535 ml, mas só funciona com cápsulas originais Vertuo, porque o sistema de leitura é fechado.
+    </p>
+    <p class="text-slate-700 leading-relaxed mb-4">
+      Um modelo de entrada bastante procurado por quem tem pouco espaço é a Essenza Mini, com reservatório de 600 ml, pressão de 19 bar e desligamento automático depois de 9 minutos parada. Ela prepara apenas espresso e lungo, sem a variedade de bebidas da Dolce Gusto.
+    </p>
+    <p class="text-slate-700 leading-relaxed mb-10">
+      O preço da cápsula original Nespresso costuma ficar próximo de R$ 3,20 por unidade, vendida em caixas de 50 ou 100 no site oficial da marca, valor que também varia com o sabor e a intensidade escolhidos. É mais caro que a cápsula da Dolce Gusto na conta unitária, mas quem prioriza o espresso puro costuma justificar a diferença pela consistência da extração.
+    </p>
+
+    <!-- Tabela comparativa -->
+    <h2 id="tabela-comparativa" class="text-2xl font-black text-slate-900 mt-10 mb-4">Tabela comparativa direta</h2>
+    <p class="text-slate-700 leading-relaxed mb-5">
+      Os valores de preço são aproximados, baseados em pesquisa de mercado feita em agosto de 2026, e podem mudar a qualquer momento. Vale sempre conferir o valor atual direto no site da marca ou do varejista antes de fechar a compra.
+    </p>
+    <div class="overflow-x-auto mb-6">
+      <table class="w-full text-sm border-collapse">
+        <thead>
+          <tr class="bg-slate-100">
+            <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Critério</th>
+            <th class="text-left px-4 py-3 font-bold text-orange-600 border border-slate-200">Dolce Gusto</th>
+            <th class="text-left px-4 py-3 font-bold text-blue-700 border border-slate-200">Nespresso</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="bg-white">
+            <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Preço médio da máquina de entrada</td>
+            <td class="px-4 py-3 text-slate-600 border border-slate-200">Aproximadamente R$ 400 a R$ 700</td>
+            <td class="px-4 py-3 text-slate-600 border border-slate-200">Aproximadamente R$ 400 a R$ 500</td>
+          </tr>
+          <tr class="bg-slate-50">
+            <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Preço médio da cápsula</td>
+            <td class="px-4 py-3 text-slate-600 border border-slate-200">Aproximadamente R$ 2,50 a R$ 3,50</td>
+            <td class="px-4 py-3 text-slate-600 border border-slate-200">Aproximadamente R$ 3,20</td>
+          </tr>
+          <tr class="bg-white">
+            <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Variedade de bebidas</td>
+            <td class="px-4 py-3 text-slate-600 border border-slate-200">Café, cappuccino, latte, chocolate, chá, bebidas geladas</td>
+            <td class="px-4 py-3 text-slate-600 border border-slate-200">Foco em espresso e lungo (linha Vertuo amplia para porções maiores)</td>
+          </tr>
+          <tr class="bg-slate-50">
+            <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Material da cápsula</td>
+            <td class="px-4 py-3 text-slate-600 border border-slate-200">Plástico (papel compostável na linha NEO)</td>
+            <td class="px-4 py-3 text-slate-600 border border-slate-200">Alumínio</td>
+          </tr>
+          <tr class="bg-white">
+            <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Reciclagem</td>
+            <td class="px-4 py-3 text-slate-600 border border-slate-200">Sem programa de coleta tão estruturado no Brasil, fora a linha NEO compostável</td>
+            <td class="px-4 py-3 text-slate-600 border border-slate-200">Programa próprio com centenas de pontos de coleta, envio pelos Correios e coleta domiciliar em parte da Grande São Paulo</td>
+          </tr>
+          <tr class="bg-slate-50">
+            <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Compacidade</td>
+            <td class="px-4 py-3 text-slate-600 border border-slate-200">Modelos compactos como a Mini Me</td>
+            <td class="px-4 py-3 text-slate-600 border border-slate-200">Essenza Mini é um dos modelos mais compactos da categoria</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="text-slate-600 text-sm leading-relaxed mb-10 -mt-2">Nível de ruído não entrou na tabela por falta de dado oficial comparável entre as duas marcas: avaliações de usuários indicam nível parecido com outros eletrodomésticos de cozinha nas duas.</p>
+
+    <!-- Qual escolher para apartamento -->
+    <h2 id="qual-escolher-apartamento" class="text-2xl font-black text-slate-900 mt-10 mb-4">Qual escolher para apartamento pequeno</h2>
+    <p class="text-slate-700 leading-relaxed mb-4">
+      Em apartamento pequeno, três critérios pesam mais do que qualquer ficha técnica: o espaço livre na bancada, o tipo de bebida que a pessoa realmente bebe no dia a dia e o custo por xícara no longo prazo.
+    </p>
+    <p class="text-slate-700 leading-relaxed mb-4">
+      Sobre espaço, as duas marcas têm modelos de entrada compactos, então esse ponto costuma empatar. A Mini Me da Dolce Gusto e a Essenza Mini da Nespresso foram pensadas justamente para cozinhas pequenas e cabem em cantos apertados de bancada.
+    </p>
+    <p class="text-slate-700 leading-relaxed mb-4">
+      O que realmente separa as duas é o hábito de consumo. Quem bebe só espresso puro, sem variação, tende a pagar por uma versatilidade que não vai usar se escolher a Dolce Gusto. Por outro lado, quem gosta de intercalar café com cappuccino, chocolate quente ou uma bebida gelada de vez em quando encontra mais opções no sistema da Nestlé.
+    </p>
+    <p class="text-slate-700 leading-relaxed mb-10">
+      No custo por xícara, a Dolce Gusto tende a sair mais barata no fechamento do mês, já que a cápsula custa menos e ainda existem opções compatíveis de outras marcas para reduzir o valor ainda mais. A Nespresso custa um pouco mais por cápsula, mas quem já usou costuma apontar a extração mais consistente como o fator que compensa a diferença, principalmente para quem bebe várias xícaras de espresso por dia.
+    </p>
+
+    <!-- Prós e contras -->
+    <h2 id="pros-contras" class="text-2xl font-black text-slate-900 mt-10 mb-4">Prós e contras de cada sistema</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10 text-sm">
+      <div class="border border-slate-200 rounded-2xl p-5">
+        <p class="font-bold text-slate-900 mb-3">Dolce Gusto</p>
+        <p class="font-semibold text-slate-800 mb-2">Prós</p>
+        <ul class="space-y-1 text-slate-600 mb-4">
+          <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Variedade grande de bebidas em uma única máquina</li>
+          <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Cápsula mais barata</li>
+          <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Boa oferta de cápsulas compatíveis de outras marcas</li>
+          <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Máquinas de entrada com preço acessível</li>
+        </ul>
+        <p class="font-semibold text-slate-800 mb-2">Contras</p>
+        <ul class="space-y-1 text-slate-600">
+          <li class="flex items-start gap-2"><span class="text-slate-400 font-bold mt-0.5">-</span> Cápsulas de plástico na maior parte da linha</li>
+          <li class="flex items-start gap-2"><span class="text-slate-400 font-bold mt-0.5">-</span> Rede de reciclagem menos estruturada no Brasil</li>
+          <li class="flex items-start gap-2"><span class="text-slate-400 font-bold mt-0.5">-</span> Qualidade do espresso puro costuma ficar abaixo da Nespresso, segundo avaliações de quem usa os dois sistemas</li>
+        </ul>
+      </div>
+      <div class="border border-slate-200 rounded-2xl p-5">
+        <p class="font-bold text-slate-900 mb-3">Nespresso</p>
+        <p class="font-semibold text-slate-800 mb-2">Prós</p>
+        <ul class="space-y-1 text-slate-600 mb-4">
+          <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Extração mais consistente para espresso e lungo</li>
+          <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Cápsula de alumínio reciclável</li>
+          <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Programa de reciclagem estruturado no Brasil</li>
+          <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Design compacto e sofisticado</li>
+        </ul>
+        <p class="font-semibold text-slate-800 mb-2">Contras</p>
+        <ul class="space-y-1 text-slate-600">
+          <li class="flex items-start gap-2"><span class="text-slate-400 font-bold mt-0.5">-</span> Menos variedade de bebidas prontas na linha Original</li>
+          <li class="flex items-start gap-2"><span class="text-slate-400 font-bold mt-0.5">-</span> Cápsula mais cara na comparação direta</li>
+          <li class="flex items-start gap-2"><span class="text-slate-400 font-bold mt-0.5">-</span> Sistema Vertuo é fechado, não aceita cápsula de terceiros</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Erros comuns -->
+    <h2 id="erros-comuns" class="text-2xl font-black text-slate-900 mt-10 mb-4">Erros comuns na hora de escolher</h2>
+    <ul class="list-disc list-inside space-y-2 text-slate-700 mb-10 ml-2">
+      <li><strong>Escolher pela máquina mais barata sem calcular o custo mensal da cápsula.</strong> Uma máquina de entrada mais em conta pode sair mais cara depois de um ano de uso se a cápsula for cara e o consumo for alto.</li>
+      <li><strong>Achar que dá para usar cápsula de qualquer marca em qualquer máquina.</strong> A compatibilidade varia por modelo e por sistema (o Original da Nespresso aceita cápsula de terceiros, o Vertuo não), então vale checar antes de comprar um pacote grande.</li>
+      <li><strong>Ignorar o hábito real de consumo.</strong> Comprar uma Nespresso Original achando que vai preparar cappuccino no dia a dia é um erro comum, porque essa função não existe por padrão nesse sistema.</li>
+      <li><strong>Não considerar o espaço de armazenamento das cápsulas.</strong> Em cozinha pequena, uma caixa grande de cápsulas ocupa espaço de armário que muita gente esquece de planejar.</li>
+      <li><strong>Deixar a reciclagem de lado na decisão.</strong> Quem se importa com o descarte correto deve levar em conta que a Nespresso tem hoje uma rede de coleta mais ampla no país.</li>
+    </ul>
+
+    <!-- FAQ -->
+    <h2 id="faq" class="text-2xl font-black text-slate-900 mb-6">Perguntas frequentes sobre Dolce Gusto ou Nespresso</h2>
+    <div class="space-y-3 mb-10">
+      <details class="border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+          Dolce Gusto ou Nespresso, qual é mais barata no dia a dia?
+          <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+          No fechamento do mês, a Dolce Gusto costuma sair mais barata, porque a cápsula tem preço médio menor e ainda existem opções compatíveis de outras marcas para economizar mais.
+        </div>
+      </details>
+      <details class="border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+          Qual das duas tem café de melhor qualidade?
+          <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+          Para quem bebe espresso puro, a Nespresso costuma ser considerada superior pela pressão de extração mais alta e pela consistência da bebida. Para quem quer variedade de sabores e tipos de bebida, a Dolce Gusto se destaca.
+        </div>
+      </details>
+      <details class="border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+          Dá para usar cápsula de outra marca nas duas cafeteiras?
+          <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+          Na linha Nespresso Original, sim, existem cápsulas compatíveis de outras marcas no mercado. No sistema Vertuo, não, porque a leitura do código de barras é exclusiva da Nespresso. Na Dolce Gusto também existem cápsulas compatíveis, de marcas como Gimoka e Bicafé, desde que sigam o mesmo formato.
+        </div>
+      </details>
+      <details class="border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+          Qual cafeteira ocupa menos espaço na bancada?
+          <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+          As duas marcas têm modelos compactos pensados para cozinha pequena, a Mini Me na Dolce Gusto e a Essenza Mini na Nespresso. A diferença de tamanho entre as duas é pequena, então esse não costuma ser o fator decisivo.
+        </div>
+      </details>
+      <details class="border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+          É verdade que a cápsula da Nespresso é mais sustentável?
+          <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+          A cápsula de alumínio da Nespresso é reciclável e a marca mantém um programa de coleta estruturado no Brasil, com centenas de pontos de coleta. A Dolce Gusto ainda usa cápsula de plástico na maior parte da linha, com exceção da linha NEO, que já usa cápsula de papel compostável.
+        </div>
+      </details>
+      <details class="border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+          Vale a pena pagar mais caro em uma máquina com mais funções?
+          <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+          Só vale a pena se a pessoa realmente for usar essas funções extras, como preparo de bebidas geladas ou personalização pelo aplicativo. Se o uso for só café do dia a dia, um modelo de entrada resolve bem em qualquer uma das duas marcas.
+        </div>
+      </details>
+    </div>
+    <script type="application/ld+json" set:html={JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Dolce Gusto ou Nespresso, qual é mais barata no dia a dia?","acceptedAnswer":{"@type":"Answer","text":"No fechamento do mês, a Dolce Gusto costuma sair mais barata, porque a cápsula tem preço médio menor e ainda existem opções compatíveis de outras marcas para economizar mais."}},{"@type":"Question","name":"Qual das duas tem café de melhor qualidade?","acceptedAnswer":{"@type":"Answer","text":"Para quem bebe espresso puro, a Nespresso costuma ser considerada superior pela pressão de extração mais alta e pela consistência da bebida. Para quem quer variedade de sabores e tipos de bebida, a Dolce Gusto se destaca."}},{"@type":"Question","name":"Dá para usar cápsula de outra marca nas duas cafeteiras?","acceptedAnswer":{"@type":"Answer","text":"Na linha Nespresso Original, sim, existem cápsulas compatíveis de outras marcas. No sistema Vertuo, não, porque a leitura do código de barras é exclusiva da Nespresso. Na Dolce Gusto também existem cápsulas compatíveis, desde que sigam o mesmo formato."}},{"@type":"Question","name":"Qual cafeteira ocupa menos espaço na bancada?","acceptedAnswer":{"@type":"Answer","text":"As duas marcas têm modelos compactos pensados para cozinha pequena, a Mini Me na Dolce Gusto e a Essenza Mini na Nespresso. A diferença de tamanho entre as duas é pequena."}},{"@type":"Question","name":"É verdade que a cápsula da Nespresso é mais sustentável?","acceptedAnswer":{"@type":"Answer","text":"A cápsula de alumínio da Nespresso é reciclável e a marca mantém um programa de coleta estruturado no Brasil. A Dolce Gusto ainda usa cápsula de plástico na maior parte da linha, com exceção da linha NEO, que já usa papel compostável."}},{"@type":"Question","name":"Vale a pena pagar mais caro em uma máquina com mais funções?","acceptedAnswer":{"@type":"Answer","text":"Só vale a pena se a pessoa realmente for usar essas funções extras, como preparo de bebidas geladas ou personalização pelo aplicativo. Se o uso for só café do dia a dia, um modelo de entrada resolve bem em qualquer uma das duas marcas."}}]})} />
+
+    <h2 class="text-xl font-black text-slate-900 mb-3">Qual vale mais a pena, afinal?</h2>
+    <p class="text-slate-700 leading-relaxed mb-3">
+      Não existe uma resposta única, porque as duas marcas resolvem problemas diferentes. Quem quer variedade de bebidas e economia no dia a dia tende a se dar melhor com a Dolce Gusto. Quem prioriza um espresso mais consistente e não se importa em pagar um pouco mais por cápsula encontra na Nespresso a experiência mais próxima de uma cafeteria.
+    </p>
+    <p class="text-slate-700 leading-relaxed mb-10">
+      O ideal antes de decidir é olhar para o que realmente se bebe em casa: se o dia a dia pede café puro forte, um cappuccino esporádico, chocolate quente no inverno, ou uma mistura de tudo isso. Essa resposta simples costuma valer mais do que qualquer comparação de ficha técnica.
+    </p>
+
+    <!-- Leia também -->
+    <p style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#c2410c;margin:24px 0 12px;">Leia também:</p>
+    <div style="display:flex;flex-direction:column;gap:12px;">
+      <a href="/como-escolher-cafeteira" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+        <div style="width:200px;flex-shrink:0;">
+          <img src="/images/cafeteira-guia/capa-como-escolher-cafeteira.webp" alt="Como escolher cafeteira" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+        </div>
+        <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+          <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+          <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Como Escolher Cafeteira: Cápsula, Expresso ou Coador?</span>
+        </div>
+      </a>
+    </div>
+
+  </div>
+)}
 
     <!-- Calculadora de consumo de energia, travada na categoria do artigo -->
     {CALCULADORA_POR_SLUG[slug as string] && (
