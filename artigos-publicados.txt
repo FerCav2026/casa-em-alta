@@ -141,3 +141,17 @@ RASCUNHOS AGUARDANDO REVISAO (1)
     pilar (como-escolher-aspirador-de-po), robos-aspirador-custo-beneficio e
     robo-aspirador-barato-shopee. Falta: estrategista-blog auditar, Fernanda revisar
     o preview do Vercel e aprovar o merge pra main pra publicar de verdade.
+
+=====================================
+NOVO (17/08/2026)
+
+38. Dolce Gusto ou Nespresso: Qual Vale Mais a Pena para Apartamento?
+    Slug: dolce-gusto-vs-nespresso | Categoria: Comparativo | Publicado: 17/08/2026
+    Commit: fff934a | Satelite do cluster Cafeteiras, comparacao de sistema (nao de
+    modelo especifico), sem cards de afiliado. Link retroativo ativado no pilar
+    como-escolher-cafeteira.
+
+OBS: esta lista estava desatualizada antes desta entrada (o artigo #37 Xiaomi
+listado acima como rascunho ja foi publicado de verdade em 10/08, e o pilar de
+Cafeteiras tambem ja saiu em 14/08) - contagem completa precisa ser reconferida
+numa proxima sessao, nao confiar so nos numeros deste arquivo.
