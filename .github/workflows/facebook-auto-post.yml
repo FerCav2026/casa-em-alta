@@ -2,8 +2,9 @@ name: Publica artigos novos no Facebook
 
 on:
   schedule:
-    # roda a cada 3 horas
-    - cron: '0 */3 * * *'
+    # roda 1x por dia, às 18h de Brasília (21h UTC). Só publica de fato nos dias
+    # em que algum blog tiver artigo novo — nos outros dias não faz nada.
+    - cron: '0 21 * * *'
   workflow_dispatch: {}
 
 permissions:
