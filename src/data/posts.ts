@@ -443,6 +443,16 @@ export const posts: Post[] = [
     categoria: 'comparativos',
     categoriaLabel: 'Comparativo',
     categoriaColor: 'bg-blue-100 text-blue-700',
+  },
+  {
+    slug: 'como-escolher-panela-pressao-eletrica',
+    titulo: 'Como Escolher Panela de Pressão Elétrica: Guia Completo',
+    resumo: 'Multicooker ou panela simples, capacidade, segurança e potência: os critérios técnicos para não errar na hora de comprar.',
+    tempo: '9 min de leitura',
+    imagem: '/images/panela-guia/capa-como-escolher-panela-pressao-eletrica.webp',
+    categoria: 'guias-de-compra',
+    categoriaLabel: 'Guia de Compra',
+    categoriaColor: 'bg-purple-100 text-purple-700',
   }
 ];
 
