@@ -66,7 +66,7 @@ export const posts: Post[] = [
   },
   {
     slug: 'airfryer-philips-vs-mondial',
-    titulo: 'Airfryer Philips vs Mondial: Qual Comprar?',
+    titulo: 'Airfryer Philips ou Mondial: Qual Comprar em 2026?',
     resumo: 'Comparamos consumo de energia, capacidade, facilidade de limpeza e resultado final. A resposta vai te surpreender.',
     tempo: '6 min de leitura',
     imagem: '/images/airfryer/capa-airfryer.webp',
@@ -96,7 +96,7 @@ export const posts: Post[] = [
   },
   {
     slug: 'panela-pressao-eletrica-review',
-    titulo: 'Panela de Pressão Elétrica Vale a Pena? Review de 4 Modelos Testados',
+    titulo: 'Panela de Pressão Elétrica 2026: Vale a Pena Comprar?',
     resumo: 'Usamos por 6 meses e contamos tudo: pontos fortes, limitações e se realmente economiza tempo na cozinha.',
     tempo: '7 min de leitura',
     imagem: '/images/panela/capa-panela.webp',
@@ -106,7 +106,7 @@ export const posts: Post[] = [
   },
   {
     slug: 'itens-casa-30-reais-amazon',
-    titulo: '15 Itens Incríveis para Casa por até R$ 30 na Amazon',
+    titulo: '15 Itens de Casa por Até R$30 na Amazon (2026)',
     resumo: 'Garimpos que valem muito mais do que custam. Atualizamos essa lista com os melhores achados.',
     tempo: '4 min de leitura',
     imagem: '/images/itens30/capa-itens30.webp',
@@ -156,7 +156,7 @@ export const posts: Post[] = [
   },
   {
     slug: 'vaporizador-de-roupas-portatil',
-    titulo: 'Vaporizador de Roupas Portátil: os Melhores para Comprar em 2026',
+    titulo: 'Vaporizador de Roupas Portátil: Vale a Pena em 2026?',
     resumo: 'Os 4 melhores vaporizadores de roupas portáteis de 2026 com fichas técnicas, prós e contras.',
     tempo: '8 min de leitura',
     imagem: '/images/vaporizador/capa-vaporizador.webp',
@@ -186,7 +186,7 @@ export const posts: Post[] = [
   },
   {
     slug: 'forno-eletrico-portatil-vale-a-pena',
-    titulo: 'Forno Elétrico Portátil Vale a Pena Ter em Casa? Review Honesto Depois de Anos de Uso',
+    titulo: 'Forno Elétrico Portátil 2026: Vale a Pena ou Não?',
     resumo: 'Tenho um forno elétrico Fischer há mais de 5 anos e ele já mudou de apartamento comigo. Conto tudo: potência real, consumo de energia, o que faz bem e para quem vale a pena.',
     tempo: '9 min de leitura',
     imagem: '/images/forno-eletrico/capa-forno-eletrico.webp',
