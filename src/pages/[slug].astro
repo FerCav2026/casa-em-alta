@@ -293,6 +293,13 @@ const posts: Record<string, { titulo: string; descricao: string; categoria: stri
     dataCriacao: '2026-08-20',
     dataModificacao: '2026-08-20',
   },
+  'lava-loucas-compacta-vale-a-pena-apartamento': {
+    titulo: 'Lava-louças Compacta Vale a Pena para Apartamento?',
+    descricao: 'Lava-louças compacta vale a pena para apartamento? Compare com lavar na mão, veja consumo de água, energia e dimensões, e descubra quem se beneficia.',
+    categoria: 'Guia de Compra',
+    dataCriacao: '2026-08-21',
+    dataModificacao: '2026-08-21',
+  },
 };
 
 export function getStaticPaths() {
@@ -336,6 +343,7 @@ export function getStaticPaths() {
     'como-escolher-cafeteira': {},
     'dolce-gusto-vs-nespresso': {},
     'como-escolher-panela-pressao-eletrica': {},
+    'lava-loucas-compacta-vale-a-pena-apartamento': {},
   }).map((slug) => ({ params: { slug } }));
 }
 
@@ -407,6 +415,7 @@ const isXiaomiS40H40 = slug === 'xiaomi-s40-ou-h40-robo-aspirador';
 const isComoEscolherCafeteira = slug === 'como-escolher-cafeteira';
 const isDolceGustoOuNespresso = slug === 'dolce-gusto-vs-nespresso';
 const isComoEscolherPanelaPressao = slug === 'como-escolher-panela-pressao-eletrica';
+const isLavaLoucasCompactaGuia = slug === 'lava-loucas-compacta-vale-a-pena-apartamento';
 
 const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isAirfryer ? '/images/airfryer/capa-airfryer.webp'
@@ -447,6 +456,7 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isComoEscolherCafeteira ? '/images/cafeteira-guia/capa-como-escolher-cafeteira.webp'
   : isDolceGustoOuNespresso ? '/images/dolce-gusto-nespresso/capa-dolce-gusto-nespresso.webp'
   : isComoEscolherPanelaPressao ? '/images/panela-guia/capa-como-escolher-panela-pressao-eletrica.webp'
+  : isLavaLoucasCompactaGuia ? '/images/lava-loucas-guia/capa-lava-loucas-compacta-apartamento.webp'
   : undefined;
 ---
 
@@ -17402,6 +17412,403 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
             <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
               <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
               <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Panela de Pressão Elétrica Vale a Pena? Review de 4 Modelos Testados</span>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    )}
+
+    {isLavaLoucasCompactaGuia && (
+      <div>
+
+        <!-- Capa -->
+        <div class="rounded-2xl overflow-hidden mb-8 shadow-md">
+          <img
+            src="/images/lava-loucas-guia/capa-lava-loucas-compacta-apartamento.webp"
+            alt="Lava-louças compacta sobre bancada de cozinha pequena de apartamento"
+            class="w-full h-auto object-cover"
+            loading="eager"
+          />
+        </div>
+
+        <!-- Introdução -->
+        <div class="bg-orange-50 border border-orange-100 rounded-2xl p-6 mb-8">
+          <p class="text-slate-800 text-base leading-relaxed mb-3">
+            Se você mora em apartamento pequeno, já deve ter passado pela mesma dúvida: vale a pena comprar uma lava-louças compacta, ou é só mais um aparelho ocupando espaço na cozinha? A pergunta aparece toda vez que alguém posta uma foto do modelo compacto nas redes sociais e a curiosidade bate.
+          </p>
+          <p class="text-slate-800 text-base leading-relaxed mb-3">
+            Eu mesma uso uma lava-louças compacta há meses no meu apê e posso falar com propriedade sobre o que muda na rotina, porque testei na prática, não só no papel. Já publiquei aqui a review completa da <a href="/lava-loucas-midea-8-servicos-review" class="text-purple-600 font-semibold hover:underline">Midea 8 Serviços</a>, com consumo real de água e energia depois de meses de uso. Este texto aqui é diferente: não é sobre um modelo específico, é sobre a categoria inteira. Quando vale a pena ter uma lava-louças compacta, quando não vale, e o que considerar antes de decidir.
+          </p>
+          <p class="text-slate-800 text-base leading-relaxed">
+            Sou Claudia Castro, criadora do Casa em Alta. Vou usar a minha experiência com a lava-louças compacta como exemplo prático ao longo do texto, mas o objetivo aqui é te ajudar a decidir se essa categoria de aparelho faz sentido para o seu apartamento, independente da marca ou modelo que você escolher depois.
+          </p>
+        </div>
+
+        <!-- Índice -->
+        <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 mb-10">
+          <p class="text-slate-800 font-bold text-base mb-3">Neste artigo:</p>
+          <ul class="space-y-2 text-sm text-slate-700">
+            <li><a href="#vale-a-pena" class="text-purple-600 hover:underline">→ Lava-louças compacta vale a pena? Resposta direta</a></li>
+            <li><a href="#lavar-na-mao" class="text-purple-600 hover:underline">→ Lava-louças compacta ou lavar na mão: comparação real</a></li>
+            <li><a href="#quem-se-beneficia" class="text-purple-600 hover:underline">→ Quem realmente se beneficia de uma lava-louças compacta</a></li>
+            <li><a href="#capacidade" class="text-purple-600 hover:underline">→ Capacidade em serviços e talheres: quanto rende de verdade</a></li>
+            <li><a href="#consumo" class="text-purple-600 hover:underline">→ Consumo de água e energia: o que esperar</a></li>
+            <li><a href="#dimensoes" class="text-purple-600 hover:underline">→ Dimensões que cabem em cozinha pequena</a></li>
+            <li><a href="#erros-comuns" class="text-purple-600 hover:underline">→ Erros comuns na hora de comprar</a></li>
+            <li><a href="#checklist" class="text-purple-600 hover:underline">→ Checklist final antes de comprar</a></li>
+            <li><a href="#faq" class="text-purple-600 hover:underline">→ Perguntas frequentes</a></li>
+          </ul>
+        </div>
+
+        <!-- Vale a pena -->
+        <h2 id="vale-a-pena" class="text-2xl font-bold text-slate-900 mb-4">Lava-louças compacta vale a pena? Resposta direta</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Depende de quanto tempo você gasta lavando louça hoje e de quanto isso pesa na sua rotina. Para quem mora sozinho, em casal, ou divide o apartamento com mais uma ou duas pessoas, a lava-louças compacta costuma valer a pena. Ela devolve um tempo que seria gasto na pia, economiza água de verdade e resolve a louça do dia a dia sem drama.
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          Para famílias grandes que cozinham para várias pessoas todos os dias, o cálculo muda um pouco. A capacidade compacta pode não dar conta em um único ciclo, o que significa rodar a máquina duas vezes ou voltar a lavar parte da louça na mão de qualquer jeito. Nesse caso, vale considerar um modelo com capacidade maior, já fora da categoria compacta. O restante deste guia explica os critérios para você decidir com mais segurança qual é o seu caso.
+        </p>
+
+        <!-- Lavar na mão -->
+        <h2 id="lavar-na-mao" class="text-2xl font-bold text-slate-900 mb-4">Lava-louças compacta ou lavar na mão: comparação real</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          A maior resistência de quem ainda não tem lava-louças costuma ser achar que lavar na mão é mais rápido e mais barato. Na prática, os números contam outra história, principalmente no consumo de água.
+        </p>
+        <div class="overflow-x-auto mb-4">
+          <table class="w-full text-sm border-collapse rounded-xl overflow-hidden">
+            <thead>
+              <tr class="bg-slate-800 text-white">
+                <th class="py-3 px-4 text-left font-bold">Critério</th>
+                <th class="py-3 px-4 text-left font-bold">Lava-louças compacta</th>
+                <th class="py-3 px-4 text-left font-bold">Lavar na mão</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b border-slate-100 bg-white">
+                <td class="py-3 px-4 font-semibold text-slate-800">Consumo de água por lavagem</td>
+                <td class="py-3 px-4 text-slate-600">Entre 6 e 10 litros por ciclo</td>
+                <td class="py-3 px-4 text-slate-600">Entre 30 e 40 litros com torneira aberta</td>
+              </tr>
+              <tr class="border-b border-slate-100 bg-slate-50">
+                <td class="py-3 px-4 font-semibold text-slate-800">Tempo dedicado</td>
+                <td class="py-3 px-4 text-slate-600">Poucos minutos para carregar e ligar</td>
+                <td class="py-3 px-4 text-slate-600">15 a 40 minutos, dependendo da quantidade</td>
+              </tr>
+              <tr class="border-b border-slate-100 bg-white">
+                <td class="py-3 px-4 font-semibold text-slate-800">Higienização</td>
+                <td class="py-3 px-4 text-slate-600">Água quente, remove mais gordura e bactérias</td>
+                <td class="py-3 px-4 text-slate-600">Depende da temperatura da água e do esforço manual</td>
+              </tr>
+              <tr class="border-b border-slate-100 bg-slate-50">
+                <td class="py-3 px-4 font-semibold text-slate-800">Custo inicial</td>
+                <td class="py-3 px-4 text-slate-600">Modelos compactos custam entre R$ 1.500 e R$ 2.500</td>
+                <td class="py-3 px-4 text-slate-600">Zero, só esponja e detergente</td>
+              </tr>
+              <tr class="border-b border-slate-100 bg-white">
+                <td class="py-3 px-4 font-semibold text-slate-800">Custo mensal extra</td>
+                <td class="py-3 px-4 text-slate-600">Poucos reais na conta de luz, compensados na água</td>
+                <td class="py-3 px-4 text-slate-600">Sem custo elétrico, mas mais água na conta</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="py-3 px-4 font-semibold text-slate-800">Espaço na cozinha</td>
+                <td class="py-3 px-4 text-slate-600">Ocupa bancada ou nicho fixo</td>
+                <td class="py-3 px-4 text-slate-600">Nenhum espaço extra</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          No caso da lava-louças compacta que uso, o consumo é de 8 litros por ciclo, contra os 30 a 40 litros que a maioria das pessoas gasta lavando com a torneira aberta. É uma diferença de quase 5 vezes. Já na conta de luz, o acréscimo fica entre R$ 6 e R$ 9 por mês usando o aparelho uma vez ao dia, um valor que na prática nem aparece na fatura perto do que se economiza de água.
+        </p>
+
+        <!-- Quem se beneficia -->
+        <h2 id="quem-se-beneficia" class="text-2xl font-bold text-slate-900 mb-6">Quem realmente se beneficia de uma lava-louças compacta</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+          <div class="border border-slate-200 rounded-2xl p-5">
+            <h3 class="font-bold text-slate-900 text-base mb-3">Vale muito a pena</h3>
+            <ul class="space-y-1.5 text-sm text-slate-700">
+              <li class="flex gap-2"><span class="text-green-500 font-bold">✓</span>Quem mora sozinho ou em casal</li>
+              <li class="flex gap-2"><span class="text-green-500 font-bold">✓</span>Quem trabalha fora o dia inteiro e chega tarde em casa</li>
+              <li class="flex gap-2"><span class="text-green-500 font-bold">✓</span>Quem tem dor nas mãos, nas costas ou lesão por esforço repetitivo</li>
+              <li class="flex gap-2"><span class="text-green-500 font-bold">✓</span>Quem cozinha com frequência e suja muita louça</li>
+            </ul>
+          </div>
+          <div class="border border-slate-200 rounded-2xl p-5">
+            <h3 class="font-bold text-slate-900 text-base mb-3">Vale com ressalva ou não compensa</h3>
+            <ul class="space-y-1.5 text-sm text-slate-700">
+              <li class="flex gap-2"><span class="text-red-400 font-bold">✗</span>Famílias com 4 pessoas ou mais que cozinham todos os dias</li>
+              <li class="flex gap-2"><span class="text-red-400 font-bold">✗</span>Quem já lava pouca louça e não se incomoda com a pia</li>
+              <li class="flex gap-2"><span class="text-red-400 font-bold">✗</span>Cozinha sem nenhum espaço livre de bancada</li>
+            </ul>
+          </div>
+        </div>
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          Um detalhe que ajuda a decidir: se hoje a louça se acumula na pia até alguém "ter tempo" de lavar, é sinal de que uma lava-louças compacta provavelmente vai resolver um problema real, não só um capricho.
+        </p>
+
+        <!-- Capacidade -->
+        <h2 id="capacidade" class="text-2xl font-bold text-slate-900 mb-4">Capacidade em serviços e talheres: quanto rende de verdade</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Lava-louças são vendidas por "serviços", e esse número confunde quem está comprando pela primeira vez. Um serviço equivale ao conjunto de um prato raso, um prato fundo, um prato de sobremesa, um copo, uma xícara com pires e os talheres correspondentes. Não é a mesma coisa que "peças".
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Os modelos compactos do mercado brasileiro variam entre 6 e 10 serviços. É uma capacidade pensada para quem lava louça uma ou duas vezes ao dia, não para acumular a semana inteira.
+        </p>
+        <ul class="space-y-2 text-sm text-slate-700 mb-4">
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>1 a 2 pessoas:</strong> a faixa de 6 a 8 serviços costuma sobrar, dá para lavar a louça de um dia inteiro em um único ciclo.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>3 pessoas:</strong> 8 a 10 serviços atendem bem no dia a dia, mas em dias de mais louça, como visita ou almoço maior, pode ser necessário rodar dois ciclos.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>4 pessoas ou mais:</strong> vale considerar um modelo de capacidade maior, entre 10 e 14 serviços, já fora da categoria compacta.</span></li>
+        </ul>
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          No meu caso, uso um modelo de 8 serviços em apartamento com mais uma pessoa em casa, e dá conta tranquilamente da rotina com um ciclo por dia. A louça que costuma ficar de fora é panela muito grande, que nem sempre cabe na cesta de um modelo compacto.
+        </p>
+
+        <!-- Consumo -->
+        <h2 id="consumo" class="text-2xl font-bold text-slate-900 mb-4">Consumo de água e energia: o que esperar</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Esse costuma ser o ponto que mais pesa na decisão, e também o que mais gera economia real ao longo dos meses.
+        </p>
+        <div class="overflow-x-auto mb-4">
+          <table class="w-full text-sm border-collapse rounded-xl overflow-hidden">
+            <thead>
+              <tr class="bg-slate-800 text-white">
+                <th class="py-3 px-4 text-left font-bold">Item</th>
+                <th class="py-3 px-4 text-left font-bold">Faixa nos modelos compactos</th>
+                <th class="py-3 px-4 text-left font-bold">O que muda</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b border-slate-100 bg-white">
+                <td class="py-3 px-4 font-semibold text-slate-800">Água por ciclo</td>
+                <td class="py-3 px-4 text-slate-600">6 a 10 litros</td>
+                <td class="py-3 px-4 text-slate-600">Ciclo ECO usa menos, ciclo intensivo usa mais</td>
+              </tr>
+              <tr class="border-b border-slate-100 bg-slate-50">
+                <td class="py-3 px-4 font-semibold text-slate-800">Energia por ciclo</td>
+                <td class="py-3 px-4 text-slate-600">0,6 a 0,9 kWh</td>
+                <td class="py-3 px-4 text-slate-600">Aquecimento da água é o que mais consome</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="py-3 px-4 font-semibold text-slate-800">Acréscimo mensal (uso diário)</td>
+                <td class="py-3 px-4 text-slate-600">R$ 6 a R$ 12 na conta de luz</td>
+                <td class="py-3 px-4 text-slate-600">Varia com a tarifa da sua distribuidora</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          O ciclo ECO é o que compensa mais no dia a dia: mais lento, mas usa menos água e energia, e resolve bem a louça comum. Reserve o ciclo intensivo, com água mais quente, para gordura pesada ou quando quiser uma higienização mais funda, como depois de preparar carne ou frituras.
+        </p>
+
+        <!-- Dimensões -->
+        <h2 id="dimensoes" class="text-2xl font-bold text-slate-900 mb-4">Dimensões que cabem em cozinha pequena</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Um dos maiores medos de quem mora em apartamento pequeno é a lava-louças não caber em lugar nenhum. Os modelos compactos foram desenhados exatamente para esse cenário.
+        </p>
+        <ul class="space-y-2 text-sm text-slate-700 mb-4">
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Largura:</strong> em torno de 45 cm, cabe em bancadas onde uma máquina de lavar roupa também caberia.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Profundidade:</strong> entre 50 e 58 cm, próxima da profundidade padrão de um armário de cozinha.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Altura:</strong> entre 43 e 45 cm nos modelos de bancada, deixando espaço para usar o restante da bancada por cima.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Peso:</strong> costuma ficar entre 20 e 30 kg, leve o suficiente para reposicionar sozinho se precisar.</span></li>
+        </ul>
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          Deixe pelo menos 10 cm de espaço livre ao redor da máquina para ventilação. A instalação não exige encanador: a mangueira de entrada conecta direto na torneira com um adaptador, e a de saída vai para o ralo da pia. Em apartamentos, a pressão de água da rede geralmente é suficiente, mas se você mora em casa térrea ou andar baixo com pressão conhecidamente baixa, vale testar antes de comprar.
+        </p>
+
+        <!-- Erros comuns -->
+        <h2 id="erros-comuns" class="text-2xl font-bold text-slate-900 mb-6">Erros comuns na hora de comprar uma lava-louças compacta</h2>
+        <div class="space-y-4 mb-10">
+          <div class="flex gap-4 items-start">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-red-100 text-red-700 font-bold text-sm flex items-center justify-center">1</span>
+            <div>
+              <p class="font-semibold text-slate-800 text-sm mb-1">Escolher a capacidade errada</p>
+              <p class="text-slate-700 text-sm leading-relaxed">Comprar 6 serviços para uma família de 4 pessoas, ou pagar mais caro por 10 serviços morando sozinho e nunca usar a capacidade toda.</p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-start">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-red-100 text-red-700 font-bold text-sm flex items-center justify-center">2</span>
+            <div>
+              <p class="font-semibold text-slate-800 text-sm mb-1">Não checar a pressão de água da torneira</p>
+              <p class="text-slate-700 text-sm leading-relaxed">Pressão baixa pode fazer o ciclo demorar mais ou não concluir corretamente, um problema mais comum em casas térreas e prédios antigos.</p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-start">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-red-100 text-red-700 font-bold text-sm flex items-center justify-center">3</span>
+            <div>
+              <p class="font-semibold text-slate-800 text-sm mb-1">Ignorar o espaço de ventilação</p>
+              <p class="text-slate-700 text-sm leading-relaxed">Encostar a máquina direto na parede ou no armário sem os 10 cm recomendados pode causar superaquecimento e interromper o ciclo no meio.</p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-start">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-red-100 text-red-700 font-bold text-sm flex items-center justify-center">4</span>
+            <div>
+              <p class="font-semibold text-slate-800 text-sm mb-1">Achar que qualquer detergente serve</p>
+              <p class="text-slate-700 text-sm leading-relaxed">O detergente comum de lavar louça na mão forma espuma demais e pode vazar pela máquina. É preciso usar produto específico para lava-louças, em pó, gel ou tablete.</p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-start">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-red-100 text-red-700 font-bold text-sm flex items-center justify-center">5</span>
+            <div>
+              <p class="font-semibold text-slate-800 text-sm mb-1">Não verificar a assistência técnica da marca</p>
+              <p class="text-slate-700 text-sm leading-relaxed">Confirmar se a marca tem rede de assistência ativa no Brasil e venda de peças de reposição evita dor de cabeça se algo precisar de reparo depois.</p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-start">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-red-100 text-red-700 font-bold text-sm flex items-center justify-center">6</span>
+            <div>
+              <p class="font-semibold text-slate-800 text-sm mb-1">Esperar que substitua 100% da lavagem manual</p>
+              <p class="text-slate-700 text-sm leading-relaxed">Utensílios de madeira, panelas antiaderentes já arranhadas e panelas muito grandes continuam precisando ir para a pia, mesmo com a máquina em casa.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Checklist -->
+        <div class="bg-slate-900 text-white rounded-2xl p-7 mb-10" id="checklist">
+          <h2 class="text-xl font-bold mb-4">Checklist final antes de comprar</h2>
+          <ul class="space-y-2 text-slate-200 text-sm leading-relaxed">
+            <li>A capacidade em serviços é compatível com quantas pessoas moram na casa.</li>
+            <li>Já testei a pressão de água da torneira ou confirmei que a rede tem pressão suficiente.</li>
+            <li>Tenho pelo menos 45 cm de largura livre na bancada, com 10 cm extra para ventilação.</li>
+            <li>Sei que vou precisar comprar detergente específico para lava-louças, não o de lavar à mão.</li>
+            <li>Verifiquei se a marca escolhida tem assistência técnica ativa no Brasil.</li>
+            <li>Entendi que alguns itens, como madeira, antiaderente arranhado e panela muito grande, continuam indo para a pia.</li>
+            <li>Comparei o consumo de água e energia informado na ficha técnica antes de decidir.</li>
+          </ul>
+        </div>
+
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          Com esses critérios em mãos, já dá para decidir se a categoria faz sentido para o seu apartamento. Se você está organizando a lavanderia inteira do apê, também já falei aqui sobre <a href="/lava-e-seca-ou-secadora-apartamento" class="text-purple-600 font-semibold hover:underline">lava e seca ou secadora de roupas: qual compensa mais para apartamento</a> e sobre o <a href="/vaporizador-de-roupas-portatil" class="text-purple-600 font-semibold hover:underline">vaporizador de roupas portátil</a>, outro aparelho que ajuda a resolver tarefa doméstica em espaço pequeno.
+        </p>
+
+        <!-- FAQ -->
+        <h2 id="faq" class="text-2xl font-bold text-slate-900 mb-6">Perguntas frequentes sobre lava-louças compacta</h2>
+
+        <div class="space-y-3 mb-10">
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Lava-louças compacta realmente vale a pena para quem mora sozinho?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Sim, costuma ser um dos perfis que mais aproveita. Um modelo de 6 a 8 serviços dá conta da louça de um dia inteiro em um único ciclo, e a economia de água aparece rápido na conta, já que o consumo por ciclo é bem menor do que lavar na torneira aberta.
+            </div>
+          </details>
+
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Quantos litros de água uma lava-louças compacta gasta comparado a lavar na mão?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Os modelos compactos gastam entre 6 e 10 litros por ciclo. Lavar a mesma quantidade de louça na torneira aberta costuma consumir entre 30 e 40 litros, uma diferença de até 5 vezes a favor da máquina.
+            </div>
+          </details>
+
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Lava-louças compacta cabe em cozinha pequena de apartamento?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Sim, é justamente para isso que ela foi desenhada. Os modelos compactos têm em média 45 cm de largura, entre 50 e 58 cm de profundidade e 43 a 45 cm de altura, cabendo sobre a bancada sem precisar de embutimento.
+            </div>
+          </details>
+
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Vale a pena para família de 3 ou 4 pessoas?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Para 3 pessoas geralmente vale, com a ressalva de que em dias de mais louça pode ser necessário rodar dois ciclos. Para 4 pessoas ou mais que cozinham todos os dias, o mais indicado é considerar um modelo de capacidade maior, entre 10 e 14 serviços, já fora da faixa compacta.
+            </div>
+          </details>
+
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">A lava-louças compacta aumenta muito a conta de luz?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Não de forma perceptível. O consumo fica entre 0,6 e 0,9 kWh por ciclo, o que representa um acréscimo mensal de R$ 6 a R$ 12 usando a máquina uma vez ao dia. É um valor pequeno perto do que se economiza na conta de água.
+            </div>
+          </details>
+
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Dá para instalar a lava-louças compacta sem encanador?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Dá sim. A mangueira de entrada conecta direto na torneira usando um adaptador que costuma vir na caixa, e a mangueira de saída vai para o ralo da pia. A instalação completa leva menos de 30 minutos na maioria das cozinhas.
+            </div>
+          </details>
+
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Posso colocar qualquer louça e panela na lava-louças compacta?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Não. Utensílios de madeira ressecam e racham, panelas antiaderentes já arranhadas se deterioram mais rápido, e panelas muito grandes podem não caber na cesta de um modelo compacto. Esses itens continuam precisando de lavagem manual.
+            </div>
+          </details>
+        </div>
+
+        <!-- Schema FAQ -->
+        <script type="application/ld+json" set:html={JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Lava-louças compacta realmente vale a pena para quem mora sozinho?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Sim, costuma ser um dos perfis que mais aproveita. Um modelo de 6 a 8 serviços dá conta da louça de um dia inteiro em um único ciclo, e a economia de água aparece rápido na conta, já que o consumo por ciclo é bem menor do que lavar na torneira aberta." }
+            },
+            {
+              "@type": "Question",
+              "name": "Quantos litros de água uma lava-louças compacta gasta comparado a lavar na mão?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Os modelos compactos gastam entre 6 e 10 litros por ciclo. Lavar a mesma quantidade de louça na torneira aberta costuma consumir entre 30 e 40 litros, uma diferença de até 5 vezes a favor da máquina." }
+            },
+            {
+              "@type": "Question",
+              "name": "Lava-louças compacta cabe em cozinha pequena de apartamento?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Sim, é justamente para isso que ela foi desenhada. Os modelos compactos têm em média 45 cm de largura, entre 50 e 58 cm de profundidade e 43 a 45 cm de altura, cabendo sobre a bancada sem precisar de embutimento." }
+            },
+            {
+              "@type": "Question",
+              "name": "Vale a pena para família de 3 ou 4 pessoas?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Para 3 pessoas geralmente vale, com a ressalva de que em dias de mais louça pode ser necessário rodar dois ciclos. Para 4 pessoas ou mais, o mais indicado é considerar um modelo de capacidade maior, entre 10 e 14 serviços." }
+            },
+            {
+              "@type": "Question",
+              "name": "A lava-louças compacta aumenta muito a conta de luz?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Não de forma perceptível. O consumo fica entre 0,6 e 0,9 kWh por ciclo, o que representa um acréscimo mensal de R$ 6 a R$ 12 usando a máquina uma vez ao dia." }
+            },
+            {
+              "@type": "Question",
+              "name": "Dá para instalar a lava-louças compacta sem encanador?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Dá sim. A mangueira de entrada conecta direto na torneira usando um adaptador que costuma vir na caixa, e a mangueira de saída vai para o ralo da pia. A instalação completa leva menos de 30 minutos na maioria das cozinhas." }
+            },
+            {
+              "@type": "Question",
+              "name": "Posso colocar qualquer louça e panela na lava-louças compacta?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Não. Utensílios de madeira ressecam e racham, panelas antiaderentes já arranhadas se deterioram mais rápido, e panelas muito grandes podem não caber na cesta de um modelo compacto." }
+            }
+          ]
+        })} />
+
+        <!-- Leia também -->
+        <p style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#c2410c;margin:24px 0 12px;">Leia também:</p>
+        <div style="display:flex;flex-direction:column;gap:12px;">
+          <a href="/lava-loucas-midea-8-servicos-review" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;flex-shrink:0;">
+              <img src="/images/lava-loucas/capa-lava-loucas.webp" alt="Lava-louças compacta Midea 8 serviços review" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Lava-louças Compacta Midea 8 Serviços: Testamos por Meses</span>
             </div>
           </a>
         </div>

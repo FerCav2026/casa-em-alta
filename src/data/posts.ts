@@ -453,6 +453,16 @@ export const posts: Post[] = [
     categoria: 'guias-de-compra',
     categoriaLabel: 'Guia de Compra',
     categoriaColor: 'bg-purple-100 text-purple-700',
+  },
+  {
+    slug: 'lava-loucas-compacta-vale-a-pena-apartamento',
+    titulo: 'Lava-louças Compacta Vale a Pena para Apartamento?',
+    resumo: 'Lava-louças compacta vale a pena para apartamento pequeno? Comparamos com lavar na mão, consumo de água e energia, capacidade e quem realmente se beneficia.',
+    tempo: '8 min de leitura',
+    imagem: '/images/lava-loucas-guia/capa-lava-loucas-compacta-apartamento.webp',
+    categoria: 'guias-de-compra',
+    categoriaLabel: 'Guia de Compra',
+    categoriaColor: 'bg-purple-100 text-purple-700',
   }
 ];
 
