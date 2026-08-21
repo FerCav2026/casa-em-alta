@@ -155,3 +155,19 @@ OBS: esta lista estava desatualizada antes desta entrada (o artigo #37 Xiaomi
 listado acima como rascunho ja foi publicado de verdade em 10/08, e o pilar de
 Cafeteiras tambem ja saiu em 14/08) - contagem completa precisa ser reconferida
 numa proxima sessao, nao confiar so nos numeros deste arquivo.
+
+
+=====================================
+RASCUNHO (21/08/2026) - EM BRANCH, NAO MERGEADO NA MAIN AINDA
+
+39. Lava-loucas Compacta Vale a Pena para Apartamento?
+    Slug: lava-loucas-compacta-vale-a-pena-apartamento | Categoria: Guia de Compra
+    Branch: draft/lava-loucas-compacta-vale-a-pena-apartamento | Cluster: Lavanderia
+    Satelite do cluster Lavanderia (o pilar Como Montar a Lavanderia de um Apartamento
+    ainda nao existe, entao nao ha link pra ele ainda). Guia 100% explicativo sobre a
+    CATEGORIA lava-loucas compacta (nao review de modelo especifico), sem card de
+    produto nem link de afiliado. Menciona a experiencia real da Fernanda com a Midea
+    8 Servicos como exemplo dentro do texto, com link pra review completa
+    (lava-loucas-midea-8-servicos-review). Tambem linka lava-e-seca-ou-secadora-apartamento
+    e vaporizador-de-roupas-portatil (mesmo cluster). Falta: Fernanda gerar a capa
+    (prompt em ingles entregue) e revisar antes do merge pra main.
