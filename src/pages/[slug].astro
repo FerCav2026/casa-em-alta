@@ -300,6 +300,13 @@ const posts: Record<string, { titulo: string; descricao: string; categoria: stri
     dataCriacao: '2026-08-21',
     dataModificacao: '2026-08-21',
   },
+  'dolce-gusto-genio-s-basic-review': {
+    titulo: 'Dolce Gusto Genio S Basic: Vale a Pena? Review Completo',
+    descricao: 'Ficha técnica oficial, prós e contras e avaliações reais de compradores (nota 4,8 de 5, 958 avaliações) da cafeteira Dolce Gusto Genio S Basic.',
+    categoria: 'Review',
+    dataCriacao: '2026-08-24',
+    dataModificacao: '2026-08-24',
+  },
 };
 
 export function getStaticPaths() {
@@ -344,6 +351,7 @@ export function getStaticPaths() {
     'dolce-gusto-vs-nespresso': {},
     'como-escolher-panela-pressao-eletrica': {},
     'lava-loucas-compacta-vale-a-pena-apartamento': {},
+    'dolce-gusto-genio-s-basic-review': {},
   }).map((slug) => ({ params: { slug } }));
 }
 
@@ -416,6 +424,7 @@ const isComoEscolherCafeteira = slug === 'como-escolher-cafeteira';
 const isDolceGustoOuNespresso = slug === 'dolce-gusto-vs-nespresso';
 const isComoEscolherPanelaPressao = slug === 'como-escolher-panela-pressao-eletrica';
 const isLavaLoucasCompactaGuia = slug === 'lava-loucas-compacta-vale-a-pena-apartamento';
+const isDolceGustoGenioSBasicReview = slug === 'dolce-gusto-genio-s-basic-review';
 
 const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isAirfryer ? '/images/airfryer/capa-airfryer.webp'
@@ -457,6 +466,7 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isDolceGustoOuNespresso ? '/images/dolce-gusto-nespresso/capa-dolce-gusto-nespresso.webp'
   : isComoEscolherPanelaPressao ? '/images/panela-guia/capa-como-escolher-panela-pressao-eletrica.webp'
   : isLavaLoucasCompactaGuia ? '/images/lava-loucas-guia/capa-lava-loucas-compacta-apartamento.webp'
+  : isDolceGustoGenioSBasicReview ? '/images/dolce-gusto-nespresso/dolce-gusto-genio-s-basic.webp'
   : undefined;
 ---
 
@@ -16505,7 +16515,7 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
         </div>
 
         <p class="text-slate-700 text-base leading-relaxed mb-10">
-          Respondendo essas perguntas com sinceridade, fica bem mais fácil eliminar opções e chegar ao tipo de cafeteira que realmente combina com a sua rotina, sem se deixar levar apenas pela propaganda ou pelo modelo mais bonito na prateleira. Já publicamos o comparativo <a href="/dolce-gusto-vs-nespresso" class="text-purple-600 font-semibold hover:underline">Dolce Gusto ou Nespresso: Qual Vale Mais a Pena para Apartamento?</a>, e em breve vêm mais artigos comparando outros modelos e marcas dentro de cada categoria.
+          Respondendo essas perguntas com sinceridade, fica bem mais fácil eliminar opções e chegar ao tipo de cafeteira que realmente combina com a sua rotina, sem se deixar levar apenas pela propaganda ou pelo modelo mais bonito na prateleira. Já publicamos o comparativo <a href="/dolce-gusto-vs-nespresso" class="text-purple-600 font-semibold hover:underline">Dolce Gusto ou Nespresso: Qual Vale Mais a Pena para Apartamento?</a> e a review <a href="/dolce-gusto-genio-s-basic-review" class="text-purple-600 font-semibold hover:underline">Dolce Gusto Genio S Basic: Vale a Pena?</a>, e em breve vêm mais artigos comparando outros modelos e marcas dentro de cada categoria.
         </p>
 
         <!-- FAQ -->
@@ -16997,6 +17007,15 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
         <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
           <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
           <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Como Escolher Cafeteira: Cápsula, Expresso ou Coador?</span>
+        </div>
+      </a>
+      <a href="/dolce-gusto-genio-s-basic-review" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+        <div style="width:200px;flex-shrink:0;">
+          <img src="/images/dolce-gusto-nespresso/dolce-gusto-genio-s-basic.webp" alt="Dolce Gusto Genio S Basic review" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+        </div>
+        <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+          <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+          <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Dolce Gusto Genio S Basic: Vale a Pena? Review Completo</span>
         </div>
       </a>
     </div>
@@ -17809,6 +17828,323 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
             <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
               <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
               <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Lava-louças Compacta Midea 8 Serviços: Testamos por Meses</span>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    )}
+
+    {isDolceGustoGenioSBasicReview && (
+      <div>
+
+        <!-- Capa -->
+        <div class="rounded-2xl overflow-hidden mb-8 shadow-md">
+          <img
+            src="/images/dolce-gusto-nespresso/dolce-gusto-genio-s-basic.webp"
+            alt="Cafeteira Arno Nescafé Dolce Gusto Genio S Basic cor grafite"
+            class="w-full h-auto object-cover"
+            loading="eager"
+          />
+        </div>
+
+        <!-- Introdução -->
+        <p class="text-slate-700 leading-relaxed mb-4">
+          Se você já pesquisou cafeteira de cápsula, com certeza a Dolce Gusto Genio S Basic apareceu na sua lista. Ela é uma das máquinas mais vendidas da Arno no Brasil e tem uma nota que chama atenção: 4,8 de 5 estrelas, com 958 avaliações só na Amazon.
+        </p>
+        <p class="text-slate-700 leading-relaxed mb-4">
+          Mas nota alta em vitrine não conta a história toda. Neste review reunimos os dados técnicos oficiais da Nescafé Dolce Gusto, cruzamos com o que aparece nas avaliações reais de quem já comprou e montamos um panorama honesto: o que a Genio S Basic entrega bem, onde ela decepciona e para quem ela realmente vale o investimento.
+        </p>
+        <p class="text-slate-700 leading-relaxed mb-6">
+          Vale um adendo importante antes de continuar: aqui no Casa em Alta a gente não testou essa cafeteira em casa. O que fizemos foi um trabalho de curadoria, cruzando ficha técnica oficial, manual do fabricante e centenas de avaliações de compradores reais, para te entregar uma análise confiável sem inventar experiência que não tivemos.
+        </p>
+
+        <!-- TL;DR -->
+        <div class="bg-orange-50 border border-orange-200 rounded-2xl px-5 py-4 mb-6">
+          <p class="font-bold text-slate-800 mb-1">Em resumo:</p>
+          <p class="text-slate-700 text-sm leading-relaxed">A Genio S Basic entrega um café rápido e prático, com boa nota entre quase mil compradores, mas fica no básico: sem ajuste de temperatura, bandeja de plástico e reservatório pequeno de 800 ml. Vale a pena para quem mora sozinho ou em casal e não abre mão de praticidade. Quem quer personalizar o café deve considerar a versão Plus.</p>
+          <p class="text-slate-500 text-xs mt-2">Preço e nota conferidos direto na página do produto na Amazon em 17 de agosto de 2026, sujeitos a mudança.</p>
+        </div>
+
+        <!-- Índice -->
+        <nav class="border border-slate-200 rounded-2xl p-6 mb-10 bg-white">
+          <p class="font-bold text-slate-800 mb-3">Neste artigo:</p>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#ficha-tecnica" class="text-orange-500 hover:text-orange-600 font-medium">Ficha técnica</a></li>
+            <li><a href="#como-funciona" class="text-orange-500 hover:text-orange-600 font-medium">Como funciona o sistema de cápsulas</a></li>
+            <li><a href="#pros-contras" class="text-orange-500 hover:text-orange-600 font-medium">Prós e contras</a></li>
+            <li><a href="#avaliacoes-reais" class="text-orange-500 hover:text-orange-600 font-medium">O que dizem as avaliações reais</a></li>
+            <li><a href="#para-quem-vale" class="text-orange-500 hover:text-orange-600 font-medium">Para quem vale (e para quem não vale)</a></li>
+            <li><a href="#comparativo-linha" class="text-orange-500 hover:text-orange-600 font-medium">Genio S Basic vs Plus vs Touch</a></li>
+            <li><a href="#erros-comuns" class="text-orange-500 hover:text-orange-600 font-medium">Erros comuns na compra</a></li>
+            <li><a href="#faq" class="text-orange-500 hover:text-orange-600 font-medium">Perguntas frequentes</a></li>
+          </ul>
+        </nav>
+
+        <!-- Ficha técnica -->
+        <h2 id="ficha-tecnica" class="text-2xl font-black text-slate-900 mt-10 mb-4">Ficha técnica da Dolce Gusto Genio S Basic</h2>
+        <p class="text-slate-700 leading-relaxed mb-5">
+          A versão avaliada aqui é a Arno Nescafé Dolce Gusto Genio S Basic Grafite, modelo DGS5. Esses são os números oficiais:
+        </p>
+        <div class="overflow-x-auto mb-6">
+          <table class="w-full text-sm border-collapse">
+            <thead>
+              <tr class="bg-slate-100">
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Especificação</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Detalhe</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-white"><td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Modelo</td><td class="px-4 py-3 text-slate-600 border border-slate-200">Genio S Basic Grafite (DGS5)</td></tr>
+              <tr class="bg-slate-50"><td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Sistema de cápsulas</td><td class="px-4 py-3 text-slate-600 border border-slate-200">Dolce Gusto (compatível com toda a linha Nescafé)</td></tr>
+              <tr class="bg-white"><td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Pressão</td><td class="px-4 py-3 text-slate-600 border border-slate-200">15 bar</td></tr>
+              <tr class="bg-slate-50"><td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Potência</td><td class="px-4 py-3 text-slate-600 border border-slate-200">1350W</td></tr>
+              <tr class="bg-white"><td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Voltagem</td><td class="px-4 py-3 text-slate-600 border border-slate-200">110V (não é bivolt, atenção na hora da compra)</td></tr>
+              <tr class="bg-slate-50"><td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Reservatório de água</td><td class="px-4 py-3 text-slate-600 border border-slate-200">800 ml, removível</td></tr>
+              <tr class="bg-white"><td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Dimensões</td><td class="px-4 py-3 text-slate-600 border border-slate-200">27,3 x 28,6 x 11,2 cm</td></tr>
+              <tr class="bg-slate-50"><td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Peso</td><td class="px-4 py-3 text-slate-600 border border-slate-200">Aproximadamente 2 kg</td></tr>
+              <tr class="bg-white"><td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Função XL</td><td class="px-4 py-3 text-slate-600 border border-slate-200">Prepara bebidas de até 300 ml</td></tr>
+              <tr class="bg-slate-50"><td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Desligamento automático</td><td class="px-4 py-3 text-slate-600 border border-slate-200">Sim</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="bg-blue-50 border border-blue-200 rounded-xl p-5 mb-10">
+          <p class="text-blue-800 font-bold text-sm mb-1">Atenção antes de comprar</p>
+          <p class="text-slate-700 text-sm leading-relaxed">Essa máquina roda em 110V e não é bivolt. Se a sua cidade é 220V, procure a versão certa antes de fechar a compra, porque ligar no adaptador errado pode danificar o equipamento. Não sabe qual é a voltagem da sua casa? Dá pra conferir <a href="https://tsshara.com.br/blog/energia-eletrica/qual-a-voltagem-da-minha-casa/" target="_blank" rel="noopener" class="text-blue-700 font-semibold hover:underline">na conta de luz ou no quadro de disjuntores</a>.</p>
+        </div>
+
+        <!-- Card produto -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-10 shadow-sm">
+          <div class="bg-orange-500 px-6 py-4">
+            <p class="text-white font-black text-xl">Arno Nescafé Dolce Gusto Genio S Basic Grafite</p>
+            <p class="text-orange-100 text-sm mt-1">Modelo de entrada da linha, 15 bar, tanque removível</p>
+          </div>
+          <div class="p-6">
+            <div class="flex flex-col md:flex-row gap-6 mb-6">
+              <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 min-h-32">
+                <img src="/images/dolce-gusto-nespresso/dolce-gusto-genio-s-basic.webp" alt="Cafeteira Arno Nescafé Dolce Gusto Genio S Basic cor grafite" class="max-h-36 object-contain" width="150" height="216" loading="lazy" />
+              </div>
+              <div class="flex-1">
+                <div class="flex items-center gap-3 mb-4">
+                  <span class="text-2xl font-black text-slate-900">R$ 453,47</span>
+                </div>
+                <p class="text-slate-700 text-sm leading-relaxed mb-2">
+                  Nota <strong>4,8 de 5</strong>, com 958 avaliações.
+                </p>
+                <p class="text-slate-500 text-xs">Preço e nota conferidos direto na página do produto na Amazon em 17 de agosto de 2026.</p>
+              </div>
+            </div>
+            <a href="https://link.amazon/B048HzFV3" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl transition-colors">Ver preço na Amazon</a>
+          </div>
+        </div>
+
+        <!-- Como funciona -->
+        <h2 id="como-funciona" class="text-2xl font-black text-slate-900 mt-10 mb-4">Como funciona o sistema de cápsulas Dolce Gusto</h2>
+        <p class="text-slate-700 leading-relaxed mb-4">
+          A Genio S Basic trabalha com o sistema fechado de cápsulas Dolce Gusto, o mesmo usado em toda a linha da marca. Cada cápsula já vem com a dose certa de café ou do ingrediente da bebida, então não tem moagem, não tem medida errada e não tem sujeira de pó espalhada pela cozinha.
+        </p>
+        <p class="text-slate-700 leading-relaxed mb-4">
+          O funcionamento é simples: você encaixa a cápsula no compartimento, fecha a alavanca, escolhe a quantidade de água pelo botão e aperta para iniciar. A máquina puxa a água do reservatório, pressuriza a 15 bar e empurra pela cápsula, extraindo a bebida direto na xícara.
+        </p>
+        <p class="text-slate-700 leading-relaxed mb-10">
+          Esse é o mesmo princípio usado por sistemas concorrentes, como o Nespresso, mas com uma diferença relevante: o catálogo Dolce Gusto vai muito além do espresso puro, incluindo cappuccino, latte macchiato, chocolate quente e chá, o que dá mais variedade para quem gosta de alternar as bebidas ao longo da semana. Se a dúvida for entre sistemas diferentes, o nosso comparativo <a href="/dolce-gusto-vs-nespresso" class="text-orange-600 font-semibold hover:underline">Dolce Gusto ou Nespresso</a> ajuda a decidir qual sistema combina mais com o seu consumo.
+        </p>
+
+        <!-- Prós e contras -->
+        <h2 id="pros-contras" class="text-2xl font-black text-slate-900 mt-10 mb-4">Prós e contras da Genio S Basic</h2>
+        <p class="text-slate-700 leading-relaxed mb-5">
+          Depois de cruzar as avaliações mais úteis dos compradores com a ficha técnica, esse é o resumo dos pontos fortes e fracos da máquina.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10 text-sm">
+          <div class="border border-slate-200 rounded-2xl p-5">
+            <p class="font-semibold text-slate-800 mb-2">Pontos positivos</p>
+            <ul class="space-y-1 text-slate-600">
+              <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Compacta, cabe até em bancadas pequenas ou apartamentos com cozinha reduzida</li>
+              <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Prepara o café em menos de um minuto, sem esperar aquecer separado</li>
+              <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Compatível com toda a linha de cápsulas Dolce Gusto, do espresso ao chocolate quente</li>
+              <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Reservatório removível facilita muito na hora de encher e limpar</li>
+              <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Preço de entrada mais acessível dentro da linha Genio S</li>
+              <li class="flex items-start gap-2"><span class="text-orange-500 font-bold mt-0.5">+</span> Operação simples, só apertar o botão, sem curva de aprendizado</li>
+            </ul>
+          </div>
+          <div class="border border-slate-200 rounded-2xl p-5">
+            <p class="font-semibold text-slate-800 mb-2">Pontos de atenção</p>
+            <ul class="space-y-1 text-slate-600">
+              <li class="flex items-start gap-2"><span class="text-slate-400 font-bold mt-0.5">-</span> Bandeja de plástico, mais simples que a versão Plus, que já vem com bandeja de metal</li>
+              <li class="flex items-start gap-2"><span class="text-slate-400 font-bold mt-0.5">-</span> Não tem ajuste fino de temperatura, só a opção quente ou ambiente</li>
+              <li class="flex items-start gap-2"><span class="text-slate-400 font-bold mt-0.5">-</span> Sem a função Espresso Boost que a versão Plus oferece para um café mais concentrado</li>
+              <li class="flex items-start gap-2"><span class="text-slate-400 font-bold mt-0.5">-</span> Reservatório de 800 ml é pequeno para quem faz muitos cafés seguidos ou tem visita em casa</li>
+              <li class="flex items-start gap-2"><span class="text-slate-400 font-bold mt-0.5">-</span> Custo por cápsula ao longo do tempo é mais alto do que café tradicional coado</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Avaliações reais -->
+        <h2 id="avaliacoes-reais" class="text-2xl font-black text-slate-900 mt-10 mb-4">O que dizem as avaliações reais de quem comprou</h2>
+        <p class="text-slate-700 leading-relaxed mb-4">
+          Com quase mil avaliações acumuladas, dá para identificar alguns padrões que se repetem bastante nos comentários dos compradores.
+        </p>
+        <p class="text-slate-700 leading-relaxed mb-4">
+          O elogio mais comum é sobre o tamanho e a facilidade de encaixe em cozinhas pequenas. Muita gente relata ter comprado justamente porque outras máquinas de café não cabiam na bancada disponível, e a Genio S Basic resolveu esse problema sem sacrificar a praticidade do preparo. Outro ponto que aparece com frequência é a facilidade de uso no dia a dia, principalmente por parte de quem nunca teve cafeteira de cápsula antes.
+        </p>
+        <p class="text-slate-700 leading-relaxed mb-10">
+          Do lado das críticas, o reservatório pequeno é a reclamação mais recorrente, especialmente entre quem mora com mais gente em casa ou recebe visita com frequência. Também aparecem comentários sobre o custo das cápsulas no médio prazo, um ponto que vale calcular antes de decidir pelo sistema.
+        </p>
+
+        <!-- Para quem vale -->
+        <h2 id="para-quem-vale" class="text-2xl font-black text-slate-900 mt-10 mb-4">Para quem a Genio S Basic vale a pena</h2>
+        <p class="text-slate-700 leading-relaxed mb-4">
+          Essa cafeteira faz mais sentido para quem mora sozinho, em casal, ou tem uma rotina de um a três cafés por dia. Se o seu critério principal é praticidade no dia a dia sem gastar muito tempo pensando em ajuste, ela cumpre bem o papel. Também é uma boa escolha para quem está comprando a primeira cafeteira de cápsula e quer testar o sistema Dolce Gusto sem pagar o preço das versões mais completas da linha.
+        </p>
+        <h3 class="text-lg font-bold text-slate-900 mb-3">Para quem não vale a pena</h3>
+        <p class="text-slate-700 leading-relaxed mb-4">
+          Quem gosta de personalizar temperatura e intensidade do café provavelmente vai sentir falta dos recursos da versão Plus ou Touch. Famílias grandes ou escritórios com consumo intenso de café também podem esbarrar no reservatório pequeno, que exige reabastecimento constante ao longo do dia.
+        </p>
+        <p class="text-slate-700 leading-relaxed mb-10">
+          E se o seu foco é economia no consumo diário de café, vale lembrar que cápsulas custam mais por xícara do que o pó tradicional. Para entender melhor o que considerar antes de decidir o tipo de máquina, dá uma olhada no nosso guia completo de <a href="/como-escolher-cafeteira" class="text-orange-600 font-semibold hover:underline">como escolher cafeteira</a>.
+        </p>
+
+        <!-- Comparativo linha -->
+        <h2 id="comparativo-linha" class="text-2xl font-black text-slate-900 mt-10 mb-4">Genio S Basic vs outras opções da linha Dolce Gusto</h2>
+        <p class="text-slate-700 leading-relaxed mb-5">
+          Dentro da própria família Genio S existem três versões, e entender a diferença entre elas ajuda a evitar arrependimento na compra. Todas usam 15 bar de pressão e o mesmo reservatório de 800 ml.
+        </p>
+        <div class="overflow-x-auto mb-6">
+          <table class="w-full text-sm border-collapse">
+            <thead>
+              <tr class="bg-slate-100">
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Modelo</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Diferencial</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-white"><td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Genio S Basic</td><td class="px-4 py-3 text-slate-600 border border-slate-200">Opção quente ou ambiente, sem ajuste fino, bandeja de plástico, preço mais baixo</td></tr>
+              <tr class="bg-slate-50"><td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Genio S Plus</td><td class="px-4 py-3 text-slate-600 border border-slate-200">4 níveis de temperatura, função Espresso Boost para café mais concentrado, bandeja de metal</td></tr>
+              <tr class="bg-white"><td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Genio S Touch</td><td class="px-4 py-3 text-slate-600 border border-slate-200">Mesmos recursos da Plus, com painel totalmente touch screen</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="text-slate-700 leading-relaxed mb-10">
+          Na prática, quem quer só o básico funcionando bem sai ganhando com a Basic. Quem valoriza controle de temperatura e um café mais forte deve considerar pagar a diferença pela Plus.
+        </p>
+
+        <!-- Erros comuns -->
+        <h2 id="erros-comuns" class="text-2xl font-black text-slate-900 mt-10 mb-4">Erros comuns na hora de comprar</h2>
+        <ul class="list-disc list-inside space-y-2 text-slate-700 mb-10 ml-2">
+          <li><strong>Comprar a voltagem errada.</strong> A Genio S Basic não é bivolt. Confira se a sua residência é 110V ou 220V antes de finalizar a compra.</li>
+          <li><strong>Confundir com a Genio S Plus.</strong> Elas têm visual parecido, mas funções diferentes. Leia a descrição completa do anúncio antes de comprar.</li>
+          <li><strong>Não calcular o custo das cápsulas.</strong> O preço da máquina é só parte da conta. Pesquise o valor das caixas de cápsula que você mais vai consumir.</li>
+          <li><strong>Esperar café igual ao de cafeteira profissional.</strong> É uma máquina doméstica de cápsula, boa no que se propõe, mas não substitui um espresso de padaria com moagem na hora.</li>
+          <li><strong>Ignorar a limpeza recomendada.</strong> Descalcificar a máquina periodicamente evita entupimento e prolonga a vida útil, principalmente em regiões com água mais dura.</li>
+        </ul>
+
+        <!-- Manutenção -->
+        <h3 class="text-lg font-bold text-slate-900 mb-3">Manutenção e limpeza da Genio S Basic</h3>
+        <p class="text-slate-700 leading-relaxed mb-4">
+          Um cuidado que faz diferença na durabilidade de qualquer cafeteira de cápsula é a limpeza regular do reservatório e da bandeja coletora. Como o reservatório da Genio S Basic é removível, dá para lavar com água e sabão neutro sem complicação.
+        </p>
+        <p class="text-slate-700 leading-relaxed mb-10">
+          A descalcificação periódica também é recomendada pelo fabricante, principalmente em regiões onde a água é mais dura. Esse processo evita entupimento no bico de saída e mantém a pressão de extração estável ao longo do tempo, e é o que separa uma cafeteira que dura poucos anos de uma que continua funcionando bem por muito mais tempo.
+        </p>
+
+        <!-- FAQ -->
+        <h2 id="faq" class="text-2xl font-black text-slate-900 mb-6">Perguntas frequentes sobre a Dolce Gusto Genio S Basic</h2>
+        <div class="space-y-3 mb-10">
+          <details class="border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+              A Dolce Gusto Genio S Basic é bivolt?
+              <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </summary>
+            <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+              Não. Ela é vendida em versão 110V ou 220V, mas não existe modelo bivolt. É essencial confirmar a voltagem da sua casa antes da compra para não danificar o equipamento.
+            </div>
+          </details>
+          <details class="border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+              Quantas xícaras de café a Genio S Basic prepara com um reservatório cheio?
+              <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </summary>
+            <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+              Com os 800 ml do reservatório, dá para preparar de duas a três xícaras médias antes de precisar reabastecer, dependendo do tamanho da bebida escolhida.
+            </div>
+          </details>
+          <details class="border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+              Qual a diferença entre a Genio S Basic e a Genio S Plus?
+              <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </summary>
+            <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+              A Plus tem quatro níveis de ajuste de temperatura, função Espresso Boost para um café mais concentrado e bandeja de metal. A Basic oferece só a opção quente ou ambiente e bandeja de plástico, com um preço mais em conta.
+            </div>
+          </details>
+          <details class="border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+              A cafeteira aceita qualquer cápsula do mercado?
+              <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </summary>
+            <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+              Não. Ela funciona exclusivamente com cápsulas do sistema Dolce Gusto (incluindo compatíveis de outras marcas, como Gimoka e Bicafé). Cápsulas de outros sistemas, como Nespresso, não encaixam nessa máquina.
+            </div>
+          </details>
+          <details class="border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+              Vale a pena comprar a Genio S Basic ou já ir direto na Plus?
+              <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </summary>
+            <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+              Depende do seu perfil de consumo. Se você bebe o café sempre do mesmo jeito e não se importa em não ajustar temperatura, a Basic entrega o essencial por um preço menor. Se você gosta de personalizar a bebida, a diferença de preço para a Plus costuma valer a pena.
+            </div>
+          </details>
+          <details class="border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+              A Genio S Basic prepara bebidas geladas?
+              <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </summary>
+            <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+              A força da linha Genio S está nas bebidas quentes, como espresso, café longo, cappuccino, latte macchiato e chocolate quente. Para bebidas geladas e recursos mais avançados de personalização, vale considerar outras linhas da Dolce Gusto.
+            </div>
+          </details>
+          <details class="border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+              Quanto tempo leva para a máquina esquentar e preparar o café?
+              <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </summary>
+            <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+              Segundo o fabricante e a maioria dos relatos de quem usa, o preparo fica pronto em menos de um minuto após ligar a máquina, sem tempo longo de espera para aquecimento.
+            </div>
+          </details>
+        </div>
+        <script type="application/ld+json" set:html={JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"A Dolce Gusto Genio S Basic é bivolt?","acceptedAnswer":{"@type":"Answer","text":"Não. Ela é vendida em versão 110V ou 220V, mas não existe modelo bivolt. É essencial confirmar a voltagem da sua casa antes da compra."}},{"@type":"Question","name":"Quantas xícaras de café a Genio S Basic prepara com um reservatório cheio?","acceptedAnswer":{"@type":"Answer","text":"Com os 800 ml do reservatório, dá para preparar de duas a três xícaras médias antes de precisar reabastecer."}},{"@type":"Question","name":"Qual a diferença entre a Genio S Basic e a Genio S Plus?","acceptedAnswer":{"@type":"Answer","text":"A Plus tem quatro níveis de ajuste de temperatura, função Espresso Boost e bandeja de metal. A Basic oferece só quente ou ambiente e bandeja de plástico, com preço mais em conta."}},{"@type":"Question","name":"A cafeteira aceita qualquer cápsula do mercado?","acceptedAnswer":{"@type":"Answer","text":"Não. Ela funciona exclusivamente com cápsulas do sistema Dolce Gusto, incluindo compatíveis de outras marcas. Cápsulas de outros sistemas, como Nespresso, não encaixam."}},{"@type":"Question","name":"Vale a pena comprar a Genio S Basic ou já ir direto na Plus?","acceptedAnswer":{"@type":"Answer","text":"Depende do consumo. Quem bebe o café sempre do mesmo jeito sai bem com a Basic. Quem gosta de personalizar a bebida costuma achar que vale pagar a diferença pela Plus."}},{"@type":"Question","name":"A Genio S Basic prepara bebidas geladas?","acceptedAnswer":{"@type":"Answer","text":"A força da linha Genio S está nas bebidas quentes, como espresso, cappuccino e chocolate quente. Para bebidas geladas vale considerar outras linhas da Dolce Gusto."}},{"@type":"Question","name":"Quanto tempo leva para a máquina esquentar e preparar o café?","acceptedAnswer":{"@type":"Answer","text":"Segundo o fabricante e a maioria dos relatos de quem usa, o preparo fica pronto em menos de um minuto após ligar a máquina."}}]})} />
+        <script type="application/ld+json" set:html={JSON.stringify({"@context":"https://schema.org","@type":"Product","name":"Arno Nescafé Dolce Gusto Genio S Basic Grafite (DGS5)","image":"https://www.casaemalta.com.br/images/dolce-gusto-nespresso/dolce-gusto-genio-s-basic.webp","description":"Cafeteira de cápsula Dolce Gusto, 15 bar de pressão, reservatório removível de 800 ml, 110V, função XL até 300 ml.","brand":{"@type":"Brand","name":"Arno"},"url":"https://link.amazon/B048HzFV3","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"958"}})} />
+
+        <!-- Veredito -->
+        <h2 class="text-xl font-black text-slate-900 mb-3">Vale a pena comprar a Dolce Gusto Genio S Basic?</h2>
+        <p class="text-slate-700 leading-relaxed mb-3">
+          Olhando o conjunto de dados, sim, ela entrega o que promete para o público certo: quem quer praticidade no dia a dia, tem consumo moderado de café e não precisa de ajustes finos de temperatura ou intensidade.
+        </p>
+        <p class="text-slate-700 leading-relaxed mb-10">
+          A nota de 4,8 entre quase mil avaliações reforça que a satisfação de quem comprou é consistente, principalmente pela facilidade de uso e pelo tamanho compacto. Os pontos de atenção, como reservatório pequeno e ausência de ajustes avançados, são conhecidos e claros, não são defeitos escondidos.
+        </p>
+
+        <!-- Leia também -->
+        <p style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#c2410c;margin:24px 0 12px;">Leia também:</p>
+        <div style="display:flex;flex-direction:column;gap:12px;">
+          <a href="/dolce-gusto-vs-nespresso" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;flex-shrink:0;">
+              <img src="/images/dolce-gusto-nespresso/capa-dolce-gusto-nespresso.webp" alt="Dolce Gusto ou Nespresso" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Dolce Gusto ou Nespresso: Qual Vale Mais a Pena?</span>
+            </div>
+          </a>
+          <a href="/como-escolher-cafeteira" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;flex-shrink:0;">
+              <img src="/images/cafeteira-guia/capa-como-escolher-cafeteira.webp" alt="Como escolher cafeteira" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Como Escolher Cafeteira: Cápsula, Expresso ou Coador?</span>
             </div>
           </a>
         </div>
