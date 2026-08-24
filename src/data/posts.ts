@@ -469,7 +469,7 @@ export const posts: Post[] = [
     titulo: 'Dolce Gusto Genio S Basic: Vale a Pena? Review Completo',
     resumo: 'Ficha técnica oficial, prós e contras e avaliações reais de compradores (nota 4,8 de 5, 958 avaliações) da cafeteira Dolce Gusto Genio S Basic.',
     tempo: '8 min de leitura',
-    imagem: '/images/dolce-gusto-nespresso/dolce-gusto-genio-s-basic.webp',
+    imagem: '/images/dolce-gusto-nespresso/capa-dolce-gusto-genio-s-basic-review.webp',
     categoria: 'reviews',
     categoriaLabel: 'Review',
     categoriaColor: 'bg-orange-100 text-orange-700',
