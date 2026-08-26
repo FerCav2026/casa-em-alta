@@ -12,6 +12,7 @@ export default defineConfig({
     }),
   ],
   site: 'https://www.casaemalta.com.br',
+  trailingSlash: 'never',
   redirects: {
     '/posts/[slug]': '/[slug]',
     '/categorias/guia-de-compra': '/categorias/guias-de-compra',
