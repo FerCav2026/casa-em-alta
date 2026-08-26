@@ -307,6 +307,13 @@ const posts: Record<string, { titulo: string; descricao: string; categoria: stri
     dataCriacao: '2026-08-24',
     dataModificacao: '2026-08-24',
   },
+  'melhores-aspiradores-verticais-2026': {
+    titulo: 'Os 5 Melhores Aspiradores Verticais Sem Fio de 2026',
+    descricao: 'Comparamos 5 aspiradores verticais sem fio vendidos no Brasil: autonomia, filtro HEPA, reservatório e ficha técnica para você escolher sem errar.',
+    categoria: 'Rankings e Listas',
+    dataCriacao: '2026-08-26',
+    dataModificacao: '2026-08-26',
+  },
 };
 
 export function getStaticPaths() {
@@ -352,6 +359,7 @@ export function getStaticPaths() {
     'como-escolher-panela-pressao-eletrica': {},
     'lava-loucas-compacta-vale-a-pena-apartamento': {},
     'dolce-gusto-genio-s-basic-review': {},
+    'melhores-aspiradores-verticais-2026': {},
   }).map((slug) => ({ params: { slug } }));
 }
 
@@ -425,6 +433,7 @@ const isDolceGustoOuNespresso = slug === 'dolce-gusto-vs-nespresso';
 const isComoEscolherPanelaPressao = slug === 'como-escolher-panela-pressao-eletrica';
 const isLavaLoucasCompactaGuia = slug === 'lava-loucas-compacta-vale-a-pena-apartamento';
 const isDolceGustoGenioSBasicReview = slug === 'dolce-gusto-genio-s-basic-review';
+const isMelhoresAspiradoresVerticais = slug === 'melhores-aspiradores-verticais-2026';
 
 const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isAirfryer ? '/images/airfryer/capa-airfryer.webp'
@@ -467,6 +476,7 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isComoEscolherPanelaPressao ? '/images/panela-guia/capa-como-escolher-panela-pressao-eletrica.webp'
   : isLavaLoucasCompactaGuia ? '/images/lava-loucas-guia/capa-lava-loucas-compacta-apartamento.webp'
   : isDolceGustoGenioSBasicReview ? '/images/dolce-gusto-nespresso/capa-dolce-gusto-genio-s-basic-review.webp'
+  : isMelhoresAspiradoresVerticais ? '/images/aspiradores-verticais-2026/capa-melhores-aspiradores-verticais-2026.webp'
   : undefined;
 ---
 
@@ -18151,6 +18161,596 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
 
       </div>
     )}
+
+    {isMelhoresAspiradoresVerticais && (
+<div>
+
+  <!-- Data de atualização -->
+  <p class="text-xs text-slate-400 mb-6">Atualizado em agosto de 2026</p>
+
+  <!-- Introdução -->
+  <p class="text-slate-700 leading-relaxed mb-4">
+    Trocar a vassoura ou o aspirador com fio por um modelo vertical sem fio muda a rotina de limpeza mais do que parece. Sem precisar procurar tomada em cada cômodo, a faxina rápida do dia a dia fica mais fácil de manter em dia, principalmente em apartamento. O problema é que o mercado brasileiro tem dezenas de opções com preços e fichas técnicas bem diferentes entre si, e nem sempre o modelo mais caro é o mais adequado para a sua casa.
+  </p>
+  <p class="text-slate-700 leading-relaxed mb-4">
+    Reunimos aqui os <strong>5 melhores aspiradores verticais sem fio</strong> vendidos no Brasil em 2026, com ficha técnica conferida direto nas fontes oficiais de cada fabricante. Se você ainda está em dúvida sobre qual tipo de aspirador faz mais sentido para o seu caso, vale a pena ler primeiro o nosso guia <a href="/como-escolher-aspirador-de-po" class="text-orange-600 font-semibold hover:underline">Como Escolher Aspirador de Pó: Com Fio, Sem Fio, Vertical ou Robô?</a>. E se a dúvida é entre um vertical e um portátil, o comparativo <a href="/aspirador-vertical-ou-portatil-apartamento" class="text-orange-600 font-semibold hover:underline">Aspirador Vertical ou Portátil Sem Fio: Qual Vale Mais para Apartamento?</a> ajuda a decidir.
+  </p>
+
+  <!-- TL;DR -->
+  <div class="bg-orange-50 border border-orange-200 rounded-2xl px-5 py-4 mb-6">
+    <p class="font-bold text-slate-800 mb-1">Em resumo:</p>
+    <p class="text-slate-700 text-sm leading-relaxed">O melhor aspirador vertical sem fio de 2026 para a maioria das casas é o Electrolux Ergorapido ERG26, pela combinação de autonomia, filtro HEPA e nota alta de avaliações reais. Para quem quer mais sucção e tecnologia, o Xiaomi Vertical Sem Fio Light é a opção mais avançada. Já para orçamento apertado, o WAP Eco Rápido entrega o essencial com autonomia de 40 minutos.</p>
+  </div>
+
+  <!-- Índice -->
+  <nav class="border border-slate-200 rounded-2xl p-6 mb-10 bg-white">
+    <p class="font-bold text-slate-800 mb-3">Neste artigo:</p>
+    <ul class="space-y-2 text-sm">
+      <li><a href="#criterios" class="text-orange-500 hover:text-orange-600 font-medium">Critérios para escolher um bom aspirador vertical sem fio</a></li>
+      <li><a href="#tabela-comparativa" class="text-orange-500 hover:text-orange-600 font-medium">Tabela comparativa dos 5 modelos</a></li>
+      <li><a href="#ranking" class="text-orange-500 hover:text-orange-600 font-medium">Os 5 melhores aspiradores verticais sem fio de 2026</a></li>
+      <li><a href="#tabela-resumo" class="text-orange-500 hover:text-orange-600 font-medium">Tabela resumo: qual escolher por perfil</a></li>
+      <li><a href="#erros-comuns" class="text-orange-500 hover:text-orange-600 font-medium">Erros comuns na hora de comprar</a></li>
+      <li><a href="#faq" class="text-orange-500 hover:text-orange-600 font-medium">Perguntas frequentes</a></li>
+    </ul>
+  </nav>
+
+  <!-- Imagem ilustrativa -->
+  <div class="rounded-2xl overflow-hidden mb-8 shadow-sm">
+    <img
+      src="/images/aspiradores-verticais-2026/capa-melhores-aspiradores-verticais-2026.webp"
+      alt="Aspirador vertical sem fio sendo usado para limpar a sala de um apartamento"
+      class="w-full h-auto object-cover"
+      loading="lazy"
+    />
+  </div>
+
+  <!-- Critérios -->
+  <h2 id="criterios" class="text-2xl font-black text-slate-900 mt-10 mb-4">Critérios para escolher um bom aspirador vertical sem fio</h2>
+
+  <p class="text-slate-700 leading-relaxed mb-4">
+    Antes de olhar para os modelos, vale entender rápido o que realmente separa um bom aspirador vertical sem fio de um que vai frustrar. Usamos esses critérios para montar o ranking abaixo.
+  </p>
+
+  <ul class="list-disc list-inside space-y-2 text-slate-700 mb-4 ml-2">
+    <li><strong>Autonomia real:</strong> quase todo fabricante anuncia o tempo de bateria na potência mínima. Na potência máxima, o tempo costuma cair pela metade ou mais.</li>
+    <li><strong>Capacidade do reservatório:</strong> modelos com reservatório pequeno (abaixo de 500ml) exigem esvaziar com mais frequência em limpeza pesada.</li>
+    <li><strong>Tipo de filtro:</strong> filtro HEPA retém partículas bem menores, o que importa para quem tem pet ou alergia a poeira.</li>
+    <li><strong>Peso e formato 2 em 1:</strong> aspiradores que se transformam em portátil, retirando o corpo do cabo, ganham pontos por versatilidade.</li>
+    <li><strong>Voltagem:</strong> modelos bivolt funcionam em qualquer instalação elétrica do Brasil, sem depender da voltagem da tomada.</li>
+    <li><strong>Avaliação de quem já comprou:</strong> nota e volume de avaliações em marketplaces como Mercado Livre e Amazon dão um indicativo real de satisfação, além da ficha técnica do fabricante.</li>
+  </ul>
+
+  <!-- Tabela comparativa -->
+  <h2 id="tabela-comparativa" class="text-2xl font-black text-slate-900 mt-10 mb-4">Tabela comparativa dos 5 modelos</h2>
+
+  <p class="text-slate-700 leading-relaxed mb-5">
+    Para facilitar a visão geral antes de entrar em cada modelo, organizamos os dados técnicos principais lado a lado.
+  </p>
+
+  <div class="overflow-x-auto mb-6">
+    <table class="w-full text-sm border-collapse">
+      <thead>
+        <tr class="bg-slate-100">
+          <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Modelo</th>
+          <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Autonomia</th>
+          <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Reservatório</th>
+          <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Filtro</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="bg-white">
+          <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Electrolux Ergorapido ERG26</td>
+          <td class="px-4 py-3 text-slate-600 border border-slate-200">até 45 min (mín.) / ~15 min (máx.)</td>
+          <td class="px-4 py-3 text-slate-600 border border-slate-200">compacto</td>
+          <td class="px-4 py-3 text-slate-600 border border-slate-200">HEPA (tripla filtragem)</td>
+        </tr>
+        <tr class="bg-slate-50">
+          <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Xiaomi Vertical Sem Fio Light</td>
+          <td class="px-4 py-3 text-slate-600 border border-slate-200">até 45 min (normal) / até 13 min (turbo)</td>
+          <td class="px-4 py-3 text-slate-600 border border-slate-200">compacto</td>
+          <td class="px-4 py-3 text-slate-600 border border-slate-200">HEPA (3 estágios)</td>
+        </tr>
+        <tr class="bg-white">
+          <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Philco PAS56</td>
+          <td class="px-4 py-3 text-slate-600 border border-slate-200">até 49 min</td>
+          <td class="px-4 py-3 text-slate-600 border border-slate-200">1L</td>
+          <td class="px-4 py-3 text-slate-600 border border-slate-200">HEPA</td>
+        </tr>
+        <tr class="bg-slate-50">
+          <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">WAP Eco Rápido</td>
+          <td class="px-4 py-3 text-slate-600 border border-slate-200">até 40 min</td>
+          <td class="px-4 py-3 text-slate-600 border border-slate-200">700ml</td>
+          <td class="px-4 py-3 text-slate-600 border border-slate-200">padrão</td>
+        </tr>
+        <tr class="bg-white">
+          <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Black+Decker BHFEA18D1</td>
+          <td class="px-4 py-3 text-slate-600 border border-slate-200">20 min (máx.) / 40 min (mín.)</td>
+          <td class="px-4 py-3 text-slate-600 border border-slate-200">500ml</td>
+          <td class="px-4 py-3 text-slate-600 border border-slate-200">lavável</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p class="text-slate-700 leading-relaxed mb-6">
+    Como qualquer eletroportátil, ficha técnica é só parte da decisão. Nota e comentários de quem já comprou também importam bastante, e é isso que detalhamos em cada modelo a seguir.
+  </p>
+
+  <!-- Ranking -->
+  <h2 id="ranking" class="text-2xl font-black text-slate-900 mt-10 mb-6">Os 5 melhores aspiradores verticais sem fio de 2026</h2>
+
+  <!-- Produto 1: Electrolux ERG26 -->
+  <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+    <div class="bg-orange-500 px-6 py-4">
+      <h3 class="text-white font-black text-xl">1º lugar - Electrolux Ergorapido ERG26</h3>
+      <p class="text-orange-100 text-sm mt-1">Nota 4,9/5 em 1.138 avaliações reais, filtro HEPA e bocal Pet Care com LED</p>
+    </div>
+    <div class="p-6 flex flex-col md:flex-row gap-8">
+      <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 min-h-32">
+        <img src="/images/aspiradores-verticais-2026/electrolux-ergorapido-erg26.webp" alt="Electrolux Ergorapido ERG26 dourado" class="w-full h-auto object-contain rounded-lg" loading="lazy" />
+      </div>
+      <div class="flex-1">
+        <a href="https://meli.la/2EWQsf5" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-400 hover:bg-orange-500 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Conferir preço no Mercado Livre</a>
+        <h4 class="font-bold text-slate-800 mb-3">Ficha Técnica</h4>
+        <ul class="text-sm text-slate-600 space-y-1 mb-6">
+          <li><strong>Formato:</strong> 2 em 1 (vertical e portátil)</li>
+          <li><strong>Autonomia:</strong> até 45 min na potência mínima / cerca de 15 min na potência máxima</li>
+          <li><strong>Bateria:</strong> íon-lítio</li>
+          <li><strong>Filtragem:</strong> tripla filtragem com filtro HEPA</li>
+          <li><strong>Tecnologia:</strong> Cyclone + Brush Roll Clean (limpeza automática da escova)</li>
+          <li><strong>Bocal especial:</strong> Pet Care com LED</li>
+          <li><strong>Voltagem:</strong> Bivolt</li>
+        </ul>
+        <div class="grid md:grid-cols-2 gap-4">
+          <div>
+            <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
+            <ul class="text-sm text-slate-600 space-y-1">
+              <li>Nota 4,9/5 com mais de mil avaliações no Mercado Livre</li>
+              <li>Filtro HEPA remove até 99,9% das impurezas, segundo o fabricante</li>
+              <li>Bocal Pet Care com LED facilita achar sujeira em cantos escuros</li>
+              <li>Brush Roll Clean evita fios e cabelos presos na escova</li>
+            </ul>
+          </div>
+          <div>
+            <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
+            <ul class="text-sm text-slate-600 space-y-1">
+              <li>Autonomia cai bastante na potência máxima</li>
+              <li>Reservatório compacto, exige esvaziar com frequência</li>
+            </ul>
+          </div>
+        </div>
+        <p class="text-slate-700 text-sm leading-relaxed mt-4">
+          <strong>Pra quem é indicado:</strong> quem quer o modelo mais avaliado e testado pelo mercado, com bom equilíbrio entre preço, autonomia e filtragem. Fizemos uma análise completa dele na <a href="/electrolux-ergorapido-erg26-review" class="text-orange-600 font-semibold hover:underline">review do Electrolux Ergorapido ERG26</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Produto 2: Xiaomi Light -->
+  <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+    <div class="bg-slate-800 px-6 py-4">
+      <h3 class="text-white font-black text-xl">2º lugar - Xiaomi Aspirador Vertical Sem Fio Light</h3>
+      <p class="text-slate-300 text-sm mt-1">O mais tecnológico da lista, com motor brushless e sucção de até 17.000Pa no modo turbo</p>
+    </div>
+    <div class="p-6 flex flex-col md:flex-row gap-8">
+      <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 min-h-32">
+        <img src="/images/aspiradores-verticais-2026/xiaomi-vertical-sem-fio-light.webp" alt="Xiaomi Aspirador Vertical Sem Fio Light" class="w-full h-auto object-contain rounded-lg" loading="lazy" />
+      </div>
+      <div class="flex-1">
+        <a href="https://meli.la/32tKz9g" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-400 hover:bg-orange-500 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Conferir preço no Mercado Livre</a>
+        <h4 class="font-bold text-slate-800 mb-3">Ficha Técnica</h4>
+        <ul class="text-sm text-slate-600 space-y-1 mb-6">
+          <li><strong>Modelo:</strong> XM597BRA</li>
+          <li><strong>Formato:</strong> 2 em 1, com suporte de parede e escova motorizada</li>
+          <li><strong>Potência:</strong> 220W, motor brushless de até 100.000 rpm</li>
+          <li><strong>Modos:</strong> Normal (8.000Pa / 20W, até 45 min) e Turbo (17.000Pa / 50W, até 13 min)</li>
+          <li><strong>Bateria:</strong> 2.500mAh íon-lítio, recarga completa em até 5h</li>
+          <li><strong>Peso:</strong> 1,2kg (corpo principal)</li>
+          <li><strong>Filtragem:</strong> sistema HEPA de 3 estágios (ciclone, algodão e HEPA)</li>
+        </ul>
+        <div class="grid md:grid-cols-2 gap-4">
+          <div>
+            <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
+            <ul class="text-sm text-slate-600 space-y-1">
+              <li>Maior sucção declarada entre os modelos da lista</li>
+              <li>Filtragem HEPA de 3 estágios, retém partículas menores que 0,3 micrômetros</li>
+              <li>Design leve e compacto, com suporte de parede</li>
+            </ul>
+          </div>
+          <div>
+            <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
+            <ul class="text-sm text-slate-600 space-y-1">
+              <li>No modo turbo, a bateria dura só cerca de 13 minutos</li>
+              <li>Capacidade do reservatório não é divulgada pelo fabricante</li>
+            </ul>
+          </div>
+        </div>
+        <p class="text-slate-700 text-sm leading-relaxed mt-4">
+          <strong>Pra quem é indicado:</strong> quem prioriza sucção forte para tapetes e sofás e não se importa em usar o modo turbo só em rajadas curtas.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Produto 3: Philco PAS56 -->
+  <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+    <div class="bg-slate-800 px-6 py-4">
+      <h3 class="text-white font-black text-xl">3º lugar - Philco PAS56</h3>
+      <p class="text-slate-300 text-sm mt-1">Maior autonomia declarada da lista, com reservatório de 1L</p>
+    </div>
+    <div class="p-6 flex flex-col md:flex-row gap-8">
+      <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 min-h-32">
+        <img src="/images/aspiradores-verticais-2026/philco-pas56.webp" alt="Philco PAS56 aspirador vertical 2 em 1" class="w-full h-auto object-contain rounded-lg" loading="lazy" />
+      </div>
+      <div class="flex-1">
+        <a href="https://link.amazon/B09RrbD3V" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Conferir preço na Amazon</a>
+        <h4 class="font-bold text-slate-800 mb-3">Ficha Técnica</h4>
+        <ul class="text-sm text-slate-600 space-y-1 mb-6">
+          <li><strong>Formato:</strong> 2 em 1</li>
+          <li><strong>Potência:</strong> 200W</li>
+          <li><strong>Autonomia:</strong> até 49 min</li>
+          <li><strong>Reservatório:</strong> 1L</li>
+          <li><strong>Filtro:</strong> HEPA</li>
+          <li><strong>Painel:</strong> display em LED</li>
+          <li><strong>Voltagem:</strong> Bivolt automático</li>
+          <li><strong>Avaliação:</strong> nota 3,9/5 na Amazon (ainda com poucas avaliações, 15 no momento — vale acompanhar como evolui)</li>
+        </ul>
+        <div class="grid md:grid-cols-2 gap-4">
+          <div>
+            <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
+            <ul class="text-sm text-slate-600 space-y-1">
+              <li>Autonomia declarada de 49 minutos, a maior da lista</li>
+              <li>Reservatório de 1L, o maior entre os modelos sem fio comparados</li>
+              <li>Tem filtro HEPA e display em LED</li>
+            </ul>
+          </div>
+          <div>
+            <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
+            <ul class="text-sm text-slate-600 space-y-1">
+              <li>Marca com menos avaliações públicas disponíveis do que Electrolux e Xiaomi</li>
+              <li>Peso não divulgado nos canais oficiais consultados</li>
+            </ul>
+          </div>
+        </div>
+        <p class="text-slate-700 text-sm leading-relaxed mt-4">
+          <strong>Pra quem é indicado:</strong> casas maiores, onde o reservatório de 1L evita parar a limpeza no meio para esvaziar.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Produto 4: WAP Eco Rápido -->
+  <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+    <div class="bg-slate-800 px-6 py-4">
+      <h3 class="text-white font-black text-xl">4º lugar - WAP Eco Rápido</h3>
+      <p class="text-slate-300 text-sm mt-1">A opção mais em conta da lista, com o essencial bem resolvido</p>
+    </div>
+    <div class="p-6 flex flex-col md:flex-row gap-8">
+      <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 min-h-32">
+        <img src="/images/aspiradores-verticais-2026/wap-eco-rapido.webp" alt="WAP Eco Rápido aspirador vertical 2 em 1" class="w-full h-auto object-contain rounded-lg" loading="lazy" />
+      </div>
+      <div class="flex-1">
+        <a href="https://link.amazon/B0cIeB4mc" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Conferir preço na Amazon</a>
+        <h4 class="font-bold text-slate-800 mb-3">Ficha Técnica</h4>
+        <ul class="text-sm text-slate-600 space-y-1 mb-6">
+          <li><strong>Formato:</strong> 2 em 1</li>
+          <li><strong>Autonomia:</strong> até 40 min</li>
+          <li><strong>Reservatório:</strong> 700ml</li>
+          <li><strong>Velocidades:</strong> 2</li>
+          <li><strong>Voltagem:</strong> Bivolt</li>
+          <li><strong>Avaliação:</strong> nota 4,4/5 em 1.438 avaliações na Amazon</li>
+        </ul>
+        <div class="grid md:grid-cols-2 gap-4">
+          <div>
+            <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
+            <ul class="text-sm text-slate-600 space-y-1">
+              <li>Preço de entrada mais acessível da lista</li>
+              <li>Reservatório de 700ml, maior que o de vários concorrentes diretos</li>
+              <li>2 velocidades para ajustar entre economia e potência</li>
+            </ul>
+          </div>
+          <div>
+            <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
+            <ul class="text-sm text-slate-600 space-y-1">
+              <li>Não tem filtro HEPA</li>
+              <li>Autonomia menor que os modelos mais completos da lista</li>
+            </ul>
+          </div>
+        </div>
+        <p class="text-slate-700 text-sm leading-relaxed mt-4">
+          <strong>Pra quem é indicado:</strong> quem quer o básico bem resolvido, sem pagar por recursos como filtro HEPA ou display, e não tem pet em casa.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Produto 5: Black+Decker BHFEA18D1 -->
+  <div class="border border-slate-200 rounded-2xl overflow-hidden mb-10 shadow-sm">
+    <div class="bg-slate-800 px-6 py-4">
+      <h3 class="text-white font-black text-xl">5º lugar - Black+Decker BHFEA18D1</h3>
+      <p class="text-slate-300 text-sm mt-1">Tecnologia Autosense que ajusta a potência de acordo com o tipo de piso</p>
+    </div>
+    <div class="p-6 flex flex-col md:flex-row gap-8">
+      <div class="md:w-44 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 min-h-32">
+        <img src="/images/aspiradores-verticais-2026/black-decker-bhfea18d1.webp" alt="Black+Decker BHFEA18D1 aspirador vertical sem fio" class="w-full h-auto object-contain rounded-lg" loading="lazy" />
+      </div>
+      <div class="flex-1">
+        <a href="https://link.amazon/B03fZOcGi" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Conferir preço na Amazon</a>
+        <h4 class="font-bold text-slate-800 mb-3">Ficha Técnica</h4>
+        <ul class="text-sm text-slate-600 space-y-1 mb-6">
+          <li><strong>Bateria:</strong> 20V PowerConnect de lítio, 2Ah</li>
+          <li><strong>Autonomia:</strong> 20 min na velocidade máxima / 40 min na mínima</li>
+          <li><strong>Reservatório:</strong> 500ml</li>
+          <li><strong>Filtro:</strong> lavável</li>
+          <li><strong>Tecnologia:</strong> Autosense, ajusta a potência conforme o tipo de piso</li>
+          <li><strong>Escova:</strong> giratória, removível, com LED</li>
+          <li><strong>Avaliação:</strong> nota 4,2/5 em 2.515 avaliações na Amazon</li>
+        </ul>
+        <div class="grid md:grid-cols-2 gap-4">
+          <div>
+            <p class="text-green-600 font-bold text-sm mb-2">Pontos positivos</p>
+            <ul class="text-sm text-slate-600 space-y-1">
+              <li>Autosense evita gastar bateria à toa em piso liso</li>
+              <li>Escova removível facilita retirar cabelo e pelos enrolados</li>
+              <li>Filtro lavável, sem custo de reposição</li>
+            </ul>
+          </div>
+          <div>
+            <p class="text-red-500 font-bold text-sm mb-2">Pontos negativos</p>
+            <ul class="text-sm text-slate-600 space-y-1">
+              <li>Autonomia máxima de apenas 20 minutos na potência alta</li>
+              <li>Reservatório de 500ml, menor que a maioria da lista</li>
+            </ul>
+          </div>
+        </div>
+        <p class="text-slate-700 text-sm leading-relaxed mt-4">
+          <strong>Pra quem é indicado:</strong> quem tem carpete e piso liso misturados em casa e quer que o aparelho ajuste a potência sozinho.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bloco Leia Também 1 -->
+  <div class="flex items-center gap-4 bg-slate-50 border-l-4 border-orange-500 rounded-xl p-4 mb-8">
+    <img src="/images/aspirador-guia/capa-como-escolher-aspirador-de-po.webp" alt="Como Escolher Aspirador de Pó" width="80" height="60" class="rounded-lg object-cover flex-shrink-0" loading="lazy" />
+    <div>
+      <span class="block text-xs font-bold uppercase tracking-wide text-orange-600 mb-1">Leia Também</span>
+      <a href="/como-escolher-aspirador-de-po" class="text-sm font-bold text-slate-800 hover:underline">Como Escolher Aspirador de Pó: Com Fio, Sem Fio, Vertical ou Robô?</a>
+    </div>
+  </div>
+
+  <!-- Tabela resumo -->
+  <h2 id="tabela-resumo" class="text-2xl font-black text-slate-900 mt-10 mb-4">Tabela resumo: qual escolher por perfil</h2>
+
+  <div class="overflow-x-auto mb-6">
+    <table class="w-full text-sm border-collapse">
+      <thead>
+        <tr class="bg-slate-100">
+          <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Perfil</th>
+          <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Modelo recomendado</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="bg-white">
+          <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Melhor avaliado / mais seguro para comprar</td>
+          <td class="px-4 py-3 text-slate-600 border border-slate-200">Electrolux Ergorapido ERG26</td>
+        </tr>
+        <tr class="bg-slate-50">
+          <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Maior sucção e tecnologia</td>
+          <td class="px-4 py-3 text-slate-600 border border-slate-200">Xiaomi Vertical Sem Fio Light</td>
+        </tr>
+        <tr class="bg-white">
+          <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Autonomia mais longa</td>
+          <td class="px-4 py-3 text-slate-600 border border-slate-200">Philco PAS56</td>
+        </tr>
+        <tr class="bg-slate-50">
+          <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Orçamento mais apertado</td>
+          <td class="px-4 py-3 text-slate-600 border border-slate-200">WAP Eco Rápido</td>
+        </tr>
+        <tr class="bg-white">
+          <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Casa com piso misto (carpete e liso)</td>
+          <td class="px-4 py-3 text-slate-600 border border-slate-200">Black+Decker BHFEA18D1</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Erros comuns -->
+  <h2 id="erros-comuns" class="text-2xl font-black text-slate-900 mt-10 mb-4">Erros comuns na hora de comprar</h2>
+
+  <p class="text-slate-700 leading-relaxed mb-4">
+    Depois de comparar as fichas técnicas dos principais modelos vendidos no Brasil, alguns erros se repetem entre quem compra sem pesquisar direito.
+  </p>
+
+  <ul class="list-disc list-inside space-y-2 text-slate-700 mb-6 ml-2">
+    <li><strong>Olhar só a potência em watts:</strong> aspirador sem fio funciona com bateria, e a eficiência da sucção depende mais da engenharia do motor e do bocal do que só do número de watts.</li>
+    <li><strong>Confiar na autonomia máxima anunciada:</strong> o tempo de bateria informado costuma ser o da potência mínima. Na potência máxima, a autonomia real cai bastante, às vezes pela metade ou mais.</li>
+    <li><strong>Ignorar a capacidade do reservatório:</strong> reservatórios abaixo de 500ml exigem parar a limpeza no meio para esvaziar em casas maiores ou com mais sujeira acumulada.</li>
+    <li><strong>Não verificar se o filtro é lavável ou descartável:</strong> filtros descartáveis geram custo de reposição ao longo do tempo, o que muda o custo real do aparelho.</li>
+    <li><strong>Comprar sem checar a voltagem:</strong> mesmo em aparelhos com bateria, o carregador pode não ser bivolt. Confirme isso antes de finalizar a compra.</li>
+  </ul>
+
+  <!-- Bloco Leia Também 2 -->
+  <div class="flex items-center gap-4 bg-slate-50 border-l-4 border-orange-500 rounded-xl p-4 mb-8">
+    <img src="/images/aspirador-vertical-portatil/capa-aspirador-vertical-portatil.webp" alt="Aspirador Vertical ou Portátil Sem Fio" width="80" height="60" class="rounded-lg object-cover flex-shrink-0" loading="lazy" />
+    <div>
+      <span class="block text-xs font-bold uppercase tracking-wide text-orange-600 mb-1">Leia Também</span>
+      <a href="/aspirador-vertical-ou-portatil-apartamento" class="text-sm font-bold text-slate-800 hover:underline">Aspirador Vertical ou Portátil Sem Fio: Qual Vale Mais para Apartamento?</a>
+    </div>
+  </div>
+
+  <!-- Conclusão -->
+  <h2 class="text-2xl font-black text-slate-900 mt-10 mb-4">Qual dos 5 vale mais a pena pra você</h2>
+
+  <p class="text-slate-700 leading-relaxed mb-4">
+    Se você não quer comparar ficha técnica linha por linha, vá direto no Electrolux Ergorapido ERG26. É o modelo com mais avaliações reais e boa nota, o que reduz bastante o risco de comprar algo que não entrega o prometido.
+  </p>
+
+  <p class="text-slate-700 leading-relaxed mb-4">
+    Se sucção forte para tapete e sofá é prioridade, o Xiaomi Vertical Sem Fio Light entrega o número mais alto da lista, desde que você aceite usar o modo turbo só em rajadas curtas. E se o orçamento é o fator decisivo, o WAP Eco Rápido resolve o básico sem complicar.
+  </p>
+
+  <p class="text-slate-700 leading-relaxed mb-6">
+    De qualquer forma, vale sempre conferir o preço e as avaliações atualizadas direto na página do produto antes de fechar a compra, já que promoções e notas mudam com frequência.
+  </p>
+
+  <!-- FAQ -->
+  <h2 id="faq" class="text-2xl font-black text-slate-900 mt-10 mb-6">Perguntas frequentes</h2>
+
+  <details class="group border border-slate-200 rounded-2xl mb-3 overflow-hidden">
+    <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-bold text-slate-800 bg-white hover:bg-slate-50 transition-colors list-none">
+      Qual a diferença entre aspirador vertical sem fio e aspirador de mão sem fio?
+      <svg class="w-5 h-5 text-slate-400 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    </summary>
+    <div class="px-5 py-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
+      O aspirador vertical sem fio tem cabo longo e é feito para limpar o chão em pé, como se fosse uma vassoura elétrica. A maioria dos modelos atuais é 2 em 1: você retira o corpo do cabo e ele vira um aspirador de mão para estofados, carro e cantos apertados.
+    </div>
+  </details>
+
+  <details class="group border border-slate-200 rounded-2xl mb-3 overflow-hidden">
+    <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-bold text-slate-800 bg-white hover:bg-slate-50 transition-colors list-none">
+      Vale a pena trocar o aspirador com fio por um vertical sem fio?
+      <svg class="w-5 h-5 text-slate-400 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    </summary>
+    <div class="px-5 py-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
+      Depende da sua rotina. Para manutenção rápida do dia a dia, o vertical sem fio ganha em praticidade, já que não precisa trocar de tomada. Para faxina pesada e demorada em casas grandes, o modelo com fio ainda leva vantagem, porque não perde potência com o tempo de uso, já que não depende de bateria.
+    </div>
+  </details>
+
+  <details class="group border border-slate-200 rounded-2xl mb-3 overflow-hidden">
+    <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-bold text-slate-800 bg-white hover:bg-slate-50 transition-colors list-none">
+      Quanto tempo dura a bateria de um aspirador vertical sem fio?
+      <svg class="w-5 h-5 text-slate-400 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    </summary>
+    <div class="px-5 py-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
+      Na potência mínima, os modelos mais completos chegam a 45 ou 49 minutos de uso contínuo. Na potência máxima, esse tempo costuma cair para 13 a 20 minutos, dependendo do modelo. A bateria de lítio, de forma geral, aguenta de 300 a 500 ciclos de recarga antes de a autonomia começar a cair de forma perceptível.
+    </div>
+  </details>
+
+  <details class="group border border-slate-200 rounded-2xl mb-3 overflow-hidden">
+    <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-bold text-slate-800 bg-white hover:bg-slate-50 transition-colors list-none">
+      Aspirador vertical sem fio limpa bem tapete e carpete?
+      <svg class="w-5 h-5 text-slate-400 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    </summary>
+    <div class="px-5 py-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
+      Sim, mas o resultado varia com a potência do motor e o modo escolhido. Modelos com tecnologia de ajuste automático, como o Autosense do Black+Decker BHFEA18D1, aumentam a sucção sozinhos ao detectar carpete. Em outros modelos, vale usar a potência máxima manualmente em cima do tapete, mesmo sabendo que isso reduz a autonomia da bateria.
+    </div>
+  </details>
+
+  <details class="group border border-slate-200 rounded-2xl mb-3 overflow-hidden">
+    <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-bold text-slate-800 bg-white hover:bg-slate-50 transition-colors list-none">
+      Qual aspirador vertical sem fio é melhor para quem tem pet?
+      <svg class="w-5 h-5 text-slate-400 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    </summary>
+    <div class="px-5 py-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
+      O Electrolux Ergorapido ERG26 se destaca aqui pelo bocal Pet Care com LED, feito para achar pelos em cantos escuros, e pela tecnologia Brush Roll Clean, que evita que os pelos fiquem enrolados na escova. O filtro HEPA também ajuda a reter mais partículas soltas no ar durante a limpeza.
+    </div>
+  </details>
+
+  <details class="group border border-slate-200 rounded-2xl mb-3 overflow-hidden">
+    <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-bold text-slate-800 bg-white hover:bg-slate-50 transition-colors list-none">
+      Vale a pena comprar um modelo 2 em 1?
+      <svg class="w-5 h-5 text-slate-400 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    </summary>
+    <div class="px-5 py-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
+      Na maioria dos casos, sim. O formato 2 em 1, presente em quase todos os modelos deste ranking, permite retirar o corpo do cabo e usar o aparelho como aspirador de mão em estofados, carro e cantos apertados, sem precisar comprar um segundo aparelho separado.
+    </div>
+  </details>
+
+  <!-- Schema FAQ (para inserir no JSON-LD do artigo) -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Qual a diferença entre aspirador vertical sem fio e aspirador de mão sem fio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "O aspirador vertical sem fio tem cabo longo e é feito para limpar o chão em pé, como se fosse uma vassoura elétrica. A maioria dos modelos atuais é 2 em 1: você retira o corpo do cabo e ele vira um aspirador de mão para estofados, carro e cantos apertados."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Vale a pena trocar o aspirador com fio por um vertical sem fio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Depende da sua rotina. Para manutenção rápida do dia a dia, o vertical sem fio ganha em praticidade, já que não precisa trocar de tomada. Para faxina pesada e demorada em casas grandes, o modelo com fio ainda leva vantagem, porque não perde potência com o tempo de uso."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quanto tempo dura a bateria de um aspirador vertical sem fio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Na potência mínima, os modelos mais completos chegam a 45 ou 49 minutos de uso contínuo. Na potência máxima, esse tempo costuma cair para 13 a 20 minutos, dependendo do modelo."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Aspirador vertical sem fio limpa bem tapete e carpete?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sim, mas o resultado varia com a potência do motor e o modo escolhido. Modelos com tecnologia de ajuste automático, como o Autosense do Black+Decker BHFEA18D1, aumentam a sucção sozinhos ao detectar carpete."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Qual aspirador vertical sem fio é melhor para quem tem pet?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "O Electrolux Ergorapido ERG26 se destaca pelo bocal Pet Care com LED e pela tecnologia Brush Roll Clean, que evita que os pelos fiquem enrolados na escova. O filtro HEPA também ajuda a reter mais partículas soltas no ar."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Vale a pena comprar um modelo 2 em 1?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Na maioria dos casos, sim. O formato 2 em 1 permite retirar o corpo do cabo e usar o aparelho como aspirador de mão em estofados, carro e cantos apertados, sem precisar comprar um segundo aparelho separado."
+        }
+      }
+    ]
+  })} />
+
+  <!-- Bloco Leia Também final (grid) -->
+  <div class="my-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+    <a href="/como-escolher-aspirador-de-po" class="flex items-center gap-4 border border-slate-200 rounded-2xl p-4 hover:border-orange-300 transition-colors no-underline">
+      <img src="/images/aspirador-guia/capa-como-escolher-aspirador-de-po.webp" alt="Como Escolher Aspirador de Pó" class="w-20 h-16 object-cover rounded-xl flex-shrink-0" loading="lazy" />
+      <div>
+        <p class="text-xs text-slate-500 mb-1 font-medium uppercase tracking-wide">Leia Também</p>
+        <p class="font-bold text-slate-800 text-sm leading-snug">Como Escolher Aspirador de Pó: Com Fio, Sem Fio, Vertical ou Robô?</p>
+      </div>
+    </a>
+    <a href="/aspirador-vertical-ou-portatil-apartamento" class="flex items-center gap-4 border border-slate-200 rounded-2xl p-4 hover:border-orange-300 transition-colors no-underline">
+      <img src="/images/aspirador-vertical-portatil/capa-aspirador-vertical-portatil.webp" alt="Aspirador Vertical ou Portátil Sem Fio" class="w-20 h-16 object-cover rounded-xl flex-shrink-0" loading="lazy" />
+      <div>
+        <p class="text-xs text-slate-500 mb-1 font-medium uppercase tracking-wide">Leia Também</p>
+        <p class="font-bold text-slate-800 text-sm leading-snug">Aspirador Vertical ou Portátil Sem Fio: Qual Vale Mais para Apartamento?</p>
+      </div>
+    </a>
+    <a href="/electrolux-ergorapido-erg26-review" class="flex items-center gap-4 border border-slate-200 rounded-2xl p-4 hover:border-orange-300 transition-colors no-underline">
+      <img src="/images/electrolux-erg26/capa-electrolux-erg26.webp" alt="Electrolux Ergorapido ERG26 Review" class="w-20 h-16 object-cover rounded-xl flex-shrink-0" loading="lazy" />
+      <div>
+        <p class="text-xs text-slate-500 mb-1 font-medium uppercase tracking-wide">Leia Também</p>
+        <p class="font-bold text-slate-800 text-sm leading-snug">Electrolux Ergorapido ERG26: Vale a Pena? Review Completo</p>
+      </div>
+    </a>
+    <a href="/melhores-aspiradores-po-2026" class="flex items-center gap-4 border border-slate-200 rounded-2xl p-4 hover:border-orange-300 transition-colors no-underline">
+      <img src="/images/aspiradores/capa-aspiradores.webp" alt="Os 7 Melhores Aspiradores de Pó 2026" class="w-20 h-16 object-cover rounded-xl flex-shrink-0" loading="lazy" />
+      <div>
+        <p class="text-xs text-slate-500 mb-1 font-medium uppercase tracking-wide">Leia Também</p>
+        <p class="font-bold text-slate-800 text-sm leading-snug">Os 7 Melhores Aspiradores de Pó 2026: Com Fio, Sem Fio e Robôs</p>
+      </div>
+    </a>
+  </div>
+
+
+</div>
+
+    )}
+
 
     <!-- Calculadora de consumo de energia, travada na categoria do artigo -->
     {CALCULADORA_POR_SLUG[slug as string] && (
