@@ -476,8 +476,8 @@ export const posts: Post[] = [
   },
   {
     slug: 'melhores-aspiradores-verticais-2026',
-    titulo: 'Os 7 Melhores Aspiradores Verticais Sem Fio de 2026',
-    resumo: 'Comparamos 7 aspiradores verticais sem fio vendidos no Brasil: autonomia, filtro HEPA, reservatório e ficha técnica para você escolher sem errar.',
+    titulo: 'Os 5 Melhores Aspiradores Verticais Sem Fio de 2026',
+    resumo: 'Comparamos 5 aspiradores verticais sem fio vendidos no Brasil: autonomia, filtro HEPA, reservatório e ficha técnica para você escolher sem errar.',
     tempo: '10 min de leitura',
     imagem: '/images/aspiradores-verticais-2026/capa-melhores-aspiradores-verticais-2026.webp',
     categoria: 'rankings-e-listas',
