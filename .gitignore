@@ -6,3 +6,6 @@ dist/
 !.env.example
 
 .vercel
+
+# Pastas de scratch de video (HyperFrames) - nao versionar
+video-*/
