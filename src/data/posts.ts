@@ -483,6 +483,16 @@ export const posts: Post[] = [
     categoria: 'rankings-e-listas',
     categoriaLabel: 'Rankings e Listas',
     categoriaColor: 'bg-green-100 text-green-700',
+  },
+  {
+    slug: 'panela-pressao-eletrica-ou-convencional',
+    titulo: 'Panela de Pressão Elétrica ou Convencional: Qual Compensa Mais?',
+    resumo: 'Comparamos tempo de preparo, segurança, consumo de energia e gás, custo e durabilidade da panela de pressão elétrica e da convencional para você decidir.',
+    tempo: '9 min de leitura',
+    imagem: '/images/panela-comparativo/capa-panela-eletrica-ou-convencional.webp',
+    categoria: 'comparativos',
+    categoriaLabel: 'Comparativo',
+    categoriaColor: 'bg-blue-100 text-blue-700',
   }
 ];
 
