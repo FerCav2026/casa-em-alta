@@ -321,6 +321,13 @@ const posts: Record<string, { titulo: string; descricao: string; categoria: stri
     dataCriacao: '2026-08-31',
     dataModificacao: '2026-08-31',
   },
+  'melhores-cafeteiras-2026': {
+    titulo: 'As 7 Melhores Cafeteiras 2026: Coado e Cápsula',
+    descricao: 'As melhores cafeteiras 2026 comparadas: 5 de café coado e 2 de cápsula, com ficha técnica, nota real de compradores e a indicação certa para cada rotina.',
+    categoria: 'Rankings e Listas',
+    dataCriacao: '2026-09-01',
+    dataModificacao: '2026-09-01',
+  },
 };
 
 export function getStaticPaths() {
@@ -368,6 +375,7 @@ export function getStaticPaths() {
     'dolce-gusto-genio-s-basic-review': {},
     'melhores-aspiradores-verticais-2026': {},
     'panela-pressao-eletrica-ou-convencional': {},
+    'melhores-cafeteiras-2026': {},
   }).map((slug) => ({ params: { slug } }));
 }
 
@@ -443,6 +451,7 @@ const isLavaLoucasCompactaGuia = slug === 'lava-loucas-compacta-vale-a-pena-apar
 const isDolceGustoGenioSBasicReview = slug === 'dolce-gusto-genio-s-basic-review';
 const isMelhoresAspiradoresVerticais = slug === 'melhores-aspiradores-verticais-2026';
 const isPanelaEletricaOuConvencional = slug === 'panela-pressao-eletrica-ou-convencional';
+const isMelhoresCafeteiras = slug === 'melhores-cafeteiras-2026';
 
 const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isAirfryer ? '/images/airfryer/capa-airfryer.webp'
@@ -487,11 +496,12 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isDolceGustoGenioSBasicReview ? '/images/dolce-gusto-nespresso/capa-dolce-gusto-genio-s-basic-review.webp'
   : isMelhoresAspiradoresVerticais ? '/images/aspiradores-verticais-2026/capa-melhores-aspiradores-verticais-2026.webp'
   : isPanelaEletricaOuConvencional ? '/images/panela-comparativo/capa-panela-eletrica-ou-convencional.webp'
+  : isMelhoresCafeteiras ? '/images/melhores-cafeteiras/capa-melhores-cafeteiras-2026.webp'
   : undefined;
 ---
 
 <BaseLayout
-  title={isPanelaEletricaOuConvencional ? post.titulo : `${post.titulo} - Casa em Alta`}
+  title={isPanelaEletricaOuConvencional || isMelhoresCafeteiras ? post.titulo : `${post.titulo} - Casa em Alta`}
   description={post.descricao}
   image={coverImage}
   type="article"
@@ -16650,6 +16660,38 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
           ]
         })} />
 
+        <!-- Leia também -->
+        <p style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#c2410c;margin:32px 0 12px;">Leia também:</p>
+        <div style="display:flex;flex-direction:column;gap:12px;">
+          <a href="/melhores-cafeteiras-2026" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;flex-shrink:0;">
+              <img src="/images/melhores-cafeteiras/capa-melhores-cafeteiras-2026.webp" alt="As 7 melhores cafeteiras 2026" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">As 7 Melhores Cafeteiras 2026: Coado e Cápsula</span>
+            </div>
+          </a>
+          <a href="/dolce-gusto-vs-nespresso" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;flex-shrink:0;">
+              <img src="/images/dolce-gusto-nespresso/capa-dolce-gusto-nespresso.webp" alt="Dolce Gusto ou Nespresso" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Dolce Gusto ou Nespresso: Qual Vale Mais a Pena?</span>
+            </div>
+          </a>
+          <a href="/dolce-gusto-genio-s-basic-review" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;flex-shrink:0;">
+              <img src="/images/dolce-gusto-nespresso/capa-dolce-gusto-genio-s-basic-review.webp" alt="Dolce Gusto Genio S Basic review" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Dolce Gusto Genio S Basic: Vale a Pena? Review Completo</span>
+            </div>
+          </a>
+        </div>
+
       </div>
     )}
 
@@ -17024,6 +17066,15 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
         <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
           <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
           <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Dolce Gusto Genio S Basic: Vale a Pena? Review Completo</span>
+        </div>
+      </a>
+      <a href="/melhores-cafeteiras-2026" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+        <div style="width:200px;flex-shrink:0;">
+          <img src="/images/melhores-cafeteiras/capa-melhores-cafeteiras-2026.webp" alt="As 7 melhores cafeteiras 2026" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+        </div>
+        <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+          <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+          <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">As 7 Melhores Cafeteiras 2026: Coado e Cápsula</span>
         </div>
       </a>
     </div>
@@ -18152,6 +18203,15 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
               <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Como Escolher Cafeteira: Cápsula, Expresso ou Coador?</span>
             </div>
           </a>
+          <a href="/melhores-cafeteiras-2026" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;flex-shrink:0;">
+              <img src="/images/melhores-cafeteiras/capa-melhores-cafeteiras-2026.webp" alt="As 7 melhores cafeteiras 2026" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">As 7 Melhores Cafeteiras 2026: Coado e Cápsula</span>
+            </div>
+          </a>
         </div>
 
       </div>
@@ -19167,6 +19227,833 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
 
 </div>
 
+    )}
+
+    {isMelhoresCafeteiras && (
+<div>
+
+  <!-- Capa -->
+  <div class="rounded-2xl overflow-hidden mb-8 shadow-md">
+    <img
+      src="/images/melhores-cafeteiras/capa-melhores-cafeteiras-2026.webp"
+      alt="As 7 melhores cafeteiras 2026 sobre a bancada de uma cozinha"
+      class="w-full h-auto object-cover"
+      loading="eager" width="1280" height="720"
+    />
+  </div>
+
+  <!-- Data de atualização -->
+  <p class="text-xs text-slate-400 mb-6">Atualizado em setembro de 2026</p>
+
+  <!-- Introdução -->
+  <p class="text-slate-700 leading-relaxed mb-4">
+    Escolher entre as melhores cafeteiras 2026 parece fácil até você abrir a Amazon e ver trinta modelos parecidos, uns de café coado, outros de cápsula, com preços que vão de bem barato a salgado. Pra facilitar, reuni aqui sete cafeteiras que estão entre as mais vendidas do Brasil neste ano, com a ficha técnica conferida e a nota real de quem já comprou.
+  </p>
+  <p class="text-slate-700 leading-relaxed mb-4">
+    A lista segue a ordem das mais vendidas da Amazon, não é um ranking de melhor pra pior. Cinco são de café coado, aquele feito com pó e filtro, e duas são de cápsula. Pra cada uma dei um rótulo, tipo melhor no geral, mais compacta ou mais barata, pra você bater o olho e achar logo a que combina com a sua rotina. Se ainda está na dúvida entre os tipos, vale ler antes o nosso guia de <a href="/como-escolher-cafeteira" class="text-orange-600 font-semibold hover:underline">como escolher cafeteira</a>.
+  </p>
+
+  <!-- TL;DR -->
+  <div class="bg-orange-50 border border-orange-200 rounded-2xl px-5 py-4 mb-6">
+    <p class="font-bold text-slate-800 mb-1">Em resumo:</p>
+    <p class="text-slate-700 text-sm leading-relaxed">Pra maioria das casas, a Electrolux ECM30 é a mais completa das cafeteiras de café coado desta lista, com timer, jarra de 1,5 litro e nota 4,8. Quem quer gastar pouco e faz café todo dia se resolve bem com a Electrolux ECM10 Efficient ou com a Mondial Dolce Arome. Pra quem prefere cápsula, a Nespresso Essenza Mini foca no espresso e a 3 Corações TRES Passione faz também cappuccino e chocolate.</p>
+  </div>
+
+  <!-- Índice -->
+  <nav class="border border-slate-200 rounded-2xl p-6 mb-10 bg-white">
+    <p class="font-bold text-slate-800 mb-3">Neste artigo:</p>
+    <ul class="space-y-2 text-sm">
+      <li><a href="#coado-capsula" class="text-orange-500 hover:text-orange-600 font-medium">Café coado ou cápsula: qual a diferença</a></li>
+      <li><a href="#criterios" class="text-orange-500 hover:text-orange-600 font-medium">O que olhar antes de comprar uma cafeteira</a></li>
+      <li><a href="#tabela-comparativa" class="text-orange-500 hover:text-orange-600 font-medium">Tabela comparativa das 7 cafeteiras</a></li>
+      <li><a href="#ranking" class="text-orange-500 hover:text-orange-600 font-medium">As melhores cafeteiras 2026, uma por uma</a></li>
+      <li><a href="#perfis" class="text-orange-500 hover:text-orange-600 font-medium">Qual comprar conforme o seu perfil</a></li>
+      <li><a href="#erros" class="text-orange-500 hover:text-orange-600 font-medium">Erros comuns na hora de comprar</a></li>
+      <li><a href="#faq" class="text-orange-500 hover:text-orange-600 font-medium">Perguntas frequentes</a></li>
+    </ul>
+  </nav>
+
+  <!-- Café coado ou cápsula -->
+  <h2 id="coado-capsula" class="text-2xl font-black text-slate-900 mt-10 mb-4">Café coado ou cápsula: qual a diferença</h2>
+
+  <p class="text-slate-700 leading-relaxed mb-4">
+    Antes de olhar os modelos, vale entender rápido essa divisão, porque ela muda tudo na hora de escolher. A <strong>cafeteira de café coado</strong> é a elétrica de sempre: você coloca o pó no cesto com filtro, enche o reservatório de água, liga, e ela pinga o café numa jarra. Faz várias xícaras de uma vez, o pó custa pouco e você tem liberdade pra usar o café que quiser. Em troca, tem a jarra e o cesto pra lavar depois.
+  </p>
+  <p class="text-slate-700 leading-relaxed mb-4">
+    A <strong>cafeteira de cápsula</strong> funciona com uma cápsula lacrada que você encaixa e descarta depois. Sai uma bebida por vez, é rápido e quase não suja nada. O problema é o custo: a cápsula é bem mais cara que a mesma dose em pó, e você fica preso a um sistema, seja Nespresso, seja TRES, seja outro, pra comprar as recargas.
+  </p>
+  <p class="text-slate-700 leading-relaxed mb-4">
+    Eu mesma já cheguei perto de comprar uma máquina de cápsula mais de uma vez, mas sempre travei no mesmo ponto: o preço da cápsula. Quando faço a conta do quanto gastaria por mês, a cafeteira de coado ainda ganha fácil na minha casa. Isso não quer dizer que cápsula seja ruim, é questão de prioridade. Se praticidade e zero bagunça valem mais pra você do que o custo por xícara, faz sentido. A gente detalha essa comparação no texto <a href="/dolce-gusto-vs-nespresso" class="text-orange-600 font-semibold hover:underline">Dolce Gusto ou Nespresso</a>, e tem também a <a href="/dolce-gusto-genio-s-basic-review" class="text-orange-600 font-semibold hover:underline">review da Dolce Gusto Genio S Basic</a> pra ver como uma de cápsula se comporta no dia a dia. Pra ir mais fundo em todos os tipos, incluindo prensa francesa e cafeteira italiana, o <a href="/como-escolher-cafeteira" class="text-orange-600 font-semibold hover:underline">guia de como escolher cafeteira</a> cobre o assunto inteiro.
+  </p>
+
+  <!-- Critérios -->
+  <h2 id="criterios" class="text-2xl font-black text-slate-900 mt-10 mb-4">O que olhar antes de comprar uma cafeteira</h2>
+
+  <p class="text-slate-700 leading-relaxed mb-4">
+    Foram esses os pontos que usei pra montar a lista e escrever a análise de cada modelo. Um aviso antes: quando os fabricantes falam em xícaras, eles usam o cafezinho de mais ou menos 40 a 50 ml, não a caneca grande de 200 ml.
+  </p>
+
+  <ul class="list-disc list-inside space-y-2 text-slate-700 mb-4 ml-2">
+    <li><strong>Tipo de preparo:</strong> coado pra quem faz café em quantidade e quer economia no uso, cápsula pra quem quer rapidez e nenhuma louça.</li>
+    <li><strong>Capacidade:</strong> número de xícaras de 40 a 50 ml por jarra. Casa de uma ou duas pessoas não precisa de 38 xícaras, e jarra grande só pela metade significa café parado esfriando.</li>
+    <li><strong>Timer programável:</strong> deixa você preparar pó e água na noite anterior e programar pro café ficar pronto na hora de acordar.</li>
+    <li><strong>Base aquecida e corta-pingos:</strong> nas de coado, são os detalhes que você usa todo dia. A base mantém o café quente e o corta-pingos deixa tirar a jarra no meio do preparo sem escorrer café na bancada.</li>
+    <li><strong>Filtro permanente ou de papel:</strong> o permanente removível evita o gasto contínuo com filtro de papel. Todas as de coado desta lista já vêm com um.</li>
+    <li><strong>Voltagem:</strong> cafeteira quase nunca é bivolt. Tem 110V, 127V e 220V na lista, então confira a tomada da sua casa antes de fechar a compra.</li>
+    <li><strong>Nota e volume de avaliações:</strong> nota 4,8 com 50 avaliações diz menos que 4,6 com 3 mil. Os dois números juntos dão um retrato mais real.</li>
+  </ul>
+
+  <!-- Tabela comparativa -->
+  <h2 id="tabela-comparativa" class="text-2xl font-black text-slate-900 mt-10 mb-4">Tabela comparativa das 7 cafeteiras</h2>
+
+  <p class="text-slate-700 leading-relaxed mb-5">
+    Pra facilitar a visão geral antes de entrar em cada modelo, os dados principais lado a lado.
+  </p>
+
+  <div class="overflow-x-auto mb-6">
+    <table class="w-full text-sm border-collapse">
+      <thead>
+        <tr class="bg-slate-100">
+          <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Modelo</th>
+          <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Tipo</th>
+          <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Capacidade</th>
+          <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Avaliação</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="bg-white">
+          <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Electrolux ECM30</td>
+          <td class="px-4 py-3 text-slate-600 border border-slate-200">Café coado</td>
+          <td class="px-4 py-3 text-slate-600 border border-slate-200">1,5 L (38 xícaras)</td>
+          <td class="px-4 py-3 text-slate-600 border border-slate-200">4,8/5 (~3,4 mil)</td>
+        </tr>
+        <tr class="bg-slate-50">
+          <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Electrolux ECM10 Efficient</td>
+          <td class="px-4 py-3 text-slate-600 border border-slate-200">Café coado</td>
+          <td class="px-4 py-3 text-slate-600 border border-slate-200">600 ml (15 xícaras)</td>
+          <td class="px-4 py-3 text-slate-600 border border-slate-200">4,6/5 (~3,9 mil)</td>
+        </tr>
+        <tr class="bg-white">
+          <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Electrolux ECM25 Experience</td>
+          <td class="px-4 py-3 text-slate-600 border border-slate-200">Café coado</td>
+          <td class="px-4 py-3 text-slate-600 border border-slate-200">1,2 L (30 xícaras)</td>
+          <td class="px-4 py-3 text-slate-600 border border-slate-200">4,8/5 (~3 mil)</td>
+        </tr>
+        <tr class="bg-slate-50">
+          <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Oster OCAF300 Inox Compacta</td>
+          <td class="px-4 py-3 text-slate-600 border border-slate-200">Café coado</td>
+          <td class="px-4 py-3 text-slate-600 border border-slate-200">0,75 L (~19 xícaras)</td>
+          <td class="px-4 py-3 text-slate-600 border border-slate-200">4,7/5 (~3,4 mil)</td>
+        </tr>
+        <tr class="bg-white">
+          <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">3 Corações TRES Passione</td>
+          <td class="px-4 py-3 text-slate-600 border border-slate-200">Cápsula</td>
+          <td class="px-4 py-3 text-slate-600 border border-slate-200">1 bebida por vez</td>
+          <td class="px-4 py-3 text-slate-600 border border-slate-200">4,6/5 (~3,4 mil)</td>
+        </tr>
+        <tr class="bg-slate-50">
+          <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Nespresso Essenza Mini</td>
+          <td class="px-4 py-3 text-slate-600 border border-slate-200">Cápsula</td>
+          <td class="px-4 py-3 text-slate-600 border border-slate-200">Reservatório 600 ml</td>
+          <td class="px-4 py-3 text-slate-600 border border-slate-200">4,8/5 (~2,6 mil)</td>
+        </tr>
+        <tr class="bg-white">
+          <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Mondial Dolce Arome Black</td>
+          <td class="px-4 py-3 text-slate-600 border border-slate-200">Café coado</td>
+          <td class="px-4 py-3 text-slate-600 border border-slate-200">18 xícaras</td>
+          <td class="px-4 py-3 text-slate-600 border border-slate-200">4,6/5 (~2,9 mil)</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p class="text-xs text-slate-400 italic mb-8">Fichas técnicas conferidas nas páginas oficiais dos fabricantes (<a href="https://www.electrolux.com.br" target="_blank" rel="noopener" class="underline hover:text-slate-600">Electrolux</a>, <a href="https://www.mondial.com.br" target="_blank" rel="noopener" class="underline hover:text-slate-600">Mondial</a>, <a href="https://www.nespresso.com/br/pt" target="_blank" rel="noopener" class="underline hover:text-slate-600">Nespresso</a>) e nos anúncios da Amazon em setembro de 2026. Notas e volume de avaliações também consultados na Amazon nessa data. Esses números mudam com o tempo, então confira o valor atual na página do produto.</p>
+
+  <!-- Ranking -->
+  <h2 id="ranking" class="text-2xl font-black text-slate-900 mt-10 mb-6">As melhores cafeteiras 2026, uma por uma</h2>
+
+  <!-- Produto 1: Electrolux ECM30 -->
+  <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+    <div class="bg-orange-500 px-6 py-4">
+      <h3 class="text-white font-black text-xl">Electrolux ECM30 - Melhor no geral</h3>
+      <p class="text-orange-100 text-sm mt-1">A mais completa das de café coado da lista: timer, jarra de 1,5 litro e nota 4,8 em cerca de 3,4 mil avaliações</p>
+    </div>
+    <div class="p-6 flex flex-col md:flex-row gap-8">
+      <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+        <img src="/images/melhores-cafeteiras/electrolux-ecm30.webp" alt="Cafeteira elétrica Electrolux ECM30 em aço escovado" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" width="1000" height="1000" />
+      </div>
+      <div class="flex-1">
+        <span class="inline-block bg-amber-100 text-amber-800 font-bold text-xs uppercase tracking-wide px-3 py-1.5 rounded-lg mb-4">Voltagem: 127V</span>
+        <p class="text-slate-700 text-sm leading-relaxed mb-4">
+          É a de café coado mais completa daqui. A jarra de 1,5 litro rende até 38 xícaras, o que serve bem uma família, um home office ou quem toma café a manhã inteira. O painel digital fica no topo, fácil de enxergar, e o timer deixa você preparar pó e água na noite anterior e programar o horário pra acordar com o café pronto. Ainda tem base aquecida pra manter a temperatura, desligamento automático por segurança e filtro permanente removível, então você não precisa comprar filtro de papel toda hora. Não usei essa em casa, mas a ficha técnica e a nota 4,8 num volume grande de avaliações colocam ela como a compra mais segura de coado nesta lista.
+        </p>
+        <div class="grid md:grid-cols-2 gap-4 mb-4">
+          <div>
+            <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+            <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
+              <li>Jarra de 1,5 litro, até 38 xícaras</li>
+              <li>Timer programável com painel digital no topo</li>
+              <li>Filtro permanente removível, sem custo de filtro de papel</li>
+              <li>Base aquecida e desligamento automático</li>
+              <li>Nota 4,8 com cerca de 3,4 mil avaliações</li>
+            </ul>
+          </div>
+          <div>
+            <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+            <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
+              <li>Só 127V</li>
+              <li>Jarra de vidro, exige cuidado ao lavar</li>
+              <li>Ocupa mais espaço na bancada</li>
+            </ul>
+          </div>
+        </div>
+        <h4 class="font-bold text-slate-800 mb-2">Ficha técnica</h4>
+        <ul class="text-sm text-slate-600 space-y-1 mb-6">
+          <li><strong>Tipo:</strong> café coado</li>
+          <li><strong>Capacidade:</strong> 1,5 L (38 xícaras)</li>
+          <li><strong>Jarra:</strong> vidro</li>
+          <li><strong>Painel:</strong> digital no topo, com timer programável</li>
+          <li><strong>Filtro:</strong> permanente removível</li>
+          <li><strong>Extras:</strong> base aquecida e desligamento automático</li>
+          <li><strong>Acabamento:</strong> aço escovado / inox</li>
+          <li><strong>Voltagem:</strong> 127V</li>
+          <li><strong>Avaliação:</strong> 4,8/5 (cerca de 3,4 mil)</li>
+        </ul>
+        <a href="https://www.amazon.com.br/dp/B09CC3QFDX?tag=mundodossobre-20" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl transition-colors">Ver preço na Amazon</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Produto 2: Electrolux ECM10 Efficient -->
+  <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+    <div class="bg-slate-800 px-6 py-4">
+      <h3 class="text-white font-black text-xl">Electrolux ECM10 Efficient - Melhor custo-benefício</h3>
+      <p class="text-slate-300 text-sm mt-1">O básico bem feito: acabamento inox, corta-pingos e base aquecida por um preço de entrada</p>
+    </div>
+    <div class="p-6 flex flex-col md:flex-row gap-8">
+      <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+        <img src="/images/melhores-cafeteiras/electrolux-ecm10.webp" alt="Cafeteira elétrica Electrolux ECM10 Efficient inox escovado" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" width="1000" height="1000" />
+      </div>
+      <div class="flex-1">
+        <span class="inline-block bg-amber-100 text-amber-800 font-bold text-xs uppercase tracking-wide px-3 py-1.5 rounded-lg mb-4">Voltagem: 127V ou 220V, conforme a versão</span>
+        <p class="text-slate-700 text-sm leading-relaxed mb-4">
+          É a escolha pra quem quer uma cafeteira de coado confiável sem pagar por timer e painel digital. Faz cerca de 15 xícaras por vez (600 ml), o suficiente pra uma ou duas pessoas ou um casal. Tem os 600 W, o filtro permanente removível, o sistema corta-pingos, que deixa você tirar a jarra no meio do preparo sem escorrer café, e a base aquecida pra manter quente. Não tem timer, então você liga na mão. O acabamento em inox escovado é bonito pro preço. É uma das mais baratas daqui e também uma das mais avaliadas, com cerca de 3,9 mil avaliações, o que mostra que a receita simples funciona. Sai em 127V ou 220V dependendo da versão, então confira antes de comprar. Não tenho essa em casa: a análise vai por ficha técnica do fabricante e pelas avaliações de quem comprou.
+        </p>
+        <div class="grid md:grid-cols-2 gap-4 mb-4">
+          <div>
+            <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+            <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
+              <li>Preço de entrada baixo</li>
+              <li>Sistema corta-pingos</li>
+              <li>Base aquecida e filtro permanente removível</li>
+              <li>Cerca de 3,9 mil avaliações, nota 4,6</li>
+            </ul>
+          </div>
+          <div>
+            <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+            <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
+              <li>Sem timer</li>
+              <li>600 ml é pouco pra família ou visita</li>
+              <li>Jarra de vidro</li>
+            </ul>
+          </div>
+        </div>
+        <h4 class="font-bold text-slate-800 mb-2">Ficha técnica</h4>
+        <ul class="text-sm text-slate-600 space-y-1 mb-6">
+          <li><strong>Tipo:</strong> café coado</li>
+          <li><strong>Capacidade:</strong> 600 ml (15 xícaras)</li>
+          <li><strong>Potência:</strong> 600 W</li>
+          <li><strong>Filtro:</strong> permanente removível</li>
+          <li><strong>Extras:</strong> sistema corta-pingos e base aquecida</li>
+          <li><strong>Timer:</strong> não tem</li>
+          <li><strong>Acabamento:</strong> inox escovado</li>
+          <li><strong>Voltagem:</strong> 127V ou 220V, conforme a versão</li>
+          <li><strong>Avaliação:</strong> 4,6/5 (cerca de 3,9 mil)</li>
+        </ul>
+        <a href="https://www.amazon.com.br/dp/B09CC72K1X?tag=mundodossobre-20" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl transition-colors">Ver preço na Amazon</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Produto 3: Electrolux ECM25 Experience -->
+  <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+    <div class="bg-slate-800 px-6 py-4">
+      <h3 class="text-white font-black text-xl">Electrolux ECM25 Experience - Melhor programável</h3>
+      <p class="text-slate-300 text-sm mt-1">Tem o timer da ECM30 num corpo um pouco menor, com 1,2 litro e nota 4,8</p>
+    </div>
+    <div class="p-6 flex flex-col md:flex-row gap-8">
+      <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+        <img src="/images/melhores-cafeteiras/electrolux-ecm25.webp" alt="Cafeteira elétrica Electrolux ECM25 Experience com painel digital" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" width="1000" height="1000" />
+      </div>
+      <div class="flex-1">
+        <span class="inline-block bg-amber-100 text-amber-800 font-bold text-xs uppercase tracking-wide px-3 py-1.5 rounded-lg mb-4">Voltagem: 127V</span>
+        <p class="text-slate-700 text-sm leading-relaxed mb-4">
+          É o meio-termo da linha. Ela é programável com timer, igual à ECM30, mas com painel digital na base e jarra de 1,2 litro, que rende até 30 xícaras. Também tem filtro permanente removível e desligamento automático. Serve bem pra quem quer acordar com o café pronto mas não precisa da jarra gigante de 38 xícaras. A nota é 4,8 em cerca de 3 mil avaliações. Comparada à ECM10, o que você ganha aqui é justamente a programação por horário. Comparada à ECM30, você abre mão de um pouco de capacidade e o painel fica embaixo, menos fácil de olhar. Não testei em casa, a análise é por ficha técnica e avaliações reais.
+        </p>
+        <div class="grid md:grid-cols-2 gap-4 mb-4">
+          <div>
+            <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+            <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
+              <li>Timer programável</li>
+              <li>1,2 litro, até 30 xícaras</li>
+              <li>Filtro permanente removível e desligamento automático</li>
+              <li>Nota 4,8 em cerca de 3 mil avaliações</li>
+            </ul>
+          </div>
+          <div>
+            <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+            <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
+              <li>Só 127V</li>
+              <li>Painel na base é menos prático de enxergar</li>
+              <li>Jarra de vidro</li>
+            </ul>
+          </div>
+        </div>
+        <h4 class="font-bold text-slate-800 mb-2">Ficha técnica</h4>
+        <ul class="text-sm text-slate-600 space-y-1 mb-6">
+          <li><strong>Tipo:</strong> café coado</li>
+          <li><strong>Capacidade:</strong> 1,2 L (30 xícaras)</li>
+          <li><strong>Programação:</strong> timer, com painel digital na base</li>
+          <li><strong>Filtro:</strong> permanente removível</li>
+          <li><strong>Extras:</strong> desligamento automático</li>
+          <li><strong>Voltagem:</strong> 127V</li>
+          <li><strong>Avaliação:</strong> 4,8/5 (cerca de 3 mil)</li>
+        </ul>
+        <a href="https://www.amazon.com.br/dp/B09SVPDX3G?tag=mundodossobre-20" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl transition-colors">Ver preço na Amazon</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bloco Leia Também 1 -->
+  <div class="flex items-center gap-4 bg-slate-50 border-l-4 border-orange-500 rounded-xl p-4 mb-8">
+    <img src="/images/cafeteira-guia/capa-como-escolher-cafeteira.webp" alt="Como Escolher Cafeteira" width="80" height="60" class="rounded-lg object-cover flex-shrink-0" loading="lazy" />
+    <div>
+      <span class="block text-xs font-bold uppercase tracking-wide text-orange-600 mb-1">Leia Também</span>
+      <a href="/como-escolher-cafeteira" class="text-sm font-bold text-slate-800 hover:underline">Como Escolher Cafeteira: Cápsula, Expresso ou Coador?</a>
+    </div>
+  </div>
+
+  <!-- Produto 4: Oster OCAF300 -->
+  <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+    <div class="bg-slate-800 px-6 py-4">
+      <h3 class="text-white font-black text-xl">Oster OCAF300 Inox Compacta - Mais compacta</h3>
+      <p class="text-slate-300 text-sm mt-1">Para cozinha pequena: 0,75 litro, filtro permanente e função que mantém o café quente</p>
+    </div>
+    <div class="p-6 flex flex-col md:flex-row gap-8">
+      <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+        <img src="/images/melhores-cafeteiras/oster-ocaf300.webp" alt="Cafeteira Oster OCAF300 Inox Compacta" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" width="720" height="954" />
+      </div>
+      <div class="flex-1">
+        <span class="inline-block bg-amber-100 text-amber-800 font-bold text-xs uppercase tracking-wide px-3 py-1.5 rounded-lg mb-4">Voltagem: 220V (existe versão 110V vendida à parte)</span>
+        <p class="text-slate-700 text-sm leading-relaxed mb-4">
+          É a de menor tamanho da lista. Os 0,75 litro rendem cerca de 19 xícaras de 40 ml, com 600 W de potência. O filtro é permanente e reutilizável, o que dispensa filtro de papel de vez, e tem a função keep warm, que é a base aquecida mantendo o café quente depois de pronto. Vem com 12 meses de garantia e acabamento em inox. É uma boa opção pra quem mora sozinho, tem bancada apertada ou quer uma segunda cafeteira pro escritório. O ponto de atenção é a voltagem: a versão mais vendida é 220V, e existe uma de 110V vendida separadamente, então confira antes de finalizar. A nota é 4,7 em cerca de 3,4 mil avaliações. Não tenho essa em casa: o que digo aqui vem da ficha técnica do fabricante e das avaliações de compradores.
+        </p>
+        <div class="grid md:grid-cols-2 gap-4 mb-4">
+          <div>
+            <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+            <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
+              <li>Compacta, cabe em bancada pequena</li>
+              <li>Filtro permanente reutilizável, zero filtro de papel</li>
+              <li>Função keep warm mantém o café quente</li>
+              <li>Nota 4,7 com cerca de 3,4 mil avaliações</li>
+            </ul>
+          </div>
+          <div>
+            <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+            <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
+              <li>0,75 litro rende pouco pra receber visita</li>
+              <li>Atenção à voltagem: 220V, com versão 110V à parte</li>
+              <li>Sem timer</li>
+            </ul>
+          </div>
+        </div>
+        <h4 class="font-bold text-slate-800 mb-2">Ficha técnica</h4>
+        <ul class="text-sm text-slate-600 space-y-1 mb-6">
+          <li><strong>Tipo:</strong> café coado, compacta</li>
+          <li><strong>Capacidade:</strong> 0,75 L (~19 xícaras de 40 ml)</li>
+          <li><strong>Potência:</strong> 600 W</li>
+          <li><strong>Filtro:</strong> permanente reutilizável</li>
+          <li><strong>Extras:</strong> função keep warm / base aquecida</li>
+          <li><strong>Garantia:</strong> 12 meses</li>
+          <li><strong>Voltagem:</strong> 220V (há versão 110V vendida à parte)</li>
+          <li><strong>Avaliação:</strong> 4,7/5 (cerca de 3,4 mil)</li>
+        </ul>
+        <a href="https://www.amazon.com.br/dp/B093HGNHR2?tag=mundodossobre-20" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl transition-colors">Ver preço na Amazon</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Produto 5: 3 Coracoes TRES Passione -->
+  <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+    <div class="bg-slate-800 px-6 py-4">
+      <h3 class="text-white font-black text-xl">3 Corações TRES Passione Preta - Melhor multibebida</h3>
+      <p class="text-slate-300 text-sm mt-1">Máquina de cápsula do sistema TRES: faz espresso, cappuccino, chocolate e chá</p>
+    </div>
+    <div class="p-6 flex flex-col md:flex-row gap-8">
+      <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+        <img src="/images/melhores-cafeteiras/tres-passione-preta.webp" alt="Cafeteira de cápsula 3 Corações TRES Passione preta" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" width="1176" height="1500" />
+      </div>
+      <div class="flex-1">
+        <span class="inline-block bg-amber-100 text-amber-800 font-bold text-xs uppercase tracking-wide px-3 py-1.5 rounded-lg mb-4">Voltagem: 127V</span>
+        <p class="text-slate-700 text-sm leading-relaxed mb-4">
+          Essa é de cápsula, do sistema fechado TRES, da Três Corações. Além de espresso, ela faz multibebida: café, cappuccino, chocolate e chá, dependendo da cápsula que você usa. Funciona em 127V. As cápsulas não vêm com a máquina, e você fica preso ao sistema TRES pra comprar as recargas. O preço da máquina fica entre os mais baixos das de cápsula, mas lembre de somar o custo das cápsulas no mês, que é onde esse tipo de cafeteira pesa. Não testei nenhuma máquina de cápsula, então aqui é leitura de ficha técnica e das avaliações de compradores, que dão nota 4,6 em cerca de 3,4 mil. Se a ideia é variar entre café e bebidas cremosas sem esforço, ela cobre isso melhor que a Nespresso, que é focada em espresso.
+        </p>
+        <div class="grid md:grid-cols-2 gap-4 mb-4">
+          <div>
+            <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+            <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
+              <li>Variedade de bebidas: café, cappuccino, chocolate e chá</li>
+              <li>Praticidade e nenhuma borra pra limpar</li>
+              <li>Preço de máquina acessível dentro das de cápsula</li>
+              <li>Nota 4,6 com cerca de 3,4 mil avaliações</li>
+            </ul>
+          </div>
+          <div>
+            <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+            <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
+              <li>Presa ao sistema de cápsulas TRES</li>
+              <li>Cápsula não acompanha e pesa no custo do mês</li>
+              <li>Não faz café coado numa jarra</li>
+            </ul>
+          </div>
+        </div>
+        <h4 class="font-bold text-slate-800 mb-2">Ficha técnica</h4>
+        <ul class="text-sm text-slate-600 space-y-1 mb-6">
+          <li><strong>Tipo:</strong> cápsula (sistema fechado TRES / Três Corações)</li>
+          <li><strong>Bebidas:</strong> espresso e multibebida (café, cappuccino, chocolate, chá)</li>
+          <li><strong>Cápsulas:</strong> não acompanham a máquina</li>
+          <li><strong>Voltagem:</strong> 127V</li>
+          <li><strong>Avaliação:</strong> 4,6/5 (cerca de 3,4 mil)</li>
+        </ul>
+        <a href="https://www.amazon.com.br/dp/B08S1HB8G9?tag=mundodossobre-20" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl transition-colors">Ver preço na Amazon</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Produto 6: Nespresso Essenza Mini -->
+  <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+    <div class="bg-slate-800 px-6 py-4">
+      <h3 class="text-white font-black text-xl">Nespresso Essenza Mini Preta - Melhor para espresso em cápsula</h3>
+      <p class="text-slate-300 text-sm mt-1">A cápsula mais compacta da lista: espresso e lungo com 19 bar de pressão</p>
+    </div>
+    <div class="p-6 flex flex-col md:flex-row gap-8">
+      <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+        <img src="/images/melhores-cafeteiras/nespresso-essenza-mini-preta.webp" alt="Cafeteira espresso Nespresso Essenza Mini preta" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" width="963" height="597" />
+      </div>
+      <div class="flex-1">
+        <span class="inline-block bg-amber-100 text-amber-800 font-bold text-xs uppercase tracking-wide px-3 py-1.5 rounded-lg mb-4">Voltagem: 127V</span>
+        <p class="text-slate-700 text-sm leading-relaxed mb-4">
+          É de cápsula, do sistema Nespresso Original. Faz espresso e lungo, com 19 bar de pressão, reservatório de 600 ml e modo eco que desliga a máquina sozinha depois de 3 minutos parada. O tamanho é o grande trunfo: cerca de 33 por 8,4 por 20 cm, cabe em qualquer canto de bancada. Funciona em 127V. A nota é 4,8 em cerca de 2,6 mil avaliações, a mais alta entre as de cápsula da lista. Não testei a Essenza Mini pessoalmente, então é leitura de ficha técnica e das avaliações de quem comprou. Ela foca no espresso curto e encorpado. Pra bebida com leite, você vai precisar de um espumador à parte. Vale a mesma ressalva de custo: a máquina até sai em conta, a cápsula Nespresso é que pesa no mês. Comparo os dois sistemas de cápsula no <a href="/dolce-gusto-vs-nespresso" class="text-orange-600 font-semibold hover:underline">comparativo entre Dolce Gusto e Nespresso</a>.
+        </p>
+        <div class="grid md:grid-cols-2 gap-4 mb-4">
+          <div>
+            <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+            <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
+              <li>Ultracompacta, cabe em qualquer canto</li>
+              <li>19 bar, espresso encorpado</li>
+              <li>Modo eco desliga sozinha depois de 3 minutos</li>
+              <li>Nota 4,8, a melhor entre as de cápsula da lista</li>
+            </ul>
+          </div>
+          <div>
+            <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+            <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
+              <li>Só espresso e lungo, sem opção com leite embutida</li>
+              <li>Presa ao sistema Nespresso Original</li>
+              <li>Custo da cápsula ao longo do mês</li>
+            </ul>
+          </div>
+        </div>
+        <h4 class="font-bold text-slate-800 mb-2">Ficha técnica</h4>
+        <ul class="text-sm text-slate-600 space-y-1 mb-6">
+          <li><strong>Tipo:</strong> cápsula (sistema Nespresso Original)</li>
+          <li><strong>Bebidas:</strong> espresso e lungo</li>
+          <li><strong>Pressão:</strong> 19 bar</li>
+          <li><strong>Reservatório:</strong> 600 ml</li>
+          <li><strong>Modo eco:</strong> desliga sozinha em 3 minutos</li>
+          <li><strong>Dimensões:</strong> cerca de 33 x 8,4 x 20 cm</li>
+          <li><strong>Voltagem:</strong> 127V</li>
+          <li><strong>Avaliação:</strong> 4,8/5 (cerca de 2,6 mil)</li>
+        </ul>
+        <a href="https://www.amazon.com.br/dp/B099ZJQXMF?tag=mundodossobre-20" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl transition-colors">Ver preço na Amazon</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Produto 7: Mondial Dolce Arome Black -->
+  <div class="border border-slate-200 rounded-2xl overflow-hidden mb-10 shadow-sm">
+    <div class="bg-slate-800 px-6 py-4">
+      <h3 class="text-white font-black text-xl">Mondial Dolce Arome Black - Mais barata</h3>
+      <p class="text-slate-300 text-sm mt-1">A porta de entrada da lista: simples, com corta-pingos, base aquecida e colher dosadora</p>
+    </div>
+    <div class="p-6 flex flex-col md:flex-row gap-8">
+      <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+        <img src="/images/melhores-cafeteiras/mondial-dolce-arome-black.webp" alt="Cafeteira elétrica Mondial Dolce Arome Black" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" width="601" height="919" />
+      </div>
+      <div class="flex-1">
+        <span class="inline-block bg-amber-100 text-amber-800 font-bold text-xs uppercase tracking-wide px-3 py-1.5 rounded-lg mb-4">Voltagem: 110V</span>
+        <p class="text-slate-700 text-sm leading-relaxed mb-4">
+          Tenho uma Mondial de café coado pequena em casa e gosto muito dela. As duas coisas que mais uso são justamente o corta-pingos, que deixa eu tirar a jarra no meio do preparo pra servir a primeira xícara sem pingar café na base, e a chapa que mantém o café quente por um bom tempo depois de pronto. Não é esse modelo Dolce Arome de 18 xícaras exatamente, mas a lógica da linha de coado da Mondial é a mesma: aparelho simples, sem timer, que faz o básico bem e custa pouco.
+        </p>
+        <p class="text-slate-700 text-sm leading-relaxed mb-4">
+          Esse modelo tem 550 W, jarra de vidro, sistema corta-pingos, base com aquecimento, filtro permanente removível, tampa basculante, indicador de nível de água e vem com colher dosadora. Funciona só em 110V, então confira a sua tomada. Pra quem quer a opção mais barata da lista e não faz questão de painel digital nem programação, ela entrega o essencial. A nota é 4,6 em cerca de 2,9 mil avaliações.
+        </p>
+        <div class="grid md:grid-cols-2 gap-4 mb-4">
+          <div>
+            <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+            <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
+              <li>Preço mais baixo da lista</li>
+              <li>Sistema corta-pingos</li>
+              <li>Base que mantém o café quente</li>
+              <li>Filtro permanente, colher dosadora e indicador de nível</li>
+            </ul>
+          </div>
+          <div>
+            <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+            <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
+              <li>Só 110V</li>
+              <li>Sem timer nem painel digital</li>
+              <li>Jarra de vidro e acabamento mais simples</li>
+            </ul>
+          </div>
+        </div>
+        <h4 class="font-bold text-slate-800 mb-2">Ficha técnica</h4>
+        <ul class="text-sm text-slate-600 space-y-1 mb-6">
+          <li><strong>Tipo:</strong> café coado</li>
+          <li><strong>Capacidade:</strong> 18 xícaras</li>
+          <li><strong>Potência:</strong> 550 W</li>
+          <li><strong>Jarra:</strong> vidro</li>
+          <li><strong>Extras:</strong> corta-pingos, base com aquecimento, tampa basculante, indicador de nível</li>
+          <li><strong>Filtro:</strong> permanente removível</li>
+          <li><strong>Acompanha:</strong> colher dosadora</li>
+          <li><strong>Voltagem:</strong> 110V</li>
+          <li><strong>Avaliação:</strong> 4,6/5 (cerca de 2,9 mil)</li>
+        </ul>
+        <a href="https://www.amazon.com.br/dp/B0955QFBH2?tag=mundodossobre-20" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl transition-colors">Ver preço na Amazon</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bloco Leia Também 2 -->
+  <div class="flex items-center gap-4 bg-slate-50 border-l-4 border-orange-500 rounded-xl p-4 mb-8">
+    <img src="/images/dolce-gusto-nespresso/capa-dolce-gusto-nespresso.webp" alt="Dolce Gusto ou Nespresso" width="80" height="60" class="rounded-lg object-cover flex-shrink-0" loading="lazy" />
+    <div>
+      <span class="block text-xs font-bold uppercase tracking-wide text-orange-600 mb-1">Leia Também</span>
+      <a href="/dolce-gusto-vs-nespresso" class="text-sm font-bold text-slate-800 hover:underline">Dolce Gusto ou Nespresso: Qual Vale Mais a Pena para Apartamento?</a>
+    </div>
+  </div>
+
+  <!-- Perfis -->
+  <h2 id="perfis" class="text-2xl font-black text-slate-900 mt-10 mb-4">Qual comprar conforme o seu perfil</h2>
+
+  <p class="text-slate-700 leading-relaxed mb-5">
+    Se você não quer comparar linha por linha, esse resumo aponta direto pro modelo que costuma fazer mais sentido em cada situação.
+  </p>
+
+  <div class="overflow-x-auto mb-6">
+    <table class="w-full text-sm border-collapse">
+      <thead>
+        <tr class="bg-slate-100">
+          <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Perfil</th>
+          <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Modelo recomendado</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="bg-white">
+          <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Quer a mais completa de coado e faz café o dia todo</td>
+          <td class="px-4 py-3 text-slate-600 border border-slate-200">Electrolux ECM30</td>
+        </tr>
+        <tr class="bg-slate-50">
+          <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Quer gastar pouco e faz café todo dia</td>
+          <td class="px-4 py-3 text-slate-600 border border-slate-200">Electrolux ECM10 Efficient ou Mondial Dolce Arome</td>
+        </tr>
+        <tr class="bg-white">
+          <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Quer o café pronto na hora de acordar</td>
+          <td class="px-4 py-3 text-slate-600 border border-slate-200">Electrolux ECM25 Experience</td>
+        </tr>
+        <tr class="bg-slate-50">
+          <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Tem bancada apertada ou mora sozinho</td>
+          <td class="px-4 py-3 text-slate-600 border border-slate-200">Oster OCAF300 Inox Compacta</td>
+        </tr>
+        <tr class="bg-white">
+          <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Prefere cápsula e quer variar (cappuccino, chocolate)</td>
+          <td class="px-4 py-3 text-slate-600 border border-slate-200">3 Corações TRES Passione</td>
+        </tr>
+        <tr class="bg-slate-50">
+          <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Prefere cápsula e só quer um bom espresso</td>
+          <td class="px-4 py-3 text-slate-600 border border-slate-200">Nespresso Essenza Mini</td>
+        </tr>
+        <tr class="bg-white">
+          <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Quer o menor gasto possível na compra</td>
+          <td class="px-4 py-3 text-slate-600 border border-slate-200">Mondial Dolce Arome Black</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Erros comuns -->
+  <h2 id="erros" class="text-2xl font-black text-slate-900 mt-10 mb-4">Erros comuns na hora de comprar</h2>
+
+  <p class="text-slate-700 leading-relaxed mb-4">
+    Depois de comparar as fichas técnicas e ler bastante avaliação, alguns tropeços se repetem entre quem compra sem pesquisar.
+  </p>
+
+  <ul class="list-disc list-inside space-y-2 text-slate-700 mb-6 ml-2">
+    <li><strong>Escolher pela capacidade máxima sem pensar no consumo real:</strong> jarra de 38 xícaras usada sempre pela metade vira café parado esfriando ou sendo requentado na chapa, o que estraga o sabor.</li>
+    <li><strong>Ignorar a voltagem:</strong> boa parte desta lista é 127V, a Mondial é 110V e a Oster mais vendida é 220V. Descobrir depois que não bate com a sua tomada sai caro.</li>
+    <li><strong>Achar que cápsula é sempre mais barata:</strong> a máquina costuma ser, a cápsula não. Faça a conta de quantas xícaras a casa toma por mês antes de decidir.</li>
+    <li><strong>Superestimar o gasto de luz:</strong> cafeteira aquece rápido e não pesa tanto na conta quanto a potência sugere. Dá pra ter uma ideia na <a href="/quanto-gasta-de-energia-eletrodomesticos" class="text-orange-600 font-semibold hover:underline">calculadora de consumo de energia</a>.</li>
+    <li><strong>Não olhar o tipo de filtro:</strong> filtro de papel é gasto que se repete, e nem todo modelo aceita permanente. Todas as de coado daqui já vêm com filtro permanente.</li>
+    <li><strong>Comprar sem ver nota e número de avaliações juntos:</strong> uma nota alta com pouquíssimas avaliações não diz muita coisa.</li>
+    <li><strong>Esquecer da base aquecida e do corta-pingos nas de coado:</strong> parecem detalhe, mas são as funções que você usa toda manhã.</li>
+  </ul>
+
+  <!-- Conclusão -->
+  <h2 class="text-2xl font-black text-slate-900 mt-10 mb-4">Melhores cafeteiras 2026: qual das 7 vale mais a pena</h2>
+
+  <p class="text-slate-700 leading-relaxed mb-4">
+    Entre as melhores cafeteiras 2026 desta lista, se você quer resolver rápido e faz café coado, vá na Electrolux ECM30. É a mais completa e a mais avaliada de coado da lista, o que reduz bastante o risco de se arrepender. Quer o menor gasto na compra e não liga pra painel digital, a Mondial Dolce Arome entrega o essencial. Tem bancada apertada, a Oster OCAF300 é a que ocupa menos espaço.
+  </p>
+  <p class="text-slate-700 leading-relaxed mb-4">
+    Pra quem prefere cápsula, a decisão é entre a Nespresso Essenza Mini, focada em espresso, e a 3 Corações TRES Passione, que faz também cappuccino e chocolate. Nos dois casos, lembre de considerar o custo das cápsulas no mês, que é o que costuma pesar nesse tipo de máquina.
+  </p>
+  <p class="text-slate-700 leading-relaxed mb-6">
+    De qualquer forma, confira o preço e as avaliações atualizadas direto na página do produto antes de fechar a compra, já que promoções e notas mudam com frequência.
+  </p>
+
+  <!-- FAQ -->
+  <h2 id="faq" class="text-2xl font-black text-slate-900 mt-10 mb-6">Perguntas frequentes</h2>
+
+  <details class="group border border-slate-200 rounded-2xl mb-3 overflow-hidden">
+    <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-bold text-slate-800 bg-white hover:bg-slate-50 transition-colors list-none">
+      Qual a melhor cafeteira de 2026 para a maioria das casas?
+      <svg class="w-5 h-5 text-slate-400 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    </summary>
+    <div class="px-5 py-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
+      Entre as de café coado, a Electrolux ECM30: jarra de 1,5 litro, timer programável, filtro permanente e nota 4,8 num volume grande de avaliações. Pra quem prefere cápsula, a Nespresso Essenza Mini é a mais bem avaliada da lista.
+    </div>
+  </details>
+
+  <details class="group border border-slate-200 rounded-2xl mb-3 overflow-hidden">
+    <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-bold text-slate-800 bg-white hover:bg-slate-50 transition-colors list-none">
+      Cafeteira de café coado ou de cápsula: qual compensa mais?
+      <svg class="w-5 h-5 text-slate-400 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    </summary>
+    <div class="px-5 py-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
+      A de coado costuma sair mais barata no uso, porque o pó custa bem menos que a cápsula e a jarra rende várias xícaras. A de cápsula ganha em praticidade e limpeza, já que é uma bebida por vez e sem borra. Se o custo por xícara importa, vá de coado. Se praticidade vale mais, cápsula.
+    </div>
+  </details>
+
+  <details class="group border border-slate-200 rounded-2xl mb-3 overflow-hidden">
+    <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-bold text-slate-800 bg-white hover:bg-slate-50 transition-colors list-none">
+      Qual cafeteira faz café pronto na hora de acordar?
+      <svg class="w-5 h-5 text-slate-400 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    </summary>
+    <div class="px-5 py-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
+      As programáveis com timer. Nesta lista, a Electrolux ECM30 e a Electrolux ECM25 Experience têm essa função: você deixa pó e água prontos na noite anterior e programa o horário em que a cafeteira liga sozinha.
+    </div>
+  </details>
+
+  <details class="group border border-slate-200 rounded-2xl mb-3 overflow-hidden">
+    <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-bold text-slate-800 bg-white hover:bg-slate-50 transition-colors list-none">
+      Preciso me preocupar com a voltagem da cafeteira?
+      <svg class="w-5 h-5 text-slate-400 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    </summary>
+    <div class="px-5 py-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
+      Sim. Cafeteira quase nunca é bivolt. Nesta lista, a maioria das Electrolux é 127V, a Mondial Dolce Arome é 110V e a versão mais vendida da Oster OCAF300 é 220V, com uma 110V vendida à parte. Confirme a tomada da sua casa antes de comprar.
+    </div>
+  </details>
+
+  <details class="group border border-slate-200 rounded-2xl mb-3 overflow-hidden">
+    <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-bold text-slate-800 bg-white hover:bg-slate-50 transition-colors list-none">
+      Filtro permanente é melhor que filtro de papel?
+      <svg class="w-5 h-5 text-slate-400 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    </summary>
+    <div class="px-5 py-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
+      O permanente evita o gasto contínuo com filtro de papel e deixa passar mais óleos do café, o que dá um corpo maior à bebida. O de papel retém mais esses óleos e deixa o café mais limpo no paladar, mas é custo que se repete. Todas as de coado desta lista já vêm com filtro permanente removível.
+    </div>
+  </details>
+
+  <details class="group border border-slate-200 rounded-2xl mb-3 overflow-hidden">
+    <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-bold text-slate-800 bg-white hover:bg-slate-50 transition-colors list-none">
+      Vale a pena comprar cafeteira de cápsula mesmo com a cápsula cara?
+      <svg class="w-5 h-5 text-slate-400 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    </summary>
+    <div class="px-5 py-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
+      Vale se você toma poucas xícaras por dia, faz questão de zero bagunça e gosta da regularidade da bebida. Se a casa toma muito café, o custo mensal das cápsulas sobe rápido e uma cafeteira de coado tende a compensar mais.
+    </div>
+  </details>
+
+  <!-- Schema FAQ -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Qual a melhor cafeteira de 2026 para a maioria das casas?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Entre as de café coado, a Electrolux ECM30: jarra de 1,5 litro, timer programável, filtro permanente e nota 4,8 num volume grande de avaliações. Pra quem prefere cápsula, a Nespresso Essenza Mini é a mais bem avaliada da lista."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Cafeteira de café coado ou de cápsula: qual compensa mais?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A de coado costuma sair mais barata no uso, porque o pó custa bem menos que a cápsula e a jarra rende várias xícaras. A de cápsula ganha em praticidade e limpeza, já que é uma bebida por vez e sem borra. Se o custo por xícara importa, vá de coado. Se praticidade vale mais, cápsula."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Qual cafeteira faz café pronto na hora de acordar?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "As programáveis com timer. Nesta lista, a Electrolux ECM30 e a Electrolux ECM25 Experience têm essa função: você deixa pó e água prontos na noite anterior e programa o horário em que a cafeteira liga sozinha."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Preciso me preocupar com a voltagem da cafeteira?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sim. Cafeteira quase nunca é bivolt. Nesta lista, a maioria das Electrolux é 127V, a Mondial Dolce Arome é 110V e a versão mais vendida da Oster OCAF300 é 220V, com uma 110V vendida à parte. Confirme a tomada da sua casa antes de comprar."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Filtro permanente é melhor que filtro de papel?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "O permanente evita o gasto contínuo com filtro de papel e deixa passar mais óleos do café, o que dá um corpo maior à bebida. O de papel retém mais esses óleos e deixa o café mais limpo no paladar, mas é custo que se repete. Todas as de coado desta lista já vêm com filtro permanente removível."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Vale a pena comprar cafeteira de cápsula mesmo com a cápsula cara?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Vale se você toma poucas xícaras por dia, faz questão de zero bagunça e gosta da regularidade da bebida. Se a casa toma muito café, o custo mensal das cápsulas sobe rápido e uma cafeteira de coado tende a compensar mais."
+        }
+      }
+    ]
+  })} />
+
+  <!-- Schema ItemList com aggregateRating (Product de afiliado, sem offers) -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "As 7 Melhores Cafeteiras de 2026",
+    "itemListOrder": "https://schema.org/ItemListOrderAscending",
+    "numberOfItems": 7,
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "Product",
+          "name": "Cafeteira Elétrica Electrolux ECM30",
+          "image": "https://www.casaemalta.com.br/images/melhores-cafeteiras/electrolux-ecm30.webp",
+          "url": "https://www.casaemalta.com.br/melhores-cafeteiras-2026",
+          "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "3400", "bestRating": "5", "worstRating": "1" }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "Product",
+          "name": "Cafeteira Elétrica Electrolux ECM10 Efficient",
+          "image": "https://www.casaemalta.com.br/images/melhores-cafeteiras/electrolux-ecm10.webp",
+          "url": "https://www.casaemalta.com.br/melhores-cafeteiras-2026",
+          "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.6", "reviewCount": "3900", "bestRating": "5", "worstRating": "1" }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "Product",
+          "name": "Cafeteira Elétrica Electrolux ECM25 Experience",
+          "image": "https://www.casaemalta.com.br/images/melhores-cafeteiras/electrolux-ecm25.webp",
+          "url": "https://www.casaemalta.com.br/melhores-cafeteiras-2026",
+          "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "3000", "bestRating": "5", "worstRating": "1" }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@type": "Product",
+          "name": "Cafeteira Oster OCAF300 Inox Compacta",
+          "image": "https://www.casaemalta.com.br/images/melhores-cafeteiras/oster-ocaf300.webp",
+          "url": "https://www.casaemalta.com.br/melhores-cafeteiras-2026",
+          "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.7", "reviewCount": "3400", "bestRating": "5", "worstRating": "1" }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "item": {
+          "@type": "Product",
+          "name": "Cafeteira 3 Corações TRES Passione Preta",
+          "image": "https://www.casaemalta.com.br/images/melhores-cafeteiras/tres-passione-preta.webp",
+          "url": "https://www.casaemalta.com.br/melhores-cafeteiras-2026",
+          "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.6", "reviewCount": "3400", "bestRating": "5", "worstRating": "1" }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "item": {
+          "@type": "Product",
+          "name": "Cafeteira Espresso Nespresso Essenza Mini Preta",
+          "image": "https://www.casaemalta.com.br/images/melhores-cafeteiras/nespresso-essenza-mini-preta.webp",
+          "url": "https://www.casaemalta.com.br/melhores-cafeteiras-2026",
+          "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "2600", "bestRating": "5", "worstRating": "1" }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 7,
+        "item": {
+          "@type": "Product",
+          "name": "Cafeteira Elétrica Mondial Dolce Arome Black",
+          "image": "https://www.casaemalta.com.br/images/melhores-cafeteiras/mondial-dolce-arome-black.webp",
+          "url": "https://www.casaemalta.com.br/melhores-cafeteiras-2026",
+          "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.6", "reviewCount": "2900", "bestRating": "5", "worstRating": "1" }
+        }
+      }
+    ]
+  })} />
+
+  <!-- Bloco Leia Também final (grid) -->
+  <div class="my-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+    <a href="/como-escolher-cafeteira" class="flex items-center gap-4 border border-slate-200 rounded-2xl p-4 hover:border-orange-300 transition-colors no-underline">
+      <img src="/images/cafeteira-guia/capa-como-escolher-cafeteira.webp" alt="Como Escolher Cafeteira" class="w-20 h-16 object-cover rounded-xl flex-shrink-0" loading="lazy" />
+      <div>
+        <p class="text-xs text-slate-500 mb-1 font-medium uppercase tracking-wide">Leia Também</p>
+        <p class="font-bold text-slate-800 text-sm leading-snug">Como Escolher Cafeteira: Cápsula, Expresso ou Coador?</p>
+      </div>
+    </a>
+    <a href="/dolce-gusto-vs-nespresso" class="flex items-center gap-4 border border-slate-200 rounded-2xl p-4 hover:border-orange-300 transition-colors no-underline">
+      <img src="/images/dolce-gusto-nespresso/capa-dolce-gusto-nespresso.webp" alt="Dolce Gusto ou Nespresso" class="w-20 h-16 object-cover rounded-xl flex-shrink-0" loading="lazy" />
+      <div>
+        <p class="text-xs text-slate-500 mb-1 font-medium uppercase tracking-wide">Leia Também</p>
+        <p class="font-bold text-slate-800 text-sm leading-snug">Dolce Gusto ou Nespresso: Qual Vale Mais a Pena para Apartamento?</p>
+      </div>
+    </a>
+    <a href="/dolce-gusto-genio-s-basic-review" class="flex items-center gap-4 border border-slate-200 rounded-2xl p-4 hover:border-orange-300 transition-colors no-underline">
+      <img src="/images/dolce-gusto-nespresso/capa-dolce-gusto-genio-s-basic-review.webp" alt="Review Dolce Gusto Genio S Basic" class="w-20 h-16 object-cover rounded-xl flex-shrink-0" loading="lazy" />
+      <div>
+        <p class="text-xs text-slate-500 mb-1 font-medium uppercase tracking-wide">Leia Também</p>
+        <p class="font-bold text-slate-800 text-sm leading-snug">Dolce Gusto Genio S Basic: Vale a Pena? Review Completo</p>
+      </div>
+    </a>
+  </div>
+
+</div>
     )}
 
 
