@@ -171,3 +171,5 @@ RASCUNHO (21/08/2026) - EM BRANCH, NAO MERGEADO NA MAIN AINDA
     (lava-loucas-midea-8-servicos-review). Tambem linka lava-e-seca-ou-secadora-apartamento
     e vaporizador-de-roupas-portatil (mesmo cluster). Falta: Fernanda gerar a capa
     (prompt em ingles entregue) e revisar antes do merge pra main.
+
+2026-09-01 | As 7 Melhores Cafeteiras 2026: Coado e Cápsula | /melhores-cafeteiras-2026 | Rankings e Listas | FECHA cluster Cafeteiras
