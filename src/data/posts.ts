@@ -493,6 +493,16 @@ export const posts: Post[] = [
     categoria: 'comparativos',
     categoriaLabel: 'Comparativo',
     categoriaColor: 'bg-blue-100 text-blue-700',
+  },
+  {
+    slug: 'melhores-cafeteiras-2026',
+    titulo: 'As 7 Melhores Cafeteiras 2026: Coado e Cápsula',
+    resumo: 'As melhores cafeteiras 2026 comparadas: 5 de café coado e 2 de cápsula, com ficha técnica, nota real de compradores e a indicação certa para cada rotina.',
+    tempo: '10 min de leitura',
+    imagem: '/images/melhores-cafeteiras/capa-melhores-cafeteiras-2026.webp',
+    categoria: 'rankings-e-listas',
+    categoriaLabel: 'Rankings e Listas',
+    categoriaColor: 'bg-green-100 text-green-700',
   }
 ];
 
