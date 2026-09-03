@@ -503,6 +503,16 @@ export const posts: Post[] = [
     categoria: 'rankings-e-listas',
     categoriaLabel: 'Rankings e Listas',
     categoriaColor: 'bg-green-100 text-green-700',
+  },
+  {
+    slug: 'como-montar-lavanderia-apartamento',
+    titulo: 'Como Montar a Lavanderia de um Apartamento',
+    resumo: 'Onde instalar a máquina, qual modelo cabe no apê pequeno, como secar roupa sem área externa e como organizar produtos e ferro na lavanderia.',
+    tempo: '10 min de leitura',
+    imagem: '/images/lavanderia-guia/capa-como-montar-lavanderia-apartamento.webp',
+    categoria: 'guias-de-compra',
+    categoriaLabel: 'Guia de Compra',
+    categoriaColor: 'bg-purple-100 text-purple-700',
   }
 ];
 

@@ -328,6 +328,13 @@ const posts: Record<string, { titulo: string; descricao: string; categoria: stri
     dataCriacao: '2026-09-01',
     dataModificacao: '2026-09-01',
   },
+  'como-montar-lavanderia-apartamento': {
+    titulo: 'Como Montar a Lavanderia de um Apartamento',
+    descricao: 'Como montar a lavanderia de um apartamento pequeno: onde instalar a máquina, qual modelo escolher, como secar roupa sem área externa e como organizar tudo.',
+    categoria: 'Guia de Compra',
+    dataCriacao: '2026-09-03',
+    dataModificacao: '2026-09-03',
+  },
 };
 
 export function getStaticPaths() {
@@ -376,6 +383,7 @@ export function getStaticPaths() {
     'melhores-aspiradores-verticais-2026': {},
     'panela-pressao-eletrica-ou-convencional': {},
     'melhores-cafeteiras-2026': {},
+    'como-montar-lavanderia-apartamento': {},
   }).map((slug) => ({ params: { slug } }));
 }
 
@@ -452,6 +460,7 @@ const isDolceGustoGenioSBasicReview = slug === 'dolce-gusto-genio-s-basic-review
 const isMelhoresAspiradoresVerticais = slug === 'melhores-aspiradores-verticais-2026';
 const isPanelaEletricaOuConvencional = slug === 'panela-pressao-eletrica-ou-convencional';
 const isMelhoresCafeteiras = slug === 'melhores-cafeteiras-2026';
+const isComoMontarLavanderia = slug === 'como-montar-lavanderia-apartamento';
 
 const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isAirfryer ? '/images/airfryer/capa-airfryer.webp'
@@ -497,6 +506,7 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isMelhoresAspiradoresVerticais ? '/images/aspiradores-verticais-2026/capa-melhores-aspiradores-verticais-2026.webp'
   : isPanelaEletricaOuConvencional ? '/images/panela-comparativo/capa-panela-eletrica-ou-convencional.webp'
   : isMelhoresCafeteiras ? '/images/melhores-cafeteiras/capa-melhores-cafeteiras-2026.webp'
+  : isComoMontarLavanderia ? '/images/lavanderia-guia/capa-como-montar-lavanderia-apartamento.webp'
   : undefined;
 ---
 
@@ -5907,6 +5917,14 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
               <p style="margin:0;font-size:15px;font-weight:500;line-height:1.5;color:#1a1a1a;">Lava e Seca ou Secadora: Qual Compensa Mais para Apartamento?</p>
             </div>
           </a>
+          <a href="/como-montar-lavanderia-apartamento" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;margin-top:12px;">
+            <div style="width:200px;min-width:200px;overflow:hidden;">
+              <img src="/images/lavanderia-guia/capa-como-montar-lavanderia-apartamento.webp" alt="Como montar a lavanderia de um apartamento" style="width:100%;height:100%;object-fit:cover;display:block;" />
+            </div>
+            <div style="padding:20px 22px;display:flex;align-items:center;">
+              <p style="margin:0;font-size:15px;font-weight:500;line-height:1.5;color:#1a1a1a;">Como Montar a Lavanderia de um Apartamento</p>
+            </div>
+          </a>
         </div>
       </div>
     )}
@@ -7675,6 +7693,14 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
               <p style="margin:0;font-size:15px;font-weight:500;line-height:1.5;color:#1a1a1a;">Melhor Multiprocessador de Alimentos 2026: Vale a Pena Ter em Casa?</p>
             </div>
           </a>
+          <a href="/como-montar-lavanderia-apartamento" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;margin-top:12px;">
+            <div style="width:200px;min-width:200px;overflow:hidden;">
+              <img src="/images/lavanderia-guia/capa-como-montar-lavanderia-apartamento.webp" alt="Como montar a lavanderia de um apartamento" style="width:100%;height:100%;object-fit:cover;display:block;" />
+            </div>
+            <div style="padding:20px 22px;display:flex;align-items:center;">
+              <p style="margin:0;font-size:15px;font-weight:500;line-height:1.5;color:#1a1a1a;">Como Montar a Lavanderia de um Apartamento</p>
+            </div>
+          </a>
         </div>
 
         <!-- SCHEMA FAQ JSON-LD -->
@@ -8202,6 +8228,14 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
             </div>
             <div style="padding:20px 22px;display:flex;align-items:center;">
               <p style="margin:0;font-size:15px;font-weight:500;line-height:1.5;color:#1a1a1a;">Vaporizador de Roupas Portátil: os Melhores para Comprar em 2026</p>
+            </div>
+          </a>
+          <a href="/como-montar-lavanderia-apartamento" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;margin-top:12px;">
+            <div style="width:200px;min-width:200px;overflow:hidden;">
+              <img src="/images/lavanderia-guia/capa-como-montar-lavanderia-apartamento.webp" alt="Como montar a lavanderia de um apartamento" style="width:100%;height:100%;object-fit:cover;display:block;" />
+            </div>
+            <div style="padding:20px 22px;display:flex;align-items:center;">
+              <p style="margin:0;font-size:15px;font-weight:500;line-height:1.5;color:#1a1a1a;">Como Montar a Lavanderia de um Apartamento</p>
             </div>
           </a>
         </div>
@@ -17883,6 +17917,451 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
           <a href="/lava-loucas-midea-8-servicos-review" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
             <div style="width:200px;flex-shrink:0;">
               <img src="/images/lava-loucas/capa-lava-loucas.webp" alt="Lava-louças compacta Midea 8 serviços review" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Lava-louças Compacta Midea 8 Serviços: Testamos por Meses</span>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    )}
+
+    {isComoMontarLavanderia && (
+      <div>
+
+        <!-- Capa -->
+        <div class="rounded-2xl overflow-hidden mb-8 shadow-md">
+          <img
+            src="/images/lavanderia-guia/capa-como-montar-lavanderia-apartamento.webp"
+            alt="Lavanderia compacta de apartamento com máquina de lavar, varal e prateleira de produtos"
+            class="w-full h-auto object-cover"
+            loading="eager"
+          />
+        </div>
+
+        <!-- Introdução -->
+        <div class="bg-orange-50 border border-orange-100 rounded-2xl p-6 mb-8">
+          <p class="text-slate-800 text-base leading-relaxed mb-3">
+            Se você está tentando descobrir como montar a lavanderia de um apartamento pequeno, o problema costuma ser o mesmo: o espaço que sobra é um corredor estreito, um pedaço da cozinha ou uma parede da varanda. Cabe a máquina, mas não sobra lugar para secar a roupa, guardar os produtos e circular sem esbarrar em tudo.
+          </p>
+          <p class="text-slate-800 text-base leading-relaxed mb-3">
+            A boa notícia é que dá para ter uma lavanderia que funciona bem em poucos metros quadrados. O segredo está em três decisões tomadas na ordem certa: escolher a máquina de acordo com o ponto de água e de energia que você tem, resolver a secagem antes de comprar qualquer coisa e usar a parede inteira, do chão ao teto, para o resto.
+          </p>
+          <p class="text-slate-800 text-base leading-relaxed">
+            Sou Claudia Castro, criadora do Casa em Alta. Aqui em casa a cozinha é integrada com a lavanderia e o espaço é bem apertado, então quase tudo neste guia eu testei na prática. Vou mostrar como planejar o espaço, escolher a máquina, secar roupa sem área externa e organizar tudo, com os erros mais comuns e um checklist no fim.
+          </p>
+        </div>
+
+        <!-- Índice -->
+        <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 mb-10">
+          <p class="text-slate-800 font-bold text-base mb-3">Neste artigo:</p>
+          <ul class="space-y-2 text-sm text-slate-700">
+            <li><a href="#espaco" class="text-purple-600 hover:underline">→ Por onde começar: entenda o espaço que você tem</a></li>
+            <li><a href="#maquina" class="text-purple-600 hover:underline">→ Qual máquina escolher quando o espaço é pequeno</a></li>
+            <li><a href="#secar" class="text-purple-600 hover:underline">→ Como secar a roupa sem área externa</a></li>
+            <li><a href="#integrada" class="text-purple-600 hover:underline">→ Lavanderia integrada com a cozinha</a></li>
+            <li><a href="#organizacao" class="text-purple-600 hover:underline">→ Como organizar a lavanderia pequena</a></li>
+            <li><a href="#erros" class="text-purple-600 hover:underline">→ Erros comuns ao montar a lavanderia do apê</a></li>
+            <li><a href="#checklist" class="text-purple-600 hover:underline">→ Checklist final antes de montar</a></li>
+            <li><a href="#faq" class="text-purple-600 hover:underline">→ Perguntas frequentes</a></li>
+          </ul>
+        </div>
+
+        <!-- Resposta direta -->
+        <div class="bg-purple-50 border border-purple-100 rounded-2xl p-6 mb-10">
+          <p class="text-slate-800 font-bold text-base mb-3">Como montar a lavanderia de um apartamento pequeno, em 4 passos</p>
+          <ol class="space-y-2 text-sm text-slate-700 list-decimal list-inside">
+            <li>Meça o vão e localize o ponto de água, o ralo, a tomada e o disjuntor.</li>
+            <li>Escolha a máquina pelo espaço real e pela tensão que você tem, não pela capacidade que gostaria.</li>
+            <li>Defina como vai secar a roupa antes de comprar qualquer máquina.</li>
+            <li>Use a parede inteira, do chão ao teto, para produtos, cestos, ferro e tábua.</li>
+          </ol>
+        </div>
+
+        <!-- Espaço -->
+        <h2 id="espaco" class="text-2xl font-bold text-slate-900 mb-4">Por onde começar: entenda o espaço que você tem</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Antes de olhar máquina ou armário, você precisa saber com que tipo de espaço está lidando. Nos apartamentos brasileiros a lavanderia aparece em quatro formatos, e cada um pede uma solução diferente.
+        </p>
+        <ul class="space-y-2 text-sm text-slate-700 mb-4">
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Área de serviço separada:</strong> um cômodo pequeno só para isso, com tanque, ponto de máquina e às vezes espaço para um armário. É o cenário mais confortável, ainda que costume ter menos de 3 m².</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Cozinha integrada com a lavanderia:</strong> a máquina fica embaixo da bancada ou ao lado da pia, dividindo o mesmo ponto de água e o mesmo ralo. Comum em apartamentos compactos e é o caso do meu apê.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Cantinho na varanda:</strong> a máquina vai para um trecho da varanda, muitas vezes fechado depois com um armário ou porta de correr. Exige ponto de água e tomada puxados até ali e atenção com chuva batendo de lado.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Nicho com porta:</strong> um vão embutido no corredor ou na cozinha, fechado com porta de abrir ou sanfonada. Ganha em acabamento, mas precisa de ventilação para não acumular mofo.</span></li>
+        </ul>
+        <h3 class="text-lg font-bold text-slate-900 mb-3">Como medir e planejar</h3>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Pegue uma trena e anote quatro coisas: largura, profundidade e altura do vão, e onde estão o ponto de água, o ralo, a tomada e o disjuntor. Com esses números você já sabe o que cabe. Alguns cuidados que evitam dor de cabeça:
+        </p>
+        <ul class="space-y-2 text-sm text-slate-700 mb-10">
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span>Deixe de 2 a 5 cm de folga de cada lado da máquina, senão não entra nem sai para manutenção.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span>Some a mangueira e o engate na profundidade. Eles acrescentam de 5 a 10 cm atrás da máquina.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span>Máquina de abertura frontal precisa de vão livre na frente para a porta abrir. A de abertura superior precisa de espaço em cima da tampa.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span>Reserve pelo menos 60 cm de passagem para circular sem se espremer.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span>Confira a largura da porta de entrada e do corredor por onde a máquina vai passar na entrega.</span></li>
+        </ul>
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          Se a instalação exigir mexer na fiação, trocar o disjuntor ou criar um ponto de água novo, chame um eletricista ou um encanador. Furar parede sem saber por onde passam os fios e os canos é pedir acidente.
+        </p>
+
+        <!-- Máquina -->
+        <h2 id="maquina" class="text-2xl font-bold text-slate-900 mb-4">Qual máquina escolher quando o espaço é pequeno</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Essa é a decisão que trava mais gente, porque num apê pequeno raramente cabe tudo o que você gostaria. São quatro opções, e cada uma faz sentido num cenário.
+        </p>
+        <h3 class="text-lg font-bold text-slate-900 mb-3">Lava e seca</h3>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Um aparelho só lava e seca a roupa. Segundo as fichas técnicas dos fabricantes, costuma ter cerca de 60 cm de largura, altura de até cerca de 105 cm e profundidade de 60 cm a 71 cm, com capacidade de lavagem de 10 kg a 12 kg nos modelos mais vendidos. O ponto forte é ocupar um lugar só e resolver a secagem sem varal. Os pontos fracos: a secagem geralmente aceita cerca de metade dos quilos que a máquina lava, o ciclo de secar é demorado e puxa mais energia, e o conserto sai mais caro. Vale olhar o selo <a href="http://www.procelinfo.com.br/" target="_blank" rel="noopener" class="text-purple-600 font-semibold hover:underline">Procel</a> na etiqueta antes de comprar.
+        </p>
+        <h3 class="text-lg font-bold text-slate-900 mb-3">Lavadora e secadora separadas</h3>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Duas máquinas independentes. Se as duas forem de abertura frontal, dá para empilhar uma sobre a outra em formato de torre e economizar chão. Em compensação você precisa de duas tomadas, às vezes uma em 220V para a secadora, e de altura livre. Seca melhor e mais rápido que a lava e seca, mas ocupa mais e custa mais no total.
+        </p>
+        <h3 class="text-lg font-bold text-slate-900 mb-3">Lavadora comum</h3>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          A máquina de abertura superior de sempre. É mais barata, dura bastante e tem manutenção simples. Só que não seca nada, então você vai depender de varal ou de uma secadora à parte.
+        </p>
+        <h3 class="text-lg font-bold text-slate-900 mb-3">Tanquinho</h3>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Pequeno, leve, barato e fácil de guardar. Funciona para quem lava pouca roupa, mora sozinho ou quer um apoio para peças específicas. Muitos modelos não centrifugam, então a roupa sai encharcada e você torce à mão ou usa uma centrífuga à parte. Há também versões com tanque de centrifugar embutido.
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          No meu apê a lava e seca foi a única saída, porque não há como colocar duas máquinas lado a lado nem montar uma torre. Abri mão de secar a carga cheia de uma vez para ter tudo num aparelho só, e para a minha rotina, com cargas menores e mais frequentes, funciona bem.
+        </p>
+        <div class="overflow-x-auto mb-4">
+          <table class="w-full text-sm border-collapse rounded-xl overflow-hidden">
+            <thead>
+              <tr class="bg-slate-800 text-white">
+                <th class="py-3 px-4 text-left font-bold">Tipo</th>
+                <th class="py-3 px-4 text-left font-bold">Quanto ocupa</th>
+                <th class="py-3 px-4 text-left font-bold">Seca roupa?</th>
+                <th class="py-3 px-4 text-left font-bold">Boa para</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b border-slate-100 bg-white">
+                <td class="py-3 px-4 font-semibold text-slate-800">Lava e seca</td>
+                <td class="py-3 px-4 text-slate-600">Espaço de uma máquina</td>
+                <td class="py-3 px-4 text-slate-600">Sim, cerca de metade dos kg de lavagem</td>
+                <td class="py-3 px-4 text-slate-600">Apê sem área externa e sem lugar para duas máquinas</td>
+              </tr>
+              <tr class="border-b border-slate-100 bg-slate-50">
+                <td class="py-3 px-4 font-semibold text-slate-800">Lavadora + secadora</td>
+                <td class="py-3 px-4 text-slate-600">Duas máquinas, empilháveis se frontais</td>
+                <td class="py-3 px-4 text-slate-600">Sim, com boa capacidade</td>
+                <td class="py-3 px-4 text-slate-600">Quem tem pé-direito, duas tomadas e lava muito</td>
+              </tr>
+              <tr class="border-b border-slate-100 bg-white">
+                <td class="py-3 px-4 font-semibold text-slate-800">Lavadora comum</td>
+                <td class="py-3 px-4 text-slate-600">Espaço de uma máquina</td>
+                <td class="py-3 px-4 text-slate-600">Não</td>
+                <td class="py-3 px-4 text-slate-600">Quem tem varal garantido e quer gastar menos</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="py-3 px-4 font-semibold text-slate-800">Tanquinho</td>
+                <td class="py-3 px-4 text-slate-600">Muito pouco, dá para guardar</td>
+                <td class="py-3 px-4 text-slate-600">Não</td>
+                <td class="py-3 px-4 text-slate-600">Solteiro, pouca roupa ou uso de apoio</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Se você está na dúvida entre juntar tudo num aparelho ou investir numa secadora dedicada, vale ler o comparativo <a href="/lava-e-seca-ou-secadora-apartamento" class="text-purple-600 font-semibold hover:underline">Lava e Seca ou Secadora de Roupas: Qual Compensa Mais para Apartamento</a>, que entra na conta de consumo e de capacidade real de cada opção.
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          Resumindo: apê minúsculo e sem varal com sol, lava e seca. Varal com sol garantido, a lavadora comum sai mais em conta. Se você lava muito e tem pé-direito, vale a torre de lavadora e secadora.
+        </p>
+
+        <!-- Secar -->
+        <h2 id="secar" class="text-2xl font-bold text-slate-900 mb-4">Como secar a roupa em apartamento sem área externa</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Sem quintal e sem área de serviço aberta, a secagem precisa ser resolvida dentro de casa. As opções que realmente funcionam em apartamento são estas:
+        </p>
+        <ul class="space-y-2 text-sm text-slate-700 mb-4">
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Varal de teto retrátil:</strong> sobe e desce por cordas ou manivela, aproveita a altura e sai do caminho quando não está em uso. Instale perto de uma janela.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Varal de chão dobrável:</strong> o mais versátil. Você abre, usa e guarda atrás da porta, e pode mudar de cômodo para seguir o sol.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Varal sanfonado de parede:</strong> fica fechado rente à parede e abre em leque só na hora de estender. Ocupa quase nada e dá conta do volume do dia a dia.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Secadora ou função secar da lava e seca:</strong> resolve os dias de chuva e o inverno, quando nada seca no varal.</span></li>
+        </ul>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Antes de instalar varal na varanda, confira a convenção do condomínio. Muitos prédios proíbem estender roupa à vista da fachada, para fora da guarda-corpo.
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Aqui em casa eu uso duas coisas ao mesmo tempo. Tenho um varal de chão que fico mudando de lugar para pegar sol: de manhã ele vai para a janela do quarto, que pega o sol da manhã, e à tarde vai para a varanda. E tenho um varal sanfonado de parede na lavanderia, que ajuda muito no dia a dia.
+        </p>
+        <div class="rounded-2xl overflow-hidden my-8 shadow-md">
+          <img
+            src="/images/lavanderia-guia/interna-secar-roupa-apartamento.webp"
+            alt="Varal de chão cheio de roupa ao lado da janela ensolarada de um quarto de apartamento"
+            width="1280"
+            height="720"
+            class="w-full h-auto object-cover"
+            loading="lazy"
+          />
+        </div>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Para secar dentro de casa sem criar mofo e cheiro de guardado, alguns cuidados fazem diferença:
+        </p>
+        <ul class="space-y-2 text-sm text-slate-700 mb-4">
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span>Centrifugue bem antes de estender, na rotação mais alta que o tecido aguentar.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span>Deixe espaço entre as peças. Roupa amontoada não seca e azeda.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span>Ligue um ventilador apontado para o varal ou deixe a janela aberta para o ar circular.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span>Evite secar em quarto fechado com a porta trancada, porque a umidade fica presa na parede.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span>Se tiver um desumidificador, use no ambiente onde a roupa está secando.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span>Se alguma peça pegou cheiro de mofo, lave de novo trocando o amaciante por meia xícara de vinagre branco.</span></li>
+        </ul>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Peça que amassou no varal ou ficou com cheiro de armário nem sempre precisa de tábua e ferro. Um <a href="/vaporizador-de-roupas-portatil" class="text-purple-600 font-semibold hover:underline">vaporizador de roupas portátil</a> tira o vinco e refresca o tecido rápido, e ocupa mais ou menos o espaço de uma garrafa térmica.
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          Resumindo: um varal sanfonado ou de teto para o dia a dia, um varal de chão para seguir o sol, e a função secar ou uma secadora para chuva e inverno.
+        </p>
+
+        <!-- Integrada -->
+        <h2 id="integrada" class="text-2xl font-bold text-slate-900 mb-4">Lavanderia integrada com a cozinha: como fazer as duas conviverem</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Quando a máquina de lavar divide o ambiente com a pia e o fogão, o desafio é fazer as duas funções conviverem sem que a cozinha vire depósito de roupa suja. Isso é possível, e aqui em casa é assim que funciona.
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          A vantagem prática é que a máquina, a pia e, se couber, uma lava-louças aproveitam o mesmo ponto de água e o mesmo ralo, o que barateia a instalação. A área integrada quase sempre comporta uma lava-louças de bancada no mesmo trecho da máquina de lavar. Eu contei como uma dessas se comporta no dia a dia na <a href="/lava-loucas-midea-8-servicos-review" class="text-purple-600 font-semibold hover:underline">review da lava-louças compacta Midea 8 Serviços</a>, e se a dúvida é se esse tipo de aparelho faz sentido para você, tem também o texto sobre <a href="/lava-loucas-compacta-vale-a-pena-apartamento" class="text-purple-600 font-semibold hover:underline">se a lava-louças compacta vale a pena no apartamento</a>.
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Para separar visualmente as duas áreas sem levantar parede, funciona bem:
+        </p>
+        <ul class="space-y-2 text-sm text-slate-700 mb-4">
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span>Uma bancada ou tampo que cobre a máquina e serve de apoio para dobrar roupa.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span>Porta de correr, cortina ou painel ripado escondendo o trecho da lavanderia.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span>Cor ou revestimento diferente numa das áreas, para o olho entender que ali muda a função.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span>Armário aéreo fechado para os produtos de limpeza, sempre longe dos alimentos.</span></li>
+        </ul>
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          A organização aqui é toda vertical. O que é de lavar roupa fica de um lado, o que é de cozinha fica do outro, e nada de deixar sabão e água sanitária na mesma prateleira dos temperos, pelo cheiro e pela segurança.
+        </p>
+
+        <!-- Organização -->
+        <h2 id="organizacao" class="text-2xl font-bold text-slate-900 mb-4">Como organizar a lavanderia pequena: prateleiras, armário e cestos</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Com a máquina e a secagem resolvidas, o que trava a lavanderia pequena é o acúmulo de coisas soltas. A saída é dar um endereço fixo para cada item.
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          <strong>Produtos de limpeza.</strong> O ideal é um armário fechado, de preferência alto ou com trava se você tem criança ou pet em casa. Sabão, amaciante e tira-manchas de uso diário podem ficar numa prateleira ou num nicho logo acima da máquina, à mão. O estoque fechado vai para dentro do armário.
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          <strong>Cestos de roupa suja.</strong> Vale separar por cor, com um cesto para branco, um para colorido e um para escuro, ou separar por tipo, com um cesto só para roupa delicada e roupa de cama. Prefira cestos ventilados ou de tela, porque roupa suja fechada em plástico cria cheiro. Aqui em casa eu uso cestos para a roupa e um armário para os produtos, e foi assim, adaptando aos poucos, que o espaço ficou prático.
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          <strong>Ferro e tábua.</strong> Num apê pequeno, tábua dobrável presa atrás da porta ou num suporte de parede resolve. Quem passa pouca roupa pode trocar a tábua grande por uma tábua de mesa.
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          <strong>Kit de lavagem.</strong> Junte numa caixinha o tira-manchas, uma escova, o saquinho para roupa delicada e o medidor de sabão, para não procurar item por item toda vez. Rodo, vassoura e pá ficam em ganchos na parede, fora do chão.
+        </p>
+
+        <!-- Erros comuns -->
+        <h2 id="erros" class="text-2xl font-bold text-slate-900 mb-4">Erros comuns ao montar a lavanderia do apê</h2>
+        <ul class="space-y-2 text-sm text-slate-700 mb-10">
+          <li class="flex gap-2"><span class="text-red-400 font-bold">✗</span><span><strong>Comprar máquina grande demais para a instalação.</strong> Antes de escolher a capacidade, confira a tensão da tomada, se é 127V (a rede de 110V) ou 220V, a amperagem do disjuntor, a largura do vão e a largura da porta por onde a máquina entra. O padrão de tomada no Brasil segue a norma NBR 14136, fiscalizada pelo <a href="https://www.gov.br/inmetro/pt-br" target="_blank" rel="noopener" class="text-purple-600 font-semibold hover:underline">Inmetro</a>.</span></li>
+          <li class="flex gap-2"><span class="text-red-400 font-bold">✗</span><span><strong>Esquecer a ventilação.</strong> Espaço fechado somado a roupa úmida dá mofo na parede e cheiro no ambiente. Num nicho com porta, coloque veneziana ou um exaustor.</span></li>
+          <li class="flex gap-2"><span class="text-red-400 font-bold">✗</span><span><strong>Fixar o varal onde não bate sol nem vento.</strong> Observe por onde o sol entra ao longo do dia antes de furar parede ou teto.</span></li>
+          <li class="flex gap-2"><span class="text-red-400 font-bold">✗</span><span><strong>Não prever tomadas suficientes.</strong> Máquina, ferro e aspirador disputam a mesma tomada. Deixe uma tomada exclusiva para a máquina e mais uma por perto.</span></li>
+          <li class="flex gap-2"><span class="text-red-400 font-bold">✗</span><span><strong>Fechar tudo com marcenaria cedo demais.</strong> Só feche o vão com armário planejado depois de saber a profundidade real da máquina já com a mangueira e o engate ligados.</span></li>
+          <li class="flex gap-2"><span class="text-red-400 font-bold">✗</span><span><strong>Achar que a lava e seca seca a mesma carga que lava.</strong> A secagem costuma aceitar cerca de metade dos quilos. Se você lava 11 kg, provavelmente seca perto de 6 kg por ciclo.</span></li>
+          <li class="flex gap-2"><span class="text-red-400 font-bold">✗</span><span><strong>Guardar produto de limpeza ao alcance de criança e pet</strong> ou encostado nos alimentos. Armário fechado e alto resolve.</span></li>
+        </ul>
+
+        <!-- Checklist -->
+        <h2 id="checklist" class="text-2xl font-bold text-slate-900 mb-4">Checklist final antes de montar</h2>
+        <ul class="space-y-2 text-sm text-slate-700 mb-10">
+          <li class="flex gap-2"><span class="text-green-500 font-bold">✓</span><span>Medidas do vão anotadas: largura, altura e profundidade, com folga de 2 a 5 cm nas laterais.</span></li>
+          <li class="flex gap-2"><span class="text-green-500 font-bold">✓</span><span>Profundidade conferida já contando mangueira e engate atrás da máquina.</span></li>
+          <li class="flex gap-2"><span class="text-green-500 font-bold">✓</span><span>Ponto de água e ralo dentro do alcance da máquina.</span></li>
+          <li class="flex gap-2"><span class="text-green-500 font-bold">✓</span><span>Tomada exclusiva, tensão correta e disjuntor compatível com o aparelho.</span></li>
+          <li class="flex gap-2"><span class="text-green-500 font-bold">✓</span><span>Vão livre na frente para abrir a porta frontal, ou espaço em cima para a abertura superior.</span></li>
+          <li class="flex gap-2"><span class="text-green-500 font-bold">✓</span><span>Pelo menos 60 cm de passagem para circular.</span></li>
+          <li class="flex gap-2"><span class="text-green-500 font-bold">✓</span><span>Solução de secagem definida: varal de teto, sanfonado de parede, varal de chão ou secadora.</span></li>
+          <li class="flex gap-2"><span class="text-green-500 font-bold">✓</span><span>Janela, veneziana ou exaustor garantindo a ventilação.</span></li>
+          <li class="flex gap-2"><span class="text-green-500 font-bold">✓</span><span>Armário fechado para os produtos de limpeza e cestos para separar a roupa suja.</span></li>
+          <li class="flex gap-2"><span class="text-green-500 font-bold">✓</span><span>Lugar definido para o ferro e a tábua, e luz sobre a máquina e a bancada.</span></li>
+        </ul>
+
+        <!-- FAQ -->
+        <h2 id="faq" class="text-2xl font-bold text-slate-900 mb-6">Perguntas frequentes sobre montar a lavanderia do apartamento</h2>
+        <div class="space-y-3 mb-10">
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Lava e seca vale a pena em apartamento?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Para apê pequeno, sem área externa e sem espaço para duas máquinas, costuma valer. Você resolve lavar e secar num aparelho só e num ponto só. Se você tem varal com sol garantido ou espaço para uma secadora dedicada, a conta muda e pode compensar separar as funções.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Como secar roupa em apê no inverno?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Centrifugue na rotação mais alta possível, estenda com bastante espaço entre as peças e ligue um ventilador apontado para o varal. Abra a janela sempre que der para o ar circular e evite deixar a roupa secando em quarto fechado. Desumidificador no ambiente ajuda bastante, e a função secar da máquina resolve os dias sem sol.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Onde colocar a máquina de lavar se não tenho área de serviço?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Os lugares mais comuns são embaixo da bancada da cozinha, dividindo o ponto de água da pia, um trecho fechado da varanda ou um nicho no corredor com porta. Em qualquer um deles você precisa levar até ali ponto de água, ralo e tomada, e garantir ventilação.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Precisa de ponto de água quente para a máquina de lavar?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Não. As lavadoras e as lava e seca vendidas no Brasil usam entrada de água fria, e os modelos que lavam com água aquecida esquentam a água internamente. Basta o ponto de água fria comum.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Qual o tamanho mínimo para uma lavanderia de apartamento?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Dá para montar uma lavanderia funcional em cerca de 1 m², com a máquina, uma prateleira acima dela e um varal retrátil ou sanfonado na parede. O que não pode faltar é ponto de água, ralo, tomada e ventilação, mesmo num espaço mínimo.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Dá para colocar a secadora em cima da máquina de lavar?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Sim, desde que as duas sejam de abertura frontal e você use o kit de empilhamento indicado pelo fabricante, que prende uma na outra. Confira antes se há altura livre suficiente para abrir a porta da máquina de cima.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Como tirar o cheiro de mofo da roupa que secou dentro de casa?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Lave a peça de novo trocando o amaciante por meia xícara de vinagre branco no compartimento próprio. Depois seque o mais rápido possível, com ventilador, janela aberta ou na secadora. O cheiro de mofo aparece quando a roupa demora demais para secar, então acelerar a secagem é o que resolve de vez.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Quantas tomadas preciso na lavanderia do apartamento?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              No mínimo uma tomada exclusiva para a máquina de lavar, na tensão certa, e mais uma por perto para o ferro, o aspirador ou uma segunda máquina. Ligar máquina e ferro na mesma tomada sobrecarrega o circuito.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">A lava e seca gasta muita energia?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              O ciclo de lavar consome pouco. O gasto sobe na função secar, que é demorada e puxa bastante energia. Olhar o selo Procel na etiqueta ajuda a comparar os modelos antes de comprar.
+            </div>
+          </details>
+        </div>
+
+        <!-- Schema FAQ -->
+        <script type="application/ld+json" set:html={JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Lava e seca vale a pena em apartamento?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Para apê pequeno, sem área externa e sem espaço para duas máquinas, costuma valer. Você resolve lavar e secar num aparelho só e num ponto só. Se você tem varal com sol garantido ou espaço para uma secadora dedicada, a conta muda e pode compensar separar as funções." }
+            },
+            {
+              "@type": "Question",
+              "name": "Como secar roupa em apê no inverno?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Centrifugue na rotação mais alta possível, estenda com bastante espaço entre as peças e ligue um ventilador apontado para o varal. Abra a janela sempre que der para o ar circular e evite deixar a roupa secando em quarto fechado. Desumidificador no ambiente ajuda, e a função secar da máquina resolve os dias sem sol." }
+            },
+            {
+              "@type": "Question",
+              "name": "Onde colocar a máquina de lavar se não tenho área de serviço?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Os lugares mais comuns são embaixo da bancada da cozinha, dividindo o ponto de água da pia, um trecho fechado da varanda ou um nicho no corredor com porta. Em qualquer um deles você precisa levar até ali ponto de água, ralo e tomada, e garantir ventilação." }
+            },
+            {
+              "@type": "Question",
+              "name": "Precisa de ponto de água quente para a máquina de lavar?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Não. As lavadoras e as lava e seca vendidas no Brasil usam entrada de água fria, e os modelos que lavam com água aquecida esquentam a água internamente. Basta o ponto de água fria comum." }
+            },
+            {
+              "@type": "Question",
+              "name": "Qual o tamanho mínimo para uma lavanderia de apartamento?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Dá para montar uma lavanderia funcional em cerca de 1 m², com a máquina, uma prateleira acima dela e um varal retrátil ou sanfonado na parede. O que não pode faltar é ponto de água, ralo, tomada e ventilação, mesmo num espaço mínimo." }
+            },
+            {
+              "@type": "Question",
+              "name": "Dá para colocar a secadora em cima da máquina de lavar?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Sim, desde que as duas sejam de abertura frontal e você use o kit de empilhamento indicado pelo fabricante, que prende uma na outra. Confira antes se há altura livre suficiente para abrir a porta da máquina de cima." }
+            },
+            {
+              "@type": "Question",
+              "name": "Como tirar o cheiro de mofo da roupa que secou dentro de casa?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Lave a peça de novo trocando o amaciante por meia xícara de vinagre branco no compartimento próprio. Depois seque o mais rápido possível, com ventilador, janela aberta ou na secadora. O cheiro de mofo aparece quando a roupa demora demais para secar, então acelerar a secagem é o que resolve." }
+            },
+            {
+              "@type": "Question",
+              "name": "Quantas tomadas preciso na lavanderia do apartamento?",
+              "acceptedAnswer": { "@type": "Answer", "text": "No mínimo uma tomada exclusiva para a máquina de lavar, na tensão certa, e mais uma por perto para o ferro, o aspirador ou uma segunda máquina. Ligar máquina e ferro na mesma tomada sobrecarrega o circuito." }
+            },
+            {
+              "@type": "Question",
+              "name": "A lava e seca gasta muita energia?",
+              "acceptedAnswer": { "@type": "Answer", "text": "O ciclo de lavar consome pouco. O gasto sobe na função secar, que é demorada e puxa bastante energia. Olhar o selo Procel na etiqueta ajuda a comparar os modelos antes de comprar." }
+            }
+          ]
+        })} />
+
+        <!-- Schema HowTo -->
+        <script type="application/ld+json" set:html={JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "HowTo",
+          "name": "Como montar a lavanderia de um apartamento pequeno",
+          "step": [
+            { "@type": "HowToStep", "name": "Meça o vão e a instalação", "text": "Meça largura, profundidade e altura do vão e localize o ponto de água, o ralo, a tomada e o disjuntor. Some de 5 a 10 cm de mangueira e engate na profundidade da máquina." },
+            { "@type": "HowToStep", "name": "Escolha a máquina pelo espaço real", "text": "Decida entre lava e seca, lavadora e secadora separadas, lavadora comum ou tanquinho de acordo com o espaço e a tensão que você tem, não pela capacidade que gostaria de ter." },
+            { "@type": "HowToStep", "name": "Defina a secagem antes de comprar", "text": "Escolha como vai secar a roupa: varal de teto retrátil, varal de chão dobrável, varal sanfonado de parede ou a função secar da máquina para dias de chuva e inverno." },
+            { "@type": "HowToStep", "name": "Organize na vertical", "text": "Use a parede do chão ao teto: armário fechado para produtos de limpeza, cestos ventilados para a roupa suja e suporte para o ferro e a tábua." }
+          ]
+        })} />
+
+        <!-- Leia também -->
+        <p style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#c2410c;margin:24px 0 12px;">Leia também:</p>
+        <div style="display:flex;flex-direction:column;gap:12px;">
+          <a href="/lava-e-seca-ou-secadora-apartamento" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;flex-shrink:0;">
+              <img src="/images/lava-seca/capa-lava-seca.webp" alt="Lava e seca ou secadora para apartamento" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Lava e Seca ou Secadora de Roupas: Qual Compensa Mais para Apartamento?</span>
+            </div>
+          </a>
+          <a href="/vaporizador-de-roupas-portatil" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;flex-shrink:0;">
+              <img src="/images/vaporizador/capa-vaporizador.webp" alt="Vaporizador de roupas portátil" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Vaporizador de Roupas Portátil: os Melhores para Comprar em 2026</span>
+            </div>
+          </a>
+          <a href="/lava-loucas-midea-8-servicos-review" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;flex-shrink:0;">
+              <img src="/images/lava-loucas/capa-lava-loucas.webp" alt="Lava-louças compacta Midea 8 serviços" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
             </div>
             <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
               <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
