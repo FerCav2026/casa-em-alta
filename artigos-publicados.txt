@@ -173,3 +173,5 @@ RASCUNHO (21/08/2026) - EM BRANCH, NAO MERGEADO NA MAIN AINDA
     (prompt em ingles entregue) e revisar antes do merge pra main.
 
 2026-09-01 | As 7 Melhores Cafeteiras 2026: Coado e Cápsula | /melhores-cafeteiras-2026 | Rankings e Listas | FECHA cluster Cafeteiras
+
+2026-09-03 | Como Montar a Lavanderia de um Apartamento | /como-montar-lavanderia-apartamento | Guia de Compra | PILAR, abre o cluster Lavanderia. Sem afiliado. Experiencia real da Fernanda (cozinha integrada, lava e seca, varal de chao seguindo o sol, varal sanfonado). Links internos intercalados no corpo + retroativos nos 3 satelites (lava e seca, vaporizador, lava-loucas Midea). Capa recortada de vertical p/ 16:9 + 1 imagem interna. SEO 82 / E-E-A-T 85 / GEO 74.
