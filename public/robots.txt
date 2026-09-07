@@ -1,12 +1,12 @@
-# Bloqueia uso do conteúdo para treinamento de modelos de IA
+# IAs liberadas: treinamento, citação e indexação
 User-agent: GPTBot
-Disallow: /
+Allow: /
 
 User-agent: Google-Extended
-Disallow: /
+Allow: /
 
 User-agent: CCBot
-Disallow: /
+Allow: /
 
 # Permite citação e indexação pelas IAs (visibilidade e tráfego)
 User-agent: OAI-SearchBot
