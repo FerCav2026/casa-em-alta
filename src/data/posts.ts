@@ -513,6 +513,16 @@ export const posts: Post[] = [
     categoria: 'guias-de-compra',
     categoriaLabel: 'Guia de Compra',
     categoriaColor: 'bg-purple-100 text-purple-700',
+  },
+  {
+    slug: 'melhores-panelas-pressao-eletricas-2026',
+    titulo: 'As 5 Melhores Panelas de Pressão Elétricas de 2026',
+    resumo: 'Comparamos 5 panelas de pressão elétricas vendidas no Brasil: capacidade, voltagem, segurança e nota real de quem já comprou, para você escolher sem errar.',
+    tempo: '10 min de leitura',
+    imagem: '/images/melhores-panelas-pressao-2026/capa-melhores-panelas-pressao-eletricas-2026.webp',
+    categoria: 'rankings-e-listas',
+    categoriaLabel: 'Rankings e Listas',
+    categoriaColor: 'bg-green-100 text-green-700',
   }
 ];
 
