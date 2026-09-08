@@ -176,8 +176,8 @@ export const posts: Post[] = [
   },
   {
     slug: 'lava-loucas-midea-8-servicos-review',
-    titulo: 'Lava-louças Compacta Midea 8 Serviços: Testamos por Meses e Isso é o que Você Precisa Saber',
-    resumo: 'Usamos a Midea 8 serviços no dia a dia e contamos tudo: consumo real de água e energia, o que lava bem, o que falta e para quem vale a pena comprar.',
+    titulo: 'Lava-louças Midea 8 Serviços: Testamos por Meses e Isso é o que Você Precisa Saber',
+    resumo: 'Lava-louças Midea 8 Serviços: usamos no dia a dia e contamos tudo sobre consumo real de água e energia, o que lava bem, o que falta e para quem vale a pena comprar.',
     tempo: '8 min de leitura',
     imagem: '/images/lava-loucas/capa-lava-loucas.webp',
     categoria: 'reviews',
