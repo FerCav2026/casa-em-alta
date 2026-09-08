@@ -87,7 +87,7 @@ export const posts: Post[] = [
   {
     slug: 'robos-aspirador-custo-beneficio',
     titulo: 'Robôs Aspiradores: Os 5 Melhores Custo-Benefício',
-    resumo: 'Você realmente precisa gastar mais de R$ 1.000? Testamos opções de R$ 300 a R$ 2.000 para descobrir.',
+    resumo: 'Robô aspirador: você realmente precisa gastar mais de R$ 1.000? Testamos opções de R$ 300 a R$ 2.000 para saber quais valem a pena.',
     tempo: '10 min de leitura',
     imagem: '/images/robos/capa-robos.webp',
     categoria: 'comparativos',
