@@ -342,6 +342,13 @@ const posts: Record<string, { titulo: string; descricao: string; categoria: stri
     dataCriacao: '2026-09-08',
     dataModificacao: '2026-09-08',
   },
+  'projetor-da-shopee-vale-a-pena': {
+    titulo: 'Projetor da Shopee Vale a Pena? Análise Honesta do HY300',
+    descricao: 'Projetor da Shopee vale a pena? Veja a resolução real do HY300 Magcubic, o brilho baixo, o foco manual e o que dizem 66 mil compradores antes de comprar.',
+    categoria: 'Review',
+    dataCriacao: '2026-09-10',
+    dataModificacao: '2026-09-10',
+  },
 };
 
 export function getStaticPaths() {
@@ -392,6 +399,7 @@ export function getStaticPaths() {
     'melhores-cafeteiras-2026': {},
     'como-montar-lavanderia-apartamento': {},
     'melhores-panelas-pressao-eletricas-2026': {},
+    'projetor-da-shopee-vale-a-pena': {},
   }).map((slug) => ({ params: { slug } }));
 }
 
@@ -470,6 +478,7 @@ const isPanelaEletricaOuConvencional = slug === 'panela-pressao-eletrica-ou-conv
 const isMelhoresCafeteiras = slug === 'melhores-cafeteiras-2026';
 const isComoMontarLavanderia = slug === 'como-montar-lavanderia-apartamento';
 const isMelhoresPanelasPressao = slug === 'melhores-panelas-pressao-eletricas-2026';
+const isProjetorShopee = slug === 'projetor-da-shopee-vale-a-pena';
 
 const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isAirfryer ? '/images/airfryer/capa-airfryer.webp'
@@ -517,11 +526,12 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isMelhoresCafeteiras ? '/images/melhores-cafeteiras/capa-melhores-cafeteiras-2026.webp'
   : isComoMontarLavanderia ? '/images/lavanderia-guia/capa-como-montar-lavanderia-apartamento.webp'
   : isMelhoresPanelasPressao ? '/images/melhores-panelas-pressao-2026/capa-melhores-panelas-pressao-eletricas-2026.webp'
+  : isProjetorShopee ? '/images/projetor-shopee/capa-projetor-da-shopee-vale-a-pena.webp'
   : undefined;
 ---
 
 <BaseLayout
-  title={isPanelaEletricaOuConvencional || isMelhoresCafeteiras ? post.titulo : `${post.titulo} - Casa em Alta`}
+  title={isPanelaEletricaOuConvencional || isMelhoresCafeteiras || isProjetorShopee ? post.titulo : `${post.titulo} - Casa em Alta`}
   description={post.descricao}
   image={coverImage}
   type="article"
@@ -14712,13 +14722,22 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
         <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">10 Utilidades da Shopee por Menos de R$30 Que Valem a Pena</span>
       </div>
     </a>
-    <a href="/mini-eletrodomesticos-mais-vendidos-shopee" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+    <a href="/mini-eletrodomesticos-mais-vendidos-shopee" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;margin-bottom:16px;">
       <div style="width:200px;flex-shrink:0;">
         <img src="/images/mini-eletrodomesticos-shopee/capa-mini-eletrodomesticos-shopee.webp" alt="Mini eletrodomésticos mais vendidos da Shopee" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
       </div>
       <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
         <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
         <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Mini Eletrodomésticos Mais Vendidos da Shopee: Vale a Pena ou é Furada?</span>
+      </div>
+    </a>
+    <a href="/projetor-da-shopee-vale-a-pena" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+      <div style="width:200px;flex-shrink:0;">
+        <img src="/images/projetor-shopee/capa-projetor-da-shopee-vale-a-pena.webp" alt="Projetor da Shopee vale a pena" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+      </div>
+      <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+        <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+        <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Projetor da Shopee Vale a Pena? Análise Honesta do HY300</span>
       </div>
     </a>
   </div>
@@ -15115,13 +15134,22 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
         <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">15 Itens Incríveis para Casa por até R$ 30 na Amazon</span>
       </div>
     </a>
-    <a href="/mini-eletrodomesticos-mais-vendidos-shopee" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+    <a href="/mini-eletrodomesticos-mais-vendidos-shopee" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;margin-bottom:16px;">
       <div style="width:200px;flex-shrink:0;">
         <img src="/images/mini-eletrodomesticos-shopee/capa-mini-eletrodomesticos-shopee.webp" alt="Mini eletrodomésticos mais vendidos da Shopee" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
       </div>
       <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
         <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
         <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Mini Eletrodomésticos Mais Vendidos da Shopee: Vale a Pena ou é Furada?</span>
+      </div>
+    </a>
+    <a href="/projetor-da-shopee-vale-a-pena" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+      <div style="width:200px;flex-shrink:0;">
+        <img src="/images/projetor-shopee/capa-projetor-da-shopee-vale-a-pena.webp" alt="Projetor da Shopee vale a pena" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+      </div>
+      <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+        <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+        <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Projetor da Shopee Vale a Pena? Análise Honesta do HY300</span>
       </div>
     </a>
   </div>
@@ -15381,13 +15409,22 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
         <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Os 6 Mais Vendidos da Shopee para Casa: Achados Que Realmente Valem a Pena</span>
       </div>
     </a>
-    <a href="/utilidades-shopee-ate-30-reais" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+    <a href="/utilidades-shopee-ate-30-reais" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;margin-bottom:16px;">
       <div style="width:200px;flex-shrink:0;">
         <img src="/images/utilidades-shopee-30/capa-utilidades-shopee-30.webp" alt="Utilidades para casa por menos de 30 reais na Shopee" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
       </div>
       <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
         <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
         <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">10 Utilidades da Shopee por Menos de R$30 Que Valem a Pena</span>
+      </div>
+    </a>
+    <a href="/projetor-da-shopee-vale-a-pena" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+      <div style="width:200px;flex-shrink:0;">
+        <img src="/images/projetor-shopee/capa-projetor-da-shopee-vale-a-pena.webp" alt="Projetor da Shopee vale a pena" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+      </div>
+      <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+        <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+        <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Projetor da Shopee Vale a Pena? Análise Honesta do HY300</span>
       </div>
     </a>
   </div>
@@ -15669,6 +15706,15 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
       <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
         <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
         <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Xiaomi S40 ou H40: Qual Robô Aspirador Vale Mais a Pena?</span>
+      </div>
+    </a>
+    <a href="/projetor-da-shopee-vale-a-pena" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;margin-top:16px;">
+      <div style="width:200px;flex-shrink:0;">
+        <img src="/images/projetor-shopee/capa-projetor-da-shopee-vale-a-pena.webp" alt="Projetor da Shopee vale a pena" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+      </div>
+      <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+        <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+        <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Projetor da Shopee Vale a Pena? Análise Honesta do HY300</span>
       </div>
     </a>
 
@@ -21149,6 +21195,278 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   </div>
 
 </div>
+    )}
+
+    {isProjetorShopee && (
+  <div>
+
+    <!-- Capa do artigo -->
+    <div class="rounded-2xl overflow-hidden mb-8 shadow-md">
+      <img
+        src="/images/projetor-shopee/capa-projetor-da-shopee-vale-a-pena.webp"
+        alt="Projetor da Shopee branco sobre um móvel de sala projetando um filme na parede à noite"
+        class="w-full h-auto object-cover"
+        loading="eager"
+      />
+    </div>
+
+    <p class="text-xs text-slate-400 mb-6">Atualizado em setembro de 2026</p>
+
+    <!-- Resumo rápido -->
+    <div class="bg-orange-50 border border-orange-100 rounded-2xl p-6 mb-8">
+      <p class="text-slate-900 font-bold text-sm uppercase tracking-wide mb-2">Resumo rápido</p>
+      <p class="text-slate-800 text-base leading-relaxed mb-3">
+        O projetor da Shopee vale a pena para quem quer uma tela grande e barata para assistir filme e série à noite, num ambiente bem escuro. O modelo mais vendido é o HY300 Magcubic, com nota 4,8 de 5 e mais de 66 mil avaliações. Mas ele não é 4K de verdade: a resolução projetada é HD, o foco é manual e o brilho é baixo para ambientes claros.
+      </p>
+      <p class="text-slate-800 text-base leading-relaxed">
+        Este texto não é baseado em teste próprio do produto. É uma curadoria das informações do anúncio, das especificações do fabricante e das avaliações de quem comprou.
+      </p>
+    </div>
+
+    <!-- Índice -->
+    <nav class="bg-white border border-slate-200 rounded-xl px-5 py-4 mb-10">
+      <p class="text-slate-800 font-bold text-sm mb-3">Neste artigo:</p>
+      <ul class="space-y-1.5">
+        <li><a href="#o-que-e" class="text-orange-600 hover:text-orange-700 text-sm font-medium">O que é o "projetor da Shopee"</a></li>
+        <li><a href="#ficha" class="text-orange-600 hover:text-orange-700 text-sm font-medium">Ficha técnica do HY300 Magcubic</a></li>
+        <li><a href="#imagem" class="text-orange-600 hover:text-orange-700 text-sm font-medium">Imagem, brilho e o "4K"</a></li>
+        <li><a href="#conexao" class="text-orange-600 hover:text-orange-700 text-sm font-medium">Conexão: Wi-Fi, Bluetooth e celular</a></li>
+        <li><a href="#compradores" class="text-orange-600 hover:text-orange-700 text-sm font-medium">O que dizem os compradores</a></li>
+        <li><a href="#vale-a-pena" class="text-orange-600 hover:text-orange-700 text-sm font-medium">Vale a pena? Para quem serve</a></li>
+        <li><a href="#faq" class="text-orange-600 hover:text-orange-700 text-sm font-medium">Perguntas frequentes</a></li>
+      </ul>
+    </nav>
+
+    <p class="text-slate-700 leading-relaxed mb-8">
+      Se você já pesquisou projetor na Shopee, provavelmente esbarrou num aparelho branco, de cabeça giratória, que promete tela de cinema de até 150 polegadas por um preço que parece bom demais. Será que funciona mesmo ou é furada? Para responder sem propaganda, fomos direto na ficha técnica e nas avaliações de quem já comprou o modelo mais vendido, o <strong>HY300 Magcubic</strong>, que já passou de 100 mil unidades vendidas.
+    </p>
+
+    <!-- O que é -->
+    <section id="o-que-e" class="mb-10">
+      <h2 class="text-2xl font-black text-slate-900 mb-4">O que é o "projetor da Shopee"?</h2>
+      <p class="text-slate-700 leading-relaxed">
+        Quando as pessoas falam em "projetor da Shopee", quase sempre é a mesma família de mini projetores LED baseados na plataforma HY300, vendidos sob várias marcas (a mais comum é a Magcubic), com corpo branco, cerca de 16,5 cm de largura e uma base que gira. Ele tem sistema smart embutido, ou seja, roda aplicativos direto, sem precisar de TV Box para o básico. O anúncio que analisamos tem nota 4,8 de 5, vendedor em São Paulo e informa certificação da <a href="https://www.gov.br/anatel/pt-br/regulado/certificacao-de-produtos/como-consultar-produtos-certificados" target="_blank" rel="noopener nofollow" class="text-orange-600 font-semibold hover:underline">Anatel</a> (dá para conferir o código de homologação na consulta pública do órgão).
+      </p>
+    </section>
+
+    <!-- Ficha técnica -->
+    <section id="ficha" class="mb-10">
+      <h2 class="text-2xl font-black text-slate-900 mb-4">Ficha técnica do HY300 Magcubic</h2>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        O HY300 Magcubic é um mini projetor LED com sistema smart embutido, imagem HD (não 4K), foco manual e conexões Wi-Fi, Bluetooth, HDMI e USB. Os números principais estão na tabela abaixo.
+      </p>
+      <div class="overflow-x-auto mb-4">
+        <table class="w-full text-sm border border-slate-200 rounded-xl overflow-hidden">
+          <tbody>
+            <tr class="border-b border-slate-100"><td class="px-4 py-2.5 font-semibold text-slate-800 bg-slate-50 w-1/3">Resolução real</td><td class="px-4 py-2.5 text-slate-700">HD (a maioria dos testes de usuários aponta 1280x720); aceita sinal 4K, mas projeta em HD</td></tr>
+            <tr class="border-b border-slate-100"><td class="px-4 py-2.5 font-semibold text-slate-800 bg-slate-50">Projeção</td><td class="px-4 py-2.5 text-slate-700">Até 150 polegadas (uso realista entre 60 e 100)</td></tr>
+            <tr class="border-b border-slate-100"><td class="px-4 py-2.5 font-semibold text-slate-800 bg-slate-50">Sistema</td><td class="px-4 py-2.5 text-slate-700">Smart embutido, com espelhamento de tela sem fio</td></tr>
+            <tr class="border-b border-slate-100"><td class="px-4 py-2.5 font-semibold text-slate-800 bg-slate-50">Conexões</td><td class="px-4 py-2.5 text-slate-700">Wi-Fi, Bluetooth, HDMI, USB e saída de fone 3,5 mm</td></tr>
+            <tr class="border-b border-slate-100"><td class="px-4 py-2.5 font-semibold text-slate-800 bg-slate-50">Foco</td><td class="px-4 py-2.5 text-slate-700">Manual</td></tr>
+            <tr class="border-b border-slate-100"><td class="px-4 py-2.5 font-semibold text-slate-800 bg-slate-50">Alto-falante</td><td class="px-4 py-2.5 text-slate-700">Integrado (fraco para uma sala cheia)</td></tr>
+            <tr class="border-b border-slate-100"><td class="px-4 py-2.5 font-semibold text-slate-800 bg-slate-50">Alimentação</td><td class="px-4 py-2.5 text-slate-700">Bivolt (110V / 220V)</td></tr>
+            <tr class="border-b border-slate-100"><td class="px-4 py-2.5 font-semibold text-slate-800 bg-slate-50">Dimensões</td><td class="px-4 py-2.5 text-slate-700">Cerca de 16,5 cm de largura por 9 cm de altura</td></tr>
+            <tr class="border-b border-slate-100"><td class="px-4 py-2.5 font-semibold text-slate-800 bg-slate-50">Na caixa</td><td class="px-4 py-2.5 text-slate-700">Projetor, controle remoto, cabo de força e manual</td></tr>
+            <tr><td class="px-4 py-2.5 font-semibold text-slate-800 bg-slate-50">Certificação</td><td class="px-4 py-2.5 text-slate-700">Anatel (no anúncio analisado)</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-slate-700 leading-relaxed">
+        Dados do anúncio da Shopee e da descrição do fabricante, consultados em setembro de 2026. Repare em duas ausências: o vendedor não informa o brilho (medido em <a href="https://pt.wikipedia.org/wiki/L%C3%BAmen" target="_blank" rel="noopener nofollow" class="text-orange-600 font-semibold hover:underline">lúmens</a>) nem a resolução nativa exata, os dois números que mais pesam na experiência de uso.
+      </p>
+
+      <div class="mt-5 mb-2 bg-white border border-slate-200 rounded-2xl p-5 max-w-md mx-auto text-center">
+        <img
+          src="/images/projetor-shopee/produto-hy300-magcubic.webp"
+          alt="Projetor HY300 Magcubic branco visto de frente"
+          class="w-32 h-32 object-contain mx-auto mb-3 rounded-lg"
+          loading="lazy"
+          width="128"
+          height="128"
+        />
+        <p class="text-slate-900 font-semibold text-sm mb-1">Projetor HY300 Magcubic (Wi-Fi + Bluetooth, bivolt)</p>
+        <p class="text-slate-600 text-xs mb-4">Nota 4,8/5 com mais de 66 mil avaliações na Shopee</p>
+        <a href="https://s.shopee.com.br/3g3ZeebJoK" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl text-sm transition-colors">Confira o preço atual na Shopee</a>
+      </div>
+    </section>
+
+    <!-- Imagem -->
+    <section id="imagem" class="mb-10">
+      <h2 class="text-2xl font-black text-slate-900 mb-4">Imagem, brilho e o "4K"</h2>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        O anúncio diz "4K HD", mas esse projetor não projeta em 4K. A resolução real da imagem é <a href="https://pt.wikipedia.org/wiki/720p" target="_blank" rel="noopener nofollow" class="text-orange-600 font-semibold hover:underline">HD (720p)</a>, e a maioria dos testes de usuários aponta 1280x720. Ele apenas aceita um vídeo em 4K na entrada e reduz para o que consegue mostrar. Para assistir filme e série a alguns metros de distância, a imagem HD ampliada agrada a maioria; para ler texto pequeno numa apresentação, a diferença aparece. É assim que quase todo projetor barato é vendido: o "4K" se refere ao sinal aceito, não à imagem que sai na parede.
+      </p>
+      <ul class="list-disc pl-5 space-y-2.5 text-slate-700 leading-relaxed">
+        <li><strong>Brilho:</strong> é o ponto mais importante e o vendedor não informa. Pelos relatos de quem comprou, à noite, com a luz apagada e a cortina fechada, a imagem fica boa e viva; de dia, ou com a luz acesa, ela "lava" e perde cor. Para usar na sala com janela grande de manhã, não é o produto certo.</li>
+        <li><strong>Tamanho:</strong> as 150 polegadas são o máximo teórico. Quanto maior a imagem, mais fraca ela fica. O equilíbrio costuma ficar entre 60 e 100 polegadas.</li>
+        <li><strong>Foco manual:</strong> você ajusta a nitidez girando um anel toda vez que muda o projetor de lugar. Não há foco automático.</li>
+        <li><strong>Superfície:</strong> parede branca e lisa já funciona. Tela de projeção melhora o resultado, mas não é obrigatória para começar.</li>
+      </ul>
+      <p class="text-slate-700 leading-relaxed mt-4">
+        Gastando duas ou três vezes mais em um projetor de marca, o que muda é o brilho real (informado em lúmens ANSI), o foco automático e uma imagem mais estável e nítida em ambiente com alguma luz. Esses recursos o modelo de entrada da Shopee não tem.
+      </p>
+    </section>
+
+    <!-- Conexão -->
+    <section id="conexao" class="mb-10">
+      <h2 class="text-2xl font-black text-slate-900 mb-4">Conexão: Wi-Fi, Bluetooth e celular</h2>
+      <p class="text-slate-700 leading-relaxed">
+        Dá para espelhar a tela do celular Android e do iPhone sem cabo pelo Wi-Fi e rodar aplicativos de streaming pelo sistema embutido; a estabilidade depende da sua rede. O Bluetooth conecta caixa de som ou fone sem fio, mas em alguns lotes há um pequeno atraso entre áudio e imagem, então vale ter uma caixa por cabo ou usar a saída de fone 3,5 mm. Nas entradas físicas há HDMI, para TV Box, videogame e notebook, e USB, para pen drive. O alto-falante interno quebra um galho, mas uma caixinha externa muda bastante a experiência.
+      </p>
+    </section>
+
+    <!-- Leia Também (meio do artigo) -->
+    <a href="/robo-aspirador-barato-shopee" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;margin:0 0 40px;">
+      <div style="width:200px;flex-shrink:0;">
+        <img src="/images/robo-aspirador-shopee/capa-robo-aspirador-shopee.webp" alt="Aspirador robô barato da Shopee" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+      </div>
+      <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+        <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+        <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Aspirador Robô Agratto é Bom? O Que Dizem as Avaliações Reais</span>
+      </div>
+    </a>
+
+    <!-- Compradores -->
+    <section id="compradores" class="mb-10">
+      <h2 class="text-2xl font-black text-slate-900 mb-4">O que dizem os compradores do projetor da Shopee</h2>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        A nota geral é <strong>4,8 de 5</strong>, com <strong>mais de 66 mil avaliações</strong> e mais de 100 mil unidades vendidas (consultado em setembro de 2026). Cerca de 20 mil avaliações têm foto ou vídeo, o que permite ver a imagem real projetada na casa de outras pessoas antes de decidir. Os elogios mais comuns: fácil de instalar e usar, imagem "melhor do que eu esperava pelo preço", tamanho compacto e o sistema smart que já vem pronto.
+      </p>
+      <p class="text-slate-700 leading-relaxed">
+        As avaliações de 1 e 2 estrelas somam cerca de 3% do total. Nesse tipo de produto importado e barato, os motivos que mais aparecem são: unidade que chega com defeito ou para de funcionar nas primeiras semanas, brilho abaixo do esperado para quem imaginou usar de dia, e demora no suporte na hora de trocar. É uma minoria, mas é um risco real da categoria, com controle de qualidade menos rígido que o de uma marca tradicional. Vale abrir as avaliações de 1 e 2 estrelas direto na página antes de comprar.
+      </p>
+    </section>
+
+    <!-- Vale a pena -->
+    <div id="vale-a-pena" class="bg-slate-50 border border-slate-200 rounded-2xl p-6 mb-10">
+      <h2 class="text-xl font-black text-slate-900 mb-3">Vale a pena? Para quem o projetor da Shopee serve</h2>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        O projetor da Shopee vale a pena para uso caseiro à noite, em ambiente escuro, por quem quer uma tela grande gastando pouco e aceita foco manual e brilho baixo. Não compensa para uso de dia, para trabalho ou para quem espera imagem 4K de verdade.
+      </p>
+      <div class="grid md:grid-cols-2 gap-4">
+        <div class="bg-white border border-green-200 rounded-xl p-5">
+          <h3 class="text-slate-900 font-bold text-sm mb-2">Vale a pena se você</h3>
+          <ul class="list-disc pl-5 space-y-1.5 text-slate-700 text-sm leading-relaxed">
+            <li>Quer uma tela gigante barata para filme, série e futebol à noite</li>
+            <li>Tem um quarto ou sala que fica bem escuro com a cortina fechada</li>
+            <li>Aceita ajustar o foco na mão e usar uma caixa de som à parte</li>
+            <li>Encara o preço baixo como um teste de baixo risco</li>
+          </ul>
+        </div>
+        <div class="bg-white border border-red-200 rounded-xl p-5">
+          <h3 class="text-slate-900 font-bold text-sm mb-2">Não vale a pena se você</h3>
+          <ul class="list-disc pl-5 space-y-1.5 text-slate-700 text-sm leading-relaxed">
+            <li>Espera qualidade de imagem 4K de verdade</li>
+            <li>Vai usar de dia, com luz natural forte no ambiente</li>
+            <li>Precisa do projetor para trabalho ou leitura de texto fino</li>
+            <li>Não tem paciência para acionar garantia caso venha com defeito</li>
+          </ul>
+        </div>
+      </div>
+      <p class="text-slate-700 text-sm leading-relaxed mt-4">
+        Se for comprar: use no escuro, ligue uma caixa de som e guarde a nota fiscal para acionar a garantia caso o aparelho venha com defeito.
+      </p>
+    </div>
+
+    <h2 id="faq" class="text-2xl font-black text-slate-900 mb-6">Perguntas frequentes sobre o projetor da Shopee</h2>
+    <div class="space-y-3 mb-10">
+      <details class="border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+          Projetor da Shopee vale a pena?
+          <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+          Vale para quem quer uma tela grande e barata para assistir à noite, num ambiente escuro, e aceita que a imagem é HD (não 4K) e o foco é manual. O modelo mais vendido, o HY300 Magcubic, tem nota 4,8 de 5 em mais de 66 mil avaliações. Para uso de dia ou profissional, não compensa.
+        </div>
+      </details>
+      <details class="border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+          O projetor da Shopee é 4K de verdade?
+          <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+          Não. A resolução projetada é HD. Ele apenas aceita receber um vídeo em 4K e reduz para a resolução que consegue mostrar. O "4K" do anúncio se refere ao sinal de entrada, não à imagem que sai na parede.
+        </div>
+      </details>
+      <details class="border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+          Projetor da Shopee é bom mesmo?
+          <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+          Para o preço, a maioria dos mais de 66 mil compradores diz que sim, com nota 4,8. Os elogios falam em facilidade de uso e imagem melhor que o esperado. As queixas se concentram em brilho baixo para ambientes claros e em unidades com defeito precoce, que são minoria.
+        </div>
+      </details>
+      <details class="border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+          Precisa de quarto escuro para usar?
+          <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+          Sim, na prática. O brilho é baixo. Com a luz apagada e a cortina fechada a imagem fica boa; com a luz acesa ou de dia, ela desbota e perde cor.
+        </div>
+      </details>
+      <details class="border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+          Dá pra ligar o celular no projetor?
+          <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+          Sim. Dá para espelhar a tela de Android e iPhone pelo Wi-Fi, sem cabo, e também usar um cabo HDMI com adaptador. A estabilidade do espelhamento sem fio depende da sua rede.
+        </div>
+      </details>
+      <details class="border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer bg-white hover:bg-slate-50 transition-colors font-semibold text-slate-800">
+          Qual o melhor projetor da Shopee?
+          <svg class="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 py-4 bg-slate-50 text-slate-700 leading-relaxed">
+          O mais vendido e mais bem avaliado é o HY300 Magcubic, vendido também sob outras marcas com o mesmo formato branco de cabeça giratória. Dentro dessa faixa de preço não existe um "melhor" muito diferente: quase todos usam a mesma base de hardware.
+        </div>
+      </details>
+    </div>
+    <script type="application/ld+json" set:html={JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Projetor da Shopee vale a pena?","acceptedAnswer":{"@type":"Answer","text":"Vale para quem quer uma tela grande e barata para assistir à noite, num ambiente escuro, e aceita que a imagem é HD (não 4K) e o foco é manual. O modelo mais vendido, o HY300 Magcubic, tem nota 4,8 de 5 em mais de 66 mil avaliações. Para uso de dia ou profissional, não compensa."}},{"@type":"Question","name":"O projetor da Shopee é 4K de verdade?","acceptedAnswer":{"@type":"Answer","text":"Não. A resolução projetada é HD. Ele apenas aceita receber um vídeo em 4K e reduz para a resolução que consegue mostrar. O 4K do anúncio se refere ao sinal de entrada, não à imagem projetada."}},{"@type":"Question","name":"Projetor da Shopee é bom mesmo?","acceptedAnswer":{"@type":"Answer","text":"Para o preço, a maioria dos mais de 66 mil compradores diz que sim, com nota 4,8. Os elogios falam em facilidade de uso e imagem melhor que o esperado. As queixas se concentram em brilho baixo para ambientes claros e em unidades com defeito precoce, que são minoria."}},{"@type":"Question","name":"Precisa de quarto escuro para usar?","acceptedAnswer":{"@type":"Answer","text":"Sim, na prática. O brilho é baixo. Com a luz apagada e a cortina fechada a imagem fica boa; com a luz acesa ou de dia, ela desbota e perde cor."}},{"@type":"Question","name":"Dá pra ligar o celular no projetor?","acceptedAnswer":{"@type":"Answer","text":"Sim. Dá para espelhar a tela de Android e iPhone pelo Wi-Fi, sem cabo, e também usar um cabo HDMI com adaptador. A estabilidade do espelhamento sem fio depende da sua rede."}},{"@type":"Question","name":"Qual o melhor projetor da Shopee?","acceptedAnswer":{"@type":"Answer","text":"O mais vendido e mais bem avaliado é o HY300 Magcubic, vendido também sob outras marcas com o mesmo formato. Dentro dessa faixa de preço não existe um melhor muito diferente: quase todos usam a mesma base de hardware."}}]})} />
+
+    <h2 class="text-xl font-black text-slate-900 mb-3">Vale a pena comprar o projetor da Shopee?</h2>
+    <p class="text-slate-700 leading-relaxed mb-6">
+      Se você entende que está comprando um projetor LED com imagem HD, brilho baixo, foco manual e som fraco, e ainda assim quer uma tela de 80 ou 100 polegadas para maratonar série no escuro por uma fração do preço de uma TV grande, o projetor da Shopee entrega isso na visão da maioria de quem comprou (nota 4,8 de 5 em mais de 66 mil avaliações). Compre com nota fiscal e use no escuro. Se a expectativa for qualidade de home theater de verdade, a decepção é quase certa.
+    </p>
+
+    <!-- Leia Também -->
+    <a href="/mais-vendidos-shopee-casa" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;margin-bottom:16px;">
+      <div style="width:200px;flex-shrink:0;">
+        <img src="/images/mais-vendidos-shopee/capa-mais-vendidos-shopee.webp" alt="Os mais vendidos da Shopee para casa" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+      </div>
+      <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+        <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+        <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Os 6 Mais Vendidos da Shopee para Casa: Achados Que Realmente Valem a Pena</span>
+      </div>
+    </a>
+    <a href="/mini-eletrodomesticos-mais-vendidos-shopee" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;margin-bottom:16px;">
+      <div style="width:200px;flex-shrink:0;">
+        <img src="/images/mini-eletrodomesticos-shopee/capa-mini-eletrodomesticos-shopee.webp" alt="Mini eletrodomésticos mais vendidos da Shopee" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+      </div>
+      <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+        <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+        <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Mini Eletrodomésticos Mais Vendidos da Shopee: Vale a Pena ou é Furada?</span>
+      </div>
+    </a>
+    <a href="/utilidades-shopee-ate-30-reais" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+      <div style="width:200px;flex-shrink:0;">
+        <img src="/images/utilidades-shopee-30/capa-utilidades-shopee-30.webp" alt="Utilidades da Shopee por menos de 30 reais" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+      </div>
+      <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+        <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+        <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">10 Utilidades da Shopee por Menos de R$30 Que Valem a Pena</span>
+      </div>
+    </a>
+
+    <p class="text-xs text-slate-500 italic mt-6 border-t border-slate-100 pt-4">
+      Esta análise foi feita por curadoria das informações do anúncio e das avaliações reais de compradores da Shopee, não por teste direto do produto pela autora.
+    </p>
+
+    <script type="application/ld+json" set:html={JSON.stringify({"@context":"https://schema.org","@type":"Product","name":"Projetor HY300 Magcubic 4K HD WiFi Bluetooth","image":"https://www.casaemalta.com.br/images/projetor-shopee/capa-projetor-da-shopee-vale-a-pena.webp","description":"Mini projetor LED portátil com resolução HD (aceita sinal 4K), projeção de até 150 polegadas, Wi-Fi, Bluetooth, HDMI, USB, sistema smart embutido, foco manual e alimentação bivolt.","brand":{"@type":"Brand","name":"Magcubic"},"url":"https://s.shopee.com.br/3g3ZeebJoK","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"66000","bestRating":"5","worstRating":"1"}})} />
+  </div>
     )}
 
 

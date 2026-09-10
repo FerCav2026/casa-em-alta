@@ -523,6 +523,16 @@ export const posts: Post[] = [
     categoria: 'rankings-e-listas',
     categoriaLabel: 'Rankings e Listas',
     categoriaColor: 'bg-green-100 text-green-700',
+  },
+  {
+    slug: 'projetor-da-shopee-vale-a-pena',
+    titulo: 'Projetor da Shopee Vale a Pena? Análise Honesta do HY300',
+    resumo: 'O projetor da Shopee (HY300 Magcubic) tem nota 4,8 e mais de 66 mil avaliações. Veja a resolução real, o brilho, o foco manual e para quem ele vale a pena.',
+    tempo: '8 min de leitura',
+    imagem: '/images/projetor-shopee/capa-projetor-da-shopee-vale-a-pena.webp',
+    categoria: 'reviews',
+    categoriaLabel: 'Review',
+    categoriaColor: 'bg-orange-100 text-orange-700',
   }
 ];
 
