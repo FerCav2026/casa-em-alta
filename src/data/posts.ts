@@ -533,6 +533,16 @@ export const posts: Post[] = [
     categoria: 'reviews',
     categoriaLabel: 'Review',
     categoriaColor: 'bg-orange-100 text-orange-700',
+  },
+  {
+    slug: 'qual-a-melhor-maquina-de-lavar-louca',
+    titulo: 'Máquina de Lavar Louça: Qual a Melhor de 2026?',
+    resumo: 'Comparamos 5 máquinas de lavar louça de 8 e 10 serviços vendidas no Brasil: preço, nota real de quem já comprou e qual tem o melhor custo-benefício.',
+    tempo: '9 min de leitura',
+    imagem: '/images/melhores-lava-loucas-2026/capa-melhores-lava-loucas-2026.webp',
+    categoria: 'rankings-e-listas',
+    categoriaLabel: 'Rankings e Listas',
+    categoriaColor: 'bg-green-100 text-green-700',
   }
 ];
 
