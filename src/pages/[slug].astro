@@ -356,6 +356,13 @@ const posts: Record<string, { titulo: string; descricao: string; categoria: stri
     dataCriacao: '2026-09-15',
     dataModificacao: '2026-09-15',
   },
+  'como-arrumar-armarios': {
+    titulo: 'Como Arrumar Armários da Cozinha: Guia Completo',
+    descricao: 'Como arrumar armários da cozinha pequena: passo a passo para categorizar, usar divisórias, organizar embaixo da pia, despensa e gavetas sem gastar muito.',
+    categoria: 'Guia de Compra',
+    dataCriacao: '2026-09-17',
+    dataModificacao: '2026-09-17',
+  },
 };
 
 export function getStaticPaths() {
@@ -408,6 +415,7 @@ export function getStaticPaths() {
     'melhores-panelas-pressao-eletricas-2026': {},
     'projetor-da-shopee-vale-a-pena': {},
     'qual-a-melhor-maquina-de-lavar-louca': {},
+    'como-arrumar-armarios': {},
   }).map((slug) => ({ params: { slug } }));
 }
 
@@ -488,6 +496,7 @@ const isComoMontarLavanderia = slug === 'como-montar-lavanderia-apartamento';
 const isMelhoresPanelasPressao = slug === 'melhores-panelas-pressao-eletricas-2026';
 const isProjetorShopee = slug === 'projetor-da-shopee-vale-a-pena';
 const isMelhoresLavaLoucas = slug === 'qual-a-melhor-maquina-de-lavar-louca';
+const isComoArrumarArmarios = slug === 'como-arrumar-armarios';
 
 const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isAirfryer ? '/images/airfryer/capa-airfryer.webp'
@@ -537,11 +546,12 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isMelhoresPanelasPressao ? '/images/melhores-panelas-pressao-2026/capa-melhores-panelas-pressao-eletricas-2026.webp'
   : isProjetorShopee ? '/images/projetor-shopee/capa-projetor-da-shopee-vale-a-pena.webp'
   : isMelhoresLavaLoucas ? '/images/melhores-lava-loucas-2026/capa-melhores-lava-loucas-2026.webp'
+  : isComoArrumarArmarios ? '/images/armarios-guia/capa-como-arrumar-armarios.webp'
   : undefined;
 ---
 
 <BaseLayout
-  title={isPanelaEletricaOuConvencional || isMelhoresCafeteiras || isProjetorShopee ? post.titulo : `${post.titulo} - Casa em Alta`}
+  title={isPanelaEletricaOuConvencional || isMelhoresCafeteiras || isProjetorShopee || isComoArrumarArmarios ? post.titulo : `${post.titulo} - Casa em Alta`}
   description={post.descricao}
   image={coverImage}
   type="article"
@@ -22090,6 +22100,429 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   </div>
 
 </div>
+    )}
+
+    {isComoArrumarArmarios && (
+      <div>
+
+        <!-- Capa -->
+        <div class="rounded-2xl overflow-hidden mb-8 shadow-md">
+          <img
+            src="/images/armarios-guia/capa-como-arrumar-armarios.webp"
+            alt="Armário de cozinha organizado com potes, divisórias e prateleiras em apartamento pequeno"
+            class="w-full h-auto object-cover"
+            loading="eager"
+          />
+        </div>
+
+        <!-- Introdução -->
+        <div class="bg-orange-50 border border-orange-100 rounded-2xl p-6 mb-8">
+          <p class="text-slate-800 text-base leading-relaxed mb-3">
+            Se você chegou aqui procurando como arrumar armários da cozinha, provavelmente já abriu a porta, olhou aquela pilha de potes desencontrados e fechou de novo sem coragem de mexer. É um problema clássico de apartamento pequeno, onde cada centímetro de armário precisa render o dobro.
+          </p>
+          <p class="text-slate-800 text-base leading-relaxed mb-3">
+            A boa notícia é que organizar armário de cozinha não depende de reforma nem de gastar uma fortuna em marcenaria nova. Depende de um método simples: esvaziar, separar por categoria, usar divisórias e prateleiras extras para multiplicar o espaço vertical, e criar um lugar fixo para cada coisa.
+          </p>
+          <p class="text-slate-800 text-base leading-relaxed">
+            Sou Claudia Castro, criadora do Casa em Alta. Já morei em apartamentos de cozinha minúscula e reorganizei os armários da minha várias vezes até achar o esquema que realmente se sustenta no dia a dia. Neste guia você vai ver o passo a passo completo: armário, cozinha pequena, embaixo da pia, despensa, gavetas e até como guardar tampa de panela sem bagunça.
+          </p>
+        </div>
+
+        <!-- Índice -->
+        <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 mb-10">
+          <p class="text-slate-800 font-bold text-base mb-3">Neste artigo:</p>
+          <ul class="space-y-2 text-sm text-slate-700">
+            <li><a href="#por-que-organizar" class="text-purple-600 hover:underline">→ Por que organizar o armário muda a rotina na cozinha</a></li>
+            <li><a href="#passo-a-passo" class="text-purple-600 hover:underline">→ Como arrumar armários de cozinha passo a passo</a></li>
+            <li><a href="#cozinha-pequena" class="text-purple-600 hover:underline">→ Cozinha pequena: como organizar com pouco espaço</a></li>
+            <li><a href="#embaixo-da-pia" class="text-purple-600 hover:underline">→ Embaixo da pia: como organizar</a></li>
+            <li><a href="#despensa" class="text-purple-600 hover:underline">→ Despensa: como organizar</a></li>
+            <li><a href="#gavetas" class="text-purple-600 hover:underline">→ Gavetas e talheres</a></li>
+            <li><a href="#tampas" class="text-purple-600 hover:underline">→ Como guardar tampas de panela sem bagunça</a></li>
+            <li><a href="#erros" class="text-purple-600 hover:underline">→ Erros comuns ao organizar cozinha pequena</a></li>
+            <li><a href="#checklist" class="text-purple-600 hover:underline">→ Checklist final</a></li>
+            <li><a href="#faq" class="text-purple-600 hover:underline">→ Perguntas frequentes</a></li>
+          </ul>
+        </div>
+
+        <!-- Resposta direta -->
+        <div class="bg-purple-50 border border-purple-100 rounded-2xl p-6 mb-10">
+          <p class="text-slate-800 font-bold text-base mb-3">Como arrumar armários de cozinha, em 4 passos</p>
+          <ol class="space-y-2 text-sm text-slate-700 list-decimal list-inside">
+            <li>Esvazie o armário inteiro e separe o que usa, o que duplica e o que pode ir embora.</li>
+            <li>Categorize por função: panelas de um lado, potes de outro, mantimentos separados de louça.</li>
+            <li>Use divisórias, prateleiras expansoras e organizadores verticais para dobrar o espaço útil.</li>
+            <li>Dê um endereço fixo para cada categoria e mantenha o que usa mais na altura dos olhos e das mãos.</li>
+          </ol>
+        </div>
+
+        <!-- Por que organizar -->
+        <h2 id="por-que-organizar" class="text-2xl font-bold text-slate-900 mb-4">Por que organizar o armário muda a rotina na cozinha</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Parece exagero, mas um armário bagunçado custa tempo, dinheiro e paciência todos os dias. Quando você não enxerga o que tem, três coisas acontecem direto: compra dobrado do que já tinha, deixa passar a validade de mantimento escondido atrás de outro pacote, e perde minutos preciosos procurando panela na hora do preparo.
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Em apartamento pequeno o efeito é ainda maior, porque normalmente só existe um ou dois armários para dar conta de tudo: panela, pote, mantimento, eletroportátil e às vezes até produto de limpeza. Organizar não é sobre deixar bonito para postar foto. É sobre fazer aquele espaço curto render o máximo possível.
+        </p>
+        <ul class="space-y-2 text-sm text-slate-700 mb-10">
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Ganho de espaço real.</strong> Divisórias e prateleiras extras aproveitam a altura livre que normalmente fica vazia acima das panelas.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Menos desperdício de alimento.</strong> Com tudo visível, dá para ver o que está perto de vencer antes de comprar mais.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Mais praticidade no preparo.</strong> Cada coisa no lugar certo tira segundos de cada tarefa, e isso soma minutos por dia.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Menos compra em dobro.</strong> Você só compra vinagre novo se já sabe que o outro acabou, não porque não achou o que tinha.</span></li>
+        </ul>
+
+        <!-- Passo a passo -->
+        <h2 id="passo-a-passo" class="text-2xl font-bold text-slate-900 mb-4">Como arrumar armários de cozinha passo a passo</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Esse é o método que uso toda vez que preciso reorganizar um armário do zero. Funciona em qualquer tamanho de cozinha, do apê compacto à casa com mais espaço.
+        </p>
+        <h3 class="text-lg font-bold text-slate-900 mb-3">1. Esvazie tudo antes de guardar de novo</h3>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Parece trabalho a mais, mas é o passo que realmente resolve. Tire tudo do armário e coloque em cima da mesa ou da bancada. Só assim você enxerga o que tem duplicado, o que está vencido e o que nunca mais usou.
+        </p>
+        <h3 class="text-lg font-bold text-slate-900 mb-3">2. Separe em três pilhas: fica, doa, joga fora</h3>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Panela com cabo quebrado, pote sem tampa, mantimento vencido: vai embora. Coisa boa que você não usa mais: separe para doar. O resto fica, mas só depois de categorizado.
+        </p>
+        <h3 class="text-lg font-bold text-slate-900 mb-3">3. Categorize por função, não por tamanho</h3>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          O erro mais comum é guardar por tamanho de embalagem. O certo é agrupar por uso: panelas e frigideiras num grupo, potes de mantimento em outro, formas e assadeiras em outro, eletroportátil pequeno à parte. Assim, quando você precisa de algo, sabe exatamente em qual prateleira procurar.
+        </p>
+        <h3 class="text-lg font-bold text-slate-900 mb-3">4. Multiplique o espaço vertical</h3>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          A maioria dos armários de cozinha desperdiça a altura entre uma prateleira e outra. Prateleiras expansoras, organizadores empilháveis e ganchos internos na porta resolvem isso sem precisar trocar o móvel. Um bom conjunto de <a href="/organizadores-armario-barato" class="text-purple-600 font-semibold hover:underline">organizadores de armário baratos</a> já muda o jogo, com prateleira extra, cesto e divisória por menos de R$ 50 cada peça.
+        </p>
+        <h3 class="text-lg font-bold text-slate-900 mb-3">5. Coloque o que usa mais na altura das mãos</h3>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Panela do dia a dia, tempero básico e prato ficam nas prateleiras do meio, na altura dos olhos e das mãos. O que usa raramente, como forma de bolo de festa ou jogo de taça, sobe para a prateleira mais alta ou desce para o fundo.
+        </p>
+        <div class="rounded-2xl overflow-hidden my-8 shadow-md">
+          <img
+            src="/images/armarios-guia/interna-armario-organizado-potes.webp"
+            alt="Armário de cozinha com potes de mantimento organizados em fileiras e etiquetados"
+            width="1280"
+            height="720"
+            class="w-full h-auto object-cover"
+            loading="lazy"
+          />
+        </div>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Panela e frigideira ocupam boa parte do armário embaixo do fogão, e a escolha certa de frigideira também ajuda a economizar espaço: modelos empilháveis e sem tampa dedicada rendem mais lugar do que conjuntos com peças grandes e irregulares. Se você ainda está decidindo qual comprar, o guia <a href="/como-escolher-frigideira" class="text-purple-600 font-semibold hover:underline">como escolher a frigideira certa para cada tipo de fogão</a> ajuda a acertar na compra.
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          Se você está montando a cozinha do zero ou trocando quase tudo, vale montar um <a href="/kit-organizacao-cozinha" class="text-purple-600 font-semibold hover:underline">kit de organização de cozinha por cerca de R$ 150</a>, que já reúne pote, divisória e prateleira extra num pacote fechado.
+        </p>
+
+        <div style="display:flex;align-items:center;gap:12px;background:#f8fafc;border-left:4px solid #7c3aed;border-radius:6px;padding:14px 16px;margin:24px 0 40px;">
+          <img src="/images/organizadores/capa-organizadores.webp" alt="Organizadores de armário baratos" width="80" height="53" style="border-radius:6px;object-fit:cover;flex-shrink:0;" loading="lazy" />
+          <div>
+            <span style="font-size:10px;font-weight:700;text-transform:uppercase;color:#7c3aed;letter-spacing:0.08em;">Leia Também</span><br />
+            <a href="/organizadores-armario-barato" style="font-size:14px;font-weight:600;color:#1e293b;text-decoration:none;">10 Organizadores de Armário Baratos que Valem Cada Centavo</a>
+          </div>
+        </div>
+
+        <!-- Cozinha pequena -->
+        <h2 id="cozinha-pequena" class="text-2xl font-bold text-slate-900 mb-4">Cozinha pequena: como organizar com pouco espaço</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Cozinha pequena não tem armário de sobra, então o segredo é olhar para cima, para as portas e para os cantos, que costumam ficar vazios.
+        </p>
+        <ul class="space-y-2 text-sm text-slate-700 mb-4">
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Aproveite a altura da parede.</strong> Prateleiras suspensas acima da pia ou do fogão comportam tempero, pote e livro de receita sem tirar espaço de circulação.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Use a parte interna das portas.</strong> Organizadores de porta com ganchos ou bolsos guardam tábua de corte, papel filme e sacola plástica.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Resolva os cantos mortos.</strong> Armários de canto costumam desperdiçar espaço. Um organizador giratório tipo carrossel resolve o alcance até o fundo.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Prefira utensílios que empilham.</strong> Panela, forma e pote com formato quadrado ou empilhável rendem muito mais do que peças redondas e irregulares.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Tire o que não é de cozinha.</strong> Ferramenta, remédio e produto que não tem relação direta com preparo de comida ocupam espaço que devia ser só da cozinha.</span></li>
+        </ul>
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          Uma dica que uso bastante: antes de comprar qualquer organizador novo, meço a prateleira com a fita métrica do celular ou uma trena simples. Comprar sem medir é a razão mais comum de organizador não servir e virar objeto parado dentro do próprio armário.
+        </p>
+
+        <!-- Embaixo da pia -->
+        <h2 id="embaixo-da-pia" class="text-2xl font-bold text-slate-900 mb-4">Embaixo da pia: como organizar</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          O armário embaixo da pia é, sem dúvida, o mais bagunçado da cozinha na maioria das casas. Ele guarda o encanamento, o lixo, os produtos de limpeza e ainda sobra para vassoura e rodo, tudo espremido no mesmo vão.
+        </p>
+        <h3 class="text-lg font-bold text-slate-900 mb-3">Como organizar produtos de limpeza embaixo da pia</h3>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          O primeiro passo é dividir o espaço em duas laterais, uma de cada lado do cano central. Uma cesta ou organizador com alça facilita puxar tudo para fora na hora da faxina, em vez de ficar de joelhos remexendo frasco por frasco.
+        </p>
+        <ul class="space-y-2 text-sm text-slate-700 mb-4">
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span>Use uma cesta ou caixa organizadora por categoria: uma para produto líquido, outra para pano e esponja.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span>Prateleira expansora sobre o encanamento aproveita o espaço que normalmente fica vazio por cima do cano.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span>Suporte de porta com ganchos guarda luva de limpeza, escova e spray sem ocupar a base.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span>Mantenha o produto mais forte, como água sanitária e desentupidor, no fundo e fora do alcance de criança.</span></li>
+        </ul>
+        <div class="rounded-2xl overflow-hidden my-8 shadow-md">
+          <img
+            src="/images/armarios-guia/interna-embaixo-pia-organizado.webp"
+            alt="Armário embaixo da pia organizado com cestas para produtos de limpeza e lixeira"
+            width="1280"
+            height="720"
+            class="w-full h-auto object-cover"
+            loading="lazy"
+          />
+        </div>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Para o lixo, uma lixeira compacta com pedal presa na porta ou apoiada no chão do armário mantém o saco firme e sem tombar toda vez que a porta abre. Se o vão for muito estreito, vale medir antes de comprar, porque lixeira grande demais trava a porta na hora de fechar.
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          Sacos de lixo reserva podem ficar dobrados dentro de uma caixa pequena ou até dentro do próprio saco de baixo, técnica simples que evita ter que abrir outro armário só para pegar reposição.
+        </p>
+
+        <!-- Despensa -->
+        <h2 id="despensa" class="text-2xl font-bold text-slate-900 mb-4">Despensa: como organizar</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Nem todo apartamento tem uma despensa separada, mas mesmo uma prateleira ou um armário só de mantimento se beneficia das mesmas regras de uma despensa de verdade.
+        </p>
+        <ul class="space-y-2 text-sm text-slate-700 mb-4">
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Potes transparentes.</strong> Arroz, feijão, macarrão e farinha em potes transparentes deixam visível o quanto ainda tem, sem precisar abrir cada embalagem.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Etiquetas com data.</strong> Uma etiqueta simples com o nome do produto e a data de validade evita que algo vença escondido no fundo.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Regra de rotação.</strong> Todo produto novo entra atrás, e o mais antigo fica na frente, a mesma lógica usada em supermercado.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Cestas por categoria.</strong> Snack, enlatado e tempero em cestas separadas facilitam achar o que precisa sem revirar tudo.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Prateleira expansora.</strong> Empilhar lata sem enxergar a de trás é receita para esquecer o que tem. Uma prateleira em degrau resolve isso.</span></li>
+        </ul>
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          Segundo o Ministério da Agricultura e Pecuária, mantimentos como grão, farinha e massa devem ficar longe de calor e umidade para manter a qualidade por mais tempo, então evite guardar a despensa colada à parede do fogão ou perto de cano com infiltração.
+        </p>
+
+        <!-- Gavetas -->
+        <h2 id="gavetas" class="text-2xl font-bold text-slate-900 mb-4">Gavetas e talheres</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          A gaveta de talher costuma ser o primeiro lugar a virar bagunça, porque qualquer coisa pequena acaba indo parar ali. Um divisor de gaveta com compartimentos resolve isso em minutos e custa pouco.
+        </p>
+        <ul class="space-y-2 text-sm text-slate-700 mb-10">
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span>Separe talher por tipo: garfo, faca, colher de sopa e colher de sobremesa em compartimentos próprios.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span>Reserve um compartimento só para utensílio miúdo, como descascador, abridor e colher de medida.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span>Tire da gaveta o que não é talher nem utensílio de cozinha, como pilha solta e caneta.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span>Se sobrar espaço, um segundo divisor empilhado guarda utensílio grande como concha e espátula.</span></li>
+        </ul>
+
+        <!-- Tampas -->
+        <h2 id="tampas" class="text-2xl font-bold text-slate-900 mb-4">Como guardar tampas de panela sem bagunça</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Tampa de panela é um dos itens que mais atrapalham um armário, porque não empilha direito com nada e costuma ocupar espaço desproporcional ao tamanho dela.
+        </p>
+        <ul class="space-y-2 text-sm text-slate-700 mb-10">
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Organizador vertical de tampas.</strong> Um suporte com divisórias verticais guarda várias tampas em pé, lado a lado, ocupando a largura de uma única panela.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Suporte na porta do armário.</strong> Presos com ventosa ou parafuso, tiram a tampa do meio das panelas e liberam espaço na prateleira.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Separe tampa por tamanho.</strong> Do maior para o menor, encostadas verticalmente, ficam mais fáceis de puxar sem derrubar as outras.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Reavalie tampa duplicada.</strong> Muita gente guarda duas ou três tampas do mesmo tamanho que servem em panelas diferentes. Manter só uma por diâmetro já libera espaço de verdade.</span></li>
+        </ul>
+
+        <!-- Erros comuns -->
+        <h2 id="erros" class="text-2xl font-bold text-slate-900 mb-4">Erros comuns ao organizar cozinha pequena</h2>
+        <ul class="space-y-2 text-sm text-slate-700 mb-10">
+          <li class="flex gap-2"><span class="text-red-400 font-bold">✗</span><span><strong>Comprar organizador sem medir antes.</strong> A causa mais comum de organizador virar peça parada dentro do armário. Meça largura, altura e profundidade antes de qualquer compra.</span></li>
+          <li class="flex gap-2"><span class="text-red-400 font-bold">✗</span><span><strong>Guardar por tamanho de embalagem, não por categoria.</strong> Isso espalha itens da mesma função em prateleiras diferentes e faz você procurar em mais de um lugar.</span></li>
+          <li class="flex gap-2"><span class="text-red-400 font-bold">✗</span><span><strong>Ignorar o espaço vertical entre prateleiras.</strong> A maior parte do desperdício de espaço em armário de cozinha está na altura livre não aproveitada.</span></li>
+          <li class="flex gap-2"><span class="text-red-400 font-bold">✗</span><span><strong>Deixar produto de limpeza junto de mantimento.</strong> Além do risco de contaminação, o cheiro do produto de limpeza pode impregnar embalagens porosas como farinha e macarrão.</span></li>
+          <li class="flex gap-2"><span class="text-red-400 font-bold">✗</span><span><strong>Manter duplicidade por insegurança.</strong> Duas ou três peças do mesmo utensílio, tipo espátula ou concha, ocupam espaço que poderia ir para outra categoria.</span></li>
+          <li class="flex gap-2"><span class="text-red-400 font-bold">✗</span><span><strong>Não etiquetar potes de mantimento.</strong> Sem etiqueta com data, fica impossível saber o que está mais perto de vencer, e isso gera desperdício de comida.</span></li>
+        </ul>
+
+        <!-- Checklist -->
+        <h2 id="checklist" class="text-2xl font-bold text-slate-900 mb-4">Checklist final para arrumar os armários da cozinha</h2>
+        <ul class="space-y-2 text-sm text-slate-700 mb-10">
+          <li class="flex gap-2"><span class="text-green-500 font-bold">✓</span><span>Armário esvaziado por completo e item separado em fica, doa e joga fora.</span></li>
+          <li class="flex gap-2"><span class="text-green-500 font-bold">✓</span><span>Categorias definidas: panela, pote, mantimento, forma e eletroportátil separados.</span></li>
+          <li class="flex gap-2"><span class="text-green-500 font-bold">✓</span><span>Medidas da prateleira conferidas antes de comprar qualquer organizador.</span></li>
+          <li class="flex gap-2"><span class="text-green-500 font-bold">✓</span><span>Divisórias, prateleiras expansoras ou organizadores verticais instalados onde faz sentido.</span></li>
+          <li class="flex gap-2"><span class="text-green-500 font-bold">✓</span><span>Itens de uso diário na altura dos olhos e das mãos.</span></li>
+          <li class="flex gap-2"><span class="text-green-500 font-bold">✓</span><span>Embaixo da pia dividido em cestas por categoria, com produto forte no fundo.</span></li>
+          <li class="flex gap-2"><span class="text-green-500 font-bold">✓</span><span>Despensa com potes transparentes, etiqueta com data e rotação de validade.</span></li>
+          <li class="flex gap-2"><span class="text-green-500 font-bold">✓</span><span>Gaveta de talher com divisor e sem item que não é de cozinha.</span></li>
+          <li class="flex gap-2"><span class="text-green-500 font-bold">✓</span><span>Tampas de panela em suporte vertical ou na porta, sem duplicidade de tamanho.</span></li>
+          <li class="flex gap-2"><span class="text-green-500 font-bold">✓</span><span>Rotina de revisão a cada poucos meses para não deixar a bagunça voltar.</span></li>
+        </ul>
+
+        <div style="display:flex;align-items:center;gap:12px;background:#f8fafc;border-left:4px solid #7c3aed;border-radius:6px;padding:14px 16px;margin:0 0 40px;">
+          <img src="/images/kit-cozinha/capa-kit-cozinha.webp" alt="Kit organização de cozinha por R$ 150" width="80" height="53" style="border-radius:6px;object-fit:cover;flex-shrink:0;" loading="lazy" />
+          <div>
+            <span style="font-size:10px;font-weight:700;text-transform:uppercase;color:#7c3aed;letter-spacing:0.08em;">Leia Também</span><br />
+            <a href="/kit-organizacao-cozinha" style="font-size:14px;font-weight:600;color:#1e293b;text-decoration:none;">Kit Organização de Cozinha: Monte o seu por R$ 150</a>
+          </div>
+        </div>
+
+        <!-- FAQ -->
+        <h2 id="faq" class="text-2xl font-bold text-slate-900 mb-6">Perguntas frequentes sobre como arrumar armários</h2>
+        <div class="space-y-3 mb-10">
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Como arrumar armários de cozinha pequenos sem gastar muito?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Comece esvaziando o armário e separando por categoria, sem comprar nada ainda. Depois, invista só no que realmente falta, como divisória, prateleira expansora ou organizador vertical. Itens simples de plástico ou aço custam pouco e já mudam o aproveitamento do espaço.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Como organizar embaixo da pia sem que fique bagunçado de novo?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Divida o espaço nas duas laterais do cano e use uma cesta com alça para cada categoria, uma de produto de limpeza e outra de pano e esponja. Puxar a cesta inteira para fora na hora de usar evita que tudo volte a se misturar depois de um tempo.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Qual a melhor forma de organizar potes de mantimento na despensa?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Potes transparentes com etiqueta de data e a regra de rotação, produto novo atrás e produto mais antigo na frente, resolvem a maior parte do problema. Isso evita vencimento escondido e ajuda a saber quando repor antes de acabar de vez.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Como guardar tampa de panela sem ocupar espaço demais?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Um organizador vertical com divisórias guarda várias tampas em pé, lado a lado, na largura de uma panela só. Suportes presos na porta do armário também funcionam bem e tiram a tampa do meio das panelas.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Vale a pena usar divisória de gaveta para talheres?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Vale sim. Um divisor simples separa garfo, faca e colher por tipo e evita que a gaveta vire depósito de tudo. É um dos itens mais baratos de organização e um dos que mais fazem diferença no dia a dia.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Como organizar armário de cozinha pequena que tem pouca prateleira?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Prateleiras expansoras criam um nível extra sem precisar furar nada, aproveitando a altura livre entre uma prateleira original e outra. Combinadas com organizadores empilháveis, praticamente dobram o número de itens que cabem no mesmo vão.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">De quanto em quanto tempo devo reorganizar os armários da cozinha?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Uma revisão rápida a cada dois ou três meses já evita que a bagunça volte. Nessa revisão, confira validade de mantimento, tire item duplicado que apareceu de novo e reposicione o que mudou de frequência de uso.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Preciso trocar o armário para organizar melhor a cozinha?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Na maioria dos casos não. Prateleiras expansoras, divisórias e organizadores verticais resolvem boa parte do problema de espaço sem precisar de reforma nem de armário novo. Trocar o móvel só costuma valer quando ele está danificado ou realmente pequeno demais para o uso da casa.
+            </div>
+          </details>
+        </div>
+
+        <!-- Schema FAQ -->
+        <script type="application/ld+json" set:html={JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Como arrumar armários de cozinha pequenos sem gastar muito?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Comece esvaziando o armário e separando por categoria, sem comprar nada ainda. Depois, invista só no que realmente falta, como divisória, prateleira expansora ou organizador vertical. Itens simples de plástico ou aço custam pouco e já mudam o aproveitamento do espaço." }
+            },
+            {
+              "@type": "Question",
+              "name": "Como organizar embaixo da pia sem que fique bagunçado de novo?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Divida o espaço nas duas laterais do cano e use uma cesta com alça para cada categoria, uma de produto de limpeza e outra de pano e esponja. Puxar a cesta inteira para fora na hora de usar evita que tudo volte a se misturar depois de um tempo." }
+            },
+            {
+              "@type": "Question",
+              "name": "Qual a melhor forma de organizar potes de mantimento na despensa?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Potes transparentes com etiqueta de data e a regra de rotação, produto novo atrás e produto mais antigo na frente, resolvem a maior parte do problema. Isso evita vencimento escondido e ajuda a saber quando repor antes de acabar de vez." }
+            },
+            {
+              "@type": "Question",
+              "name": "Como guardar tampa de panela sem ocupar espaço demais?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Um organizador vertical com divisórias guarda várias tampas em pé, lado a lado, na largura de uma panela só. Suportes presos na porta do armário também funcionam bem e tiram a tampa do meio das panelas." }
+            },
+            {
+              "@type": "Question",
+              "name": "Vale a pena usar divisória de gaveta para talheres?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Vale sim. Um divisor simples separa garfo, faca e colher por tipo e evita que a gaveta vire depósito de tudo. É um dos itens mais baratos de organização e um dos que mais fazem diferença no dia a dia." }
+            },
+            {
+              "@type": "Question",
+              "name": "Como organizar armário de cozinha pequena que tem pouca prateleira?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Prateleiras expansoras criam um nível extra sem precisar furar nada, aproveitando a altura livre entre uma prateleira original e outra. Combinadas com organizadores empilháveis, praticamente dobram o número de itens que cabem no mesmo vão." }
+            },
+            {
+              "@type": "Question",
+              "name": "De quanto em quanto tempo devo reorganizar os armários da cozinha?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Uma revisão rápida a cada dois ou três meses já evita que a bagunça volte. Nessa revisão, confira validade de mantimento, tire item duplicado que apareceu de novo e reposicione o que mudou de frequência de uso." }
+            },
+            {
+              "@type": "Question",
+              "name": "Preciso trocar o armário para organizar melhor a cozinha?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Na maioria dos casos não. Prateleiras expansoras, divisórias e organizadores verticais resolvem boa parte do problema de espaço sem precisar de reforma nem de armário novo. Trocar o móvel só costuma valer quando ele está danificado ou realmente pequeno demais para o uso da casa." }
+            }
+          ]
+        })} />
+
+        <!-- Schema HowTo -->
+        <script type="application/ld+json" set:html={JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "HowTo",
+          "name": "Como arrumar armários de cozinha",
+          "step": [
+            { "@type": "HowToStep", "name": "Esvazie o armário", "text": "Tire tudo do armário e separe em três grupos: o que fica, o que pode ser doado e o que deve ir para o lixo." },
+            { "@type": "HowToStep", "name": "Categorize por função", "text": "Agrupe panela, pote, mantimento e forma por categoria de uso, não por tamanho de embalagem." },
+            { "@type": "HowToStep", "name": "Multiplique o espaço vertical", "text": "Instale divisórias, prateleiras expansoras e organizadores empilháveis para aproveitar a altura livre entre as prateleiras." },
+            { "@type": "HowToStep", "name": "Dê um lugar fixo para cada categoria", "text": "Deixe o que usa mais na altura dos olhos e das mãos, e o que usa raramente nas prateleiras mais altas ou no fundo." }
+          ]
+        })} />
+
+        <!-- Leia também -->
+        <p style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#c2410c;margin:24px 0 12px;">Leia também:</p>
+        <div style="display:flex;flex-direction:column;gap:12px;">
+          <a href="/organizadores-armario-barato" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;flex-shrink:0;">
+              <img src="/images/organizadores/capa-organizadores.webp" alt="Organizadores de armário baratos" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">10 Organizadores de Armário Baratos que Valem Cada Centavo</span>
+            </div>
+          </a>
+          <a href="/kit-organizacao-cozinha" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;flex-shrink:0;">
+              <img src="/images/kit-cozinha/capa-kit-cozinha.webp" alt="Kit organização de cozinha por R$ 150" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Kit Organização de Cozinha: Monte o seu por R$ 150</span>
+            </div>
+          </a>
+          <a href="/como-escolher-frigideira" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;flex-shrink:0;">
+              <img src="/images/frigideira/capa-frigideira.webp" alt="Como escolher a frigideira certa" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Como Escolher a Frigideira Certa para Cada Tipo de Fogão</span>
+            </div>
+          </a>
+          <a href="/como-montar-lavanderia-apartamento" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;flex-shrink:0;">
+              <img src="/images/lavanderia-guia/capa-como-montar-lavanderia-apartamento.webp" alt="Como montar a lavanderia de um apartamento" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Como Montar a Lavanderia de um Apartamento</span>
+            </div>
+          </a>
+        </div>
+
+      </div>
     )}
 
 
