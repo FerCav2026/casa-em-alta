@@ -543,6 +543,16 @@ export const posts: Post[] = [
     categoria: 'rankings-e-listas',
     categoriaLabel: 'Rankings e Listas',
     categoriaColor: 'bg-green-100 text-green-700',
+  },
+  {
+    slug: 'como-arrumar-armarios',
+    titulo: 'Como Arrumar Armários da Cozinha: Guia Completo',
+    resumo: 'Passo a passo para arrumar armários de cozinha pequena: categorizar, usar divisórias, organizar embaixo da pia, despensa, gavetas e tampas de panela.',
+    tempo: '10 min de leitura',
+    imagem: '/images/armarios-guia/capa-como-arrumar-armarios.webp',
+    categoria: 'guias-de-compra',
+    categoriaLabel: 'Guia de Compra',
+    categoriaColor: 'bg-purple-100 text-purple-700',
   }
 ];
 
