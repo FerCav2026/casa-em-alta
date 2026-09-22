@@ -1,0 +1,144 @@
+---
+---
+
+<div class="relative" id="search-wrapper">
+  <button
+    id="search-toggle"
+    type="button"
+    aria-label="Buscar no blog"
+    aria-expanded="false"
+    class="p-2 text-slate-600 hover:text-orange-500 transition-colors"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-5 h-5">
+      <circle cx="11" cy="11" r="7" />
+      <line x1="21" y1="21" x2="16.65" y2="16.65" />
+    </svg>
+  </button>
+
+  <div
+    id="search-panel"
+    class="hidden fixed inset-x-0 top-16 md:absolute md:inset-x-auto md:top-full md:right-0 md:mt-2 bg-white border border-slate-200 md:rounded-2xl shadow-lg z-50 w-full md:w-96 p-4"
+  >
+    <div class="relative">
+      <input
+        id="search-input"
+        type="text"
+        placeholder="Buscar artigos, ex: frigideira, aspirador..."
+        autocomplete="off"
+        class="w-full border border-slate-200 rounded-xl px-4 py-2.5 text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-orange-400"
+      />
+    </div>
+    <div id="search-results" class="mt-3 max-h-96 overflow-y-auto space-y-1"></div>
+    <p id="search-empty" class="hidden text-sm text-slate-500 mt-3 px-1">Nenhum artigo encontrado.</p>
+  </div>
+</div>
+
+<script>
+  type PostBusca = {
+    titulo: string;
+    resumo: string;
+    slug: string;
+    categoria: string;
+    imagem: string | null;
+  };
+
+  let indice: PostBusca[] | null = null;
+
+  const wrapper = document.getElementById('search-wrapper');
+  const toggle = document.getElementById('search-toggle');
+  const panel = document.getElementById('search-panel');
+  const input = document.getElementById('search-input') as HTMLInputElement | null;
+  const results = document.getElementById('search-results');
+  const emptyMsg = document.getElementById('search-empty');
+
+  function normalizar(texto: string): string {
+    return texto
+      .toLowerCase()
+      .normalize('NFD')
+      .replace(/[̀-ͯ]/g, '');
+  }
+
+  async function carregarIndice(): Promise<PostBusca[]> {
+    if (indice) return indice;
+    const resp = await fetch('/busca.json');
+    indice = await resp.json();
+    return indice as PostBusca[];
+  }
+
+  function renderResultados(lista: PostBusca[]) {
+    if (!results || !emptyMsg) return;
+    results.innerHTML = '';
+
+    if (lista.length === 0) {
+      emptyMsg.classList.remove('hidden');
+      return;
+    }
+    emptyMsg.classList.add('hidden');
+
+    for (const post of lista.slice(0, 8)) {
+      const a = document.createElement('a');
+      a.href = `/${post.slug}`;
+      a.className = 'flex items-center gap-3 p-2 rounded-xl hover:bg-slate-50 transition-colors no-underline';
+      a.innerHTML = `
+        ${post.imagem ? `<img src="${post.imagem}" alt="" class="w-14 h-14 rounded-lg object-cover flex-shrink-0" loading="lazy" />` : ''}
+        <div class="min-w-0">
+          <p class="text-sm font-semibold text-slate-800 truncate">${post.titulo}</p>
+          <p class="text-xs text-slate-500">${post.categoria}</p>
+        </div>
+      `;
+      results.appendChild(a);
+    }
+  }
+
+  async function buscar(termo: string) {
+    const lista = await carregarIndice();
+    const termoNorm = normalizar(termo.trim());
+
+    if (termoNorm.length === 0) {
+      renderResultados(lista.slice(0, 8));
+      return;
+    }
+
+    const filtrados = lista.filter((p) =>
+      normalizar(p.titulo).includes(termoNorm) || normalizar(p.resumo).includes(termoNorm)
+    );
+    renderResultados(filtrados);
+  }
+
+  function abrirPainel() {
+    panel?.classList.remove('hidden');
+    toggle?.setAttribute('aria-expanded', 'true');
+    input?.focus();
+    buscar('');
+  }
+
+  function fecharPainel() {
+    panel?.classList.add('hidden');
+    toggle?.setAttribute('aria-expanded', 'false');
+    if (input) input.value = '';
+  }
+
+  toggle?.addEventListener('click', () => {
+    const aberto = toggle.getAttribute('aria-expanded') === 'true';
+    if (aberto) {
+      fecharPainel();
+    } else {
+      abrirPainel();
+    }
+  });
+
+  input?.addEventListener('input', (e) => {
+    const valor = (e.target as HTMLInputElement).value;
+    buscar(valor);
+  });
+
+  document.addEventListener('click', (e) => {
+    if (wrapper && !wrapper.contains(e.target as Node)) {
+      fecharPainel();
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') fecharPainel();
+  });
+</script>

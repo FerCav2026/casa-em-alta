@@ -1,5 +1,6 @@
 ---
 import CookieConsent from '../components/CookieConsent.astro';
+import SearchBar from '../components/SearchBar.astro';
 
 interface Props {
   title?: string;
@@ -112,9 +113,12 @@ const websiteSchema = {
           <a href="/categorias/guias-de-compra" class="hover:text-orange-500 transition-colors">Guias</a>
           <a href="/sobre" class="hover:text-orange-500 transition-colors">Sobre</a>
         </nav>
-        <a href="/posts" class="bg-orange-500 hover:bg-orange-600 text-white text-sm font-semibold px-4 py-2 rounded-full transition-colors">
-          Ver Ofertas
-        </a>
+        <div class="flex items-center gap-2">
+          <SearchBar />
+          <a href="/posts" class="bg-orange-500 hover:bg-orange-600 text-white text-sm font-semibold px-4 py-2 rounded-full transition-colors">
+            Ver Ofertas
+          </a>
+        </div>
       </div>
     </header>
 
