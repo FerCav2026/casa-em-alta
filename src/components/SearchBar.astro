@@ -19,17 +19,25 @@
     id="search-panel"
     class="hidden fixed inset-x-0 top-16 md:absolute md:inset-x-auto md:top-full md:right-0 md:mt-2 bg-white border border-slate-200 md:rounded-2xl shadow-lg z-50 w-full md:w-96 p-4"
   >
-    <div class="relative">
+    <form id="search-form" action="/busca" class="relative">
       <input
         id="search-input"
+        name="q"
         type="text"
         placeholder="Buscar artigos, ex: frigideira, aspirador..."
         autocomplete="off"
         class="w-full border border-slate-200 rounded-xl px-4 py-2.5 text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-orange-400"
       />
-    </div>
+    </form>
     <div id="search-results" class="mt-3 max-h-96 overflow-y-auto space-y-1"></div>
     <p id="search-empty" class="hidden text-sm text-slate-500 mt-3 px-1">Nenhum artigo encontrado.</p>
+    <a
+      id="search-ver-todos"
+      href="/busca"
+      class="hidden mt-3 pt-3 border-t border-slate-100 text-sm font-semibold text-orange-500 hover:text-orange-600 text-center"
+    >
+      Ver todos os resultados
+    </a>
   </div>
 </div>
 
@@ -47,9 +55,11 @@
   const wrapper = document.getElementById('search-wrapper');
   const toggle = document.getElementById('search-toggle');
   const panel = document.getElementById('search-panel');
+  const form = document.getElementById('search-form') as HTMLFormElement | null;
   const input = document.getElementById('search-input') as HTMLInputElement | null;
   const results = document.getElementById('search-results');
   const emptyMsg = document.getElementById('search-empty');
+  const verTodos = document.getElementById('search-ver-todos') as HTMLAnchorElement | null;
 
   function normalizar(texto: string): string {
     return texto
@@ -103,6 +113,16 @@
       normalizar(p.titulo).includes(termoNorm) || normalizar(p.resumo).includes(termoNorm)
     );
     renderResultados(filtrados);
+
+    if (verTodos) {
+      if (termoNorm.length > 0 && filtrados.length > 8) {
+        verTodos.href = `/busca?q=${encodeURIComponent(termo.trim())}`;
+        verTodos.textContent = `Ver todos os ${filtrados.length} resultados`;
+        verTodos.classList.remove('hidden');
+      } else {
+        verTodos.classList.add('hidden');
+      }
+    }
   }
 
   function abrirPainel() {

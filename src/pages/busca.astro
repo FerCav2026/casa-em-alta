@@ -1,0 +1,122 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Buscar Artigos — Casa em Alta"
+  description="Busque entre os reviews, comparativos e guias de compra do Casa em Alta."
+>
+  <div class="max-w-6xl mx-auto px-4 py-16">
+
+    <div class="mb-10">
+      <a href="/" class="text-sm text-slate-500 hover:text-orange-500 transition-colors">← Início</a>
+      <h1 class="text-3xl md:text-4xl font-black text-slate-900 mt-4">Buscar artigos</h1>
+      <div class="mt-6 max-w-xl">
+        <input
+          id="busca-input-pagina"
+          type="text"
+          placeholder="Ex: frigideira, aspirador, cafeteira..."
+          autocomplete="off"
+          class="w-full border border-slate-200 rounded-xl px-4 py-3 text-base text-slate-800 focus:outline-none focus:ring-2 focus:ring-orange-400"
+        />
+      </div>
+      <p id="busca-resumo" class="text-slate-500 mt-4 text-sm"></p>
+    </div>
+
+    <div id="busca-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+    <p id="busca-sem-resultado" class="hidden text-slate-500 text-base mt-6">Nenhum artigo encontrado para essa busca.</p>
+
+  </div>
+</BaseLayout>
+
+<script>
+  type PostBusca = {
+    titulo: string;
+    resumo: string;
+    slug: string;
+    categoria: string;
+    imagem: string | null;
+  };
+
+  function normalizar(texto: string): string {
+    return texto
+      .toLowerCase()
+      .normalize('NFD')
+      .replace(/[̀-ͯ]/g, '');
+  }
+
+  function cardHtml(post: PostBusca): string {
+    return `
+      <article class="group bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-all hover:-translate-y-1 overflow-hidden flex flex-col">
+        <div class="w-full h-48 overflow-hidden bg-gradient-to-br from-slate-100 to-slate-200 flex items-center justify-center">
+          ${post.imagem
+            ? `<img src="${post.imagem}" alt="Capa: ${post.titulo}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />`
+            : ''}
+        </div>
+        <div class="p-5 flex flex-col flex-1 gap-3">
+          <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-orange-100 text-orange-700 w-fit">${post.categoria}</span>
+          <h2 class="font-bold text-slate-900 text-base leading-snug group-hover:text-orange-500 transition-colors">
+            <a href="/${post.slug}">${post.titulo}</a>
+          </h2>
+          <p class="text-sm text-slate-500 leading-relaxed flex-1">${post.resumo}</p>
+          <a href="/${post.slug}" class="text-sm font-semibold text-orange-500 hover:text-orange-600 flex items-center gap-1 mt-auto transition-colors">
+            Ler artigo completo
+          </a>
+        </div>
+      </article>
+    `;
+  }
+
+  async function carregarIndice(): Promise<PostBusca[]> {
+    const resp = await fetch('/busca.json');
+    return await resp.json();
+  }
+
+  async function render(termo: string) {
+    const grid = document.getElementById('busca-grid');
+    const resumo = document.getElementById('busca-resumo');
+    const semResultado = document.getElementById('busca-sem-resultado');
+    if (!grid || !resumo || !semResultado) return;
+
+    const lista = await carregarIndice();
+    const termoNorm = normalizar(termo.trim());
+
+    const filtrados = termoNorm.length === 0
+      ? lista
+      : lista.filter((p) => normalizar(p.titulo).includes(termoNorm) || normalizar(p.resumo).includes(termoNorm));
+
+    resumo.textContent = termoNorm.length === 0
+      ? `${lista.length} artigos no total.`
+      : `${filtrados.length} resultado${filtrados.length === 1 ? '' : 's'} para "${termo.trim()}".`;
+
+    if (filtrados.length === 0) {
+      grid.innerHTML = '';
+      semResultado.classList.remove('hidden');
+      return;
+    }
+    semResultado.classList.add('hidden');
+    grid.innerHTML = filtrados.map(cardHtml).join('');
+  }
+
+  const params = new URLSearchParams(window.location.search);
+  const termoInicial = params.get('q') ?? '';
+
+  const input = document.getElementById('busca-input-pagina') as HTMLInputElement | null;
+  if (input) {
+    input.value = termoInicial;
+    input.focus();
+    input.addEventListener('input', (e) => {
+      const valor = (e.target as HTMLInputElement).value;
+      render(valor);
+      const url = new URL(window.location.href);
+      if (valor.trim()) {
+        url.searchParams.set('q', valor);
+      } else {
+        url.searchParams.delete('q');
+      }
+      window.history.replaceState({}, '', url);
+    });
+  }
+
+  render(termoInicial);
+</script>
