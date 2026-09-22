@@ -553,6 +553,16 @@ export const posts: Post[] = [
     categoria: 'guias-de-compra',
     categoriaLabel: 'Guia de Compra',
     categoriaColor: 'bg-purple-100 text-purple-700',
+  },
+  {
+    slug: 'frigideira-antiaderente-ou-de-ferro',
+    titulo: 'Frigideira Antiaderente ou de Ferro: Qual Compensa Mais?',
+    resumo: 'Comparamos durabilidade, manutenção, segurança, desempenho e preço entre frigideira antiaderente e de ferro fundido para você escolher com base em uso real.',
+    tempo: '8 min de leitura',
+    imagem: '/images/frigideira-comparativo/capa-frigideira-antiaderente-ou-de-ferro.webp',
+    categoria: 'comparativos',
+    categoriaLabel: 'Comparativo',
+    categoriaColor: 'bg-blue-100 text-blue-700',
   }
 ];
 

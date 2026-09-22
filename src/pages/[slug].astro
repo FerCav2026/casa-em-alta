@@ -363,6 +363,13 @@ const posts: Record<string, { titulo: string; descricao: string; categoria: stri
     dataCriacao: '2026-09-17',
     dataModificacao: '2026-09-17',
   },
+  'frigideira-antiaderente-ou-de-ferro': {
+    titulo: 'Frigideira Antiaderente ou de Ferro: Qual Compensa Mais?',
+    descricao: 'Frigideira antiaderente ou de ferro? Compare durabilidade, manutenção, segurança e preço com base em uso real, sem modismo, e escolha a certa.',
+    categoria: 'Comparativo',
+    dataCriacao: '2026-09-22',
+    dataModificacao: '2026-09-22',
+  },
 };
 
 export function getStaticPaths() {
@@ -416,6 +423,7 @@ export function getStaticPaths() {
     'projetor-da-shopee-vale-a-pena': {},
     'qual-a-melhor-maquina-de-lavar-louca': {},
     'como-arrumar-armarios': {},
+    'frigideira-antiaderente-ou-de-ferro': {},
   }).map((slug) => ({ params: { slug } }));
 }
 
@@ -497,6 +505,7 @@ const isMelhoresPanelasPressao = slug === 'melhores-panelas-pressao-eletricas-20
 const isProjetorShopee = slug === 'projetor-da-shopee-vale-a-pena';
 const isMelhoresLavaLoucas = slug === 'qual-a-melhor-maquina-de-lavar-louca';
 const isComoArrumarArmarios = slug === 'como-arrumar-armarios';
+const isFrigideiraAntiaderenteFerro = slug === 'frigideira-antiaderente-ou-de-ferro';
 
 const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isAirfryer ? '/images/airfryer/capa-airfryer.webp'
@@ -547,11 +556,12 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isProjetorShopee ? '/images/projetor-shopee/capa-projetor-da-shopee-vale-a-pena.webp'
   : isMelhoresLavaLoucas ? '/images/melhores-lava-loucas-2026/capa-melhores-lava-loucas-2026.webp'
   : isComoArrumarArmarios ? '/images/armarios-guia/capa-como-arrumar-armarios.webp'
+  : isFrigideiraAntiaderenteFerro ? '/images/frigideira-comparativo/capa-frigideira-antiaderente-ou-de-ferro.webp'
   : undefined;
 ---
 
 <BaseLayout
-  title={isPanelaEletricaOuConvencional || isMelhoresCafeteiras || isProjetorShopee || isComoArrumarArmarios || isLavaSeca ? post.titulo : `${post.titulo} - Casa em Alta`}
+  title={isPanelaEletricaOuConvencional || isMelhoresCafeteiras || isProjetorShopee || isComoArrumarArmarios || isLavaSeca || isFrigideiraAntiaderenteFerro ? post.titulo : `${post.titulo} - Casa em Alta`}
   description={post.descricao}
   image={coverImage}
   type="article"
@@ -4060,6 +4070,14 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
             </div>
             <div style="padding:20px 22px;display:flex;align-items:center;">
               <p style="margin:0;font-size:15px;font-weight:500;line-height:1.5;color:#1a1a1a;">Como Arrumar Armários da Cozinha: Guia Completo</p>
+            </div>
+          </a>
+          <a href="/frigideira-antiaderente-ou-de-ferro" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;margin-top:12px;">
+            <div style="width:200px;min-width:200px;overflow:hidden;">
+              <img src="/images/frigideira-comparativo/capa-frigideira-antiaderente-ou-de-ferro.webp" alt="Frigideira antiaderente ou de ferro, qual compensa mais" style="width:100%;height:100%;object-fit:cover;display:block;" />
+            </div>
+            <div style="padding:20px 22px;display:flex;align-items:center;">
+              <p style="margin:0;font-size:15px;font-weight:500;line-height:1.5;color:#1a1a1a;">Frigideira Antiaderente ou de Ferro: Qual Compensa Mais?</p>
             </div>
           </a>
         </div>
@@ -22515,6 +22533,353 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
 
       </div>
     )}
+
+    {isFrigideiraAntiaderenteFerro && (
+      <div>
+
+        <!-- Capa -->
+        <div class="rounded-2xl overflow-hidden mb-8 shadow-md">
+          <img
+            src="/images/frigideira-comparativo/capa-frigideira-antiaderente-ou-de-ferro.webp"
+            alt="Frigideira antiaderente e frigideira de ferro lado a lado sobre o fogão"
+            class="w-full h-auto object-cover"
+            loading="eager"
+          />
+        </div>
+
+        <!-- Introdução -->
+        <div class="bg-orange-50 border border-orange-100 rounded-2xl p-6 mb-8">
+          <p class="text-slate-800 text-base leading-relaxed mb-3">
+            Frigideira antiaderente ou de ferro: essa é uma das dúvidas mais comuns na hora de trocar a panela velha da cozinha, e a resposta não é igual para todo mundo. São dois materiais com lógicas de uso completamente diferentes, e escolher errado significa ou desistir da peça em poucos meses, ou nunca conseguir o resultado que você imaginava na hora da compra.
+          </p>
+          <p class="text-slate-800 text-base leading-relaxed mb-3">
+            Aqui a comparação é direta: antiaderente contra ferro, sem misturar com inox, que é outra categoria com outro tipo de cuidado. Você vai ver durabilidade real, o que cada uma pede de manutenção, os pontos de segurança que valem atenção, desempenho no preparo e o peso no bolso e na mão mesmo.
+          </p>
+          <p class="text-slate-800 text-base leading-relaxed">
+            Sou Claudia Castro, criadora do Casa em Alta. Essa comparação foi montada cruzando informação técnica de fabricante, dado de certificação e o comportamento real de cada material no dia a dia de cozinha, para te ajudar a decidir com base em uso, não em modismo.
+          </p>
+        </div>
+
+        <!-- Índice -->
+        <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 mb-10">
+          <p class="text-slate-800 font-bold text-base mb-3">Neste artigo:</p>
+          <ul class="space-y-2 text-sm text-slate-700">
+            <li><a href="#resumo-comparativo" class="text-purple-600 hover:underline">→ Frigideira antiaderente ou de ferro, resumo comparativo</a></li>
+            <li><a href="#durabilidade" class="text-purple-600 hover:underline">→ Durabilidade real de cada material</a></li>
+            <li><a href="#manutencao" class="text-purple-600 hover:underline">→ Manutenção e cuidados no dia a dia</a></li>
+            <li><a href="#seguranca" class="text-purple-600 hover:underline">→ Segurança: PTFE, PFOA e o que muda no ferro</a></li>
+            <li><a href="#desempenho" class="text-purple-600 hover:underline">→ Desempenho: selagem, troca de calor e resultado no prato</a></li>
+            <li><a href="#preco-peso" class="text-purple-600 hover:underline">→ Preço e peso: o que pesa mais na decisão</a></li>
+            <li><a href="#qual-escolher" class="text-purple-600 hover:underline">→ Qual escolher para cada tipo de cozinha</a></li>
+            <li><a href="#faq" class="text-purple-600 hover:underline">→ Perguntas frequentes</a></li>
+          </ul>
+        </div>
+
+        <!-- Resposta direta -->
+        <div class="bg-purple-50 border border-purple-100 rounded-2xl p-6 mb-10">
+          <p class="text-slate-800 font-bold text-base mb-3">Frigideira antiaderente ou de ferro, em resumo</p>
+          <p class="text-sm text-slate-700 leading-relaxed">
+            A antiaderente ganha em praticidade: aquece rápido, exige pouco óleo, limpa em segundos e custa menos na entrada. A de ferro ganha em durabilidade e em selagem de carne, mas pede curagem, manutenção constante e pesa mais na mão. Se sua rotina é corrida e a prioridade é praticidade, vá de antiaderente. Se você cozinha com frequência, gosta de selar carne e não se importa com o trabalho extra de manutenção, o ferro compensa no longo prazo.
+          </p>
+        </div>
+
+        <!-- Resumo comparativo -->
+        <h2 id="resumo-comparativo" class="text-2xl font-bold text-slate-900 mb-4">Frigideira antiaderente ou de ferro, resumo comparativo</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Antes de entrar em cada critério em detalhe, vale ver os dois materiais lado a lado. A tabela abaixo resume os pontos que mais pesam na decisão.
+        </p>
+        <div class="overflow-x-auto mb-10">
+          <table class="w-full text-sm border-collapse">
+            <thead>
+              <tr class="bg-slate-100 text-left">
+                <th class="p-3 border border-slate-200 font-bold text-slate-800">Critério</th>
+                <th class="p-3 border border-slate-200 font-bold text-slate-800">Antiaderente</th>
+                <th class="p-3 border border-slate-200 font-bold text-slate-800">Ferro</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="p-3 border border-slate-200 font-semibold text-slate-800">Vida útil média</td>
+                <td class="p-3 border border-slate-200 text-slate-700">1 a 3 anos com uso diário</td>
+                <td class="p-3 border border-slate-200 text-slate-700">Décadas, com manutenção correta</td>
+              </tr>
+              <tr>
+                <td class="p-3 border border-slate-200 font-semibold text-slate-800">Manutenção</td>
+                <td class="p-3 border border-slate-200 text-slate-700">Baixa, mas exige cuidado com o revestimento</td>
+                <td class="p-3 border border-slate-200 text-slate-700">Curagem inicial e periódica, secagem imediata</td>
+              </tr>
+              <tr>
+                <td class="p-3 border border-slate-200 font-semibold text-slate-800">Utensílio permitido</td>
+                <td class="p-3 border border-slate-200 text-slate-700">Silicone, madeira ou nylon</td>
+                <td class="p-3 border border-slate-200 text-slate-700">Qualquer material, inclusive metal</td>
+              </tr>
+              <tr>
+                <td class="p-3 border border-slate-200 font-semibold text-slate-800">Selagem de carne</td>
+                <td class="p-3 border border-slate-200 text-slate-700">Boa, mas com limite de temperatura</td>
+                <td class="p-3 border border-slate-200 text-slate-700">Excelente, aguenta calor bem mais alto</td>
+              </tr>
+              <tr>
+                <td class="p-3 border border-slate-200 font-semibold text-slate-800">Peso</td>
+                <td class="p-3 border border-slate-200 text-slate-700">Leve</td>
+                <td class="p-3 border border-slate-200 text-slate-700">Pesada</td>
+              </tr>
+              <tr>
+                <td class="p-3 border border-slate-200 font-semibold text-slate-800">Preço de entrada</td>
+                <td class="p-3 border border-slate-200 text-slate-700">Mais baixo</td>
+                <td class="p-3 border border-slate-200 text-slate-700">Mais alto, mas dilui com o tempo de uso</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Durabilidade -->
+        <h2 id="durabilidade" class="text-2xl font-bold text-slate-900 mb-4">Durabilidade real de cada material</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Esse é o ponto onde os dois materiais mais se afastam. Uma frigideira antiaderente tem vida útil limitada pelo revestimento, não pelo corpo da peça. Mesmo com uso cuidadoso, a camada antiaderente perde eficiência com o tempo, e a troca costuma acontecer entre 1 e 3 anos de uso diário, dependendo da qualidade do revestimento e do cuidado no dia a dia.
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          A frigideira de ferro fundido segue outra lógica. Não existe revestimento para descascar, porque a superfície antiaderente é construída pelo próprio óleo polimerizado na curagem. Com manutenção correta, uma frigideira de ferro dura décadas, e é comum ver peças passando de geração para geração dentro da mesma família, algo praticamente impossível com antiaderente comum.
+        </p>
+        <ul class="space-y-2 text-sm text-slate-700 mb-10">
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Antiaderente:</strong> durabilidade depende diretamente da qualidade do revestimento e de como ele é tratado no uso diário.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Ferro:</strong> durabilidade depende da manutenção da camada de curagem, não de um revestimento aplicado de fábrica.</span></li>
+        </ul>
+
+        <div style="display:flex;align-items:center;gap:12px;background:#f8fafc;border-left:4px solid #7c3aed;border-radius:6px;padding:14px 16px;margin:24px 0 40px;">
+          <img src="/images/frigideira/capa-frigideira.webp" alt="Como escolher a frigideira certa" width="80" height="53" style="border-radius:6px;object-fit:cover;flex-shrink:0;" loading="lazy" />
+          <div>
+            <span style="font-size:10px;font-weight:700;text-transform:uppercase;color:#7c3aed;letter-spacing:0.08em;">Leia Também</span><br />
+            <a href="/como-escolher-frigideira" style="font-size:14px;font-weight:600;color:#1e293b;text-decoration:none;">Como Escolher a Frigideira Certa para Cada Tipo de Fogão</a>
+          </div>
+        </div>
+
+        <!-- Manutenção -->
+        <h2 id="manutencao" class="text-2xl font-bold text-slate-900 mb-4">Manutenção e cuidados no dia a dia</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Aqui os dois materiais pedem exatamente o oposto um do outro, e entender essa diferença evita estragar a peça nas primeiras semanas de uso.
+        </p>
+        <h3 class="text-lg font-bold text-slate-900 mb-3">Cuidados com a frigideira antiaderente</h3>
+        <ul class="space-y-2 text-sm text-slate-700 mb-4">
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span>Use apenas utensílio de silicone, madeira ou nylon. Talher e espátula de metal riscam o revestimento e aceleram o desgaste.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span>Evite fogo alto por muito tempo. Aquecer a frigideira vazia ou em temperatura muito elevada degrada o revestimento mais rápido.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span>Lave com esponja macia e detergente neutro, nunca com palha de aço ou esponja abrasiva.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span>Evite choque térmico, como colocar a frigideira quente direto em água fria.</span></li>
+        </ul>
+        <h3 class="text-lg font-bold text-slate-900 mb-3">Cuidados com a frigideira de ferro</h3>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          A frigideira de ferro fundido nova geralmente vem crua ou com uma proteção de fábrica que precisa ser removida antes do primeiro uso. O processo de curagem consiste em aplicar uma camada fina de óleo de alto ponto de fumaça em toda a superfície e levar ao fogo ou ao forno até o óleo polimerizar, repetindo esse processo algumas vezes até formar uma camada protetora consistente.
+        </p>
+        <ul class="space-y-2 text-sm text-slate-700 mb-10">
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span>Nunca deixe de molho nem lave com detergente comum em excesso, porque isso remove a camada de curagem aos poucos.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span>Seque imediatamente após lavar, de preferência levando ao fogo baixo por alguns segundos, porque ferro úmido enferruja rápido.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span>Passe uma camada fina de óleo depois de cada secagem para manter a proteção da curagem.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span>Se aparecer ferrugem, dá para recuperar raspando a área e refazendo a curagem, o que não existe como opção na antiaderente riscada.</span></li>
+        </ul>
+
+        <!-- Segurança -->
+        <h2 id="seguranca" class="text-2xl font-bold text-slate-900 mb-4">Segurança: PTFE, PFOA e o que muda no ferro</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Essa é a dúvida que mais gera confusão, então vale separar os dois compostos. O PFOA (ácido perfluorooctanoico) era usado antigamente no processo de fabricação de alguns revestimentos antiaderentes e foi classificado pela <a href="https://monographs.iarc.who.int/list-of-classifications" target="_blank" rel="noopener noreferrer" class="text-purple-600 font-semibold hover:underline">Agência Internacional de Pesquisa sobre o Câncer (IARC)</a> como possivelmente cancerígeno. Por isso, fabricantes sérios deixaram de usar PFOA na produção, e hoje é comum encontrar frigideiras com selo "livre de PFOA" na embalagem.
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Já o PTFE, o material do revestimento em si (nome comercial mais conhecido como teflon), é aprovado como seguro para contato com alimento tanto pela <a href="https://www.fda.gov/food" target="_blank" rel="noopener noreferrer" class="text-purple-600 font-semibold hover:underline">FDA nos Estados Unidos</a> quanto dentro das categorias regulamentadas pela <a href="https://www.gov.br/anvisa/pt-br" target="_blank" rel="noopener noreferrer" class="text-purple-600 font-semibold hover:underline">Anvisa no Brasil</a>. O ponto de atenção real não é o PTFE em uso normal, e sim a temperatura: a partir de cerca de 260°C, o revestimento começa a se degradar e pode liberar gases. Na prática, isso significa não deixar a frigideira antiaderente vazia no fogo alto por tempo prolongado.
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          No Brasil, o <a href="https://www.gov.br/inmetro/pt-br" target="_blank" rel="noopener noreferrer" class="text-purple-600 font-semibold hover:underline">Inmetro</a> certifica utensílios domésticos por programas de avaliação de conformidade, e frigideiras com selo de certificação costumam ser mais transparentes sobre a composição do revestimento, incluindo a ausência de PFOA e PFOS. Vale checar essa informação na embalagem antes de comprar.
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          A frigideira de ferro fundido não tem essa questão, porque não existe revestimento químico envolvido. O único cuidado de segurança real é com peça malcurada ou enferrujada, que pode passar um sabor metálico para o alimento, mas isso se resolve refazendo a curagem.
+        </p>
+        <p class="text-xs text-slate-500 italic mb-10">
+          Este conteúdo é informativo e não substitui orientação de um profissional de saúde ou as instruções do fabricante do produto.
+        </p>
+
+        <div class="rounded-2xl overflow-hidden my-8 shadow-md">
+          <img
+            src="/images/frigideira-comparativo/interna-frigideira-ferro-fogo-alto.webp"
+            alt="Frigideira de ferro fundido sendo usada em fogo alto para selar carne"
+            width="1280"
+            height="720"
+            class="w-full h-auto object-cover"
+            loading="lazy"
+          />
+        </div>
+
+        <!-- Desempenho -->
+        <h2 id="desempenho" class="text-2xl font-bold text-slate-900 mb-4">Desempenho: selagem, troca de calor e resultado no prato</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          O ferro fundido retém calor de um jeito que a antiaderente comum não consegue. Ele demora mais para esquentar, mas depois de quente mantém a temperatura de forma estável, o que favorece a selagem de carne, formando aquela crosta dourada por fora sem ressecar o interior. É por isso que restaurante e chef profissional costumam preferir ferro para bife, hambúrguer e proteína que precisa de fogo alto.
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          A antiaderente aquece rápido e de forma uniforme em temperatura baixa e média, o que é ótimo para ovo, panqueca, crepe e qualquer preparo delicado que gruda fácil. O problema aparece quando você tenta usar fogo muito alto por tempo prolongado, porque aí entra o limite de temperatura do revestimento explicado no tópico anterior.
+        </p>
+        <ul class="space-y-2 text-sm text-slate-700 mb-10">
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Para ovo, crepe e preparo delicado:</strong> a antiaderente entrega resultado melhor, com menos óleo e menos chance de grudar.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Para selar carne e preparo em fogo alto:</strong> o ferro entrega crosta melhor e aguenta temperatura que a antiaderente não suporta com segurança.</span></li>
+        </ul>
+
+        <div style="display:flex;align-items:center;gap:12px;background:#f8fafc;border-left:4px solid #7c3aed;border-radius:6px;padding:14px 16px;margin:24px 0 40px;">
+          <img src="/images/armarios-guia/capa-como-arrumar-armarios.webp" alt="Como arrumar armários da cozinha" width="80" height="53" style="border-radius:6px;object-fit:cover;flex-shrink:0;" loading="lazy" />
+          <div>
+            <span style="font-size:10px;font-weight:700;text-transform:uppercase;color:#7c3aed;letter-spacing:0.08em;">Leia Também</span><br />
+            <a href="/como-arrumar-armarios" style="font-size:14px;font-weight:600;color:#1e293b;text-decoration:none;">Como Arrumar Armários da Cozinha: Guia Completo</a>
+          </div>
+        </div>
+
+        <!-- Preço e peso -->
+        <h2 id="preco-peso" class="text-2xl font-bold text-slate-900 mb-4">Preço e peso: o que pesa mais na decisão</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Na entrada, a frigideira antiaderente costuma custar menos que a de ferro fundido de tamanho equivalente. Mas como a antiaderente precisa ser trocada com mais frequência, o custo se dilui ao longo dos anos: quem troca de antiaderente a cada 2 anos acaba gastando, no total, valor parecido ou até maior do que quem comprou uma frigideira de ferro uma única vez.
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          O peso é outro fator que pesa literalmente na decisão. Uma frigideira de ferro fundido de 26 cm pode pesar bem mais que uma antiaderente do mesmo tamanho, o que exige mais força no punho para manusear, principalmente na hora de virar o alimento no ar ou levantar a panela cheia. Para quem tem lesão no punho, ombro ou dificuldade de força, isso é um ponto real a considerar, não só estética.
+        </p>
+        <ul class="space-y-2 text-sm text-slate-700 mb-10">
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Custo total de longo prazo:</strong> tende a favorecer o ferro, apesar do preço de entrada mais alto.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Facilidade de manuseio:</strong> favorece a antiaderente, bem mais leve no dia a dia.</span></li>
+        </ul>
+
+        <!-- Qual escolher -->
+        <h2 id="qual-escolher" class="text-2xl font-bold text-slate-900 mb-4">Qual escolher para cada tipo de cozinha</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Não existe resposta única, porque a escolha certa depende de como você cozinha no dia a dia e de quanto tempo você quer dedicar à manutenção da peça.
+        </p>
+        <ul class="space-y-2 text-sm text-slate-700 mb-10">
+          <li class="flex gap-2"><span class="text-green-500 font-bold">✓</span><span><strong>Escolha antiaderente se:</strong> sua rotina é corrida, você prioriza praticidade na limpeza, cozinha principalmente ovo, panqueca e preparo com pouco óleo, e prefere não lidar com curagem.</span></li>
+          <li class="flex gap-2"><span class="text-green-500 font-bold">✓</span><span><strong>Escolha ferro se:</strong> você cozinha com frequência, gosta de selar carne e usar fogo alto, não se incomoda com o trabalho extra de manutenção e busca uma peça para durar décadas.</span></li>
+          <li class="flex gap-2"><span class="text-green-500 font-bold">✓</span><span><strong>Uma alternativa comum:</strong> muita cozinha mantém as duas. Antiaderente para o preparo do dia a dia e ferro reservado para quando o objetivo é selar bem uma proteína.</span></li>
+        </ul>
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          Se a dúvida ainda envolve o tipo de fogão que você tem em casa, como indução, gás ou elétrico, vale complementar essa escolha com o guia <a href="/como-escolher-frigideira" class="text-purple-600 font-semibold hover:underline">como escolher a frigideira certa para cada tipo de fogão</a>, que trata a compatibilidade entre material e fonte de calor em mais detalhe.
+        </p>
+
+        <!-- FAQ -->
+        <h2 id="faq" class="text-2xl font-bold text-slate-900 mb-6">Perguntas frequentes sobre frigideira antiaderente ou de ferro</h2>
+        <div class="space-y-3 mb-10">
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Frigideira de ferro é melhor que antiaderente?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Não é melhor nem pior, é diferente. O ferro dura muito mais e sela melhor a carne, mas exige curagem e manutenção constante. A antiaderente é mais prática no dia a dia, mas tem vida útil limitada pelo revestimento.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Frigideira antiaderente com PTFE faz mal à saúde?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              O PTFE é aprovado pela FDA e regulamentado pela Anvisa para contato com alimento em uso normal. O ponto de atenção é a temperatura: acima de cerca de 260°C o revestimento começa a se degradar, então o cuidado real é não deixar a frigideira vazia em fogo alto por muito tempo.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Pode lavar frigideira de ferro com detergente?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              O ideal é evitar detergente em excesso, porque ele remove aos poucos a camada de óleo polimerizado da curagem. Prefira água quente, uma esponja macia e, se precisar, uma quantidade mínima de detergente neutro, secando a peça imediatamente depois.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Quanto tempo dura uma frigideira antiaderente?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Em uso diário, o normal é durar entre 1 e 3 anos, dependendo da qualidade do revestimento e dos cuidados no dia a dia, como não usar utensílio de metal e evitar fogo muito alto com a frigideira vazia.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Dá para usar frigideira de ferro todos os dias?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Dá, e o uso frequente até ajuda a manter a camada de curagem ativa. O ponto de atenção é a rotina de secar bem e passar uma camada fina de óleo depois de cada lavagem, para evitar ferrugem.
+            </div>
+          </details>
+        </div>
+
+        <!-- Schema FAQ -->
+        <script type="application/ld+json" set:html={JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Frigideira de ferro é melhor que antiaderente?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Não é melhor nem pior, é diferente. O ferro dura muito mais e sela melhor a carne, mas exige curagem e manutenção constante. A antiaderente é mais prática no dia a dia, mas tem vida útil limitada pelo revestimento." }
+            },
+            {
+              "@type": "Question",
+              "name": "Frigideira antiaderente com PTFE faz mal à saúde?",
+              "acceptedAnswer": { "@type": "Answer", "text": "O PTFE é aprovado pela FDA e regulamentado pela Anvisa para contato com alimento em uso normal. O ponto de atenção é a temperatura: acima de cerca de 260°C o revestimento começa a se degradar, então o cuidado real é não deixar a frigideira vazia em fogo alto por muito tempo." }
+            },
+            {
+              "@type": "Question",
+              "name": "Pode lavar frigideira de ferro com detergente?",
+              "acceptedAnswer": { "@type": "Answer", "text": "O ideal é evitar detergente em excesso, porque ele remove aos poucos a camada de óleo polimerizado da curagem. Prefira água quente, uma esponja macia e, se precisar, uma quantidade mínima de detergente neutro, secando a peça imediatamente depois." }
+            },
+            {
+              "@type": "Question",
+              "name": "Quanto tempo dura uma frigideira antiaderente?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Em uso diário, o normal é durar entre 1 e 3 anos, dependendo da qualidade do revestimento e dos cuidados no dia a dia, como não usar utensílio de metal e evitar fogo muito alto com a frigideira vazia." }
+            },
+            {
+              "@type": "Question",
+              "name": "Dá para usar frigideira de ferro todos os dias?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Dá, e o uso frequente até ajuda a manter a camada de curagem ativa. O ponto de atenção é a rotina de secar bem e passar uma camada fina de óleo depois de cada lavagem, para evitar ferrugem." }
+            }
+          ]
+        })} />
+
+        <!-- Leia também -->
+        <p style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#c2410c;margin:24px 0 12px;">Leia também:</p>
+        <div style="display:flex;flex-direction:column;gap:12px;">
+          <a href="/como-escolher-frigideira" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;flex-shrink:0;">
+              <img src="/images/frigideira/capa-frigideira.webp" alt="Como escolher a frigideira certa" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Como Escolher a Frigideira Certa para Cada Tipo de Fogão</span>
+            </div>
+          </a>
+          <a href="/kit-organizacao-cozinha" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;flex-shrink:0;">
+              <img src="/images/kit-cozinha/capa-kit-cozinha.webp" alt="Kit organização de cozinha por R$ 150" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Kit Organização de Cozinha: Monte o seu por R$ 150</span>
+            </div>
+          </a>
+          <a href="/como-arrumar-armarios" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;flex-shrink:0;">
+              <img src="/images/armarios-guia/capa-como-arrumar-armarios.webp" alt="Como arrumar armários da cozinha" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Como Arrumar Armários da Cozinha: Guia Completo</span>
+            </div>
+          </a>
+          <a href="/organizadores-armario-barato" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;flex-shrink:0;">
+              <img src="/images/organizadores/capa-organizadores.webp" alt="Organizadores de armário baratos" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">10 Organizadores de Armário Baratos que Valem Cada Centavo</span>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    )}
+
 
 
     <!-- Calculadora de consumo de energia, travada na categoria do artigo -->
