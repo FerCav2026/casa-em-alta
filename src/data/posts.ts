@@ -563,6 +563,16 @@ export const posts: Post[] = [
     categoria: 'comparativos',
     categoriaLabel: 'Comparativo',
     categoriaColor: 'bg-blue-100 text-blue-700',
+  },
+  {
+    slug: 'melhor-frigideira-antiaderente',
+    titulo: 'Melhor Frigideira Antiaderente de 2026: as 3 Campeãs de Venda',
+    resumo: 'Melhor frigideira antiaderente de 2026: comparamos nota, avaliações reais e ficha técnica de 3 frigideiras campeãs de venda na Amazon para você escolher sem errar.',
+    tempo: '9 min de leitura',
+    imagem: '/images/melhores-frigideiras-2026/capa-melhores-frigideiras-antiaderentes-2026.webp',
+    categoria: 'rankings-e-listas',
+    categoriaLabel: 'Rankings e Listas',
+    categoriaColor: 'bg-green-100 text-green-700',
   }
 ];
 
