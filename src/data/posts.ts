@@ -573,6 +573,16 @@ export const posts: Post[] = [
     categoria: 'rankings-e-listas',
     categoriaLabel: 'Rankings e Listas',
     categoriaColor: 'bg-green-100 text-green-700',
+  },
+  {
+    slug: 'melhor-climatizador-de-ar',
+    titulo: 'Melhor Climatizador de Ar: os 5 Mais Vendidos de 2026',
+    resumo: 'Melhor climatizador de ar em 2026: comparamos 5 modelos vendidos na Amazon por nota, avaliações reais, reservatório e potência, e explicamos como escolher.',
+    tempo: '8 min de leitura',
+    imagem: '/images/melhor-climatizador-de-ar/capa-melhor-climatizador-de-ar.webp',
+    categoria: 'rankings-e-listas',
+    categoriaLabel: 'Rankings e Listas',
+    categoriaColor: 'bg-green-100 text-green-700',
   }
 ];
 

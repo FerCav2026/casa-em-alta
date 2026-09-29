@@ -377,6 +377,13 @@ const posts: Record<string, { titulo: string; descricao: string; categoria: stri
     dataCriacao: '2026-09-24',
     dataModificacao: '2026-09-24',
   },
+  'melhor-climatizador-de-ar': {
+    titulo: 'Melhor Climatizador de Ar: os 5 Mais Vendidos de 2026',
+    descricao: 'Melhor climatizador de ar em 2026: compare Midea, WAP, Ventisol, Philco e Britânia por nota, avaliações, reservatório e potência e escolha com segurança.',
+    categoria: 'Rankings e Listas',
+    dataCriacao: '2026-09-29',
+    dataModificacao: '2026-09-29',
+  },
 };
 
 export function getStaticPaths() {
@@ -432,6 +439,7 @@ export function getStaticPaths() {
     'como-arrumar-armarios': {},
     'frigideira-antiaderente-ou-de-ferro': {},
     'melhor-frigideira-antiaderente': {},
+    'melhor-climatizador-de-ar': {},
   }).map((slug) => ({ params: { slug } }));
 }
 
@@ -515,6 +523,7 @@ const isMelhoresLavaLoucas = slug === 'qual-a-melhor-maquina-de-lavar-louca';
 const isComoArrumarArmarios = slug === 'como-arrumar-armarios';
 const isFrigideiraAntiaderenteFerro = slug === 'frigideira-antiaderente-ou-de-ferro';
 const isMelhorFrigideiraAntiaderente = slug === 'melhor-frigideira-antiaderente';
+const isMelhorClimatizador = slug === 'melhor-climatizador-de-ar';
 
 const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isAirfryer ? '/images/airfryer/capa-airfryer.webp'
@@ -567,11 +576,12 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isComoArrumarArmarios ? '/images/armarios-guia/capa-como-arrumar-armarios.webp'
   : isFrigideiraAntiaderenteFerro ? '/images/frigideira-comparativo/capa-frigideira-antiaderente-ou-de-ferro.webp'
   : isMelhorFrigideiraAntiaderente ? '/images/melhores-frigideiras-2026/capa-melhores-frigideiras-antiaderentes-2026.webp'
+  : isMelhorClimatizador ? '/images/melhor-climatizador-de-ar/capa-melhor-climatizador-de-ar.webp'
   : undefined;
 ---
 
 <BaseLayout
-  title={isPanelaEletricaOuConvencional || isMelhoresCafeteiras || isProjetorShopee || isComoArrumarArmarios || isLavaSeca || isFrigideiraAntiaderenteFerro || isFrigideira || isMelhorFrigideiraAntiaderente ? post.titulo : `${post.titulo} - Casa em Alta`}
+  title={isPanelaEletricaOuConvencional || isMelhoresCafeteiras || isProjetorShopee || isComoArrumarArmarios || isLavaSeca || isFrigideiraAntiaderenteFerro || isFrigideira || isMelhorFrigideiraAntiaderente || isMelhorClimatizador ? post.titulo : `${post.titulo} - Casa em Alta`}
   description={post.descricao}
   image={coverImage}
   type="article"
@@ -23437,6 +23447,762 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
               <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Como Arrumar Armários da Cozinha: Guia Completo</span>
             </div>
           </a>
+        </div>
+
+      </div>
+    )}
+
+
+    {isMelhorClimatizador && (
+      <div>
+
+        <!-- Capa -->
+        <div class="rounded-2xl overflow-hidden mb-8 shadow-md">
+          <img
+            src="/images/melhor-climatizador-de-ar/capa-melhor-climatizador-de-ar.webp"
+            alt="Climatizador de ar em funcionamento em uma sala de apartamento no verão"
+            width="1280"
+            height="720"
+            class="w-full h-auto object-cover"
+            loading="eager"
+          />
+        </div>
+
+        <p class="text-xs text-slate-400 mb-6">Atualizado em setembro de 2026</p>
+
+        <!-- Introdução -->
+        <div class="bg-orange-50 border border-orange-100 rounded-2xl p-6 mb-8">
+          <p class="text-slate-800 text-base leading-relaxed mb-3">
+            O melhor climatizador de ar entre os mais vendidos da Amazon Brasil em 2026 é o Midea AKAF1, com nota 4,6/5 em 8.035 avaliações, 60 W de potência e reservatório de 4,5 L. Logo atrás vêm o WAP Air Fresh (4,5/5, 1.823 avaliações) e o Ventisol CLIN16-01 (4,2/5, 1.104 avaliações), que tem o maior reservatório da lista, com 16 L.
+          </p>
+          <p class="text-slate-800 text-base leading-relaxed mb-3">
+            O ranking cruza nota e volume de avaliações, não só a estrela: um 4,0 com duas avaliações não vale o mesmo que um 4,5 com mais de mil. Climatizador evaporativo não é ar-condicionado, e os cinco links são da versão 127V.
+          </p>
+          <p class="text-slate-800 text-base leading-relaxed">
+            Não testamos os aparelhos em casa. É curadoria técnica, com fichas, avaliações públicas e ritmo de compra coletados na Amazon Brasil em 29 de setembro de 2026. Esses números mudam, então confira o valor atual antes de decidir.
+          </p>
+        </div>
+
+        <!-- TL;DR -->
+        <div class="bg-purple-50 border border-purple-100 rounded-2xl p-6 mb-10">
+          <p class="text-slate-800 font-bold text-base mb-3">Em resumo</p>
+          <p class="text-sm text-slate-700 leading-relaxed">
+            O <strong>Midea AKAF1</strong> é o melhor no geral, ideal para quarto e escritório. O <strong>WAP Air Fresh</strong> é a torre para pouco espaço e o <strong>Ventisol CLIN16-01</strong> atende ambientes maiores. Climatizador rende mais em clima seco.
+          </p>
+        </div>
+
+        <!-- Índice -->
+        <nav class="border border-slate-200 rounded-2xl p-6 mb-10 bg-white">
+          <p class="font-bold text-slate-800 mb-3">Índice</p>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#ventilador-ar-condicionado" class="text-orange-500 hover:text-orange-600 font-medium">Climatizador é melhor que ventilador? E que ar-condicionado?</a></li>
+            <li><a href="#tabela-comparativa" class="text-orange-500 hover:text-orange-600 font-medium">Tabela comparativa dos 5 climatizadores</a></li>
+            <li><a href="#ranking" class="text-orange-500 hover:text-orange-600 font-medium">O melhor climatizador de ar: ranking por nota e avaliações</a></li>
+            <li><a href="#como-escolher" class="text-orange-500 hover:text-orange-600 font-medium">Melhor climatizador de ar frio: como escolher pelo ambiente</a></li>
+            <li><a href="#consumo" class="text-orange-500 hover:text-orange-600 font-medium">Quanto um climatizador gasta de energia?</a></li>
+            <li><a href="#limpeza" class="text-orange-500 hover:text-orange-600 font-medium">Como limpar e cuidar do climatizador?</a></li>
+            <li><a href="#erros-comuns" class="text-orange-500 hover:text-orange-600 font-medium">Quais são os erros mais comuns ao comprar um climatizador?</a></li>
+            <li><a href="#qual-escolher" class="text-orange-500 hover:text-orange-600 font-medium">Qual climatizador escolher para o seu caso?</a></li>
+            <li><a href="#faq" class="text-orange-500 hover:text-orange-600 font-medium">Perguntas frequentes</a></li>
+          </ul>
+        </nav>
+
+        <h2 id="ventilador-ar-condicionado" class="text-2xl font-bold text-slate-900 mb-4">Climatizador é melhor que ventilador? E que ar-condicionado?</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Depende do clima. O climatizador evaporativo é um ventilador com um filtro umedecido na frente: o ar passa pela água (ou pelo gelo) e sai mais fresco. Não tem compressor nem gás, então não esfria como um ar-condicionado.
+        </p>
+        <div class="overflow-x-auto mb-6">
+          <table class="w-full text-sm border-collapse">
+            <thead>
+              <tr class="bg-slate-100">
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Aparelho</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">O que faz</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Funciona melhor em</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-white">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Ventilador</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Só movimenta o ar</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Calor leve, em qualquer umidade</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Climatizador evaporativo</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Movimenta e umedece o ar</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Clima quente e seco, com algum ar circulando</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Ar-condicionado</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Retira calor e umidade</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Calor forte e úmido, ambiente fechado</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          Em ar muito úmido, o efeito é bem menor, porque a água tem pouco espaço para evaporar. As fichas da Amazon de Midea e Britânia indicam climas secos.
+        </p>
+        <h2 id="tabela-comparativa" class="text-2xl font-bold text-slate-900 mb-4">Tabela comparativa dos 5 climatizadores</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-5">
+          Dados da Amazon Brasil em 29 de setembro de 2026, na ordem do ranking.
+        </p>
+        <div class="overflow-x-auto mb-6">
+          <table class="w-full text-sm border-collapse">
+            <thead>
+              <tr class="bg-slate-100">
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Modelo</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Reservatório</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Potência</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Nota</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Avaliações</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Compras/mês</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-white">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Midea AKAF1</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">4,5 L</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">60 W</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">4,6/5</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">8.035</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Mais de 900</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">WAP Air Fresh</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">3 L</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">90 W</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">4,5/5</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">1.823</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Mais de 600</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Ventisol CLIN16-01</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">16 L</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">130 W</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">4,2/5</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">1.104</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Mais de 400</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Philco PCL05A</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Não informado</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">80 W</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">4,1/5</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">194</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Mais de 50</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Britânia Air 8L BCL08A</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">8 L</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">80 W</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Sem avaliações</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">0</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Não informado</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <h2 id="ranking" class="text-2xl font-bold text-slate-900 mb-6">O melhor climatizador de ar: ranking por nota e avaliações</h2>
+        <!-- Produto 1: Midea AKAF1 -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-orange-500 px-6 py-4">
+            <h3 class="text-white font-black text-xl">1º lugar - Midea AKAF1 Climatizador de Ar Frio 60W</h3>
+            <p class="text-orange-100 text-sm mt-1">Melhor no geral: nota 4,6/5 em 8.035 avaliações e mais de 900 compras no mês</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+              <img src="/images/melhor-climatizador-de-ar/midea-akaf1-climatizador-de-ar-frio.webp" alt="Midea AKAF1 Climatizador de Ar Frio 60W" width="579" height="640" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <p class="text-slate-700 text-sm leading-relaxed mb-4">
+                Lidera por peso estatístico: maior base de avaliações e maior nota da lista. Na consulta, era o 1º mais vendido em Ar-Condicionado Portátil da Amazon.
+              </p>
+              <a href="https://www.amazon.com.br/dp/B08377D9YS?tag=mundodossobre-20" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon</a>
+              <h4 class="font-bold text-slate-800 mb-3">Ficha Técnica</h4>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Reservatório:</strong> 4,5 L (o título também cita 7L, mas usamos a ficha técnica)</li>
+                <li><strong>Potência:</strong> 60 W, 127 V, 3 velocidades e modo dormir</li>
+                <li><strong>Extras:</strong> controle remoto, timer de 7 horas e duas caixas de gel</li>
+                <li><strong>Ruído:</strong> 53 dB, segundo a ficha da Amazon</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Maior nota e maior base de avaliações</li>
+                    <li>Menor potência do ranking</li>
+                    <li>Modo dormir e timer no controle remoto</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Reservatório de 4,5 L pede reabastecimento frequente</li>
+                    <li>Ficha indica climas secos e ambientes pequenos</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mt-4">
+                <strong>Veredito:</strong> para quarto e escritório, é a escolha mais segura.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 2: WAP Air Fresh -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-slate-800 px-6 py-4">
+            <h3 class="text-white font-black text-xl">2º lugar - WAP Air Fresh 4 em 1 Climatizador de Torre</h3>
+            <p class="text-slate-300 text-sm mt-1">Melhor em formato torre: nota 4,5/5 em 1.823 avaliações e mais de 600 compras no mês</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+              <img src="/images/melhor-climatizador-de-ar/wap-air-fresh-climatizador-torre.webp" alt="WAP Air Fresh 4 em 1 Climatizador de Torre" width="181" height="640" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <p class="text-slate-700 text-sm leading-relaxed mb-4">
+                Troca a caixa tradicional por uma torre de 98 cm, que ocupa pouco espaço no chão, e tem nota bem próxima da líder.
+              </p>
+              <a href="https://www.amazon.com.br/dp/B0DCL4NW6J?tag=mundodossobre-20" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon</a>
+              <h4 class="font-bold text-slate-800 mb-3">Ficha Técnica</h4>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Reservatório:</strong> 3 L, removível</li>
+                <li><strong>Potência:</strong> 90 W, 127 V, 3 velocidades e painel analógico</li>
+                <li><strong>Extras:</strong> reservatório para essência e oscilação das aletas</li>
+                <li><strong>Porte:</strong> 6 kg, 29 x 29 x 98 cm</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Ocupa pouco espaço no chão</li>
+                    <li>Reservatório para essência perfuma o ambiente</li>
+                    <li>Fabricante fala em baixo ruído, sem informar dB</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Reservatório de 3 L é o menor que informa capacidade</li>
+                    <li>Sem controle remoto informado</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mt-4">
+                <strong>Veredito:</strong> boa para pouco espaço. Para áreas grandes, olhe o Ventisol.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin:32px 0;font-family:sans-serif;">
+          <p style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#c2410c;margin:0 0 12px;">Leia também:</p>
+          <a href="/quanto-gasta-de-energia-eletrodomesticos" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;min-width:200px;overflow:hidden;">
+              <img src="/images/consumo-energia/capa-consumo-energia.webp" alt="Quanto gasta de energia cada eletrodoméstico" width="200" height="133" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy" />
+            </div>
+            <div style="padding:20px 22px;display:flex;align-items:center;">
+              <p style="margin:0;font-size:15px;font-weight:500;line-height:1.5;color:#1a1a1a;">Quanto Gasta de Energia Cada Eletrodoméstico? Calcule Aqui</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Produto 3: Ventisol CLIN16-01 -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-slate-800 px-6 py-4">
+            <h3 class="text-white font-black text-xl">3º lugar - Ventisol CLIN16-01 Climatizador 16 L</h3>
+            <p class="text-slate-300 text-sm mt-1">Melhor para ambiente grande: nota 4,2/5 em 1.104 avaliações e mais de 400 compras no mês</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+              <img src="/images/melhor-climatizador-de-ar/ventisol-clin16-01-climatizador-16l.webp" alt="Ventisol CLIN16-01 Climatizador 16 L" width="313" height="640" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <p class="text-slate-700 text-sm leading-relaxed mb-4">
+                Tem o maior reservatório da lista e é o único com área indicada na ficha da Amazon, 20 m², ao custo de mais potência.
+              </p>
+              <a href="https://www.amazon.com.br/dp/B0CCBGXKLP?tag=mundodossobre-20" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon</a>
+              <h4 class="font-bold text-slate-800 mb-3">Ficha Técnica</h4>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Reservatório:</strong> 16 L, com compartimento de gelo na tampa</li>
+                <li><strong>Potência:</strong> 130 W, 127 V, 3 velocidades e oscilação vertical</li>
+                <li><strong>Controle:</strong> botões e controle remoto</li>
+                <li><strong>Porte:</strong> 5,3 kg, 39 x 30 x 76 cm, fabricado no Brasil</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Maior reservatório, sem reabastecer a toda hora</li>
+                    <li>Ficha indica até 20 m²</li>
+                    <li>Compartimento próprio para gelo (veja a <a href="/maquina-de-gelo-portatil" class="text-orange-500 hover:underline">máquina de gelo portátil</a>)</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Maior potência da lista, 130 W</li>
+                    <li>Nota 4,2, abaixo da Midea e da WAP</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mt-4">
+                <strong>Veredito:</strong> é a escolha para sala e ambiente amplo, se o consumo maior não pesar.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 4: Philco PCL05A -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-slate-800 px-6 py-4">
+            <h3 class="text-white font-black text-xl">4º lugar - Philco PCL05A Climatizador 4 em 1</h3>
+            <p class="text-slate-300 text-sm mt-1">Compacto com timer e controle remoto: nota 4,1/5 em 194 avaliações e mais de 50 compras no mês</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+              <img src="/images/melhor-climatizador-de-ar/philco-pcl05a-climatizador-4-em-1.webp" alt="Philco PCL05A Climatizador 4 em 1" width="279" height="640" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <p class="text-slate-700 text-sm leading-relaxed mb-4">
+                Modelo compacto com timer e aletas oscilantes. A base de avaliações é bem menor que a dos três primeiros, então a nota pesa menos.
+              </p>
+              <a href="https://www.amazon.com.br/dp/B0DGGWPDBS?tag=mundodossobre-20" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon</a>
+              <h4 class="font-bold text-slate-800 mb-3">Ficha Técnica</h4>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Reservatório:</strong> capacidade não informada na página</li>
+                <li><strong>Potência:</strong> 80 W, 127 V no título do anúncio, 3 velocidades</li>
+                <li><strong>Extras:</strong> timer, controle remoto, alça e rodinhas</li>
+                <li><strong>Porte:</strong> 29 x 31 x 67 cm</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Timer programável pelo controle remoto</li>
+                    <li>Alça e rodinhas para mover entre cômodos</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Página não informa o reservatório</li>
+                    <li>Apenas 194 avaliações e ritmo de compra baixo</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mt-4">
+                <strong>Veredito:</strong> serve para quem quer timer e controle em modelo compacto e aceita uma base menor de avaliações.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 5: Britânia Air 8L BCL08A -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-slate-800 px-6 py-4">
+            <h3 class="text-white font-black text-xl">5º lugar - Britânia Air 8L BCL08A Climatizador 4 em 1</h3>
+            <p class="text-slate-300 text-sm mt-1">Produto novo, ainda sem histórico: versão 127V sem avaliações na data da consulta</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+              <img src="/images/melhor-climatizador-de-ar/britania-air-8l-bcl08a-climatizador.webp" alt="Britânia Air 8L BCL08A Climatizador 4 em 1" width="264" height="640" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <p class="text-slate-700 text-sm leading-relaxed mb-4">
+                A ficha é interessante, mas a página da versão 127V mostrava 0 avaliações em 29 de setembro de 2026. Sem nota nem histórico de compra, não há base estatística para saber se dura, faz barulho ou esfria bem. Por isso ficou em último, e não por ser um modelo ruim.
+              </p>
+              <a href="https://www.amazon.com.br/dp/B0GKQPKFWL?tag=mundodossobre-20" target="_blank" rel="nofollow noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon</a>
+              <h4 class="font-bold text-slate-800 mb-3">Ficha Técnica</h4>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Reservatório:</strong> 8 L</li>
+                <li><strong>Potência:</strong> 80 W, 127 V, filtro colmeia</li>
+                <li><strong>Controle:</strong> painel touch, controle remoto e timer de 1, 2, 4 e 8 horas</li>
+                <li><strong>Porte:</strong> 5,2 kg, 29 x 29 x 65 cm</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Reservatório de 8 L, o segundo maior da lista</li>
+                    <li>Painel touch e timer com quatro faixas</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Nenhuma avaliação na versão 127V</li>
+                    <li>Anúncio mistura dados: a ficha cita Philco ACL05A, mas título, texto e foto são do Britânia BCL08A</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mt-4">
+                <strong>Veredito:</strong> confira o modelo na página antes de comprar. O ideal é esperar as primeiras avaliações.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <h2 id="como-escolher" class="text-2xl font-bold text-slate-900 mb-4">Melhor climatizador de ar frio: como escolher pelo ambiente</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Não há norma única de metros quadrados por aparelho. Use a tabela como referência, baseada nas fichas dos anúncios.
+        </p>
+        <div class="overflow-x-auto mb-6">
+          <table class="w-full text-sm border-collapse">
+            <thead>
+              <tr class="bg-slate-100">
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Ambiente</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">O que priorizar</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Modelos da lista</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-white">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Quarto pequeno ou escritório</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Baixo ruído, timer e modo dormir</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Midea AKAF1, Philco PCL05A</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Sala ou quarto médio</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Reservatório de 8 L ou mais</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Britânia Air 8L, Ventisol</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Ambiente grande, até 20 m²</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Maior reservatório</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Ventisol CLIN16-01</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Pouco espaço no chão</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Formato torre</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">WAP Air Fresh</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <h3 class="text-lg font-bold text-slate-900 mb-3">Climatizador para quarto: o que olhar</h3>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Para dormir, ruído e timer contam mais que potência. Só o Midea informa decibéis (53 dB) e tem modo dormir. Como o aparelho umedece o ar, mantenha alguma ventilação e não deixe o jato direto na cama.
+        </p>
+        <h3 class="text-lg font-bold text-slate-900 mb-3">127V ou 220V: confira antes de ligar</h3>
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          Todos os cinco links deste ranking são da versão 127V. Alguns desses modelos têm versão 220V em anúncio separado, e ligar na tensão errada queima o aparelho. Confira a tomada e a etiqueta do produto.
+        </p>
+        <h2 id="consumo" class="text-2xl font-bold text-slate-900 mb-4">Quanto um climatizador gasta de energia?</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Pouco: entre 14,4 e 31,2 kWh por mês, ou cerca de R$ 14 a R$ 31, com 8 horas por dia. A conta é watts, vezes horas por dia, vezes 30 dias, dividido por 1.000, com a tarifa média de R$ 0,98 por kWh da nossa <a href="/quanto-gasta-de-energia-eletrodomesticos" class="text-orange-500 font-semibold hover:underline">calculadora de consumo de energia</a> (julho/2026). Na sua conta, vale o kWh da fatura, que muda por distribuidora e por <a href="https://www.gov.br/aneel/pt-br/assuntos/tarifas/bandeiras-tarifarias" target="_blank" rel="noopener noreferrer" class="text-purple-600 font-semibold hover:underline">bandeira tarifária da ANEEL</a>.
+        </p>
+        <div class="overflow-x-auto mb-6">
+          <table class="w-full text-sm border-collapse">
+            <thead>
+              <tr class="bg-slate-100">
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Modelo</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Consumo por mês</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Custo por mês</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-white">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Midea AKAF1 (60 W)</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">14,4 kWh</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">cerca de R$ 14</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Philco e Britânia (80 W)</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">19,2 kWh</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">cerca de R$ 19</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">WAP Air Fresh (90 W)</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">21,6 kWh</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">cerca de R$ 21</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Ventisol CLIN16-01 (130 W)</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">31,2 kWh</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">cerca de R$ 31</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          Para comparar com ar-condicionado, veja o <a href="https://www.gov.br/inmetro/pt-br/assuntos/regulamentacao/avaliacao-da-conformidade/programa-brasileiro-de-etiquetagem/tabelas-de-eficiencia-energetica/condicionadores-de-ar" target="_blank" rel="noopener noreferrer" class="text-purple-600 font-semibold hover:underline">Programa Brasileiro de Etiquetagem do Inmetro</a> e o <a href="https://www.gov.br/mme/pt-br/assuntos/ee/procel" target="_blank" rel="noopener noreferrer" class="text-purple-600 font-semibold hover:underline">Selo Procel</a>.
+        </p>
+        <h2 id="limpeza" class="text-2xl font-bold text-slate-900 mb-4">Como limpar e cuidar do climatizador?</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Troque a água com frequência e limpe o filtro conforme o manual. Água parada acumula sujeira e pode virar criadouro de mosquito, e o <a href="https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/dengue" target="_blank" rel="noopener noreferrer" class="text-purple-600 font-semibold hover:underline">Ministério da Saúde</a> orienta remover recipientes que possam se transformar em criadouros.
+        </p>
+        <ul class="space-y-2 text-sm text-slate-700 mb-10">
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Parado por dias:</strong> esvazie e seque o tanque.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Filtro colmeia:</strong> segura umidade e impurezas, então limpe conforme o manual.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Se inclinar e vazar água:</strong> desligue da tomada, retire o reservatório e deixe secar por 24 horas, orienta o manual do Midea.</span></li>
+        </ul>
+        <h2 id="erros-comuns" class="text-2xl font-bold text-slate-900 mb-4">Quais são os erros mais comuns ao comprar um climatizador?</h2>
+        <ul class="list-disc list-inside space-y-2 text-slate-700 mb-10 ml-2">
+          <li><strong>Esperar efeito de ar-condicionado:</strong> o climatizador refresca, mas não gela um ambiente fechado.</li>
+          <li><strong>Comprar para lugar úmido:</strong> o rendimento cai bastante com o ar saturado.</li>
+          <li><strong>Ignorar a voltagem:</strong> 127V e 220V são anúncios diferentes.</li>
+          <li><strong>Olhar só a nota:</strong> 4,0 com 2 avaliações pesa menos que 4,5 com 1.823.</li>
+        </ul>
+        <h2 id="qual-escolher" class="text-2xl font-bold text-slate-900 mb-4">Qual climatizador escolher para o seu caso?</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Sem tempo para comparar, vá no Midea AKAF1: maior nota, maior base de avaliações e menor potência. Sala grande pede o Ventisol. Pouco espaço, a torre WAP.
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-6">
+          Antes de fechar, confira voltagem, preço atual e avaliações na página do produto.
+        </p>
+        <h2 id="faq" class="text-2xl font-bold text-slate-900 mb-6">Perguntas frequentes</h2>
+        <div class="space-y-3 mb-10">
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Climatizador é melhor que ventilador?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Em clima quente e seco, costuma ser, porque o ar passa por um filtro umedecido e chega mais fresco. Em lugar úmido, o efeito cai. E ele pede água e limpeza.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Climatizador para quarto funciona?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Funciona melhor em quarto pequeno e ar seco. Prefira baixo ruído, timer e modo dormir, como o Midea AKAF1, que a ficha da Amazon indica para pequenos quartos e registra 53 dB.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Qual o melhor climatizador de ar frio?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Neste ranking, o Midea AKAF1: maior nota (4,6/5), maior base de avaliações e duas caixas de gel para reforçar o frescor. Nenhum climatizador evaporativo gela como um ar-condicionado.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Climatizador gasta muita energia?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Não. Os cinco modelos têm entre 60 W e 130 W. Usados 8 horas por dia por 30 dias, com a tarifa média de R$ 0,98 por kWh da nossa calculadora (julho/2026), o gasto vai de cerca de R$ 14 a R$ 31 por mês.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Climatizador funciona em cidade úmida?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Funciona pior. As fichas da Amazon de Midea e Britânia indicam climas secos, e o resfriamento cai quando o ar já está saturado. Em região litorânea, ventilador ou ar-condicionado fazem mais sentido.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Como foi feito este ranking de climatizadores?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Ordenamos os cinco modelos por nota combinada com volume de avaliações, não só pela estrela. Usamos dados públicos da Amazon Brasil de 29 de setembro de 2026 e as fichas dos anúncios. Não testamos os aparelhos em casa.
+            </div>
+          </details>
+        </div>
+
+        <!-- Schema FAQ -->
+        <script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Climatizador é melhor que ventilador?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Em clima quente e seco, costuma ser, porque o ar passa por um filtro umedecido e chega mais fresco. Em lugar úmido, o efeito cai. E ele pede água e limpeza."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Climatizador para quarto funciona?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Funciona melhor em quarto pequeno e ar seco. Prefira baixo ruído, timer e modo dormir, como o Midea AKAF1, que a ficha da Amazon indica para pequenos quartos e registra 53 dB."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Qual o melhor climatizador de ar frio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Neste ranking, o Midea AKAF1: maior nota (4,6/5), maior base de avaliações e duas caixas de gel para reforçar o frescor. Nenhum climatizador evaporativo gela como um ar-condicionado."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Climatizador gasta muita energia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Não. Os cinco modelos têm entre 60 W e 130 W. Usados 8 horas por dia por 30 dias, com a tarifa média de R$ 0,98 por kWh da nossa calculadora (julho/2026), o gasto vai de cerca de R$ 14 a R$ 31 por mês."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Climatizador funciona em cidade úmida?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Funciona pior. As fichas da Amazon de Midea e Britânia indicam climas secos, e o resfriamento cai quando o ar já está saturado. Em região litorânea, ventilador ou ar-condicionado fazem mais sentido."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Como foi feito este ranking de climatizadores?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ordenamos os cinco modelos por nota combinada com volume de avaliações, não só pela estrela. Usamos dados públicos da Amazon Brasil de 29 de setembro de 2026 e as fichas dos anúncios. Não testamos os aparelhos em casa."
+      }
+    }
+  ]
+})} />
+
+        <!-- Schema ItemList com aggregateRating (Product de afiliado, sem offers) -->
+        <script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Melhor Climatizador de Ar: os 5 Mais Vendidos de 2026",
+  "itemListOrder": "https://schema.org/ItemListOrderAscending",
+  "numberOfItems": 5,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "Product",
+        "name": "Midea AKAF1 Climatizador de Ar Frio 60W",
+        "image": "https://www.casaemalta.com.br/images/melhor-climatizador-de-ar/midea-akaf1-climatizador-de-ar-frio.webp",
+        "description": "Climatizador de ar frio Midea AKAF1, 60 W, reservatório de 4,5 L, 127 V, com controle remoto e timer.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Midea"
+        },
+        "url": "https://www.amazon.com.br/dp/B08377D9YS?tag=mundodossobre-20",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.6",
+          "reviewCount": "8035",
+          "bestRating": "5",
+          "worstRating": "1"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "Product",
+        "name": "WAP Air Fresh 4 em 1 Climatizador de Torre",
+        "image": "https://www.casaemalta.com.br/images/melhor-climatizador-de-ar/wap-air-fresh-climatizador-torre.webp",
+        "description": "Climatizador de torre WAP Air Fresh 4 em 1, 90 W, reservatório de 3 L, 127 V, com reservatório para essência.",
+        "brand": {
+          "@type": "Brand",
+          "name": "WAP"
+        },
+        "url": "https://www.amazon.com.br/dp/B0DCL4NW6J?tag=mundodossobre-20",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.5",
+          "reviewCount": "1823",
+          "bestRating": "5",
+          "worstRating": "1"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "Product",
+        "name": "Ventisol CLIN16-01 Climatizador 16 L",
+        "image": "https://www.casaemalta.com.br/images/melhor-climatizador-de-ar/ventisol-clin16-01-climatizador-16l.webp",
+        "description": "Climatizador Ventisol CLIN16-01, reservatório de 16 L, 130 W, 127 V, com compartimento de gelo.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Ventisol"
+        },
+        "url": "https://www.amazon.com.br/dp/B0CCBGXKLP?tag=mundodossobre-20",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.2",
+          "reviewCount": "1104",
+          "bestRating": "5",
+          "worstRating": "1"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@type": "Product",
+        "name": "Philco PCL05A Climatizador 4 em 1",
+        "image": "https://www.casaemalta.com.br/images/melhor-climatizador-de-ar/philco-pcl05a-climatizador-4-em-1.webp",
+        "description": "Climatizador Philco PCL05A 4 em 1, 80 W, 127 V, 3 velocidades, timer e controle remoto.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Philco"
+        },
+        "url": "https://www.amazon.com.br/dp/B0DGGWPDBS?tag=mundodossobre-20",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.1",
+          "reviewCount": "194",
+          "bestRating": "5",
+          "worstRating": "1"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "Britânia Air 8L BCL08A Climatizador 4 em 1",
+      "url": "https://www.amazon.com.br/dp/B0GKQPKFWL?tag=mundodossobre-20"
+    }
+  ]
+})} />
+
+        <!-- Leia também -->
+        <p style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#c2410c;margin:24px 0 12px;">Leia também:</p>
+        <div style="display:flex;flex-direction:column;gap:12px;">
+          <a href="/lava-e-seca-ou-secadora-apartamento" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;flex-shrink:0;">
+              <img src="/images/lava-seca/capa-lava-seca.webp" alt="Lava e seca ou secadora de roupas para apartamento" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Lava e Seca ou Secadora de Roupas: Qual Compensa Mais para Quem Mora em Apartamento?</span>
+            </div>
+          </a>
+
+          <a href="/aspirador-vertical-ou-portatil-apartamento" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;flex-shrink:0;">
+              <img src="/images/aspirador-vertical-portatil/capa-aspirador-vertical-portatil.webp" alt="Aspirador vertical ou portátil para apartamento" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Aspirador Vertical ou Portátil Sem Fio para Apartamento</span>
+            </div>
+          </a>
+
+          <a href="/melhores-airfryers-2026" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;flex-shrink:0;">
+              <img src="/images/melhores-airfryers/capa-melhores-airfryers.webp" alt="Os melhores airfryers de 2026" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Os 7 Melhores Airfryers de 2026</span>
+            </div>
+          </a>
+
         </div>
 
       </div>
