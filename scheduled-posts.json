@@ -1,3 +1,10 @@
 {
-  "posts": []
+  "posts": [
+    {
+      "branch": "draft/melhor-climatizador-de-ar",
+      "slug": "melhor-climatizador-de-ar",
+      "publishDate": "2026-10-01",
+      "status": "pending"
+    }
+  ]
 }
