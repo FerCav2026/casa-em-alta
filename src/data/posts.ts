@@ -589,7 +589,7 @@ export const posts: Post[] = [
     titulo: 'Melhor Ar Condicionado Portátil 12000 BTUs: Vale a Pena?',
     resumo: 'Ar condicionado portátil 12000 BTUs: comparamos Hisense, Philco, Rheem e EOS por nota, avaliações, voltagem, ruído e consumo, e dizemos quando vale a pena.',
     tempo: '9 min de leitura',
-    imagem: '/images/ar-condicionado-portatil/capa-ar-condicionado-portatil-12000-btus-v2.webp',
+    imagem: '/images/ar-condicionado-portatil/capa-ar-condicionado-portatil-12000-btus-v3.webp',
     categoria: 'rankings-e-listas',
     categoriaLabel: 'Rankings e Listas',
     categoriaColor: 'bg-green-100 text-green-700',
