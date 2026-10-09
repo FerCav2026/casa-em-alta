@@ -391,6 +391,13 @@ const posts: Record<string, { titulo: string; descricao: string; categoria: stri
     dataCriacao: '2026-10-06',
     dataModificacao: '2026-10-06',
   },
+  'melhor-ventilador-de-coluna': {
+    titulo: 'Melhor Ventilador de Coluna: os 5 Mais Vendidos de 2026',
+    descricao: 'Melhor ventilador de coluna em 2026: compare Mondial, Arno, Mallory, WAP e Ventisol por nota, potência, pás e ruído e escolha o ideal para sua casa.',
+    categoria: 'Rankings e Listas',
+    dataCriacao: '2026-10-09',
+    dataModificacao: '2026-10-09',
+  },
 };
 
 export function getStaticPaths() {
@@ -448,6 +455,7 @@ export function getStaticPaths() {
     'melhor-frigideira-antiaderente': {},
     'melhor-climatizador-de-ar': {},
     'ar-condicionado-portatil-12000-btus': {},
+    'melhor-ventilador-de-coluna': {},
   }).map((slug) => ({ params: { slug } }));
 }
 
@@ -533,6 +541,7 @@ const isFrigideiraAntiaderenteFerro = slug === 'frigideira-antiaderente-ou-de-fe
 const isMelhorFrigideiraAntiaderente = slug === 'melhor-frigideira-antiaderente';
 const isMelhorClimatizador = slug === 'melhor-climatizador-de-ar';
 const isArCondicionadoPortatil = slug === 'ar-condicionado-portatil-12000-btus';
+const isMelhorVentiladorColuna = slug === 'melhor-ventilador-de-coluna';
 
 const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isAirfryer ? '/images/airfryer/capa-airfryer.webp'
@@ -587,11 +596,12 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isMelhorFrigideiraAntiaderente ? '/images/melhores-frigideiras-2026/capa-melhores-frigideiras-antiaderentes-2026.webp'
   : isMelhorClimatizador ? '/images/melhor-climatizador-de-ar/capa-melhor-climatizador-de-ar.webp'
   : isArCondicionadoPortatil ? '/images/ar-condicionado-portatil/capa-ar-condicionado-portatil-12000-btus-v3.webp'
+  : isMelhorVentiladorColuna ? '/images/melhor-ventilador-de-coluna/capa-melhor-ventilador-de-coluna.webp'
   : undefined;
 ---
 
 <BaseLayout
-  title={isPanelaEletricaOuConvencional || isMelhoresCafeteiras || isProjetorShopee || isComoArrumarArmarios || isLavaSeca || isFrigideiraAntiaderenteFerro || isFrigideira || isMelhorFrigideiraAntiaderente || isMelhorClimatizador || isArCondicionadoPortatil ? post.titulo : `${post.titulo} - Casa em Alta`}
+  title={isPanelaEletricaOuConvencional || isMelhoresCafeteiras || isProjetorShopee || isComoArrumarArmarios || isLavaSeca || isFrigideiraAntiaderenteFerro || isFrigideira || isMelhorFrigideiraAntiaderente || isMelhorClimatizador || isArCondicionadoPortatil || isMelhorVentiladorColuna ? post.titulo : `${post.titulo} - Casa em Alta`}
   description={post.descricao}
   image={coverImage}
   type="article"
@@ -24241,6 +24251,16 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
             </div>
           </a>
 
+          <a href="/melhor-ventilador-de-coluna" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;flex-shrink:0;">
+              <img src="/images/melhor-ventilador-de-coluna/capa-melhor-ventilador-de-coluna.webp" alt="Melhor ventilador de coluna: os 5 mais vendidos de 2026" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Melhor Ventilador de Coluna: os 5 Mais Vendidos de 2026</span>
+            </div>
+          </a>
+
           <a href="/lava-e-seca-ou-secadora-apartamento" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
             <div style="width:200px;flex-shrink:0;">
               <img src="/images/lava-seca/capa-lava-seca.webp" alt="Lava e seca ou secadora de roupas para apartamento" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
@@ -24919,6 +24939,16 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
             </div>
           </a>
 
+          <a href="/melhor-ventilador-de-coluna" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;flex-shrink:0;">
+              <img src="/images/melhor-ventilador-de-coluna/capa-melhor-ventilador-de-coluna.webp" alt="Melhor ventilador de coluna: os 5 mais vendidos de 2026" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Melhor Ventilador de Coluna: os 5 Mais Vendidos de 2026</span>
+            </div>
+          </a>
+
           <a href="/melhor-climatizador-de-ar" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
             <div style="width:200px;flex-shrink:0;">
               <img src="/images/melhor-climatizador-de-ar/capa-melhor-climatizador-de-ar.webp" alt="Melhor climatizador de ar: os 5 mais vendidos de 2026" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
@@ -24930,6 +24960,681 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
           </a>
 
 
+        </div>
+
+      </div>
+    )}
+
+
+    {isMelhorVentiladorColuna && (
+      <div>
+
+        <!-- Capa -->
+        <div class="rounded-2xl overflow-hidden mb-8 shadow-md">
+          <img
+            src="/images/melhor-ventilador-de-coluna/capa-melhor-ventilador-de-coluna.webp"
+            alt="Melhor ventilador de coluna ligado ao lado do sofá em uma sala de apartamento"
+            width="1280"
+            height="720"
+            class="w-full h-auto object-cover"
+            loading="eager"
+          />
+        </div>
+
+        <p class="text-xs text-slate-400 mb-6">Atualizado em outubro de 2026</p>
+
+        <!-- Introdução -->
+        <div class="bg-orange-50 border border-orange-100 rounded-2xl p-6 mb-8">
+          <p class="text-slate-800 text-base leading-relaxed mb-3">
+            O melhor ventilador de coluna para a maioria das casas é o Mondial VTX-40C-8P Super Turbo: 8 pás, 140 W, hélice de 40 cm e nota 4,6/5 em mais de 3.400 avaliações somando as versões 127V e 220V. É o único da lista com link para as duas voltagens aqui no artigo.
+          </p>
+          <p class="text-slate-800 text-base leading-relaxed mb-3">
+            Quem quer dormir com o ventilador ligado tem no Arno X-TREME 7 a mesma nota, 4,6/5, e um modo noturno. Se o controle remoto é prioridade, o Mallory Max Control é o único dos cinco que traz um.
+          </p>
+          <p class="text-slate-800 text-base leading-relaxed">
+            Não testei esses ventiladores em casa. O ranking cruza nota, volume de avaliações, ficha técnica e recursos, com dados que consultei na Amazon Brasil em 09/10/2026.
+          </p>
+        </div>
+
+        <!-- TL;DR -->
+        <div class="bg-purple-50 border border-purple-100 rounded-2xl p-6 mb-10">
+          <p class="text-slate-800 font-bold text-base mb-3">Em resumo</p>
+          <p class="text-sm text-slate-700 leading-relaxed">
+            Uso geral: <strong>Mondial VTX-40C-8P</strong>. Quarto: <strong>Arno X-TREME 7</strong>. Controle remoto: <strong>Mallory Max Control</strong>. Sala grande: <strong>WAP Flow Turbo</strong>, com selo PROCEL. Mais avaliado: <strong>Ventisol Turbo 6</strong>. Confira a voltagem antes de comprar.
+          </p>
+        </div>
+
+        <!-- Índice -->
+        <nav class="border border-slate-200 rounded-2xl p-6 mb-10 bg-white">
+          <p class="font-bold text-slate-800 mb-3">Índice</p>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#tabela-comparativa" class="text-orange-500 hover:text-orange-600 font-medium">Tabela comparativa dos 5 ventiladores de coluna</a></li>
+            <li><a href="#ranking" class="text-orange-500 hover:text-orange-600 font-medium">Ranking do melhor ventilador de coluna de 2026</a></li>
+            <li><a href="#silencioso" class="text-orange-500 hover:text-orange-600 font-medium">Ventilador de coluna silencioso: qual escolher?</a></li>
+            <li><a href="#controle-remoto" class="text-orange-500 hover:text-orange-600 font-medium">Ventilador de coluna com controle remoto vale a pena?</a></li>
+            <li><a href="#40cm-ou-50cm" class="text-orange-500 hover:text-orange-600 font-medium">Ventilador de coluna 40cm ou 50cm?</a></li>
+            <li><a href="#consumo" class="text-orange-500 hover:text-orange-600 font-medium">Quanto um ventilador de coluna gasta de energia?</a></li>
+            <li><a href="#voltagem" class="text-orange-500 hover:text-orange-600 font-medium">127V ou 220V: qual comprar?</a></li>
+            <li><a href="#inmetro-procel" class="text-orange-500 hover:text-orange-600 font-medium">Selo Inmetro e selo PROCEL</a></li>
+            <li><a href="#como-escolher" class="text-orange-500 hover:text-orange-600 font-medium">Como escolher um ventilador de coluna</a></li>
+            <li><a href="#erros-comuns" class="text-orange-500 hover:text-orange-600 font-medium">Erros comuns na compra</a></li>
+            <li><a href="#faq" class="text-orange-500 hover:text-orange-600 font-medium">Perguntas frequentes</a></li>
+          </ul>
+        </nav>
+
+        <h2 id="tabela-comparativa" class="text-2xl font-bold text-slate-900 mb-4">Tabela comparativa dos 5 ventiladores de coluna</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-5">
+          Dados das fichas do fabricante e dos anúncios na Amazon Brasil, na ordem do ranking.
+        </p>
+        <div class="overflow-x-auto mb-10">
+          <table class="w-full text-sm border-collapse">
+            <thead>
+              <tr class="bg-slate-100">
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Modelo</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Diâmetro</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Pás</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Potência</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Voltagem</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Nota (avaliações)</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Destaque</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-white">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Mondial VTX-40C-8P</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">40 cm</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">8</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">140 W</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">127V ou 220V</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">4,6/5 (2.105 e 1.328)</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Melhor no geral</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Arno X-TREME 7 VE72</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">40 cm</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">7</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">150 W</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">127V</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">4,6/5 (729)</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Modo noturno</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Mallory Max Control</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">40 cm</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">15</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">140 W</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">127V</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">4,5/5 (2.482)</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Controle remoto</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">WAP Flow Turbo</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">50 cm</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">8</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">180 W</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">127V</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">4,4/5 (4.367)</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Mais potente, selo PROCEL</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Ventisol Turbo 6 Premium</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">50 cm</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">6</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">135 W</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">127V</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">4,4/5 (5.063)</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Mais avaliado</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 id="ranking" class="text-2xl font-bold text-slate-900 mb-4">Ranking do melhor ventilador de coluna de 2026</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-6">
+          Primeiro conta a nota. Quando duas empatam, desempata o que atende mais casas: o Mondial passa o Arno por ter muito mais avaliações e link nas duas voltagens, e o WAP passa o Ventisol pelo selo PROCEL e pelos 45 W a mais de potência.
+        </p>
+
+        <!-- Produto 1: Mondial -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-orange-500 px-6 py-4">
+            <span class="inline-block bg-white text-orange-600 text-xs font-bold uppercase tracking-wide px-2.5 py-1 rounded-full mb-2">Melhor no geral</span>
+            <h3 class="text-white font-black text-xl">1º lugar - Ventilador de coluna Mondial VTX-40C-8P Super Turbo 8 Pás 40cm</h3>
+            <p class="text-orange-100 text-sm mt-1">Nota 4,6/5 em 2.105 avaliações (127V) e 4,6/5 em 1.328 avaliações (220V)</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+              <img src="/images/melhor-ventilador-de-coluna/mondial-vtx-40c-8p.webp" alt="Ventilador de coluna Mondial VTX-40C-8P Super Turbo 8 pás 40cm" width="233" height="600" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <p class="text-slate-700 text-sm leading-relaxed mb-4">
+                Junta a nota mais alta da lista, empatada com o Arno, à maior soma de avaliações entre os modelos de 40 cm. As 8 pás e a coluna que sobe até 1,50 m levam o vento para quem está sentado no sofá ou deitado na cama.
+              </p>
+              <a href="https://www.amazon.com.br/dp/B07YSS57X5?tag=casaemalta0e-20" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-3 transition-colors">Ver preço na Amazon (127V)</a>
+              <a href="https://www.amazon.com.br/dp/B07Z51KP17?tag=casaemalta0e-20" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon (220V)</a>
+              <h4 class="font-bold text-slate-800 mb-3">Ficha Técnica</h4>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Energia:</strong> 140 W, versões 127V e 220V em anúncios separados</li>
+                <li><strong>Hélice:</strong> 40 cm, 8 pás, 3 velocidades</li>
+                <li><strong>Ajustes:</strong> coluna regulável de 1,19 a 1,50 m, oscilação contínua e inclinação vertical</li>
+                <li><strong>Ruído:</strong> o fabricante fala em "baixo nível de ruído", sem informar decibéis</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Mais de 3.400 avaliações somando as duas versões</li>
+                    <li>Links para 127V e 220V, cada um em anúncio próprio</li>
+                    <li>Altura regulável em uma faixa de 31 cm</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Sem controle remoto nem modo noturno</li>
+                    <li>Ruído sem medição em decibéis na ficha</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mt-4">
+                <strong>Veredito:</strong> o melhor ventilador de coluna para quem quer um modelo simples, forte e com milhares de compradores satisfeitos, em qualquer voltagem.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 2: Arno -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-slate-800 px-6 py-4">
+            <span class="inline-block bg-white text-slate-800 text-xs font-bold uppercase tracking-wide px-2.5 py-1 rounded-full mb-2">Melhor para dormir (modo noturno)</span>
+            <h3 class="text-white font-black text-xl">2º lugar - Ventilador de coluna Arno X-TREME 7 VE72 40cm</h3>
+            <p class="text-slate-300 text-sm mt-1">Nota 4,6/5 em 729 avaliações</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+              <img src="/images/melhor-ventilador-de-coluna/arno-x-treme-7-ve72.webp" alt="Ventilador de coluna Arno X-TREME 7 VE72 40cm com 7 pás" width="214" height="600" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <p class="text-slate-700 text-sm leading-relaxed mb-4">
+                Mesma nota do Mondial, com um recurso que faz diferença à noite: o modo noturno entre as velocidades. É a opção de ventilador de coluna Arno do ranking.
+              </p>
+              <a href="https://www.amazon.com.br/dp/B0F8Y5473Y?tag=casaemalta0e-20" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon</a>
+              <h4 class="font-bold text-slate-800 mb-3">Ficha Técnica</h4>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Energia:</strong> 150 W, 127V (110V)</li>
+                <li><strong>Hélice:</strong> 40 cm, 7 pás, 3 velocidades com modo noturno</li>
+                <li><strong>Ajustes:</strong> oscilação de 80º, 4 inclinações verticais, altura até 1,5 m</li>
+                <li><strong>Alcance e cabo:</strong> ar até 11 m, segundo o fabricante, e cabo de 2,4 m</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Modo noturno para dormir com ele ligado</li>
+                    <li>Cabo de 2,4 m, o mais longo da lista</li>
+                    <li>4 posições de inclinação</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Base de avaliações menor que a dos outros quatro</li>
+                    <li>Link só da versão 127V</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mt-4">
+                <strong>Veredito:</strong> o melhor da lista para quarto, sobretudo para quem tem sono leve e não quer acordar com o vento forte.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin:32px 0;font-family:sans-serif;">
+          <p style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#c2410c;margin:0 0 12px;">Leia também:</p>
+          <a href="/melhor-climatizador-de-ar" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;min-width:200px;overflow:hidden;">
+              <img src="/images/melhor-climatizador-de-ar/capa-melhor-climatizador-de-ar.webp" alt="Melhor climatizador de ar: os 5 mais vendidos de 2026" width="200" height="113" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy" />
+            </div>
+            <div style="padding:20px 22px;display:flex;align-items:center;">
+              <p style="margin:0;font-size:15px;font-weight:500;line-height:1.5;color:#1a1a1a;">Melhor Climatizador de Ar: os 5 Mais Vendidos de 2026</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Produto 3: Mallory -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-slate-800 px-6 py-4">
+            <span class="inline-block bg-white text-slate-800 text-xs font-bold uppercase tracking-wide px-2.5 py-1 rounded-full mb-2">Melhor com controle remoto</span>
+            <h3 class="text-white font-black text-xl">3º lugar - Ventilador de coluna com controle remoto Mallory Max Control 40cm</h3>
+            <p class="text-slate-300 text-sm mt-1">Nota 4,5/5 em 2.482 avaliações</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+              <img src="/images/melhor-ventilador-de-coluna/mallory-max-control.webp" alt="Ventilador de coluna Mallory Max Control com controle remoto e hélice de 15 pás" width="226" height="600" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <p class="text-slate-700 text-sm leading-relaxed mb-4">
+                O único dos cinco com controle remoto. A hélice de 15 pás com grade TS (Turbina Silenciosa) é a aposta da marca para entregar vazão sem barulho alto.
+              </p>
+              <a href="https://www.amazon.com.br/dp/B0BTR79W95?tag=casaemalta0e-20" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon</a>
+              <h4 class="font-bold text-slate-800 mb-3">Ficha Técnica</h4>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Energia:</strong> 140 W, 127V</li>
+                <li><strong>Hélice:</strong> 40 cm, 15 pás, grade TS, vazão de 1,30 m³/s</li>
+                <li><strong>Ajustes:</strong> controle remoto, inclinação vertical e alça para carregar</li>
+                <li><strong>Porte:</strong> 50 x 50 x 130 cm, 5,9 kg, cabo de 1,35 m</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Único dos cinco com controle remoto</li>
+                    <li>Único que informa a vazão de ar</li>
+                    <li>Alça para mudar de cômodo</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Cabo de 1,35 m, o mais curto da lista</li>
+                    <li>5,9 kg, o mais pesado dos cinco</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mt-4">
+                <strong>Veredito:</strong> para quem não quer levantar da cama ou do sofá para trocar a velocidade.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 4: WAP -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-slate-800 px-6 py-4">
+            <span class="inline-block bg-white text-slate-800 text-xs font-bold uppercase tracking-wide px-2.5 py-1 rounded-full mb-2">Mais potente (selo PROCEL)</span>
+            <h3 class="text-white font-black text-xl">4º lugar - Ventilador de coluna WAP Flow Turbo 50cm</h3>
+            <p class="text-slate-300 text-sm mt-1">Nota 4,4/5 em 4.367 avaliações e mais de mil compras no mês</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+              <img src="/images/melhor-ventilador-de-coluna/wap-flow-turbo-50cm.webp" alt="Ventilador de coluna WAP Flow Turbo 50cm com 8 pás e selo PROCEL" width="234" height="600" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <p class="text-slate-700 text-sm leading-relaxed mb-4">
+                O mais potente da lista e o único com selo PROCEL de eficiência. Em 09/10/2026, o anúncio mostrava mais de mil compras no mês anterior.
+              </p>
+              <a href="https://www.amazon.com.br/dp/B0BT4X3MJR?tag=casaemalta0e-20" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon</a>
+              <h4 class="font-bold text-slate-800 mb-3">Ficha Técnica</h4>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Energia:</strong> 180 W, 127V, selo PROCEL</li>
+                <li><strong>Hélice:</strong> 50 cm, 8 pás, tecnologia silent flow</li>
+                <li><strong>Velocidades:</strong> 3 (silencioso, brisa e turbo)</li>
+                <li><strong>Ajustes:</strong> inclinação até 45°, oscilação até 90°, 5,6 kg</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Mais potência e hélice maior</li>
+                    <li>Selo PROCEL de eficiência</li>
+                    <li>Velocidade "silencioso" dedicada</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Maior consumo da lista, por ter mais potência</li>
+                    <li>Ocupa mais espaço que os de 40 cm</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mt-4">
+                <strong>Veredito:</strong> para sala grande, varanda ou cômodo quente que pede mais vento.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 5: Ventisol -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-slate-800 px-6 py-4">
+            <span class="inline-block bg-white text-slate-800 text-xs font-bold uppercase tracking-wide px-2.5 py-1 rounded-full mb-2">Mais avaliado</span>
+            <h3 class="text-white font-black text-xl">5º lugar - Ventilador de coluna Ventisol Turbo 6 Pás Premium 50cm</h3>
+            <p class="text-slate-300 text-sm mt-1">Nota 4,4/5 em 5.063 avaliações, a maior base da lista</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+              <img src="/images/melhor-ventilador-de-coluna/ventisol-turbo-6-50cm.webp" alt="Ventilador de coluna Ventisol Turbo 6 pás Premium 50cm" width="235" height="600" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <p class="text-slate-700 text-sm leading-relaxed mb-4">
+                Nenhum outro da lista tem tantas avaliações, e o anúncio tinha o selo "Escolha da Amazon" em 09/10/2026. Hélice de 50 cm com a menor potência dos cinco.
+              </p>
+              <a href="https://www.amazon.com.br/dp/B074JH6WRT?tag=casaemalta0e-20" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon</a>
+              <h4 class="font-bold text-slate-800 mb-3">Ficha Técnica</h4>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Energia:</strong> 135 W, 127V</li>
+                <li><strong>Hélice:</strong> 50 cm, 6 pás, 3 velocidades</li>
+                <li><strong>Ajustes:</strong> oscilação automática, altura e inclinação manuais</li>
+                <li><strong>Peso:</strong> 3 kg, o mais leve dos cinco</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Maior número de avaliações</li>
+                    <li>Menor potência, menor consumo</li>
+                    <li>Leve para levar de um cômodo a outro</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Só 6 pás, o menor número da lista</li>
+                    <li>Sem modo noturno e sem controle remoto</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mt-4">
+                <strong>Veredito:</strong> para quem quer hélice de 50 cm, o modelo mais leve da lista e a maior base de compradores.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <h2 id="silencioso" class="text-2xl font-bold text-slate-900 mb-4">Ventilador de coluna silencioso: qual escolher?</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Nenhum dos cinco informa o ruído em decibéis, então a comparação fica nos recursos que cada marca usa para baixar o barulho:
+        </p>
+        <ul class="space-y-2 text-sm text-slate-700 mb-4">
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Arno X-TREME 7:</strong> modo noturno, pensado para dormir.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>WAP Flow Turbo:</strong> tecnologia silent flow e uma velocidade chamada "silencioso".</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Mallory Max Control:</strong> grade TS (Turbina Silenciosa) e 15 pás.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Mondial VTX-40C-8P:</strong> o fabricante promete "baixo nível de ruído".</span></li>
+        </ul>
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          Hélice com mais pás tende a mover o mesmo ar girando mais devagar, o que costuma soar mais baixo. Mas a velocidade pesa mais: qualquer um deles na 1 faz menos barulho que na 3. Grade bem encaixada evita o zumbido de peça solta.
+        </p>
+
+        <h2 id="controle-remoto" class="text-2xl font-bold text-slate-900 mb-4">Ventilador de coluna com controle remoto vale a pena?</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Vale para quem usa o ventilador no quarto e muda a velocidade no meio da noite, ou para quem tem dificuldade de se abaixar até os botões. Nesta lista, só o Mallory Max Control tem controle remoto.
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          Em troca, ele tem o cabo mais curto dos cinco, 1,35 m, então pode precisar de tomada perto da cama. Se o controle não faz diferença para você, o Mondial e o Arno têm nota maior.
+        </p>
+
+        <h2 id="40cm-ou-50cm" class="text-2xl font-bold text-slate-900 mb-4">Ventilador de coluna 40cm ou 50cm?</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          O ventilador de coluna 40cm atende bem quarto e sala pequena e ocupa menos espaço. Três dos cinco modelos têm esse tamanho: Mondial, Arno e Mallory.
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          O de 50 cm empurra mais ar e faz sentido em sala ampla, varanda ou cômodo com várias pessoas. Mas diâmetro não diz tudo: o Ventisol de 50 cm tem 135 W, menos que o Arno de 40 cm. Olhe também a potência e o número de pás. Só o Mallory informa a vazão: 1,30 m³/s com 140 W. Se os outros não trazem esse número no anúncio, a etiqueta ENCE na caixa traz.
+        </p>
+
+        <h2 id="consumo" class="text-2xl font-bold text-slate-900 mb-4">Quanto um ventilador de coluna gasta de energia?</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Pouco. A conta é potência em watts vezes horas de uso, dividido por 1.000, que dá o consumo em kWh. Com 8 horas por dia durante 30 dias, na velocidade máxima:
+        </p>
+        <div class="overflow-x-auto mb-6">
+          <table class="w-full text-sm border-collapse">
+            <thead>
+              <tr class="bg-slate-100">
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Modelo</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Potência</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Consumo por mês</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-white">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Ventisol Turbo 6</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">135 W</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">32,4 kWh</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Mondial e Mallory</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">140 W</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">33,6 kWh</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Arno X-TREME 7</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">150 W</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">36 kWh</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">WAP Flow Turbo</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">180 W</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">43,2 kWh</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          Nas velocidades mais baixas o consumo cai. Para comparar: o <a href="/ar-condicionado-portatil-12000-btus" class="text-orange-500 font-semibold hover:underline">ar condicionado portátil de 12000 BTUs</a> mais vendido tem 1100 W, quase oito vezes a potência de um ventilador de 140 W. Para saber quanto isso dá na sua fatura, coloque os watts na nossa <a href="/quanto-gasta-de-energia-eletrodomesticos" class="text-orange-500 font-semibold hover:underline">calculadora de consumo de energia</a>, que usa a tarifa da sua distribuidora.
+        </p>
+
+        <h2 id="voltagem" class="text-2xl font-bold text-slate-900 mb-4">127V ou 220V: qual comprar?</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          A da tomada onde ele vai ficar ("110V" e "127V" são o mesmo padrão no comércio). O Mondial é o único da lista com as duas versões, cada uma com anúncio próprio. Os links dos outros quatro são da versão 127V.
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          Ligar um aparelho 127V em tomada 220V pode queimar o motor. Como a potência é baixa, não precisa de tomada exclusiva.
+        </p>
+
+        <h2 id="inmetro-procel" class="text-2xl font-bold text-slate-900 mb-4">Selo Inmetro e selo PROCEL: o que conferir</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Ventilador de coluna (de pedestal, no termo técnico) tem certificação compulsória no Brasil: só pode ser fabricado, importado e vendido com o selo do Inmetro, conforme a <a href="https://www.gov.br/inmetro/pt-br/acesso-a-informacao/perguntas-frequentes/avaliacao-da-conformidade/ventiladores-de-mesa" target="_blank" rel="noopener noreferrer" class="text-purple-600 font-semibold hover:underline">página do Inmetro sobre ventiladores</a>. Procure o selo do Inmetro e a etiqueta de eficiência (ENCE) no produto e na embalagem, principalmente em anúncio de vendedor desconhecido. A etiqueta mostra a vazão de ar e a eficiência, os dados que a maioria dos anúncios não traz.
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          Já o selo PROCEL é outra coisa: indica os aparelhos mais eficientes da categoria. É concedido pelo <a href="https://www.gov.br/mme/pt-br/assuntos/ee/procel" target="_blank" rel="noopener noreferrer" class="text-purple-600 font-semibold hover:underline">Programa Nacional de Conservação de Energia Elétrica (Procel)</a>, do Ministério de Minas e Energia. Na lista, só o WAP Flow Turbo informa ter o selo.
+        </p>
+
+        <h2 id="como-escolher" class="text-2xl font-bold text-slate-900 mb-4">Como escolher um ventilador de coluna</h2>
+        <ul class="space-y-2 text-sm text-slate-700 mb-10">
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Tamanho do cômodo:</strong> 40 cm para quarto e sala pequena, 50 cm para ambiente amplo.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Uso noturno:</strong> modo noturno ou velocidade silenciosa, como no Arno e no WAP.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Altura:</strong> coluna regulável ajuda a mirar o vento na cama ou no sofá. O Mondial vai de 1,19 a 1,50 m.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Grade removível:</strong> facilita tirar o pó das pás, que acumula rápido no verão.</span></li>
+        </ul>
+
+        <h2 id="erros-comuns" class="text-2xl font-bold text-slate-900 mb-4">Erros comuns na compra</h2>
+        <ul class="list-disc list-inside space-y-2 text-slate-700 mb-10 ml-2">
+          <li><strong>Comprar a voltagem errada:</strong> cada versão tem anúncio próprio. Confira antes de clicar.</li>
+          <li><strong>Olhar só a nota:</strong> 4,6 com 700 avaliações pesa diferente de 4,4 com 5 mil.</li>
+          <li><strong>Esperar que esfrie o ar:</strong> ventilador só movimenta o ar. Para baixar a temperatura, veja <a href="/melhor-climatizador-de-ar" class="text-orange-500 font-semibold hover:underline">climatizador</a> ou ar-condicionado.</li>
+          <li><strong>Ignorar o selo do Inmetro:</strong> sem ele, o produto não poderia estar à venda.</li>
+        </ul>
+
+        <h2 id="faq" class="text-2xl font-bold text-slate-900 mb-6">Perguntas frequentes</h2>
+        <div class="space-y-3 mb-10">
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Ventilador de coluna gasta muita energia?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Não. Um modelo de 140 W ligado 8 horas por dia durante 30 dias consome 33,6 kWh na velocidade máxima. O mais potente da lista, de 180 W, fica em 43,2 kWh. É uma fração do que gasta um ar-condicionado.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Ventilador de coluna ou de mesa: qual é melhor?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              O de coluna leva o vento mais alto, na altura de quem está sentado ou deitado na cama, e não ocupa móvel. O de mesa é menor e mais fácil de guardar, bom para escrivaninha ou cômodo pequeno.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Qual o ventilador de coluna mais silencioso?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Nenhum dos cinco informa o ruído em decibéis. Para dormir, os mais indicados pelos recursos são o Arno X-TREME 7, com modo noturno, e o WAP Flow Turbo, com velocidade silenciosa e tecnologia silent flow.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Ventilador de coluna Arno ou Mondial?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Os dois têm nota 4,6/5. O Mondial VTX-40C-8P tem mais avaliações, 8 pás e link para as duas voltagens. O Arno X-TREME 7 tem modo noturno e cabo mais longo. Para quarto, Arno. Para uso geral ou casa 220V, Mondial.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Ventilador de coluna precisa ter selo do Inmetro?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Precisa. A certificação de ventiladores é compulsória no Brasil, então todo modelo à venda deve ter o selo. O selo PROCEL é outra coisa: aparece só nos mais eficientes.
+            </div>
+          </details>
+        </div>
+
+        <!-- Schema FAQ -->
+        <script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Ventilador de coluna gasta muita energia?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Não. Um modelo de 140 W ligado 8 horas por dia durante 30 dias consome 33,6 kWh na velocidade máxima. O mais potente da lista, de 180 W, fica em 43,2 kWh. É uma fração do que gasta um ar-condicionado." }
+    },
+    {
+      "@type": "Question",
+      "name": "Ventilador de coluna ou de mesa: qual é melhor?",
+      "acceptedAnswer": { "@type": "Answer", "text": "O de coluna leva o vento mais alto, na altura de quem está sentado ou deitado na cama, e não ocupa móvel. O de mesa é menor e mais fácil de guardar, bom para escrivaninha ou cômodo pequeno." }
+    },
+    {
+      "@type": "Question",
+      "name": "Qual o ventilador de coluna mais silencioso?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Nenhum dos cinco informa o ruído em decibéis. Para dormir, os mais indicados pelos recursos são o Arno X-TREME 7, com modo noturno, e o WAP Flow Turbo, com velocidade silenciosa e tecnologia silent flow." }
+    },
+    {
+      "@type": "Question",
+      "name": "Ventilador de coluna Arno ou Mondial?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Os dois têm nota 4,6/5. O Mondial VTX-40C-8P tem mais avaliações, 8 pás e link para as duas voltagens. O Arno X-TREME 7 tem modo noturno e cabo mais longo. Para quarto, Arno. Para uso geral ou casa 220V, Mondial." }
+    },
+    {
+      "@type": "Question",
+      "name": "Ventilador de coluna precisa ter selo do Inmetro?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Precisa. A certificação de ventiladores é compulsória no Brasil, então todo modelo à venda deve ter o selo. O selo PROCEL é outra coisa: aparece só nos mais eficientes." }
+    }
+  ]
+})} />
+
+        <!-- Schema ItemList com aggregateRating (Product de afiliado, sem offers) -->
+        <script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Melhor Ventilador de Coluna: os 5 Mais Vendidos de 2026",
+  "itemListOrder": "https://schema.org/ItemListOrderAscending",
+  "numberOfItems": 5,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "Product",
+        "name": "Ventilador de Coluna Mondial VTX-40C-8P Super Turbo 8 Pás 40cm",
+        "image": "https://www.casaemalta.com.br/images/melhor-ventilador-de-coluna/mondial-vtx-40c-8p.webp",
+        "description": "Ventilador de coluna Mondial 40 cm, 8 pás, 140 W, 3 velocidades, coluna regulável de 1,19 a 1,50 m, versões 127 V e 220 V.",
+        "brand": { "@type": "Brand", "name": "Mondial" },
+        "url": "https://www.amazon.com.br/dp/B07YSS57X5?tag=casaemalta0e-20",
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.6", "reviewCount": "2105", "bestRating": "5", "worstRating": "1" }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "Product",
+        "name": "Ventilador de Coluna Arno X-TREME 7 VE72 40cm",
+        "image": "https://www.casaemalta.com.br/images/melhor-ventilador-de-coluna/arno-x-treme-7-ve72.webp",
+        "description": "Ventilador de coluna Arno 40 cm, 7 pás, 150 W, 3 velocidades com modo noturno, oscilação de 80 graus e altura até 1,5 m, 127 V.",
+        "brand": { "@type": "Brand", "name": "Arno" },
+        "url": "https://www.amazon.com.br/dp/B0F8Y5473Y?tag=casaemalta0e-20",
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.6", "reviewCount": "729", "bestRating": "5", "worstRating": "1" }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "Product",
+        "name": "Ventilador de Coluna Mallory Max Control com Controle Remoto",
+        "image": "https://www.casaemalta.com.br/images/melhor-ventilador-de-coluna/mallory-max-control.webp",
+        "description": "Ventilador de coluna Mallory 40 cm com controle remoto, hélice de 15 pás, grade Turbina Silenciosa, 140 W e vazão de 1,30 m³/s, 127 V.",
+        "brand": { "@type": "Brand", "name": "Mallory" },
+        "url": "https://www.amazon.com.br/dp/B0BTR79W95?tag=casaemalta0e-20",
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.5", "reviewCount": "2482", "bestRating": "5", "worstRating": "1" }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@type": "Product",
+        "name": "Ventilador de Coluna WAP Flow Turbo 50cm",
+        "image": "https://www.casaemalta.com.br/images/melhor-ventilador-de-coluna/wap-flow-turbo-50cm.webp",
+        "description": "Ventilador de coluna WAP 50 cm, 8 pás, 180 W, 3 velocidades (silencioso, brisa e turbo), selo PROCEL, 127 V.",
+        "brand": { "@type": "Brand", "name": "WAP" },
+        "url": "https://www.amazon.com.br/dp/B0BT4X3MJR?tag=casaemalta0e-20",
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.4", "reviewCount": "4367", "bestRating": "5", "worstRating": "1" }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "item": {
+        "@type": "Product",
+        "name": "Ventilador de Coluna Ventisol Turbo 6 Pás Premium 50cm",
+        "image": "https://www.casaemalta.com.br/images/melhor-ventilador-de-coluna/ventisol-turbo-6-50cm.webp",
+        "description": "Ventilador de coluna Ventisol 50 cm, 6 pás, 135 W, 3 velocidades, oscilação automática, 3 kg, 127 V.",
+        "brand": { "@type": "Brand", "name": "Ventisol" },
+        "url": "https://www.amazon.com.br/dp/B074JH6WRT?tag=casaemalta0e-20",
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.4", "reviewCount": "5063", "bestRating": "5", "worstRating": "1" }
+      }
+    }
+  ]
+})} />
+
+        <!-- Leia também -->
+        <p style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#c2410c;margin:24px 0 12px;">Leia também:</p>
+        <div style="display:flex;flex-direction:column;gap:12px;">
+          <a href="/ar-condicionado-portatil-12000-btus" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;flex-shrink:0;">
+              <img src="/images/ar-condicionado-portatil/capa-ar-condicionado-portatil-12000-btus-v3.webp" alt="Melhor ar condicionado portátil 12000 BTUs" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Melhor Ar Condicionado Portátil 12000 BTUs: Vale a Pena?</span>
+            </div>
+          </a>
+
+          <a href="/quanto-gasta-de-energia-eletrodomesticos" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;flex-shrink:0;">
+              <img src="/images/consumo-energia/capa-consumo-energia.webp" alt="Quanto gasta de energia cada eletrodoméstico" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Quanto Gasta de Energia Cada Eletrodoméstico? Calcule Aqui</span>
+            </div>
+          </a>
+
+          <a href="/maquina-de-gelo-portatil" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;flex-shrink:0;">
+              <img src="/images/maquina-gelo/capa-maquina-gelo.webp" alt="Máquina de gelo portátil" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Máquina de Gelo Portátil: Vale a Pena Ter em Casa?</span>
+            </div>
+          </a>
         </div>
 
       </div>
