@@ -599,7 +599,7 @@ export const posts: Post[] = [
     titulo: 'Melhor Ventilador de Coluna: os 5 Mais Vendidos de 2026',
     resumo: 'Melhor ventilador de coluna de 2026: comparamos Mondial, Arno, Mallory, WAP e Ventisol por nota, avaliações, pás, potência e consumo, e explicamos como escolher.',
     tempo: '9 min de leitura',
-    imagem: '/images/melhor-ventilador-de-coluna/capa-melhor-ventilador-de-coluna.webp',
+    imagem: '/images/melhor-ventilador-de-coluna/capa-melhor-ventilador-de-coluna-v2.webp',
     categoria: 'rankings-e-listas',
     categoriaLabel: 'Rankings e Listas',
     categoriaColor: 'bg-green-100 text-green-700',
