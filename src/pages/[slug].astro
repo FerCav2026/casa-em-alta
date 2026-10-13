@@ -398,6 +398,13 @@ const posts: Record<string, { titulo: string; descricao: string; categoria: stri
     dataCriacao: '2026-10-09',
     dataModificacao: '2026-10-09',
   },
+  'melhor-umidificador-de-ar-para-quarto': {
+    titulo: 'Melhor Umidificador de Ar para Quarto: Qual Comprar',
+    descricao: 'Melhor umidificador de ar para quarto: compare 5 modelos por litros, voltagem, nota e avaliações na Amazon e veja qual comprar para o ar seco do quarto.',
+    categoria: 'Rankings e Listas',
+    dataCriacao: '2026-10-13',
+    dataModificacao: '2026-10-13',
+  },
 };
 
 export function getStaticPaths() {
@@ -456,6 +463,7 @@ export function getStaticPaths() {
     'melhor-climatizador-de-ar': {},
     'ar-condicionado-portatil-12000-btus': {},
     'melhor-ventilador-de-coluna': {},
+    'melhor-umidificador-de-ar-para-quarto': {},
   }).map((slug) => ({ params: { slug } }));
 }
 
@@ -542,6 +550,7 @@ const isMelhorFrigideiraAntiaderente = slug === 'melhor-frigideira-antiaderente'
 const isMelhorClimatizador = slug === 'melhor-climatizador-de-ar';
 const isArCondicionadoPortatil = slug === 'ar-condicionado-portatil-12000-btus';
 const isMelhorVentiladorColuna = slug === 'melhor-ventilador-de-coluna';
+const isMelhorUmidificadorQuarto = slug === 'melhor-umidificador-de-ar-para-quarto';
 
 const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isAirfryer ? '/images/airfryer/capa-airfryer.webp'
@@ -597,11 +606,12 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isMelhorClimatizador ? '/images/melhor-climatizador-de-ar/capa-melhor-climatizador-de-ar.webp'
   : isArCondicionadoPortatil ? '/images/ar-condicionado-portatil/capa-ar-condicionado-portatil-12000-btus-v3.webp'
   : isMelhorVentiladorColuna ? '/images/melhor-ventilador-de-coluna/capa-melhor-ventilador-de-coluna-v2.webp'
+  : isMelhorUmidificadorQuarto ? '/images/melhor-umidificador-de-ar-para-quarto/capa-melhor-umidificador-de-ar-para-quarto.webp'
   : undefined;
 ---
 
 <BaseLayout
-  title={isPanelaEletricaOuConvencional || isMelhoresCafeteiras || isProjetorShopee || isComoArrumarArmarios || isLavaSeca || isFrigideiraAntiaderenteFerro || isFrigideira || isMelhorFrigideiraAntiaderente || isMelhorClimatizador || isArCondicionadoPortatil || isMelhorVentiladorColuna ? post.titulo : `${post.titulo} - Casa em Alta`}
+  title={isPanelaEletricaOuConvencional || isMelhoresCafeteiras || isProjetorShopee || isComoArrumarArmarios || isLavaSeca || isFrigideiraAntiaderenteFerro || isFrigideira || isMelhorFrigideiraAntiaderente || isMelhorClimatizador || isArCondicionadoPortatil || isMelhorVentiladorColuna || isMelhorUmidificadorQuarto ? post.titulo : `${post.titulo} - Casa em Alta`}
   description={post.descricao}
   image={coverImage}
   type="article"
@@ -24291,6 +24301,16 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
             </div>
           </a>
 
+
+          <a href="/melhor-umidificador-de-ar-para-quarto" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;flex-shrink:0;">
+              <img src="/images/melhor-umidificador-de-ar-para-quarto/capa-melhor-umidificador-de-ar-para-quarto.webp" alt="Melhor umidificador de ar para quarto" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Melhor Umidificador de Ar para Quarto: Qual Comprar</span>
+            </div>
+          </a>
         </div>
 
       </div>
@@ -24960,6 +24980,16 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
           </a>
 
 
+
+          <a href="/melhor-umidificador-de-ar-para-quarto" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;flex-shrink:0;">
+              <img src="/images/melhor-umidificador-de-ar-para-quarto/capa-melhor-umidificador-de-ar-para-quarto.webp" alt="Melhor umidificador de ar para quarto" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Melhor Umidificador de Ar para Quarto: Qual Comprar</span>
+            </div>
+          </a>
         </div>
 
       </div>
@@ -25631,6 +25661,649 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
             <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
               <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
               <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Máquina de Gelo Portátil: Vale a Pena Ter em Casa?</span>
+            </div>
+          </a>
+
+          <a href="/melhor-umidificador-de-ar-para-quarto" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;flex-shrink:0;">
+              <img src="/images/melhor-umidificador-de-ar-para-quarto/capa-melhor-umidificador-de-ar-para-quarto.webp" alt="Melhor umidificador de ar para quarto" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Melhor Umidificador de Ar para Quarto: Qual Comprar</span>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    )}
+
+
+    {isMelhorUmidificadorQuarto && (
+      <div>
+
+        <!-- Capa -->
+        <div class="rounded-2xl overflow-hidden mb-8 shadow-md">
+          <img
+            src="/images/melhor-umidificador-de-ar-para-quarto/capa-melhor-umidificador-de-ar-para-quarto.webp"
+            alt="Melhor umidificador de ar para quarto ligado ao lado da cama"
+            width="1280"
+            height="720"
+            class="w-full h-auto object-cover"
+            loading="eager"
+          />
+        </div>
+
+        <!-- Introdução -->
+        <div class="bg-orange-50 border border-orange-100 rounded-2xl p-6 mb-8">
+          <p class="text-slate-800 text-base leading-relaxed mb-3">
+            O melhor umidificador de ar para quarto, pelos dados da Amazon Brasil, é o WAP Air Flow de 4 litros: tem a maior capacidade da lista e mais de 20 mil avaliações, com nota 4,6/5. Para quem prefere nota mais alta, o Fisher-Price HC115 tem 4,7/5 em mais de 9 mil avaliações.
+          </p>
+          <p class="text-slate-800 text-base leading-relaxed mb-3">
+            Eu usava umidificador quando o tempo estava muito seco, e hoje existem muito mais opções, com difusor de aromas e luminária. Só que mais opção também dá mais dúvida na hora de comprar.
+          </p>
+          <p class="text-slate-800 text-base leading-relaxed">
+            Não testei esses cinco modelos em casa. O ranking é curadoria: junta ficha técnica e avaliações de compradores, consultadas na Amazon em 13/10/2026. Outras marcas ficaram de fora porque o critério foi nota e volume de avaliações.
+          </p>
+        </div>
+
+        <!-- TL;DR -->
+        <div class="bg-purple-50 border border-purple-100 rounded-2xl p-6 mb-10">
+          <p class="text-slate-800 font-bold text-base mb-3">Em resumo</p>
+          <p class="text-sm text-slate-700 leading-relaxed">
+            Maior capacidade: <strong>WAP Air Flow 4 L</strong>. Nota 4,7 com mais avaliações: <strong>Fisher-Price HC115</strong>. Compacto: <strong>WAP Air Flow U2</strong>. Menor da lista: <strong>Multi Saúde Easy Air HC290</strong>, com poucas avaliações. Confira a voltagem antes de comprar, principalmente no G-Tech e no Multi Saúde.
+          </p>
+        </div>
+
+        <!-- Índice -->
+        <nav class="border border-slate-200 rounded-2xl p-6 mb-10 bg-white">
+          <p class="font-bold text-slate-800 mb-3">Índice</p>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#tabela-comparativa" class="text-orange-500 hover:text-orange-600 font-medium">Tabela comparativa dos 5 umidificadores</a></li>
+            <li><a href="#qual-o-melhor-umidificador-de-ar" class="text-orange-500 hover:text-orange-600 font-medium">Melhor umidificador de ar para quarto: o ranking dos 5 modelos</a></li>
+            <li><a href="#umidificador-ultrassonico" class="text-orange-500 hover:text-orange-600 font-medium">Como funciona o umidificador de ar ultrassônico?</a></li>
+            <li><a href="#umidificador-silencioso" class="text-orange-500 hover:text-orange-600 font-medium">Como escolher um umidificador de ar silencioso para quarto?</a></li>
+            <li><a href="#gasta-energia" class="text-orange-500 hover:text-orange-600 font-medium">Umidificador de ar gasta muita energia?</a></li>
+            <li><a href="#voltagem" class="text-orange-500 hover:text-orange-600 font-medium">Qual a voltagem certa do umidificador de ar?</a></li>
+            <li><a href="#como-escolher" class="text-orange-500 hover:text-orange-600 font-medium">Como escolher o melhor umidificador de ar para quarto</a></li>
+            <li><a href="#qual-comprar" class="text-orange-500 hover:text-orange-600 font-medium">Qual umidificador comprar?</a></li>
+            <li><a href="#faq" class="text-orange-500 hover:text-orange-600 font-medium">Perguntas frequentes</a></li>
+          </ul>
+        </nav>
+
+        <h2 id="tabela-comparativa" class="text-2xl font-bold text-slate-900 mb-4">Tabela comparativa dos 5 umidificadores de ar</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-5">
+          Dados das fichas e dos anúncios na Amazon Brasil, consultados em 13/10/2026, na ordem do ranking.
+        </p>
+        <div class="overflow-x-auto mb-4">
+          <table class="w-full text-sm border-collapse">
+            <thead>
+              <tr class="bg-slate-100">
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Modelo</th><th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Litros</th><th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Voltagem</th><th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Aromas/luz</th><th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Nota (avaliações)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-white">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">WAP Air Flow 4 L</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">4 L</td><td class="px-4 py-3 text-slate-600 border border-slate-200">Bivolt</td><td class="px-4 py-3 text-slate-600 border border-slate-200">Sim, ambos</td><td class="px-4 py-3 text-slate-600 border border-slate-200">4,6 (20.226)</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Fisher-Price HC115</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">3,4 L</td><td class="px-4 py-3 text-slate-600 border border-slate-200">Bivolt</td><td class="px-4 py-3 text-slate-600 border border-slate-200">Não consta</td><td class="px-4 py-3 text-slate-600 border border-slate-200">4,7 (9.376)</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">WAP Air Flow U2</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">2,3 L</td><td class="px-4 py-3 text-slate-600 border border-slate-200">Bivolt</td><td class="px-4 py-3 text-slate-600 border border-slate-200">Difusor</td><td class="px-4 py-3 text-slate-600 border border-slate-200">4,7 (6.056)</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">G-Tech Allergy Free HM</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">3 L</td><td class="px-4 py-3 text-slate-600 border border-slate-200">Confira no anúncio</td><td class="px-4 py-3 text-slate-600 border border-slate-200">Não consta</td><td class="px-4 py-3 text-slate-600 border border-slate-200">4,7 (3.369)</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Multi Saúde Easy Air HC290</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">1,8 L</td><td class="px-4 py-3 text-slate-600 border border-slate-200">127V ou 220V</td><td class="px-4 py-3 text-slate-600 border border-slate-200">Não consta</td><td class="px-4 py-3 text-slate-600 border border-slate-200">4,6 (170)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="text-xs text-slate-500 mb-10">"Sim, ambos" indica difusor de aromas e luminária. "Difusor" indica só difusor de aromas. "Não consta" quer dizer que o recurso não aparece nos dados que consultei.</p>
+
+        <h2 id="qual-o-melhor-umidificador-de-ar" class="text-2xl font-bold text-slate-900 mb-4">Melhor umidificador de ar para quarto: o ranking dos 5 modelos</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-6">
+          A ordem leva em conta o volume de avaliações junto com a nota. Por isso o WAP de 4 L, com 4,6 em mais de 20 mil avaliações, fica na frente de modelos com 4,7 e base menor. O Multi Saúde, com apenas 170 avaliações, fica por último.
+        </p>
+        <!-- Produto 1 -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-orange-500 px-6 py-4">
+            <span class="inline-block bg-white text-orange-600 text-xs font-bold uppercase tracking-wide px-2.5 py-1 rounded-full mb-2">O de maior capacidade</span>
+            <h3 class="text-white font-black text-xl">1º lugar - Umidificador WAP Air Flow com luminária e difusor de aromas 4 L</h3>
+            <p class="text-orange-100 text-sm mt-1">Nota 4,6/5 em 20.226 avaliações na Amazon</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+              <img src="/images/melhor-umidificador-de-ar-para-quarto/wap-air-flow-4l.webp" alt="Umidificador de ar WAP Air Flow 4 litros com luminária e difusor de aromas" width="398" height="600" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <p class="text-slate-700 text-sm leading-relaxed mb-4">
+                Tem o maior reservatório da lista e a maior base de avaliações, mais de 20 mil. Para quem dorme com a janela fechada e quer encher o tanque menos vezes, é o ponto de partida.
+              </p>
+              <a href="https://www.amazon.com.br/dp/B08FXYKYLW?tag=casaemalta0e-20" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon</a>
+              <h4 class="font-bold text-slate-800 mb-3">Ficha Técnica</h4>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Capacidade:</strong> 4 L</li>
+                <li><strong>Autonomia:</strong> até 12 horas, segundo o anúncio</li>
+                <li><strong>Potência:</strong> 20 W</li>
+                <li><strong>Voltagem:</strong> bivolt (110/220V)</li>
+                <li><strong>Extras:</strong> luminária e difusor de aromas</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Maior reservatório entre os cinco</li>
+                    <li>Mais de 20 mil avaliações, a maior base da lista</li>
+                    <li>Bivolt, sem risco de errar a voltagem</li>
+                    <li>Luminária e difusor de aromas no mesmo aparelho</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Reservatório grande tende a ocupar mais espaço no móvel onde ficar</li>
+                    <li>Luminária e difusor sobram para quem só quer umidificar</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mt-4">
+                <strong>Veredito:</strong> o melhor umidificador de ar para quarto pelos dados que consultei: capacidade grande, bivolt e a opinião de mais de 20 mil compradores.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 2 -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-orange-500 px-6 py-4">
+            <span class="inline-block bg-white text-orange-600 text-xs font-bold uppercase tracking-wide px-2.5 py-1 rounded-full mb-2">Nota 4,7 com base grande</span>
+            <h3 class="text-white font-black text-xl">2º lugar - Umidificador Fisher-Price HC115 ultrassônico 3,4 L</h3>
+            <p class="text-orange-100 text-sm mt-1">Nota 4,7/5 em 9.376 avaliações na Amazon</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+              <img src="/images/melhor-umidificador-de-ar-para-quarto/fisher-price-hc115.webp" alt="Umidificador de ar ultrassônico Fisher-Price HC115 3,4 litros bivolt" width="361" height="600" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <p class="text-slate-700 text-sm leading-relaxed mb-4">
+                A Amazon o destaca com o selo "n.º 1 entre os melhores avaliados". Une nota alta a uma base grande de avaliações e tem visual infantil.
+              </p>
+              <a href="https://www.amazon.com.br/dp/B07HR1MZQP?tag=casaemalta0e-20" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon</a>
+              <h4 class="font-bold text-slate-800 mb-3">Ficha Técnica</h4>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Tipo:</strong> ultrassônico</li>
+                <li><strong>Capacidade:</strong> 3,4 L</li>
+                <li><strong>Voltagem:</strong> bivolt</li>
+                <li><strong>Destaque:</strong> selo "n.º 1 entre os melhores avaliados" na Amazon</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Nota 4,7/5 com mais de 9 mil avaliações</li>
+                    <li>Selo de melhor avaliado na Amazon</li>
+                    <li>Bivolt</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Visual infantil pode destoar de um quarto adulto</li>
+                    <li>Não consta difusor de aromas nos dados que consultei</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mt-4">
+                <strong>Veredito:</strong> boa escolha para quarto de criança ou para quem prioriza a nota dos compradores.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 3 -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-orange-500 px-6 py-4">
+            <span class="inline-block bg-white text-orange-600 text-xs font-bold uppercase tracking-wide px-2.5 py-1 rounded-full mb-2">O compacto</span>
+            <h3 class="text-white font-black text-xl">3º lugar - Umidificador WAP Air Flow U2 2,3 L com difusor de aromas</h3>
+            <p class="text-orange-100 text-sm mt-1">Nota 4,7/5 em 6.056 avaliações na Amazon</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+              <img src="/images/melhor-umidificador-de-ar-para-quarto/wap-air-flow-u2.webp" alt="Umidificador de ar compacto WAP Air Flow U2 2,3 litros com difusor de aromas" width="388" height="600" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <p class="text-slate-700 text-sm leading-relaxed mb-4">
+                O anúncio informa mais de 2 mil compras no mês anterior. Tem 2,3 L e traz difusor de aromas.
+              </p>
+              <a href="https://www.amazon.com.br/dp/B0CVYRV24P?tag=casaemalta0e-20" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon</a>
+              <h4 class="font-bold text-slate-800 mb-3">Ficha Técnica</h4>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Capacidade:</strong> 2,3 L</li>
+                <li><strong>Voltagem:</strong> bivolt</li>
+                <li><strong>Extras:</strong> difusor de aromas</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Compacto, cabe em criado-mudo e escrivaninha</li>
+                    <li>Nota 4,7/5 com mais de 6 mil avaliações</li>
+                    <li>Bivolt e com difusor de aromas</li>
+                    <li>Mais de 2 mil compras no mês anterior, segundo o anúncio</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Reservatório de 2,3 L tende a pedir reabastecimento antes dos modelos maiores</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mt-4">
+                <strong>Veredito:</strong> para quarto pequeno ou para quem quer algo discreto, com nota alta e difusor.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <p style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#c2410c;margin:8px 0 12px;">Leia também:</p>
+        <div style="display:flex;flex-direction:column;gap:12px;margin-bottom:32px;">
+          <a href="/ar-condicionado-portatil-12000-btus" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;flex-shrink:0;">
+              <img src="/images/ar-condicionado-portatil/capa-ar-condicionado-portatil-12000-btus-v3.webp" alt="Melhor ar condicionado portátil 12000 BTUs" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Melhor Ar Condicionado Portátil 12000 BTUs: Vale a Pena?</span>
+            </div>
+          </a>
+        </div>
+
+        <!-- Produto 4 -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-orange-500 px-6 py-4">
+            <span class="inline-block bg-white text-orange-600 text-xs font-bold uppercase tracking-wide px-2.5 py-1 rounded-full mb-2">O de 3 litros</span>
+            <h3 class="text-white font-black text-xl">4º lugar - Umidificador G-Tech Allergy Free HM 3 L ultrassônico</h3>
+            <p class="text-orange-100 text-sm mt-1">Nota 4,7/5 em 3.369 avaliações na Amazon</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+              <img src="/images/melhor-umidificador-de-ar-para-quarto/g-tech-allergy-free-hm.webp" alt="Umidificador de ar ultrassônico G-Tech Allergy Free HM 3 litros" width="301" height="600" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <p class="text-slate-700 text-sm leading-relaxed mb-4">
+                Ultrassônico de 3 litros, nota 4,7 e mais de 3 mil avaliações. "Allergy Free" é o nome que o fabricante dá ao produto, não uma promessa que eu possa confirmar por aqui.
+              </p>
+              <a href="https://www.amazon.com.br/dp/B07L4TSL64?tag=casaemalta0e-20" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon</a>
+              <h4 class="font-bold text-slate-800 mb-3">Ficha Técnica</h4>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Tipo:</strong> ultrassônico</li>
+                <li><strong>Capacidade:</strong> 3 L</li>
+                <li><strong>Voltagem:</strong> confira no anúncio antes de comprar</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Nota 4,7/5 com mais de 3 mil avaliações</li>
+                    <li>Meio-termo de capacidade entre os compactos e o de 4 L</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>A ficha de voltagem do anúncio está confusa, então confirme antes de finalizar</li>
+                    <li>Não consta difusor de aromas nos dados que consultei</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mt-4">
+                <strong>Veredito:</strong> bom candidato se a voltagem do anúncio estiver clara para a sua tomada.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 5 -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-orange-500 px-6 py-4">
+            <span class="inline-block bg-white text-orange-600 text-xs font-bold uppercase tracking-wide px-2.5 py-1 rounded-full mb-2">O menor da lista</span>
+            <h3 class="text-white font-black text-xl">5º lugar - Umidificador Multi Saúde (Multilaser) Easy Air HC290 1,8 L</h3>
+            <p class="text-orange-100 text-sm mt-1">Nota 4,6/5 em 170 avaliações na Amazon, base pequena</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+              <img src="/images/melhor-umidificador-de-ar-para-quarto/multi-saude-easy-air-hc290.webp" alt="Umidificador de ar Multi Saúde Multilaser Easy Air HC290 1,8 litro para quarto pequeno" width="374" height="600" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <p class="text-slate-700 text-sm leading-relaxed mb-4">
+                O menor da lista, com 1,8 L. A nota é boa, mas vem de só 170 avaliações, então pesa menos que as dos outros quatro. A voltagem, 127V ou 220V, é escolhida no anúncio.
+              </p>
+              <a href="https://www.amazon.com.br/dp/B0FRBBQF36?tag=casaemalta0e-20" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon</a>
+              <h4 class="font-bold text-slate-800 mb-3">Ficha Técnica</h4>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Capacidade:</strong> 1,8 L</li>
+                <li><strong>Voltagem:</strong> 127V ou 220V, escolhida no anúncio</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>O mais compacto da lista</li>
+                    <li>Nota 4,6/5</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Só 170 avaliações, uma base pequena para confiar na nota</li>
+                    <li>Não é bivolt: escolha a voltagem certa no anúncio</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mt-4">
+                <strong>Veredito:</strong> faz sentido para cômodo pequeno, desde que você aceite a base menor de avaliações.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <h2 id="umidificador-ultrassonico" class="text-2xl font-bold text-slate-900 mb-4">Como funciona o umidificador de ar ultrassônico?</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          O umidificador de ar ultrassônico usa uma vibração em alta frequência para transformar a água em uma névoa fria, sem aquecer o líquido. Entre os cinco modelos da lista, só as fichas do Fisher-Price e do G-Tech citam esse tipo; nos demais, confira a descrição do anúncio.
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          Um cuidado comum: dependendo da água usada, pode aparecer um pó esbranquiçado nos móveis ao redor. Siga o manual do fabricante sobre o tipo de água e mantenha o aparelho um pouco afastado de madeira e eletrônicos.
+        </p>
+        <h2 id="umidificador-silencioso" class="text-2xl font-bold text-slate-900 mb-4">Como escolher um umidificador de ar silencioso para quarto?</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Nenhum dos cinco informa o ruído em decibéis nas fichas que consultei, então não dá para eleger o mais silencioso com número. Para quem tem sono leve, vale ler as avaliações do anúncio buscando comentários sobre barulho e, se o modelo tiver luminária, ver se ela pode ser desligada.
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          Coloque o aparelho em superfície firme e nivelada, longe da cabeceira, e a uma distância segura de cortinas e tomadas.
+        </p>
+        <h2 id="gasta-energia" class="text-2xl font-bold text-slate-900 mb-4">Umidificador de ar gasta muita energia?</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Um umidificador de ar gasta pouca energia: o WAP Air Flow de 4 L, único com potência na ficha, usa 20 W, o que dá 4,8 kWh por mês ligado 8 horas por dia durante 30 dias. Para comparar, o <a href="/ar-condicionado-portatil-12000-btus" class="text-orange-500 font-semibold hover:underline">ar condicionado portátil de 12000 BTUs</a> Hisense do nosso ranking tem 1100 W.
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          Para ver o valor na sua fatura, use a <a href="/quanto-gasta-de-energia-eletrodomesticos" class="text-orange-500 font-semibold hover:underline">calculadora de consumo de energia</a>, que usa a tarifa da sua distribuidora.
+        </p>
+        <h2 id="voltagem" class="text-2xl font-bold text-slate-900 mb-4">Qual a voltagem certa do umidificador de ar?</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Três dos cinco são bivolt: WAP Air Flow 4 L, Fisher-Price e WAP U2. O Multi Saúde vem em 127V ou 220V, e você escolhe no anúncio. No G-Tech, a ficha de voltagem do anúncio está confusa, então confirme antes de finalizar.
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          Ligar um aparelho 127V em tomada 220V pode danificar o produto. Na dúvida, pergunte ao vendedor ou escolha um bivolt.
+        </p>
+        <h2 id="como-escolher" class="text-2xl font-bold text-slate-900 mb-4">Como escolher o melhor umidificador de ar para quarto</h2>
+        <ul class="space-y-2 text-sm text-slate-700 mb-10">
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Tamanho do quarto:</strong> em quarto pequeno costuma bastar um modelo compacto, de 1,8 a 2,3 L. Quarto maior ou janela sempre fechada pede 3 a 4 L; confira a autonomia do anúncio.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Seco de verdade?</strong> O Ministério da Saúde, citando a OMS, trata umidade abaixo de 30% como situação de alerta, conforme este <a href="https://bvsms.saude.gov.br/periodo-de-seca-pede-cuidados-especiais/" target="_blank" rel="noopener noreferrer" class="text-purple-600 font-semibold hover:underline">texto da Biblioteca Virtual em Saúde</a>. Um higrômetro mostra o número real.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Sem exagero:</strong> ar úmido demais favorece mofo. Acompanhe o higrômetro e desligue quando o ambiente estiver confortável.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Limpeza:</strong> siga o manual e, se for ficar alguns dias sem usar, esvazie e seque o reservatório. Água parada favorece sujeira e mofo.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Calor é outro problema:</strong> umidificador não esfria. Para isso, veja <a href="/melhor-climatizador-de-ar" class="text-orange-500 font-semibold hover:underline">climatizador de ar</a> ou <a href="/melhor-ventilador-de-coluna" class="text-orange-500 font-semibold hover:underline">ventilador de coluna</a>.</span></li>
+        </ul>
+        <h2 id="qual-comprar" class="text-2xl font-bold text-slate-900 mb-4">Qual umidificador comprar?</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          O melhor umidificador de ar para quarto, pelos dados consultados, é o WAP Air Flow de 4 L. Em quarto pequeno, o U2 de 2,3 L resolve. Antes de finalizar, confirme a voltagem e a nota no anúncio.
+        </p>
+        <h2 id="faq" class="text-2xl font-bold text-slate-900 mb-6">Perguntas frequentes</h2>
+        <div class="space-y-3 mb-10">
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Qual o melhor umidificador de ar para quarto?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Pelos dados da Amazon Brasil consultados em 13/10/2026, o WAP Air Flow de 4 litros: maior reservatório da lista, bivolt e nota 4,6/5 em mais de 20 mil avaliações. Para quarto pequeno, o WAP Air Flow U2 de 2,3 litros tem nota 4,7/5 em mais de 6 mil avaliações.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Umidificador de ar gasta muita energia?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Não gasta muito. O WAP Air Flow de 4 L, único com potência na ficha, usa 20 W, o que dá 4,8 kWh por mês ligado 8 horas por dia. Nos outros, a potência não consta nas fichas.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Qual é melhor: umidificador de 3 ou 4 litros?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              O de 4 litros pede menos reabastecimento e atende melhor quem dorme com a janela fechada. O de 3 litros ocupa menos espaço. Se o quarto é pequeno, 3 litros costuma bastar. Confira a autonomia informada em cada anúncio.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Posso usar umidificador de ar no quarto do bebê?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Pode ser uma opção, mas o assunto pede cautela. Mantenha o aparelho fora do alcance da criança, siga o manual e converse com o pediatra antes de usar. O artigo compara aparelhos e não indica benefício de saúde.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Qual a umidade ideal do ar no quarto?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              O Ministério da Saúde, citando a OMS, trata umidade abaixo de 30% como situação de alerta. Um higrômetro mostra o número real e ajuda a evitar exagero, porque ar úmido demais favorece mofo. Para limpar, siga o manual: troque a água com frequência e lave o reservatório.
+            </div>
+          </details>
+        </div>
+
+        <!-- Schema FAQ -->
+        <script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Qual o melhor umidificador de ar para quarto?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pelos dados da Amazon Brasil consultados em 13/10/2026, o WAP Air Flow de 4 litros: maior reservatório da lista, bivolt e nota 4,6/5 em mais de 20 mil avaliações. Para quarto pequeno, o WAP Air Flow U2 de 2,3 litros tem nota 4,7/5 em mais de 6 mil avaliações."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Umidificador de ar gasta muita energia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Não gasta muito. O WAP Air Flow de 4 L, único com potência na ficha, usa 20 W, o que dá 4,8 kWh por mês ligado 8 horas por dia. Nos outros, a potência não consta nas fichas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Qual é melhor: umidificador de 3 ou 4 litros?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "O de 4 litros pede menos reabastecimento e atende melhor quem dorme com a janela fechada. O de 3 litros ocupa menos espaço. Se o quarto é pequeno, 3 litros costuma bastar. Confira a autonomia informada em cada anúncio."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Posso usar umidificador de ar no quarto do bebê?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pode ser uma opção, mas o assunto pede cautela. Mantenha o aparelho fora do alcance da criança, siga o manual e converse com o pediatra antes de usar. O artigo compara aparelhos e não indica benefício de saúde."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Qual a umidade ideal do ar no quarto?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "O Ministério da Saúde, citando a OMS, trata umidade abaixo de 30% como situação de alerta. Um higrômetro mostra o número real e ajuda a evitar exagero, porque ar úmido demais favorece mofo. Para limpar, siga o manual: troque a água com frequência e lave o reservatório."
+      }
+    }
+  ]
+})} />
+
+        <!-- Schema ItemList com aggregateRating (Product de afiliado, sem offers) -->
+        <script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Melhor Umidificador de Ar para Quarto: Qual Comprar",
+  "itemListOrder": "https://schema.org/ItemListOrderAscending",
+  "numberOfItems": 5,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "Product",
+        "name": "Umidificador WAP Air Flow com luminária e difusor de aromas 4 L",
+        "image": "https://www.casaemalta.com.br/images/melhor-umidificador-de-ar-para-quarto/wap-air-flow-4l.webp",
+        "description": "Umidificador de ar WAP Air Flow com reservatório de 4 L, autonomia de até 12 horas, 20 W, bivolt, luminária e difusor de aromas.",
+        "brand": {
+          "@type": "Brand",
+          "name": "WAP"
+        },
+        "url": "https://www.amazon.com.br/dp/B08FXYKYLW?tag=casaemalta0e-20",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.6",
+          "reviewCount": "20226",
+          "bestRating": "5",
+          "worstRating": "1"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "Product",
+        "name": "Umidificador de Ar Ultrassônico Fisher-Price HC115 3,4 L",
+        "image": "https://www.casaemalta.com.br/images/melhor-umidificador-de-ar-para-quarto/fisher-price-hc115.webp",
+        "description": "Umidificador ultrassônico Fisher-Price HC115 com reservatório de 3,4 L e bivolt.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Fisher-Price"
+        },
+        "url": "https://www.amazon.com.br/dp/B07HR1MZQP?tag=casaemalta0e-20",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.7",
+          "reviewCount": "9376",
+          "bestRating": "5",
+          "worstRating": "1"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "Product",
+        "name": "Umidificador WAP Air Flow U2 2,3 L com difusor de aromas",
+        "image": "https://www.casaemalta.com.br/images/melhor-umidificador-de-ar-para-quarto/wap-air-flow-u2.webp",
+        "description": "Umidificador compacto WAP Air Flow U2 com reservatório de 2,3 L, difusor de aromas e bivolt.",
+        "brand": {
+          "@type": "Brand",
+          "name": "WAP"
+        },
+        "url": "https://www.amazon.com.br/dp/B0CVYRV24P?tag=casaemalta0e-20",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.7",
+          "reviewCount": "6056",
+          "bestRating": "5",
+          "worstRating": "1"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@type": "Product",
+        "name": "Umidificador G-Tech Allergy Free HM 3 L ultrassônico",
+        "image": "https://www.casaemalta.com.br/images/melhor-umidificador-de-ar-para-quarto/g-tech-allergy-free-hm.webp",
+        "description": "Umidificador ultrassônico G-Tech Allergy Free HM com reservatório de 3 L.",
+        "brand": {
+          "@type": "Brand",
+          "name": "G-Tech"
+        },
+        "url": "https://www.amazon.com.br/dp/B07L4TSL64?tag=casaemalta0e-20",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.7",
+          "reviewCount": "3369",
+          "bestRating": "5",
+          "worstRating": "1"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "item": {
+        "@type": "Product",
+        "name": "Umidificador Multi Saúde Easy Air HC290 1,8 L",
+        "image": "https://www.casaemalta.com.br/images/melhor-umidificador-de-ar-para-quarto/multi-saude-easy-air-hc290.webp",
+        "description": "Umidificador Multi Saúde (Multilaser) Easy Air HC290 com reservatório de 1,8 L, 127V ou 220V.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Multilaser"
+        },
+        "url": "https://www.amazon.com.br/dp/B0FRBBQF36?tag=casaemalta0e-20",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.6",
+          "reviewCount": "170",
+          "bestRating": "5",
+          "worstRating": "1"
+        }
+      }
+    }
+  ]
+})} />
+
+        <!-- Leia também (fim) -->
+        <p style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#c2410c;margin:24px 0 12px;">Leia também:</p>
+        <div style="display:flex;flex-direction:column;gap:12px;margin-bottom:32px;">
+          <a href="/melhor-climatizador-de-ar" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;flex-shrink:0;">
+              <img src="/images/melhor-climatizador-de-ar/capa-melhor-climatizador-de-ar.webp" alt="Melhor climatizador de ar" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Melhor Climatizador de Ar: os 5 Mais Vendidos de 2026</span>
+            </div>
+          </a>
+
+          <a href="/melhor-ventilador-de-coluna" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;flex-shrink:0;">
+              <img src="/images/melhor-ventilador-de-coluna/capa-melhor-ventilador-de-coluna-v2.webp" alt="Melhor ventilador de coluna" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Melhor Ventilador de Coluna: os 5 Mais Vendidos de 2026</span>
+            </div>
+          </a>
+
+          <a href="/quanto-gasta-de-energia-eletrodomesticos" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;flex-shrink:0;">
+              <img src="/images/consumo-energia/capa-consumo-energia.webp" alt="Quanto gasta de energia cada eletrodoméstico" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Quanto Gasta de Energia Cada Eletrodoméstico? Calcule Aqui</span>
             </div>
           </a>
         </div>
