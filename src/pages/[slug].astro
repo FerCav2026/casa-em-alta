@@ -496,6 +496,16 @@ const blogPostingSchema = {
   },
 };
 
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Início', item: Astro.site?.href },
+    ...(postData ? [{ '@type': 'ListItem', position: 2, name: postData.categoriaLabel, item: new URL(`/categorias/${postData.categoria}`, Astro.site).href }] : []),
+    { '@type': 'ListItem', position: postData ? 3 : 2, name: post.titulo, item: new URL(`/${slug}`, Astro.site).href },
+  ],
+};
+
 const isAspiradores = slug === 'melhores-aspiradores-po-2026';
 const isAirfryer = slug === 'airfryer-philips-vs-mondial';
 const isOrganizadores = slug === 'organizadores-armario-barato';
@@ -615,7 +625,7 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   description={post.descricao}
   image={coverImage}
   type="article"
-  schema={blogPostingSchema}
+  schema={[blogPostingSchema, breadcrumbSchema]}
 >
   <div class="max-w-4xl mx-auto px-4 py-12">
     <!-- Breadcrumb -->

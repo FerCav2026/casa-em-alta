@@ -11,9 +11,9 @@ import { posts } from '../data/posts';
       <p class="text-slate-500 mt-3 max-w-xl mx-auto">Reviews, comparativos e guias de compra para você tomar a melhor decisão.</p>
     </div>
 
-    <!-- Grid 3x3 -->
+    <!-- Grid 3x3: só os 9 mais recentes; o resto fica em /posts -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      {posts.slice().reverse().map((post) => (
+      {posts.slice().reverse().slice(0, 9).map((post) => (
         <article class="group bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-all hover:-translate-y-1 overflow-hidden flex flex-col">
           <!-- Imagem de capa -->
           <div class="w-full h-48 overflow-hidden bg-gradient-to-br from-slate-100 to-slate-200 flex items-center justify-center">
