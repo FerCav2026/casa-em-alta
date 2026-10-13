@@ -603,6 +603,16 @@ export const posts: Post[] = [
     categoria: 'rankings-e-listas',
     categoriaLabel: 'Rankings e Listas',
     categoriaColor: 'bg-green-100 text-green-700',
+  },
+  {
+    slug: 'melhor-umidificador-de-ar-para-quarto',
+    titulo: 'Melhor Umidificador de Ar para Quarto: Qual Comprar',
+    resumo: 'Melhor umidificador de ar para quarto: compare 5 modelos por litros, voltagem, nota e avaliações na Amazon e veja qual comprar para o ar seco.',
+    tempo: '8 min de leitura',
+    imagem: '/images/melhor-umidificador-de-ar-para-quarto/capa-melhor-umidificador-de-ar-para-quarto.webp',
+    categoria: 'rankings-e-listas',
+    categoriaLabel: 'Rankings e Listas',
+    categoriaColor: 'bg-green-100 text-green-700',
   }
 ];
 
