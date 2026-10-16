@@ -613,6 +613,16 @@ export const posts: Post[] = [
     categoria: 'rankings-e-listas',
     categoriaLabel: 'Rankings e Listas',
     categoriaColor: 'bg-green-100 text-green-700',
+  },
+  {
+    slug: 'climatizador-ou-ventilador',
+    titulo: 'Climatizador ou Ventilador: Qual é Melhor para Apartamento?',
+    resumo: 'Climatizador ou ventilador? Comparamos consumo, custo, umidade, ruído e manutenção e mostramos os 3 mais vendidos da Amazon para você escolher no apartamento.',
+    tempo: '7 min de leitura',
+    imagem: '/images/climatizador-ou-ventilador/capa-climatizador-ou-ventilador.webp',
+    categoria: 'comparativos',
+    categoriaLabel: 'Comparativo',
+    categoriaColor: 'bg-blue-100 text-blue-700',
   }
 ];
 
