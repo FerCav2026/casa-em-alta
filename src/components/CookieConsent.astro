@@ -1,8 +1,9 @@
 ---
 // Banner de consentimento de cookies (LGPD)
-// A analytics (Microsoft Clarity) so carrega se a pessoa aceitar.
+// A analytics (Microsoft Clarity e Google Analytics) so carrega se a pessoa aceitar.
 // Escolha salva em localStorage: 'cea-consent' = 'accepted' | 'rejected'
 const CLARITY_ID = 'wyo4kb1u7h';
+const GA_ID = 'G-5BKXED11YQ';
 ---
 
 <div
@@ -80,7 +81,7 @@ const CLARITY_ID = 'wyo4kb1u7h';
         <div class="flex items-start justify-between gap-4 rounded-xl bg-slate-50 p-4">
           <div>
             <p class="text-sm font-semibold text-slate-800">Estatísticas</p>
-            <p class="mt-1 text-xs text-slate-500">Ajudam a entender como os visitantes usam o site (Microsoft Clarity), de forma anônima.</p>
+            <p class="mt-1 text-xs text-slate-500">Ajudam a entender como os visitantes usam o site (Microsoft Clarity e Google Analytics), de forma anônima.</p>
           </div>
           <label class="relative mt-1 inline-flex shrink-0 cursor-pointer items-center">
             <input type="checkbox" id="cc-toggle-analytics" class="peer sr-only" checked />
@@ -109,7 +110,7 @@ const CLARITY_ID = 'wyo4kb1u7h';
   </div>
 </div>
 
-<script is:inline define:vars={{ CLARITY_ID }}>
+<script is:inline define:vars={{ CLARITY_ID, GA_ID }}>
   (function () {
     var KEY = 'cea-consent';
     var banner = document.getElementById('cookie-consent');
@@ -129,6 +130,19 @@ const CLARITY_ID = 'wyo4kb1u7h';
       })(window, document, 'clarity', 'script', CLARITY_ID);
     }
 
+    var gaLoaded = false;
+    function loadGA() {
+      if (gaLoaded || !GA_ID) return;
+      gaLoaded = true;
+      var t = document.createElement('script');
+      t.async = true; t.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+      document.head.appendChild(t);
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function () { window.dataLayer.push(arguments); };
+      window.gtag('js', new Date());
+      window.gtag('config', GA_ID);
+    }
+
     function show() {
       banner.classList.remove('hidden');
       mainView.classList.remove('hidden');
@@ -142,7 +156,7 @@ const CLARITY_ID = 'wyo4kb1u7h';
 
     function save(value) {
       try { localStorage.setItem(KEY, value); } catch (e) {}
-      if (value === 'accepted') loadClarity();
+      if (value === 'accepted') { loadClarity(); loadGA(); }
       hide();
     }
 
@@ -151,6 +165,7 @@ const CLARITY_ID = 'wyo4kb1u7h';
 
     if (saved === 'accepted') {
       loadClarity();
+      loadGA();
     } else if (saved === 'rejected') {
       // nada: analytics permanece desativada
     } else {
