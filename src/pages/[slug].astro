@@ -412,6 +412,13 @@ const posts: Record<string, { titulo: string; descricao: string; categoria: stri
     dataCriacao: '2026-10-16',
     dataModificacao: '2026-10-16',
   },
+  'melhor-frigobar': {
+    titulo: 'Melhor Frigobar: Qual Comprar',
+    descricao: 'Melhor frigobar em 2026: compare Midea, Philco, Electrolux, Hisense e Brastemp por nota, litragem e voltagem e descubra qual frigobar comprar.',
+    categoria: 'Rankings e Listas',
+    dataCriacao: '2026-10-21',
+    dataModificacao: '2026-10-21',
+  },
 };
 
 export function getStaticPaths() {
@@ -472,6 +479,7 @@ export function getStaticPaths() {
     'melhor-ventilador-de-coluna': {},
     'melhor-umidificador-de-ar-para-quarto': {},
     'climatizador-ou-ventilador': {},
+    'melhor-frigobar': {},
   }).map((slug) => ({ params: { slug } }));
 }
 
@@ -570,6 +578,7 @@ const isArCondicionadoPortatil = slug === 'ar-condicionado-portatil-12000-btus';
 const isMelhorVentiladorColuna = slug === 'melhor-ventilador-de-coluna';
 const isMelhorUmidificadorQuarto = slug === 'melhor-umidificador-de-ar-para-quarto';
 const isClimatizadorOuVentilador = slug === 'climatizador-ou-ventilador';
+const isMelhorFrigobar = slug === 'melhor-frigobar';
 
 const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isAirfryer ? '/images/airfryer/capa-airfryer.webp'
@@ -627,11 +636,12 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isMelhorVentiladorColuna ? '/images/melhor-ventilador-de-coluna/capa-melhor-ventilador-de-coluna-v2.webp'
   : isMelhorUmidificadorQuarto ? '/images/melhor-umidificador-de-ar-para-quarto/capa-melhor-umidificador-de-ar-para-quarto.webp'
   : isClimatizadorOuVentilador ? '/images/climatizador-ou-ventilador/capa-climatizador-ou-ventilador.webp'
+  : isMelhorFrigobar ? '/images/melhor-frigobar/capa-melhor-frigobar.webp'
   : undefined;
 ---
 
 <BaseLayout
-  title={isPanelaEletricaOuConvencional || isMelhoresCafeteiras || isProjetorShopee || isComoArrumarArmarios || isLavaSeca || isFrigideiraAntiaderenteFerro || isFrigideira || isMelhorFrigideiraAntiaderente || isMelhorClimatizador || isArCondicionadoPortatil || isMelhorVentiladorColuna || isMelhorUmidificadorQuarto || isClimatizadorOuVentilador ? post.titulo : `${post.titulo} - Casa em Alta`}
+  title={isPanelaEletricaOuConvencional || isMelhoresCafeteiras || isProjetorShopee || isComoArrumarArmarios || isLavaSeca || isFrigideiraAntiaderenteFerro || isFrigideira || isMelhorFrigideiraAntiaderente || isMelhorClimatizador || isArCondicionadoPortatil || isMelhorVentiladorColuna || isMelhorUmidificadorQuarto || isClimatizadorOuVentilador || isMelhorFrigobar ? post.titulo : `${post.titulo} - Casa em Alta`}
   description={post.descricao}
   image={coverImage}
   type="article"
@@ -26957,6 +26967,677 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
             <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
               <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
               <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Melhor Ventilador de Coluna: os 5 Mais Vendidos de 2026</span>
+            </div>
+          </a>
+
+          <a href="/quanto-gasta-de-energia-eletrodomesticos" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;flex-shrink:0;">
+              <img src="/images/consumo-energia/capa-consumo-energia.webp" alt="Quanto gasta de energia cada eletrodoméstico" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Quanto Gasta de Energia Cada Eletrodoméstico? Calcule Aqui</span>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    )}
+
+
+
+    {isMelhorFrigobar && (
+      <div>
+
+        <!-- Capa -->
+        <div class="rounded-2xl overflow-hidden mb-8 shadow-md">
+          <img
+            src="/images/melhor-frigobar/capa-melhor-frigobar.webp"
+            alt="Melhor frigobar branco em um canto da cozinha"
+            width="1280"
+            height="720"
+            class="w-full h-auto object-cover"
+            loading="eager"
+          />
+        </div>
+
+        <p class="text-xs text-slate-400 mb-6">Atualizado em outubro de 2026</p>
+
+        <!-- Introdução -->
+        <div class="bg-orange-50 border border-orange-100 rounded-2xl p-6 mb-8">
+          <p class="text-slate-800 text-base leading-relaxed mb-3">
+            O melhor frigobar para a maioria das casas é o Midea 93 Litros Inverter Bivolt: nota 4,2/5 em 366 avaliações, mais de 100 compras no mês e a única versão bivolt da lista, o que resolve a dúvida da voltagem de uma vez.
+          </p>
+          <p class="text-slate-800 text-base leading-relaxed mb-3">
+            Para quem busca a nota mais alta, o Electrolux 90L EM90 tem 4,9/5, e o Hisense 94 Litros RR121NW3A soma 4,8/5 com mais de 100 compras mensais e preço em promoção. Já o Brastemp Retrô 76 Litros é a escolha de quem quer um frigobar com cara de vintage na cozinha.
+          </p>
+          <p class="text-slate-800 text-base leading-relaxed">
+            Não testamos esses frigobares em casa. O ranking cruza nota, volume de avaliações, ficha técnica e recursos, com dados consultados na Amazon Brasil em outubro de 2026.
+          </p>
+        </div>
+
+        <!-- TL;DR -->
+        <div class="bg-purple-50 border border-purple-100 rounded-2xl p-6 mb-10">
+          <p class="text-slate-800 font-bold text-base mb-3">Em resumo</p>
+          <p class="text-sm text-slate-700 leading-relaxed">
+            Uso geral e qualquer tomada: <strong>Midea 93L Bivolt</strong>. Nota mais alta: <strong>Electrolux 90L EM90</strong>. Maior volume de vendas: <strong>Hisense 94L</strong>. Visual retrô: <strong>Brastemp Retrô 76L</strong>. Confira a voltagem da tomada antes de comprar, porque só o Midea é bivolt.
+          </p>
+        </div>
+
+        <!-- Índice -->
+        <nav class="border border-slate-200 rounded-2xl p-6 mb-10 bg-white">
+          <p class="font-bold text-slate-800 mb-3">Índice</p>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#qual-o-melhor-frigobar" class="text-orange-500 hover:text-orange-600 font-medium">Qual o melhor frigobar para comprar?</a></li>
+            <li><a href="#tabela-comparativa" class="text-orange-500 hover:text-orange-600 font-medium">Tabela comparativa dos 5 frigobares</a></li>
+            <li><a href="#ranking" class="text-orange-500 hover:text-orange-600 font-medium">Ranking do melhor frigobar de 2026</a></li>
+            <li><a href="#voltagem" class="text-orange-500 hover:text-orange-600 font-medium">Frigobar 110V, 127V ou bivolt: qual escolher?</a></li>
+            <li><a href="#frigobar-para-quarto" class="text-orange-500 hover:text-orange-600 font-medium">Frigobar para quarto: o que considerar</a></li>
+            <li><a href="#consumo" class="text-orange-500 hover:text-orange-600 font-medium">Quanto um frigobar gasta de energia?</a></li>
+            <li><a href="#erros-comuns" class="text-orange-500 hover:text-orange-600 font-medium">Erros comuns na compra de um frigobar</a></li>
+            <li><a href="#checklist" class="text-orange-500 hover:text-orange-600 font-medium">Checklist antes de decidir</a></li>
+            <li><a href="#faq" class="text-orange-500 hover:text-orange-600 font-medium">Perguntas frequentes</a></li>
+          </ul>
+        </nav>
+
+        <h2 id="qual-o-melhor-frigobar" class="text-2xl font-bold text-slate-900 mb-4">Qual o melhor frigobar para comprar?</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Depende do que pesa mais para você: nota, voltagem da tomada ou visual. Entre os cinco frigobares desta lista, o Midea 93 Litros Inverter Bivolt é o mais equilibrado, porque funciona em 110V e 220V sem precisar de transformador e ainda tem mais de 100 compras por mês na Amazon.
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          Se a prioridade é a nota, o Electrolux 90L EM90 lidera com 4,9/5, ainda que com uma base de avaliações menor que a dos concorrentes mais vendidos. Já quem quer um frigobar pequeno com estética diferente encontra no Brastemp Retrô 76 Litros a única opção com visual vintage do ranking.
+        </p>
+
+        <h2 id="tabela-comparativa" class="text-2xl font-bold text-slate-900 mb-4">Tabela comparativa dos 5 frigobares</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-5">
+          Dados das fichas do fabricante e dos anúncios na Amazon Brasil, na ordem do ranking.
+        </p>
+        <div class="overflow-x-auto mb-10">
+          <table class="w-full text-sm border-collapse">
+            <thead>
+              <tr class="bg-slate-100">
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Modelo</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Litragem</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Voltagem</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Nota (avaliações)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-white">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Midea 93L Inverter</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">93 litros</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Bivolt</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">4,2/5 (366)</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Philco PFG114</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">93 litros</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">127V</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">3,9/5 (31)</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Electrolux EM90</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">90 litros</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">127V</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">4,9/5 (59)</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Hisense RR121NW3A</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">94 litros</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">127V</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">4,8/5 (12)</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Brastemp Retrô BRA08M</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">76 litros</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">110V</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">5,0/5 (8)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 id="ranking" class="text-2xl font-bold text-slate-900 mb-4">Ranking do melhor frigobar de 2026</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-6">
+          A ordem do ranking do melhor frigobar pesa a nota junto com o volume de avaliações e compras, e depois recursos como voltagem e litragem.
+        </p>
+
+        <!-- Produto 1: Midea -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-orange-500 px-6 py-4">
+            <span class="inline-block bg-white text-orange-600 text-xs font-bold uppercase tracking-wide px-2.5 py-1 rounded-full mb-2">Melhor no geral</span>
+            <h3 class="text-white font-black text-xl">1º lugar - Frigobar Midea 93 Litros Inverter Bivolt Branco</h3>
+            <p class="text-orange-100 text-sm mt-1">Nota 4,2/5 em 366 avaliações, mais de 100 compras no mês</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+              <!-- IMAGEM: frigobar-midea-93l-inverter-bivolt.webp -->
+              <img src="/images/melhor-frigobar/frigobar-midea-93l-inverter-bivolt.webp" alt="Frigobar Midea 93 Litros Inverter Bivolt Branco" width="233" height="600" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <p class="text-slate-700 text-sm leading-relaxed mb-4">
+                É o único frigobar da lista que funciona em 110V e 220V sem precisar trocar de modelo nem usar transformador. Compressor inverter, mais de 100 compras por mês e a maior base de avaliações entre os cinco.
+              </p>
+              <a href="https://link.amazon/B00lJAQ2D" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon</a>
+              <h4 class="font-bold text-slate-800 mb-3">Ficha Técnica</h4>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Capacidade:</strong> 93 litros</li>
+                <li><strong>Voltagem:</strong> bivolt (110V e 220V)</li>
+                <li><strong>Compressor:</strong> inverter</li>
+                <li><strong>Cor:</strong> branco</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Único bivolt da lista, serve em qualquer tomada</li>
+                    <li>Compressor inverter, tende a ser mais silencioso</li>
+                    <li>Maior volume de compras mensais</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Nota um pouco abaixo do Electrolux e do Hisense</li>
+                    <li>Sem controle de temperatura destacado na ficha</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mt-4">
+                <strong>Veredito:</strong> este é o melhor frigobar para quem muda de casa com frequência ou não sabe ainda qual vai ser a voltagem da tomada.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 2: Philco -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-slate-800 px-6 py-4">
+            <span class="inline-block bg-white text-slate-800 text-xs font-bold uppercase tracking-wide px-2.5 py-1 rounded-full mb-2">6 níveis de ajuste</span>
+            <h3 class="text-white font-black text-xl">2º lugar - Frigobar Philco 93L PFG114</h3>
+            <p class="text-slate-300 text-sm mt-1">Nota 3,9/5 em 31 avaliações, mais de 50 compras no mês</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+              <!-- IMAGEM: frigobar-philco-93l-pfg114.webp -->
+              <img src="/images/melhor-frigobar/frigobar-philco-93l-pfg114.webp" alt="Frigobar Philco 93 litros PFG114" width="233" height="600" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <p class="text-slate-700 text-sm leading-relaxed mb-4">
+                Tem 6 níveis de ajuste de temperatura, o que dá mais controle fino do que a maioria dos frigobares dessa faixa. Vale lembrar: a base de avaliações é pequena, só 31, então a nota ainda tem pouco peso estatístico.
+              </p>
+              <a href="https://link.amazon/B0dBVI3pV" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon</a>
+              <h4 class="font-bold text-slate-800 mb-3">Ficha Técnica</h4>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Capacidade:</strong> 93 litros</li>
+                <li><strong>Voltagem:</strong> 127V</li>
+                <li><strong>Ajuste de temperatura:</strong> 6 níveis</li>
+                <li><strong>Modelo:</strong> PFG114</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>6 níveis de ajuste de temperatura</li>
+                    <li>Costuma aparecer em promoção na Amazon</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Ainda com poucas avaliações, apenas 31, mas nota próxima de 4</li>
+                    <li>Só 127V, sem versão bivolt</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mt-4">
+                <strong>Veredito:</strong> bom para quem quer controlar a temperatura com mais precisão e já sabe que a tomada em casa é 127V.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin:32px 0;font-family:sans-serif;">
+          <p style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#c2410c;margin:0 0 12px;">Leia também:</p>
+          <a href="/melhor-climatizador-de-ar" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;min-width:200px;overflow:hidden;">
+              <img src="/images/melhor-climatizador-de-ar/capa-melhor-climatizador-de-ar.webp" alt="Melhor climatizador de ar: os 5 mais vendidos de 2026" width="200" height="113" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy" />
+            </div>
+            <div style="padding:20px 22px;display:flex;align-items:center;">
+              <p style="margin:0;font-size:15px;font-weight:500;line-height:1.5;color:#1a1a1a;">Melhor Climatizador de Ar: os 5 Mais Vendidos de 2026</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Produto 3: Electrolux -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-slate-800 px-6 py-4">
+            <span class="inline-block bg-white text-slate-800 text-xs font-bold uppercase tracking-wide px-2.5 py-1 rounded-full mb-2">Nota mais alta</span>
+            <h3 class="text-white font-black text-xl">3º lugar - Frigobar Electrolux 90L EM90</h3>
+            <p class="text-slate-300 text-sm mt-1">Nota 4,9/5 em 59 avaliações, mais de 50 compras no mês</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+              <!-- IMAGEM: frigobar-electrolux-90l-em90.webp -->
+              <img src="/images/melhor-frigobar/frigobar-electrolux-90l-em90.webp" alt="Frigobar Electrolux 90 litros EM90 com controle de temperatura" width="233" height="600" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <p class="text-slate-700 text-sm leading-relaxed mb-4">
+                A nota mais alta entre os cinco frigobares com volume relevante de avaliações. Tem controle de temperatura e é a opção de quem já confia na marca Electrolux para a cozinha.
+              </p>
+              <a href="https://link.amazon/B099Afk2D" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon</a>
+              <h4 class="font-bold text-slate-800 mb-3">Ficha Técnica</h4>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Capacidade:</strong> 90 litros</li>
+                <li><strong>Voltagem:</strong> 127V</li>
+                <li><strong>Controle:</strong> ajuste de temperatura</li>
+                <li><strong>Modelo:</strong> EM90</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Maior nota do ranking, 4,9/5</li>
+                    <li>Controle de temperatura prático</li>
+                    <li>Marca com ampla rede de assistência no Brasil</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Só 127V, sem versão bivolt</li>
+                    <li>Capacidade um pouco menor que Midea, Philco e Hisense</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mt-4">
+                <strong>Veredito:</strong> para quem busca o melhor frigobar pela nota, este é o modelo com avaliação mais alta da lista, desde que a casa tenha tomada 127V.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 4: Hisense -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-slate-800 px-6 py-4">
+            <span class="inline-block bg-white text-slate-800 text-xs font-bold uppercase tracking-wide px-2.5 py-1 rounded-full mb-2">Mais vendido</span>
+            <h3 class="text-white font-black text-xl">4º lugar - Frigobar Hisense 94 Litros RR121NW3A Branco</h3>
+            <p class="text-slate-300 text-sm mt-1">Nota 4,8/5 em 12 avaliações, mais de 100 compras no mês</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+              <!-- IMAGEM: frigobar-hisense-94l-rr121nw3a.webp -->
+              <img src="/images/melhor-frigobar/frigobar-hisense-94l-rr121nw3a.webp" alt="Frigobar Hisense 94 litros RR121NW3A branco" width="233" height="600" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <p class="text-slate-700 text-sm leading-relaxed mb-4">
+                É o de maior litragem da lista, 94 litros, e empata com o Midea no volume de compras mensais. Está em promoção no momento desta checagem, o que ajuda a explicar o volume de vendas.
+              </p>
+              <a href="https://link.amazon/B0aGUlYsr" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon</a>
+              <h4 class="font-bold text-slate-800 mb-3">Ficha Técnica</h4>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Capacidade:</strong> 94 litros</li>
+                <li><strong>Voltagem:</strong> 127V</li>
+                <li><strong>Cor:</strong> branco</li>
+                <li><strong>Modelo:</strong> RR121NW3A</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Maior litragem da lista, 94 litros</li>
+                    <li>Mais de 100 compras no mês</li>
+                    <li>Costuma estar em promoção na Amazon</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Nota de 4,8 ainda com base pequena, 12 avaliações</li>
+                    <li>Só 127V, sem versão bivolt</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mt-4">
+                <strong>Veredito:</strong> bom para quem quer a maior capacidade entre os cinco e está de olho no preço.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 5: Brastemp Retrô -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-slate-800 px-6 py-4">
+            <span class="inline-block bg-white text-slate-800 text-xs font-bold uppercase tracking-wide px-2.5 py-1 rounded-full mb-2">Visual retrô</span>
+            <h3 class="text-white font-black text-xl">5º lugar - Frigobar Brastemp Retrô 76 Litros BRA08M Preto</h3>
+            <p class="text-slate-300 text-sm mt-1">Nota 5,0/5 em 8 avaliações</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+              <!-- IMAGEM: frigobar-brastemp-retro-76l-bra08m.webp -->
+              <img src="/images/melhor-frigobar/frigobar-brastemp-retro-76l-bra08m.webp" alt="Frigobar Brastemp Retrô 76 litros BRA08M preto" width="233" height="600" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <p class="text-slate-700 text-sm leading-relaxed mb-4">
+                O único frigobar retrô da lista, com visual vintage que foge do padrão branco quadrado dos outros quatro. Nota máxima, mas com apenas 8 avaliações, então ainda é pouco dado para confiar de olhos fechados.
+              </p>
+              <a href="https://link.amazon/B0eIpyn57" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-3 transition-colors">Ver preço na Amazon</a>
+              <a href="https://link.amazon/B0a7AiGkh" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-white border border-orange-300 hover:bg-orange-50 text-orange-600 text-center font-semibold text-sm py-2.5 rounded-xl mb-6 transition-colors">Ver outras opções e cores de frigobar retrô</a>
+              <h4 class="font-bold text-slate-800 mb-3">Ficha Técnica</h4>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Capacidade:</strong> 76 litros</li>
+                <li><strong>Voltagem:</strong> 110V</li>
+                <li><strong>Cor:</strong> preto, com visual retrô</li>
+                <li><strong>Modelo:</strong> BRA08M</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Visual diferente, único retrô da lista</li>
+                    <li>Nota máxima entre quem já avaliou</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Ainda com poucas avaliações, só 8, apesar da nota alta</li>
+                    <li>Menor litragem da lista, 76 litros</li>
+                    <li>Só 110V, sem versão bivolt</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mt-4">
+                <strong>Veredito:</strong> para quem quer decoração em primeiro lugar e não se importa com a litragem menor. O botão de "outras opções e cores" leva a uma busca na Amazon por frigobar retrô, não a um produto específico, caso você queira comparar outras cores ou marcas desse estilo.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <h2 id="voltagem" class="text-2xl font-bold text-slate-900 mb-4">Frigobar 110V, 127V ou bivolt: qual escolher?</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          A voltagem certa é a da tomada onde o frigobar vai ficar, não a que parece mais comum. Na prática, "110V" e "127V" são tratados como o mesmo padrão no comércio brasileiro, mas 220V é outra rede elétrica.
+        </p>
+        <ul class="space-y-2 text-sm text-slate-700 mb-4">
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Midea 93L:</strong> bivolt, funciona em 110V/127V e em 220V.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Philco PFG114:</strong> 127V.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Electrolux EM90:</strong> 127V.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Hisense RR121NW3A:</strong> 127V.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Brastemp Retrô BRA08M:</strong> 110V.</span></li>
+        </ul>
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          Ligar um frigobar 127V numa tomada 220V, ou o contrário, pode queimar o compressor na hora ou danificar o aparelho aos poucos. Antes de finalizar a compra, teste a tomada com um multímetro ou confira na conta de luz, e, se tiver dúvida, pergunte ao eletricista do prédio. Só o Midea resolve essa dúvida de vez, porque é bivolt.
+        </p>
+
+        <h2 id="frigobar-para-quarto" class="text-2xl font-bold text-slate-900 mb-4">Frigobar para quarto: o que considerar</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Um frigobar para quarto costuma pedir menos capacidade do que um para cozinha compartilhada, porque geralmente guarda água, refrigerante, remédio ou um lanche rápido, não a geladeira da casa inteira. Os modelos deste ranking vão de 76 a 94 litros, uma faixa generosa até para quarto de república ou kitnet.
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Para quarto, vale olhar três pontos além da nota:
+        </p>
+        <ul class="space-y-2 text-sm text-slate-700 mb-10">
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Ruído do compressor:</strong> nenhuma das fichas desta lista informa decibéis, então vale ler os comentários de quem já comprou antes de decidir.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Espaço disponível:</strong> frigobares de 90 a 94 litros ocupam mais área do que os modelos de 45 a 50 litros vendidos no mercado, então meça o canto do quarto antes de comprar.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Tomada do quarto:</strong> confirme se é 110V, 127V ou 220V antes de escolher o modelo, já que só o Midea é bivolt.</span></li>
+        </ul>
+
+        <div style="margin:32px 0;font-family:sans-serif;">
+          <p style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#c2410c;margin:0 0 12px;">Leia também:</p>
+          <a href="/melhor-umidificador-de-ar-para-quarto" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;min-width:200px;overflow:hidden;">
+              <img src="/images/melhor-umidificador-de-ar-para-quarto/capa-melhor-umidificador-de-ar-para-quarto.webp" alt="Melhor umidificador de ar para quarto" width="200" height="113" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy" />
+            </div>
+            <div style="padding:20px 22px;display:flex;align-items:center;">
+              <p style="margin:0;font-size:15px;font-weight:500;line-height:1.5;color:#1a1a1a;">Melhor Umidificador de Ar para Quarto: Qual Comprar</p>
+            </div>
+          </a>
+        </div>
+
+        <h2 id="consumo" class="text-2xl font-bold text-slate-900 mb-4">Quanto um frigobar gasta de energia?</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Menos do que parece, porque o compressor não fica ligado o tempo todo: ele liga e desliga em ciclos para manter a temperatura. As fichas destes cinco modelos não informam o consumo mensal em kWh de forma destacada, então a estimativa mais confiável é a etiqueta de eficiência energética do Inmetro que vem no próprio aparelho.
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Como referência, um frigobar costuma consumir entre 15 e 30 kWh por mês, bem menos do que uma geladeira duplex. Para comparar com outros aparelhos da casa, como ar-condicionado ou ventilador de coluna, use a nossa <a href="/quanto-gasta-de-energia-eletrodomesticos" class="text-orange-500 font-semibold hover:underline">calculadora de consumo de energia</a>, que já usa a tarifa da sua distribuidora.
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          Frigobar não é a mesma coisa que geladeira comum. Além da diferença de tamanho e litragem, a maioria dos frigobares tem só um compressor para refrigerar, sem o sistema de descongelamento automático (frost free) comum nas geladeiras maiores, o que explica por que muitos modelos pedem degelo manual de tempos em tempos.
+        </p>
+
+        <h2 id="erros-comuns" class="text-2xl font-bold text-slate-900 mb-4">Erros comuns na compra de um frigobar</h2>
+        <ul class="list-disc list-inside space-y-2 text-slate-700 mb-10 ml-2">
+          <li><strong>Ignorar a voltagem:</strong> comprar 127V para tomada 220V, ou o contrário, pode queimar o aparelho no primeiro uso.</li>
+          <li><strong>Olhar só a nota, sem ver quantas avaliações:</strong> 5,0 com 8 avaliações pesa diferente de 4,2 com 366. Isso não invalida a nota, mas pede mais cautela.</li>
+          <li><strong>Esquecer de medir o espaço:</strong> frigobares de 90 a 94 litros são maiores do que a imagem do produto sugere. Meça altura, largura e profundidade do cantinho reservado antes de clicar em comprar.</li>
+          <li><strong>Achar que frigobar substitui geladeira:</strong> para uma casa com mais de duas pessoas, o frigobar costuma ser um complemento, não a geladeira principal.</li>
+        </ul>
+
+        <h2 id="checklist" class="text-2xl font-bold text-slate-900 mb-6">Checklist antes de decidir qual é o melhor frigobar para você</h2>
+        <ul class="space-y-2 text-sm text-slate-700 mb-10">
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span>Confirmei a voltagem da tomada onde o frigobar vai ficar.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span>Medi o espaço disponível, incluindo abertura da porta.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span>Defini se é para quarto, escritório ou cozinha de apoio.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span>Comparei nota junto com o número de avaliações, não só a nota isolada.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span>Verifiquei se a litragem atende o uso (de 76 a 94 litros nesta lista).</span></li>
+        </ul>
+
+        <h2 id="faq" class="text-2xl font-bold text-slate-900 mb-6">Perguntas frequentes</h2>
+        <div class="space-y-3 mb-10">
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Qual o melhor frigobar para comprar em 2026?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              O Midea 93 Litros Inverter Bivolt é o mais equilibrado da lista, porque junta nota 4,2/5, mais de 100 compras por mês e compatibilidade com qualquer tomada, já que é bivolt. Para quem quer a nota mais alta, o Electrolux EM90 tem 4,9/5.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Frigobar gasta muita energia?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Não costuma gastar muito. Um frigobar comum consome entre 15 e 30 kWh por mês, bem menos do que uma geladeira duplex, porque o compressor liga em ciclos. Confira a etiqueta do Inmetro no aparelho para o número exato do modelo escolhido.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Qual a diferença entre frigobar e geladeira comum?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              O frigobar é menor, tem menos litragem e, na maioria dos modelos, não tem o sistema frost free das geladeiras maiores, o que pede degelo manual de tempos em tempos. Ele serve bem como complemento, não como geladeira principal de uma casa com várias pessoas.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Frigobar 110V funciona em tomada 220V?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Não, e não deve ser tentado. Ligar um aparelho 110V ou 127V numa tomada 220V pode queimar o compressor na hora. Nesta lista, só o Midea 93 Litros é bivolt e aceita as duas voltagens sem adaptador.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Qual a litragem ideal de frigobar para quarto ou apartamento pequeno?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Para quarto ou apartamento pequeno, frigobares entre 76 e 94 litros, como os desta lista, costumam sobrar espaço, já que servem bem para bebidas, remédios e lanches rápidos. Quem busca algo ainda mais compacto pode procurar modelos de 45 a 50 litros, fora do recorte deste ranking.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Frigobar Consul ou Electrolux: qual escolher?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Não testamos um frigobar Consul especificamente neste ranking, mas as duas marcas têm ampla rede de assistência técnica no Brasil. Entre os modelos que avaliamos, o Electrolux EM90 tem a maior nota da lista, 4,9/5, com controle de temperatura e 127V.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Vale a pena comprar um frigobar retrô?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Vale, se o visual for prioridade. O Brastemp Retrô 76 Litros desta lista tem nota máxima entre quem avaliou, mas ainda com base pequena, só 8 avaliações, e litragem menor que os outros quatro modelos. Para quem quer só função, os modelos brancos tradicionais entregam mais capacidade pelo mesmo investimento.
+            </div>
+          </details>
+        </div>
+
+        <!-- Schema FAQ -->
+        <script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Qual o melhor frigobar para comprar em 2026?",
+      "acceptedAnswer": { "@type": "Answer", "text": "O Midea 93 Litros Inverter Bivolt é o mais equilibrado da lista, porque junta nota 4,2/5, mais de 100 compras por mês e compatibilidade com qualquer tomada, já que é bivolt. Para quem quer a nota mais alta, o Electrolux EM90 tem 4,9/5." }
+    },
+    {
+      "@type": "Question",
+      "name": "Frigobar gasta muita energia?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Não costuma gastar muito. Um frigobar comum consome entre 15 e 30 kWh por mês, bem menos do que uma geladeira duplex, porque o compressor liga em ciclos. Confira a etiqueta do Inmetro no aparelho para o número exato do modelo escolhido." }
+    },
+    {
+      "@type": "Question",
+      "name": "Qual a diferença entre frigobar e geladeira comum?",
+      "acceptedAnswer": { "@type": "Answer", "text": "O frigobar é menor, tem menos litragem e, na maioria dos modelos, não tem o sistema frost free das geladeiras maiores, o que pede degelo manual de tempos em tempos. Ele serve bem como complemento, não como geladeira principal de uma casa com várias pessoas." }
+    },
+    {
+      "@type": "Question",
+      "name": "Frigobar 110V funciona em tomada 220V?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Não, e não deve ser tentado. Ligar um aparelho 110V ou 127V numa tomada 220V pode queimar o compressor na hora. Nesta lista, só o Midea 93 Litros é bivolt e aceita as duas voltagens sem adaptador." }
+    },
+    {
+      "@type": "Question",
+      "name": "Qual a litragem ideal de frigobar para quarto ou apartamento pequeno?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Para quarto ou apartamento pequeno, frigobares entre 76 e 94 litros, como os desta lista, costumam sobrar espaço, já que servem bem para bebidas, remédios e lanches rápidos. Quem busca algo ainda mais compacto pode procurar modelos de 45 a 50 litros, fora do recorte deste ranking." }
+    },
+    {
+      "@type": "Question",
+      "name": "Frigobar Consul ou Electrolux: qual escolher?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Não testamos um frigobar Consul especificamente neste ranking, mas as duas marcas têm ampla rede de assistência técnica no Brasil. Entre os modelos que avaliamos, o Electrolux EM90 tem a maior nota da lista, 4,9/5, com controle de temperatura e 127V." }
+    },
+    {
+      "@type": "Question",
+      "name": "Vale a pena comprar um frigobar retrô?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Vale, se o visual for prioridade. O Brastemp Retrô 76 Litros desta lista tem nota máxima entre quem avaliou, mas ainda com base pequena, só 8 avaliações, e litragem menor que os outros quatro modelos. Para quem quer só função, os modelos brancos tradicionais entregam mais capacidade pelo mesmo investimento." }
+    }
+  ]
+})} />
+
+        <!-- Schema ItemList com aggregateRating (Product de afiliado, sem offers) -->
+        <script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Melhor Frigobar: Qual Comprar",
+  "itemListOrder": "https://schema.org/ItemListOrderAscending",
+  "numberOfItems": 5,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "Product",
+        "name": "Frigobar Midea 93 Litros Inverter Bivolt Branco",
+        "image": "https://www.casaemalta.com.br/images/melhor-frigobar/frigobar-midea-93l-inverter-bivolt.webp",
+        "description": "Frigobar Midea 93 litros, compressor inverter, bivolt (110V e 220V), branco.",
+        "brand": { "@type": "Brand", "name": "Midea" },
+        "url": "https://link.amazon/B00lJAQ2D",
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.2", "reviewCount": "366", "bestRating": "5", "worstRating": "1" }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "Product",
+        "name": "Frigobar Philco 93L PFG114",
+        "image": "https://www.casaemalta.com.br/images/melhor-frigobar/frigobar-philco-93l-pfg114.webp",
+        "description": "Frigobar Philco 93 litros, 6 níveis de ajuste de temperatura, 127V.",
+        "brand": { "@type": "Brand", "name": "Philco" },
+        "url": "https://link.amazon/B0dBVI3pV",
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "3.9", "reviewCount": "31", "bestRating": "5", "worstRating": "1" }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "Product",
+        "name": "Frigobar Electrolux 90L EM90",
+        "image": "https://www.casaemalta.com.br/images/melhor-frigobar/frigobar-electrolux-90l-em90.webp",
+        "description": "Frigobar Electrolux 90 litros, com controle de temperatura, 127V.",
+        "brand": { "@type": "Brand", "name": "Electrolux" },
+        "url": "https://link.amazon/B099Afk2D",
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "59", "bestRating": "5", "worstRating": "1" }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@type": "Product",
+        "name": "Frigobar Hisense 94 Litros RR121NW3A Branco",
+        "image": "https://www.casaemalta.com.br/images/melhor-frigobar/frigobar-hisense-94l-rr121nw3a.webp",
+        "description": "Frigobar Hisense 94 litros, branco, 127V.",
+        "brand": { "@type": "Brand", "name": "Hisense" },
+        "url": "https://link.amazon/B0aGUlYsr",
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "12", "bestRating": "5", "worstRating": "1" }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "item": {
+        "@type": "Product",
+        "name": "Frigobar Brastemp Retrô 76 Litros BRA08M Preto",
+        "image": "https://www.casaemalta.com.br/images/melhor-frigobar/frigobar-brastemp-retro-76l-bra08m.webp",
+        "description": "Frigobar Brastemp Retrô 76 litros, visual vintage, preto, 110V.",
+        "brand": { "@type": "Brand", "name": "Brastemp" },
+        "url": "https://link.amazon/B0eIpyn57",
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "8", "bestRating": "5", "worstRating": "1" }
+      }
+    }
+  ]
+})} />
+
+        <!-- Leia também -->
+        <p style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#c2410c;margin:24px 0 12px;">Leia também:</p>
+        <div style="display:flex;flex-direction:column;gap:12px;">
+          <a href="/melhor-climatizador-de-ar" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;flex-shrink:0;">
+              <img src="/images/melhor-climatizador-de-ar/capa-melhor-climatizador-de-ar.webp" alt="Melhor climatizador de ar" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Melhor Climatizador de Ar: os 5 Mais Vendidos de 2026</span>
+            </div>
+          </a>
+
+          <a href="/ar-condicionado-portatil-12000-btus" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;flex-shrink:0;">
+              <img src="/images/ar-condicionado-portatil/capa-ar-condicionado-portatil-12000-btus-v3.webp" alt="Melhor ar condicionado portátil 12000 BTUs" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Melhor Ar Condicionado Portátil 12000 BTUs: Vale a Pena?</span>
+            </div>
+          </a>
+
+          <a href="/melhor-umidificador-de-ar-para-quarto" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;flex-shrink:0;">
+              <img src="/images/melhor-umidificador-de-ar-para-quarto/capa-melhor-umidificador-de-ar-para-quarto.webp" alt="Melhor umidificador de ar para quarto" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Melhor Umidificador de Ar para Quarto: Qual Comprar</span>
             </div>
           </a>
 
