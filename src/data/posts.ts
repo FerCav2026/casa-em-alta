@@ -623,6 +623,16 @@ export const posts: Post[] = [
     categoria: 'comparativos',
     categoriaLabel: 'Comparativo',
     categoriaColor: 'bg-blue-100 text-blue-700',
+  },
+  {
+    slug: 'melhor-frigobar',
+    titulo: 'Melhor Frigobar: Qual Comprar',
+    resumo: 'Melhor frigobar: comparamos Midea, Philco, Electrolux, Hisense e Brastemp por nota, avaliações, voltagem e litragem para você escolher sem errar.',
+    tempo: '8 min de leitura',
+    imagem: '/images/melhor-frigobar/capa-melhor-frigobar.webp',
+    categoria: 'rankings-e-listas',
+    categoriaLabel: 'Rankings e Listas',
+    categoriaColor: 'bg-green-100 text-green-700',
   }
 ];
 
