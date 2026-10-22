@@ -633,6 +633,16 @@ export const posts: Post[] = [
     categoria: 'rankings-e-listas',
     categoriaLabel: 'Rankings e Listas',
     categoriaColor: 'bg-green-100 text-green-700',
+  },
+  {
+    slug: 'melhor-sanduicheira',
+    titulo: 'Melhor Sanduicheira: Qual Não Gruda e Vale o Preço?',
+    resumo: 'Melhor sanduicheira: comparamos Cadence, Electrolux, Britânia, Mondial e Oster por nota, avaliações, potência e voltagem para você escolher sem errar.',
+    tempo: '8 min de leitura',
+    imagem: '/images/melhor-sanduicheira/capa-melhor-sanduicheira.webp',
+    categoria: 'rankings-e-listas',
+    categoriaLabel: 'Rankings e Listas',
+    categoriaColor: 'bg-green-100 text-green-700',
   }
 ];
 

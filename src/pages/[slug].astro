@@ -419,6 +419,13 @@ const posts: Record<string, { titulo: string; descricao: string; categoria: stri
     dataCriacao: '2026-10-21',
     dataModificacao: '2026-10-21',
   },
+  'melhor-sanduicheira': {
+    titulo: 'Melhor Sanduicheira: Qual Não Gruda e Vale o Preço?',
+    descricao: 'Melhor sanduicheira em 2026: compare Cadence, Electrolux, Britânia, Mondial e Oster por nota, avaliações e potência e descubra qual não gruda e vale o preço.',
+    categoria: 'Rankings e Listas',
+    dataCriacao: '2026-10-22',
+    dataModificacao: '2026-10-22',
+  },
 };
 
 export function getStaticPaths() {
@@ -480,6 +487,7 @@ export function getStaticPaths() {
     'melhor-umidificador-de-ar-para-quarto': {},
     'climatizador-ou-ventilador': {},
     'melhor-frigobar': {},
+    'melhor-sanduicheira': {},
   }).map((slug) => ({ params: { slug } }));
 }
 
@@ -579,6 +587,7 @@ const isMelhorVentiladorColuna = slug === 'melhor-ventilador-de-coluna';
 const isMelhorUmidificadorQuarto = slug === 'melhor-umidificador-de-ar-para-quarto';
 const isClimatizadorOuVentilador = slug === 'climatizador-ou-ventilador';
 const isMelhorFrigobar = slug === 'melhor-frigobar';
+const isMelhorSanduicheira = slug === 'melhor-sanduicheira';
 
 const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isAirfryer ? '/images/airfryer/capa-airfryer.webp'
@@ -637,11 +646,12 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isMelhorUmidificadorQuarto ? '/images/melhor-umidificador-de-ar-para-quarto/capa-melhor-umidificador-de-ar-para-quarto.webp'
   : isClimatizadorOuVentilador ? '/images/climatizador-ou-ventilador/capa-climatizador-ou-ventilador.webp'
   : isMelhorFrigobar ? '/images/melhor-frigobar/capa-melhor-frigobar.webp'
+  : isMelhorSanduicheira ? '/images/melhor-sanduicheira/capa-melhor-sanduicheira.webp'
   : undefined;
 ---
 
 <BaseLayout
-  title={isPanelaEletricaOuConvencional || isMelhoresCafeteiras || isProjetorShopee || isComoArrumarArmarios || isLavaSeca || isFrigideiraAntiaderenteFerro || isFrigideira || isMelhorFrigideiraAntiaderente || isMelhorClimatizador || isArCondicionadoPortatil || isMelhorVentiladorColuna || isMelhorUmidificadorQuarto || isClimatizadorOuVentilador || isMelhorFrigobar ? post.titulo : `${post.titulo} - Casa em Alta`}
+  title={isPanelaEletricaOuConvencional || isMelhoresCafeteiras || isProjetorShopee || isComoArrumarArmarios || isLavaSeca || isFrigideiraAntiaderenteFerro || isFrigideira || isMelhorFrigideiraAntiaderente || isMelhorClimatizador || isArCondicionadoPortatil || isMelhorVentiladorColuna || isMelhorUmidificadorQuarto || isClimatizadorOuVentilador || isMelhorFrigobar || isMelhorSanduicheira ? post.titulo : `${post.titulo} - Casa em Alta`}
   description={post.descricao}
   image={coverImage}
   type="article"
@@ -27657,6 +27667,707 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
             <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
               <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
               <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Quanto Gasta de Energia Cada Eletrodoméstico? Calcule Aqui</span>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    )}
+
+    {isMelhorSanduicheira && (
+      <div>
+
+        <!-- Capa -->
+        <div class="rounded-2xl overflow-hidden mb-8 shadow-md">
+          <img
+            src="/images/melhor-sanduicheira/capa-melhor-sanduicheira.webp"
+            alt="Melhor sanduicheira elétrica em cima do balcão da cozinha"
+            width="1280"
+            height="720"
+            class="w-full h-auto object-cover"
+            loading="eager"
+          />
+        </div>
+
+        <p class="text-xs text-slate-400 mb-6">Atualizado em outubro de 2026</p>
+
+        <!-- Introdução -->
+        <div class="bg-orange-50 border border-orange-100 rounded-2xl p-6 mb-8">
+          <p class="text-slate-800 text-base leading-relaxed mb-3">
+            A melhor sanduicheira para a maioria das casas é a Cadence Click 127V: nota 4,8/5 em mais de 21 mil avaliações e mais de 9 mil compras no mês, de longe o modelo mais vendido e mais avaliado desta lista.
+          </p>
+          <p class="text-slate-800 text-base leading-relaxed mb-3">
+            Para quem quer chapa antiaderente e visual inox, a Electrolux ESG20 empata em nota, 4,8/5, com chapa ondulada que marca o pão. Já a Britânia BGR27I é a mais versátil, porque funciona como sanduicheira e como grill press para carnes e legumes.
+          </p>
+          <p class="text-slate-800 text-base leading-relaxed">
+            Não testamos essas sanduicheiras em casa. O ranking cruza nota, volume de avaliações, ficha técnica e recursos, com dados consultados na Amazon Brasil em outubro de 2026. Vale um alerta logo de cara: a Oster OSAN500 tem só 424 avaliações, bem menos que as outras quatro, então a nota dela pesa menos nessa comparação.
+          </p>
+        </div>
+
+        <!-- TL;DR -->
+        <div class="bg-purple-50 border border-purple-100 rounded-2xl p-6 mb-10">
+          <p class="text-slate-800 font-bold text-base mb-3">Em resumo</p>
+          <p class="text-sm text-slate-700 leading-relaxed">
+            Mais vendida e mais avaliada: <strong>Cadence Click</strong>. Antiaderente e nota máxima: <strong>Electrolux ESG20</strong>. Mais versátil (grill e sanduíche): <strong>Britânia BGR27I</strong>. Maior potência: <strong>Oster OSAN500</strong>. Fique de olho na voltagem: a Mondial S-12 só vem em 110V, as outras quatro são 127V.
+          </p>
+        </div>
+
+        <!-- Índice -->
+        <nav class="border border-slate-200 rounded-2xl p-6 mb-10 bg-white">
+          <p class="font-bold text-slate-800 mb-3">Índice</p>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#qual-a-melhor-sanduicheira" class="text-orange-500 hover:text-orange-600 font-medium">Qual a melhor sanduicheira para comprar?</a></li>
+            <li><a href="#tabela-comparativa" class="text-orange-500 hover:text-orange-600 font-medium">Tabela comparativa das 5 sanduicheiras</a></li>
+            <li><a href="#ranking" class="text-orange-500 hover:text-orange-600 font-medium">Ranking da melhor sanduicheira de 2026</a></li>
+            <li><a href="#grill-ou-sanduicheira" class="text-orange-500 hover:text-orange-600 font-medium">Sanduicheira ou grill: qual a diferença?</a></li>
+            <li><a href="#antiaderente" class="text-orange-500 hover:text-orange-600 font-medium">Qual sanduicheira tem a melhor chapa antiaderente?</a></li>
+            <li><a href="#voltagem" class="text-orange-500 hover:text-orange-600 font-medium">Sanduicheira 110V, 127V ou bivolt: qual escolher?</a></li>
+            <li><a href="#erros-comuns" class="text-orange-500 hover:text-orange-600 font-medium">Quais são os erros mais comuns na hora de comprar uma sanduicheira?</a></li>
+            <li><a href="#checklist" class="text-orange-500 hover:text-orange-600 font-medium">Checklist antes de decidir</a></li>
+            <li><a href="#faq" class="text-orange-500 hover:text-orange-600 font-medium">Perguntas frequentes</a></li>
+          </ul>
+        </nav>
+
+        <h2 id="qual-a-melhor-sanduicheira" class="text-2xl font-bold text-slate-900 mb-4">Qual a melhor sanduicheira para comprar?</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Depende do que você mais vai usar: lanche rápido do dia a dia, carne na chapa ou os dois. Entre as cinco sanduicheiras desta lista, a Cadence Click é a mais equilibrada, porque junta a maior nota, o maior volume de avaliações e o maior volume de vendas da Amazon.
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          Se a prioridade é a chapa que não gruda, a Electrolux ESG20 tem chapa ondulada antiaderente e empata em nota com a Cadence. Já quem quer um aparelho 2 em 1, que vira grill press para servir carne e vegetais na mesa, encontra na Britânia BGR27I a opção mais versátil do ranking.
+        </p>
+
+        <h2 id="tabela-comparativa" class="text-2xl font-bold text-slate-900 mb-4">Tabela comparativa das 5 sanduicheiras</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-5">
+          Dados das fichas do fabricante e dos anúncios na Amazon Brasil, consultados em outubro de 2026, na ordem do ranking.
+        </p>
+        <div class="overflow-x-auto mb-10">
+          <table class="w-full text-sm border-collapse">
+            <thead>
+              <tr class="bg-slate-100">
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Modelo</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Potência</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Voltagem</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Nota (avaliações)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-white">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200"><a href="#produto-1-cadence" class="text-orange-500 hover:underline">Cadence Click</a></td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">750W</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">127V</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">4,8/5 (21.300)</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200"><a href="#produto-2-electrolux" class="text-orange-500 hover:underline">Electrolux ESG20</a></td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">750W aprox.</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">127V</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">4,8/5 (1.900)</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200"><a href="#produto-3-britania" class="text-orange-500 hover:underline">Britânia BGR27I</a></td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">750W aprox.</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">127V</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">4,7/5 (11.600)</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200"><a href="#produto-4-mondial" class="text-orange-500 hover:underline">Mondial S-12</a></td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">750W</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">110V</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">4,7/5 (8.100)</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200"><a href="#produto-5-oster" class="text-orange-500 hover:underline">Oster OSAN500</a></td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">1000W</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">127V</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">4,7/5 (424)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 id="ranking" class="text-2xl font-bold text-slate-900 mb-4">Ranking da melhor sanduicheira de 2026</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-6">
+          A ordem do ranking da melhor sanduicheira pesa a nota junto com o volume de avaliações e compras, e depois recursos como potência e voltagem. Para montar esse ranking, cruzamos três fatores nesta ordem: (1) nota ponderada pelo volume de avaliações, porque um 4,8 com 20 mil avaliações pesa mais do que um 4,8 com 400; (2) presença de recursos diferenciais, como chapa ondulada ou função grill; (3) ficha técnica declarada pelo fabricante, sobretudo potência e voltagem.
+        </p>
+
+        <!-- Produto 1: Cadence Click -->
+        <div id="produto-1-cadence" class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-orange-500 px-6 py-4">
+            <span class="inline-block bg-white text-orange-600 text-xs font-bold uppercase tracking-wide px-2.5 py-1 rounded-full mb-2">Mais vendida</span>
+            <h3 class="text-white font-black text-xl">1º lugar - Sanduicheira Elétrica Cadence Click 127V</h3>
+            <p class="text-orange-100 text-sm mt-1">Nota 4,8/5 em 21.300 avaliações, mais de 9 mil compras no mês</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+              <img src="/images/melhor-sanduicheira/sanduicheira-cadence-click-127v.webp" alt="Cadence Click 127V, eleita a melhor sanduicheira da lista" width="400" height="271" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <p class="text-slate-700 text-sm leading-relaxed mb-4">
+                É disparado o aparelho mais vendido e mais avaliado desta lista, com mais de 21 mil avaliações, sinal de que é também o mais testado por quem já comprou. Chapas antiaderentes, luz indicadora de pronto e trava de segurança no cabo.
+              </p>
+              <a href="https://www.amazon.com.br/dp/B0CDJ4L7CZ?tag=casaemalta0e-20" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon</a>
+              <h4 class="font-bold text-slate-800 mb-3">Ficha Técnica</h4>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Potência:</strong> 750W</li>
+                <li><strong>Voltagem:</strong> 127V</li>
+                <li><strong>Chapas:</strong> antiaderentes</li>
+                <li><strong>Cor:</strong> preto</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Maior volume de avaliações da lista, mais de 21 mil</li>
+                    <li>Mais de 9 mil compras por mês, bem à frente das demais</li>
+                    <li>Chapa antiaderente fácil de limpar</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Só 127V, sem versão bivolt</li>
+                    <li>Função só de sanduicheira, sem virar grill aberto</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mt-4">
+                <strong>Veredito:</strong> pelo volume de vendas e de avaliações, é a melhor sanduicheira da lista para quem quer o modelo mais testado pelo público e não precisa de função grill.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 2: Electrolux ESG20 -->
+        <div id="produto-2-electrolux" class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-slate-800 px-6 py-4">
+            <span class="inline-block bg-white text-slate-800 text-xs font-bold uppercase tracking-wide px-2.5 py-1 rounded-full mb-2">Chapa antiaderente</span>
+            <h3 class="text-white font-black text-xl">2º lugar - Sanduicheira Grill Electrolux ESG20 Chapa Ondulada Inox</h3>
+            <p class="text-slate-300 text-sm mt-1">Nota 4,8/5 em 1.900 avaliações, mais de 1 mil compras no mês</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+              <img src="/images/melhor-sanduicheira/sanduicheira-electrolux-esg20.webp" alt="Sanduicheira Grill Electrolux ESG20 chapa ondulada inox" width="400" height="371" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <p class="text-slate-700 text-sm leading-relaxed mb-4">
+                Empata em nota com a Cadence, 4,8/5, e tem chapa ondulada antiaderente que marca o pão como numa panini press. O acabamento em inox escovado combina com cozinhas mais modernas.
+              </p>
+              <a href="https://www.amazon.com.br/dp/B0CCBYBPPQ?tag=casaemalta0e-20" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon</a>
+              <h4 class="font-bold text-slate-800 mb-3">Ficha Técnica</h4>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Voltagem:</strong> 127V</li>
+                <li><strong>Chapas:</strong> antiaderentes, superior ondulada</li>
+                <li><strong>Acabamento:</strong> inox</li>
+                <li><strong>Modelo:</strong> ESG20</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Nota empatada com a líder do ranking, 4,8/5</li>
+                    <li>Chapa ondulada marca o pão, efeito grill</li>
+                    <li>Acabamento inox, visual mais premium</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Base de avaliações bem menor que a Cadence, 1.900 contra 21.300</li>
+                    <li>Só 127V, sem versão bivolt</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mt-4">
+                <strong>Veredito:</strong> para quem prioriza a chapa que não gruda e um visual mais sofisticado em inox, é a melhor opção da lista, desde que a casa tenha tomada 127V.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin:32px 0;font-family:sans-serif;">
+          <p style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#c2410c;margin:0 0 12px;">Leia também:</p>
+          <a href="/melhor-frigobar" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;min-width:200px;overflow:hidden;">
+              <img src="/images/melhor-frigobar/capa-melhor-frigobar.webp" alt="Melhor frigobar: qual comprar" width="200" height="113" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy" />
+            </div>
+            <div style="padding:20px 22px;display:flex;align-items:center;">
+              <p style="margin:0;font-size:15px;font-weight:500;line-height:1.5;color:#1a1a1a;">Melhor Frigobar: Qual Comprar</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Produto 3: Britânia BGR27I -->
+        <div id="produto-3-britania" class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-slate-800 px-6 py-4">
+            <span class="inline-block bg-white text-slate-800 text-xs font-bold uppercase tracking-wide px-2.5 py-1 rounded-full mb-2">Mais versátil</span>
+            <h3 class="text-white font-black text-xl">3º lugar - Britânia Sanduicheira e Grill Press BGR27I 127V</h3>
+            <p class="text-slate-300 text-sm mt-1">Nota 4,7/5 em 11.600 avaliações, mais de 2 mil compras no mês</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+              <img src="/images/melhor-sanduicheira/sanduicheira-britania-grill-press-bgr27i.webp" alt="Britânia Sanduicheira e Grill Press BGR27I 127V" width="400" height="259" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <p class="text-slate-700 text-sm leading-relaxed mb-4">
+                É a única da lista que funciona como sanduicheira fechada e como grill press aberto, para carnes e legumes. As placas em inox com moldura plástica dão um visual que mistura clássico e moderno.
+              </p>
+              <a href="https://www.amazon.com.br/dp/B09WWY48B7?tag=casaemalta0e-20" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon</a>
+              <h4 class="font-bold text-slate-800 mb-3">Ficha Técnica</h4>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Voltagem:</strong> 127V</li>
+                <li><strong>Função:</strong> sanduicheira e grill press</li>
+                <li><strong>Material:</strong> plástico e metal, placas inox</li>
+                <li><strong>Modelo:</strong> BGR27I</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Única 2 em 1 da lista, sanduicheira e grill press</li>
+                    <li>Mais de 11 mil avaliações, segunda maior base</li>
+                    <li>Placas em inox, fáceis de limpar</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Nota um pouco abaixo da Cadence e da Electrolux</li>
+                    <li>Só 127V, sem versão bivolt</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mt-4">
+                <strong>Veredito:</strong> para quem quer dois aparelhos em um, sanduicheira no dia a dia e grill press no fim de semana, é a melhor sanduicheira da lista.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 4: Mondial S-12 -->
+        <div id="produto-4-mondial" class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-slate-800 px-6 py-4">
+            <span class="inline-block bg-white text-slate-800 text-xs font-bold uppercase tracking-wide px-2.5 py-1 rounded-full mb-2">Atenção à voltagem</span>
+            <h3 class="text-white font-black text-xl">4º lugar - Sanduicheira Mondial Fast Grill & Sandwich S-12 110V</h3>
+            <p class="text-slate-300 text-sm mt-1">Nota 4,7/5 em 8.100 avaliações, mais de 1 mil compras no mês</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+              <img src="/images/melhor-sanduicheira/sanduicheira-mondial-fast-grill-s12.webp" alt="Sanduicheira Mondial Fast Grill e Sandwich S-12 110V" width="400" height="355" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <p class="text-slate-700 text-sm leading-relaxed mb-4">
+                O modelo tem luzes indicadoras de ligado e pronto, formato arredondado e boa base de avaliações, mais de 8 mil. O ponto de atenção fica por conta da voltagem: o anúncio consultado traz só a versão 110V, sem seletor nem opção 220V, diferente da maioria dos outros modelos da lista, que são 127V.
+              </p>
+              <a href="https://www.amazon.com.br/dp/B076FDKSV6?tag=casaemalta0e-20" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon</a>
+              <h4 class="font-bold text-slate-800 mb-3">Ficha Técnica</h4>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Potência:</strong> 750W</li>
+                <li><strong>Voltagem:</strong> 110V</li>
+                <li><strong>Cor:</strong> preto</li>
+                <li><strong>Modelo:</strong> S-12</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Mais de 8 mil avaliações, terceira maior base da lista</li>
+                    <li>Luzes indicadoras de ligado e de pronto</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Só 110V no anúncio consultado, sem seletor para 220V</li>
+                    <li>Confirme a tomada de casa antes de comprar</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mt-4">
+                <strong>Veredito:</strong> boa escolha para quem tem tomada 110V/127V em casa, mas confira a ficha do anúncio no momento da compra, porque ela pode mudar e a voltagem é o detalhe que mais causa devolução nesse tipo de produto.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 5: Oster OSAN500 -->
+        <div id="produto-5-oster" class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-slate-800 px-6 py-4">
+            <span class="inline-block bg-white text-slate-800 text-xs font-bold uppercase tracking-wide px-2.5 py-1 rounded-full mb-2">Maior potência</span>
+            <h3 class="text-white font-black text-xl">5º lugar - Oster Sanduicheira Elétrica Inox OSAN500 1000W 127V</h3>
+            <p class="text-slate-300 text-sm mt-1">Nota 4,7/5 em 424 avaliações</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+              <img src="/images/melhor-sanduicheira/sanduicheira-oster-inox-osan500.webp" alt="Oster Sanduicheira Elétrica Inox OSAN500 1000W 127V" width="400" height="299" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <p class="text-slate-700 text-sm leading-relaxed mb-4">
+                É a de maior potência da lista, 1000W contra 750W das demais, o que tende a esquentar mais rápido. Em compensação, a base de avaliações é bem menor que a dos concorrentes, só 424, então a nota ainda tem menos peso estatístico.
+              </p>
+              <a href="https://www.amazon.com.br/dp/B0FQCSCPSJ?tag=casaemalta0e-20" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon</a>
+              <h4 class="font-bold text-slate-800 mb-3">Ficha Técnica</h4>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Potência:</strong> 1000W</li>
+                <li><strong>Voltagem:</strong> 127V</li>
+                <li><strong>Acabamento:</strong> inox</li>
+                <li><strong>Modelo:</strong> OSAN500</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Maior potência da lista, 1000W</li>
+                    <li>Acabamento inox, visual resistente</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Base de avaliações bem menor, só 424 contra milhares das líderes</li>
+                    <li>Só 127V, sem versão bivolt</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mt-4">
+                <strong>Veredito:</strong> vale para quem quer a maior potência da lista e não se importa em comprar um modelo ainda com menos histórico de avaliações que os quatro primeiros colocados.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <h2 id="grill-ou-sanduicheira" class="text-2xl font-bold text-slate-900 mb-4">Sanduicheira ou grill: qual a diferença?</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Sanduicheira e grill elétrico são aparelhos diferentes: a sanduicheira fecha e prensa o pão nas duas chapas, selando as bordas; o grill abre totalmente, em formato plano, para carnes e legumes. Entre os 5 modelos deste ranking, só a Britânia BGR27I funciona nos dois modos.
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Uma sanduicheira tradicional fecha e prensa o pão nas duas chapas ao mesmo tempo, selando as bordas e esquentando o recheio por dentro. Um grill elétrico comum costuma abrir totalmente, em formato plano, pensado para carnes, legumes e frango, sem o formato de bolso que a sanduicheira dá ao pão.
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          A linha entre os dois ficou mais borrada nos últimos anos, porque boa parte das sanduicheiras grill, como a Britânia BGR27I desta lista, funciona nos dois modos: fechada vira sanduicheira, aberta vira grill press. Já os modelos como a Cadence Click e a Electrolux ESG20 têm foco em sanduíche fechado, mesmo que a chapa ondulada da Electrolux lembre uma panini press.
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          Na prática, se o uso principal é pão de forma com queijo e presunto, qualquer uma das cinco resolve. Se a ideia é também grelhar carne, legume ou frango de vez em quando, vale priorizar um modelo 2 em 1 como a Britânia.
+        </p>
+
+        <h2 id="antiaderente" class="text-2xl font-bold text-slate-900 mb-4">Qual sanduicheira tem a melhor chapa antiaderente?</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          A chapa antiaderente evita que o queijo derretido grude e facilita a limpeza, mas se desgasta com o uso de utensílios de metal. Os 5 modelos deste ranking anunciam revestimento antiaderente; a Electrolux ESG20 tem chapa ondulada, pensada para soltar o pão com mais facilidade.
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          A chapa antiaderente é o que separa uma sanduicheira fácil de limpar de uma que vira dor de cabeça depois de queijo derretido grudado. Todos os cinco modelos desta lista anunciam chapas antiaderentes, mas o revestimento se desgasta com o tempo, principalmente se você usar utensílios de metal para tirar o sanduíche. Aparelhos com selo <a href="https://www.gov.br/eletrobras/pt-br/procel" target="_blank" rel="noopener" class="text-orange-500 font-semibold hover:underline">PROCEL de eficiência energética</a> também tendem a ter melhor controle de temperatura, o que ajuda a preservar o revestimento por mais tempo.
+        </p>
+        <ul class="space-y-2 text-sm text-slate-700 mb-10">
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span>Use espátula de silicone ou madeira, nunca garfo ou faca direto na chapa.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span>Limpe ainda morna, com pano úmido, antes que o queijo ou a manteiga grudem de vez.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span>Evite esponja de aço, mesmo em chapa antiaderente, porque risca o revestimento.</span></li>
+        </ul>
+
+        <div style="margin:32px 0;font-family:sans-serif;">
+          <p style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#c2410c;margin:0 0 12px;">Leia também:</p>
+          <a href="/melhores-airfryers-2026" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;min-width:200px;overflow:hidden;">
+              <img src="/images/melhores-airfryers/capa-melhores-airfryers.webp" alt="Os 7 melhores airfryers de 2026" width="200" height="113" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy" />
+            </div>
+            <div style="padding:20px 22px;display:flex;align-items:center;">
+              <p style="margin:0;font-size:15px;font-weight:500;line-height:1.5;color:#1a1a1a;">Os 7 Melhores Airfryers de 2026</p>
+            </div>
+          </a>
+        </div>
+
+        <h2 id="voltagem" class="text-2xl font-bold text-slate-900 mb-4">Sanduicheira 110V, 127V ou bivolt: qual escolher?</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          A voltagem certa é sempre a da tomada da casa, nunca a mais comum no mercado. Nenhum dos 5 modelos deste ranking é bivolt: 4 são 127V (Cadence, Electrolux, Britânia, Oster) e 1 é 110V (Mondial S-12). Ligar o aparelho na tensão errada pode queimar a resistência.
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          A voltagem certa é a da tomada onde a sanduicheira vai ficar, não a que parece mais comum. Na prática, "110V" e "127V" são tratados como o mesmo padrão no comércio brasileiro, mas 220V é outra rede elétrica, e nenhum dos cinco modelos desta lista é bivolt. Todo aparelho vendido no Brasil precisa seguir as normas de segurança elétrica do <a href="https://www.gov.br/inmetro/pt-br/assuntos/etiquetagem" target="_blank" rel="noopener" class="text-orange-500 font-semibold hover:underline">Inmetro</a>, que também identifica a voltagem correta na etiqueta do produto.
+        </p>
+        <ul class="space-y-2 text-sm text-slate-700 mb-4">
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Cadence Click:</strong> 127V (a marca também vende versão 220V separada, fora desta lista).</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Electrolux ESG20:</strong> 127V.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Britânia BGR27I:</strong> 127V.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Mondial S-12:</strong> 110V, sem seletor para 220V no anúncio consultado.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>Oster OSAN500:</strong> 127V (a marca também vende versão 220V separada, fora desta lista).</span></li>
+        </ul>
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          Ligar um aparelho 127V numa tomada 220V, ou o contrário, pode queimar a resistência na hora ou danificar o produto aos poucos. Antes de finalizar a compra, confira a voltagem da tomada na conta de luz ou com o eletricista do prédio, e sempre releia a ficha técnica do anúncio no momento da compra, porque vendedores às vezes trocam a variação de voltagem do mesmo anúncio.
+        </p>
+
+        <h2 id="erros-comuns" class="text-2xl font-bold text-slate-900 mb-4">Quais são os erros mais comuns na hora de comprar uma sanduicheira?</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          O erro mais comum na compra de uma sanduicheira é ignorar a voltagem da tomada, seguido de usar talher de metal na chapa e olhar só a nota sem checar o número de avaliações. Uma nota 4,7 com 424 avaliações pesa menos do que 4,8 com 21 mil.
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Antes de decidir qual é a melhor sanduicheira para comprar, veja os erros mais comuns que fazem o comprador se arrepender.
+        </p>
+        <ul class="list-disc list-inside space-y-2 text-slate-700 mb-10 ml-2">
+          <li><strong>Ignorar a voltagem:</strong> comprar 127V para tomada 220V, ou o contrário, pode queimar o aparelho no primeiro uso.</li>
+          <li><strong>Usar talher de metal na chapa:</strong> risca o antiaderente rápido e encurta a vida útil do produto.</li>
+          <li><strong>Olhar só a nota, sem ver quantas avaliações:</strong> 4,7 com 424 avaliações pesa diferente de 4,8 com 21 mil. Isso não invalida a nota, mas pede mais cautela.</li>
+          <li><strong>Achar que toda sanduicheira vira grill:</strong> só modelos 2 em 1, como a Britânia desta lista, abrem totalmente para grelhar carne ou legume.</li>
+        </ul>
+
+        <h2 id="checklist" class="text-2xl font-bold text-slate-900 mb-6">Checklist antes de decidir qual é a melhor sanduicheira para você</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Com nota, voltagem e função já comparadas entre os 5 modelos, falta só confirmar os detalhes práticos da sua rotina antes de finalizar a compra. Use este checklist rápido para evitar o erro mais comum, que é decidir só pela nota e esquecer da tomada ou do tipo de uso no dia a dia.
+        </p>
+        <ul class="space-y-2 text-sm text-slate-700 mb-10">
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span>Confirmei a voltagem da tomada onde a sanduicheira vai ficar.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span>Defini se preciso só de sanduíche ou também de função grill.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span>Comparei nota junto com o número de avaliações, não só a nota isolada.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span>Separei uma espátula de silicone para não riscar a chapa antiaderente.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span>Verifiquei se a potência (750W ou 1000W) atende o que preciso.</span></li>
+        </ul>
+
+        <h2 id="faq" class="text-2xl font-bold text-slate-900 mb-6">Perguntas frequentes</h2>
+        <div class="space-y-3 mb-10">
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Qual a melhor sanduicheira para comprar em 2026?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              A Cadence Click 127V é a mais equilibrada da lista, porque junta nota 4,8/5, mais de 21 mil avaliações e mais de 9 mil compras por mês, o maior volume entre as cinco. Para quem quer chapa antiaderente e visual inox, a Electrolux ESG20 empata em nota.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Sanduicheira grill e sanduicheira comum são a mesma coisa?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Não necessariamente. Uma sanduicheira comum só fecha e sela o pão. Um modelo sanduicheira grill, como a Britânia BGR27I desta lista, também abre totalmente para funcionar como grill press, pensado para carne e legumes.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Sanduicheira 110V funciona em tomada 220V?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Não, e não deve ser tentado. Ligar um aparelho 110V ou 127V numa tomada 220V pode queimar a resistência na hora. Nesta lista, a Mondial S-12 é 110V e as outras quatro são 127V, nenhuma é bivolt.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Qual sanduicheira não gruda o pão?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Todos os cinco modelos desta lista têm chapa antiaderente, mas o segredo para não grudar está também no uso: evite talher de metal e limpe a chapa ainda morna. A Electrolux ESG20 tem chapa ondulada antiaderente pensada para soltar o pão com facilidade.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Sanduicheira de 750W é suficiente?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Sim, 750W é a potência mais comum em sanduicheiras domésticas e dá conta do recado para um ou dois sanduíches por vez, como mostram a Cadence, a Britânia e a Mondial desta lista. A Oster OSAN500 tem 1000W e tende a esquentar um pouco mais rápido.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Sanduicheira serve para pão de forma?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Serve, e é o uso mais comum do aparelho. Todos os modelos desta lista foram pensados para pão de forma, com chapas no tamanho padrão de uma fatia dobrada ao meio. Para pão francês ou baguete, vale conferir o espaço entre as chapas na ficha do produto.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Sanduicheira Mondial ou Cadence: qual escolher?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              A Cadence Click tem nota mais alta, 4,8/5, e um volume de avaliações bem maior, mais de 21 mil contra 8.100 da Mondial S-12. A Mondial, porém, só vem em 110V no anúncio consultado, então confira a tomada de casa antes de decidir entre as duas.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Sanduicheira elétrica consome muita energia?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Não. Com 750W a 1000W de potência e uso médio de 5 a 10 minutos por sanduíche, o consumo é baixo comparado a outros eletrodomésticos de cozinha. Entre os 5 modelos deste ranking, a Oster OSAN500 tem a maior potência, 1000W.
+            </div>
+          </details>
+        </div>
+
+        <!-- Schema FAQ -->
+        <script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Qual a melhor sanduicheira para comprar em 2026?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A Cadence Click 127V é a mais equilibrada da lista, porque junta nota 4,8/5, mais de 21 mil avaliações e mais de 9 mil compras por mês, o maior volume entre as cinco. Para quem quer chapa antiaderente e visual inox, a Electrolux ESG20 empata em nota." }
+    },
+    {
+      "@type": "Question",
+      "name": "Sanduicheira grill e sanduicheira comum são a mesma coisa?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Não necessariamente. Uma sanduicheira comum só fecha e sela o pão. Um modelo sanduicheira grill, como a Britânia BGR27I desta lista, também abre totalmente para funcionar como grill press, pensado para carne e legumes." }
+    },
+    {
+      "@type": "Question",
+      "name": "Sanduicheira 110V funciona em tomada 220V?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Não, e não deve ser tentado. Ligar um aparelho 110V ou 127V numa tomada 220V pode queimar a resistência na hora. Nesta lista, a Mondial S-12 é 110V e as outras quatro são 127V, nenhuma é bivolt." }
+    },
+    {
+      "@type": "Question",
+      "name": "Qual sanduicheira não gruda o pão?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Todos os cinco modelos desta lista têm chapa antiaderente, mas o segredo para não grudar está também no uso: evite talher de metal e limpe a chapa ainda morna. A Electrolux ESG20 tem chapa ondulada antiaderente pensada para soltar o pão com facilidade." }
+    },
+    {
+      "@type": "Question",
+      "name": "Sanduicheira de 750W é suficiente?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Sim, 750W é a potência mais comum em sanduicheiras domésticas e dá conta do recado para um ou dois sanduíches por vez, como mostram a Cadence, a Britânia e a Mondial desta lista. A Oster OSAN500 tem 1000W e tende a esquentar um pouco mais rápido." }
+    },
+    {
+      "@type": "Question",
+      "name": "Sanduicheira serve para pão de forma?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Serve, e é o uso mais comum do aparelho. Todos os modelos desta lista foram pensados para pão de forma, com chapas no tamanho padrão de uma fatia dobrada ao meio. Para pão francês ou baguete, vale conferir o espaço entre as chapas na ficha do produto." }
+    },
+    {
+      "@type": "Question",
+      "name": "Sanduicheira Mondial ou Cadence: qual escolher?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A Cadence Click tem nota mais alta, 4,8/5, e um volume de avaliações bem maior, mais de 21 mil contra 8.100 da Mondial S-12. A Mondial, porém, só vem em 110V no anúncio consultado, então confira a tomada de casa antes de decidir entre as duas." }
+    },
+    {
+      "@type": "Question",
+      "name": "Sanduicheira elétrica consome muita energia?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Não. Com 750W a 1000W de potência e uso médio de 5 a 10 minutos por sanduíche, o consumo é baixo comparado a outros eletrodomésticos de cozinha. Entre os 5 modelos deste ranking, a Oster OSAN500 tem a maior potência, 1000W." }
+    }
+  ]
+})} />
+
+        <!-- Schema ItemList com aggregateRating (Product de afiliado, sem offers) -->
+        <script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Melhor Sanduicheira: Qual Não Gruda e Vale o Preço?",
+  "itemListOrder": "https://schema.org/ItemListOrderAscending",
+  "numberOfItems": 5,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "Product",
+        "name": "Sanduicheira Elétrica Cadence Click 127V",
+        "image": "https://www.casaemalta.com.br/images/melhor-sanduicheira/sanduicheira-cadence-click-127v.webp",
+        "description": "Sanduicheira elétrica Cadence Click, 750W, chapas antiaderentes, 127V.",
+        "brand": { "@type": "Brand", "name": "Cadence" },
+        "url": "https://www.amazon.com.br/dp/B0CDJ4L7CZ?tag=casaemalta0e-20",
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "21300", "bestRating": "5", "worstRating": "1" }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "Product",
+        "name": "Sanduicheira Grill Electrolux ESG20 Chapa Ondulada Inox",
+        "image": "https://www.casaemalta.com.br/images/melhor-sanduicheira/sanduicheira-electrolux-esg20.webp",
+        "description": "Sanduicheira grill Electrolux ESG20, chapa ondulada antiaderente, acabamento inox, 127V.",
+        "brand": { "@type": "Brand", "name": "Electrolux" },
+        "url": "https://www.amazon.com.br/dp/B0CCBYBPPQ?tag=casaemalta0e-20",
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "1900", "bestRating": "5", "worstRating": "1" }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "Product",
+        "name": "Britânia Sanduicheira e Grill Press BGR27I 127V",
+        "image": "https://www.casaemalta.com.br/images/melhor-sanduicheira/sanduicheira-britania-grill-press-bgr27i.webp",
+        "description": "Sanduicheira e grill press Britânia BGR27I, placas inox, plástico e metal, 127V.",
+        "brand": { "@type": "Brand", "name": "Britânia" },
+        "url": "https://www.amazon.com.br/dp/B09WWY48B7?tag=casaemalta0e-20",
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.7", "reviewCount": "11600", "bestRating": "5", "worstRating": "1" }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@type": "Product",
+        "name": "Sanduicheira Mondial Fast Grill e Sandwich S-12 110V",
+        "image": "https://www.casaemalta.com.br/images/melhor-sanduicheira/sanduicheira-mondial-fast-grill-s12.webp",
+        "description": "Sanduicheira Mondial Fast Grill & Sandwich S-12, 750W, preta, 110V.",
+        "brand": { "@type": "Brand", "name": "Mondial" },
+        "url": "https://www.amazon.com.br/dp/B076FDKSV6?tag=casaemalta0e-20",
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.7", "reviewCount": "8100", "bestRating": "5", "worstRating": "1" }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "item": {
+        "@type": "Product",
+        "name": "Oster Sanduicheira Elétrica Inox OSAN500 1000W 127V",
+        "image": "https://www.casaemalta.com.br/images/melhor-sanduicheira/sanduicheira-oster-inox-osan500.webp",
+        "description": "Sanduicheira elétrica Oster OSAN500, acabamento inox, 1000W, 127V.",
+        "brand": { "@type": "Brand", "name": "Oster" },
+        "url": "https://www.amazon.com.br/dp/B0FQCSCPSJ?tag=casaemalta0e-20",
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.7", "reviewCount": "424", "bestRating": "5", "worstRating": "1" }
+      }
+    }
+  ]
+})} />
+
+        <!-- Leia também -->
+        <p style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#c2410c;margin:24px 0 12px;">Leia também:</p>
+        <div style="display:flex;flex-direction:column;gap:12px;">
+          <a href="/melhor-frigobar" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;flex-shrink:0;">
+              <img src="/images/melhor-frigobar/capa-melhor-frigobar.webp" alt="Melhor frigobar" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Melhor Frigobar: Qual Comprar</span>
+            </div>
+          </a>
+
+          <a href="/melhores-airfryers-2026" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;flex-shrink:0;">
+              <img src="/images/melhores-airfryers/capa-melhores-airfryers.webp" alt="Os 7 melhores airfryers de 2026" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Os 7 Melhores Airfryers de 2026</span>
+            </div>
+          </a>
+
+          <a href="/melhores-liquidificadores-2026" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;flex-shrink:0;">
+              <img src="/images/melhores-liquidificadores/capa-melhores-liquidificadores.webp" alt="Os 7 melhores liquidificadores de 2026" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Os 7 Melhores Liquidificadores de 2026</span>
+            </div>
+          </a>
+
+          <a href="/melhores-cafeteiras-2026" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;flex-shrink:0;">
+              <img src="/images/melhores-cafeteiras/capa-melhores-cafeteiras-2026.webp" alt="As 7 melhores cafeteiras 2026" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">As 7 Melhores Cafeteiras 2026: Coado e Cápsula</span>
+            </div>
+          </a>
+
+          <a href="/kit-organizacao-cozinha" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;flex-shrink:0;">
+              <img src="/images/kit-cozinha/capa-kit-cozinha.webp" alt="Kit organização de cozinha: monte o seu por R$ 150" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Kit Organização de Cozinha: Monte o seu por R$ 150</span>
             </div>
           </a>
         </div>
