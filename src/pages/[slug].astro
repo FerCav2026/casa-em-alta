@@ -426,6 +426,13 @@ const posts: Record<string, { titulo: string; descricao: string; categoria: stri
     dataCriacao: '2026-10-22',
     dataModificacao: '2026-10-22',
   },
+  'melhor-cooktop': {
+    titulo: 'Melhor Cooktop: Qual Comprar',
+    descricao: 'Melhor cooktop em 2026: compare Itatiaia, Fischer, Mondial e Atlas por nota, bocas, voltagem e avaliações e veja qual cooktop comprar na sua casa.',
+    categoria: 'Rankings e Listas',
+    dataCriacao: '2026-10-27',
+    dataModificacao: '2026-10-27',
+  },
 };
 
 export function getStaticPaths() {
@@ -488,6 +495,7 @@ export function getStaticPaths() {
     'climatizador-ou-ventilador': {},
     'melhor-frigobar': {},
     'melhor-sanduicheira': {},
+    'melhor-cooktop': {},
   }).map((slug) => ({ params: { slug } }));
 }
 
@@ -588,6 +596,7 @@ const isMelhorUmidificadorQuarto = slug === 'melhor-umidificador-de-ar-para-quar
 const isClimatizadorOuVentilador = slug === 'climatizador-ou-ventilador';
 const isMelhorFrigobar = slug === 'melhor-frigobar';
 const isMelhorSanduicheira = slug === 'melhor-sanduicheira';
+const isMelhorCooktop = slug === 'melhor-cooktop';
 
 const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isAirfryer ? '/images/airfryer/capa-airfryer.webp'
@@ -647,11 +656,12 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isClimatizadorOuVentilador ? '/images/climatizador-ou-ventilador/capa-climatizador-ou-ventilador.webp'
   : isMelhorFrigobar ? '/images/melhor-frigobar/capa-melhor-frigobar.webp'
   : isMelhorSanduicheira ? '/images/melhor-sanduicheira/capa-melhor-sanduicheira.webp'
+  : isMelhorCooktop ? '/images/melhor-cooktop/capa-melhor-cooktop.webp'
   : undefined;
 ---
 
 <BaseLayout
-  title={isPanelaEletricaOuConvencional || isMelhoresCafeteiras || isProjetorShopee || isComoArrumarArmarios || isLavaSeca || isFrigideiraAntiaderenteFerro || isFrigideira || isMelhorFrigideiraAntiaderente || isMelhorClimatizador || isArCondicionadoPortatil || isMelhorVentiladorColuna || isMelhorUmidificadorQuarto || isClimatizadorOuVentilador || isMelhorFrigobar || isMelhorSanduicheira ? post.titulo : `${post.titulo} - Casa em Alta`}
+  title={isPanelaEletricaOuConvencional || isMelhoresCafeteiras || isProjetorShopee || isComoArrumarArmarios || isLavaSeca || isFrigideiraAntiaderenteFerro || isFrigideira || isMelhorFrigideiraAntiaderente || isMelhorClimatizador || isArCondicionadoPortatil || isMelhorVentiladorColuna || isMelhorUmidificadorQuarto || isClimatizadorOuVentilador || isMelhorFrigobar || isMelhorSanduicheira || isMelhorCooktop ? post.titulo : `${post.titulo} - Casa em Alta`}
   description={post.descricao}
   image={coverImage}
   type="article"
@@ -28332,6 +28342,677 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
 
       </div>
     )}
+
+    {isMelhorCooktop && (
+      <div>
+
+        <!-- Capa -->
+        <div class="rounded-2xl overflow-hidden mb-8 shadow-md">
+          <img
+            src="/images/melhor-cooktop/capa-melhor-cooktop.webp"
+            alt="Melhor cooktop a gás instalado em bancada de cozinha"
+            width="1280"
+            height="720"
+            class="w-full h-auto object-cover"
+            loading="eager"
+          />
+        </div>
+
+        <p class="text-xs text-slate-400 mb-6">Atualizado em outubro de 2026</p>
+
+        <!-- Introdução -->
+        <div class="bg-orange-50 border border-orange-100 rounded-2xl p-6 mb-8">
+          <p class="text-slate-800 text-base leading-relaxed mb-3">
+            O melhor cooktop para a maioria das cozinhas é o Itatiaia Essencial 5 Bocas: nota 4,8/5 em mais de 2,1 mil avaliações, a mais alta deste ranking, e mais de 1 mil compras no mês passado.
+          </p>
+          <p class="text-slate-800 text-base leading-relaxed mb-3">
+            Para quem tem uma cozinha menor e precisa de só 4 bocas, o Itatiaia Essencial 4 Bocas segue a mesma linha, com mesa de vidro temperado e acendimento automático. Já quem precisa de bivolt confirmado, por morar em imóvel com rede 220V ou mudar de cidade, encontra isso garantido no Fischer Fit Line e no Mondial CTG-01.
+          </p>
+          <p class="text-slate-800 text-base leading-relaxed">
+            Não testamos esses cooktops em casa. O ranking cruza nota, volume de avaliações, ficha técnica declarada pelo fabricante e recursos, com dados consultados na Amazon Brasil em outubro de 2026, incluindo leitura manual das avaliações de 1 e 2 estrelas de cada modelo para separar reclamação pontual de problema recorrente. Vale um alerta logo de cara: o Atlas Ágile Up tem só 119 avaliações, bem menos que os outros quatro, então a nota dele pesa menos nessa comparação.
+          </p>
+        </div>
+
+        <!-- TL;DR -->
+        <div class="bg-purple-50 border border-purple-100 rounded-2xl p-6 mb-10">
+          <p class="text-slate-800 font-bold text-base mb-3">Em resumo</p>
+          <p class="text-sm text-slate-700 leading-relaxed">
+            Nota mais alta e 5 bocas: <strong>Itatiaia Essencial 5 Bocas</strong>. 4 bocas com vidro temperado: <strong>Itatiaia Essencial 4 Bocas</strong>. Nº1 em avaliações (bivolt): <strong>Mondial CTG-01</strong>. Bivolt com trempe aramado: <strong>Fischer Fit Line</strong>. 5 bocas alternativo: <strong>Atlas Ágile Up</strong>, mas com base de avaliações bem menor.
+          </p>
+        </div>
+
+        <!-- Índice -->
+        <nav class="border border-slate-200 rounded-2xl p-6 mb-10 bg-white">
+          <p class="font-bold text-slate-800 mb-3">Índice</p>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#qual-o-melhor-cooktop" class="text-orange-500 hover:text-orange-600 font-medium">Qual o melhor cooktop para comprar?</a></li>
+            <li><a href="#tabela-comparativa" class="text-orange-500 hover:text-orange-600 font-medium">Tabela comparativa dos 5 cooktops</a></li>
+            <li><a href="#ranking" class="text-orange-500 hover:text-orange-600 font-medium">Ranking do melhor cooktop de 2026</a></li>
+            <li><a href="#cooktop-ou-fogao" class="text-orange-500 hover:text-orange-600 font-medium">Cooktop ou fogão: qual a diferença?</a></li>
+            <li><a href="#4-ou-5-bocas" class="text-orange-500 hover:text-orange-600 font-medium">Cooktop de 4 ou 5 bocas: qual escolher?</a></li>
+            <li><a href="#bivolt" class="text-orange-500 hover:text-orange-600 font-medium">Cooktop bivolt: quais modelos realmente são?</a></li>
+            <li><a href="#erros-comuns" class="text-orange-500 hover:text-orange-600 font-medium">Quais são os erros mais comuns na hora de comprar um cooktop?</a></li>
+            <li><a href="#checklist" class="text-orange-500 hover:text-orange-600 font-medium">Checklist antes de decidir</a></li>
+            <li><a href="#faq" class="text-orange-500 hover:text-orange-600 font-medium">Perguntas frequentes</a></li>
+          </ul>
+        </nav>
+
+        <h2 id="qual-o-melhor-cooktop" class="text-2xl font-bold text-slate-900 mb-4">Qual o melhor cooktop para comprar?</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          O melhor cooktop para a maioria das casas é o Itatiaia Essencial 5 Bocas, porque junta a maior nota deste ranking, 4,8/5, com mais de 2,1 mil avaliações e mais de 1 mil compras no mês passado. É a opção mais equilibrada entre espaço na mesa, prova social e acendimento automático.
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          Se a bancada da cozinha é menor, o Itatiaia Essencial 4 Bocas mantém a mesma linha de acabamento em vidro temperado preto, com acendimento automático e boa base de avaliações. Já para quem precisa de voltagem bivolt confirmada, o Mondial CTG-01 lidera em volume de avaliações entre os bivolt da lista, e o Fischer Fit Line é a opção bivolt com trempe aramada.
+        </p>
+
+        <h2 id="tabela-comparativa" class="text-2xl font-bold text-slate-900 mb-4">Tabela comparativa dos 5 cooktops</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-5">
+          Entre os 5 cooktops comparados, o Itatiaia Essencial 5 Bocas tem a nota mais alta (4,8/5) e o Mondial CTG-01 tem o maior volume de avaliações (5,6 mil) e é bivolt confirmado. A tabela abaixo cruza bocas, voltagem e nota de cada modelo, com dados da Amazon Brasil consultados em outubro de 2026.
+        </p>
+        <div class="overflow-x-auto mb-10">
+          <table class="w-full text-sm border-collapse">
+            <thead>
+              <tr class="bg-slate-100">
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Modelo</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Bocas / Voltagem</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Nota (avaliações)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-white">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200"><a href="#produto-1-itatiaia5" class="text-orange-500 hover:underline">Itatiaia Essencial 5 Bocas</a></td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">5 bocas / não informado como bivolt</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">4,8/5 (2.100)</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200"><a href="#produto-2-itatiaia4" class="text-orange-500 hover:underline">Itatiaia Essencial 4 Bocas</a></td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">4 bocas / não informado como bivolt</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">4,7/5 (1.400)</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200"><a href="#produto-3-mondial" class="text-orange-500 hover:underline">Mondial CTG-01</a></td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">4 bocas / bivolt</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">4,7/5 (5.600)</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200"><a href="#produto-4-fischer" class="text-orange-500 hover:underline">Fischer Fit Line</a></td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">4 bocas / bivolt</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">4,7/5 (251)</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200"><a href="#produto-5-atlas" class="text-orange-500 hover:underline">Atlas Ágile Up</a></td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">5 bocas / não informado como bivolt</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">4,7/5 (119)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 id="ranking" class="text-2xl font-bold text-slate-900 mb-4">Ranking do melhor cooktop de 2026</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-6">
+          O ranking é liderado pelo Itatiaia Essencial 5 Bocas (4,8/5), seguido do Itatiaia Essencial 4 Bocas e do Mondial CTG-01 (ambos 4,7/5, mas o Mondial com 5,6 mil avaliações contra 1,4 mil). A ordem pesa a nota junto com o volume de avaliações e de compras, e só depois a ficha técnica, como número de bocas e voltagem.
+        </p>
+
+        <!-- Produto 1: Itatiaia Essencial 5 Bocas -->
+        <div id="produto-1-itatiaia5" class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-orange-500 px-6 py-4">
+            <span class="inline-block bg-white text-orange-600 text-xs font-bold uppercase tracking-wide px-2.5 py-1 rounded-full mb-2">Nota mais alta</span>
+            <h3 class="text-white font-black text-xl">1º lugar - Itatiaia Cooktop Essencial 5 Bocas, Preto</h3>
+            <p class="text-orange-100 text-sm mt-1">Nota 4,8/5 em 2,1 mil avaliações, mais de 1 mil compras no mês passado</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+              <!-- IMAGEM PRODUTO: public/images/melhor-cooktop/melhor-cooktop-itatiaia-5-bocas.webp -->
+              <img src="/images/melhor-cooktop/melhor-cooktop-itatiaia-5-bocas.webp" alt="Itatiaia Cooktop Essencial 5 Bocas preto" width="400" height="300" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <p class="text-slate-700 text-sm leading-relaxed mb-4">
+                Nota mais alta deste ranking, 4,8/5, com mais de 2,1 mil avaliações. Com 5 bocas, dá mais espaço para quem cozinha para a família toda. Nas avaliações de 1 e 2 estrelas, a reclamação mais comum é sobre a trempe esquentar demais com panelas muito pesadas, não um defeito de fabricação.
+              </p>
+              <a href="https://www.amazon.com.br/dp/B0BGT1BWVP?tag=casaemalta0e-20" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon</a>
+              <h4 class="font-bold text-slate-800 mb-3">Ficha Técnica</h4>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Bocas:</strong> 5</li>
+                <li><strong>Combustível:</strong> gás</li>
+                <li><strong>Mesa:</strong> vidro temperado</li>
+                <li><strong>Cor:</strong> preto</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Maior nota deste ranking, 4,8/5</li>
+                    <li>5 bocas, mais espaço para cozinhar</li>
+                    <li>Mesa de vidro temperado, fácil de limpar</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Ficha pública consultada não confirma bivolt, releia o anúncio antes de comprar</li>
+                    <li>Ocupa mais espaço de bancada que um modelo 4 bocas</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mt-4">
+                <strong>Veredito:</strong> pela nota mais alta do ranking e pelo espaço extra das 5 bocas, é o melhor cooktop desta lista para quem cozinha para mais gente em casa.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 2: Itatiaia Essencial 4 Bocas -->
+        <div id="produto-2-itatiaia4" class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-slate-800 px-6 py-4">
+            <span class="inline-block bg-white text-slate-800 text-xs font-bold uppercase tracking-wide px-2.5 py-1 rounded-full mb-2">4 bocas com vidro</span>
+            <h3 class="text-white font-black text-xl">2º lugar - Itatiaia Essencial 4 Bocas com Mesa de Vidro Temperado</h3>
+            <p class="text-slate-300 text-sm mt-1">Nota 4,7/5 em 1,4 mil avaliações, mais de 1 mil compras no mês passado</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+              <!-- IMAGEM PRODUTO: public/images/melhor-cooktop/melhor-cooktop-itatiaia-4-bocas.webp -->
+              <img src="/images/melhor-cooktop/melhor-cooktop-itatiaia-4-bocas.webp" alt="Itatiaia Cooktop Essencial 4 Bocas com mesa de vidro temperado preto" width="400" height="300" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <p class="text-slate-700 text-sm leading-relaxed mb-4">
+                Versão compacta do Itatiaia Essencial, com 4 bocas e acendimento automático, que dispensa fósforo. Boa opção para cozinhas menores ou apartamentos.
+              </p>
+              <a href="https://www.amazon.com.br/dp/B0B7C9HXGL?tag=casaemalta0e-20" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon</a>
+              <h4 class="font-bold text-slate-800 mb-3">Ficha Técnica</h4>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Bocas:</strong> 4</li>
+                <li><strong>Acendimento:</strong> automático</li>
+                <li><strong>Mesa:</strong> vidro temperado</li>
+                <li><strong>Cor:</strong> preto</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Acendimento automático em todas as bocas</li>
+                    <li>Mais de 1,4 mil avaliações, boa base de prova social</li>
+                    <li>Formato mais compacto, cabe em bancadas menores</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Ficha pública consultada não confirma bivolt, releia o anúncio antes de comprar</li>
+                    <li>Como tem acendimento automático elétrico, confirme a voltagem certa antes de instalar: usar a errada pode danificar o sistema de ignição</li>
+                    <li>Só 4 bocas, menos espaço que a versão 5 bocas da mesma marca</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mt-4">
+                <strong>Veredito:</strong> boa escolha para quem tem bancada menor e quer acendimento automático sem abrir mão da mesma qualidade de acabamento da linha Itatiaia Essencial.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin:32px 0;font-family:sans-serif;">
+          <p style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#c2410c;margin:0 0 12px;">Leia também:</p>
+          <a href="/melhor-frigobar" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;min-width:200px;overflow:hidden;">
+              <img src="/images/melhor-frigobar/capa-melhor-frigobar.webp" alt="Melhor frigobar: qual comprar" width="200" height="113" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy" />
+            </div>
+            <div style="padding:20px 22px;display:flex;align-items:center;">
+              <p style="margin:0;font-size:15px;font-weight:500;line-height:1.5;color:#1a1a1a;">Melhor Frigobar: Qual Comprar</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Produto 3: Mondial CTG-01 -->
+        <div id="produto-3-mondial" class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-slate-800 px-6 py-4">
+            <span class="inline-block bg-white text-slate-800 text-xs font-bold uppercase tracking-wide px-2.5 py-1 rounded-full mb-2">Nº1 em avaliações</span>
+            <h3 class="text-white font-black text-xl">3º lugar - Mondial Cooktop a Gás 4 Bocas CTG-01 Bivolt</h3>
+            <p class="text-slate-300 text-sm mt-1">Nota 4,7/5 em 5,6 mil avaliações, mais de 200 compras no mês passado</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+              <!-- IMAGEM PRODUTO: public/images/melhor-cooktop/melhor-cooktop-mondial-ctg01.webp -->
+              <img src="/images/melhor-cooktop/melhor-cooktop-mondial-ctg01.webp" alt="Mondial Cooktop a Gás 4 Bocas CTG-01 preto e inox bivolt" width="400" height="300" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <p class="text-slate-700 text-sm leading-relaxed mb-4">
+                Maior volume de avaliações de toda a lista, mais de 5,6 mil, sinal de que é o mais testado pelo público. A ficha confirma voltagem bivolt, o que facilita a instalação em qualquer rede elétrica. Nas avaliações negativas, o ponto mais citado é a demora na entrega em algumas regiões, não um problema do produto em si.
+              </p>
+              <a href="https://www.amazon.com.br/dp/B085JFRRSW?tag=casaemalta0e-20" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon</a>
+              <h4 class="font-bold text-slate-800 mb-3">Ficha Técnica</h4>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Bocas:</strong> 4</li>
+                <li><strong>Voltagem:</strong> bivolt</li>
+                <li><strong>Acabamento:</strong> preto e inox</li>
+                <li><strong>Modelo:</strong> CTG-01</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Maior volume de avaliações da lista, mais de 5,6 mil</li>
+                    <li>Bivolt confirmado na ficha do produto</li>
+                    <li>Acabamento preto e inox, visual resistente</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Volume de compras no mês passado menor que o dos dois Itatiaia</li>
+                    <li>Nota um pouco abaixo do líder do ranking</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mt-4">
+                <strong>Veredito:</strong> para quem quer o cooktop mais testado pelo público e precisa de bivolt confirmado, é a melhor escolha desta lista.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 4: Fischer Fit Line -->
+        <div id="produto-4-fischer" class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-slate-800 px-6 py-4">
+            <span class="inline-block bg-white text-slate-800 text-xs font-bold uppercase tracking-wide px-2.5 py-1 rounded-full mb-2">Trempe aramado bivolt</span>
+            <h3 class="text-white font-black text-xl">4º lugar - Fischer Cooktop a Gás 4 Bocas Fit Line Bivolt</h3>
+            <p class="text-slate-300 text-sm mt-1">Nota 4,7/5 em 251 avaliações, mais de 400 compras no mês passado</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+              <!-- IMAGEM PRODUTO: public/images/melhor-cooktop/melhor-cooktop-fischer-fit-line.webp -->
+              <img src="/images/melhor-cooktop/melhor-cooktop-fischer-fit-line.webp" alt="Fischer Cooktop a Gás 4 Bocas Fit Line trempe aramado bivolt" width="400" height="300" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <p class="text-slate-700 text-sm leading-relaxed mb-4">
+                Trempe aramada, mais leve que a maciça dos outros modelos, mesa de vidro e bivolt confirmado no nome do produto. Base de avaliações menor, mas o volume de compras no mês passado foi o segundo maior da lista.
+              </p>
+              <a href="https://www.amazon.com.br/dp/B0DJ3CLH7M?tag=casaemalta0e-20" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon</a>
+              <h4 class="font-bold text-slate-800 mb-3">Ficha Técnica</h4>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Bocas:</strong> 4</li>
+                <li><strong>Voltagem:</strong> bivolt</li>
+                <li><strong>Trempe:</strong> aramada</li>
+                <li><strong>Mesa:</strong> vidro, cor preta</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Bivolt confirmado no próprio nome do produto</li>
+                    <li>Trempe aramada, mais leve para limpar e remover</li>
+                    <li>Mais de 400 compras no mês passado</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Base de avaliações bem menor, só 251 contra milhares dos líderes</li>
+                    <li>Trempe aramada pode balançar mais que a maciça com panelas grandes</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mt-4">
+                <strong>Veredito:</strong> vale para quem precisa de bivolt confirmado e prefere trempe mais leve, mas ainda com menos histórico de avaliações que os três primeiros colocados.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 5: Atlas Ágile Up -->
+        <div id="produto-5-atlas" class="border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-slate-800 px-6 py-4">
+            <span class="inline-block bg-white text-slate-800 text-xs font-bold uppercase tracking-wide px-2.5 py-1 rounded-full mb-2">5 bocas alternativo</span>
+            <h3 class="text-white font-black text-xl">5º lugar - Atlas Cooktop 5 Bocas Ágile Up Mesa de Vidro</h3>
+            <p class="text-slate-300 text-sm mt-1">Nota 4,7/5 em 119 avaliações, mais de 50 compras no mês passado</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+              <!-- IMAGEM PRODUTO: public/images/melhor-cooktop/melhor-cooktop-atlas-agile-up.webp -->
+              <img src="/images/melhor-cooktop/melhor-cooktop-atlas-agile-up.webp" alt="Atlas Cooktop 5 Bocas Ágile Up mesa de vidro" width="400" height="300" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <p class="text-slate-700 text-sm leading-relaxed mb-4">
+                Segunda opção de 5 bocas da lista, com mesa de vidro e visual discreto. Base de avaliações é a menor do ranking, só 119, então vale pesquisar mais antes de decidir.
+              </p>
+              <a href="https://www.amazon.com.br/dp/B0BTX96KQ9?tag=casaemalta0e-20" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon</a>
+              <h4 class="font-bold text-slate-800 mb-3">Ficha Técnica</h4>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Bocas:</strong> 5</li>
+                <li><strong>Mesa:</strong> vidro</li>
+                <li><strong>Linha:</strong> Ágile Up</li>
+                <li><strong>Marca:</strong> Atlas</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>5 bocas, mais espaço que um modelo de 4</li>
+                    <li>Mesa de vidro, visual mais clean</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Menor base de avaliações da lista, só 119</li>
+                    <li>Ficha pública consultada não confirma bivolt, releia o anúncio antes de comprar</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mt-4">
+                <strong>Veredito:</strong> opção válida para quem quer 5 bocas por um caminho diferente do Itatiaia, mas, com uma base de avaliações bem menor, pesquisa mais antes de decidir ajuda a evitar surpresa.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <h2 id="cooktop-ou-fogao" class="text-2xl font-bold text-slate-900 mb-4">Cooktop ou fogão: qual a diferença?</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Cooktop é só a parte de cima, com as bocas, embutido na bancada; fogão é o móvel completo, com bocas e forno. A grande vantagem do cooktop é liberar espaço embaixo, que pode virar armário ou receber um forno elétrico embutido separado.
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Um fogão convencional ocupa um vão inteiro no piso da cozinha, com forno embaixo das bocas. Um cooktop fica embutido direto na bancada, encostado na pia, e deixa o espaço de baixo livre para armário, gaveteiro ou até um forno elétrico de embutir comprado separadamente.
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          Na prática, quem está reformando a cozinha do zero e quer um visual mais integrado tende a preferir cooktop, já que o espaço livre embaixo da bancada também ajuda no <a href="/como-arrumar-armarios" class="text-orange-500 font-semibold hover:underline">planejamento dos armários de cozinha</a>. Quem já tem o vão de fogão pronto e não quer obra extra costuma ficar com o fogão tradicional.
+        </p>
+
+        <h2 id="4-ou-5-bocas" class="text-2xl font-bold text-slate-900 mb-4">Cooktop de 4 ou 5 bocas: qual escolher?</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Cooktop de 4 bocas é melhor para cozinhas pequenas ou apartamentos, com menos panelas simultâneas no dia a dia. Cooktop de 5 bocas, como o Itatiaia Essencial 5 Bocas e o Atlas Ágile Up desta lista, compensa para quem cozinha para famílias maiores ou costuma usar várias panelas ao mesmo tempo.
+        </p>
+        <ul class="space-y-2 text-sm text-slate-700 mb-10">
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>4 bocas:</strong> Itatiaia Essencial 4 Bocas, Mondial CTG-01 e Fischer Fit Line.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span><strong>5 bocas:</strong> Itatiaia Essencial 5 Bocas e Atlas Ágile Up.</span></li>
+        </ul>
+
+        <div style="margin:32px 0;font-family:sans-serif;">
+          <p style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#c2410c;margin:0 0 12px;">Leia também:</p>
+          <a href="/melhor-frigideira-antiaderente" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;min-width:200px;overflow:hidden;">
+              <img src="/images/melhores-frigideiras-2026/capa-melhores-frigideiras-antiaderentes-2026.webp" alt="Melhor frigideira antiaderente" width="200" height="113" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy" />
+            </div>
+            <div style="padding:20px 22px;display:flex;align-items:center;">
+              <p style="margin:0;font-size:15px;font-weight:500;line-height:1.5;color:#1a1a1a;">Melhor Frigideira Antiaderente: Qual Vale a Pena</p>
+            </div>
+          </a>
+        </div>
+
+        <h2 id="bivolt" class="text-2xl font-bold text-slate-900 mb-4">Cooktop bivolt: quais modelos realmente são?</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Nesta lista de 5 cooktops, só o Mondial CTG-01 e o Fischer Fit Line são bivolt confirmados, porque trazem essa informação explícita na ficha do produto. Os dois Itatiaia e o Atlas Ágile Up não aparecem como bivolt na ficha pública consultada, então vale confirmar direto no anúncio antes de finalizar a compra.
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          Todo cooktop vendido no Brasil precisa seguir as normas de segurança do <a href="https://www.gov.br/inmetro/pt-br/assuntos/etiquetagem" target="_blank" rel="noopener" class="text-orange-500 font-semibold hover:underline">Inmetro</a>, que também etiqueta a voltagem correta no produto. Antes de comprar, releia a ficha do anúncio, porque vendedores às vezes atualizam ou trocam a variação de voltagem do mesmo anúncio com o tempo.
+        </p>
+
+        <h2 id="erros-comuns" class="text-2xl font-bold text-slate-900 mb-4">Quais são os erros mais comuns na hora de comprar um cooktop?</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          O erro mais comum na compra de um cooktop é não confirmar a voltagem do acendimento automático antes da instalação, seguido de não medir o vão da bancada e de olhar só a nota sem checar o número de avaliações. A instalação do gás em si também merece atenção: segundo as diretrizes de segurança do <a href="https://www.gov.br/inmetro/pt-br/assuntos/etiquetagem" target="_blank" rel="noopener" class="text-orange-500 font-semibold hover:underline">Inmetro</a>, a ligação deve ser feita por profissional credenciado, que confere o tipo de gás (GLP ou GN) e a vedação das conexões antes do primeiro uso.
+        </p>
+        <ul class="list-disc list-inside space-y-2 text-slate-700 mb-10 ml-2">
+          <li><strong>Não confirmar a voltagem do acendimento:</strong> mesmo sendo cooktop a gás, o acendimento automático depende de rede elétrica, e usar a voltagem errada pode danificar o sistema.</li>
+          <li><strong>Não medir o vão da bancada:</strong> o corte precisa bater exatamente com o tamanho do cooktop, e cada modelo tem dimensões diferentes.</li>
+          <li><strong>Olhar só a nota, sem ver quantas avaliações:</strong> 4,7 com 119 avaliações pesa diferente de 4,8 com mais de 2 mil. Isso não invalida a nota, mas pede mais cautela.</li>
+          <li><strong>Esquecer de checar o tipo de gás:</strong> confirme se o cooktop é compatível com o botijão (GLP) ou com a rede encanada (GN) da sua casa antes da instalação.</li>
+          <li><strong>Instalar por conta própria:</strong> a ligação do cooktop ao gás deve ser feita por um instalador credenciado. Conexão malfeita é risco real de vazamento e também pode anular a garantia do fabricante.</li>
+        </ul>
+
+        <h2 id="checklist" class="text-2xl font-bold text-slate-900 mb-6">Checklist antes de decidir qual é o melhor cooktop para você</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Com nota, bocas e voltagem já comparadas entre os 5 modelos, falta só confirmar os detalhes práticos da sua cozinha antes de finalizar a compra. Use este checklist rápido para evitar o erro mais comum, que é decidir só pela nota e esquecer da medida da bancada ou do tipo de gás.
+        </p>
+        <ul class="space-y-2 text-sm text-slate-700 mb-10">
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span>Medi o vão da bancada onde o cooktop vai ser instalado.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span>Confirmei se preciso de 4 ou 5 bocas para o meu dia a dia.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span>Checei se preciso de bivolt confirmado ou se minha rede já é 110V/127V.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span>Confirmei o tipo de gás da minha casa, botijão (GLP) ou encanado (GN).</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span>Comparei nota junto com o número de avaliações, não só a nota isolada.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span>Vou contratar um instalador credenciado para a ligação do gás, não fazer por conta própria.</span></li>
+        </ul>
+
+        <h2 id="faq" class="text-2xl font-bold text-slate-900 mb-6">Perguntas frequentes</h2>
+        <div class="space-y-3 mb-10">
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Qual o melhor cooktop para comprar em 2026?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              O Itatiaia Essencial 5 Bocas é o mais equilibrado da lista, porque junta a maior nota, 4,8/5, com mais de 2,1 mil avaliações e mais de 1 mil compras no mês passado. Para quem precisa de bivolt confirmado, o Mondial CTG-01 lidera em volume de avaliações entre os bivolt.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Cooktop ou fogão: qual vale mais a pena?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Depende da cozinha. O cooktop fica embutido na bancada e libera espaço embaixo, mas exige corte preciso na instalação. O fogão é um móvel completo, com forno, e não precisa de corte na marcenaria. Quem está reformando do zero costuma preferir cooktop.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Qual cooktop é realmente bivolt?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Nesta lista, o Mondial CTG-01 e o Fischer Fit Line são bivolt confirmados na ficha do produto. Os dois Itatiaia e o Atlas Ágile Up não aparecem como bivolt na ficha pública consultada, então vale confirmar direto no anúncio antes de comprar.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Cooktop de 4 ou 5 bocas: qual escolher?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Cooktop de 4 bocas costuma caber melhor em cozinhas pequenas e apartamentos. O de 5 bocas, como o Itatiaia Essencial 5 Bocas e o Atlas Ágile Up desta lista, compensa para quem cozinha para mais gente ou usa várias panelas ao mesmo tempo.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Cooktop Mondial ou Itatiaia: qual escolher?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              O Itatiaia Essencial 5 Bocas tem nota mais alta, 4,8/5. O Mondial CTG-01 tem o maior volume de avaliações da lista, mais de 5,6 mil, e é bivolt confirmado, o que a ficha do Itatiaia não garante. A escolha depende de priorizar nota ou voltagem garantida.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Cooktop a gás precisa de instalação por profissional?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Sim. A instalação de um cooktop a gás deve ser feita por instalador credenciado, que confere o tipo de gás (GLP ou GN), a vedação das conexões e o corte da bancada. Instalação malfeita é risco de vazamento e pode anular a garantia do fabricante.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Cooktop de vidro arranha ou racha fácil?</span>
+              <svg class="w-5 h-5 text-purple-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              O vidro temperado usado em cooktops resiste bem a arranhões do dia a dia e a variações de temperatura, mas pode trincar com impacto direto de objeto pesado ou pontiagudo. Evitar bater panela com força na mesa e não usar esponja de aço ajuda a evitar a maior parte dos danos.
+            </div>
+          </details>
+        </div>
+
+        <!-- Schema FAQ -->
+        <script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Qual o melhor cooktop para comprar em 2026?",
+      "acceptedAnswer": { "@type": "Answer", "text": "O Itatiaia Essencial 5 Bocas é o mais equilibrado da lista, porque junta a maior nota, 4,8/5, com mais de 2,1 mil avaliações e mais de 1 mil compras no mês passado. Para quem precisa de bivolt confirmado, o Mondial CTG-01 lidera em volume de avaliações entre os bivolt." }
+    },
+    {
+      "@type": "Question",
+      "name": "Cooktop ou fogão: qual vale mais a pena?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Depende da cozinha. O cooktop fica embutido na bancada e libera espaço embaixo, mas exige corte preciso na instalação. O fogão é um móvel completo, com forno, e não precisa de corte na marcenaria. Quem está reformando do zero costuma preferir cooktop." }
+    },
+    {
+      "@type": "Question",
+      "name": "Qual cooktop é realmente bivolt?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Nesta lista, o Mondial CTG-01 e o Fischer Fit Line são bivolt confirmados na ficha do produto. Os dois Itatiaia e o Atlas Ágile Up não aparecem como bivolt na ficha pública consultada, então vale confirmar direto no anúncio antes de comprar." }
+    },
+    {
+      "@type": "Question",
+      "name": "Cooktop de 4 ou 5 bocas: qual escolher?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Cooktop de 4 bocas costuma caber melhor em cozinhas pequenas e apartamentos. O de 5 bocas, como o Itatiaia Essencial 5 Bocas e o Atlas Ágile Up desta lista, compensa para quem cozinha para mais gente ou usa várias panelas ao mesmo tempo." }
+    },
+    {
+      "@type": "Question",
+      "name": "Cooktop Mondial ou Itatiaia: qual escolher?",
+      "acceptedAnswer": { "@type": "Answer", "text": "O Itatiaia Essencial 5 Bocas tem nota mais alta, 4,8/5. O Mondial CTG-01 tem o maior volume de avaliações da lista, mais de 5,6 mil, e é bivolt confirmado, o que a ficha do Itatiaia não garante. A escolha depende de priorizar nota ou voltagem garantida." }
+    },
+    {
+      "@type": "Question",
+      "name": "Cooktop a gás precisa de instalação por profissional?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Sim. A instalação de um cooktop a gás deve ser feita por instalador credenciado, que confere o tipo de gás (GLP ou GN), a vedação das conexões e o corte da bancada. Instalação malfeita é risco de vazamento e pode anular a garantia do fabricante." }
+    },
+    {
+      "@type": "Question",
+      "name": "Cooktop de vidro arranha ou racha fácil?",
+      "acceptedAnswer": { "@type": "Answer", "text": "O vidro temperado usado em cooktops resiste bem a arranhões do dia a dia e a variações de temperatura, mas pode trincar com impacto direto de objeto pesado ou pontiagudo. Evitar bater panela com força na mesa e não usar esponja de aço ajuda a evitar a maior parte dos danos." }
+    }
+  ]
+})} />
+
+        <!-- Schema ItemList com aggregateRating (Product de afiliado, sem offers) -->
+        <script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Melhor Cooktop: Qual Comprar",
+  "itemListOrder": "https://schema.org/ItemListOrderAscending",
+  "numberOfItems": 5,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "Product",
+        "name": "Itatiaia Cooktop Essencial 5 Bocas, Preto",
+        "image": "https://www.casaemalta.com.br/images/melhor-cooktop/melhor-cooktop-itatiaia-5-bocas.webp",
+        "description": "Cooktop a gás Itatiaia Essencial, 5 bocas, mesa de vidro temperado, preto.",
+        "brand": { "@type": "Brand", "name": "Itatiaia" },
+        "url": "https://www.amazon.com.br/dp/B0BGT1BWVP?tag=casaemalta0e-20",
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "2100", "bestRating": "5", "worstRating": "1" }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "Product",
+        "name": "Itatiaia Essencial 4 Bocas com Mesa de Vidro Temperado e Acendimento Automático",
+        "image": "https://www.casaemalta.com.br/images/melhor-cooktop/melhor-cooktop-itatiaia-4-bocas.webp",
+        "description": "Cooktop a gás Itatiaia Essencial, 4 bocas, mesa de vidro temperado, acendimento automático, preto.",
+        "brand": { "@type": "Brand", "name": "Itatiaia" },
+        "url": "https://www.amazon.com.br/dp/B0B7C9HXGL?tag=casaemalta0e-20",
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.7", "reviewCount": "1400", "bestRating": "5", "worstRating": "1" }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "Product",
+        "name": "Mondial Cooktop a Gás 4 Bocas CTG-01, Preto/Inox, Bivolt",
+        "image": "https://www.casaemalta.com.br/images/melhor-cooktop/melhor-cooktop-mondial-ctg01.webp",
+        "description": "Cooktop a gás Mondial CTG-01, 4 bocas, preto e inox, bivolt.",
+        "brand": { "@type": "Brand", "name": "Mondial" },
+        "url": "https://www.amazon.com.br/dp/B085JFRRSW?tag=casaemalta0e-20",
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.7", "reviewCount": "5600", "bestRating": "5", "worstRating": "1" }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@type": "Product",
+        "name": "Fischer Cooktop a Gás 4 Bocas Fit Line Trempe Aramado Bivolt",
+        "image": "https://www.casaemalta.com.br/images/melhor-cooktop/melhor-cooktop-fischer-fit-line.webp",
+        "description": "Cooktop a gás Fischer Fit Line, 4 bocas, trempe aramado, mesa de vidro preta, bivolt.",
+        "brand": { "@type": "Brand", "name": "Fischer" },
+        "url": "https://www.amazon.com.br/dp/B0DJ3CLH7M?tag=casaemalta0e-20",
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.7", "reviewCount": "251", "bestRating": "5", "worstRating": "1" }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "item": {
+        "@type": "Product",
+        "name": "Atlas Cooktop 5 Bocas Ágile Up Mesa de Vidro",
+        "image": "https://www.casaemalta.com.br/images/melhor-cooktop/melhor-cooktop-atlas-agile-up.webp",
+        "description": "Cooktop a gás Atlas Ágile Up, 5 bocas, mesa de vidro.",
+        "brand": { "@type": "Brand", "name": "Atlas" },
+        "url": "https://www.amazon.com.br/dp/B0BTX96KQ9?tag=casaemalta0e-20",
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.7", "reviewCount": "119", "bestRating": "5", "worstRating": "1" }
+      }
+    }
+  ]
+})} />
+
+        <!-- Leia também -->
+        <p style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#c2410c;margin:24px 0 12px;">Leia também:</p>
+        <div style="display:flex;flex-direction:column;gap:12px;">
+          <a href="/melhor-frigobar" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;flex-shrink:0;">
+              <img src="/images/melhor-frigobar/capa-melhor-frigobar.webp" alt="Melhor frigobar" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Melhor Frigobar: Qual Comprar</span>
+            </div>
+          </a>
+
+          <a href="/melhor-sanduicheira" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;flex-shrink:0;">
+              <img src="/images/melhor-sanduicheira/capa-melhor-sanduicheira.webp" alt="Melhor sanduicheira" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Melhor Sanduicheira: Qual Não Gruda e Vale o Preço?</span>
+            </div>
+          </a>
+
+          <a href="/melhor-frigideira-antiaderente" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;flex-shrink:0;">
+              <img src="/images/melhores-frigideiras-2026/capa-melhores-frigideiras-antiaderentes-2026.webp" alt="Melhor frigideira antiaderente" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Melhor Frigideira Antiaderente: Qual Vale a Pena</span>
+            </div>
+          </a>
+
+          <a href="/frigideira-antiaderente-ou-de-ferro" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;flex-shrink:0;">
+              <img src="/images/frigideira-comparativo/capa-frigideira-antiaderente-ou-de-ferro.webp" alt="Frigideira antiaderente ou de ferro" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Frigideira Antiaderente ou de Ferro: Qual Comprar</span>
+            </div>
+          </a>
+
+          <a href="/melhor-climatizador-de-ar" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;flex-shrink:0;">
+              <img src="/images/melhor-climatizador-de-ar/capa-melhor-climatizador-de-ar.webp" alt="Melhor climatizador de ar" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Melhor Climatizador de Ar: Qual Comprar</span>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    )}
+
 
 
     <!-- Calculadora de consumo de energia, travada na categoria do artigo -->
