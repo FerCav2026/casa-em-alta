@@ -643,6 +643,16 @@ export const posts: Post[] = [
     categoria: 'rankings-e-listas',
     categoriaLabel: 'Rankings e Listas',
     categoriaColor: 'bg-green-100 text-green-700',
+  },
+  {
+    slug: 'melhor-cooktop',
+    titulo: 'Melhor Cooktop: Qual Comprar',
+    resumo: 'Melhor cooktop: comparamos Itatiaia, Fischer, Mondial e Atlas por nota, bocas, voltagem e avaliações para você escolher sem errar.',
+    tempo: '8 min de leitura',
+    imagem: '/images/melhor-cooktop/capa-melhor-cooktop.webp',
+    categoria: 'rankings-e-listas',
+    categoriaLabel: 'Rankings e Listas',
+    categoriaColor: 'bg-green-100 text-green-700',
   }
 ];
 
