@@ -653,6 +653,16 @@ export const posts: Post[] = [
     categoria: 'rankings-e-listas',
     categoriaLabel: 'Rankings e Listas',
     categoriaColor: 'bg-green-100 text-green-700',
+  },
+  {
+    slug: 'melhor-mop-giratorio',
+    titulo: 'Melhor Mop Giratório: Qual Comprar',
+    resumo: 'Melhor mop giratório: comparamos Flash Limp, Mor e Perfect Pro por nota, avaliações, litragem do balde e material para você escolher sem errar.',
+    tempo: '8 min de leitura',
+    imagem: '/images/melhor-mop-giratorio/capa-melhor-mop-giratorio.webp',
+    categoria: 'rankings-e-listas',
+    categoriaLabel: 'Rankings e Listas',
+    categoriaColor: 'bg-green-100 text-green-700',
   }
 ];
 
