@@ -440,6 +440,13 @@ const posts: Record<string, { titulo: string; descricao: string; categoria: stri
     dataCriacao: '2026-10-29',
     dataModificacao: '2026-10-29',
   },
+  'climatizador-quente-e-frio': {
+    titulo: 'Climatizador Quente e Frio: Qual Comprar e Vale a Pena?',
+    descricao: 'Climatizador quente e frio: a maioria só resfria. Veja como ler a ficha, quais 2 modelos aquecem de verdade e se vale a pena comprar antes de decidir.',
+    categoria: 'Guia de Compra',
+    dataCriacao: '2026-11-03',
+    dataModificacao: '2026-11-03',
+  },
 };
 
 export function getStaticPaths() {
@@ -504,6 +511,7 @@ export function getStaticPaths() {
     'melhor-sanduicheira': {},
     'melhor-cooktop': {},
     'melhor-mop-giratorio': {},
+    'climatizador-quente-e-frio': {},
   }).map((slug) => ({ params: { slug } }));
 }
 
@@ -606,6 +614,7 @@ const isMelhorFrigobar = slug === 'melhor-frigobar';
 const isMelhorSanduicheira = slug === 'melhor-sanduicheira';
 const isMelhorCooktop = slug === 'melhor-cooktop';
 const isMelhorMopGiratorio = slug === 'melhor-mop-giratorio';
+const isClimatizadorQuenteFrio = slug === 'climatizador-quente-e-frio';
 
 const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isAirfryer ? '/images/airfryer/capa-airfryer.webp'
@@ -667,11 +676,12 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isMelhorSanduicheira ? '/images/melhor-sanduicheira/capa-melhor-sanduicheira.webp'
   : isMelhorCooktop ? '/images/melhor-cooktop/capa-melhor-cooktop.webp'
   : isMelhorMopGiratorio ? '/images/melhor-mop-giratorio/capa-melhor-mop-giratorio.webp'
+  : isClimatizadorQuenteFrio ? '/images/climatizador-quente-e-frio/capa-climatizador-quente-e-frio.webp'
   : undefined;
 ---
 
 <BaseLayout
-  title={isPanelaEletricaOuConvencional || isMelhoresCafeteiras || isProjetorShopee || isComoArrumarArmarios || isLavaSeca || isFrigideiraAntiaderenteFerro || isFrigideira || isMelhorFrigideiraAntiaderente || isMelhorClimatizador || isArCondicionadoPortatil || isMelhorVentiladorColuna || isMelhorUmidificadorQuarto || isClimatizadorOuVentilador || isMelhorFrigobar || isMelhorSanduicheira || isMelhorCooktop || isMelhorMopGiratorio ? post.titulo : `${post.titulo} - Casa em Alta`}
+  title={isPanelaEletricaOuConvencional || isMelhoresCafeteiras || isProjetorShopee || isComoArrumarArmarios || isLavaSeca || isFrigideiraAntiaderenteFerro || isFrigideira || isMelhorFrigideiraAntiaderente || isMelhorClimatizador || isArCondicionadoPortatil || isMelhorVentiladorColuna || isMelhorUmidificadorQuarto || isClimatizadorOuVentilador || isMelhorFrigobar || isMelhorSanduicheira || isMelhorCooktop || isMelhorMopGiratorio || isClimatizadorQuenteFrio ? post.titulo : `${post.titulo} - Casa em Alta`}
   description={post.descricao}
   image={coverImage}
   type="article"
@@ -29050,6 +29060,488 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
             <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
               <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
               <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Melhor Mop Giratório: Qual Comprar</span>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    )}
+
+    {isClimatizadorQuenteFrio && (
+      <div>
+
+        <!-- Capa -->
+        <div class="rounded-2xl overflow-hidden mb-8 shadow-md">
+          <img
+            src="/images/climatizador-quente-e-frio/capa-climatizador-quente-e-frio.webp"
+            alt="Climatizador quente e frio Philco em uma sala de apartamento no inverno"
+            width="1280"
+            height="720"
+            class="w-full h-auto object-cover"
+            loading="eager"
+          />
+        </div>
+
+        <p class="text-xs text-slate-400 mb-6">Atualizado em novembro de 2026</p>
+
+        <!-- Introdução -->
+        <div class="bg-orange-50 border border-orange-100 rounded-2xl p-6 mb-8">
+          <p class="text-slate-800 text-base leading-relaxed mb-3">
+            Climatizador quente e frio existe, mas é exceção: a maioria dos climatizadores vendidos no Brasil só resfria. Em 03/11/2026 conferimos a lista de mais vendidos da Amazon para essa busca, e os campeões (Ventisol, Midea AKAF2, Britânia BCL05A, WAP Air Fresh, Mondial e Amvox) não trazem aquecimento na ficha.
+          </p>
+          <p class="text-slate-800 text-base leading-relaxed mb-3">
+            O que aquece de verdade é o ar-condicionado quente e frio e pouquíssimos climatizadores. Dois modelos passaram no nosso filtro: o Philco PCL10QF 5 em 1 e o ar-condicionado portátil Philco PAC12000QF5.
+          </p>
+          <p class="text-slate-800 text-base leading-relaxed">
+            Não testamos nenhum dos dois em casa. É curadoria com fichas, notas e avaliações da Amazon Brasil de novembro de 2026, que mudam com o tempo.
+          </p>
+        </div>
+
+        <!-- TL;DR -->
+        <div class="bg-purple-50 border border-purple-100 rounded-2xl p-6 mb-10">
+          <p class="text-slate-800 font-bold text-base mb-3">Em resumo</p>
+          <p class="text-sm text-slate-700 leading-relaxed">
+            Climatizador quente e frio é raro: quase todo climatizador só resfria. Para quarto ou escritório pequeno com frio leve, o <strong>Philco PCL10QF</strong> declara 2 níveis de aquecimento, mas o aquecimento é discreto. Para esquentar um cômodo de verdade, a opção é o <strong>ar-condicionado portátil Philco PAC12000QF5</strong>, que é só 220V.
+          </p>
+        </div>
+
+        <!-- Índice -->
+        <nav class="border border-slate-200 rounded-2xl p-6 mb-10 bg-white">
+          <p class="font-bold text-slate-800 mb-3">Índice</p>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#por-que-so-resfria" class="text-orange-500 hover:text-orange-600 font-medium">Por que a maioria dos climatizadores só resfria?</a></li>
+            <li><a href="#como-saber-se-aquece" class="text-orange-500 hover:text-orange-600 font-medium">Climatizador de ar quente e frio: como saber se o modelo aquece?</a></li>
+            <li><a href="#quais-modelos" class="text-orange-500 hover:text-orange-600 font-medium">Qual climatizador quente e frio comprar? Os 2 modelos que aquecem</a></li>
+            <li><a href="#tabela-comparativa" class="text-orange-500 hover:text-orange-600 font-medium">Tabela comparativa dos 2 modelos</a></li>
+            <li><a href="#climatizador-ou-aquecedor" class="text-orange-500 hover:text-orange-600 font-medium">Climatizador ou aquecedor: qual esquenta melhor?</a></li>
+            <li><a href="#climatizador-ou-ar-condicionado" class="text-orange-500 hover:text-orange-600 font-medium">Climatizador ou ar-condicionado quente e frio: qual compensa?</a></li>
+            <li><a href="#voltagem" class="text-orange-500 hover:text-orange-600 font-medium">Climatizador quente e frio 110V ou 220V?</a></li>
+            <li><a href="#consumo" class="text-orange-500 hover:text-orange-600 font-medium">Climatizador quente e frio gasta muita energia?</a></li>
+            <li><a href="#erros-comuns" class="text-orange-500 hover:text-orange-600 font-medium">Erros comuns ao comprar</a></li>
+            <li><a href="#checklist" class="text-orange-500 hover:text-orange-600 font-medium">Checklist antes de comprar</a></li>
+            <li><a href="#faq" class="text-orange-500 hover:text-orange-600 font-medium">Perguntas frequentes</a></li>
+          </ul>
+        </nav>
+
+        <h2 id="por-que-so-resfria" class="text-2xl font-bold text-slate-900 mb-4">Por que a maioria dos climatizadores só resfria?</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Porque o climatizador comum é evaporativo: o ar passa por um filtro molhado, a água evapora e leva calor junto. Esse processo só esfria. Para aquecer, o aparelho precisa de uma resistência elétrica, e a maioria dos modelos não tem.
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          O nome também confunde. "Climatizar" vira marketing até em aparelho que só refresca: o Midea AKAF2, por exemplo, se chama "Climatizador de Ar Frio". E "4 em 1" ou "5 em 1" apenas somam funções, que podem ser ventilar, umidificar e purificar, sem aquecer.
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          Por isso a busca devolve uma lista cheia de aparelhos só de frio. Se ainda está em dúvida sobre o tipo de aparelho, veja o <a href="/climatizador-ou-ventilador" class="text-orange-500 font-semibold hover:underline">comparativo entre climatizador e ventilador</a>.
+        </p>
+
+        <h2 id="como-saber-se-aquece" class="text-2xl font-bold text-slate-900 mb-4">Climatizador de ar quente e frio: como saber se o modelo aquece?</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-5">
+          Leia a ficha técnica, não o título. Se a lista de funções não traz "aquece", "níveis de aquecimento" ou "quente/frio", o modelo só resfria.
+        </p>
+        <div class="overflow-x-auto mb-6">
+          <table class="w-full text-sm border-collapse"><caption class="sr-only">Termos comuns nos anúncios de climatizador e o que significam para o aquecimento</caption>
+            <thead>
+              <tr class="bg-slate-100">
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">O que o anúncio diz</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">O que isso significa</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-white">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">"Ar frio" ou "resfriador"</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Só resfria, é evaporativo</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">"Climatiza", "4 em 1", "5 em 1"</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Soma de funções, e nada garante aquecimento</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">"Aquece", "níveis de aquecimento", "quente/frio"</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Tem aquecimento declarado pelo fabricante</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200">Potência de aquecimento em watts</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">O melhor sinal, porque mostra a força real</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          Se a ficha cita aquecimento mas não informa os watts, leia o manual antes de pagar. É o caso do climatizador abaixo.
+        </p>
+
+        <h2 id="quais-modelos" class="text-2xl font-bold text-slate-900 mb-4">Qual climatizador quente e frio comprar? Os 2 modelos que aquecem</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-5">
+          Filtramos por nota, número de avaliações e aquecimento declarado na ficha. Dois que aparecem na busca ficaram de fora por terem poucas avaliações para sustentar uma recomendação: o Praxis CP20 de 20 L (nota 3,7 em 8 avaliações) e o EOS Artic Fresch ECL70Q de 7 L (3,9 em 34 avaliações).
+        </p>
+
+        <!-- Produto 1: Philco PCL10QF -->
+        <div id="avaliacao-philco-pcl10qf" class="scroll-mt-24 border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-orange-500 px-6 py-4">
+            <span class="inline-block bg-white text-orange-600 text-xs font-bold uppercase tracking-wide px-2.5 py-1 rounded-full mb-2">Climatizador com aquecimento</span>
+            <h3 class="text-white font-black text-xl">Climatizador Philco PCL10QF Display Touch 5 em 1, 5 L</h3>
+            <p class="text-orange-100 text-sm mt-1">Nota 4,2/5 em 668 avaliações e mais de 100 compras no mês (Amazon Brasil, novembro de 2026)</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+              <img src="/images/climatizador-quente-e-frio/philco-pcl10qf-climatizador-quente-e-frio-5-em-1.webp" alt="Climatizador quente e frio Philco PCL10QF 5 em 1 branco com painel touch" width="484" height="1280" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <div class="bg-amber-50 border border-amber-200 rounded-xl px-4 py-3 mb-4 text-sm text-amber-900 leading-relaxed">
+                <strong>Atenção à voltagem:</strong> o anúncio tem versão 127V e 220V. Escolha o botão da voltagem da sua tomada, porque ligar na tomada errada pode queimar o aparelho.
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mb-4">
+                É o único climatizador da curadoria que declara aquecimento: segundo a ficha, climatiza, aquece, umidifica, resfria e ventila.
+              </p>
+              <div class="bg-amber-50 border border-amber-200 rounded-xl px-4 py-3 mb-4 text-sm text-amber-900 leading-relaxed">
+                <strong>Expectativa realista:</strong> uma avaliação de cliente na Amazon diz que o modo aquecer é "ok", mas aquece só perto do aparelho e não funciona como aquecedor de ambiente. A ficha também não informa a potência de aquecimento. Pense nele como um aquecimento leve para quem fica por perto, em quarto ou escritório pequeno.
+              </div>
+              <a href="https://link.amazon/B06CafkcL" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-3 transition-colors">Ver preço na Amazon (127V)</a>
+              <a href="https://link.amazon/B04K2PVnU" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon (220V)</a>
+              <h4 class="font-bold text-slate-800 mb-3">Ficha Técnica</h4>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Aquecimento:</strong> 2 níveis, potência não informada na ficha</li>
+                <li><strong>Ventilação:</strong> 3 velocidades e função oscilar</li>
+                <li><strong>Reservatório:</strong> 5 L, com filtro colmeia</li>
+                <li><strong>Extras:</strong> timer de 7 horas, painel touch, controle remoto, rodas e alça</li>
+                <li><strong>Peso:</strong> 5,75 kg</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Aquecimento declarado na ficha, raro em climatizador</li>
+                    <li>Leve, com rodas e alça</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Aquecimento discreto, segundo avaliação de cliente</li>
+                    <li>Potência não consta na ficha</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mt-4">
+                <strong>Veredito:</strong> serve para quarto ou escritório pequeno, onde o frio é leve e você fica perto do aparelho. Se o frio é forte, escolha o modelo abaixo.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 2: Philco PAC12000QF5 -->
+        <div id="avaliacao-philco-pac12000qf5" class="scroll-mt-24 border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-slate-800 px-6 py-4">
+            <span class="inline-block bg-white text-slate-800 text-xs font-bold uppercase tracking-wide px-2.5 py-1 rounded-full mb-2">Ar-condicionado que aquece</span>
+            <h3 class="text-white font-black text-xl">Ar-Condicionado Portátil Philco PAC12000QF5 Quente/Frio 12.000 BTUs</h3>
+            <p class="text-slate-300 text-sm mt-1">Nota 4,3/5 em 431 avaliações e mais de 50 compras no mês (Amazon Brasil, novembro de 2026)</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+              <img src="/images/climatizador-quente-e-frio/philco-pac12000qf5-ar-condicionado-portatil-quente-frio.webp" alt="Ar-condicionado portátil Philco PAC12000QF5 quente e frio 12000 BTUs branco" width="723" height="1138" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <div class="bg-amber-50 border border-amber-200 rounded-xl px-4 py-3 mb-4 text-sm text-amber-900 leading-relaxed">
+                <strong>Atenção à voltagem e à janela:</strong> este anúncio é só 220V. E, como todo portátil, ele precisa de uma saída pela janela para a mangueira. O anúncio informa kit de instalação incluso.
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mb-4">
+                É a alternativa que aquece com compressor e 12.000 BTUs, em vez de ser um modo extra de climatizador. O anúncio cita também o número PAC12000QF6, então confira a etiqueta ao receber. Já temos a <a href="/ar-condicionado-portatil-12000-btus" class="text-orange-500 font-semibold hover:underline">análise completa deste modelo</a>.
+              </p>
+              <a href="https://link.amazon/B01Vm2X9q" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon</a>
+              <h4 class="font-bold text-slate-800 mb-3">Ficha Técnica</h4>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Capacidade:</strong> 12.000 BTUs, potência de 1.200 W, 220V</li>
+                <li><strong>Funções:</strong> aquecer, resfriar, ventilar, desumidificar e purificar</li>
+                <li><strong>Controles:</strong> 3 velocidades, função dormir, oscilação, display e controle remoto</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Aquecimento e frio no mesmo aparelho</li>
+                    <li>Sem instalação fixa, com rodinhas</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Só 220V no anúncio</li>
+                    <li>Precisa de saída pela janela</li>
+                    <li>Gasta muito mais que um climatizador</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mt-4">
+                <strong>Veredito:</strong> para quem precisa esquentar o cômodo de verdade e tem tomada 220V. Meça a janela e confira a tomada antes de comprar.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <h2 id="tabela-comparativa" class="text-2xl font-bold text-slate-900 mb-4">Climatizador quente e frio: tabela comparativa</h2>
+        <div class="overflow-x-auto mb-10">
+          <table class="w-full text-sm border-collapse"><caption class="sr-only">Os 2 modelos com aquecimento: tipo, voltagem, nota e compras por mês (Amazon Brasil, novembro de 2026)</caption>
+            <thead>
+              <tr class="bg-slate-100">
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Modelo</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Tipo e voltagem</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Nota e compras/mês</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-white">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200"><a href="#avaliacao-philco-pcl10qf" class="text-orange-600 hover:text-orange-700 underline font-semibold">Philco PCL10QF</a></td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Climatizador 5 L, 2 níveis de aquecimento, 127V ou 220V</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">4,2/5 (668); mais de 100</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200"><a href="#avaliacao-philco-pac12000qf5" class="text-orange-600 hover:text-orange-700 underline font-semibold">Philco PAC12000QF5</a></td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Ar-condicionado portátil 12.000 BTUs, 1.200 W, 220V</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">4,3/5 (431); mais de 50</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 id="climatizador-ou-aquecedor" class="text-2xl font-bold text-slate-900 mb-4">Climatizador ou aquecedor: qual esquenta melhor?</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Para esquentar o quarto, o aquecedor é a escolha mais direta. O aquecedor e climatizador no mesmo aparelho, como o Philco PCL10QF, faz várias coisas, mas o aquecimento é discreto, como mostra a avaliação de cliente citada acima.
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          Se o seu inverno tem poucos dias frios e você quer um aparelho que também refresque no verão, o climatizador com aquecimento resolve. Se o frio é de verdade, vá de aquecedor ou de ar-condicionado. Em qualquer aquecimento elétrico, mantenha o aparelho longe de cortina, cama e roupa.
+        </p>
+
+        <div style="margin:32px 0;font-family:sans-serif;">
+          <p style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#c2410c;margin:0 0 12px;">Leia também:</p>
+          <a href="/climatizador-ou-ventilador" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;min-width:200px;overflow:hidden;">
+              <img src="/images/climatizador-ou-ventilador/capa-climatizador-ou-ventilador.webp" alt="Climatizador ou ventilador: qual é melhor para apartamento" width="200" height="113" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy" />
+            </div>
+            <div style="padding:20px 22px;display:flex;align-items:center;">
+              <p style="margin:0;font-size:15px;font-weight:500;line-height:1.5;color:#1a1a1a;">Climatizador ou Ventilador: Qual é Melhor para Apartamento?</p>
+            </div>
+          </a>
+        </div>
+
+        <h2 id="climatizador-ou-ar-condicionado" class="text-2xl font-bold text-slate-900 mb-4">Climatizador ou ar-condicionado quente e frio: qual compensa?</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          O ar-condicionado compensa quando você precisa de temperatura de verdade, e o climatizador, quando o que importa é gastar pouco. O ar-condicionado tem compressor e 1.200 W na ficha do Philco. Os climatizadores de frio dos nossos rankings ficam entre 60 W (Midea) e 130 W (Ventisol).
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          Para comparar mais modelos, veja o <a href="/ar-condicionado-portatil-12000-btus" class="text-orange-500 font-semibold hover:underline">ranking de ar-condicionado portátil de 12000 BTUs</a>. Se só quer refrescar no calor seco, o <a href="/melhor-climatizador-de-ar" class="text-orange-500 font-semibold hover:underline">ranking de melhores climatizadores</a> mostra os de frio mais vendidos.
+        </p>
+
+        <h2 id="voltagem" class="text-2xl font-bold text-slate-900 mb-4">Climatizador quente e frio 110V ou 220V?</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          A que combina com a tomada da sua casa. O Philco PCL10QF tem versão 127V (o "110V" do dia a dia) e versão 220V, em botões separados. O ar-condicionado Philco PAC12000QF5 só tem 220V no anúncio.
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          Ligar na tensão errada pode queimar o aparelho. Se não sabe a voltagem da tomada, pergunte a um eletricista antes de comprar. A voltagem de outros climatizadores aparece em cada card do <a href="/melhor-climatizador-de-ar" class="text-orange-500 font-semibold hover:underline">ranking de climatizadores</a>.
+        </p>
+
+        <h2 id="consumo" class="text-2xl font-bold text-slate-900 mb-4">Climatizador quente e frio gasta muita energia?</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Depende do modo. No frio, o climatizador evaporativo gasta pouco. No quente, o aquecimento costuma pesar mais, e a ficha do Philco PCL10QF não informa a potência, então não dá para calcular o gasto dele.
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          O ar-condicionado tem número na ficha: 1.200 W. Ligado 8 horas por dia durante 30 dias, dá 288 kWh por mês, cerca de R$ 282 pela tarifa média de R$ 0,98 por kWh da nossa <a href="/quanto-gasta-de-energia-eletrodomesticos" class="text-orange-500 font-semibold hover:underline">calculadora de consumo de energia</a> (julho/2026). É o teto, com o compressor sempre ligado. Na prática ele desliga ao atingir a temperatura, e o gasto tende a ser menor.
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          Na sua conta vale o kWh da distribuidora, que muda com a <a href="https://www.gov.br/aneel/pt-br/assuntos/tarifas/bandeiras-tarifarias" target="_blank" rel="noopener noreferrer" class="text-purple-600 font-semibold hover:underline">bandeira tarifária da ANEEL</a>. Não conferimos o selo Procel nos dois anúncios. Para checar a eficiência de um ar-condicionado, consulte a <a href="https://www.gov.br/inmetro/pt-br/assuntos/regulamentacao/avaliacao-da-conformidade/programa-brasileiro-de-etiquetagem/tabelas-de-eficiencia-energetica/condicionadores-de-ar" target="_blank" rel="noopener noreferrer" class="text-purple-600 font-semibold hover:underline">tabela do Inmetro (PBE)</a> e o <a href="https://www.gov.br/mme/pt-br/assuntos/ee/procel" target="_blank" rel="noopener noreferrer" class="text-purple-600 font-semibold hover:underline">Selo Procel</a>.
+        </p>
+
+        <h2 id="erros-comuns" class="text-2xl font-bold text-slate-900 mb-4">Erros comuns ao comprar climatizador quente e frio</h2>
+        <ul class="list-disc list-inside space-y-2 text-slate-700 mb-10 ml-2">
+          <li><strong>Confiar no título:</strong> "4 em 1" e "5 em 1" não garantem aquecimento.</li>
+          <li><strong>Esperar que aqueça o cômodo todo:</strong> o modo quente de um climatizador é leve.</li>
+          <li><strong>Ignorar a voltagem:</strong> escolha a versão certa na página do produto.</li>
+          <li><strong>Esquecer a água:</strong> o tanque e o filtro pedem limpeza conforme o manual do fabricante.</li>
+          <li><strong>Comprar ar-condicionado portátil sem janela:</strong> sem saída para a mangueira, o ar quente fica no cômodo.</li>
+        </ul>
+
+        <h2 id="checklist" class="text-2xl font-bold text-slate-900 mb-4">Checklist antes de comprar</h2>
+        <ul class="space-y-2 text-slate-700 mb-6">
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span>A ficha cita "aquece" ou "quente/frio"?</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span>A voltagem do anúncio é a da sua tomada?</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span>O cômodo é pequeno? Se não, prefira ar-condicionado.</span></li>
+          <li class="flex gap-2"><span class="text-purple-500 font-bold">•</span><span>No portátil, existe uma janela para a mangueira?</span></li>
+        </ul>
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          Para quarto pequeno e frio leve, comece pelo Philco PCL10QF. Para frio de verdade, vá de ar-condicionado portátil quente e frio. Antes de fechar, confira preço, voltagem e avaliações recentes na página do produto.
+        </p>
+
+        <h2 id="faq" class="text-2xl font-bold text-slate-900 mb-6">Perguntas frequentes</h2>
+        <div class="space-y-3 mb-10">
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Existe climatizador de ar quente e frio?</span>
+              <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Existe, mas é raro. A maioria dos climatizadores é evaporativa e só resfria. Entre os que conferimos, o Philco PCL10QF declara 2 níveis de aquecimento na ficha da Amazon. Para aquecer um cômodo de verdade, o caminho é o ar-condicionado quente e frio.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Climatizador quente e frio funciona?</span>
+              <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Funciona para o que promete, com limite. No frio, ele refresca evaporando água. No quente, o aquecimento é leve: uma avaliação de cliente do Philco PCL10QF diz que só aquece perto do aparelho. Para esquentar o ambiente todo, o ar-condicionado quente e frio é mais indicado.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Climatizador quente e frio gasta muita energia?</span>
+              <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              No modo frio, pouco. No modo quente, mais, e a ficha do Philco PCL10QF não informa a potência. O ar-condicionado Philco PAC12000QF5 tem 1.200 W: 288 kWh por mês com 8 horas por dia, cerca de R$ 282 no teto, pela tarifa média de R$ 0,98 por kWh (julho/2026). O gasto real costuma ser menor.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Climatizador quente e frio é 110V ou 220V?</span>
+              <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Depende do modelo. O climatizador Philco PCL10QF tem versão 127V (o "110V") e versão 220V. O ar-condicionado portátil Philco PAC12000QF5 é só 220V. Escolha pela tomada da sua casa, porque a tensão errada pode queimar o aparelho.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Climatizador quente e frio Philco, Consul, Electrolux ou Midea: qual aquece?</span>
+              <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Dos que conferimos, o Philco PCL10QF declara aquecimento na ficha. O Midea AKAF2 se chama "Climatizador de Ar Frio". Consul e Electrolux não estavam entre os mais vendidos que conferimos em 03/11/2026, então, se for comprar, procure "aquece" na ficha do modelo.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Climatizador portátil quente e frio serve para o quarto?</span>
+              <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Serve para quarto pequeno. A ficha do Philco PCL10QF indica pequenas salas e escritórios, tem rodas e alça e pesa 5,75 kg. Para quarto maior ou frio forte, o ar-condicionado portátil é mais indicado, desde que haja janela para a mangueira.
+            </div>
+          </details>
+        </div>
+
+        <!-- Schema FAQ -->
+        <script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Existe climatizador de ar quente e frio?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Existe, mas é raro. A maioria dos climatizadores é evaporativa e só resfria. Entre os que conferimos, o Philco PCL10QF declara 2 níveis de aquecimento na ficha da Amazon. Para aquecer um cômodo de verdade, o caminho é o ar-condicionado quente e frio." }
+    },
+    {
+      "@type": "Question",
+      "name": "Climatizador quente e frio funciona?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Funciona para o que promete, com limite. No frio, ele refresca evaporando água. No quente, o aquecimento é leve: uma avaliação de cliente do Philco PCL10QF diz que só aquece perto do aparelho. Para esquentar o ambiente todo, o ar-condicionado quente e frio é mais indicado." }
+    },
+    {
+      "@type": "Question",
+      "name": "Climatizador quente e frio gasta muita energia?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No modo frio, pouco. No modo quente, mais, e a ficha do Philco PCL10QF não informa a potência. O ar-condicionado Philco PAC12000QF5 tem 1.200 W: 288 kWh por mês com 8 horas por dia, cerca de R$ 282 no teto, pela tarifa média de R$ 0,98 por kWh (julho/2026). O gasto real costuma ser menor." }
+    },
+    {
+      "@type": "Question",
+      "name": "Climatizador quente e frio é 110V ou 220V?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Depende do modelo. O climatizador Philco PCL10QF tem versão 127V (o \"110V\") e versão 220V. O ar-condicionado portátil Philco PAC12000QF5 é só 220V. Escolha pela tomada da sua casa, porque a tensão errada pode queimar o aparelho." }
+    },
+    {
+      "@type": "Question",
+      "name": "Climatizador quente e frio Philco, Consul, Electrolux ou Midea: qual aquece?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Dos que conferimos, o Philco PCL10QF declara aquecimento na ficha. O Midea AKAF2 se chama \"Climatizador de Ar Frio\". Consul e Electrolux não estavam entre os mais vendidos que conferimos em 03/11/2026, então, se for comprar, procure \"aquece\" na ficha do modelo." }
+    },
+    {
+      "@type": "Question",
+      "name": "Climatizador portátil quente e frio serve para o quarto?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Serve para quarto pequeno. A ficha do Philco PCL10QF indica pequenas salas e escritórios, tem rodas e alça e pesa 5,75 kg. Para quarto maior ou frio forte, o ar-condicionado portátil é mais indicado, desde que haja janela para a mangueira." }
+    }
+  ]
+})} />
+
+        <!-- Schema ItemList com aggregateRating (Product de afiliado, sem offers) -->
+        <script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Climatizador quente e frio: os 2 modelos que aquecem",
+  "numberOfItems": 2,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "Product",
+        "name": "Climatizador Philco PCL10QF Display Touch 5 em 1, 5 L",
+        "image": "https://www.casaemalta.com.br/images/climatizador-quente-e-frio/philco-pcl10qf-climatizador-quente-e-frio-5-em-1.webp",
+        "description": "Climatizador Philco PCL10QF 5 em 1 com 2 níveis de aquecimento, 3 velocidades, reservatório de 5 L, timer de 7 horas e controle remoto, versões 127V e 220V.",
+        "brand": { "@type": "Brand", "name": "Philco" },
+        "url": "https://link.amazon/B06CafkcL",
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.2", "reviewCount": "668", "bestRating": "5", "worstRating": "1" }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "Product",
+        "name": "Ar-Condicionado Portátil Philco PAC12000QF5 Quente/Frio 12.000 BTUs",
+        "image": "https://www.casaemalta.com.br/images/climatizador-quente-e-frio/philco-pac12000qf5-ar-condicionado-portatil-quente-frio.webp",
+        "description": "Ar-condicionado portátil Philco 12.000 BTUs quente e frio, 220V, 1.200 W, função dormir, oscilação e controle remoto.",
+        "brand": { "@type": "Brand", "name": "Philco" },
+        "url": "https://link.amazon/B01Vm2X9q",
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.3", "reviewCount": "431", "bestRating": "5", "worstRating": "1" }
+      }
+    }
+  ]
+})} />
+
+        <!-- Leia também -->
+        <p style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#c2410c;margin:24px 0 12px;">Leia também:</p>
+        <div style="display:flex;flex-direction:column;gap:12px;">
+          <a href="/melhor-climatizador-de-ar" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;flex-shrink:0;">
+              <img src="/images/melhor-climatizador-de-ar/capa-melhor-climatizador-de-ar.webp" alt="Melhor climatizador de ar" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Melhor Climatizador de Ar: os 5 Mais Vendidos de 2026</span>
+            </div>
+          </a>
+
+          <a href="/ar-condicionado-portatil-12000-btus" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;flex-shrink:0;">
+              <img src="/images/ar-condicionado-portatil/capa-ar-condicionado-portatil-12000-btus-v3.webp" alt="Melhor ar condicionado portátil 12000 BTUs" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Melhor Ar Condicionado Portátil 12000 BTUs: Vale a Pena?</span>
+            </div>
+          </a>
+
+          <a href="/melhor-umidificador-de-ar-para-quarto" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;flex-shrink:0;">
+              <img src="/images/melhor-umidificador-de-ar-para-quarto/capa-melhor-umidificador-de-ar-para-quarto.webp" alt="Melhor umidificador de ar para quarto" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Melhor Umidificador de Ar para Quarto: Qual Comprar</span>
+            </div>
+          </a>
+
+          <a href="/quanto-gasta-de-energia-eletrodomesticos" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;flex-shrink:0;">
+              <img src="/images/consumo-energia/capa-consumo-energia.webp" alt="Quanto gasta de energia cada eletrodoméstico" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Quanto Gasta de Energia Cada Eletrodoméstico? Calcule Aqui</span>
             </div>
           </a>
         </div>

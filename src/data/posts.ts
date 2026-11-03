@@ -663,6 +663,16 @@ export const posts: Post[] = [
     categoria: 'rankings-e-listas',
     categoriaLabel: 'Rankings e Listas',
     categoriaColor: 'bg-green-100 text-green-700',
+  },
+  {
+    slug: 'climatizador-quente-e-frio',
+    titulo: 'Climatizador Quente e Frio: Qual Comprar e Vale a Pena?',
+    resumo: 'Climatizador quente e frio: a maioria só resfria. Veja como ler a ficha, quais 2 modelos aquecem de verdade e se vale a pena antes de comprar.',
+    tempo: '7 min de leitura',
+    imagem: '/images/climatizador-quente-e-frio/capa-climatizador-quente-e-frio.webp',
+    categoria: 'guias-de-compra',
+    categoriaLabel: 'Guia de Compra',
+    categoriaColor: 'bg-purple-100 text-purple-700',
   }
 ];
 
