@@ -656,7 +656,7 @@ export const posts: Post[] = [
   },
   {
     slug: 'melhor-mop-giratorio',
-    titulo: 'Melhor Mop Giratório: Qual Vale a Pena e Qual Evitar',
+    titulo: 'Melhor Mop Giratório: Comparamos 3 Modelos de Balde e Refil',
     resumo: 'Melhor mop giratório: comparamos Flash Limp, Mor e Perfect Pro por nota, avaliações, litragem do balde e material para você escolher sem errar.',
     tempo: '8 min de leitura',
     imagem: '/images/melhor-mop-giratorio/capa-melhor-mop-giratorio.webp',
@@ -666,7 +666,7 @@ export const posts: Post[] = [
   },
   {
     slug: 'climatizador-quente-e-frio',
-    titulo: 'Climatizador Quente e Frio: Qual Comprar e Vale a Pena?',
+    titulo: 'Climatizador Quente e Frio Existe? Veja os que Aquecem',
     resumo: 'Climatizador quente e frio: a maioria só resfria. Veja como ler a ficha, quais 2 modelos aquecem de verdade e se vale a pena antes de comprar.',
     tempo: '7 min de leitura',
     imagem: '/images/climatizador-quente-e-frio/capa-climatizador-quente-e-frio.webp',
