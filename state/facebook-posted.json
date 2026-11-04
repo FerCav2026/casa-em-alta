@@ -59,7 +59,8 @@
     "melhor-frigobar",
     "melhor-sanduicheira",
     "melhor-cooktop",
-    "melhor-mop-giratorio"
+    "melhor-mop-giratorio",
+    "climatizador-quente-e-frio"
   ],
   "indicacasa": [
     "11921",
@@ -154,6 +155,7 @@
     "14835",
     "14843",
     "14851",
-    "14881"
+    "14881",
+    "14890"
   ]
 }
