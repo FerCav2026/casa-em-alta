@@ -673,6 +673,16 @@ export const posts: Post[] = [
     categoria: 'guias-de-compra',
     categoriaLabel: 'Guia de Compra',
     categoriaColor: 'bg-purple-100 text-purple-700',
+  },
+  {
+    slug: 'climatizador-midea',
+    titulo: 'Climatizador Midea: Qual Modelo Escolher',
+    resumo: 'Climatizador Midea: compare AKAF1, Digital torre e 5L por voltagem, reservatório e espaço, e veja qual modelo escolher antes de comprar na Amazon.',
+    tempo: '8 min de leitura',
+    imagem: '/images/climatizador-midea/capa-climatizador-midea.webp',
+    categoria: 'guias-de-compra',
+    categoriaLabel: 'Guia de Compra',
+    categoriaColor: 'bg-purple-100 text-purple-700',
   }
 ];
 
