@@ -447,6 +447,13 @@ const posts: Record<string, { titulo: string; descricao: string; categoria: stri
     dataCriacao: '2026-11-03',
     dataModificacao: '2026-11-03',
   },
+  'climatizador-midea': {
+    titulo: 'Climatizador Midea: Qual Modelo Escolher',
+    descricao: 'Climatizador Midea: compare AKAF1, Digital torre e 5L por voltagem, reservatório e espaço, e veja qual modelo escolher antes de comprar na Amazon.',
+    categoria: 'Guia de Compra',
+    dataCriacao: '2026-11-05',
+    dataModificacao: '2026-11-05',
+  },
 };
 
 export function getStaticPaths() {
@@ -512,6 +519,7 @@ export function getStaticPaths() {
     'melhor-cooktop': {},
     'melhor-mop-giratorio': {},
     'climatizador-quente-e-frio': {},
+    'climatizador-midea': {},
   }).map((slug) => ({ params: { slug } }));
 }
 
@@ -615,6 +623,7 @@ const isMelhorSanduicheira = slug === 'melhor-sanduicheira';
 const isMelhorCooktop = slug === 'melhor-cooktop';
 const isMelhorMopGiratorio = slug === 'melhor-mop-giratorio';
 const isClimatizadorQuenteFrio = slug === 'climatizador-quente-e-frio';
+const isClimatizadorMidea = slug === 'climatizador-midea';
 
 const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isAirfryer ? '/images/airfryer/capa-airfryer.webp'
@@ -677,11 +686,12 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isMelhorCooktop ? '/images/melhor-cooktop/capa-melhor-cooktop.webp'
   : isMelhorMopGiratorio ? '/images/melhor-mop-giratorio/capa-melhor-mop-giratorio.webp'
   : isClimatizadorQuenteFrio ? '/images/climatizador-quente-e-frio/capa-climatizador-quente-e-frio.webp'
+  : isClimatizadorMidea ? '/images/climatizador-midea/capa-climatizador-midea.webp'
   : undefined;
 ---
 
 <BaseLayout
-  title={isPanelaEletricaOuConvencional || isMelhoresCafeteiras || isProjetorShopee || isComoArrumarArmarios || isLavaSeca || isFrigideiraAntiaderenteFerro || isFrigideira || isMelhorFrigideiraAntiaderente || isMelhorClimatizador || isArCondicionadoPortatil || isMelhorVentiladorColuna || isMelhorUmidificadorQuarto || isClimatizadorOuVentilador || isMelhorFrigobar || isMelhorSanduicheira || isMelhorCooktop || isMelhorMopGiratorio || isClimatizadorQuenteFrio ? post.titulo : `${post.titulo} - Casa em Alta`}
+  title={isPanelaEletricaOuConvencional || isMelhoresCafeteiras || isProjetorShopee || isComoArrumarArmarios || isLavaSeca || isFrigideiraAntiaderenteFerro || isFrigideira || isMelhorFrigideiraAntiaderente || isMelhorClimatizador || isArCondicionadoPortatil || isMelhorVentiladorColuna || isMelhorUmidificadorQuarto || isClimatizadorOuVentilador || isMelhorFrigobar || isMelhorSanduicheira || isMelhorCooktop || isMelhorMopGiratorio || isClimatizadorQuenteFrio || isClimatizadorMidea ? post.titulo : `${post.titulo} - Casa em Alta`}
   description={post.descricao}
   image={coverImage}
   type="article"
@@ -29612,6 +29622,628 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
             <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
               <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
               <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Melhor Umidificador de Ar para Quarto: Qual Comprar</span>
+            </div>
+          </a>
+
+          <a href="/quanto-gasta-de-energia-eletrodomesticos" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;flex-shrink:0;">
+              <img src="/images/consumo-energia/capa-consumo-energia.webp" alt="Quanto gasta de energia cada eletrodoméstico" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Quanto Gasta de Energia Cada Eletrodoméstico? Calcule Aqui</span>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    )}
+
+    {isClimatizadorMidea && (
+      <div>
+
+        <!-- Capa -->
+        <div class="rounded-2xl overflow-hidden mb-8 shadow-md">
+          <img
+            src="/images/climatizador-midea/capa-climatizador-midea.webp"
+            alt="Climatizador Midea branco em uma sala clara com planta e cortina"
+            width="1280"
+            height="720"
+            class="w-full h-auto object-cover"
+            loading="eager"
+          />
+        </div>
+
+        <p class="text-xs text-slate-400 mb-6">Atualizado em novembro de 2026</p>
+
+        <!-- Introdução -->
+        <div class="bg-orange-50 border border-orange-100 rounded-2xl p-6 mb-8">
+          <p class="text-slate-800 text-base leading-relaxed mb-3">
+            Climatizador Midea: qual modelo escolher? Depende de três coisas, a voltagem da sua tomada, o espaço que você quer refrescar e o formato que cabe na sua casa. Aqui comparamos o AKAF1, o Digital torre e o 5L, os três da linha de climatizador de ar Midea que reunimos na Amazon Brasil.
+          </p>
+          <p class="text-slate-800 text-base leading-relaxed mb-3">
+            Dois avisos antes de qualquer botão. Primeiro, os três só resfriam, porque são evaporativos. Segundo, nenhum é bivolt: cada um tem versão 127V e versão 220V, e a errada pode queimar o aparelho.
+          </p>
+          <p class="text-slate-800 text-base leading-relaxed">
+            Não testamos nenhum deles em casa. É curadoria feita com fichas, notas e avaliações da Amazon Brasil de novembro de 2026, que mudam com o tempo.
+          </p>
+        </div>
+
+        <!-- TL;DR -->
+        <div class="bg-purple-50 border border-purple-100 rounded-2xl p-6 mb-10">
+          <p class="text-slate-800 font-bold text-base mb-3">Em resumo</p>
+          <p class="text-sm text-slate-700 leading-relaxed">
+            Para a maioria das casas, o <a href="https://link.amazon/B08uX9WVh" target="_blank" rel="nofollow sponsored noopener" class="text-orange-500 font-semibold hover:underline"><strong>Midea AKAF1</strong></a> é o ponto de partida, por ter a maior base de avaliações. Quem prefere formato torre e painel digital olha o <a href="https://link.amazon/B06IyVoLk" target="_blank" rel="nofollow sponsored noopener" class="text-orange-500 font-semibold hover:underline"><strong>Midea Digital</strong></a>, que tem a maior nota. Quem quer botão direto para 127V e para 220V vê o <strong>Midea 5L</strong> (<a href="https://link.amazon/B0au8RBRr" target="_blank" rel="nofollow sponsored noopener" class="text-orange-500 font-semibold hover:underline">ver 127V</a> ou <a href="https://link.amazon/B0c5NFYUg" target="_blank" rel="nofollow sponsored noopener" class="text-orange-500 font-semibold hover:underline">ver 220V</a>). Se o que você quer é aquecer, nenhum serve.
+          </p>
+        </div>
+
+        <!-- Índice -->
+        <nav class="border border-slate-200 rounded-2xl p-6 mb-10 bg-white">
+          <p class="font-bold text-slate-800 mb-3">Índice</p>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#qual-modelo-escolher" class="text-orange-500 hover:text-orange-600 font-medium">Climatizador Midea: qual modelo escolher?</a></li>
+            <li><a href="#climatizador-midea-akaf1" class="text-orange-500 hover:text-orange-600 font-medium">Climatizador Midea AKAF1 vale a pena? O mais avaliado da linha</a></li>
+            <li><a href="#climatizador-midea-torre" class="text-orange-500 hover:text-orange-600 font-medium">Climatizador Midea torre (Digital) é melhor que o AKAF1?</a></li>
+            <li><a href="#climatizador-midea-5l" class="text-orange-500 hover:text-orange-600 font-medium">Qual climatizador Midea tem botão para 127V e 220V? O 5L 3 em 1</a></li>
+            <li><a href="#tabela-comparativa" class="text-orange-500 hover:text-orange-600 font-medium">Qual a diferença entre os climatizadores Midea AKAF1, Digital e 5L?</a></li>
+            <li><a href="#voltagem" class="text-orange-500 hover:text-orange-600 font-medium">Climatizador Midea é bivolt? 127V ou 220V</a></li>
+            <li><a href="#para-quem" class="text-orange-500 hover:text-orange-600 font-medium">Climatizador de ar Midea serve para quem?</a></li>
+            <li><a href="#uso-seguro" class="text-orange-500 hover:text-orange-600 font-medium">Quais cuidados ter ao usar um climatizador Midea?</a></li>
+            <li><a href="#consumo" class="text-orange-500 hover:text-orange-600 font-medium">Climatizador Midea gasta muita energia?</a></li>
+            <li><a href="#faq" class="text-orange-500 hover:text-orange-600 font-medium">Perguntas frequentes</a></li>
+          </ul>
+        </nav>
+
+        <h2 id="qual-modelo-escolher" class="text-2xl font-bold text-slate-900 mb-4">Climatizador Midea: qual modelo escolher?</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Escolha o AKAF1 se quer a opção com mais avaliações de compradores, o Digital torre se quer painel digital e formato vertical, e o 5L se quer oscilação vertical. Esses são os três critérios que mais mudam a decisão: espaço, voltagem e formato.
+        </p>
+        <ul class="list-disc list-inside space-y-2 text-slate-700 mb-4 ml-2">
+          <li><strong>Espaço:</strong> as fichas não informam área de cobertura, então o ambiente é você quem mede. Quarto pequeno ou canto de sala pedem um aparelho de porte pequeno, e o ar precisa circular.</li>
+          <li><strong>Voltagem:</strong> confira a tomada antes de abrir o anúncio. Os três têm versão 127V e 220V, e nenhum é bivolt.</li>
+          <li><strong>Formato:</strong> o AKAF1 e o 5L têm medidas parecidas, e o Digital é torre, com a maior medida entre os três (85,1 cm).</li>
+        </ul>
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          Se ainda não tem certeza de que climatizador é o aparelho certo, veja antes o <a href="/climatizador-ou-ventilador" class="text-orange-500 font-semibold hover:underline">comparativo entre climatizador e ventilador</a>. E se quiser ver outras marcas, o <a href="/melhor-climatizador-de-ar" class="text-orange-500 font-semibold hover:underline">ranking de melhores climatizadores</a> traz os 5 mais vendidos.
+        </p>
+
+        <h2 id="climatizador-midea-akaf1" class="text-2xl font-bold text-slate-900 mb-4">Climatizador Midea AKAF1 vale a pena? O mais avaliado da linha</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-5">
+          O Midea AKAF1 é o mais avaliado dos três: 4,6 de 5 em 8.125 avaliações na Amazon Brasil (novembro de 2026). Resfria sem aquecer, tem reservatório de 4,5 L, 60 W e, segundo a ficha, 53 dB. O botão leva ao anúncio 127V, e a versão 220V é o AKAF2.
+        </p>
+
+        <!-- Produto 1: Midea AKAF1 -->
+        <div id="avaliacao-midea-akaf1" class="scroll-mt-24 border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-orange-500 px-6 py-4">
+            <span class="inline-block bg-white text-orange-600 text-xs font-bold uppercase tracking-wide px-2.5 py-1 rounded-full mb-2">Mais avaliado</span>
+            <h3 class="text-white font-black text-xl">Climatizador de Ar Frio Midea AKAF1</h3>
+            <p class="text-orange-100 text-sm mt-1">Nota 4,6/5 em 8.125 avaliações (Amazon Brasil, novembro de 2026)</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+              <img src="/images/climatizador-midea/climatizador-midea-akaf1.webp" alt="Climatizador Midea AKAF1 de ar frio branco com painel superior" width="600" height="663" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <div class="bg-amber-50 border border-amber-200 rounded-xl px-4 py-3 mb-4 text-sm text-amber-900 leading-relaxed">
+                <strong>Atenção à voltagem:</strong> o botão abaixo leva ao anúncio de 127V. Existe também a versão 220V do mesmo aparelho (AKAF2), mas ela não tem botão aqui. Se a sua tomada é 220V, procure o AKAF2 pelo nome na Amazon.
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mb-4">
+                Aparelho de ar frio com controle remoto, filtro colmeia e 2 caixas de gel. O "7L" que aparece no título do anúncio é só o tamanho da variação. A capacidade real do reservatório é de 4,5 L.
+              </p>
+              <a href="https://link.amazon/B08uX9WVh" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon (127V)</a>
+              <h4 class="font-bold text-slate-800 mb-3">Ficha Técnica</h4>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Potência:</strong> 60 W, 3 velocidades</li>
+                <li><strong>Reservatório:</strong> 4,5 L, com filtro colmeia</li>
+                <li><strong>Ruído:</strong> 53 dB, funcionamento silencioso segundo a ficha</li>
+                <li><strong>Extras:</strong> controle remoto, timer de 7 horas, 2 caixas de gel</li>
+                <li><strong>Medidas e peso:</strong> 26 x 27,5 x 67,5 cm, 6,1 kg</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Maior base de avaliações da curadoria</li>
+                    <li>Único dos três com ruído informado na ficha</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Botão só para 127V</li>
+                    <li>A ficha não cita painel digital</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mt-4">
+                <strong>Veredito:</strong> o ponto de partida para quem tem tomada 127V e quer a opção com mais avaliações de compradores. Já temos o AKAF1 no nosso <a href="/melhor-climatizador-de-ar" class="text-orange-500 font-semibold hover:underline">ranking geral de climatizadores</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <h2 id="climatizador-midea-torre" class="text-2xl font-bold text-slate-900 mb-4">Climatizador Midea torre (Digital) é melhor que o AKAF1?</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-5">
+          Depende do que você procura: o Midea Digital torre tem a maior nota da linha, 4,7 de 5 em 1.616 avaliações, e painel digital com modo dormir, mas o reservatório é menor (4,25 L contra 4,5 L do AKAF1). Segundo a Amazon Brasil (novembro de 2026), são cerca de 100 compras por mês. Ele ocupa pouco espaço de chão, mas é o mais alto dos três (85,1 cm).
+        </p>
+
+        <!-- Produto 2: Midea Digital torre -->
+        <div id="avaliacao-midea-digital-torre" class="scroll-mt-24 border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-slate-800 px-6 py-4">
+            <span class="inline-block bg-white text-slate-800 text-xs font-bold uppercase tracking-wide px-2.5 py-1 rounded-full mb-2">Maior nota</span>
+            <h3 class="text-white font-black text-xl">Climatizador de Ar Digital Midea, formato torre</h3>
+            <p class="text-slate-300 text-sm mt-1">Nota 4,7/5 em 1.616 avaliações e cerca de 100 compras no mês (Amazon Brasil, novembro de 2026)</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+              <img src="/images/climatizador-midea/climatizador-midea-digital-torre.webp" alt="Climatizador Midea Digital formato torre branco com painel digital" width="284" height="900" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <div class="bg-amber-50 border border-amber-200 rounded-xl px-4 py-3 mb-4 text-sm text-amber-900 leading-relaxed">
+                <strong>Atenção à voltagem:</strong> o título do anúncio indica 127V e a lista de variações mostra "110 Volts". Existe versão 220V, mas sem botão aqui. A própria ficha avisa: "Este produto NÃO é bivolt, verifique a tensão da etiqueta".
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mb-4">
+                Ventila, climatiza e umidifica, com 3 modos de ventilação (dormir, natural e brisa), painel digital, controle remoto, timer de 7 horas e filtro colmeia.
+              </p>
+              <a href="https://link.amazon/B06IyVoLk" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon (127V)</a>
+              <h4 class="font-bold text-slate-800 mb-3">Ficha Técnica</h4>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Formato:</strong> torre, com painel digital</li>
+                <li><strong>Potência:</strong> 55 W</li>
+                <li><strong>Reservatório:</strong> 4,25 L, com filtro colmeia</li>
+                <li><strong>Modos:</strong> dormir, natural e brisa, mais timer de 7 horas</li>
+                <li><strong>Medidas e peso:</strong> 29,4 x 22,8 x 85,1 cm, 5,42 kg</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Maior nota da curadoria</li>
+                    <li>Painel digital e modo dormir</li>
+                    <li>O mais leve dos três</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Menor reservatório dos três</li>
+                    <li>Ficha não informa o ruído</li>
+                    <li>Botão só para 127V</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mt-4">
+                <strong>Veredito:</strong> bom para quem quer um aparelho vertical e com painel, em tomada 127V. Confira a etiqueta de tensão ao receber.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <h2 id="climatizador-midea-5l" class="text-2xl font-bold text-slate-900 mb-4">Qual climatizador Midea tem botão para 127V e 220V? O 5L 3 em 1</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-5">
+          O Climatizador Midea 5L é o único dos três com botão para as duas voltagens, 127V e 220V. A ressalva é a base de avaliações menor: 265 notas na versão 127V e 208 na 220V, contra milhares dos outros dois.
+        </p>
+
+        <!-- Produto 3: Midea 5L -->
+        <div id="avaliacao-midea-5l" class="scroll-mt-24 border border-slate-200 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <div class="bg-orange-500 px-6 py-4">
+            <span class="inline-block bg-white text-orange-600 text-xs font-bold uppercase tracking-wide px-2.5 py-1 rounded-full mb-2">127V e 220V com botão</span>
+            <h3 class="text-white font-black text-xl">Climatizador de Ar 5L Midea 3 em 1</h3>
+            <p class="text-orange-100 text-sm mt-1">127V: nota 4,4/5 em 265 avaliações. 220V: nota 4,5/5 em 208 avaliações (Amazon Brasil, novembro de 2026)</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+              <img src="/images/climatizador-midea/climatizador-midea-5l.webp" alt="Climatizador Midea 5L 3 em 1 branco com tanque removível" width="397" height="900" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <div class="bg-amber-50 border border-amber-200 rounded-xl px-4 py-3 mb-4 text-sm text-amber-900 leading-relaxed">
+                <strong>Atenção à voltagem:</strong> são dois anúncios separados. Use o botão da voltagem da sua tomada, porque ligar na tensão errada pode queimar o aparelho.
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mb-4">
+                É o 3 em 1 que ventila, climatiza e umidifica, com 3 velocidades, oscilação vertical, filtro colmeia e tanque removível de 5 L (volume bruto).
+              </p>
+              <a href="https://link.amazon/B0au8RBRr" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-3 transition-colors">Ver preço na Amazon (127V)</a>
+              <a href="https://link.amazon/B0c5NFYUg" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon (220V)</a>
+              <h4 class="font-bold text-slate-800 mb-3">Ficha Técnica</h4>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Funções:</strong> ventila, climatiza e umidifica</li>
+                <li><strong>Ventilação:</strong> 3 velocidades e oscilação vertical</li>
+                <li><strong>Reservatório:</strong> tanque removível de 5 L (volume bruto), com filtro colmeia</li>
+                <li><strong>Medidas e peso:</strong> 28 x 26,5 x 71 cm, 6,45 kg</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Botão para 127V e para 220V</li>
+                    <li>Maior tanque informado (5 L bruto)</li>
+                    <li>Oscilação vertical</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Base de avaliações bem menor</li>
+                    <li>Ficha não traz potência nem ruído</li>
+                    <li>O mais pesado dos três</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mt-4">
+                <strong>Veredito:</strong> a saída prática para quem tem tomada 220V e quer um botão direto. Quem aceita escolher pela base de avaliações vai de AKAF1 ou Digital.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <h2 id="tabela-comparativa" class="text-2xl font-bold text-slate-900 mb-4">Qual a diferença entre os climatizadores Midea AKAF1, Digital e 5L?</h2>
+        <div class="overflow-x-auto mb-10">
+          <table class="w-full text-sm border-collapse"><caption class="sr-only">Os 3 climatizadores Midea: formato, reservatório, potência, ruído, peso, voltagens e nota (fichas e avaliações da Amazon Brasil, novembro de 2026; consumo estimado pela potência)</caption>
+            <thead>
+              <tr class="bg-slate-100">
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Modelo</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Formato</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Reservatório</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Potência</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Ruído (ficha)</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Peso</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Voltagens</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Consumo estimado (8 h/dia, 30 dias)</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Nota (avaliações)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-white">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200"><a href="#avaliacao-midea-akaf1" class="text-orange-600 hover:text-orange-700 underline font-semibold">Midea AKAF1</a></td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Vertical, 26 x 27,5 x 67,5 cm</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">4,5 L</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">60 W</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">53 dB</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">6,1 kg</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">127V (AKAF1) e 220V (AKAF2)</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">cerca de 14,4 kWh</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">4,6/5 (8.125)</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200"><a href="#avaliacao-midea-digital-torre" class="text-orange-600 hover:text-orange-700 underline font-semibold">Midea Digital torre</a></td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Torre com painel digital, 29,4 x 22,8 x 85,1 cm</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">4,25 L</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">55 W</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">não informado</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">5,42 kg</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">127V e 220V</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">cerca de 13,2 kWh</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">4,7/5 (1.616)</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200"><a href="#avaliacao-midea-5l" class="text-orange-600 hover:text-orange-700 underline font-semibold">Midea 5L 3 em 1</a></td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Vertical, oscilação vertical, 28 x 26,5 x 71 cm</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">5 L (bruto)</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">não informado</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">não informado</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">6,45 kg</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">127V e 220V</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">não calculável, sem potência na ficha</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">4,4/5 (265) em 127V; 4,5/5 (208) em 220V</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div style="margin:32px 0;font-family:sans-serif;">
+          <p style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#c2410c;margin:0 0 12px;">Leia também:</p>
+          <a href="/climatizador-ou-ventilador" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;min-width:200px;overflow:hidden;">
+              <img src="/images/climatizador-ou-ventilador/capa-climatizador-ou-ventilador.webp" alt="Climatizador ou ventilador: qual é melhor para apartamento" width="200" height="113" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy" />
+            </div>
+            <div style="padding:20px 22px;display:flex;align-items:center;">
+              <p style="margin:0;font-size:15px;font-weight:500;line-height:1.5;color:#1a1a1a;">Climatizador ou Ventilador: Qual é Melhor para Apartamento?</p>
+            </div>
+          </a>
+        </div>
+
+        <h2 id="voltagem" class="text-2xl font-bold text-slate-900 mb-4">Climatizador Midea é bivolt? 127V ou 220V</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Escolha a voltagem igual à da tomada onde o aparelho vai ficar, porque nenhum dos três é bivolt. Os três existem em 127V (o "110V" do dia a dia) e em 220V, mas só a versão com link na tabela abaixo tem botão aqui.
+        </p>
+        <div class="overflow-x-auto mb-6">
+          <table class="w-full text-sm border-collapse"><caption class="sr-only">Voltagens disponíveis de cada climatizador Midea e onde há botão de compra</caption>
+            <thead>
+              <tr class="bg-slate-100">
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Modelo</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">127V</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">220V</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-white">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200"><a href="#avaliacao-midea-akaf1" class="text-orange-600 hover:text-orange-700 underline font-semibold">Midea AKAF1</a></td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Existe, com botão</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Existe (AKAF2), sem botão</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200"><a href="#avaliacao-midea-digital-torre" class="text-orange-600 hover:text-orange-700 underline font-semibold">Midea Digital torre</a></td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Existe, com botão</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Existe, sem botão</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200"><a href="#avaliacao-midea-5l" class="text-orange-600 hover:text-orange-700 underline font-semibold">Midea 5L</a></td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Existe, com botão</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Existe, com botão</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          Se não sabe a voltagem da sua tomada, pergunte a um eletricista antes de comprar. Se tem tomada 220V e prefere o AKAF1 ou o Digital, pesquise pelo nome do modelo na Amazon e confira a voltagem no anúncio.
+        </p>
+
+        <h2 id="para-quem" class="text-2xl font-bold text-slate-900 mb-4">Climatizador de ar Midea serve para quem?</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Serve para quem quer refrescar um espaço ventilado gastando pouca energia, e não serve para quem quer aquecer ou esfriar como um ar-condicionado. O motivo é o funcionamento: o climatizador evaporativo passa o ar por um filtro molhado, a água evapora e leva calor junto.
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Por isso ele rende mais em ar seco e abafado, com uma janela ou porta aberta para o ar circular. Em cômodo fechado e úmido, o ar vai ficando mais carregado de umidade e a sensação de alívio diminui. Não existe número mágico aqui, e as fichas dos três não informam cobertura em metros quadrados. Se o seu problema é ar seco, veja também o <a href="/melhor-umidificador-de-ar-para-quarto" class="text-orange-500 font-semibold hover:underline">guia de umidificadores para quarto</a>.
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-3"><strong>Pense duas vezes se você:</strong></p>
+        <ul class="list-disc list-inside space-y-2 text-slate-700 mb-4 ml-2">
+          <li>quer aquecer no inverno: os três são só de frio. O artigo sobre <a href="/climatizador-quente-e-frio" class="text-orange-500 font-semibold hover:underline">climatizador quente e frio</a> mostra quais modelos esquentam;</li>
+          <li>vai usar em quarto sem ventilação, fechado o tempo todo;</li>
+          <li>mora em lugar muito úmido e quer baixar a temperatura de verdade, caso em que um <a href="/ar-condicionado-portatil-12000-btus" class="text-orange-500 font-semibold hover:underline">ar-condicionado portátil</a> resolve melhor.</li>
+        </ul>
+        <div class="mb-6"></div>
+
+        <h2 id="uso-seguro" class="text-2xl font-bold text-slate-900 mb-4">Quais cuidados ter ao usar um climatizador Midea?</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Água e eletricidade pedem cuidado. Estes pontos seguem as orientações gerais de uso seguro de aparelhos com água e eletricidade e valem para os três modelos, mas o manual do aparelho que chegar na sua casa é a palavra final.
+        </p>
+        <div class="bg-amber-50 border border-amber-200 rounded-xl px-5 py-4 mb-10 text-sm text-amber-900 leading-relaxed">
+          <ul class="space-y-2">
+            <li><strong>Ligue direto na tomada:</strong> sem extensão, benjamim ou "T".</li>
+            <li><strong>Aterramento:</strong> a tomada deve seguir a norma NBR 5410. Na dúvida, chame um eletricista.</li>
+            <li><strong>Água no nível certo:</strong> não use o aparelho com o reservatório abaixo do mínimo.</li>
+            <li><strong>Se inclinar e vazar água:</strong> desligue da tomada antes de mexer.</li>
+            <li><strong>Filtro colmeia:</strong> não remova com o aparelho funcionando.</li>
+            <li><strong>Troque a água com frequência:</strong> não deixe água parada no reservatório. Esvazie e seque o tanque quando não for usar, para evitar mofo, mau cheiro e criadouro de mosquito.</li>
+            <li><strong>Para encher ou limpar:</strong> desligue da tomada primeiro e mantenha as mãos secas.</li>
+            <li><strong>Crianças e animais:</strong> deixe o cabo e a tomada fora do alcance e o aparelho em superfície firme.</li>
+            <li><strong>Mofo e umidade:</strong> quem tem asma ou rinite deve prestar atenção ao mofo e à umidade alta em cômodo fechado.</li>
+            <li><strong>Dúvidas e assistência:</strong> fale com o SAC da Midea.</li>
+          </ul>
+        </div>
+
+        <h2 id="consumo" class="text-2xl font-bold text-slate-900 mb-4">Climatizador Midea gasta muita energia?</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Gasta pouco, pela potência da ficha. O AKAF1 tem 60 W e o Digital torre, 55 W. Como estimativa, 60 W ligado 8 horas por dia dá 0,48 kWh por dia, cerca de 14,4 kWh em 30 dias. O Digital, com 55 W, fica em torno de 13,2 kWh no mesmo uso.
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          É só uma conta de potência pela ficha, não uma medição, e o consumo real varia com a velocidade escolhida. A ficha do 5L não informa a potência, então não dá para calcular o dele. Para transformar kWh em reais, use a tarifa da sua distribuidora, que varia de cidade para cidade e muda com a <a href="https://www.gov.br/aneel/pt-br/assuntos/tarifas/bandeiras-tarifarias" target="_blank" rel="noopener noreferrer" class="text-purple-600 font-semibold hover:underline">bandeira tarifária da ANEEL</a>.
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          Faça a conta com a sua tarifa na nossa <a href="/quanto-gasta-de-energia-eletrodomesticos" class="text-orange-500 font-semibold hover:underline">calculadora de consumo de energia</a>. Para comparar eficiência entre aparelhos, vale conhecer a <a href="https://www.gov.br/inmetro/pt-br/assuntos/etiquetagem" target="_blank" rel="noopener noreferrer" class="text-purple-600 font-semibold hover:underline">etiqueta de eficiência do Inmetro</a> e o <a href="https://www.gov.br/eletrobras/pt-br/procel" target="_blank" rel="noopener noreferrer" class="text-purple-600 font-semibold hover:underline">selo Procel</a>. Não conferimos se os três anúncios trazem o selo.
+        </p>
+
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          Resumindo: com tomada 127V e sem preferência de formato, comece pelo AKAF1. Se prefere torre e painel, vá no Digital. Se a sua tomada é 220V e quer botão direto, o 5L resolve. Antes de fechar, confira preço, voltagem e avaliações recentes na página do produto.
+        </p>
+
+        <h2 id="faq" class="text-2xl font-bold text-slate-900 mb-6">Perguntas frequentes</h2>
+        <div class="space-y-3 mb-10">
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Climatizador Midea é quente e frio?</span>
+              <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Não. Os três climatizadores Midea desta curadoria (AKAF1, Digital torre e 5L) são evaporativos e só resfriam. Para quem quer aquecer, o caminho é outro tipo de aparelho, e o nosso artigo sobre <a href="/climatizador-quente-e-frio" class="text-orange-500 font-semibold hover:underline">climatizador quente e frio</a> explica quais modelos esquentam.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Quanto custa um climatizador Midea?</span>
+              <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              O preço muda com frequência na Amazon, por isso não colocamos valores aqui. Clique no botão do modelo para ver o preço atual da voltagem que você precisa e compare com as avaliações recentes.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Climatizador Midea 7 litros existe? Qual a capacidade do reservatório?</span>
+              <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              No AKAF1, o "7L" que aparece no título do anúncio da Amazon é só o tamanho da variação. A capacidade do reservatório, segundo a ficha, é de 4,5 L. O Digital torre tem 4,25 L e o Midea 5L tem tanque removível de 5 L (volume bruto).
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Climatizador Midea é bivolt?</span>
+              <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Nenhum dos três é bivolt. Cada um tem versão 127V e versão 220V, vendidas em anúncios separados. No Digital, a própria ficha avisa que o produto não é bivolt e manda verificar a tensão na etiqueta. Ligar na tensão errada pode queimar o aparelho.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Climatizador Midea gasta muita energia?</span>
+              <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Pela potência da ficha, gasta pouco. O AKAF1 tem 60 W e o Digital torre, 55 W. Como estimativa, 60 W por 8 horas dá 0,48 kWh por dia, e o consumo real varia com a velocidade. O valor em reais depende da tarifa da sua distribuidora, que varia. A ficha do 5L não informa a potência.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Onde encontro o manual do climatizador Midea?</span>
+              <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              O manual é do fabricante e é a fonte final para limpeza, uso e garantia. Se não tiver o seu, fale com o SAC da Midea informando o modelo (AKAF1, Digital ou 5L) e a voltagem.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Climatizador de ar Midea serve para quarto?</span>
+              <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Serve se o quarto tiver ventilação, com janela ou porta aberta para o ar circular. Em quarto fechado e úmido ele rende menos. O AKAF1 declara 53 dB e funcionamento silencioso, e o Digital tem modo dormir. As fichas não informam cobertura em metros quadrados.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Climatizador Midea faz barulho? Qual o mais silencioso?</span>
+              <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Só o AKAF1 informa ruído na ficha: 53 dB, descrito como funcionamento silencioso. O Digital torre não informa dB, mas tem modo dormir, e a ficha do 5L também não traz ruído. Sem medição própria, não dá para afirmar qual é o mais silencioso na prática.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Qual climatizador Midea escolher?</span>
+              <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Com tomada 127V e sem preferência de formato, o AKAF1 tem a maior base de avaliações (8.125). Quem quer torre e painel digital olha o Digital, de nota 4,7. Quem quer botão direto para 127V ou 220V encontra o 5L. Confira voltagem e avaliações recentes antes de comprar.
+            </div>
+          </details>
+        </div>
+
+        <!-- Schema FAQ -->
+        <script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Climatizador Midea é quente e frio?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Não. Os três climatizadores Midea desta curadoria (AKAF1, Digital torre e 5L) são evaporativos e só resfriam. Para quem quer aquecer, o caminho é outro tipo de aparelho, e o nosso artigo sobre climatizador quente e frio explica quais modelos esquentam." }
+    },
+    {
+      "@type": "Question",
+      "name": "Quanto custa um climatizador Midea?",
+      "acceptedAnswer": { "@type": "Answer", "text": "O preço muda com frequência na Amazon, por isso não colocamos valores aqui. Clique no botão do modelo para ver o preço atual da voltagem que você precisa e compare com as avaliações recentes." }
+    },
+    {
+      "@type": "Question",
+      "name": "Climatizador Midea 7 litros existe? Qual a capacidade do reservatório?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No AKAF1, o \"7L\" que aparece no título do anúncio da Amazon é só o tamanho da variação. A capacidade do reservatório, segundo a ficha, é de 4,5 L. O Digital torre tem 4,25 L e o Midea 5L tem tanque removível de 5 L (volume bruto)." }
+    },
+    {
+      "@type": "Question",
+      "name": "Climatizador Midea é bivolt?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Nenhum dos três é bivolt. Cada um tem versão 127V e versão 220V, vendidas em anúncios separados. No Digital, a própria ficha avisa que o produto não é bivolt e manda verificar a tensão na etiqueta. Ligar na tensão errada pode queimar o aparelho." }
+    },
+    {
+      "@type": "Question",
+      "name": "Climatizador Midea gasta muita energia?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Pela potência da ficha, gasta pouco. O AKAF1 tem 60 W e o Digital torre, 55 W. Como estimativa, 60 W por 8 horas dá 0,48 kWh por dia, e o consumo real varia com a velocidade. O valor em reais depende da tarifa da sua distribuidora, que varia. A ficha do 5L não informa a potência." }
+    },
+    {
+      "@type": "Question",
+      "name": "Onde encontro o manual do climatizador Midea?",
+      "acceptedAnswer": { "@type": "Answer", "text": "O manual é do fabricante e é a fonte final para limpeza, uso e garantia. Se não tiver o seu, fale com o SAC da Midea informando o modelo (AKAF1, Digital ou 5L) e a voltagem." }
+    },
+    {
+      "@type": "Question",
+      "name": "Climatizador de ar Midea serve para quarto?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Serve se o quarto tiver ventilação, com janela ou porta aberta para o ar circular. Em quarto fechado e úmido ele rende menos. O AKAF1 declara 53 dB e funcionamento silencioso, e o Digital tem modo dormir. As fichas não informam cobertura em metros quadrados." }
+    },
+    {
+      "@type": "Question",
+      "name": "Climatizador Midea faz barulho? Qual o mais silencioso?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Só o AKAF1 informa ruído na ficha: 53 dB, descrito como funcionamento silencioso. O Digital torre não informa dB, mas tem modo dormir, e a ficha do 5L também não traz ruído. Sem medição própria, não dá para afirmar qual é o mais silencioso na prática." }
+    },
+    {
+      "@type": "Question",
+      "name": "Qual climatizador Midea escolher?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Com tomada 127V e sem preferência de formato, o AKAF1 tem a maior base de avaliações (8.125). Quem quer torre e painel digital olha o Digital, de nota 4,7. Quem quer botão direto para 127V ou 220V encontra o 5L. Confira voltagem e avaliações recentes antes de comprar." }
+    }
+  ]
+})} />
+
+        <!-- Schema ItemList com aggregateRating (Product de afiliado, sem offers) -->
+        <script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Climatizador Midea: os 3 modelos para escolher",
+  "numberOfItems": 3,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "Product",
+        "name": "Climatizador de Ar Frio Midea AKAF1",
+        "image": "https://www.casaemalta.com.br/images/climatizador-midea/climatizador-midea-akaf1.webp",
+        "description": "Climatizador Midea AKAF1 de ar frio com 60 W, 3 velocidades, reservatório de 4,5 L, filtro colmeia, controle remoto e timer de 7 horas, versão 127V.",
+        "brand": { "@type": "Brand", "name": "Midea" },
+        "url": "https://link.amazon/B08uX9WVh",
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.6", "reviewCount": "8125", "bestRating": "5", "worstRating": "1" }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "Product",
+        "name": "Climatizador de Ar Digital Midea, formato torre",
+        "image": "https://www.casaemalta.com.br/images/climatizador-midea/climatizador-midea-digital-torre.webp",
+        "description": "Climatizador Midea Digital em formato torre com 55 W, reservatório de 4,25 L, painel digital, 3 modos de ventilação, filtro colmeia, controle remoto e timer de 7 horas, versão 127V.",
+        "brand": { "@type": "Brand", "name": "Midea" },
+        "url": "https://link.amazon/B06IyVoLk",
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.7", "reviewCount": "1616", "bestRating": "5", "worstRating": "1" }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "Product",
+        "name": "Climatizador de Ar 5L Midea 3 em 1",
+        "image": "https://www.casaemalta.com.br/images/climatizador-midea/climatizador-midea-5l.webp",
+        "description": "Climatizador Midea 5L 3 em 1 que ventila, climatiza e umidifica, com 3 velocidades, oscilação vertical, filtro colmeia e tanque removível de 5 L, versões 127V e 220V.",
+        "brand": { "@type": "Brand", "name": "Midea" },
+        "url": "https://link.amazon/B0au8RBRr",
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.4", "reviewCount": "265", "bestRating": "5", "worstRating": "1" }
+      }
+    }
+  ]
+})} />
+
+        <!-- Leia também -->
+        <p style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#c2410c;margin:24px 0 12px;">Leia também:</p>
+        <div style="display:flex;flex-direction:column;gap:12px;">
+          <a href="/melhor-climatizador-de-ar" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;flex-shrink:0;">
+              <img src="/images/melhor-climatizador-de-ar/capa-melhor-climatizador-de-ar.webp" alt="Melhor climatizador de ar" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Melhor Climatizador de Ar: os 5 Mais Vendidos de 2026</span>
+            </div>
+          </a>
+
+          <a href="/climatizador-quente-e-frio" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;flex-shrink:0;">
+              <img src="/images/climatizador-quente-e-frio/capa-climatizador-quente-e-frio.webp" alt="Climatizador quente e frio: qual comprar e vale a pena" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Climatizador Quente e Frio Existe? Veja os que Aquecem</span>
+            </div>
+          </a>
+
+          <a href="/climatizador-ou-ventilador" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:200px;flex-shrink:0;">
+              <img src="/images/climatizador-ou-ventilador/capa-climatizador-ou-ventilador.webp" alt="Climatizador ou ventilador: qual é melhor para apartamento" style="width:200px;height:133px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">Climatizador ou Ventilador: Qual é Melhor para Apartamento?</span>
             </div>
           </a>
 
