@@ -683,6 +683,16 @@ export const posts: Post[] = [
     categoria: 'guias-de-compra',
     categoriaLabel: 'Guia de Compra',
     categoriaColor: 'bg-purple-100 text-purple-700',
+  },
+  {
+    slug: 'climatizador-wap',
+    titulo: 'Climatizador WAP: Qual Modelo Escolher',
+    resumo: 'Climatizador WAP: compare Air Fresh, Air Protect e Torre Control Digital por voltagem, reservatório e painel, e veja qual modelo escolher na Amazon Brasil.',
+    tempo: '7 min de leitura',
+    imagem: '/images/climatizador-wap/capa-climatizador-wap.webp',
+    categoria: 'guias-de-compra',
+    categoriaLabel: 'Guia de Compra',
+    categoriaColor: 'bg-purple-100 text-purple-700',
   }
 ];
 
