@@ -61,7 +61,8 @@
     "melhor-cooktop",
     "melhor-mop-giratorio",
     "climatizador-quente-e-frio",
-    "climatizador-midea"
+    "climatizador-midea",
+    "climatizador-wap"
   ],
   "indicacasa": [
     "11921",
@@ -159,6 +160,7 @@
     "14851",
     "14881",
     "14890",
-    "14899"
+    "14899",
+    "14916"
   ]
 }
