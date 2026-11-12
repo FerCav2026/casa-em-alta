@@ -693,6 +693,16 @@ export const posts: Post[] = [
     categoria: 'guias-de-compra',
     categoriaLabel: 'Guia de Compra',
     categoriaColor: 'bg-purple-100 text-purple-700',
+  },
+  {
+    slug: 'mixer-3-em-1',
+    titulo: 'Mixer 3 em 1: Qual Aguenta Sopa, Vitamina e Chantilly',
+    resumo: 'Mixer 3 em 1: comparamos os 5 mais vendidos da Amazon Brasil (Elgin, Britânia e Philco) por potência, haste e acessórios para sopa, vitamina e chantilly.',
+    tempo: '8 min de leitura',
+    imagem: '/images/mixer-3-em-1/capa-mixer-3-em-1.webp',
+    categoria: 'rankings-e-listas',
+    categoriaLabel: 'Rankings e Listas',
+    categoriaColor: 'bg-green-100 text-green-700',
   }
 ];
 
