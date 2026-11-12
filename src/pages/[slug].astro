@@ -461,6 +461,13 @@ const posts: Record<string, { titulo: string; descricao: string; categoria: stri
     dataCriacao: '2026-11-10',
     dataModificacao: '2026-11-10',
   },
+  'mixer-3-em-1': {
+    titulo: 'Mixer 3 em 1: Qual Aguenta Sopa, Vitamina e Chantilly',
+    descricao: 'Mixer 3 em 1: compare os 5 mais vendidos da Amazon (Elgin, Britânia e Philco) por potência, haste e acessórios e veja qual aguenta sopa e chantilly.',
+    categoria: 'Rankings e Listas',
+    dataCriacao: '2026-11-12',
+    dataModificacao: '2026-11-12',
+  },
 };
 
 export function getStaticPaths() {
@@ -528,6 +535,7 @@ export function getStaticPaths() {
     'climatizador-quente-e-frio': {},
     'climatizador-midea': {},
     'climatizador-wap': {},
+    'mixer-3-em-1': {},
   }).map((slug) => ({ params: { slug } }));
 }
 
@@ -633,6 +641,7 @@ const isMelhorMopGiratorio = slug === 'melhor-mop-giratorio';
 const isClimatizadorQuenteFrio = slug === 'climatizador-quente-e-frio';
 const isClimatizadorMidea = slug === 'climatizador-midea';
 const isClimatizadorWap = slug === 'climatizador-wap';
+const isMixer3em1 = slug === 'mixer-3-em-1';
 
 const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isAirfryer ? '/images/airfryer/capa-airfryer.webp'
@@ -697,11 +706,12 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isClimatizadorQuenteFrio ? '/images/climatizador-quente-e-frio/capa-climatizador-quente-e-frio.webp'
   : isClimatizadorMidea ? '/images/climatizador-midea/capa-climatizador-midea.webp'
   : isClimatizadorWap ? '/images/climatizador-wap/capa-climatizador-wap.webp'
+  : isMixer3em1 ? '/images/mixer-3-em-1/capa-mixer-3-em-1.webp'
   : undefined;
 ---
 
 <BaseLayout
-  title={isPanelaEletricaOuConvencional || isMelhoresCafeteiras || isProjetorShopee || isComoArrumarArmarios || isLavaSeca || isFrigideiraAntiaderenteFerro || isFrigideira || isMelhorFrigideiraAntiaderente || isMelhorClimatizador || isArCondicionadoPortatil || isMelhorVentiladorColuna || isMelhorUmidificadorQuarto || isClimatizadorOuVentilador || isMelhorFrigobar || isMelhorSanduicheira || isMelhorCooktop || isMelhorMopGiratorio || isClimatizadorQuenteFrio || isClimatizadorMidea || isClimatizadorWap ? post.titulo : `${post.titulo} - Casa em Alta`}
+  title={isPanelaEletricaOuConvencional || isMelhoresCafeteiras || isProjetorShopee || isComoArrumarArmarios || isLavaSeca || isFrigideiraAntiaderenteFerro || isFrigideira || isMelhorFrigideiraAntiaderente || isMelhorClimatizador || isArCondicionadoPortatil || isMelhorVentiladorColuna || isMelhorUmidificadorQuarto || isClimatizadorOuVentilador || isMelhorFrigobar || isMelhorSanduicheira || isMelhorCooktop || isMelhorMopGiratorio || isClimatizadorQuenteFrio || isClimatizadorMidea || isClimatizadorWap || isMixer3em1 ? post.titulo : `${post.titulo} - Casa em Alta`}
   description={post.descricao}
   image={coverImage}
   type="article"
@@ -30715,6 +30725,677 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
             <div style="padding:10px 14px;display:flex;flex-direction:column;justify-content:center;gap:4px;">
               <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
               <span style="font-size:14px;font-weight:700;color:#1e293b;line-height:1.35;">Climatizador Quente e Frio Existe? Veja os que Aquecem</span>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    )}
+
+    {isMixer3em1 && (
+      <div>
+
+        <!-- Capa -->
+        <div class="rounded-2xl overflow-hidden mb-8 shadow-md">
+          <img
+            src="/images/mixer-3-em-1/capa-mixer-3-em-1.webp"
+            alt="Mixer 3 em 1 com haste de inox batendo sopa em uma panela, com fouet e miniprocessador ao lado na bancada"
+            width="1280"
+            height="720"
+            class="w-full h-auto object-cover"
+            loading="eager"
+          />
+        </div>
+
+        <!-- Introdução -->
+        <div class="bg-orange-50 border border-orange-100 rounded-2xl p-6 mb-8">
+          <p class="text-slate-800 text-base leading-relaxed mb-3">
+            Mixer 3 em 1 é o mixer de mão que vem com três peças: a haste, que bate sopa e vitamina, o miniprocessador, que pica cebola e alho, e o fouet, o batedor de arame do chantilly. Entre os cinco mais vendidos da Amazon Brasil, o Elgin Power Inox Lunar 600W é o que melhor equilibra potência, haste de inox e acessórios.
+          </p>
+          <p class="text-slate-800 text-base leading-relaxed mb-3">
+            O que separa um modelo do outro não é o número de funções, que é igual em todos, e sim três detalhes: haste de inox ou de plástico, potência e a nota dos compradores. Um dos cinco tem 1.000 W e, mesmo assim, a pior nota da lista.
+          </p>
+          <p class="text-slate-800 text-base leading-relaxed">
+            Não testamos esses mixers em casa. Reunimos os cinco primeiros da busca por "mixer 3 em 1" ordenada por mais vendidos na Amazon Brasil, em 12 de novembro de 2026, e comparamos fichas técnicas, fotos dos anúncios, notas e a distribuição das avaliações.
+          </p>
+        </div>
+
+        <!-- TL;DR -->
+        <div class="bg-purple-50 border border-purple-100 rounded-2xl p-6 mb-10">
+          <p class="text-slate-800 font-bold text-base mb-3">Em resumo</p>
+          <p class="text-sm text-slate-700 leading-relaxed">
+            Para a maioria, o <a href="https://www.amazon.com.br/dp/B0DCKBMVH9?tag=casaemalta0e-20" target="_blank" rel="nofollow sponsored noopener" class="text-orange-500 font-semibold hover:underline"><strong>Elgin Power Inox Lunar 600W</strong></a>: primeiro da busca, haste de inox e kit completo. Maior nota dos compradores: <a href="https://www.amazon.com.br/dp/B08YHR9C4S?tag=casaemalta0e-20" target="_blank" rel="nofollow sponsored noopener" class="text-orange-500 font-semibold hover:underline"><strong>Britânia BMX400</strong></a>, com 4,8 de 5. Mais potência com nota alta: <a href="https://www.amazon.com.br/dp/B0CFM6RMLM?tag=casaemalta0e-20" target="_blank" rel="nofollow sponsored noopener" class="text-orange-500 font-semibold hover:underline"><strong>Philco PMX2000 800W</strong></a>. Só para tarefas leves: Elgin Turbo Chef 200W, que tem haste de plástico. O Elgin Power Inox 1000W é o mais potente, mas tem nota 3,8.
+          </p>
+        </div>
+
+        <!-- Índice -->
+        <nav class="border border-slate-200 rounded-2xl p-6 mb-10 bg-white">
+          <p class="font-bold text-slate-800 mb-3">Índice</p>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#o-que-e" class="text-orange-500 hover:text-orange-600 font-medium">O que é um mixer 3 em 1 e o que vem na caixa?</a></li>
+            <li><a href="#qual-aguenta" class="text-orange-500 hover:text-orange-600 font-medium">Qual mixer 3 em 1 aguenta sopa, vitamina e chantilly?</a></li>
+            <li><a href="#mais-vendidos" class="text-orange-500 hover:text-orange-600 font-medium">Os 5 mixers 3 em 1 mais vendidos na Amazon</a></li>
+            <li><a href="#tabela-comparativa" class="text-orange-500 hover:text-orange-600 font-medium">Qual a diferença entre os cinco modelos?</a></li>
+            <li><a href="#mixer-ou-liquidificador" class="text-orange-500 hover:text-orange-600 font-medium">Mixer 3 em 1 ou liquidificador: qual faz mais?</a></li>
+            <li><a href="#cuidados" class="text-orange-500 hover:text-orange-600 font-medium">Como usar o mixer sem forçar o motor</a></li>
+            <li><a href="#faq" class="text-orange-500 hover:text-orange-600 font-medium">Perguntas frequentes</a></li>
+          </ul>
+        </nav>
+
+        <h2 id="o-que-e" class="text-2xl font-bold text-slate-900 mb-4">O que é um mixer 3 em 1 e o que vem na caixa?</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          É um único motor de mão com três encaixes. Cada um faz um trabalho diferente:
+        </p>
+        <ul class="list-disc list-inside space-y-2 text-slate-700 mb-4 ml-2">
+          <li><strong>Haste com lâmina:</strong> é o mixer propriamente dito. Bate sopa direto na panela, vitamina no copo e molhos.</li>
+          <li><strong>Miniprocessador:</strong> um potinho com lâmina que pica cebola, alho, ervas e castanhas em segundos.</li>
+          <li><strong>Fouet:</strong> o batedor de arame, para chantilly, claras em neve e massas leves.</li>
+        </ul>
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          A maioria também traz um copo graduado para bater vitamina sem respingar. A vantagem sobre o liquidificador é levar o aparelho até a panela, e não o contrário, o que poupa louça e espaço no armário.
+        </p>
+
+        <h2 id="qual-aguenta" class="text-2xl font-bold text-slate-900 mb-4">Qual mixer 3 em 1 aguenta sopa, vitamina e chantilly?</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Para os três, procure haste de inox e fouet. Os cinco desta lista trazem o fouet, e quatro têm haste de inox. Potência a partir de 500 W ajuda mais na vitamina com fruta congelada do que no chantilly. O que muda de uma receita para outra:
+        </p>
+        <ul class="list-disc list-inside space-y-2 text-slate-700 mb-4 ml-2">
+          <li><strong>Sopa:</strong> haste de inox, porque vai mergulhar em líquido quente. Elgin Lunar, Britânia BMX400, Elgin 1000W e Philco PMX2000 têm haste de metal. O Elgin Turbo Chef tem haste de plástico, pela foto e pela ficha.</li>
+          <li><strong>Vitamina:</strong> o copo graduado evita respingo, e mais potência ajuda com fruta congelada. As fichas não citam gelo em nenhum dos cinco.</li>
+          <li><strong>Chantilly:</strong> fouet e velocidade alta. Botão turbo ajuda: a ficha cita turbo no Britânia e no Elgin 1000W, e a foto do Philco mostra um botão T.</li>
+        </ul>
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          Potência alta não é garantia de aparelho bom. O modelo de 1.000 W desta lista tem a nota mais baixa, enquanto os de 500 a 800 W têm notas entre 4,6 e 4,8.
+        </p>
+
+        <h2 id="mais-vendidos" class="text-2xl font-bold text-slate-900 mb-4">Os 5 mixers 3 em 1 mais vendidos na Amazon</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-8">
+          A ordem segue a busca por "mixer 3 em 1" classificada por mais vendidos, em 12/11/2026. Quando o mesmo modelo aparecia em outra voltagem, ficou só uma vez, com os dois botões no card.
+        </p>
+
+        <h3 id="elgin-lunar" class="text-xl font-bold text-slate-900 mb-3">Elgin Power Inox Lunar 600W: o primeiro da busca</h3>
+        <p class="text-slate-700 text-base leading-relaxed mb-5">
+          É o primeiro da busca por mixer 3 em 1. O anúncio, que ele divide com o Turbo Chef, é o nº 1 em Mixers da Amazon Brasil e passou de 3 mil compras no mês passado, somando os dois modelos. Junta 600 W, haste de inox e o kit completo: copo, miniprocessador e fouet.
+        </p>
+
+        <div id="avaliacao-elgin-lunar" class="scroll-mt-24 border border-slate-200 rounded-2xl overflow-hidden mb-10 shadow-sm">
+          <div class="bg-orange-500 px-6 py-4">
+            <span class="inline-block bg-white text-orange-600 text-xs font-bold uppercase tracking-wide px-2.5 py-1 rounded-full mb-2">1º da busca</span>
+            <p class="text-white font-black text-xl">Mixer Elgin Power Inox Lunar 3 em 1 600W</p>
+            <p class="text-orange-100 text-sm mt-1">Versões 110V e 220V em anúncios separados (Amazon Brasil, consultado em 12/11/2026)</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+              <img src="/images/mixer-3-em-1/mixer-elgin-power-inox-lunar-600w.webp" alt="Mixer Elgin Power Inox Lunar cinza com haste de inox, fouet, miniprocessador e copo" width="791" height="877" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <p class="text-slate-700 text-sm leading-relaxed mb-4">
+                Mixer de mão com duas velocidades, haste e lâminas de aço inox, copo de 700 ml para vitamina e miniprocessador de 400 ml para picar. O fouet é indicado pela Elgin para ovos, claras e massas leves.
+              </p>
+              <a href="https://www.amazon.com.br/dp/B0DCKBMVH9?tag=casaemalta0e-20" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-3 transition-colors">Ver preço na Amazon (110V)</a>
+              <a href="https://www.amazon.com.br/dp/B0DCKDXPV6?tag=casaemalta0e-20" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon (220V)</a>
+              <h4 class="font-bold text-slate-800 mb-3">Ficha Técnica</h4>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Potência:</strong> 600 W, 2 velocidades</li>
+                <li><strong>Haste:</strong> aço inox</li>
+                <li><strong>Acessórios:</strong> copo de 700 ml, miniprocessador de 400 ml e fouet</li>
+                <li><strong>Peso:</strong> cerca de 1,25 kg</li>
+                <li><strong>Limpeza:</strong> conjunto desmontável; a ficha da Amazon diz que vai à lava-louças</li>
+                <li><strong>Avaliações:</strong> 4,6 de 5 em mais de 10 mil avaliações, somadas com o Turbo Chef no mesmo anúncio</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Primeiro da busca, em anúncio nº 1 em Mixers</li>
+                    <li>Haste de inox, serve para sopa na panela</li>
+                    <li>Kit completo, com copo e miniprocessador</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Nota e vendas são somadas com o Turbo Chef, não só deste modelo</li>
+                    <li>A ficha não cita função turbo</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mt-4">
+                <strong>Veredito:</strong> a escolha mais equilibrada para quem quer um mixer só para sopa, vitamina e chantilly, sem pagar por potência extra.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <h3 id="britania-bmx400" class="text-xl font-bold text-slate-900 mb-3">Britânia BMX400 500W: a melhor nota entre os cinco</h3>
+        <p class="text-slate-700 text-base leading-relaxed mb-5">
+          Tem a maior nota da lista, 4,8 de 5 em 4.790 avaliações na versão 110V, e mais de mil compras no mês passado. São 500 W na versão 110V, duas velocidades e função Turbo, citada na ficha. A ficha da versão 220V informa 400 W.
+        </p>
+
+        <div id="avaliacao-britania-bmx400" class="scroll-mt-24 border border-slate-200 rounded-2xl overflow-hidden mb-10 shadow-sm">
+          <div class="bg-slate-800 px-6 py-4">
+            <span class="inline-block bg-white text-slate-800 text-xs font-bold uppercase tracking-wide px-2.5 py-1 rounded-full mb-2">Nota mais alta</span>
+            <p class="text-white font-black text-xl">Mixer Britânia BMX400 3 em 1 500W</p>
+            <p class="text-slate-300 text-sm mt-1">Versões 110V e 220V em anúncios separados (Amazon Brasil, consultado em 12/11/2026)</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+              <img src="/images/mixer-3-em-1/mixer-britania-bmx400.webp" alt="Mixer Britânia BMX400 preto com haste de inox, fouet e miniprocessador com legumes picados" width="464" height="974" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <p class="text-slate-700 text-sm leading-relaxed mb-4">
+                A foto do anúncio mostra haste de inox, fouet, miniprocessador e um suporte para guardar as peças. A ficha da versão 220V cita jarra e copo, com 1,05 litro, mas a da 110V não detalha os acessórios. Confira na página da sua voltagem.
+              </p>
+              <a href="https://www.amazon.com.br/dp/B08YHR9C4S?tag=casaemalta0e-20" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-3 transition-colors">Ver preço na Amazon (110V)</a>
+              <a href="https://www.amazon.com.br/dp/B097KQWJKZ?tag=casaemalta0e-20" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon (220V)</a>
+              <h4 class="font-bold text-slate-800 mb-3">Ficha Técnica</h4>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Potência:</strong> 500 W (110V) ou 400 W (220V, segundo a ficha), 2 velocidades e Turbo</li>
+                <li><strong>Haste:</strong> aço inox</li>
+                <li><strong>Acessórios:</strong> miniprocessador, fouet e suporte (pela foto); a ficha da 220V cita jarra e copo</li>
+                <li><strong>Peso:</strong> cerca de 1,33 kg</li>
+                <li><strong>Garantia:</strong> 12 meses, segundo a ficha</li>
+                <li><strong>Avaliações:</strong> 4,8 de 5 em 4.790 avaliações (versão 110V)</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Maior nota da lista, com base grande de avaliações</li>
+                    <li>Botão Turbo, útil para chantilly</li>
+                    <li>Suporte para guardar as peças</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Na 220V, a ficha informa 400 W</li>
+                    <li>Os acessórios só aparecem completos na ficha da 220V</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mt-4">
+                <strong>Veredito:</strong> para quem quer a maior satisfação dos compradores e um botão Turbo. Confira os acessórios no anúncio antes de comprar.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <h3 id="elgin-turbo-chef" class="text-xl font-bold text-slate-900 mb-3">Elgin Turbo Chef 200W: para tarefas leves</h3>
+        <p class="text-slate-700 text-base leading-relaxed mb-5">
+          Divide o anúncio com o Lunar, e as mais de 3 mil compras no mês passado são dos dois somadas. Com 200 W e uma velocidade, é o mais simples da lista. Pela foto, a haste é de plástico, o que pede cuidado com sopa quente.
+        </p>
+
+        <div id="avaliacao-elgin-turbo-chef" class="scroll-mt-24 border border-slate-200 rounded-2xl overflow-hidden mb-10 shadow-sm">
+          <div class="bg-orange-500 px-6 py-4">
+            <span class="inline-block bg-white text-orange-600 text-xs font-bold uppercase tracking-wide px-2.5 py-1 rounded-full mb-2">Mais simples</span>
+            <p class="text-white font-black text-xl">Mixer Elgin Turbo Chef 3 em 1 200W</p>
+            <p class="text-orange-100 text-sm mt-1">Versões 110V e 220V em anúncios separados (Amazon Brasil, consultado em 12/11/2026)</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+              <img src="/images/mixer-3-em-1/mixer-elgin-turbo-chef-200w.webp" alt="Mixer Elgin Turbo Chef preto com haste de plástico, fouet, miniprocessador e copo" width="776" height="765" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <p class="text-slate-700 text-sm leading-relaxed mb-4">
+                Vem com miniprocessador de 300 ml, copo de 700 ml, lâminas de aço e fouet flexível, além de uma alça para pendurar. Funciona bem para vitamina, molho e claras, sem o fôlego dos modelos de 500 W ou mais.
+              </p>
+              <a href="https://www.amazon.com.br/dp/B09VQ39F41?tag=casaemalta0e-20" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-3 transition-colors">Ver preço na Amazon (110V)</a>
+              <a href="https://www.amazon.com.br/dp/B09VQ2PQRN?tag=casaemalta0e-20" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon (220V)</a>
+              <h4 class="font-bold text-slate-800 mb-3">Ficha Técnica</h4>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Potência:</strong> 200 W, 1 velocidade</li>
+                <li><strong>Haste:</strong> de plástico, pela foto e pela ficha da versão 110V</li>
+                <li><strong>Acessórios:</strong> copo de 700 ml, miniprocessador de 300 ml e fouet</li>
+                <li><strong>Peso:</strong> cerca de 1,2 kg</li>
+                <li><strong>Garantia:</strong> 12 meses, segundo a ficha</li>
+                <li><strong>Avaliações:</strong> 4,6 de 5, somadas com o Lunar no mesmo anúncio</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Kit completo mesmo sendo o mais simples</li>
+                    <li>Leve e com alça para pendurar</li>
+                    <li>Muito vendido, com base grande de avaliações</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Menor potência da lista, só 1 velocidade</li>
+                    <li>Haste de plástico, evite bater sopa quente na panela</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mt-4">
+                <strong>Veredito:</strong> serve para quem faz vitamina, molho e claras de vez em quando. Para sopa quente na panela, prefira um modelo com haste de inox.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <h3 id="elgin-1000w" class="text-xl font-bold text-slate-900 mb-3">Elgin Power Inox 1000W: muita potência, avaliações divididas</h3>
+        <p class="text-slate-700 text-base leading-relaxed mb-5">
+          É o mais potente dos cinco, com 1.000 W, velocidade variável e função turbo, e passou de mil compras no mês passado. Mas tem a nota mais baixa da lista: 3,8 de 5 em só 125 avaliações, e 26% delas são de 1 estrela.
+        </p>
+
+        <div id="avaliacao-elgin-1000w" class="scroll-mt-24 border border-slate-200 rounded-2xl overflow-hidden mb-10 shadow-sm">
+          <div class="bg-slate-800 px-6 py-4">
+            <span class="inline-block bg-white text-slate-800 text-xs font-bold uppercase tracking-wide px-2.5 py-1 rounded-full mb-2">Mais potente, nota baixa</span>
+            <p class="text-white font-black text-xl">Mixer Elgin Power Inox 3 em 1 1000W</p>
+            <p class="text-slate-300 text-sm mt-1">Só há anúncio em 110V na Amazon (consultado em 12/11/2026)</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+              <img src="/images/mixer-3-em-1/mixer-elgin-power-inox-1000w.webp" alt="Mixer Elgin Power Inox 1000W com haste de inox, fouet, miniprocessador e copo graduado" width="754" height="958" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <p class="text-slate-700 text-sm leading-relaxed mb-4">
+                No papel, é o kit mais caprichado: haste e lâminas de inox, copo de 800 ml com tampa, miniprocessador e fouet. A ficha informa ruído de 75 dB. Com tão poucas avaliações e tantas notas mínimas, vale ler os comentários de 1 estrela antes de decidir.
+              </p>
+              <a href="https://www.amazon.com.br/dp/B0GXL3NV84?tag=casaemalta0e-20" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon (110V)</a>
+              <h4 class="font-bold text-slate-800 mb-3">Ficha Técnica</h4>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Potência:</strong> 1.000 W, velocidade variável e turbo</li>
+                <li><strong>Haste:</strong> aço inox</li>
+                <li><strong>Acessórios:</strong> copo de 800 ml com tampa, miniprocessador e fouet</li>
+                <li><strong>Ruído:</strong> 75 dB, segundo a ficha</li>
+                <li><strong>Peso:</strong> cerca de 1,5 kg</li>
+                <li><strong>Avaliações:</strong> 3,8 de 5 em 125 avaliações, 26% de 1 estrela</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Maior potência da lista</li>
+                    <li>Velocidade variável e turbo</li>
+                    <li>Copo com tampa, bom para guardar vitamina</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Nota mais baixa, com 1 em cada 4 avaliações de 1 estrela</li>
+                    <li>Poucas avaliações e anúncio só em 110V</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mt-4">
+                <strong>Veredito:</strong> potência não garante satisfação. Antes de escolher, leia as avaliações de 1 estrela.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <h3 id="philco-pmx2000" class="text-xl font-bold text-slate-900 mb-3">Philco PMX2000 800W: potência alta com nota alta</h3>
+        <p class="text-slate-700 text-base leading-relaxed mb-5">
+          Na busca, a quinta posição era o próprio Britânia em 220V, por isso entra o sexto colocado. O Philco PMX2000 tem 800 W, nota 4,7 de 5 em 2.527 avaliações e mais de 400 compras no mês passado.
+        </p>
+
+        <div id="avaliacao-philco-pmx2000" class="scroll-mt-24 border border-slate-200 rounded-2xl overflow-hidden mb-10 shadow-sm">
+          <div class="bg-orange-500 px-6 py-4">
+            <span class="inline-block bg-white text-orange-600 text-xs font-bold uppercase tracking-wide px-2.5 py-1 rounded-full mb-2">Jarra com tampa</span>
+            <p class="text-white font-black text-xl">Mixer Philco PMX2000 3 em 1 800W</p>
+            <p class="text-orange-100 text-sm mt-1">Versões 110V e 220V em anúncios separados (Amazon Brasil, consultado em 12/11/2026)</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+              <img src="/images/mixer-3-em-1/mixer-philco-pmx2000.webp" alt="Mixer Philco PMX2000 inox com fouet, miniprocessador, haste de inox e jarra com tampa" width="841" height="1124" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <p class="text-slate-700 text-sm leading-relaxed mb-4">
+                Tem quatro lâminas de inox (duas grandes e duas pequenas), corpo desmontável, duas velocidades e, pela foto, botão turbo (T), jarra com alça e tampa, miniprocessador e batedor de claras. A ficha da Amazon diz que não vai à lava-louças.
+              </p>
+              <a href="https://www.amazon.com.br/dp/B0CFM6RMLM?tag=casaemalta0e-20" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-3 transition-colors">Ver preço na Amazon (110V)</a>
+              <a href="https://www.amazon.com.br/dp/B0CFM67MPS?tag=casaemalta0e-20" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon (220V)</a>
+              <h4 class="font-bold text-slate-800 mb-3">Ficha Técnica</h4>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Potência:</strong> 800 W, 2 velocidades e botão turbo (pela foto)</li>
+                <li><strong>Haste:</strong> aço inox, com 4 lâminas</li>
+                <li><strong>Acessórios:</strong> jarra com tampa, miniprocessador e batedor de claras</li>
+                <li><strong>Limpeza:</strong> corpo desmontável; a ficha diz que não vai à lava-louças</li>
+                <li><strong>Avaliações:</strong> 4,7 de 5 em 2.527 avaliações</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>800 W com nota alta</li>
+                    <li>Jarra com alça e tampa</li>
+                    <li>Quatro lâminas de inox</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Lavagem só à mão, segundo a ficha</li>
+                    <li>Menos compras recentes que os líderes</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mt-4">
+                <strong>Veredito:</strong> para quem quer mais potência que o Lunar sem abrir mão de uma nota alta.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <h2 id="tabela-comparativa" class="text-2xl font-bold text-slate-900 mb-4">Qual a diferença entre os cinco modelos?</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          A maior diferença está na haste e na nota. Quatro têm haste de inox, e só o Turbo Chef é de plástico. As notas vão de 4,8, no Britânia, a 3,8, no Elgin 1000W. Clique no nome do modelo para ir direto à avaliação.
+        </p>
+        <div class="overflow-x-auto mb-10">
+          <table class="w-full text-sm border-collapse"><caption class="sr-only">Os 5 mixers 3 em 1 mais vendidos: potência, haste, acessórios, nota, voltagens e para quem serve (fontes: fichas e anúncios da Amazon Brasil, 12/11/2026)</caption>
+            <thead>
+              <tr class="bg-slate-100">
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Modelo</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Potência</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Haste</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Acessórios</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Nota (avaliações)</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Voltagens na Amazon</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Melhor para</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-white">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200"><a href="#avaliacao-elgin-lunar" class="text-orange-600 hover:text-orange-700 underline font-semibold">Elgin Power Inox Lunar</a></td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">600 W, 2 velocidades</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Inox</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Copo 700 ml, mini 400 ml, fouet</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">4,6 (mais de 10 mil, somadas com o Turbo Chef)</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">110V e 220V</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Uso geral: sopa, vitamina e chantilly</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200"><a href="#avaliacao-britania-bmx400" class="text-orange-600 hover:text-orange-700 underline font-semibold">Britânia BMX400</a></td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">500 W (400 W na 220V), 2 velocidades + Turbo</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Inox</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Mini, fouet, suporte, jarra e copo</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">4,8 (4.790)</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">110V e 220V</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Quem quer a nota mais alta</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200"><a href="#avaliacao-elgin-turbo-chef" class="text-orange-600 hover:text-orange-700 underline font-semibold">Elgin Turbo Chef</a></td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">200 W, 1 velocidade</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Plástico (pela foto)</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Copo 700 ml, mini 300 ml, fouet</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">4,6 (somadas com o Lunar)</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">110V e 220V</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Tarefas leves, sem sopa quente na panela</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200"><a href="#avaliacao-elgin-1000w" class="text-orange-600 hover:text-orange-700 underline font-semibold">Elgin Power Inox 1000W</a></td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">1.000 W, variável + turbo</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Inox</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Copo 800 ml com tampa, mini, fouet</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">3,8 (125, 26% de 1 estrela)</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">só 110V</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Quem prioriza potência e aceita o risco</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200"><a href="#avaliacao-philco-pmx2000" class="text-orange-600 hover:text-orange-700 underline font-semibold">Philco PMX2000</a></td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">800 W, 2 velocidades + turbo (pela foto)</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Inox, 4 lâminas</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Jarra com tampa, mini, batedor</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">4,7 (2.527)</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">110V e 220V</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Mais potência com nota alta</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div style="margin:32px 0;font-family:sans-serif;">
+          <p style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#c2410c;margin:0 0 12px;">Leia também:</p>
+        <div style="display:flex;flex-direction:column;gap:12px;">
+          <a href="/como-escolher-liquidificador" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:clamp(90px,28vw,200px);flex-shrink:0;">
+              <img src="/images/liquidificador/capa-liquidificador.webp" alt="Como escolher liquidificador" style="width:100%;height:100%;min-height:72px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:10px 14px;display:flex;flex-direction:column;justify-content:center;gap:4px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:14px;font-weight:700;color:#1e293b;line-height:1.35;">Como Escolher Liquidificador: o Que Ninguém te Conta na Hora de Comprar</span>
+            </div>
+          </a>
+        </div>
+        </div>
+
+        <h2 id="mixer-ou-liquidificador" class="text-2xl font-bold text-slate-900 mb-4">Mixer 3 em 1 ou liquidificador: qual faz mais?</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          O mixer ganha nas porções pequenas: sopa direto na panela, uma vitamina, um molho, chantilly para um bolo. Ocupa uma gaveta e suja menos louça. O liquidificador ganha no volume: suco para a família, gelo e receitas grandes.
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Se você ainda vai comprar o primeiro aparelho, o comparativo <a href="/liquidificador-vs-processador-de-alimentos" class="text-orange-500 font-semibold hover:underline">liquidificador ou processador de alimentos</a> ajuda a decidir por onde começar. Se o seu caso é volume, veja os <a href="/melhores-liquidificadores-2026" class="text-orange-500 font-semibold hover:underline">melhores liquidificadores</a>.
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          O miniprocessador do mixer pica, mas não rala nem fatia. Para isso, o aparelho certo é o <a href="/melhor-multiprocessador-de-alimentos" class="text-orange-500 font-semibold hover:underline">multiprocessador de alimentos</a>.
+        </p>
+
+        <h2 id="cuidados" class="text-2xl font-bold text-slate-900 mb-4">Como usar o mixer sem forçar o motor</h2>
+        <ul class="list-disc list-inside space-y-2 text-slate-700 mb-4 ml-2">
+          <li>Respeite o tempo de uso contínuo que o manual indica e deixe o motor descansar entre uma batida e outra.</li>
+          <li>Na sopa, tire a panela do fogo e mergulhe a haste antes de ligar. Assim não espirra.</li>
+          <li>Tire da tomada antes de trocar o acessório ou lavar a lâmina.</li>
+          <li>Nunca molhe o corpo do motor. Só os acessórios vão para a água.</li>
+          <li>O fouet é para cremes e massas leves. Massa de pão pesada força o motor.</li>
+        </ul>
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          Resumindo: para sopa, vitamina e chantilly com um aparelho só, comece pelo Elgin Lunar ou pelo Britânia BMX400. O Philco PMX2000 entra se você quer mais potência. Antes de fechar, confira preço, voltagem e avaliações recentes na página do produto.
+        </p>
+
+        <h2 id="faq" class="text-2xl font-bold text-slate-900 mb-6">Perguntas frequentes</h2>
+        <div class="space-y-3 mb-10">
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Qual o melhor mixer 3 em 1?</span>
+              <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Para a maioria das cozinhas, o Elgin Power Inox Lunar 600W, primeiro da busca, tem haste de inox e vem com copo, miniprocessador e fouet. Se a prioridade é a nota dos compradores, o Britânia BMX400 tem 4,8 de 5. A escolha foi feita por curadoria das fichas e avaliações da Amazon Brasil, sem teste em casa.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Mixer 3 em 1 bate chantilly?</span>
+              <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Bate, com o fouet, o batedor de arame que vem nos cinco modelos desta lista. Use creme de leite fresco bem gelado e a velocidade mais alta ou o turbo, e pare assim que o creme firmar, porque passar do ponto vira manteiga.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Posso usar o mixer na panela de sopa quente?</span>
+              <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Pode, se a haste for de inox, como no Elgin Lunar, no Britânia BMX400, no Elgin 1000W e no Philco PMX2000. Tire a panela do fogo, mergulhe a haste antes de ligar e só então acione. O Elgin Turbo Chef tem haste de plástico, pela foto e pela ficha, então deixe a sopa amornar e use o copo.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Mixer 3 em 1 tritura gelo?</span>
+              <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              As fichas dos cinco modelos não citam gelo, então não conte com isso. Para vitamina com fruta congelada, use pedaços pequenos e líquido suficiente. Para gelo de verdade, o liquidificador é a ferramenta certa.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Mixer 3 em 1 substitui o liquidificador?</span>
+              <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Para pequenas porções, sopa direto na panela e chantilly, substitui e suja menos louça. Para suco em quantidade, gelo e receitas grandes, o liquidificador continua melhor. Muita gente acaba tendo os dois.
+            </div>
+          </details>
+        </div>
+
+        <!-- Schema FAQ -->
+        <script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Qual o melhor mixer 3 em 1?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Para a maioria das cozinhas, o Elgin Power Inox Lunar 600W, primeiro da busca, tem haste de inox e vem com copo, miniprocessador e fouet. Se a prioridade é a nota dos compradores, o Britânia BMX400 tem 4,8 de 5. A escolha foi feita por curadoria das fichas e avaliações da Amazon Brasil, sem teste em casa."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Mixer 3 em 1 bate chantilly?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Bate, com o fouet, o batedor de arame que vem nos cinco modelos desta lista. Use creme de leite fresco bem gelado e a velocidade mais alta ou o turbo, e pare assim que o creme firmar, porque passar do ponto vira manteiga."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Posso usar o mixer na panela de sopa quente?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pode, se a haste for de inox, como no Elgin Lunar, no Britânia BMX400, no Elgin 1000W e no Philco PMX2000. Tire a panela do fogo, mergulhe a haste antes de ligar e só então acione. O Elgin Turbo Chef tem haste de plástico, pela foto e pela ficha, então deixe a sopa amornar e use o copo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Mixer 3 em 1 tritura gelo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "As fichas dos cinco modelos não citam gelo, então não conte com isso. Para vitamina com fruta congelada, use pedaços pequenos e líquido suficiente. Para gelo de verdade, o liquidificador é a ferramenta certa."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Mixer 3 em 1 substitui o liquidificador?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Para pequenas porções, sopa direto na panela e chantilly, substitui e suja menos louça. Para suco em quantidade, gelo e receitas grandes, o liquidificador continua melhor. Muita gente acaba tendo os dois."
+      }
+    }
+  ]
+})} />
+
+        <!-- Schema ItemList (Product de afiliado, sem offers) -->
+        <script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Os 5 mixers 3 em 1 mais vendidos na Amazon Brasil",
+  "numberOfItems": 5,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "Product",
+        "name": "Mixer Elgin Power Inox Lunar 3 em 1 600W",
+        "image": "https://www.casaemalta.com.br/images/mixer-3-em-1/mixer-elgin-power-inox-lunar-600w.webp",
+        "description": "Mixer de mão com duas velocidades, haste e lâminas de aço inox, copo de 700 ml para vitamina e miniprocessador de 400 ml para picar. O fouet é indicado pela Elgin para ovos, claras e massas leves.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Elgin"
+        },
+        "url": "https://www.amazon.com.br/dp/B0DCKBMVH9?tag=casaemalta0e-20"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "Product",
+        "name": "Mixer Britânia BMX400 3 em 1 500W",
+        "image": "https://www.casaemalta.com.br/images/mixer-3-em-1/mixer-britania-bmx400.webp",
+        "description": "A foto do anúncio mostra haste de inox, fouet, miniprocessador e um suporte para guardar as peças. A ficha da versão 220V cita jarra e copo, com 1,05 litro, mas a da 110V não detalha os acessórios. Confira na página da sua voltagem.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Britânia"
+        },
+        "url": "https://www.amazon.com.br/dp/B08YHR9C4S?tag=casaemalta0e-20"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "Product",
+        "name": "Mixer Elgin Turbo Chef 3 em 1 200W",
+        "image": "https://www.casaemalta.com.br/images/mixer-3-em-1/mixer-elgin-turbo-chef-200w.webp",
+        "description": "Vem com miniprocessador de 300 ml, copo de 700 ml, lâminas de aço e fouet flexível, além de uma alça para pendurar. Funciona bem para vitamina, molho e claras, sem o fôlego dos modelos de 500 W ou mais.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Elgin"
+        },
+        "url": "https://www.amazon.com.br/dp/B09VQ39F41?tag=casaemalta0e-20"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@type": "Product",
+        "name": "Mixer Elgin Power Inox 3 em 1 1000W",
+        "image": "https://www.casaemalta.com.br/images/mixer-3-em-1/mixer-elgin-power-inox-1000w.webp",
+        "description": "No papel, é o kit mais caprichado: haste e lâminas de inox, copo de 800 ml com tampa, miniprocessador e fouet. A ficha informa ruído de 75 dB. Com tão poucas avaliações e tantas notas mínimas, vale ler os comentários de 1 estrela antes de decidir.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Elgin"
+        },
+        "url": "https://www.amazon.com.br/dp/B0GXL3NV84?tag=casaemalta0e-20"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "item": {
+        "@type": "Product",
+        "name": "Mixer Philco PMX2000 3 em 1 800W",
+        "image": "https://www.casaemalta.com.br/images/mixer-3-em-1/mixer-philco-pmx2000.webp",
+        "description": "Tem quatro lâminas de inox (duas grandes e duas pequenas), corpo desmontável, duas velocidades e, pela foto, botão turbo (T), jarra com alça e tampa, miniprocessador e batedor de claras. A ficha da Amazon diz que não vai à lava-louças.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Philco"
+        },
+        "url": "https://www.amazon.com.br/dp/B0CFM6RMLM?tag=casaemalta0e-20"
+      }
+    }
+  ]
+})} />
+
+        <!-- Leia também -->
+        <p style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#c2410c;margin:24px 0 12px;">Leia também:</p>
+        <div style="display:flex;flex-direction:column;gap:12px;">
+          <a href="/melhores-liquidificadores-2026" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:clamp(90px,28vw,200px);flex-shrink:0;">
+              <img src="/images/melhores-liquidificadores/capa-melhores-liquidificadores.webp" alt="Os melhores liquidificadores" style="width:100%;height:100%;min-height:72px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:10px 14px;display:flex;flex-direction:column;justify-content:center;gap:4px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:14px;font-weight:700;color:#1e293b;line-height:1.35;">Os 7 Melhores Liquidificadores de 2026</span>
+            </div>
+          </a>
+          <a href="/liquidificador-vs-processador-de-alimentos" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:clamp(90px,28vw,200px);flex-shrink:0;">
+              <img src="/images/liquidificador-vs-processador/capa-liquidificador-vs-processador.webp" alt="Liquidificador ou processador de alimentos" style="width:100%;height:100%;min-height:72px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:10px 14px;display:flex;flex-direction:column;justify-content:center;gap:4px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:14px;font-weight:700;color:#1e293b;line-height:1.35;">Liquidificador ou Processador de Alimentos: Qual Comprar Primeiro?</span>
+            </div>
+          </a>
+          <a href="/melhor-multiprocessador-de-alimentos" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:clamp(90px,28vw,200px);flex-shrink:0;">
+              <img src="/images/multiprocessador/capa-multiprocessador.webp" alt="Multiprocessador de alimentos" style="width:100%;height:100%;min-height:72px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:10px 14px;display:flex;flex-direction:column;justify-content:center;gap:4px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:14px;font-weight:700;color:#1e293b;line-height:1.35;">Multiprocessador de Alimentos Vale a Pena? Review de Quem Usa em Casa</span>
             </div>
           </a>
         </div>
