@@ -697,7 +697,7 @@ export const posts: Post[] = [
   {
     slug: 'mixer-3-em-1',
     titulo: 'Mixer 3 em 1: Qual Aguenta Sopa, Vitamina e Chantilly',
-    resumo: 'Mixer 3 em 1: comparamos os 5 mais vendidos da Amazon Brasil (Elgin, Britânia, Oster e Philco) por potência, haste e acessórios para sopa, vitamina e chantilly.',
+    resumo: 'Mixer 3 em 1: comparamos 5 dos mais vendidos da Amazon Brasil (Elgin, Britânia, Oster e Philco) por potência, haste e acessórios para sopa, vitamina e chantilly.',
     tempo: '8 min de leitura',
     imagem: '/images/mixer-3-em-1/capa-mixer-3-em-1.webp',
     categoria: 'rankings-e-listas',
