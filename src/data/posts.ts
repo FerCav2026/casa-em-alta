@@ -703,6 +703,16 @@ export const posts: Post[] = [
     categoria: 'rankings-e-listas',
     categoriaLabel: 'Rankings e Listas',
     categoriaColor: 'bg-green-100 text-green-700',
+  },
+  {
+    slug: 'melhor-ferro-de-passar-roupa',
+    titulo: 'Melhor Ferro de Passar Roupa: a Vapor ou a Seco?',
+    resumo: 'Melhor ferro de passar roupa: comparamos 5 dos mais vendidos da Amazon Brasil (Electrolux, Black+Decker, Oster e Philips) entre vapor, seco e pressurizado.',
+    tempo: '8 min de leitura',
+    imagem: '/images/melhor-ferro-de-passar-roupa/capa-melhor-ferro-de-passar-roupa.webp',
+    categoria: 'rankings-e-listas',
+    categoriaLabel: 'Rankings e Listas',
+    categoriaColor: 'bg-green-100 text-green-700',
   }
 ];
 

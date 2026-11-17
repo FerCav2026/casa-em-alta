@@ -468,6 +468,13 @@ const posts: Record<string, { titulo: string; descricao: string; categoria: stri
     dataCriacao: '2026-11-12',
     dataModificacao: '2026-11-12',
   },
+  'melhor-ferro-de-passar-roupa': {
+    titulo: 'Melhor Ferro de Passar Roupa: a Vapor ou a Seco?',
+    descricao: 'Melhor ferro de passar roupa: compare 5 modelos a vapor, a seco e pressurizado (Electrolux, Black+Decker, Oster, Philips) e escolha o certo para você.',
+    categoria: 'Rankings e Listas',
+    dataCriacao: '2026-11-17',
+    dataModificacao: '2026-11-17',
+  },
 };
 
 export function getStaticPaths() {
@@ -536,6 +543,7 @@ export function getStaticPaths() {
     'climatizador-midea': {},
     'climatizador-wap': {},
     'mixer-3-em-1': {},
+    'melhor-ferro-de-passar-roupa': {},
   }).map((slug) => ({ params: { slug } }));
 }
 
@@ -642,6 +650,7 @@ const isClimatizadorQuenteFrio = slug === 'climatizador-quente-e-frio';
 const isClimatizadorMidea = slug === 'climatizador-midea';
 const isClimatizadorWap = slug === 'climatizador-wap';
 const isMixer3em1 = slug === 'mixer-3-em-1';
+const isMelhorFerroPassarRoupa = slug === 'melhor-ferro-de-passar-roupa';
 
 const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isAirfryer ? '/images/airfryer/capa-airfryer.webp'
@@ -707,11 +716,12 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isClimatizadorMidea ? '/images/climatizador-midea/capa-climatizador-midea.webp'
   : isClimatizadorWap ? '/images/climatizador-wap/capa-climatizador-wap.webp'
   : isMixer3em1 ? '/images/mixer-3-em-1/capa-mixer-3-em-1.webp'
+  : isMelhorFerroPassarRoupa ? '/images/melhor-ferro-de-passar-roupa/capa-melhor-ferro-de-passar-roupa.webp'
   : undefined;
 ---
 
 <BaseLayout
-  title={isPanelaEletricaOuConvencional || isMelhoresCafeteiras || isProjetorShopee || isComoArrumarArmarios || isLavaSeca || isFrigideiraAntiaderenteFerro || isFrigideira || isMelhorFrigideiraAntiaderente || isMelhorClimatizador || isArCondicionadoPortatil || isMelhorVentiladorColuna || isMelhorUmidificadorQuarto || isClimatizadorOuVentilador || isMelhorFrigobar || isMelhorSanduicheira || isMelhorCooktop || isMelhorMopGiratorio || isClimatizadorQuenteFrio || isClimatizadorMidea || isClimatizadorWap || isMixer3em1 ? post.titulo : `${post.titulo} - Casa em Alta`}
+  title={isPanelaEletricaOuConvencional || isMelhoresCafeteiras || isProjetorShopee || isComoArrumarArmarios || isLavaSeca || isFrigideiraAntiaderenteFerro || isFrigideira || isMelhorFrigideiraAntiaderente || isMelhorClimatizador || isArCondicionadoPortatil || isMelhorVentiladorColuna || isMelhorUmidificadorQuarto || isClimatizadorOuVentilador || isMelhorFrigobar || isMelhorSanduicheira || isMelhorCooktop || isMelhorMopGiratorio || isClimatizadorQuenteFrio || isClimatizadorMidea || isClimatizadorWap || isMixer3em1 || isMelhorFerroPassarRoupa ? post.titulo : `${post.titulo} - Casa em Alta`}
   description={post.descricao}
   image={coverImage}
   type="article"
@@ -31394,6 +31404,665 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
             <div style="padding:10px 14px;display:flex;flex-direction:column;justify-content:center;gap:4px;">
               <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
               <span style="font-size:14px;font-weight:700;color:#1e293b;line-height:1.35;">Multiprocessador de Alimentos Vale a Pena? Review de Quem Usa em Casa</span>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    )}
+
+    {isMelhorFerroPassarRoupa && (
+      <div>
+
+        <!-- Capa -->
+        <div class="rounded-2xl overflow-hidden mb-8 shadow-md">
+          <img
+            src="/images/melhor-ferro-de-passar-roupa/capa-melhor-ferro-de-passar-roupa.webp"
+            alt="Melhor ferro de passar roupa: ferro a vapor sobre a tábua de passar com camisa e cesto de roupa limpa ao lado"
+            width="1280"
+            height="720"
+            class="w-full h-auto object-cover"
+            loading="eager"
+          />
+        </div>
+
+        <!-- Introdução -->
+        <div class="bg-orange-50 border border-orange-100 rounded-2xl p-6 mb-8">
+          <p class="text-slate-800 text-base leading-relaxed mb-3">
+            O melhor ferro de passar roupa depende de uma pergunta: você precisa de vapor? Entre os ferros de passar roupa a vapor mais vendidos da Amazon Brasil, o Electrolux ESI10 passa a vapor e a seco no mesmo aparelho e é o mais equilibrado para a maioria. Quem só passa a seco leva o Black+Decker VFA1110, e quem passa muita roupa de uma vez olha para o pressurizado da Philips.
+          </p>
+          <p class="text-slate-800 text-base leading-relaxed">
+            Não testamos esses ferros em casa: este artigo é uma curadoria dos produtos citados. Partimos da busca por "ferro de passar roupa" ordenada por mais vendidos na Amazon Brasil, em 17/11/2026, e escolhemos cinco modelos entre os vinte primeiros, cobrindo ferro a vapor, a seco e pressurizado, com preferência a nota alta e muitas avaliações. Depois comparamos fichas técnicas, fotos dos anúncios e notas.
+          </p>
+        </div>
+
+        <!-- TL;DR -->
+        <div class="bg-purple-50 border border-purple-100 rounded-2xl p-6 mb-10">
+          <p class="text-slate-800 font-bold text-base mb-3">Em resumo</p>
+          <p class="text-sm text-slate-700 leading-relaxed">
+            Para a maioria, o <a href="https://link.amazon/B0apF62sC" target="_blank" rel="nofollow sponsored noopener" class="text-orange-500 font-semibold hover:underline"><strong>Electrolux ESI10</strong></a>: vapor e seco, nº 1 em ferros a vapor. Só a seco: <a href="https://link.amazon/B0iov8n27" target="_blank" rel="nofollow sponsored noopener" class="text-orange-500 font-semibold hover:underline"><strong>Black+Decker VFA1110</strong></a>, nº 1 em ferros secos. Vapor com função anticalcário: <a href="https://link.amazon/B0bShapEp" target="_blank" rel="nofollow sponsored noopener" class="text-orange-500 font-semibold hover:underline"><strong>Oster Antiaderente Verde</strong></a>. Maior nota dos compradores: <a href="https://link.amazon/B0eMmUFrE" target="_blank" rel="nofollow sponsored noopener" class="text-orange-500 font-semibold hover:underline"><strong>Philips Walita Série 3000</strong></a>, com 4,8 de 5. Muita roupa de uma vez: <a href="https://link.amazon/B0e4PQdoe" target="_blank" rel="nofollow sponsored noopener" class="text-orange-500 font-semibold hover:underline"><strong>Philips PerfectCare Série 6000</strong></a>, o pressurizado.
+          </p>
+        </div>
+
+        <!-- Índice -->
+        <nav class="border border-slate-200 rounded-2xl p-6 mb-10 bg-white">
+          <p class="font-bold text-slate-800 mb-3">Índice</p>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#tabela-comparativa" class="text-orange-500 hover:text-orange-600 font-medium">Qual a diferença entre os cinco ferros?</a></li>
+            <li><a href="#vapor-ou-seco" class="text-orange-500 hover:text-orange-600 font-medium">Qual o melhor ferro de passar roupa: a vapor ou a seco?</a></li>
+            <li><a href="#pressurizado" class="text-orange-500 hover:text-orange-600 font-medium">Ferro de passar roupa pressurizado vale a pena?</a></li>
+            <li><a href="#mais-vendidos" class="text-orange-500 hover:text-orange-600 font-medium">Quais são os 5 melhores ferros de passar roupa a vapor e a seco mais vendidos na Amazon?</a></li>
+            <li><a href="#como-escolher" class="text-orange-500 hover:text-orange-600 font-medium">Como escolher o ferro de passar roupa certo?</a></li>
+            <li><a href="#faq" class="text-orange-500 hover:text-orange-600 font-medium">Perguntas frequentes</a></li>
+          </ul>
+        </nav>
+
+        <h2 id="tabela-comparativa" class="text-2xl font-bold text-slate-900 mb-4">Qual a diferença entre os cinco ferros?</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          A maior diferença está no tipo: um é só a seco, três são a vapor e um é pressurizado. As notas vão de 4,6 a 4,8: o Electrolux tem a menor, mas é o nº 1 em ferros a vapor, e o Philips Série 3000 tem a maior. Clique no nome do modelo para ir direto à avaliação.
+        </p>
+        <div class="overflow-x-auto mb-10">
+          <table class="w-full text-sm border-collapse"><caption class="sr-only">Os 5 ferros de passar roupa mais vendidos: tipo, potência, base, reservatório, nota, voltagens e para quem serve (fontes: fichas e anúncios da Amazon Brasil, 17/11/2026)</caption>
+            <thead>
+              <tr class="bg-slate-100">
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Modelo</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Tipo</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Potência</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Base</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Reservatório</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Nota (avaliações)</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Voltagens na Amazon</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Melhor para</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-white">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200"><a href="#avaliacao-electrolux-esi10" class="text-orange-600 hover:text-orange-700 underline font-semibold">Electrolux ESI10</a></td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Vapor e seco, vertical</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">1.200 W (127V) ou 1.500 W (220V)</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Antiaderente</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">200 ml</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">4,6 (3.327)</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">127V e 220V</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Um ferro só para vapor e seco</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200"><a href="#avaliacao-black-decker-vfa" class="text-orange-600 hover:text-orange-700 underline font-semibold">Black+Decker VFA1110</a></td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Só a seco</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">1.100 W (127V) ou 1.200 W (220V)</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Alumínio polido</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Sem reservatório</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">4,7 (9.634 na 127V e 7.544 na 220V)</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">127V e 220V</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Passar de rotina sem vapor</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200"><a href="#avaliacao-oster-antiaderente" class="text-orange-600 hover:text-orange-700 underline font-semibold">Oster Antiaderente Verde</a></td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Vapor, 25 saídas</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">1.200 W (127V) ou 1.400 W (220V)</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Antiaderente, aço inox</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">200 ml</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">4,7 (3.142 na 127V e 1.213 na 220V)</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">127V e 220V</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Vapor com função anticalcário</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200"><a href="#avaliacao-philips-serie-3000" class="text-orange-600 hover:text-orange-700 underline font-semibold">Philips Walita Série 3000</a></td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Vapor e vertical</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">1.400 W (110V) ou 2.000 W (220V)</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Cerâmica</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">300 ml</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">4,8 (1.999 na 110V e 627 na 220V)</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">110V e 220V</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Maior nota e 2 anos de garantia</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200"><a href="#avaliacao-philips-perfectcare-6000" class="text-orange-600 hover:text-orange-700 underline font-semibold">Philips PerfectCare Série 6000</a></td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Pressurizado, 6 bar</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">1.800 W</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Cerâmica</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">1,8 L</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">4,7 (108 na 127V)</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">127V e 220V</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Muita roupa de uma vez</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+
+        <h2 id="vapor-ou-seco" class="text-2xl font-bold text-slate-900 mb-4">Qual o melhor ferro de passar roupa: a vapor ou a seco?</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Para a maioria das casas, o ferro de passar roupa a vapor é a melhor escolha, porque passa a vapor e a seco no mesmo aparelho. O ferro só a seco compensa para quem passa roupa de rotina e prefere um aparelho simples, sem reservatório para limpar.
+        </p>
+        <ul class="list-disc list-inside space-y-2 text-slate-700 mb-4 ml-2">
+          <li><strong>Ferro a vapor:</strong> o vapor ajuda a soltar vincos mais fundos em algodão e linho e dá para usar o vertical em roupa pendurada. Pede água limpa e limpeza do calcário de tempos em tempos.</li>
+          <li><strong>Ferro a seco:</strong> esquenta, desliza e pronto. Não tem reservatório, então não tem calcário nem risco de pingar.</li>
+        </ul>
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          Se o seu problema é desamassar uma peça rápido, sem tábua, o <a href="/vaporizador-de-roupas-portatil" class="text-orange-500 font-semibold hover:underline">vaporizador de roupas portátil</a> é outra categoria de aparelho e tem artigo próprio no blog.
+        </p>
+
+        <h2 id="pressurizado" class="text-2xl font-bold text-slate-900 mb-4">Ferro de passar roupa pressurizado vale a pena?</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          Vale para quem passa muita roupa de uma vez. O ferro pressurizado gera o vapor sob pressão, medida em bar, e o vapor sai mais forte e contínuo. O tanque é bem maior que o de um ferro comum, então dá para passar uma pilha sem reabastecer. Para algumas peças por semana, um ferro a vapor comum resolve. Nesta lista, o pressurizado é o Philips PerfectCare Série 6000, de 6 bar e 1,8 litro.
+        </p>
+
+        <h2 id="mais-vendidos" class="text-2xl font-bold text-slate-900 mb-4">Quais são os 5 melhores ferros de passar roupa a vapor e a seco mais vendidos na Amazon?</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-8">
+          Entre os cinco mais vendidos da Amazon Brasil em 17/11/2026, o Electrolux ESI10 é o mais equilibrado (vapor e seco), o Black+Decker VFA1110 é o ferro a seco mais bem avaliado, o Oster tem função anticalcário, o Philips Série 3000 tem a maior nota (4,8) e o PerfectCare Série 6000 é o único pressurizado.
+        </p>
+
+        <h3 id="electrolux-esi10" class="text-xl font-bold text-slate-900 mb-3">Electrolux ESI10: o primeiro da busca e nº 1 em ferros a vapor</h3>
+        <p class="text-slate-700 text-base leading-relaxed mb-5">
+          É o primeiro da busca por ferro de passar roupa e o nº 1 em ferros a vapor da Amazon Brasil. O anúncio da versão 127V passou de 2 mil compras no mês passado e tem nota 4,6 de 5 em 3.327 avaliações.
+        </p>
+
+        <div id="avaliacao-electrolux-esi10" class="scroll-mt-24 border border-slate-200 rounded-2xl overflow-hidden mb-10 shadow-sm">
+          <div class="bg-orange-500 px-6 py-4">
+            <span class="inline-block bg-white text-orange-600 text-xs font-bold uppercase tracking-wide px-2.5 py-1 rounded-full mb-2">Mais vendido a vapor</span>
+            <p class="text-white font-black text-xl">Ferro Electrolux ESI10 a Vapor e a Seco</p>
+            <p class="text-orange-100 text-sm mt-1">Versões 127V e 220V no mesmo anúncio (Amazon Brasil, consultado em 17/11/2026)</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+              <img src="/images/melhor-ferro-de-passar-roupa/ferro-electrolux-esi10.webp" alt="Ferro de passar Electrolux ESI10 azul com base antiaderente e reservatório transparente" width="1280" height="1279" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <p class="text-slate-700 text-sm leading-relaxed mb-4">
+                Passa a vapor ou a seco, com duas intensidades de vapor, e ainda tem vapor vertical, vapor extra e spray. A base é antiaderente e o reservatório é transparente, para ver o nível da água.
+              </p>
+              <a href="https://link.amazon/B0apF62sC" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon</a>
+              <h4 class="font-bold text-slate-800 mb-3">Ficha Técnica</h4>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Potência:</strong> 1.200 W (127V) ou 1.500 W (220V), segundo os anúncios</li>
+                <li><strong>Base:</strong> antiaderente</li>
+                <li><strong>Funções:</strong> vapor e seco, vapor vertical, vapor extra e spray</li>
+                <li><strong>Reservatório:</strong> 200 ml, transparente</li>
+                <li><strong>Cabo:</strong> 1,35 m</li>
+                <li><strong>Garantia:</strong> 1 ano, segundo a ficha</li>
+                <li><strong>Avaliações:</strong> 4,6 de 5 em 3.327 avaliações (127V)</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Nº 1 em ferros a vapor na Amazon</li>
+                    <li>Vapor e seco no mesmo aparelho</li>
+                    <li>Vapor vertical para desamassar na hora</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Reservatório de 200 ml, pede reabastecer em sessões longas</li>
+                    <li>Nota de 4,6 na versão 127V, um pouco abaixo da dos outros quatro</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mt-4">
+                <strong>Veredito:</strong> a escolha mais equilibrada para quem quer um ferro só, que passe a vapor e a seco, com histórico de vendas alto.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <h3 id="black-decker-vfa" class="text-xl font-bold text-slate-900 mb-3">Black+Decker VFA1110: o ferro a seco mais vendido</h3>
+        <p class="text-slate-700 text-base leading-relaxed mb-5">
+          É o nº 1 em ferros secos da Amazon Brasil. A nota é 4,7 de 5, com 9.634 avaliações na versão 127V e 7.544 na 220V, e cada anúncio passou de 3 mil compras no mês passado.
+        </p>
+
+        <div id="avaliacao-black-decker-vfa" class="scroll-mt-24 border border-slate-200 rounded-2xl overflow-hidden mb-10 shadow-sm">
+          <div class="bg-slate-800 px-6 py-4">
+            <span class="inline-block bg-white text-slate-800 text-xs font-bold uppercase tracking-wide px-2.5 py-1 rounded-full mb-2">Melhor a seco</span>
+            <p class="text-white font-black text-xl">Ferro Black+Decker VFA1110 a Seco</p>
+            <p class="text-slate-300 text-sm mt-1">Versões 127V e 220V em anúncios separados (Amazon Brasil, consultado em 17/11/2026)</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+              <img src="/images/melhor-ferro-de-passar-roupa/ferro-black-decker-vfa-a-seco.webp" alt="Ferro de passar a seco Black+Decker VFA1110 preto cromado com base de alumínio" width="1280" height="1175" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <p class="text-slate-700 text-sm leading-relaxed mb-4">
+                É um ferro a seco, sem reservatório, com base de alumínio polido e 7 níveis de temperatura, dos tecidos delicados aos pesados. O cabo tem giro de 360 graus e a ficha cita a tecnologia que poupa botões.
+              </p>
+              <a href="https://link.amazon/B0iov8n27" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-3 transition-colors">Ver preço na Amazon (127V)</a>
+              <a href="https://link.amazon/B0ijI8uTQ" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon (220V)</a>
+              <h4 class="font-bold text-slate-800 mb-3">Ficha Técnica</h4>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Potência:</strong> 1.100 W (127V) ou 1.200 W (220V), segundo as fichas</li>
+                <li><strong>Base:</strong> alumínio polido</li>
+                <li><strong>Temperatura:</strong> 7 níveis</li>
+                <li><strong>Vapor:</strong> não tem, é só a seco</li>
+                <li><strong>Cabo:</strong> giro de 360 graus</li>
+                <li><strong>Garantia:</strong> 1 ano com o fabricante</li>
+                <li><strong>Avaliações:</strong> 4,7 de 5 (9.634 na 127V e 7.544 na 220V)</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Maior base de avaliações da lista, com nota 4,7</li>
+                    <li>Sem reservatório, não acumula calcário</li>
+                    <li>Cabo giratório e 7 níveis de temperatura</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Não tem vapor nem spray</li>
+                    <li>A ficha não cita base antiaderente</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mt-4">
+                <strong>Veredito:</strong> para quem passa roupa de rotina sem precisar de vapor. É o ferro a seco mais bem avaliado e mais vendido da lista.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <h3 id="oster-antiaderente" class="text-xl font-bold text-slate-900 mb-3">Oster Antiaderente Verde: vapor com 25 saídas e função anticalcário</h3>
+        <p class="text-slate-700 text-base leading-relaxed mb-5">
+          Tem nota 4,7 de 5 nas duas voltagens, com 3.142 avaliações na versão 127V e 1.213 na 220V. O anúncio de 127V passou de 2 mil compras no mês passado e é o nº 2 em ferros a vapor.
+        </p>
+
+        <div id="avaliacao-oster-antiaderente" class="scroll-mt-24 border border-slate-200 rounded-2xl overflow-hidden mb-10 shadow-sm">
+          <div class="bg-orange-500 px-6 py-4">
+            <span class="inline-block bg-white text-orange-600 text-xs font-bold uppercase tracking-wide px-2.5 py-1 rounded-full mb-2">25 saídas de vapor</span>
+            <p class="text-white font-black text-xl">Ferro Oster a Vapor Antiaderente Verde</p>
+            <p class="text-orange-100 text-sm mt-1">Versões 127V e 220V em anúncios separados (Amazon Brasil, consultado em 17/11/2026)</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+              <img src="/images/melhor-ferro-de-passar-roupa/ferro-oster-antiaderente-verde.webp" alt="Ferro de passar a vapor Oster verde com base antiaderente e saídas de vapor" width="1280" height="995" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <p class="text-slate-700 text-sm leading-relaxed mb-4">
+                A base é antiaderente, de aço inox, com 25 saídas de vapor. Tem botão de spray com vapor e botão de limpeza automática, que ajuda a eliminar o acúmulo de calcário no reservatório de 200 ml.
+              </p>
+              <a href="https://link.amazon/B0bShapEp" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-3 transition-colors">Ver preço na Amazon (127V)</a>
+              <a href="https://link.amazon/B04B1EfqT" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon (220V)</a>
+              <h4 class="font-bold text-slate-800 mb-3">Ficha Técnica</h4>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Potência:</strong> 1.200 W (127V) ou 1.400 W (220V), segundo os anúncios</li>
+                <li><strong>Base:</strong> antiaderente, de aço inox, com 25 saídas de vapor</li>
+                <li><strong>Reservatório:</strong> 200 ml</li>
+                <li><strong>Funções:</strong> spray com vapor e limpeza automática anticalcário</li>
+                <li><strong>Garantia:</strong> 12 meses, segundo a ficha</li>
+                <li><strong>Avaliações:</strong> 4,7 de 5 (3.142 na 127V e 1.213 na 220V)</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Nota 4,7 nas duas voltagens</li>
+                    <li>25 saídas de vapor</li>
+                    <li>Limpeza automática contra o calcário</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>127V e 220V em anúncios separados, confira a voltagem antes de comprar</li>
+                    <li>Reservatório de 200 ml e 1.200 W na 127V, sem a folga dos modelos maiores</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mt-4">
+                <strong>Veredito:</strong> para quem quer um ferro a vapor de nota alta e com função anticalcário, sem pagar por pressurizado.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <h3 id="philips-serie-3000" class="text-xl font-bold text-slate-900 mb-3">Philips Walita Série 3000: a maior nota da lista</h3>
+        <p class="text-slate-700 text-base leading-relaxed mb-5">
+          Tem a maior nota da lista, 4,8 de 5, com 1.999 avaliações na versão 110V e 627 na 220V. Passou de 700 compras no mês passado.
+        </p>
+
+        <div id="avaliacao-philips-serie-3000" class="scroll-mt-24 border border-slate-200 rounded-2xl overflow-hidden mb-10 shadow-sm">
+          <div class="bg-slate-800 px-6 py-4">
+            <span class="inline-block bg-white text-slate-800 text-xs font-bold uppercase tracking-wide px-2.5 py-1 rounded-full mb-2">Maior nota</span>
+            <p class="text-white font-black text-xl">Ferro a Vapor Philips Walita Série 3000 (DST3010)</p>
+            <p class="text-slate-300 text-sm mt-1">Versões 110V e 220V no mesmo anúncio (Amazon Brasil, consultado em 17/11/2026)</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+              <img src="/images/melhor-ferro-de-passar-roupa/ferro-philips-walita-serie-3000.webp" alt="Ferro a vapor Philips Walita Série 3000 branco e rosa com base de cerâmica" width="1237" height="1280" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <p class="text-slate-700 text-sm leading-relaxed mb-4">
+                A base é de cerâmica e o aquecimento leva cerca de 60 segundos, segundo a ficha. Tem jato de vapor de até 140 g, vapor vertical, ponta tripla de precisão para golas e botões, sistema corta-pingos e Modo Eco, que economiza 20% de energia.
+              </p>
+              <a href="https://link.amazon/B0eMmUFrE" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon</a>
+              <h4 class="font-bold text-slate-800 mb-3">Ficha Técnica</h4>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Potência:</strong> 1.400 W (110V) ou 2.000 W (220V)</li>
+                <li><strong>Base:</strong> cerâmica</li>
+                <li><strong>Reservatório:</strong> 300 ml</li>
+                <li><strong>Vapor:</strong> jato de até 140 g e vapor vertical</li>
+                <li><strong>Peso:</strong> cerca de 1,4 kg</li>
+                <li><strong>Garantia:</strong> 2 anos, segundo a ficha</li>
+                <li><strong>Avaliações:</strong> 4,8 de 5 (1.999 na 110V e 627 na 220V)</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Maior nota da lista</li>
+                    <li>Garantia de 2 anos</li>
+                    <li>Modo Eco e sistema corta-pingos</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Menos compras no mês que Electrolux, Black+Decker e Oster</li>
+                    <li>A potência muda de uma voltagem para a outra</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mt-4">
+                <strong>Veredito:</strong> para quem prioriza a satisfação dos compradores e uma garantia maior.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <h3 id="philips-perfectcare-6000" class="text-xl font-bold text-slate-900 mb-3">Philips PerfectCare Série 6000: o pressurizado da lista</h3>
+        <p class="text-slate-700 text-base leading-relaxed mb-5">
+          É o único pressurizado da lista, com 1.800 W, 6 bar de pressão e tanque de 1,8 litro. A nota é 4,7 de 5, mas em apenas 108 avaliações na versão 127V, uma base pequena perto das outras. Passou de 300 compras no mês passado.
+        </p>
+
+        <div id="avaliacao-philips-perfectcare-6000" class="scroll-mt-24 border border-slate-200 rounded-2xl overflow-hidden mb-10 shadow-sm">
+          <div class="bg-orange-500 px-6 py-4">
+            <span class="inline-block bg-white text-orange-600 text-xs font-bold uppercase tracking-wide px-2.5 py-1 rounded-full mb-2">Pressurizado</span>
+            <p class="text-white font-black text-xl">Philips Walita PerfectCare Série 6000 (PSG6026)</p>
+            <p class="text-orange-100 text-sm mt-1">Versões 127V e 220V no mesmo anúncio (Amazon Brasil, consultado em 17/11/2026)</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+              <img src="/images/melhor-ferro-de-passar-roupa/ferro-philips-walita-perfectcare-serie-6000.webp" alt="Ferro a vapor pressurizado Philips Walita PerfectCare Série 6000 azul e branco" width="932" height="739" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <p class="text-slate-700 text-sm leading-relaxed mb-4">
+                A base é de cerâmica, a SteamGlide Plus, e a ficha cita a tecnologia OptimalTEMP. O desenho é compacto para um aparelho pressurizado.
+              </p>
+              <a href="https://link.amazon/B0e4PQdoe" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon</a>
+              <h4 class="font-bold text-slate-800 mb-3">Ficha Técnica</h4>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Potência:</strong> 1.800 W</li>
+                <li><strong>Pressão:</strong> 6 bar</li>
+                <li><strong>Reservatório:</strong> 1,8 litro</li>
+                <li><strong>Base:</strong> cerâmica SteamGlide Plus</li>
+                <li><strong>Garantia:</strong> 2 anos, segundo a ficha</li>
+                <li><strong>Avaliações:</strong> 4,7 de 5 em 108 avaliações (127V)</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Pressão de 6 bar, segundo a ficha</li>
+                    <li>Tanque grande, passa muita roupa sem reabastecer</li>
+                    <li>Garantia de 2 anos</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Só 108 avaliações na 127V, a nota ainda se apoia em pouca gente</li>
+                    <li>Tanque de 1,8 litro, o aparelho ocupa mais espaço que um ferro comum</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mt-4">
+                <strong>Veredito:</strong> para quem passa muita roupa de uma vez e quer vapor mais forte. Leve em conta a base pequena de avaliações.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin:32px 0;font-family:sans-serif;">
+          <p style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#c2410c;margin:0 0 12px;">Leia também:</p>
+        <div style="display:flex;flex-direction:column;gap:12px;">
+          <a href="/como-montar-lavanderia-apartamento" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:clamp(90px,28vw,200px);flex-shrink:0;">
+              <img src="/images/lavanderia-guia/capa-como-montar-lavanderia-apartamento.webp" alt="Como montar a lavanderia de um apartamento" style="width:100%;height:100%;min-height:72px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:10px 14px;display:flex;flex-direction:column;justify-content:center;gap:4px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:14px;font-weight:700;color:#1e293b;line-height:1.35;">Como Montar a Lavanderia de um Apartamento</span>
+            </div>
+          </a>
+        </div>
+        </div>
+
+        <h2 id="como-escolher" class="text-2xl font-bold text-slate-900 mb-4">Como escolher o ferro de passar roupa certo?</h2>
+        <ul class="list-disc list-inside space-y-2 text-slate-700 mb-4 ml-2">
+          <li><strong>Tipo:</strong> a vapor serve para tudo, a seco é mais simples e pressurizado é para volume.</li>
+          <li><strong>Base:</strong> cerâmica e antiaderente deslizam bem, alumínio polido é o clássico.</li>
+          <li><strong>Reservatório:</strong> de 200 a 300 ml basta para o dia a dia. Acima disso, só para muita roupa de uma vez.</li>
+          <li><strong>Corta-pingos e anticalcário:</strong> evitam manchas na roupa e prolongam a vida do aparelho.</li>
+          <li><strong>Avaliações:</strong> prefira nota alta com muitas avaliações, e confira o selo do <a href="https://www.gov.br/inmetro/pt-br" target="_blank" rel="noopener" class="text-orange-500 font-semibold hover:underline">Inmetro</a> na ficha.</li>
+        </ul>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Quem monta a área de passar do zero encontra ideias no guia da <a href="/como-montar-lavanderia-apartamento" class="text-orange-500 font-semibold hover:underline">lavanderia do apartamento</a>, e quem ainda decide como secar a roupa pode ler sobre <a href="/lava-e-seca-ou-secadora-apartamento" class="text-orange-500 font-semibold hover:underline">lava e seca ou secadora de roupas</a>.
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          Na prática, para a maioria o melhor ferro de passar roupa é o Electrolux ESI10, que faz vapor e seco. Se você não usa vapor, o Black+Decker VFA1110 resolve e tem a maior base de avaliações da lista. Para muita roupa de uma vez, o Philips PerfectCare Série 6000 entra na conta, lembrando que a nota dele ainda se apoia em poucas avaliações. Antes de fechar, confira preço, voltagem e avaliações recentes na página do produto.
+        </p>
+
+        <h2 id="faq" class="text-2xl font-bold text-slate-900 mb-6">Perguntas frequentes</h2>
+        <div class="space-y-3 mb-10">
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Qual o melhor ferro de passar roupa?</span>
+              <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Para a maioria das casas, o Electrolux ESI10, que passa a vapor e a seco e é o nº 1 em ferros a vapor da Amazon Brasil. Para quem não usa vapor, o Black+Decker VFA1110 a seco tem a maior base de avaliações da lista. A escolha foi feita por curadoria das fichas e avaliações da Amazon, sem teste em casa.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Ferro a vapor ou a seco: qual escolher?</span>
+              <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              O ferro a vapor serve para as duas coisas, porque o vapor se desliga e ele passa a seco. O ferro só a seco é mais simples e não tem reservatório para limpar. Se você passa linho, algodão e lençol com frequência, o vapor ajuda a tirar vincos mais fundos.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Ferro pressurizado vale a pena?</span>
+              <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Vale para quem passa muita roupa de uma vez, porque o vapor sai sob pressão, mais forte e contínuo, e o tanque grande evita reabastecer. Para poucas peças por semana, um ferro a vapor comum resolve. Nesta lista, o pressurizado é o Philips PerfectCare Série 6000.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Posso passar a seco com um ferro a vapor?</span>
+              <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Em geral sim: deixe o seletor de vapor desligado, conforme o manual de cada modelo. O Electrolux ESI10 cita a dupla função vapor e seco na ficha. Nos demais, confirme no manual do modelo antes de usar.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Quanto um ferro de passar roupa gasta de energia?</span>
+              <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Um ferro de 1.200 W ligado por uma hora usa, no máximo, 1,2 kWh, porque o termostato desliga a resistência de tempos em tempos. Multiplique pela tarifa da sua conta, que a <a href="https://www.gov.br/aneel/pt-br" target="_blank" rel="noopener" class="text-orange-500 font-semibold hover:underline">ANEEL</a> regula, ou use a <a href="/quanto-gasta-de-energia-eletrodomesticos" class="text-orange-500 font-semibold hover:underline">calculadora de energia</a> do blog.
+            </div>
+          </details>
+        </div>
+
+        <!-- Schema FAQ -->
+        <script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Qual o melhor ferro de passar roupa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Para a maioria das casas, o Electrolux ESI10, que passa a vapor e a seco e é o nº 1 em ferros a vapor da Amazon Brasil. Para quem não usa vapor, o Black+Decker VFA1110 a seco tem a maior base de avaliações da lista. A escolha foi feita por curadoria das fichas e avaliações da Amazon, sem teste em casa."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ferro a vapor ou a seco: qual escolher?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "O ferro a vapor serve para as duas coisas, porque o vapor se desliga e ele passa a seco. O ferro só a seco é mais simples e não tem reservatório para limpar. Se você passa linho, algodão e lençol com frequência, o vapor ajuda a tirar vincos mais fundos."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ferro pressurizado vale a pena?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vale para quem passa muita roupa de uma vez, porque o vapor sai sob pressão, mais forte e contínuo, e o tanque grande evita reabastecer. Para poucas peças por semana, um ferro a vapor comum resolve. Nesta lista, o pressurizado é o Philips PerfectCare Série 6000."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Posso passar a seco com um ferro a vapor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Em geral sim: deixe o seletor de vapor desligado, conforme o manual de cada modelo. O Electrolux ESI10 cita a dupla função vapor e seco na ficha. Nos demais, confirme no manual do modelo antes de usar."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quanto um ferro de passar roupa gasta de energia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Um ferro de 1.200 W ligado por uma hora usa, no máximo, 1,2 kWh, porque o termostato desliga a resistência de tempos em tempos. Multiplique pela tarifa da sua conta, que a ANEEL regula, ou use a calculadora de energia do blog."
+      }
+    }
+  ]
+})} />
+
+        <!-- Schema ItemList (Product de afiliado, sem offers) -->
+        <script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Os 5 ferros de passar roupa mais vendidos na Amazon Brasil",
+  "numberOfItems": 5,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "Product",
+        "name": "Ferro Electrolux ESI10 a Vapor e a Seco",
+        "image": "https://www.casaemalta.com.br/images/melhor-ferro-de-passar-roupa/ferro-electrolux-esi10.webp",
+        "description": "Passa a vapor ou a seco, com duas intensidades de vapor, e ainda tem vapor vertical, vapor extra e spray. A base é antiaderente e o reservatório é transparente, para ver o nível da água.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Electrolux"
+        },
+        "url": "https://link.amazon/B0apF62sC"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "Product",
+        "name": "Ferro Black+Decker VFA1110 a Seco",
+        "image": "https://www.casaemalta.com.br/images/melhor-ferro-de-passar-roupa/ferro-black-decker-vfa-a-seco.webp",
+        "description": "É um ferro a seco, sem reservatório, com base de alumínio polido e 7 níveis de temperatura, dos tecidos delicados aos pesados. O cabo tem giro de 360 graus e a ficha cita a tecnologia que poupa botões.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Black+Decker"
+        },
+        "url": "https://link.amazon/B0iov8n27"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "Product",
+        "name": "Ferro Oster a Vapor Antiaderente Verde",
+        "image": "https://www.casaemalta.com.br/images/melhor-ferro-de-passar-roupa/ferro-oster-antiaderente-verde.webp",
+        "description": "A base é antiaderente, de aço inox, com 25 saídas de vapor. Tem botão de spray com vapor e botão de limpeza automática, que ajuda a eliminar o acúmulo de calcário no reservatório de 200 ml.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Oster"
+        },
+        "url": "https://link.amazon/B0bShapEp"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@type": "Product",
+        "name": "Ferro a Vapor Philips Walita Série 3000 (DST3010)",
+        "image": "https://www.casaemalta.com.br/images/melhor-ferro-de-passar-roupa/ferro-philips-walita-serie-3000.webp",
+        "description": "A base é de cerâmica e o aquecimento leva cerca de 60 segundos, segundo a ficha. Tem jato de vapor de até 140 g, vapor vertical, ponta tripla de precisão para golas e botões, sistema corta-pingos e Modo Eco, que economiza 20% de energia.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Philips"
+        },
+        "url": "https://link.amazon/B0eMmUFrE"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "item": {
+        "@type": "Product",
+        "name": "Philips Walita PerfectCare Série 6000 (PSG6026)",
+        "image": "https://www.casaemalta.com.br/images/melhor-ferro-de-passar-roupa/ferro-philips-walita-perfectcare-serie-6000.webp",
+        "description": "A base é de cerâmica, a SteamGlide Plus, e a ficha cita a tecnologia OptimalTEMP. O desenho é compacto para um aparelho pressurizado.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Philips"
+        },
+        "url": "https://link.amazon/B0e4PQdoe"
+      }
+    }
+  ]
+})} />
+
+        <!-- Leia também -->
+        <p style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#c2410c;margin:24px 0 12px;">Leia também:</p>
+        <div style="display:flex;flex-direction:column;gap:12px;">
+          <a href="/vaporizador-de-roupas-portatil" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:clamp(90px,28vw,200px);flex-shrink:0;">
+              <img src="/images/vaporizador/capa-vaporizador.webp" alt="Vaporizador de roupas portátil" style="width:100%;height:100%;min-height:72px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:10px 14px;display:flex;flex-direction:column;justify-content:center;gap:4px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:14px;font-weight:700;color:#1e293b;line-height:1.35;">Vaporizador de Roupas Portátil: Vale a Pena em 2026?</span>
+            </div>
+          </a>
+          <a href="/lava-e-seca-ou-secadora-apartamento" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:clamp(90px,28vw,200px);flex-shrink:0;">
+              <img src="/images/lava-seca/capa-lava-seca.webp" alt="Lava e seca ou secadora de roupas" style="width:100%;height:100%;min-height:72px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:10px 14px;display:flex;flex-direction:column;justify-content:center;gap:4px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:14px;font-weight:700;color:#1e293b;line-height:1.35;">Lava e Seca ou Secadora de Roupas: Qual Compensa Mais para Quem Mora em Apartamento?</span>
+            </div>
+          </a>
+          <a href="/quanto-gasta-de-energia-eletrodomesticos" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:clamp(90px,28vw,200px);flex-shrink:0;">
+              <img src="/images/consumo-energia/capa-consumo-energia.webp" alt="Quanto gasta de energia cada eletrodoméstico" style="width:100%;height:100%;min-height:72px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:10px 14px;display:flex;flex-direction:column;justify-content:center;gap:4px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:14px;font-weight:700;color:#1e293b;line-height:1.35;">Quanto Gasta de Energia Cada Eletrodoméstico? Calcule Aqui</span>
             </div>
           </a>
         </div>
