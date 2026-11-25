@@ -475,6 +475,13 @@ const posts: Record<string, { titulo: string; descricao: string; categoria: stri
     dataCriacao: '2026-11-17',
     dataModificacao: '2026-11-17',
   },
+  'melhor-batedeira-planetaria': {
+    titulo: 'Melhor Batedeira Planetária para Bolo, Pão e Panetone',
+    descricao: 'Melhor batedeira planetária para bolo, pão e panetone: compare 5 modelos Oster, Mondial, Philco, Britânia e Electrolux, com tigela, potência e notas.',
+    categoria: 'Rankings e Listas',
+    dataCriacao: '2026-11-25',
+    dataModificacao: '2026-11-25',
+  },
 };
 
 export function getStaticPaths() {
@@ -544,6 +551,7 @@ export function getStaticPaths() {
     'climatizador-wap': {},
     'mixer-3-em-1': {},
     'melhor-ferro-de-passar-roupa': {},
+    'melhor-batedeira-planetaria': {},
   }).map((slug) => ({ params: { slug } }));
 }
 
@@ -651,6 +659,7 @@ const isClimatizadorMidea = slug === 'climatizador-midea';
 const isClimatizadorWap = slug === 'climatizador-wap';
 const isMixer3em1 = slug === 'mixer-3-em-1';
 const isMelhorFerroPassarRoupa = slug === 'melhor-ferro-de-passar-roupa';
+const isMelhorBatedeiraPlanetaria = slug === 'melhor-batedeira-planetaria';
 
 const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isAirfryer ? '/images/airfryer/capa-airfryer.webp'
@@ -717,11 +726,12 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isClimatizadorWap ? '/images/climatizador-wap/capa-climatizador-wap.webp'
   : isMixer3em1 ? '/images/mixer-3-em-1/capa-mixer-3-em-1.webp'
   : isMelhorFerroPassarRoupa ? '/images/melhor-ferro-de-passar-roupa/capa-melhor-ferro-de-passar-roupa.webp'
+  : isMelhorBatedeiraPlanetaria ? '/images/melhor-batedeira-planetaria/capa-melhor-batedeira-planetaria.webp'
   : undefined;
 ---
 
 <BaseLayout
-  title={isPanelaEletricaOuConvencional || isMelhoresCafeteiras || isProjetorShopee || isComoArrumarArmarios || isLavaSeca || isFrigideiraAntiaderenteFerro || isFrigideira || isMelhorFrigideiraAntiaderente || isMelhorClimatizador || isArCondicionadoPortatil || isMelhorVentiladorColuna || isMelhorUmidificadorQuarto || isClimatizadorOuVentilador || isMelhorFrigobar || isMelhorSanduicheira || isMelhorCooktop || isMelhorMopGiratorio || isClimatizadorQuenteFrio || isClimatizadorMidea || isClimatizadorWap || isMixer3em1 || isMelhorFerroPassarRoupa ? post.titulo : `${post.titulo} - Casa em Alta`}
+  title={isPanelaEletricaOuConvencional || isMelhoresCafeteiras || isProjetorShopee || isComoArrumarArmarios || isLavaSeca || isFrigideiraAntiaderenteFerro || isFrigideira || isMelhorFrigideiraAntiaderente || isMelhorClimatizador || isArCondicionadoPortatil || isMelhorVentiladorColuna || isMelhorUmidificadorQuarto || isClimatizadorOuVentilador || isMelhorFrigobar || isMelhorSanduicheira || isMelhorCooktop || isMelhorMopGiratorio || isClimatizadorQuenteFrio || isClimatizadorMidea || isClimatizadorWap || isMixer3em1 || isMelhorFerroPassarRoupa || isMelhorBatedeiraPlanetaria ? post.titulo : `${post.titulo} - Casa em Alta`}
   description={post.descricao}
   image={coverImage}
   type="article"
@@ -32095,6 +32105,641 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
       </div>
     )}
 
+    {isMelhorBatedeiraPlanetaria && (
+      <div>
+
+        <!-- Capa -->
+        <div class="rounded-2xl overflow-hidden mb-8 shadow-md">
+          <img src="/images/melhor-batedeira-planetaria/capa-melhor-batedeira-planetaria.webp" alt="Melhor batedeira planetária batendo massa ao lado de um panetone e um bolo na bancada" width="1280" height="720" class="w-full h-auto object-cover" loading="eager" />
+        </div>
+
+        <!-- Introdução -->
+        <div class="bg-orange-50 border border-orange-100 rounded-2xl p-6 mb-8">
+          <p class="text-slate-800 text-base leading-relaxed mb-3">
+            Entre as cinco que comparamos, a melhor batedeira planetária para começar a fazer bolo, pão e panetone é, pelas fichas, a Oster Bowl Inox III. Ela tem 850 W, tigela de inox e ficou em 1º (220V) e 2º (127V) na busca da Amazon por mais vendidos. Para uma tigela de inox maior, veja a Electrolux EKM40, de 5 litros.
+          </p>
+          <p class="text-slate-800 text-base leading-relaxed mb-3">
+            Tenho uma batedeira simples da Mondial e faço muitos bolos com ela. Mas ela não bate massa de pão, e a planetária está na minha lista de desejos.
+          </p>
+          <p class="text-slate-800 text-base leading-relaxed">
+            Ainda não usei nenhuma planetária: este artigo é uma curadoria dos produtos citados, feita com dados dos anúncios. Analisamos os mais vendidos na Amazon Brasil, em 25/11/2026. Os vinte primeiros resultados tinham sete marcas. Escolhemos um modelo de cinco delas e comparamos fichas, fotos e notas.
+          </p>
+        </div>
+
+        <!-- Em resumo -->
+        <div class="bg-purple-50 border border-purple-100 rounded-2xl p-6 mb-10">
+          <p class="text-slate-800 font-bold text-base mb-3">Em resumo</p>
+          <p class="text-sm text-slate-700 leading-relaxed">
+            Equilíbrio: <a href="https://www.amazon.com.br/dp/B0C4CF2F67?tag=casaemalta03-20" target="_blank" rel="nofollow sponsored noopener" class="text-orange-500 font-semibold hover:underline"><strong>Oster Bowl Inox III</strong></a>. Muitas avaliações: <a href="https://www.amazon.com.br/dp/B07WDD17QR?tag=casaemalta03-20" target="_blank" rel="nofollow sponsored noopener" class="text-orange-500 font-semibold hover:underline"><strong>Mondial BP-03-W branca</strong></a>. Mais potência informada: <a href="https://www.amazon.com.br/dp/B0DY8WB3KN?tag=casaemalta03-20" target="_blank" rel="nofollow sponsored noopener" class="text-orange-500 font-semibold hover:underline"><strong>Philco PBP90A</strong></a>. Mais batedores: <a href="https://www.amazon.com.br/dp/B08K1B2NHM?tag=casaemalta03-20" target="_blank" rel="nofollow sponsored noopener" class="text-orange-500 font-semibold hover:underline"><strong>Britânia BBP760P</strong></a>. Inox de 5 litros: <a href="https://www.amazon.com.br/dp/B0B5YSQ8TJ?tag=casaemalta03-20" target="_blank" rel="nofollow sponsored noopener" class="text-orange-500 font-semibold hover:underline"><strong>Electrolux EKM40</strong></a>.
+          </p>
+        </div>
+
+        <!-- Índice -->
+        <nav class="border border-slate-200 rounded-2xl p-6 mb-10 bg-white">
+          <p class="font-bold text-slate-800 mb-3">Índice</p>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#tabela-comparativa" class="text-orange-500 hover:text-orange-600 font-medium">Comparação das cinco batedeiras</a></li>
+            <li><a href="#pao-e-panetone" class="text-orange-500 hover:text-orange-600 font-medium">Batedeira planetária para pão e panetone: o que olhar?</a></li>
+            <li><a href="#mais-vendidas" class="text-orange-500 hover:text-orange-600 font-medium">Os 5 modelos analisados</a></li>
+            <li><a href="#como-escolher" class="text-orange-500 hover:text-orange-600 font-medium">Como escolher a melhor batedeira planetária?</a></li>
+            <li><a href="#faq" class="text-orange-500 hover:text-orange-600 font-medium">Perguntas frequentes</a></li>
+          </ul>
+        </nav>
+
+        <h2 id="tabela-comparativa" class="text-2xl font-bold text-slate-900 mb-4">Comparação das cinco batedeiras planetárias</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          As diferenças estão na potência, na tigela e no número de batedores. Clique no nome do modelo para ir direto à avaliação.
+        </p>
+        <div class="overflow-x-auto mb-3">
+          <table class="w-full text-sm border-collapse"><caption class="sr-only">Comparação de 5 batedeiras planetárias: potência, tigela, velocidades, batedores e nota (fontes: anúncios da Amazon Brasil, 25/11/2026)</caption>
+            <thead>
+              <tr class="bg-slate-100">
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Modelo</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Potência</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Tigela</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Velocidades</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Batedores</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Nota (avaliações)</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Melhor para</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-white">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200"><a href="#avaliacao-oster-bowl-inox-iii" class="text-orange-600 hover:text-orange-700 underline font-semibold">Oster Bowl Inox III</a></td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">850 W</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Inox, 4 L</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">12</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">3</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">4,6 (2.330)</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Equilíbrio e tigela de inox</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200"><a href="#avaliacao-mondial-bp-03-w" class="text-orange-600 hover:text-orange-700 underline font-semibold">Mondial BP-03-W branca</a></td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">700 W</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Plástico, 4,5 L</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">12</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">3</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">4,6 (2.585)</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Muitas avaliações</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200"><a href="#avaliacao-philco-pbp90a" class="text-orange-600 hover:text-orange-700 underline font-semibold">Philco PBP90A</a></td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">900 W*</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Plástico, 5 L</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">12 + turbo</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">3</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">4,4 (157)</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Potência e tigela grande</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200"><a href="#avaliacao-britania-bbp760p" class="text-orange-600 hover:text-orange-700 underline font-semibold">Britânia BBP760P</a></td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">700 W</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Plástico, 4,5 L</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">12 + turbo</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">4</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">4,5 (526)</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Mais batedores</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200"><a href="#avaliacao-electrolux-ekm40" class="text-orange-600 hover:text-orange-700 underline font-semibold">Electrolux EKM40</a></td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">750 W</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Inox, 5 L</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">12 + pulsar</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">3</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">4,5 (683)</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Inox grande</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="text-slate-500 text-xs mb-10">Notas da versão 127V, salvo indicação. *O título do anúncio de 127V da Philco cita 800 W.</p>
+
+        <h2 id="pao-e-panetone" class="text-2xl font-bold text-slate-900 mb-4">Batedeira planetária para pão e panetone: o que olhar?</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Para fazer pão e panetone, a batedeira planetária precisa de gancho para massas pesadas, e a receita deve respeitar o limite de preparo do manual. A capacidade da tigela, em litros, não é a quantidade de massa que o motor aguenta sovar. Antes da primeira receita, confira:
+        </p>
+        <ul class="list-disc list-inside space-y-2 text-slate-700 mb-4 ml-2">
+          <li><strong>Limite de farinha:</strong> compare com a receita que você quer fazer.</li>
+          <li><strong>Velocidade:</strong> use a que o manual indica para o gancho.</li>
+          <li><strong>Tempo de uso:</strong> respeite o tempo máximo ligado e as pausas.</li>
+          <li><strong>Firmeza:</strong> use a batedeira em bancada plana e seca, e não deixe o aparelho sozinho com massa pesada.</li>
+        </ul>
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          Se o manual disponível não informar esses limites, vale perguntar ao fabricante antes de comprar.
+        </p>
+
+        <h2 id="mais-vendidas" class="text-2xl font-bold text-slate-900 mb-4">Os 5 modelos analisados</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-8">
+          Posições, notas e compras do mês são as que apareciam em 25/11/2026 e podem mudar. Todos os anúncios permitem escolher a voltagem.
+        </p>
+
+        <h3 id="oster-bowl-inox-iii" class="text-xl font-bold text-slate-900 mb-3">Batedeira planetária Oster Bowl Inox III: a primeira da busca</h3>
+        <p class="text-slate-700 text-base leading-relaxed mb-5">
+          Apareceu em 1º e 2º lugar na busca por mais vendidos, um para cada voltagem, e cada anúncio passou de 2 mil compras no mês passado. A nota é 4,6 de 5, com 2.330 avaliações na 127V e 1.986 na 220V.
+        </p>
+
+        <div id="avaliacao-oster-bowl-inox-iii" class="scroll-mt-24 border border-slate-200 rounded-2xl overflow-hidden mb-10 shadow-sm">
+          <div class="bg-orange-500 px-6 py-4">
+            <span class="inline-block bg-white text-orange-600 text-xs font-bold uppercase tracking-wide px-2.5 py-1 rounded-full mb-2">Primeira da busca</span>
+            <p class="text-white font-black text-xl">Batedeira Planetária Oster Bowl Inox III (OBAT641)</p>
+            <p class="text-orange-100 text-sm mt-1">Voltagem escolhida na página do produto (Amazon Brasil, consultado em 25/11/2026)</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+              <img src="/images/melhor-batedeira-planetaria/batedeira-oster-bowl-inox-iii.webp" alt="Batedeira planetária Oster preta com tigela de inox e tampa antirrespingo" width="980" height="1000" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <p class="text-slate-700 text-sm leading-relaxed mb-4">
+                A batedeira planetária Oster desta lista tem motor de 850 W, tigela de inox de 4 litros e partida suave. O anúncio cita ventosas na base para dar firmeza em receitas pesadas, como pães.
+              </p>
+              <a href="https://www.amazon.com.br/dp/B0C4CF2F67?tag=casaemalta03-20" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon</a>
+              <h4 class="font-bold text-slate-800 mb-3">Ficha Técnica</h4>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Potência:</strong> 850 W</li>
+                <li><strong>Tigela:</strong> inox, 4 litros</li>
+                <li><strong>Velocidades:</strong> 12</li>
+                <li><strong>Batedores:</strong> 3, mais medidor</li>
+                <li><strong>Peso:</strong> cerca de 3,96 kg</li>
+                <li><strong>Garantia:</strong> 12 meses, segundo a ficha</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Tigela de inox</li>
+                    <li>Muitas compras e muitas avaliações</li>
+                    <li>Ventosas na base, segundo o anúncio</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Menor tigela da lista, 4 litros</li>
+                    <li>A ficha da 127V informa que o item não vai à lava-louças</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mt-4">
+                <strong>Veredito:</strong> a opção mais equilibrada da lista para quem quer tigela de inox e um modelo com histórico alto de vendas.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <h3 id="mondial-bp-03-w" class="text-xl font-bold text-slate-900 mb-3">Mondial BP-03-W branca: muitas avaliações</h3>
+        <p class="text-slate-700 text-base leading-relaxed mb-5">
+          A página da versão branca de 110V mostra nota 4,6 de 5 em 2.585 avaliações, o maior total entre os números desta comparação, e a Amazon exibe o mesmo total na versão preta de 110V. Na busca por mais vendidos, quem apareceu foi a preta: a de 220V em 3º lugar, com mais de 500 compras no mês passado.
+        </p>
+
+        <div id="avaliacao-mondial-bp-03-w" class="scroll-mt-24 border border-slate-200 rounded-2xl overflow-hidden mb-10 shadow-sm">
+          <div class="bg-slate-800 px-6 py-4">
+            <span class="inline-block bg-white text-slate-800 text-xs font-bold uppercase tracking-wide px-2.5 py-1 rounded-full mb-2">Mais avaliações</span>
+            <p class="text-white font-black text-xl">Batedeira Planetária Mondial BP-03-W Branca</p>
+            <p class="text-slate-300 text-sm mt-1">Voltagem escolhida na página do produto (Amazon Brasil, consultado em 25/11/2026)</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+              <img src="/images/melhor-batedeira-planetaria/batedeira-mondial-bp-03-w.webp" alt="Batedeira planetária Mondial BP-03-W branca com tigela e tampa antirrespingo" width="1280" height="1065" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <p class="text-slate-700 text-sm leading-relaxed mb-4">
+                A Mondial BP-03-W tem 700 W, 12 velocidades e tigela de 4,5 litros, que a ficha descreve como de plástico. Vem com batedores para massas leves, médias e pesadas.
+              </p>
+              <a href="https://www.amazon.com.br/dp/B07WDD17QR?tag=casaemalta03-20" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon</a>
+              <h4 class="font-bold text-slate-800 mb-3">Ficha Técnica</h4>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Potência:</strong> 700 W</li>
+                <li><strong>Tigela:</strong> plástico, 4,5 litros</li>
+                <li><strong>Velocidades:</strong> 12</li>
+                <li><strong>Batedores:</strong> 3 (massas leves, médias e pesadas)</li>
+                <li><strong>Peso:</strong> cerca de 3,32 kg</li>
+                <li><strong>Garantia:</strong> do fabricante, confira o prazo na página</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Muitas avaliações na página</li>
+                    <li>Tigela de 4,5 litros</li>
+                    <li>Opção na cor branca</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Tigela de plástico</li>
+                    <li>700 W, a menor potência informada, empatada com a Britânia</li>
+                    <li>A ficha informa que o item não vai à lava-louças</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mt-4">
+                <strong>Veredito:</strong> para quem quer um modelo muito avaliado, na cor branca, e aceita tigela de plástico.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <h3 id="philco-pbp90a" class="text-xl font-bold text-slate-900 mb-3">Philco PBP90A: 900 W e tigela de 5 litros</h3>
+        <p class="text-slate-700 text-base leading-relaxed mb-5">
+          Ficou entre as dez primeiras da busca nas duas voltagens, com mais de 500 compras no mês passado em cada anúncio. A nota é 4,4 na 127V (157 avaliações) e 4,5 na 220V (163).
+        </p>
+
+        <div id="avaliacao-philco-pbp90a" class="scroll-mt-24 border border-slate-200 rounded-2xl overflow-hidden mb-10 shadow-sm">
+          <div class="bg-orange-500 px-6 py-4">
+            <span class="inline-block bg-white text-orange-600 text-xs font-bold uppercase tracking-wide px-2.5 py-1 rounded-full mb-2">Mais potência</span>
+            <p class="text-white font-black text-xl">Batedeira Planetária Philco PBP90A</p>
+            <p class="text-orange-100 text-sm mt-1">Voltagem escolhida na página do produto (Amazon Brasil, consultado em 25/11/2026)</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+              <img src="/images/melhor-batedeira-planetaria/batedeira-philco-pbp90a.webp" alt="Batedeira planetária Philco PBP90A preta com três batedores à frente" width="998" height="1092" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <p class="text-slate-700 text-sm leading-relaxed mb-4">
+                Na Philco PBP90A, a ficha, os destaques e a foto indicam 900 W. Atenção: o título do anúncio de 127V cita 800 W, então confira a descrição antes de comprar e a etiqueta na entrega. A tigela é de plástico, com alça.
+              </p>
+              <a href="https://www.amazon.com.br/dp/B0DY8WB3KN?tag=casaemalta03-20" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon</a>
+              <h4 class="font-bold text-slate-800 mb-3">Ficha Técnica</h4>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Potência:</strong> 900 W, segundo a ficha</li>
+                <li><strong>Tigela:</strong> plástico, 5 litros</li>
+                <li><strong>Velocidades:</strong> 12, mais turbo</li>
+                <li><strong>Batedores:</strong> 3 (massas pesadas, leves e claras)</li>
+                <li><strong>Peso:</strong> cerca de 3,78 kg</li>
+                <li><strong>Garantia:</strong> 1 ano, segundo a ficha</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Maior potência informada da lista</li>
+                    <li>Tigela de 5 litros</li>
+                    <li>Função turbo</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Anúncio com informação de potência diferente no título</li>
+                    <li>Poucas avaliações perto da Oster e da Mondial</li>
+                    <li>A ficha informa que o item não vai à lava-louças</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mt-4">
+                <strong>Veredito:</strong> para quem quer tigela grande e mais potência no papel, conferindo a informação antes de comprar.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <h3 id="britania-bbp760p" class="text-xl font-bold text-slate-900 mb-3">Britânia BBP760P: a que vem com 4 batedores</h3>
+        <p class="text-slate-700 text-base leading-relaxed mb-5">
+          A versão 127V foi a 6ª da busca. Cada anúncio passou de 300 compras no mês passado. A nota é 4,5 na 127V (526 avaliações) e 4,2 na 220V (200).
+        </p>
+
+        <div id="avaliacao-britania-bbp760p" class="scroll-mt-24 border border-slate-200 rounded-2xl overflow-hidden mb-10 shadow-sm">
+          <div class="bg-slate-800 px-6 py-4">
+            <span class="inline-block bg-white text-slate-800 text-xs font-bold uppercase tracking-wide px-2.5 py-1 rounded-full mb-2">4 batedores</span>
+            <p class="text-white font-black text-xl">Batedeira Planetária Britânia BBP760P Power Plus</p>
+            <p class="text-slate-300 text-sm mt-1">Voltagem escolhida na página do produto (Amazon Brasil, consultado em 25/11/2026)</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+              <img src="/images/melhor-batedeira-planetaria/batedeira-britania-bbp760p.webp" alt="Batedeira planetária Britânia Power Plus preta com tigela com alça e tampa antirrespingo" width="809" height="790" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <p class="text-slate-700 text-sm leading-relaxed mb-4">
+                A Britânia BBP760P tem 700 W, tigela de plástico de 4,5 litros com alça e quatro batedores. Atenção: há fotos da BBP750, de 600 W, no anúncio. Confira na entrega se veio a Power Plus de 700 W.
+              </p>
+              <a href="https://www.amazon.com.br/dp/B08K1B2NHM?tag=casaemalta03-20" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon</a>
+              <h4 class="font-bold text-slate-800 mb-3">Ficha Técnica</h4>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Potência:</strong> 700 W, segundo a ficha</li>
+                <li><strong>Tigela:</strong> plástico, 4,5 litros, com alça</li>
+                <li><strong>Velocidades:</strong> 12, mais turbo</li>
+                <li><strong>Batedores:</strong> 4 (claras, massas leves, pesadas e delicadas)</li>
+                <li><strong>Extras:</strong> tampa antirrespingo e base antiderrapante</li>
+                <li><strong>Peso:</strong> cerca de 3,38 kg (127V) e 3,24 kg (220V)</li>
+                <li><strong>Garantia:</strong> 12 meses, segundo a ficha</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Um batedor a mais que as outras</li>
+                    <li>Tigela com alça</li>
+                    <li>Tampa antirrespingo</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Fotos do anúncio misturam duas versões</li>
+                    <li>Nota 4,2 na 220V, a mais baixa da lista</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mt-4">
+                <strong>Veredito:</strong> para quem quer mais opções de batedor e vai conferir o modelo recebido.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <h3 id="electrolux-ekm40" class="text-xl font-bold text-slate-900 mb-3">Electrolux EKM40: tigela de inox de 5 litros</h3>
+        <p class="text-slate-700 text-base leading-relaxed mb-5">
+          Ficou em 16º na busca, passou de 200 compras no mês passado e tem nota 4,5 de 5 em 683 avaliações na 127V.
+        </p>
+
+        <div id="avaliacao-electrolux-ekm40" class="scroll-mt-24 border border-slate-200 rounded-2xl overflow-hidden mb-10 shadow-sm">
+          <div class="bg-orange-500 px-6 py-4">
+            <span class="inline-block bg-white text-orange-600 text-xs font-bold uppercase tracking-wide px-2.5 py-1 rounded-full mb-2">Inox de 5 litros</span>
+            <p class="text-white font-black text-xl">Batedeira Planetária Electrolux EKM40</p>
+            <p class="text-orange-100 text-sm mt-1">Voltagem escolhida na página do produto (Amazon Brasil, consultado em 25/11/2026)</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+              <img src="/images/melhor-batedeira-planetaria/batedeira-electrolux-ekm40.webp" alt="Batedeira planetária Electrolux EKM40 cinza escuro com tigela de inox" width="801" height="940" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <p class="text-slate-700 text-sm leading-relaxed mb-4">
+                A Electrolux EKM40 une 750 W a uma tigela de inox de 5 litros. O anúncio destaca massa pesada e informa que os acessórios são compatíveis com lava-louças. É a mais pesada das cinco, com 6,1 kg segundo a ficha.
+              </p>
+              <a href="https://www.amazon.com.br/dp/B0B5YSQ8TJ?tag=casaemalta03-20" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon</a>
+              <h4 class="font-bold text-slate-800 mb-3">Ficha Técnica</h4>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Potência:</strong> 750 W</li>
+                <li><strong>Tigela:</strong> inox, 5 litros</li>
+                <li><strong>Velocidades:</strong> 12, mais função pulsar</li>
+                <li><strong>Batedores:</strong> 3 (fouet, gancho e plano)</li>
+                <li><strong>Peso:</strong> cerca de 6,1 kg</li>
+                <li><strong>Garantia:</strong> 1 ano com o fabricante</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Inox com 5 litros</li>
+                    <li>Acessórios compatíveis com lava-louças, segundo o anúncio</li>
+                    <li>Função pulsar</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Pesada para tirar e guardar no armário a cada uso</li>
+                    <li>Menos compras no mês que Oster, Philco e Britânia</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mt-4">
+                <strong>Veredito:</strong> para quem tem lugar fixo na bancada e quer tigela grande de inox.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin:32px 0;font-family:sans-serif;">
+          <p style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#c2410c;margin:0 0 12px;">Leia também:</p>
+        <div style="display:flex;flex-direction:column;gap:12px;">
+          <a href="/mixer-3-em-1" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:clamp(90px,28vw,200px);flex-shrink:0;">
+              <img src="/images/mixer-3-em-1/capa-mixer-3-em-1.webp" alt="Mixer 3 em 1" style="width:100%;height:100%;min-height:72px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:10px 14px;display:flex;flex-direction:column;justify-content:center;gap:4px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:14px;font-weight:700;color:#1e293b;line-height:1.35;">Mixer 3 em 1: Qual Aguenta Sopa, Vitamina e Chantilly</span>
+            </div>
+          </a>
+        </div>
+        </div>
+
+        <h2 id="como-escolher" class="text-2xl font-bold text-slate-900 mb-4">Como escolher a melhor batedeira planetária?</h2>
+        <ul class="list-disc list-inside space-y-2 text-slate-700 mb-4 ml-2">
+          <li><strong>O que você prepara:</strong> pão e panetone pedem atenção ao limite de massa pesada.</li>
+          <li><strong>Tigela:</strong> nesta lista há opções de inox e de plástico, de 4 a 5 litros.</li>
+          <li><strong>Espaço e peso:</strong> meça a altura livre da bancada, inclusive com a cabeça levantada.</li>
+          <li><strong>Limpeza:</strong> veja no manual quais peças podem ir à lava-louças.</li>
+          <li><strong>Segurança:</strong> a batedeira elétrica residencial está na <a href="https://www.gov.br/inmetro/pt-br/acesso-a-informacao/perguntas-frequentes/avaliacao-da-conformidade/aparelhos-eletrodomesticos-e-similares/quais-eletrodomesticos-estao-no-escopo-da-portaria-inmetro-ndeg-148-de-2022" target="_blank" rel="noopener" class="text-orange-500 font-semibold hover:underline">lista de aparelhos da certificação do Inmetro</a>. Procure o selo no produto ou na embalagem.</li>
+        </ul>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Ficaram fora a KitchenAid Artisan e a Oster Digital, mais caras, e a Arno Bake Easy KM10, que tinha só 37 avaliações. Para picar, ralar e fatiar, o aparelho é outro: veja o <a href="/melhor-multiprocessador-de-alimentos" class="text-orange-500 font-semibold hover:underline">multiprocessador de alimentos</a>.
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          Para a maioria das pessoas que procura uma primeira planetária, a Oster é o nosso ponto de partida. A Electrolux faz sentido para quem quer mais litros em inox, e a Mondial para quem dá mais peso ao volume de avaliações. Antes de fechar, confira preço, voltagem, modelo e avaliações recentes.
+        </p>
+
+        <h2 id="faq" class="text-2xl font-bold text-slate-900 mb-6">Perguntas frequentes</h2>
+        <div class="space-y-3 mb-10">
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Dá para bater massa de pão na batedeira planetária?</span>
+              <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Sim, os cinco modelos desta lista trazem batedor para massas pesadas. A capacidade da tigela não é a quantidade de massa que cada um aguenta. Siga o limite de farinha, a velocidade e o tempo de uso indicados no manual.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Qual a diferença entre batedeira planetária e batedeira comum?</span>
+              <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Na planetária, o batedor gira em torno do próprio eixo e também percorre a tigela, que fica parada. Em muitas batedeiras comuns de suporte, os batedores ficam no mesmo lugar e a tigela gira.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Qual a melhor potência para uma batedeira planetária?</span>
+              <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Não há um número ideal para todas as receitas. Os modelos comparados vão de 700 W a 900 W, e a Philco PBP90A informa a maior potência, embora o título da versão 127V cite 800 W. Potência maior não garante que aguente mais massa, então confira o limite no manual.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Qual a melhor batedeira planetária para panetone?</span>
+              <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Pelas fichas, nossa escolha para começar é a Oster Bowl Inox III, com 850 W e tigela de inox de 4 litros. Para tigela de inox maior, há a Electrolux EKM40, de 5 litros. Não testamos nenhuma com panetone, então confira o limite de farinha no manual.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Batedeira planetária vale a pena?</span>
+              <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Vale a pena para quem pretende fazer pão, panetone e outras massas que precisam ser trabalhadas por mais tempo. Se você só faz bolos simples e a sua batedeira atende bem, a troca pode esperar.
+            </div>
+          </details>
+        </div>
+
+        <!-- Schema FAQ -->
+        <script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Dá para bater massa de pão na batedeira planetária?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim, os cinco modelos desta lista trazem batedor para massas pesadas. A capacidade da tigela não é a quantidade de massa que cada um aguenta. Siga o limite de farinha, a velocidade e o tempo de uso indicados no manual."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Qual a diferença entre batedeira planetária e batedeira comum?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Na planetária, o batedor gira em torno do próprio eixo e também percorre a tigela, que fica parada. Em muitas batedeiras comuns de suporte, os batedores ficam no mesmo lugar e a tigela gira."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Qual a melhor potência para uma batedeira planetária?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Não há um número ideal para todas as receitas. Os modelos comparados vão de 700 W a 900 W, e a Philco PBP90A informa a maior potência, embora o título da versão 127V cite 800 W. Potência maior não garante que aguente mais massa, então confira o limite no manual."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Qual a melhor batedeira planetária para panetone?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pelas fichas, nossa escolha para começar é a Oster Bowl Inox III, com 850 W e tigela de inox de 4 litros. Para tigela de inox maior, há a Electrolux EKM40, de 5 litros. Não testamos nenhuma com panetone, então confira o limite de farinha no manual."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Batedeira planetária vale a pena?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vale a pena para quem pretende fazer pão, panetone e outras massas que precisam ser trabalhadas por mais tempo. Se você só faz bolos simples e a sua batedeira atende bem, a troca pode esperar."
+      }
+    }
+  ]
+})} />
+
+        <!-- Schema ItemList (Product de afiliado, sem offers) -->
+        <script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "5 batedeiras planetárias entre as mais vendidas na Amazon Brasil",
+  "numberOfItems": 5,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "Product",
+        "name": "Batedeira Planetária Oster Bowl Inox III (OBAT641)",
+        "image": "https://www.casaemalta.com.br/images/melhor-batedeira-planetaria/batedeira-oster-bowl-inox-iii.webp",
+        "description": "A batedeira planetária Oster desta lista tem motor de 850 W, tigela de inox de 4 litros e partida suave. O anúncio cita ventosas na base para dar firmeza em receitas pesadas, como pães.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Oster"
+        },
+        "url": "https://www.amazon.com.br/dp/B0C4CF2F67?tag=casaemalta03-20"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "Product",
+        "name": "Batedeira Planetária Mondial BP-03-W Branca",
+        "image": "https://www.casaemalta.com.br/images/melhor-batedeira-planetaria/batedeira-mondial-bp-03-w.webp",
+        "description": "A Mondial BP-03-W tem 700 W, 12 velocidades e tigela de 4,5 litros, que a ficha descreve como de plástico. Vem com batedores para massas leves, médias e pesadas.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Mondial"
+        },
+        "url": "https://www.amazon.com.br/dp/B07WDD17QR?tag=casaemalta03-20"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "Product",
+        "name": "Batedeira Planetária Philco PBP90A",
+        "image": "https://www.casaemalta.com.br/images/melhor-batedeira-planetaria/batedeira-philco-pbp90a.webp",
+        "description": "Na Philco PBP90A, a ficha, os destaques e a foto indicam 900 W. Atenção: o título do anúncio de 127V cita 800 W, então confira a descrição antes de comprar e a etiqueta na entrega. A tigela é de plástico, com alça.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Philco"
+        },
+        "url": "https://www.amazon.com.br/dp/B0DY8WB3KN?tag=casaemalta03-20"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@type": "Product",
+        "name": "Batedeira Planetária Britânia BBP760P Power Plus",
+        "image": "https://www.casaemalta.com.br/images/melhor-batedeira-planetaria/batedeira-britania-bbp760p.webp",
+        "description": "A Britânia BBP760P tem 700 W, tigela de plástico de 4,5 litros com alça e quatro batedores. Atenção: há fotos da BBP750, de 600 W, no anúncio. Confira na entrega se veio a Power Plus de 700 W.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Britânia"
+        },
+        "url": "https://www.amazon.com.br/dp/B08K1B2NHM?tag=casaemalta03-20"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "item": {
+        "@type": "Product",
+        "name": "Batedeira Planetária Electrolux EKM40",
+        "image": "https://www.casaemalta.com.br/images/melhor-batedeira-planetaria/batedeira-electrolux-ekm40.webp",
+        "description": "A Electrolux EKM40 une 750 W a uma tigela de inox de 5 litros. O anúncio destaca massa pesada e informa que os acessórios são compatíveis com lava-louças. É a mais pesada das cinco, com 6,1 kg segundo a ficha.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Electrolux"
+        },
+        "url": "https://www.amazon.com.br/dp/B0B5YSQ8TJ?tag=casaemalta03-20"
+      }
+    }
+  ]
+})} />
+
+        <div style="margin:24px 0 0;font-family:sans-serif;">
+          <p style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#c2410c;margin:0 0 12px;">Leia também:</p>
+        <div style="display:flex;flex-direction:column;gap:12px;">
+          <a href="/melhor-multiprocessador-de-alimentos" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:clamp(90px,28vw,200px);flex-shrink:0;">
+              <img src="/images/multiprocessador/capa-multiprocessador.webp" alt="Multiprocessador de alimentos" style="width:100%;height:100%;min-height:72px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:10px 14px;display:flex;flex-direction:column;justify-content:center;gap:4px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:14px;font-weight:700;color:#1e293b;line-height:1.35;">Multiprocessador de Alimentos Vale a Pena? Review de Quem Usa em Casa</span>
+            </div>
+          </a>
+          <a href="/liquidificador-vs-processador-de-alimentos" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:clamp(90px,28vw,200px);flex-shrink:0;">
+              <img src="/images/liquidificador-vs-processador/capa-liquidificador-vs-processador.webp" alt="Liquidificador ou processador de alimentos" style="width:100%;height:100%;min-height:72px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:10px 14px;display:flex;flex-direction:column;justify-content:center;gap:4px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:14px;font-weight:700;color:#1e293b;line-height:1.35;">Liquidificador ou Processador de Alimentos: Qual Comprar Primeiro?</span>
+            </div>
+          </a>
+        </div>
+        </div>
+
+      </div>
+    )}
+
     {isMelhorMopGiratorio && (
       <div>
 
@@ -32648,6 +33293,6 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
       Este artigo pode conter links de afiliados. Se você comprar por um desses links, posso receber uma comissão sem custo adicional para você.
     </p>
 
-    <AuthorBio />
+    <AuthorBio novoTexto={post.dataCriacao >= '2026-11-25'} />
   </div>
 </BaseLayout>

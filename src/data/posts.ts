@@ -713,6 +713,16 @@ export const posts: Post[] = [
     categoria: 'rankings-e-listas',
     categoriaLabel: 'Rankings e Listas',
     categoriaColor: 'bg-green-100 text-green-700',
+  },
+  {
+    slug: 'melhor-batedeira-planetaria',
+    titulo: 'Melhor Batedeira Planetária para Bolo, Pão e Panetone',
+    resumo: 'Melhor batedeira planetária: comparamos 5 modelos entre os mais vendidos da Amazon Brasil para bolo, pão e panetone.',
+    tempo: '8 min de leitura',
+    imagem: '/images/melhor-batedeira-planetaria/capa-melhor-batedeira-planetaria.webp',
+    categoria: 'rankings-e-listas',
+    categoriaLabel: 'Rankings e Listas',
+    categoriaColor: 'bg-green-100 text-green-700',
   }
 ];
 
