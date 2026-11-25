@@ -1,4 +1,6 @@
 ---
+// Texto novo só nos artigos criados a partir de 25/11/2026; os antigos ficam como estavam
+const { novoTexto = false } = Astro.props;
 ---
 
 <div class="mt-16 border-t border-slate-200 pt-10">
@@ -15,7 +17,7 @@
       <p class="text-sm font-semibold text-orange-500 uppercase tracking-wide">Escrito por</p>
       <h3 class="text-lg font-black text-slate-900">Claudia Castro</h3>
       <p class="text-sm text-slate-600 leading-relaxed">
-        Especialista em Economia Doméstica e criadora dos blogs <a href="https://www.casaemalta.com.br" class="text-orange-500 font-semibold hover:underline">Casa em Alta</a> e <a href="https://www.indicacasa.com.br" target="_blank" rel="noopener" class="text-orange-500 font-semibold hover:underline">Indica Casa</a>. Com formação voltada para gestão do lar, custo-benefício e consumo consciente, testa e avalia utilidades domésticas com critério técnico, comparando modelos reais e contando o que funciona de verdade.
+        Especialista em Economia Doméstica e criadora dos blogs <a href="https://www.casaemalta.com.br" class="text-orange-500 font-semibold hover:underline">Casa em Alta</a> e <a href="https://www.indicacasa.com.br" target="_blank" rel="noopener" class="text-orange-500 font-semibold hover:underline">Indica Casa</a>. Com formação voltada para gestão do lar, custo-benefício e consumo consciente, {novoTexto ? 'compara utilidades domésticas. Cada artigo informa se o produto foi usado em casa ou se a análise se baseia nos dados dos anúncios.' : 'testa e avalia utilidades domésticas com critério técnico, comparando modelos reais e contando o que funciona de verdade.'}
       </p>
     </div>
   </div>
