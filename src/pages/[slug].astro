@@ -482,6 +482,13 @@ const posts: Record<string, { titulo: string; descricao: string; categoria: stri
     dataCriacao: '2026-11-25',
     dataModificacao: '2026-11-25',
   },
+  'extratora-wap': {
+    titulo: 'Extratora WAP para Sofá, Colchão e Carro: Diferenças Entre os Modelos',
+    descricao: 'Extratora WAP para sofá, colchão e carro: compare W2, W3, W4, Home Cleaner e Carpet Cleaner por sucção, reservatório, peso e usos citados.',
+    categoria: 'Rankings e Listas',
+    dataCriacao: '2026-11-25',
+    dataModificacao: '2026-11-25',
+  },
 };
 
 export function getStaticPaths() {
@@ -551,6 +558,7 @@ export function getStaticPaths() {
     'climatizador-wap': {},
     'mixer-3-em-1': {},
     'melhor-ferro-de-passar-roupa': {},
+    'extratora-wap': {},
     'melhor-batedeira-planetaria': {},
   }).map((slug) => ({ params: { slug } }));
 }
@@ -659,6 +667,7 @@ const isClimatizadorMidea = slug === 'climatizador-midea';
 const isClimatizadorWap = slug === 'climatizador-wap';
 const isMixer3em1 = slug === 'mixer-3-em-1';
 const isMelhorFerroPassarRoupa = slug === 'melhor-ferro-de-passar-roupa';
+const isExtratoraWap = slug === 'extratora-wap';
 const isMelhorBatedeiraPlanetaria = slug === 'melhor-batedeira-planetaria';
 
 const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
@@ -726,12 +735,13 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
   : isClimatizadorWap ? '/images/climatizador-wap/capa-climatizador-wap.webp'
   : isMixer3em1 ? '/images/mixer-3-em-1/capa-mixer-3-em-1.webp'
   : isMelhorFerroPassarRoupa ? '/images/melhor-ferro-de-passar-roupa/capa-melhor-ferro-de-passar-roupa.webp'
+  : isExtratoraWap ? '/images/extratora-wap/capa-extratora-wap.webp'
   : isMelhorBatedeiraPlanetaria ? '/images/melhor-batedeira-planetaria/capa-melhor-batedeira-planetaria.webp'
   : undefined;
 ---
 
 <BaseLayout
-  title={isPanelaEletricaOuConvencional || isMelhoresCafeteiras || isProjetorShopee || isComoArrumarArmarios || isLavaSeca || isFrigideiraAntiaderenteFerro || isFrigideira || isMelhorFrigideiraAntiaderente || isMelhorClimatizador || isArCondicionadoPortatil || isMelhorVentiladorColuna || isMelhorUmidificadorQuarto || isClimatizadorOuVentilador || isMelhorFrigobar || isMelhorSanduicheira || isMelhorCooktop || isMelhorMopGiratorio || isClimatizadorQuenteFrio || isClimatizadorMidea || isClimatizadorWap || isMixer3em1 || isMelhorFerroPassarRoupa || isMelhorBatedeiraPlanetaria ? post.titulo : `${post.titulo} - Casa em Alta`}
+  title={isPanelaEletricaOuConvencional || isMelhoresCafeteiras || isProjetorShopee || isComoArrumarArmarios || isLavaSeca || isFrigideiraAntiaderenteFerro || isFrigideira || isMelhorFrigideiraAntiaderente || isMelhorClimatizador || isArCondicionadoPortatil || isMelhorVentiladorColuna || isMelhorUmidificadorQuarto || isClimatizadorOuVentilador || isMelhorFrigobar || isMelhorSanduicheira || isMelhorCooktop || isMelhorMopGiratorio || isClimatizadorQuenteFrio || isClimatizadorMidea || isClimatizadorWap || isMixer3em1 || isMelhorFerroPassarRoupa || isExtratoraWap || isMelhorBatedeiraPlanetaria ? post.titulo : `${post.titulo} - Casa em Alta`}
   description={post.descricao}
   image={coverImage}
   type="article"
@@ -32777,6 +32787,651 @@ const coverImage = isAspiradores ? '/images/aspiradores/capa-aspiradores.webp'
             <div style="padding:10px 14px;display:flex;flex-direction:column;justify-content:center;gap:4px;">
               <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
               <span style="font-size:14px;font-weight:700;color:#1e293b;line-height:1.35;">Liquidificador ou Processador de Alimentos: Qual Comprar Primeiro?</span>
+            </div>
+          </a>
+        </div>
+        </div>
+
+      </div>
+    )}
+
+    {isExtratoraWap && (
+      <div>
+
+        <!-- Capa -->
+        <div class="rounded-2xl overflow-hidden mb-8 shadow-md">
+          <img src="/images/extratora-wap/capa-extratora-wap.webp" alt="Pessoa limpando um sofá de tecido claro com uma extratora portátil" width="1280" height="720" class="w-full h-auto object-cover" loading="eager" />
+        </div>
+
+        <!-- Introdução -->
+        <div class="bg-orange-50 border border-orange-100 rounded-2xl p-6 mb-8">
+          <p class="text-slate-800 text-base leading-relaxed mb-3">
+            Para sofá, colchão e banco de carro, a extratora WAP portátil pela qual sugerimos começar é a W3: o anúncio cita os três usos, ela apareceu em 1º na busca e tem muito mais avaliações que a W4, que cita os mesmos usos. Para carpetes e áreas maiores, a Carpet Cleaner 25 L, de barril, informa o maior vácuo e o maior tanque de água suja.
+          </p>
+          <p class="text-slate-800 text-base leading-relaxed mb-3">
+            Nunca usei uma extratora, mas tenho muita vontade de comprar uma para limpar colchões, sofás e poltronas. Ela é mais um item da minha lista de desejos.
+          </p>
+          <p class="text-slate-800 text-base leading-relaxed">
+            Por isso, este artigo não é um teste. É uma comparação feita com os dados dos anúncios da Amazon Brasil, consultados em 25/11/2026, na busca por "Extratora WAP" ordenada pelos mais vendidos.
+          </p>
+        </div>
+
+        <!-- Em resumo -->
+        <div class="bg-purple-50 border border-purple-100 rounded-2xl p-6 mb-10">
+          <p class="text-slate-800 font-bold text-base mb-3">Em resumo</p>
+          <p class="text-sm text-slate-700 leading-relaxed">
+            Primeira da busca: <a href="#avaliacao-spot-cleaner-w3" class="text-orange-500 font-semibold hover:underline"><strong>W3</strong></a>. Mais água limpa entre as portáteis: <a href="#avaliacao-spot-cleaner-w2" class="text-orange-500 font-semibold hover:underline"><strong>W2</strong></a>. Mais leve: <a href="#avaliacao-extratora-w4" class="text-orange-500 font-semibold hover:underline"><strong>W4</strong></a>. Barril com mais bicos: <a href="#avaliacao-home-cleaner-20l" class="text-orange-500 font-semibold hover:underline"><strong>Home Cleaner 20 L</strong></a>. Maior vácuo: <a href="#avaliacao-carpet-cleaner-25l" class="text-orange-500 font-semibold hover:underline"><strong>Carpet Cleaner 25 L</strong></a>.
+          </p>
+        </div>
+
+        <!-- Índice -->
+        <nav class="border border-slate-200 rounded-2xl p-6 mb-10 bg-white">
+          <p class="font-bold text-slate-800 mb-3">Índice</p>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#tabela-comparativa" class="text-orange-500 hover:text-orange-600 font-medium">Comparação das cinco extratoras</a></li>
+            <li><a href="#portatil-ou-barril" class="text-orange-500 hover:text-orange-600 font-medium">Extratora WAP portátil ou de barril?</a></li>
+            <li><a href="#modelos" class="text-orange-500 hover:text-orange-600 font-medium">Os 5 modelos analisados</a></li>
+            <li><a href="#como-usar" class="text-orange-500 hover:text-orange-600 font-medium">Como usar extratora WAP no sofá, colchão e carro?</a></li>
+            <li><a href="#faq" class="text-orange-500 hover:text-orange-600 font-medium">Perguntas frequentes</a></li>
+          </ul>
+        </nav>
+
+        <h2 id="tabela-comparativa" class="text-2xl font-bold text-slate-900 mb-4">Comparação das cinco extratoras WAP</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          A potência, em watts (W), não é a medida da sucção. A sucção aparece em outro número, o vácuo, em mbar. Nesta lista, a W4 tem a maior potência, 1.650 W, mas informa 120 mbar. A Carpet Cleaner tem 1.600 W e informa 265 mbar. O vácuo, sozinho, também não mostra o resultado da limpeza.
+        </p>
+        <div class="overflow-x-auto mb-3">
+          <table class="w-full text-sm border-collapse"><caption class="sr-only">Comparação de 5 extratoras WAP: formato, vácuo, potência, água limpa, peso e usos citados (fontes: anúncios da Amazon Brasil, 25/11/2026)</caption>
+            <thead>
+              <tr class="bg-slate-100">
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Modelo</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Formato</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Vácuo</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Potência</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Água limpa</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">Peso</th>
+                <th class="text-left px-4 py-3 font-bold text-slate-800 border border-slate-200">O texto do anúncio cita</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-white">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200"><a href="#avaliacao-spot-cleaner-w3" class="text-orange-600 hover:text-orange-700 underline font-semibold">Spot Cleaner W3</a></td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Portátil</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">110 mbar</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">1.450 W</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">1,08 L</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">4,5 kg</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Sofá, colchão e carro</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200"><a href="#avaliacao-spot-cleaner-w2" class="text-orange-600 hover:text-orange-700 underline font-semibold">Spot Cleaner W2</a></td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Portátil</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">122 mbar</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">1.600 W</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">1,45 L</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">4,4 kg</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Sofá e carro</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200"><a href="#avaliacao-extratora-w4" class="text-orange-600 hover:text-orange-700 underline font-semibold">W4</a></td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Portátil</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">120 mbar</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">1.650 W</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">1 L</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">2,4 kg</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Sofá, colchão e carro</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200"><a href="#avaliacao-home-cleaner-20l" class="text-orange-600 hover:text-orange-700 underline font-semibold">Home Cleaner 20 L</a></td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Barril</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">220 mbar</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">1.600 W</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">6 L</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">8,2 kg</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Estofados</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="px-4 py-3 font-medium text-slate-700 border border-slate-200"><a href="#avaliacao-carpet-cleaner-25l" class="text-orange-600 hover:text-orange-700 underline font-semibold">Carpet Cleaner 25 L</a></td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Barril</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">265 mbar</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">1.600 W</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">6 L</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">7,8 kg</td>
+                <td class="px-4 py-3 text-slate-600 border border-slate-200">Sofá e colchão</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="text-slate-500 text-xs mb-10">"Estofados": o texto do anúncio não especifica sofá, colchão ou carro.</p>
+
+        <h2 id="portatil-ou-barril" class="text-2xl font-bold text-slate-900 mb-4">Extratora WAP portátil ou de barril?</h2>
+        <ul class="list-disc list-inside space-y-2 text-slate-700 mb-10 ml-2">
+          <li><strong>Portátil (W2, W3 e W4):</strong> de 1 a 1,45 L de água limpa e mangueira curta. Faz sentido para manchas, assentos de sofá, poltronas e bancos de carro.</li>
+          <li><strong>Barril (Home Cleaner e Carpet Cleaner):</strong> 6 L de água limpa, mangueira mais longa e bicos para áreas maiores. Pede mais espaço e pesa cerca de 8 kg.</li>
+        </ul>
+
+        <h2 id="modelos" class="text-2xl font-bold text-slate-900 mb-4">Os 5 modelos analisados</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-8">
+          Posições, notas, estoque e compras do mês são os que apareciam em 25/11/2026 e podem mudar. Confira sempre a voltagem antes de fechar o pedido.
+        </p>
+
+        <h3 id="spot-cleaner-w3" class="text-xl font-bold text-slate-900 mb-3">Extratora WAP W3: a primeira da busca</h3>
+        <p class="text-slate-700 text-base leading-relaxed mb-5">
+          A W3 ficou em 1º (220V) e 2º (127V) na busca. A 127V tinha nota 4,7 de 5 em 4.130 avaliações e mais de 5 mil compras no mês passado.
+        </p>
+
+        <div id="avaliacao-spot-cleaner-w3" class="scroll-mt-24 border border-slate-200 rounded-2xl overflow-hidden mb-10 shadow-sm">
+          <div class="bg-orange-500 px-6 py-4">
+            <span class="inline-block bg-white text-orange-600 text-xs font-bold uppercase tracking-wide px-2.5 py-1 rounded-full mb-2">Primeira da busca</span>
+            <p class="text-white font-black text-xl">WAP Spot Cleaner W3</p>
+            <p class="text-orange-100 text-sm mt-1">Portátil, confira a voltagem na página (Amazon Brasil, consultado em 25/11/2026)</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+              <img src="/images/extratora-wap/extratora-wap-spot-cleaner-w3.webp" alt="Extratora WAP Spot Cleaner W3 cinza e roxa com mangueira e bocal transparente" width="1280" height="1075" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <p class="text-slate-700 text-sm leading-relaxed mb-4">
+                A WAP W3 borrifa, esfrega e extrai com o mesmo bico, e traz um bico de autolimpeza. O anúncio cita tapetes, estofados, sofás, colchões, carpetes e bancos de carro.
+              </p>
+              <a href="https://www.amazon.com.br/dp/B0CH3WBKN6?tag=casaemalta03-20" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon</a>
+              <h4 class="font-bold text-slate-800 mb-3">Ficha Técnica</h4>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Potência:</strong> 1.450 W</li>
+                <li><strong>Sucção (vácuo):</strong> 110 mbar</li>
+                <li><strong>Água limpa:</strong> 1,08 L</li>
+                <li><strong>Água suja:</strong> 0,85 L</li>
+                <li><strong>Mangueira:</strong> 1,2 m</li>
+                <li><strong>Cabo:</strong> 3 m na ficha (uma imagem do anúncio cita 5 m)</li>
+                <li><strong>Peso:</strong> 4,5 kg</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Anúncio cita sofá, colchão e banco de carro</li>
+                    <li>Maior volume de avaliações entre as cinco</li>
+                    <li>Bico de autolimpeza</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Menor potência e menor vácuo informados da lista</li>
+                    <li>Informação diferente sobre o tamanho do cabo</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mt-4">
+                <strong>Veredito:</strong> o ponto de partida para quem quer uma portátil para sofá, colchão e carro e valoriza o histórico de avaliações.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <h3 id="spot-cleaner-w2" class="text-xl font-bold text-slate-900 mb-3">Extratora WAP W2: mais água limpa entre as portáteis</h3>
+        <p class="text-slate-700 text-base leading-relaxed mb-5">
+          A W2 apareceu em 4º (220V) e 6º (127V). A 127V tinha nota 4,6 em 2.065 avaliações e mais de 300 compras no mês passado.
+        </p>
+
+        <div id="avaliacao-spot-cleaner-w2" class="scroll-mt-24 border border-slate-200 rounded-2xl overflow-hidden mb-10 shadow-sm">
+          <div class="bg-slate-800 px-6 py-4">
+            <span class="inline-block bg-white text-slate-800 text-xs font-bold uppercase tracking-wide px-2.5 py-1 rounded-full mb-2">1,45 L de água limpa</span>
+            <p class="text-white font-black text-xl">WAP Spot Cleaner W2</p>
+            <p class="text-slate-300 text-sm mt-1">Portátil, link para a versão 127V (Amazon Brasil, consultado em 25/11/2026)</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+              <img src="/images/extratora-wap/extratora-wap-spot-cleaner-w2.webp" alt="Extratora WAP Spot Cleaner W2 preta e turquesa com mangueira e bocal ao lado" width="1280" height="895" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <p class="text-slate-700 text-sm leading-relaxed mb-4">
+                A WAP W2 também borrifa, esfrega e extrai, com tanques separados para água limpa e suja. O texto do anúncio cita estofados, tapetes, sofás e bancos de carro. O colchão aparece em uma das fotos, mas não no texto.
+              </p>
+              <a href="https://www.amazon.com.br/dp/B0BT2LQ848?tag=casaemalta03-20" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon (127V)</a>
+              <h4 class="font-bold text-slate-800 mb-3">Ficha Técnica</h4>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Potência:</strong> 1.600 W</li>
+                <li><strong>Sucção (vácuo):</strong> 122 mbar</li>
+                <li><strong>Água limpa:</strong> 1,45 L</li>
+                <li><strong>Água suja:</strong> os dados dos anúncios não batem</li>
+                <li><strong>Mangueira:</strong> 1,2 m</li>
+                <li><strong>Cabo:</strong> 3 m</li>
+                <li><strong>Peso:</strong> 4,4 kg</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Maior reservatório de água limpa entre as portáteis</li>
+                    <li>Maior vácuo informado entre as portáteis, por pouco</li>
+                    <li>Bico de autolimpeza</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>O texto do anúncio não cita colchão</li>
+                    <li>Capacidade de água suja pouco clara</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mt-4">
+                <strong>Veredito:</strong> para quem tem tomada 127V e quer um tanque de água limpa maior que o da W3 e o da W4.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <h3 id="extratora-w4" class="text-xl font-bold text-slate-900 mb-3">Extratora WAP W4: 2,4 kg e cabo de 5 m</h3>
+        <p class="text-slate-700 text-base leading-relaxed mb-5">
+          A W4 de 220V foi a 3ª da busca, com mais de 900 compras no mês passado e nota 4,4 em 121 avaliações.
+        </p>
+
+        <div id="avaliacao-extratora-w4" class="scroll-mt-24 border border-slate-200 rounded-2xl overflow-hidden mb-10 shadow-sm">
+          <div class="bg-orange-500 px-6 py-4">
+            <span class="inline-block bg-white text-orange-600 text-xs font-bold uppercase tracking-wide px-2.5 py-1 rounded-full mb-2">A mais leve</span>
+            <p class="text-white font-black text-xl">WAP Spot Cleaner W4</p>
+            <p class="text-orange-100 text-sm mt-1">Portátil, link para a versão 220V (Amazon Brasil, consultado em 25/11/2026)</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+              <img src="/images/extratora-wap/extratora-wap-w4.webp" alt="Extratora WAP W4 cinza com detalhe azul, mangueira e bocal preto" width="850" height="701" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <p class="text-slate-700 text-sm leading-relaxed mb-4">
+                A WAP W4 pesa 2,4 kg e tem cabo de 5 metros. O anúncio cita estofados, tapetes, sofás, colchões, carpetes e interior do carro. Atenção: a página da 220V mostra 127V em um dos campos, e a mangueira aparece ora com 1 m, ora com 1,2 m. Confira a voltagem no título e na opção selecionada antes de comprar. Ao receber, veja a etiqueta antes de ligar.
+              </p>
+              <a href="https://www.amazon.com.br/dp/B0GSRT6RKT?tag=casaemalta03-20" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon (220V)</a>
+              <h4 class="font-bold text-slate-800 mb-3">Ficha Técnica</h4>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Potência:</strong> 1.650 W</li>
+                <li><strong>Sucção (vácuo):</strong> 120 mbar</li>
+                <li><strong>Água limpa:</strong> 1 L</li>
+                <li><strong>Água suja:</strong> 600 ml de capacidade útil</li>
+                <li><strong>Mangueira:</strong> 1 m ou 1,2 m, conforme o trecho do anúncio</li>
+                <li><strong>Cabo:</strong> 5 m</li>
+                <li><strong>Peso:</strong> 2,4 kg</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>A mais leve das cinco</li>
+                    <li>Maior potência informada</li>
+                    <li>Cabo de 5 m</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Reservatórios menores que os da W3</li>
+                    <li>Maior ruído informado entre as portáteis, 86 dB(A)</li>
+                    <li>Anúncio com informações que não batem</li>
+                    <li>Bem menos avaliações que a W3 e a W2</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mt-4">
+                <strong>Veredito:</strong> para quem tem tomada 220V, vai carregar o aparelho até o carro ou subir escada com ele, e aceita esvaziar o tanque mais vezes.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <h3 id="home-cleaner-20l" class="text-xl font-bold text-slate-900 mb-3">Extratora WAP Home Cleaner 20 L: estofado, carpete e piso</h3>
+        <p class="text-slate-700 text-base leading-relaxed mb-5">
+          A Home Cleaner de 127V foi a 8ª da busca, com mais de 50 compras no mês passado e nota 4,5 em 648 avaliações.
+        </p>
+
+        <div id="avaliacao-home-cleaner-20l" class="scroll-mt-24 border border-slate-200 rounded-2xl overflow-hidden mb-10 shadow-sm">
+          <div class="bg-slate-800 px-6 py-4">
+            <span class="inline-block bg-white text-slate-800 text-xs font-bold uppercase tracking-wide px-2.5 py-1 rounded-full mb-2">Mais bicos</span>
+            <p class="text-white font-black text-xl">WAP Home Cleaner 20 L</p>
+            <p class="text-slate-300 text-sm mt-1">Barril, escolha o botão da sua voltagem (Amazon Brasil, consultado em 25/11/2026)</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+              <img src="/images/extratora-wap/extratora-wap-home-cleaner-20l.webp" alt="Extratora WAP Home Cleaner amarela e preta com mangueira, haste de metal e bocal largo" width="1247" height="1280" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <p class="text-slate-700 text-sm leading-relaxed mb-4">
+                A WAP Home Cleaner é um barril com rodas, que borrifa e aspira ao mesmo tempo ou separadamente. O anúncio cita pisos frios, tapetes, carpetes e estofados.
+              </p>
+              <a href="https://www.amazon.com.br/dp/B0756KV7B6?tag=casaemalta03-20" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-3 transition-colors">Ver preço na Amazon (127V)</a>
+              <a href="https://www.amazon.com.br/dp/B0756LQFF9?tag=casaemalta03-20" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon (220V)</a>
+              <h4 class="font-bold text-slate-800 mb-3">Ficha Técnica</h4>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Potência:</strong> 1.600 W</li>
+                <li><strong>Sucção (vácuo):</strong> 220 mbar</li>
+                <li><strong>Água limpa:</strong> 6 L</li>
+                <li><strong>Água suja:</strong> 11 L</li>
+                <li><strong>Mangueira:</strong> 2 m</li>
+                <li><strong>Cabo:</strong> 4,5 m, na tabela comparativa do anúncio</li>
+                <li><strong>Alcance total:</strong> mais de 8 m, segundo o anúncio</li>
+                <li><strong>Peso:</strong> 8,2 kg</li>
+                <li><strong>Bicos:</strong> grande para piso e carpete, pequeno para estofados, de canto e múltiplo</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Bico próprio para estofados</li>
+                    <li>6 L de água limpa</li>
+                    <li>Também atende piso e carpete</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Pesa 8,2 kg, o maior peso da lista</li>
+                    <li>Precisa de mais espaço para guardar</li>
+                    <li>O texto não cita colchão nem carro</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mt-4">
+                <strong>Veredito:</strong> para quem vai limpar carpete, tapete e estofados em maior quantidade e tem onde guardar um barril.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <h3 id="carpet-cleaner-25l" class="text-xl font-bold text-slate-900 mb-3">WAP Carpet Cleaner 25 L: a de maior capacidade</h3>
+        <p class="text-slate-700 text-base leading-relaxed mb-5">
+          A Carpet Cleaner de 220V foi a 16ª da busca, com nota 4,5 em 204 avaliações. A página não mostrava o número de compras do mês. A 127V, que a ficha lista com outro código de modelo, tinha nota 4,1 em 73 avaliações e só 1 unidade na consulta.
+        </p>
+
+        <div id="avaliacao-carpet-cleaner-25l" class="scroll-mt-24 border border-slate-200 rounded-2xl overflow-hidden mb-10 shadow-sm">
+          <div class="bg-orange-500 px-6 py-4">
+            <span class="inline-block bg-white text-orange-600 text-xs font-bold uppercase tracking-wide px-2.5 py-1 rounded-full mb-2">Maior vácuo</span>
+            <p class="text-white font-black text-xl">WAP Carpet Cleaner 25 L</p>
+            <p class="text-orange-100 text-sm mt-1">Barril, escolha o botão da sua voltagem (Amazon Brasil, consultado em 25/11/2026)</p>
+          </div>
+          <div class="p-6 flex flex-col md:flex-row gap-8">
+            <div class="w-40 md:w-44 mx-auto md:mx-0 flex-shrink-0 flex items-center justify-center bg-white rounded-xl p-4 h-64">
+              <img src="/images/extratora-wap/extratora-wap-carpet-cleaner-25l.webp" alt="Extratora WAP Carpet Cleaner de barril amarela e preta com mangueira cinza e bocal largo" width="1213" height="1280" class="max-w-full max-h-full object-contain rounded-lg" loading="lazy" />
+            </div>
+            <div class="flex-1">
+              <p class="text-slate-700 text-sm leading-relaxed mb-4">
+                A WAP Carpet Cleaner tem motor de duplo estágio e informa 265 mbar. O anúncio cita sofás, colchões, pisos, carpetes e estofados. Vem com um bico pequeno para estofados.
+              </p>
+              <a href="https://www.amazon.com.br/dp/B0774X8CFY?tag=casaemalta03-20" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-3 transition-colors">Ver preço na Amazon (127V)</a>
+              <a href="https://www.amazon.com.br/dp/B0774Y387B?tag=casaemalta03-20" target="_blank" rel="nofollow sponsored noopener" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 rounded-xl mb-6 transition-colors">Ver preço na Amazon (220V)</a>
+              <h4 class="font-bold text-slate-800 mb-3">Ficha Técnica</h4>
+              <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                <li><strong>Potência:</strong> 1.600 W</li>
+                <li><strong>Sucção (vácuo):</strong> 265 mbar</li>
+                <li><strong>Água limpa:</strong> 6 L</li>
+                <li><strong>Água suja:</strong> 15 L</li>
+                <li><strong>Mangueira:</strong> 2,35 m</li>
+                <li><strong>Cabo:</strong> 5 m</li>
+                <li><strong>Peso:</strong> 7,8 kg</li>
+              </ul>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-green-600 font-bold text-sm mb-2">Vantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Maior vácuo informado da lista</li>
+                    <li>Maior capacidade para água suja</li>
+                    <li>Anúncio cita sofá e colchão</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-red-500 font-bold text-sm mb-2">Desvantagens</p>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>Volume grande para guardar</li>
+                    <li>O texto não cita carro</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mt-4">
+                <strong>Veredito:</strong> para quem quer o maior vácuo e o maior tanque de água suja da lista para sofás, colchões e carpetes, e tem espaço para guardar.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin:32px 0;font-family:sans-serif;">
+          <p style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#c2410c;margin:0 0 12px;">Leia também:</p>
+        <div style="display:flex;flex-direction:column;gap:12px;">
+          <a href="/melhor-mop-giratorio" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:clamp(90px,28vw,200px);flex-shrink:0;">
+              <img src="/images/melhor-mop-giratorio/capa-melhor-mop-giratorio.webp" alt="Mop giratório" style="width:100%;height:100%;min-height:72px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:10px 14px;display:flex;flex-direction:column;justify-content:center;gap:4px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:14px;font-weight:700;color:#1e293b;line-height:1.35;">Melhor Mop Giratório: Comparamos 3 Modelos de Balde e Refil</span>
+            </div>
+          </a>
+        </div>
+        </div>
+
+        <h2 id="como-usar" class="text-2xl font-bold text-slate-900 mb-4">Como usar extratora WAP no sofá, colchão e carro?</h2>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          Este roteiro de cuidados ajuda a saber como usar a extratora WAP, seja Spot Cleaner ou Home Cleaner. Em caso de diferença, vale o manual do seu modelo.
+        </p>
+        <ol class="list-decimal list-inside space-y-2 text-slate-700 mb-4 ml-2">
+          <li><strong>Leia o manual e a etiqueta do tecido.</strong> Alguns tecidos não podem ser molhados.</li>
+          <li><strong>Tire o pó e os pelos antes</strong>, com um aspirador indicado para sujeira seca.</li>
+          <li><strong>Teste em um canto escondido</strong> e espere secar para ver se manchou ou desbotou.</li>
+          <li><strong>Prepare o produto</strong> permitido pelo manual, na diluição do rótulo, e abasteça com o aparelho fora da tomada. Confira a voltagem antes de ligar.</li>
+          <li><strong>Borrife pouco e trabalhe por partes</strong>, passando o bocal devagar.</li>
+          <li><strong>Passe de novo só sugando</strong>, para retirar o máximo de líquido.</li>
+          <li><strong>Deixe secar por completo</strong>, em local ventilado.</li>
+          <li><strong>Desligue da tomada antes de esvaziar, trocar o bico ou limpar.</strong> Lave os reservatórios e bicos como o manual orienta.</li>
+        </ol>
+        <p class="text-slate-700 text-base leading-relaxed mb-4">
+          <strong>No colchão</strong>, use o mínimo de líquido e não coloque lençol enquanto houver umidade. <strong>No carro</strong>, deixe o interior ventilar até secar, evite molhar botões e partes elétricas dos bancos. Os cinco modelos ligam na tomada: não improvise extensões ou adaptadores nem deixe a conexão em área molhada.
+        </p>
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          Não molhe o motor, o cabo nem a tomada, e não use o aparelho com as mãos molhadas. Nunca aspire álcool, solvente, combustível ou outro líquido inflamável, nem coloque no reservatório. Só use água quente ou água sanitária se o manual autorizar.
+        </p>
+
+        <h2 id="faq" class="text-2xl font-bold text-slate-900 mb-6">Perguntas frequentes</h2>
+        <div class="space-y-3 mb-6">
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Como usar extratora WAP no sofá?</span>
+              <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Aspire o pó antes, veja a etiqueta do tecido e teste em um canto escondido. Prepare o produto como o manual indica, borrife pouco, passe o bocal devagar e depois repita só sugando, sem borrifar. Deixe secar por completo antes de usar o sofá.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">A extratora WAP serve para limpar colchão?</span>
+              <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Entre os cinco modelos comparados, os textos dos anúncios da W3, da W4 e da Carpet Cleaner 25 L citam colchão. Em qualquer um deles, confira a etiqueta do colchão, use pouco líquido e só volte a usar a cama quando estiver totalmente seco.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Que produto usar na extratora WAP?</span>
+              <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Use o tipo de produto que o manual do seu modelo permitir, na diluição indicada no rótulo. A WAP vende o Limpa e Extrai, um detergente concentrado de baixa espuma que o anúncio indica para extratoras, em sofás, poltronas, bancos de carro e colchões. Não use produtos que o manual proíbe nem misture produtos de limpeza.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Qual a melhor extratora WAP para uso em casa?</span>
+              <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Depende do espaço e do que você vai limpar. Para limpezas localizadas em sofá, colchão e carro, nosso ponto de partida pelas fichas é a W3. Para carpetes e superfícies maiores, a Carpet Cleaner 25 L informa o maior vácuo e o maior tanque de água suja, com 15 L. Não testamos nenhum dos modelos.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+              <span class="font-semibold text-slate-800 text-sm pr-4">Extratora é a mesma coisa que aspirador de pó?</span>
+              <svg class="w-5 h-5 text-orange-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-5 pb-5 text-slate-700 text-sm leading-relaxed bg-white">
+              Não. A extratora borrifa água ou solução de limpeza no tecido e depois suga o líquido junto com a sujeira. O aspirador de pó comum é feito para sujeira seca e só deve sugar líquidos se o manual disser que o modelo permite.
+            </div>
+          </details>
+        </div>
+        <p class="text-slate-700 text-base leading-relaxed mb-10">
+          Antes de comprar, meça o lugar de guardar e leia as avaliações recentes. Para o piso do dia a dia, veja a comparação de <a href="/melhor-mop-giratorio" class="text-orange-500 font-semibold hover:underline">mop giratório</a>.
+        </p>
+
+        <!-- Schema FAQ -->
+        <script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Como usar extratora WAP no sofá?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Aspire o pó antes, veja a etiqueta do tecido e teste em um canto escondido. Prepare o produto como o manual indica, borrife pouco, passe o bocal devagar e depois repita só sugando, sem borrifar. Deixe secar por completo antes de usar o sofá."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "A extratora WAP serve para limpar colchão?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Entre os cinco modelos comparados, os textos dos anúncios da W3, da W4 e da Carpet Cleaner 25 L citam colchão. Em qualquer um deles, confira a etiqueta do colchão, use pouco líquido e só volte a usar a cama quando estiver totalmente seco."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Que produto usar na extratora WAP?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use o tipo de produto que o manual do seu modelo permitir, na diluição indicada no rótulo. A WAP vende o Limpa e Extrai, um detergente concentrado de baixa espuma que o anúncio indica para extratoras, em sofás, poltronas, bancos de carro e colchões. Não use produtos que o manual proíbe nem misture produtos de limpeza."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Qual a melhor extratora WAP para uso em casa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Depende do espaço e do que você vai limpar. Para limpezas localizadas em sofá, colchão e carro, nosso ponto de partida pelas fichas é a W3. Para carpetes e superfícies maiores, a Carpet Cleaner 25 L informa o maior vácuo e o maior tanque de água suja, com 15 L. Não testamos nenhum dos modelos."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Extratora é a mesma coisa que aspirador de pó?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Não. A extratora borrifa água ou solução de limpeza no tecido e depois suga o líquido junto com a sujeira. O aspirador de pó comum é feito para sujeira seca e só deve sugar líquidos se o manual disser que o modelo permite."
+      }
+    }
+  ]
+})} />
+
+        <!-- Schema ItemList (Product de afiliado, sem offers) -->
+        <script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "5 extratoras WAP comparadas",
+  "numberOfItems": 5,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "Product",
+        "name": "WAP Spot Cleaner W3",
+        "image": "https://www.casaemalta.com.br/images/extratora-wap/extratora-wap-spot-cleaner-w3.webp",
+        "description": "A WAP W3 borrifa, esfrega e extrai com o mesmo bico, e traz um bico de autolimpeza. O anúncio cita tapetes, estofados, sofás, colchões, carpetes e bancos de carro.",
+        "brand": {
+          "@type": "Brand",
+          "name": "WAP"
+        },
+        "url": "https://www.amazon.com.br/dp/B0CH3WBKN6?tag=casaemalta03-20"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "Product",
+        "name": "WAP Spot Cleaner W2",
+        "image": "https://www.casaemalta.com.br/images/extratora-wap/extratora-wap-spot-cleaner-w2.webp",
+        "description": "A WAP W2 também borrifa, esfrega e extrai, com tanques separados para água limpa e suja. O texto do anúncio cita estofados, tapetes, sofás e bancos de carro. O colchão aparece em uma das fotos, mas não no texto.",
+        "brand": {
+          "@type": "Brand",
+          "name": "WAP"
+        },
+        "url": "https://www.amazon.com.br/dp/B0BT2LQ848?tag=casaemalta03-20"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "Product",
+        "name": "WAP Spot Cleaner W4",
+        "image": "https://www.casaemalta.com.br/images/extratora-wap/extratora-wap-w4.webp",
+        "description": "A WAP W4 pesa 2,4 kg e tem cabo de 5 metros. O anúncio cita estofados, tapetes, sofás, colchões, carpetes e interior do carro. Atenção: a página da 220V mostra 127V em um dos campos, e a mangueira aparece ora com 1 m, ora com 1,2 m. Confira a voltagem no título e na opção selecionada antes de comprar. Ao receber, veja a etiqueta antes de ligar.",
+        "brand": {
+          "@type": "Brand",
+          "name": "WAP"
+        },
+        "url": "https://www.amazon.com.br/dp/B0GSRT6RKT?tag=casaemalta03-20"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@type": "Product",
+        "name": "WAP Home Cleaner 20 L",
+        "image": "https://www.casaemalta.com.br/images/extratora-wap/extratora-wap-home-cleaner-20l.webp",
+        "description": "A WAP Home Cleaner é um barril com rodas, que borrifa e aspira ao mesmo tempo ou separadamente. O anúncio cita pisos frios, tapetes, carpetes e estofados.",
+        "brand": {
+          "@type": "Brand",
+          "name": "WAP"
+        },
+        "url": "https://www.amazon.com.br/dp/B0756KV7B6?tag=casaemalta03-20"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "item": {
+        "@type": "Product",
+        "name": "WAP Carpet Cleaner 25 L",
+        "image": "https://www.casaemalta.com.br/images/extratora-wap/extratora-wap-carpet-cleaner-25l.webp",
+        "description": "A WAP Carpet Cleaner tem motor de duplo estágio e informa 265 mbar. O anúncio cita sofás, colchões, pisos, carpetes e estofados. Vem com um bico pequeno para estofados.",
+        "brand": {
+          "@type": "Brand",
+          "name": "WAP"
+        },
+        "url": "https://www.amazon.com.br/dp/B0774X8CFY?tag=casaemalta03-20"
+      }
+    }
+  ]
+})} />
+
+        <div style="margin:24px 0 0;font-family:sans-serif;">
+          <p style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#c2410c;margin:0 0 12px;">Leia também:</p>
+        <div style="display:flex;flex-direction:column;gap:12px;">
+          <a href="/como-escolher-aspirador-de-po" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:clamp(90px,28vw,200px);flex-shrink:0;">
+              <img src="/images/aspirador-guia/capa-como-escolher-aspirador-de-po.webp" alt="Como escolher aspirador de pó" style="width:100%;height:100%;min-height:72px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:10px 14px;display:flex;flex-direction:column;justify-content:center;gap:4px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:14px;font-weight:700;color:#1e293b;line-height:1.35;">Como Escolher Aspirador de Pó: Com Fio, Sem Fio, Vertical ou Robô?</span>
+            </div>
+          </a>
+          <a href="/climatizador-wap" rel="noopener" style="text-decoration:none;background:#ffffff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;align-items:stretch;">
+            <div style="width:clamp(90px,28vw,200px);flex-shrink:0;">
+              <img src="/images/climatizador-wap/capa-climatizador-wap.webp" alt="Climatizador WAP" style="width:100%;height:100%;min-height:72px;object-fit:cover;display:block;" loading="lazy" width="200" height="133" />
+            </div>
+            <div style="padding:10px 14px;display:flex;flex-direction:column;justify-content:center;gap:4px;">
+              <span style="font-size:11px;text-transform:uppercase;color:#94a3b8;letter-spacing:0.05em;">Leia Também</span>
+              <span style="font-size:14px;font-weight:700;color:#1e293b;line-height:1.35;">Climatizador WAP: Qual Modelo Escolher</span>
             </div>
           </a>
         </div>

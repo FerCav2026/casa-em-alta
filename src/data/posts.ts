@@ -723,6 +723,16 @@ export const posts: Post[] = [
     categoria: 'rankings-e-listas',
     categoriaLabel: 'Rankings e Listas',
     categoriaColor: 'bg-green-100 text-green-700',
+  },
+  {
+    slug: 'extratora-wap',
+    titulo: 'Extratora WAP para Sofá, Colchão e Carro: Diferenças Entre os Modelos',
+    resumo: 'Extratora WAP: comparamos três portáteis e dois modelos de barril para limpar sofá, colchão e banco de carro.',
+    tempo: '8 min de leitura',
+    imagem: '/images/extratora-wap/capa-extratora-wap.webp',
+    categoria: 'rankings-e-listas',
+    categoriaLabel: 'Rankings e Listas',
+    categoriaColor: 'bg-green-100 text-green-700',
   }
 ];
 
